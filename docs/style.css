@@ -225,6 +225,8 @@ td { padding: 0.8rem 1rem; vertical-align: middle; }
 .td-conf { font-size: 0.85rem; font-weight: 700; }
 .td-odds { font-variant-numeric: tabular-nums; }
 .td-signal { text-align: center; }
+.td-casa { font-size: 0.85rem; font-variant-numeric: tabular-nums; color: var(--text-muted); }
+.td-edge { font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* ── Confidence bar ── */
 .conf-bar {

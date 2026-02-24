@@ -152,13 +152,14 @@ function renderSportSection(container, league) {
   }
 
   // Table
+  const hasOdds = sport.picks.some(p => p.house_implied_pct != null);
   html += `<div class="table-wrap"><table>
     <thead><tr>
       <th class="td-num">#</th>
       <th>Partido</th>
       <th>Pick</th>
-      <th>Confianza</th>
-      <th>Cuota Impl.</th>
+      <th>Modelo %</th>
+      ${hasOdds ? '<th class="td-casa">Casa %</th><th class="td-edge">Edge</th>' : '<th class="td-odds">Cuota</th>'}
       <th class="td-signal">Señal</th>
     </tr></thead>
     <tbody>`;
@@ -175,6 +176,20 @@ function renderSportSection(container, league) {
       .map(x => `<span class="inj-badge inj-${x.status.toLowerCase().split(' ')[0]}">${escHtml(x.player)} <em>${escHtml(x.status)}</em></span>`)
       .join('');
 
+    let oddsCell = '';
+    if (hasOdds) {
+      const housePct = p.house_implied_pct != null ? Math.round(p.house_implied_pct * 100) : null;
+      const edge = p.edge_pct != null ? p.edge_pct : (housePct != null ? confPct - housePct : null);
+      const edgeColor = edge == null ? 'var(--text-muted)' : edge >= 5 ? 'var(--green)' : edge >= 0 ? 'var(--yellow)' : 'var(--red)';
+      const edgeIcon = edge == null ? '–' : edge >= 5 ? '✅' : edge >= 0 ? '⚠️' : '❌';
+      const edgeStr = edge != null ? `${edge >= 0 ? '+' : ''}${Number(edge).toFixed(1)}%` : '–';
+      oddsCell = `
+      <td class="td-casa">${housePct != null ? housePct + '%' : '–'}</td>
+      <td class="td-edge" style="color:${edgeColor}">${edgeIcon} ${edgeStr}</td>`;
+    } else {
+      oddsCell = `<td class="td-odds">${p.implied_odds.toFixed(2)}</td>`;
+    }
+
     html += `<tr>
       <td class="td-num">${i + 1}</td>
       <td class="td-match">
@@ -190,7 +205,7 @@ function renderSportSection(container, league) {
           <span style="color:${signalColor(p.signal)}">${confPct}%</span>
         </div>
       </td>
-      <td class="td-odds">${p.implied_odds.toFixed(2)}</td>
+      ${oddsCell}
       <td class="td-signal">${signalBadge(p.signal)}</td>
     </tr>`;
   });
