@@ -42,15 +42,18 @@ def fetch_nhl_schedule(season: int) -> Path:
             for g in w.get("games", []) or []:
                 home = (g.get("homeTeam") or {})
                 away = (g.get("awayTeam") or {})
+                state = str(g.get("gameState", "")).upper()
+                is_final = state in ("OFF", "FINAL", "OVER")
                 rows.append({
                     "game_id": g.get("id"),
                     "date": g.get("startTimeUTC"),
-                    "status": g.get("gameState"),
+                    "status": state,
                     "season": season_id,
                     "home_team": home.get("name", {}).get("default"),
                     "away_team": away.get("name", {}).get("default"),
-                    "home_score": home.get("score"),
-                    "away_score": away.get("score"),
+                    # NHL API returns score=0 for unplayed games — only store when final
+                    "home_score": home.get("score") if is_final else None,
+                    "away_score": away.get("score") if is_final else None,
                 })
 
         next_date = data.get("nextStartDate", "")

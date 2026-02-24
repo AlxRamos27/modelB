@@ -24,15 +24,19 @@ def fetch_nba_games(season: int) -> Path:
     while True:
         data = client.get_json(f"{BASE}/games", headers=headers, params={"seasons[]": season, "per_page": per_page, "page": page})
         for g in data.get("data", []):
+            status = g.get("status", "")
+            is_final = str(status).strip().lower() == "final"
             rows.append({
                 "game_id": g.get("id"),
                 "date": g.get("date"),
-                "status": g.get("status"),
+                "status": status,
                 "season": g.get("season"),
                 "home_team": (g.get("home_team") or {}).get("full_name"),
                 "away_team": (g.get("visitor_team") or {}).get("full_name"),
-                "home_score": g.get("home_team_score"),
-                "away_score": g.get("visitor_team_score"),
+                # Only store scores for finished games — BallDontLie returns 0
+                # (not null) for unplayed games, which breaks is_finished detection.
+                "home_score": g.get("home_team_score") if is_final else None,
+                "away_score": g.get("visitor_team_score") if is_final else None,
             })
         meta = data.get("meta", {}) or {}
         if page >= (meta.get("total_pages") or 1):
