@@ -17,12 +17,13 @@ SPORT_KEYS = {
 
 
 def fetch_live_odds(sport: str, today: date | None = None) -> Path | None:
-    """Fetch live H2H + spreads for a sport from The Odds API.
+    """Fetch live H2H + spreads + totals for a sport from The Odds API.
 
     Returns path to CSV with columns:
         date, home_team, away_team,
         odds_H, odds_A,           -- decimal moneyline (best available)
-        spread_home, spread_away  -- point spread lines (home / away)
+        spread_home, spread_away, -- point spread lines (home / away)
+        total_over                -- Over/Under line (total points)
     Returns None if ODDS_API_KEY not set or sport not supported.
     """
     api_key = env("ODDS_API_KEY")
@@ -41,7 +42,7 @@ def fetch_live_odds(sport: str, today: date | None = None) -> Path | None:
 
     rows: dict[tuple, dict] = {}
 
-    for market in ("h2h", "spreads"):
+    for market in ("h2h", "spreads", "totals"):
         try:
             data = client.get_json(
                 f"{ODDS_API_BASE}/sports/{sport_key}/odds/",
@@ -64,7 +65,8 @@ def fetch_live_odds(sport: str, today: date | None = None) -> Path | None:
             if key not in rows:
                 rows[key] = {"date": game_date, "home_team": home, "away_team": away,
                              "odds_H": None, "odds_A": None,
-                             "spread_home": None, "spread_away": None}
+                             "spread_home": None, "spread_away": None,
+                             "total_over": None}
 
             for bm in game.get("bookmakers", []):
                 for mkt in bm.get("markets", []):
@@ -86,6 +88,10 @@ def fetch_live_odds(sport: str, today: date | None = None) -> Path | None:
                                 rows[key]["spread_home"] = point
                             elif name == away and point is not None:
                                 rows[key]["spread_away"] = point
+                        elif market == "totals":
+                            if name == "Over" and point is not None:
+                                if rows[key]["total_over"] is None or point > rows[key]["total_over"]:
+                                    rows[key]["total_over"] = point
 
     if not rows:
         warnings.warn(f"fetch_live_odds: No odds returned for {sport}.")

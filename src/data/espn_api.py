@@ -158,8 +158,10 @@ def get_espn_context(sport: str) -> dict:
     if standings_path and standings_path.exists():
         try:
             df = pd.read_csv(standings_path)
-            top5 = df.nlargest(5, "win_pct")[["team", "wins", "losses", "win_pct"]].to_dict(orient="records")
-            context["top_teams"] = top5
+            # all_teams: full record lookup for Claude notes
+            context["all_teams"] = df[["team", "wins", "losses", "win_pct"]].to_dict(orient="records")
+            # top_teams kept for backward compat
+            context["top_teams"] = df.nlargest(5, "win_pct")[["team", "wins", "losses", "win_pct"]].to_dict(orient="records")
         except Exception:
             pass
 

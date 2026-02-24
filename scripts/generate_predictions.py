@@ -285,6 +285,7 @@ def _build_odds_lookup(sport: str) -> dict:
                 "odds_A": row.get("odds_A"),
                 "spread_home": row.get("spread_home"),
                 "spread_away": row.get("spread_away"),
+                "total_over": row.get("total_over"),
             }
         return lookup
     except Exception as exc:
@@ -293,21 +294,23 @@ def _build_odds_lookup(sport: str) -> dict:
 
 
 def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = None) -> list[str]:
-    """One Claude call → one rich note per pick (✅/⚠️ + injuries + record + recommendation)."""
+    """One Claude call → one rich note per pick (records + injuries + O/U + recommendation)."""
     api_key = env("ANTHROPIC_API_KEY")
     if not api_key or not picks:
-        return [""] * len(picks)
+        return _fallback_notes(picks)
     try:
         import anthropic, json as _json
         client = anthropic.Anthropic(api_key=api_key)
         label = SPORT_LABELS.get(sport, sport.upper())
 
-        # Build standings lookup from ESPN context
+        # Build record lookup from ALL teams (not just top 5)
         standings: dict[str, str] = {}
-        if espn_ctx and espn_ctx.get("top_teams"):
-            for t in espn_ctx["top_teams"]:
-                team = t.get("team", "")
-                w, l = t.get("wins", "?"), t.get("losses", "?")
+        all_teams = (espn_ctx or {}).get("all_teams") or (espn_ctx or {}).get("top_teams") or []
+        for t in all_teams:
+            team = str(t.get("team") or "")
+            if team:
+                w = int(t.get("wins") or 0)
+                l = int(t.get("losses") or 0)
                 standings[team.lower()] = f"{w}-{l}"
 
         def get_record(team_name: str) -> str:
@@ -319,40 +322,51 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
 
         lines = []
         for i, p in enumerate(picks):
-            inj_h = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_home", [])[:2]) or "sin bajas"
-            inj_a = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_away", [])[:2]) or "sin bajas"
+            inj_h = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_home", [])[:3]) or "sin bajas"
+            inj_a = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_away", [])[:3]) or "sin bajas"
             rec_h = get_record(p["home_team"])
             rec_a = get_record(p["away_team"])
             model_s = p.get("model_spread")
             house_s = p.get("house_spread")
             edge = p.get("edge_pct")
+            total = p.get("house_total")
+
+            align = ""
+            if edge is not None:
+                align = "✅ líneas alineadas" if abs(edge) <= 3 else f"⚠️ diferencia {edge:+.1f}%"
 
             parts = [
                 f"{i+1}. {p['home_team']}{' (' + rec_h + ')' if rec_h else ''} vs "
                 f"{p['away_team']}{' (' + rec_a + ')' if rec_a else ''}",
-                f"pick={p['pick_label']} ({p['p_win']*100:.0f}%, señal {p['signal']})",
+                f"pick: {p['pick_label']} | modelo {p['p_win']*100:.0f}% | señal {p['signal']}",
                 f"bajas local: {inj_h}",
                 f"bajas visitante: {inj_a}",
             ]
             if model_s is not None:
-                parts.append(f"spread modelo: {model_s:+.1f}")
+                parts.append(f"spread modelo: {model_s:+.1f} pts")
             if house_s is not None:
-                parts.append(f"línea casa: {house_s:+.1f}")
-            if edge is not None:
-                alineado = "✅ alineado" if abs(edge) <= 5 else "⚠️ diferencia"
-                parts.append(alineado)
+                parts.append(f"línea casa: {house_s:+.1f} pts")
+            if total is not None:
+                parts.append(f"O/U: {total} puntos")
+            if align:
+                parts.append(align)
             lines.append(" | ".join(parts))
 
         prompt = (
-            f"Eres analista de {label}. Para cada partido genera UNA nota (máx 22 palabras) en español.\n"
-            f"Incluye: ✅ si el modelo coincide con la casa / ⚠️ si hay diferencia significativa, "
-            f"lesiones clave si las hay, récord del equipo favorito, y termina con ML (moneyline), O/U, o SKIP.\n"
-            f"Responde ÚNICAMENTE con un array JSON de strings (mismo orden).\n\n"
+            f"Eres analista experto de {label}. Para CADA partido genera UNA nota analítica en español de 40-50 palabras.\n\n"
+            f"CADA nota DEBE incluir EN ESTE ORDEN:\n"
+            f"1. ✅ (modelo y casa alineados, diferencia <3%) o ⚠️ (diferencia significativa ≥3%)\n"
+            f"2. Récord de AMBOS equipos (ej: '34-21 vs 28-27')\n"
+            f"3. Lesiones importantes si las hay (menciona el jugador y su impacto)\n"
+            f"4. Si hay O/U disponible: 'Alta [X] pts' o 'Baja [X] pts' con justificación breve\n"
+            f"5. Recomendación final: 'Apostar ML [equipo]', 'Apostar Alta/Baja [X]', o 'SKIP'\n\n"
+            f"Sé directo y específico. Usa datos del partido, no generalidades.\n"
+            f"Responde ÚNICAMENTE con un array JSON de strings (mismo orden que los partidos).\n\n"
             + "\n".join(lines)
         )
         msg = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=800,
+            max_tokens=1600,
             messages=[{"role": "user", "content": prompt}],
         )
         text = msg.content[0].text.strip()
@@ -362,17 +376,21 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             return [str(n) for n in notes]
     except Exception as exc:
         warnings.warn(f"Claude game notes failed for {sport}: {exc}")
-        # Fallback: generate simple notes from model data so something always shows
-        return [
-            "{} {} ML — modelo: {:.0f}%{}".format(
-                "✅" if p["signal"] == "alta" else "⚠️" if p["signal"] == "media" else "❌",
-                p["pick_label"],
-                p["p_win"] * 100,
-                " | Edge {:+.1f}%".format(p["edge_pct"]) if p.get("edge_pct") is not None else "",
-            )
-            for p in picks
-        ]
-    return [""] * len(picks)
+    return _fallback_notes(picks)
+
+
+def _fallback_notes(picks: list[dict]) -> list[str]:
+    """Generate basic notes from model data when Claude is unavailable."""
+    notes = []
+    for p in picks:
+        icon = "✅" if p["signal"] == "alta" else "⚠️" if p["signal"] == "media" else "❌"
+        note = f"{icon} {p['pick_label']} ML — modelo: {p['p_win']*100:.0f}%"
+        if p.get("edge_pct") is not None:
+            note += f" | Edge {p['edge_pct']:+.1f}%"
+        if p.get("house_total") is not None:
+            note += f" | O/U: {p['house_total']}"
+        notes.append(note)
+    return notes
 
 
 def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> dict:
@@ -449,6 +467,7 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         house_ml_a = house.get("odds_A")   # decimal moneyline away
         house_spread_home = house.get("spread_home")
         house_spread_away = house.get("spread_away")
+        house_total = house.get("total_over")  # O/U line
 
         # Model spread (implied from p_win)
         model_s = _model_spread(p_win if pick == "H" else 1 - p_win, kind)
@@ -480,6 +499,7 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
             "house_odds":       house_ml_h if pick == "H" else house_ml_a,
             "house_implied_pct": house_implied,
             "edge_pct":         edge_pct,
+            "house_total":      house_total,
             "injuries_home":    _match_injuries(injuries_by_team, home_team),
             "injuries_away":    _match_injuries(injuries_by_team, away_team),
             "note":             "",
