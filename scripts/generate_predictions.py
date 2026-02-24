@@ -79,6 +79,22 @@ def current_mlb_season() -> int:
 
 # ── Per-sport runner ─────────────────────────────────────────────────────────
 
+def _has_today_games(picks_df, today: date) -> bool:
+    """Return True if picks_df has ≥1 game for today or tomorrow UTC (+1 day for timezone gap)."""
+    if picks_df is None or picks_df.empty:
+        return False
+    import pandas as pd
+    for _, row in picks_df.iterrows():
+        try:
+            dt = pd.to_datetime(row["date"], utc=True)
+            days_diff = (dt.date() - today).days
+            if 0 <= days_diff <= 1:
+                return True
+        except Exception:
+            pass
+    return False
+
+
 def run_nba() -> dict:
     api_key = env("BALLDONTLIE_API_KEY")
     if not api_key:
@@ -92,7 +108,9 @@ def run_nba() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
-        if picks_df.empty:
+        # BallDontLie returns the full season (past + future); picks_df may have
+        # hundreds of upcoming games but none for today → fall back to ESPN.
+        if not _has_today_games(picks_df, date.today()):
             picks_df = _picks_from_espn_schedule("nba", ds, "nba")
         espn_ctx = get_espn_context("nba")
         return _ok(picks_df, metrics, "nba", espn_ctx)
@@ -110,7 +128,7 @@ def run_nhl() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
-        if picks_df.empty:
+        if not _has_today_games(picks_df, date.today()):
             picks_df = _picks_from_espn_schedule("nhl", ds, "nhl")
         espn_ctx = get_espn_context("nhl")
         return _ok(picks_df, metrics, "nhl", espn_ctx)
