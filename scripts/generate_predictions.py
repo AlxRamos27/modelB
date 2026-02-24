@@ -240,6 +240,8 @@ def _match_injuries(injuries_by_team: dict, team_name: str) -> list[dict]:
         return injuries_by_team[team_name]
     tl = team_name.lower()
     for key, val in injuries_by_team.items():
+        if not isinstance(key, str):
+            continue
         kl = key.lower()
         if tl in kl or kl in tl:
             return val
@@ -379,9 +381,13 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
     injuries_by_team: dict = {}
     if espn_ctx and espn_ctx.get("key_injuries"):
         for inj in espn_ctx["key_injuries"]:
-            injuries_by_team.setdefault(inj.get("team", ""), []).append({
-                "player": inj.get("player", ""),
-                "status": inj.get("status", ""),
+            team = inj.get("team") or ""
+            # Skip NaN / float values that pandas inserts for empty CSV cells
+            if not isinstance(team, str) or not team.strip():
+                continue
+            injuries_by_team.setdefault(team, []).append({
+                "player": str(inj.get("player") or ""),
+                "status": str(inj.get("status") or ""),
             })
 
     picks = []
