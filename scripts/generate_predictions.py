@@ -362,6 +362,16 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             return [str(n) for n in notes]
     except Exception as exc:
         warnings.warn(f"Claude game notes failed for {sport}: {exc}")
+        # Fallback: generate simple notes from model data so something always shows
+        return [
+            "{} {} ML — modelo: {:.0f}%{}".format(
+                "✅" if p["signal"] == "alta" else "⚠️" if p["signal"] == "media" else "❌",
+                p["pick_label"],
+                p["p_win"] * 100,
+                " | Edge {:+.1f}%".format(p["edge_pct"]) if p.get("edge_pct") is not None else "",
+            )
+            for p in picks
+        ]
     return [""] * len(picks)
 
 
@@ -426,7 +436,9 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
                 pick_label = "Empate"
 
         implied_odds = round(1.0 / max(p_win, 0.01), 2)
-        signal = "alta" if p_win >= 0.70 else "media" if p_win >= 0.60 else "baja"
+        # Base signal on rounded % so display (70%) matches badge (Alta)
+        conf_pct = round(p_win * 100)
+        signal = "alta" if conf_pct >= 70 else "media" if conf_pct >= 60 else "baja"
 
         home_team = str(row["home_team"])
         away_team = str(row["away_team"])

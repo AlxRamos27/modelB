@@ -31,9 +31,10 @@ jobs:
 
       - name: Generate predictions
         env:
-          BALLDONTLIE_API_KEY: ${{ secrets.BALLDONTLIE_API_KEY }}
-          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-          ODDS_API_KEY:        ${{ secrets.ODDS_API_KEY }}
+          BALLDONTLIE_API_KEY:  ${{ secrets.BALLDONTLIE_API_KEY }}
+          FOOTBALL_DATA_TOKEN:  ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          ODDS_API_KEY:         ${{ secrets.ODDS_API_KEY }}
+          ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/generate_predictions.py
 
       - name: Commit & push updated predictions
