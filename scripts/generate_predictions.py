@@ -88,7 +88,7 @@ def run_nba() -> dict:
             date_col="date", home_score="home_score", away_score="away_score",
         )
         metrics = train_model(ds).metrics
-        picks_df = predict_model(ds, top_n=30)
+        picks_df = predict_model(ds, top_n=200)
         return _ok(picks_df, metrics, "nba")
     except Exception as exc:
         return _error(exc)
@@ -103,7 +103,7 @@ def run_nhl() -> dict:
             date_col="date", home_score="home_score", away_score="away_score",
         )
         metrics = train_model(ds).metrics
-        picks_df = predict_model(ds, top_n=30)
+        picks_df = predict_model(ds, top_n=200)
         return _ok(picks_df, metrics, "nhl")
     except Exception as exc:
         return _error(exc)
@@ -122,7 +122,7 @@ def run_mlb() -> dict:
             date_col="date", home_score="home_score", away_score="away_score",
         )
         metrics = train_model(ds).metrics
-        picks_df = predict_model(ds, top_n=30)
+        picks_df = predict_model(ds, top_n=200)
         return _ok(picks_df, metrics, "mlb")
     except Exception as exc:
         return _error(exc)
@@ -137,7 +137,7 @@ def run_soccer(league: str) -> dict:
         raw = fetch_soccer_matches(league, season)
         ds = build_dataset_soccer(raw, league=league)
         metrics = train_model(ds).metrics
-        picks_df = predict_model(ds, top_n=30)
+        picks_df = predict_model(ds, top_n=200)
         return _ok(picks_df, metrics, league)
     except Exception as exc:
         return _error(exc)
@@ -146,9 +146,27 @@ def run_soccer(league: str) -> dict:
 # ── Result builders ──────────────────────────────────────────────────────────
 
 def _ok(picks_df, metrics: dict, sport: str) -> dict:
-    today_str = date.today().isoformat()
+    import pandas as pd
+    today = date.today()
+    today_str = today.isoformat()
     picks = []
     for _, row in picks_df.iterrows():
+        # ── Parse game date first so we can filter ──
+        game_date = today_str
+        game_date_obj = today
+        try:
+            dt = pd.to_datetime(row["date"], utc=True)
+            game_date = dt.strftime("%Y-%m-%d")
+            game_date_obj = dt.date()
+        except Exception:
+            pass
+
+        # Filter: only keep today's games.
+        # +1 day margin covers UTC/local timezone gap (e.g. 10 PM ET = next day UTC).
+        days_diff = (game_date_obj - today).days
+        if days_diff < 0 or days_diff > 1:
+            continue
+
         # Determine the winning side and probability
         if "p_H" in row and "p_A" in row:
             if row.get("p_H", 0) >= row.get("p_A", 0):
@@ -169,27 +187,19 @@ def _ok(picks_df, metrics: dict, sport: str) -> dict:
         implied_odds = round(1.0 / max(p_win, 0.01), 2)
         signal = "alta" if p_win >= 0.70 else "media" if p_win >= 0.60 else "baja"
 
-        game_date = ""
-        try:
-            import pandas as pd
-            dt = pd.to_datetime(row["date"], utc=True)
-            game_date = dt.strftime("%Y-%m-%d")
-        except Exception:
-            game_date = today_str
-
         picks.append({
-            "home_team":   str(row["home_team"]),
-            "away_team":   str(row["away_team"]),
-            "pick":        pick,
-            "pick_label":  str(pick_label),
-            "p_win":       round(p_win, 4),
+            "home_team":    str(row["home_team"]),
+            "away_team":    str(row["away_team"]),
+            "pick":         pick,
+            "pick_label":   str(pick_label),
+            "p_win":        round(p_win, 4),
             "implied_odds": implied_odds,
-            "signal":      signal,
-            "date":        game_date,
+            "signal":       signal,
+            "date":         game_date,
         })
 
-    # Sort by p_win descending
-    picks.sort(key=lambda x: x["p_win"], reverse=True)
+    # Sort by date asc, then by p_win desc within the same day
+    picks.sort(key=lambda x: (x["date"], -x["p_win"]))
 
     return {
         "status":  "ok",

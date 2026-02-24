@@ -108,6 +108,7 @@ def load_model(league: str):
     return obj["model"], obj["classes"], obj["feature_cols"]
 
 def predict(dataset: Dataset, top_n: int = 3, odds_csv: Path | None = None) -> pd.DataFrame:
+    from datetime import timezone, timedelta
     df = dataset.df.copy()
     upcoming = df[~df["is_finished"]].copy()
     if upcoming.empty:
@@ -116,6 +117,15 @@ def predict(dataset: Dataset, top_n: int = 3, odds_csv: Path | None = None) -> p
 
     if upcoming.empty:
         raise RuntimeError("No upcoming games found in dataset. Fetch current season and ensure scheduled games exist.")
+
+    # Drop games whose date is clearly in the past (>1 day ago) — these are
+    # unscored games that the API hasn't updated yet, not genuine future games.
+    if "date" in upcoming.columns:
+        now_utc = pd.Timestamp.now(tz=timezone.utc)
+        cutoff = now_utc - pd.Timedelta(days=1)
+        dates_parsed = pd.to_datetime(upcoming["date"], utc=True, errors="coerce")
+        mask = dates_parsed.isna() | (dates_parsed >= cutoff)
+        upcoming = upcoming[mask].copy()
 
     model, classes, feat_cols = load_model(dataset.league)
     X = upcoming[feat_cols].fillna(0.0).to_numpy()
