@@ -1,14 +1,10 @@
 {
-  "generated_at": "2026-02-24T22:11:35Z",
+  "generated_at": "2026-02-24T22:20:32Z",
   "date": "2026-02-24",
   "sports": {
     "nba": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.65,
-        "logloss": 0.621,
-        "brier": 0.2152
-      },
+      "status": "error",
+      "reason": "'float' object has no attribute 'lower'",
       "picks": [],
       "name": "NBA"
     },
