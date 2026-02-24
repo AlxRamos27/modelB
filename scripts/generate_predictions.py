@@ -92,6 +92,8 @@ def run_nba() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
+        if picks_df.empty:
+            picks_df = _picks_from_espn_schedule("nba", ds, "nba")
         espn_ctx = get_espn_context("nba")
         return _ok(picks_df, metrics, "nba", espn_ctx)
     except Exception as exc:
@@ -108,6 +110,8 @@ def run_nhl() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
+        if picks_df.empty:
+            picks_df = _picks_from_espn_schedule("nhl", ds, "nhl")
         espn_ctx = get_espn_context("nhl")
         return _ok(picks_df, metrics, "nhl", espn_ctx)
     except Exception as exc:
@@ -147,6 +151,85 @@ def run_soccer(league: str) -> dict:
         return _ok(picks_df, metrics, league)  # no ESPN for soccer
     except Exception as exc:
         return _error(exc)
+
+
+# ── ESPN schedule fallback ───────────────────────────────────────────────────
+
+def _picks_from_espn_schedule(sport: str, ds, league: str):
+    """Build prediction rows from ESPN scoreboard when BallDontLie has no upcoming games.
+
+    Looks up each team's most recent historical feature values (ELO, form, etc.)
+    and applies the trained model to produce picks for today's ESPN games.
+    Returns a DataFrame compatible with predict_model() output, or empty df.
+    """
+    import pandas as pd
+    from src.data.espn_api import fetch_espn_scoreboard_games
+    from src.modeling import load_model, get_feature_cols
+
+    games = fetch_espn_scoreboard_games(sport)
+    if not games:
+        return pd.DataFrame(columns=["date", "home_team", "away_team"])
+
+    try:
+        model, classes, feat_cols = load_model(league)
+    except Exception:
+        return pd.DataFrame(columns=["date", "home_team", "away_team"])
+
+    df_hist = ds.df[ds.df["is_finished"]].copy().sort_values("date")
+
+    def _find(df_all, team_name, col):
+        """Most recent rows for a team in given column (substring match)."""
+        t = team_name.lower()
+        mask = df_all[col].str.lower().str.contains(t.split()[-1], regex=False, na=False)
+        return df_all[mask]
+
+    def _latest(df_sub, col, fallback=0.0):
+        if df_sub.empty or col not in df_sub.columns:
+            return fallback
+        v = df_sub[col].dropna()
+        return float(v.iloc[-1]) if not v.empty else fallback
+
+    rows = []
+    for g in games:
+        home, away = g["home_team"], g["away_team"]
+        home_h = _find(df_hist, home, "home_team")  # home team's home games
+        away_a = _find(df_hist, away, "away_team")  # away team's away games
+
+        elo_home = _latest(home_h, "elo_home_pre", 1500.0)
+        elo_away = _latest(away_a, "elo_away_pre", 1500.0)
+
+        home_wr = _latest(home_h, "home_winrate_l5", 0.5)
+        away_wr = _latest(away_a, "away_winrate_l5", 0.5)
+
+        feat: dict = {
+            "elo_diff_pre":    elo_home - elo_away,
+            "home_winrate_l5": home_wr,
+            "away_winrate_l5": away_wr,
+            "diff_l5_gap":     home_wr - away_wr,
+            "inj_gap":         0.0,
+        }
+        if "net_rtg_diff" in feat_cols:
+            feat["net_rtg_diff"]     = _latest(home_h, "net_rtg_diff", 0.0)
+            feat["pace_avg"]         = _latest(home_h, "pace_avg", 98.5)
+            feat["elo_538_diff_pre"] = _latest(home_h, "elo_538_diff_pre", 0.0)
+
+        rows.append({"date": g["date"], "home_team": home, "away_team": away, **feat})
+
+    if not rows:
+        return pd.DataFrame(columns=["date", "home_team", "away_team"])
+
+    out = pd.DataFrame(rows)
+    X = out[feat_cols].fillna(0.0).to_numpy()
+    proba = model.predict_proba(X)
+    for i, c in enumerate(classes):
+        out[f"p_{c}"] = proba[:, i]
+    out["p_max"] = out[[f"p_{c}" for c in classes]].max(axis=1)
+    out["top_pick"] = (
+        out[[f"p_{c}" for c in classes]]
+        .idxmax(axis=1)
+        .str.replace("p_", "", regex=False)
+    )
+    return out
 
 
 # ── Result builders ──────────────────────────────────────────────────────────
