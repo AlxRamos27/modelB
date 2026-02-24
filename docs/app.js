@@ -168,17 +168,25 @@ function renderSportSection(container, league) {
     const barClass = p.signal === 'alta' ? '' : p.signal === 'media' ? 'medium' : 'low';
     const barWidth = confPct + '%';
 
+    const injHome = (p.injuries_home || []).slice(0, 3)
+      .map(x => `<span class="inj-badge inj-${x.status.toLowerCase().split(' ')[0]}">${escHtml(x.player)} <em>${escHtml(x.status)}</em></span>`)
+      .join('');
+    const injAway = (p.injuries_away || []).slice(0, 3)
+      .map(x => `<span class="inj-badge inj-${x.status.toLowerCase().split(' ')[0]}">${escHtml(x.player)} <em>${escHtml(x.status)}</em></span>`)
+      .join('');
+
     html += `<tr>
       <td class="td-num">${i + 1}</td>
       <td class="td-match">
-        <div>${escHtml(p.home_team)}</div>
-        <div class="away">vs ${escHtml(p.away_team)}</div>
-        ${p.date ? `<div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px">${p.date}</div>` : ''}
+        <div class="team-row"><span>${escHtml(p.home_team)}</span>${injHome ? `<span class="inj-row">${injHome}</span>` : ''}</div>
+        <div class="team-row away-row"><span>vs ${escHtml(p.away_team)}</span>${injAway ? `<span class="inj-row">${injAway}</span>` : ''}</div>
+        ${p.date ? `<div class="game-date">${p.date}</div>` : ''}
+        ${p.note ? `<div class="game-note">💬 ${escHtml(p.note)}</div>` : ''}
       </td>
       <td class="td-pick">${escHtml(p.pick_label)}</td>
       <td class="td-conf">
         <div class="conf-bar">
-          <div class="conf-fill ${barClass}" style="width:${barWidth}; width:${barWidth}; max-width:60px; display:inline-block"></div>
+          <div class="conf-fill ${barClass}" style="width:${barWidth}; max-width:60px; display:inline-block"></div>
           <span style="color:${signalColor(p.signal)}">${confPct}%</span>
         </div>
       </td>

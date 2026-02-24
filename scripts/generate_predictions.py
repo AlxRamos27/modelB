@@ -91,7 +91,8 @@ def run_nba() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
-        return _ok(picks_df, metrics, "nba")
+        espn_ctx = get_espn_context("nba")
+        return _ok(picks_df, metrics, "nba", espn_ctx)
     except Exception as exc:
         return _error(exc)
 
@@ -106,7 +107,8 @@ def run_nhl() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
-        return _ok(picks_df, metrics, "nhl")
+        espn_ctx = get_espn_context("nhl")
+        return _ok(picks_df, metrics, "nhl", espn_ctx)
     except Exception as exc:
         return _error(exc)
 
@@ -125,7 +127,8 @@ def run_mlb() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
-        return _ok(picks_df, metrics, "mlb")
+        espn_ctx = get_espn_context("mlb")
+        return _ok(picks_df, metrics, "mlb", espn_ctx)
     except Exception as exc:
         return _error(exc)
 
@@ -140,17 +143,83 @@ def run_soccer(league: str) -> dict:
         ds = build_dataset_soccer(raw, league=league)
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
-        return _ok(picks_df, metrics, league)
+        return _ok(picks_df, metrics, league)  # no ESPN for soccer
     except Exception as exc:
         return _error(exc)
 
 
 # ── Result builders ──────────────────────────────────────────────────────────
 
-def _ok(picks_df, metrics: dict, sport: str) -> dict:
+def _match_injuries(injuries_by_team: dict, team_name: str) -> list[dict]:
+    """Find injuries for a team using partial name matching."""
+    if team_name in injuries_by_team:
+        return injuries_by_team[team_name]
+    tl = team_name.lower()
+    for key, val in injuries_by_team.items():
+        kl = key.lower()
+        if tl in kl or kl in tl:
+            return val
+        # match by nickname (last word)
+        if tl.split()[-1] == kl.split()[-1]:
+            return val
+    return []
+
+
+def _claude_game_notes(sport: str, picks: list[dict]) -> list[str]:
+    """One Claude call → one short note per pick."""
+    api_key = env("ANTHROPIC_API_KEY")
+    if not api_key or not picks:
+        return [""] * len(picks)
+    try:
+        import anthropic, json as _json
+        client = anthropic.Anthropic(api_key=api_key)
+        label = SPORT_LABELS.get(sport, sport.upper())
+
+        lines = []
+        for i, p in enumerate(picks):
+            inj_h = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_home", [])[:3]) or "sin bajas"
+            inj_a = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_away", [])[:3]) or "sin bajas"
+            lines.append(
+                f"{i+1}. {p['home_team']} vs {p['away_team']} | "
+                f"pick: {p['pick_label']} ({p['p_win']*100:.0f}%, señal {p['signal']}) | "
+                f"bajas local: {inj_h} | bajas visitante: {inj_a}"
+            )
+
+        prompt = (
+            f"Eres analista de {label}. Para cada partido genera UNA nota corta (máx 18 palabras) en español. "
+            f"Menciona lesiones importantes si las hay y la confianza del modelo. "
+            f"Responde ÚNICAMENTE con un array JSON de strings (uno por partido, mismo orden).\n\n"
+            + "\n".join(lines)
+        )
+        msg = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=600,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = msg.content[0].text.strip()
+        s, e = text.find("["), text.rfind("]") + 1
+        if s >= 0 and e > s:
+            notes = _json.loads(text[s:e])
+            return [str(n) for n in notes]
+    except Exception as exc:
+        warnings.warn(f"Claude game notes failed for {sport}: {exc}")
+    return [""] * len(picks)
+
+
+def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> dict:
     import pandas as pd
     today = date.today()
     today_str = today.isoformat()
+
+    # Build injury lookup by team name
+    injuries_by_team: dict = {}
+    if espn_ctx and espn_ctx.get("key_injuries"):
+        for inj in espn_ctx["key_injuries"]:
+            injuries_by_team.setdefault(inj.get("team", ""), []).append({
+                "player": inj.get("player", ""),
+                "status": inj.get("status", ""),
+            })
+
     picks = []
     for _, row in picks_df.iterrows():
         # ── Parse game date first so we can filter ──
@@ -189,16 +258,29 @@ def _ok(picks_df, metrics: dict, sport: str) -> dict:
         implied_odds = round(1.0 / max(p_win, 0.01), 2)
         signal = "alta" if p_win >= 0.70 else "media" if p_win >= 0.60 else "baja"
 
+        home_team = str(row["home_team"])
+        away_team = str(row["away_team"])
+
         picks.append({
-            "home_team":    str(row["home_team"]),
-            "away_team":    str(row["away_team"]),
-            "pick":         pick,
-            "pick_label":   str(pick_label),
-            "p_win":        round(p_win, 4),
-            "implied_odds": implied_odds,
-            "signal":       signal,
-            "date":         game_date,
+            "home_team":      home_team,
+            "away_team":      away_team,
+            "pick":           pick,
+            "pick_label":     str(pick_label),
+            "p_win":          round(p_win, 4),
+            "implied_odds":   implied_odds,
+            "signal":         signal,
+            "date":           game_date,
+            "injuries_home":  _match_injuries(injuries_by_team, home_team),
+            "injuries_away":  _match_injuries(injuries_by_team, away_team),
+            "note":           "",
         })
+
+    # Generate per-game Claude notes
+    if picks:
+        notes = _claude_game_notes(sport, picks)
+        for i, note in enumerate(notes):
+            if i < len(picks):
+                picks[i]["note"] = note
 
     # Sort by date asc, then by p_win desc within the same day
     picks.sort(key=lambda x: (x["date"], -x["p_win"]))
