@@ -19,7 +19,7 @@ import json
 import os
 import sys
 import warnings
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timezone, timedelta
 from itertools import combinations
 from math import prod
 from pathlib import Path
@@ -44,6 +44,11 @@ from src.pipeline import build_dataset_soccer, build_dataset_two_way
 from src.modeling import train as train_model, predict as predict_model
 
 # ── Constants ────────────────────────────────────────────────────────────────
+# NBA/NHL games are played in US timezones.  Use Pacific Time (UTC-8 in winter,
+# UTC-7 in summer) as the reference so a 10 PM PT game on Feb 24 stays on
+# Feb 24 rather than being labelled Feb 25 (UTC).
+_PT = timezone(timedelta(hours=-8))   # PST — close enough year-round for NBA
+
 TARGETS = [3, 4, 5, 6, 10, 20]
 SOCCER_LEAGUES = ["epl", "laliga", "ligue1", "bundesliga", "primeira", "ucl"]
 OUT_PATH = ROOT / "docs" / "data" / "predictions.json"
@@ -79,15 +84,30 @@ def current_mlb_season() -> int:
 
 # ── Per-sport runner ─────────────────────────────────────────────────────────
 
+def _parse_game_date(date_val) -> date:
+    """Parse a game date to a US Pacific date object.
+
+    - ESPN timestamps ("2026-02-25T03:30Z") are UTC → convert to PT so a
+      7:30 PM PT game on Feb 24 is stored as Feb 24, not Feb 25.
+    - BallDontLie / NHL plain dates ("2026-02-24") have no time component
+      and are already in US local time → keep as-is.
+    """
+    import pandas as pd
+    s = str(date_val)
+    if "T" in s or "Z" in s:
+        dt_utc = pd.to_datetime(s, utc=True)
+        return dt_utc.astimezone(_PT).date()
+    return pd.to_datetime(s).date()
+
+
 def _has_today_games(picks_df, today: date) -> bool:
-    """Return True if picks_df has ≥1 game for today or tomorrow UTC (+1 day for timezone gap)."""
+    """Return True if picks_df has ≥1 game on today's PT date (or tomorrow as buffer)."""
     if picks_df is None or picks_df.empty:
         return False
-    import pandas as pd
+    today_pt = datetime.now(_PT).date()
     for _, row in picks_df.iterrows():
         try:
-            dt = pd.to_datetime(row["date"], utc=True)
-            days_diff = (dt.date() - today).days
+            days_diff = (_parse_game_date(row["date"]) - today_pt).days
             if 0 <= days_diff <= 1:
                 return True
         except Exception:
@@ -466,7 +486,9 @@ def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[str
 def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> dict:
     import pandas as pd
     from src.pipeline import Dataset  # just for kind detection
-    today = date.today()
+    # Use Pacific Time as the reference so NBA/NHL night games on Feb 24 PT
+    # don't bleed into Feb 25 (UTC) and appear as "tomorrow".
+    today = datetime.now(_PT).date()
     today_str = today.isoformat()
 
     # Determine sport kind for spread calc
@@ -490,18 +512,17 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
 
     picks = []
     for _, row in picks_df.iterrows():
-        # ── Parse game date first so we can filter ──
+        # ── Parse game date in PT so ESPN UTC timestamps (e.g. "2026-02-25T03:30Z")
+        #    are stored as their US local date ("2026-02-24") rather than UTC date.
         game_date = today_str
         game_date_obj = today
         try:
-            dt = pd.to_datetime(row["date"], utc=True)
-            game_date = dt.strftime("%Y-%m-%d")
-            game_date_obj = dt.date()
+            game_date_obj = _parse_game_date(row["date"])
+            game_date = game_date_obj.isoformat()
         except Exception:
             pass
 
-        # Filter: only keep today's games.
-        # +1 day margin covers UTC/local timezone gap (e.g. 10 PM ET = next day UTC).
+        # Filter: only today's PT games (allow +1 day buffer for edge cases).
         days_diff = (game_date_obj - today).days
         if days_diff < 0 or days_diff > 1:
             continue
