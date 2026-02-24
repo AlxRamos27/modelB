@@ -38,7 +38,7 @@ from src.data.football_data import fetch_soccer_matches
 from src.data.balldontlie_nba import fetch_nba_games
 from src.data.mlb_statsapi import fetch_mlb_schedule
 from src.data.nhl_api import fetch_nhl_schedule
-from src.data.espn_api import get_espn_context
+from src.data.espn_api import get_espn_context, fetch_espn_scoreboard_games
 from src.data.odds_api import fetch_live_odds
 from src.pipeline import build_dataset_soccer, build_dataset_two_way
 from src.modeling import train as train_model, predict as predict_model
@@ -82,6 +82,42 @@ def current_mlb_season() -> int:
     return date.today().year
 
 
+# ── Standings from local dataset (ESPN standings API no longer public) ────────
+
+def _standings_from_dataset(ds) -> list[dict]:
+    """Compute W-L records from the historical dataset already in memory.
+
+    ESPN's standings endpoint no longer returns usable data.  We compute
+    team records from the BallDontLie / NHL / MLB history instead.
+    Returns a list of {team, wins, losses, win_pct} dicts sorted by win_pct.
+    """
+    import pandas as pd
+    df = ds.df[ds.df["is_finished"]].copy()
+    if df.empty or "home_team" not in df.columns or ds.target_col not in df.columns:
+        return []
+
+    wins: dict[str, int] = {}
+    losses: dict[str, int] = {}
+    for _, row in df.iterrows():
+        ht = str(row["home_team"])
+        at = str(row["away_team"])
+        result = str(row.get(ds.target_col, ""))
+        wins.setdefault(ht, 0); losses.setdefault(ht, 0)
+        wins.setdefault(at, 0); losses.setdefault(at, 0)
+        if result == "H":
+            wins[ht] += 1; losses[at] += 1
+        elif result == "A":
+            wins[at] += 1; losses[ht] += 1
+
+    teams = []
+    for team in wins:
+        w, l = wins[team], losses[team]
+        total = w + l
+        teams.append({"team": team, "wins": w, "losses": l,
+                      "win_pct": round(w / total, 3) if total else 0.0})
+    return sorted(teams, key=lambda x: -x["win_pct"])
+
+
 # ── Per-sport runner ─────────────────────────────────────────────────────────
 
 def _parse_game_date(date_val) -> date:
@@ -98,6 +134,34 @@ def _parse_game_date(date_val) -> date:
         dt_utc = pd.to_datetime(s, utc=True)
         return dt_utc.astimezone(_PT).date()
     return pd.to_datetime(s).date()
+
+
+def _filter_by_espn(picks_df, espn_games: list[dict]):
+    """Keep only picks whose teams appear in today's ESPN confirmed schedule.
+
+    ESPN is the authoritative source for what games are actually played today.
+    BallDontLie may include stale unscored games from other dates.
+    Uses nickname matching (last word) so "Oklahoma City Thunder" matches "Thunder".
+    """
+    if picks_df is None or picks_df.empty or not espn_games:
+        return picks_df
+    import pandas as pd
+
+    # Build set of (home_nickname, away_nickname) from ESPN schedule
+    espn_nicknames: set[tuple[str, str]] = set()
+    for g in espn_games:
+        hn = g["home_team"].split()[-1].lower()
+        an = g["away_team"].split()[-1].lower()
+        espn_nicknames.add((hn, an))
+        espn_nicknames.add((an, hn))  # also reversed for flexibility
+
+    def _matches_espn(row) -> bool:
+        hn = str(row["home_team"]).split()[-1].lower()
+        an = str(row["away_team"]).split()[-1].lower()
+        return (hn, an) in espn_nicknames
+
+    mask = picks_df.apply(_matches_espn, axis=1)
+    return picks_df[mask].copy()
 
 
 def _has_today_games(picks_df, today: date) -> bool:
@@ -127,11 +191,22 @@ def run_nba() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
-        # BallDontLie returns the full season (past + future); picks_df may have
-        # hundreds of upcoming games but none for today → fall back to ESPN.
+
+        # ESPN is the authoritative source for today's schedule.
+        # Cross-validate BallDontLie predictions: keep only games ESPN confirms.
+        espn_today = fetch_espn_scoreboard_games("nba")
+        if espn_today:
+            picks_df = _filter_by_espn(picks_df, espn_today)
+
+        # If nothing survived the cross-validation (BDL had no matching games),
+        # fall back to building picks directly from ESPN schedule.
         if not _has_today_games(picks_df, date.today()):
             picks_df = _picks_from_espn_schedule("nba", ds, "nba")
+
         espn_ctx = get_espn_context("nba")
+        # ESPN standings API no longer returns data — compute from BDL history
+        if not espn_ctx.get("all_teams"):
+            espn_ctx["all_teams"] = _standings_from_dataset(ds)
         return _ok(picks_df, metrics, "nba", espn_ctx)
     except Exception as exc:
         return _error(exc)
@@ -147,9 +222,17 @@ def run_nhl() -> dict:
         )
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
+
+        espn_today = fetch_espn_scoreboard_games("nhl")
+        if espn_today:
+            picks_df = _filter_by_espn(picks_df, espn_today)
+
         if not _has_today_games(picks_df, date.today()):
             picks_df = _picks_from_espn_schedule("nhl", ds, "nhl")
+
         espn_ctx = get_espn_context("nhl")
+        if not espn_ctx.get("all_teams"):
+            espn_ctx["all_teams"] = _standings_from_dataset(ds)
         return _ok(picks_df, metrics, "nhl", espn_ctx)
     except Exception as exc:
         return _error(exc)
@@ -170,6 +253,8 @@ def run_mlb() -> dict:
         metrics = train_model(ds).metrics
         picks_df = predict_model(ds, top_n=200)
         espn_ctx = get_espn_context("mlb")
+        if not espn_ctx.get("all_teams"):
+            espn_ctx["all_teams"] = _standings_from_dataset(ds)
         return _ok(picks_df, metrics, "mlb", espn_ctx)
     except Exception as exc:
         return _error(exc)
