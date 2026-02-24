@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-24T23:27:06Z",
+  "generated_at": "2026-02-24T23:42:38Z",
   "date": "2026-02-24",
   "sports": {
     "nba": {
@@ -27,7 +27,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ — → Apostar ML Chicago Bulls (modelo 70%)"
+          "note": "✅ 5-1 vs 3-4 — → Apostar ML Chicago Bulls (modelo 70%)"
         },
         {
           "home_team": "Milwaukee Bucks",
@@ -46,7 +46,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ — → Apostar ML Milwaukee Bucks (modelo 65%)"
+          "note": "⚠️ 5-2 vs 3-3 — → Apostar ML Milwaukee Bucks (modelo 65%)"
         },
         {
           "home_team": "Los Angeles Lakers",
@@ -65,7 +65,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ — → Apostar ML Los Angeles Lakers (modelo 61%)"
+          "note": "⚠️ 5-2 vs 3-4 — → Apostar ML Los Angeles Lakers (modelo 61%)"
         },
         {
           "home_team": "Cleveland Cavaliers",
@@ -84,7 +84,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Cleveland Cavaliers (modelo 59%)"
+          "note": "❌ 4-3 vs 4-3 — → Apostar ML Cleveland Cavaliers (modelo 59%)"
         },
         {
           "home_team": "Portland Trail Blazers",
@@ -103,7 +103,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Portland Trail Blazers (modelo 59%)"
+          "note": "❌ 4-2 vs 4-3 — → Apostar ML Portland Trail Blazers (modelo 59%)"
         },
         {
           "home_team": "Atlanta Hawks",
@@ -122,7 +122,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Atlanta Hawks (modelo 58%)"
+          "note": "❌ 3-4 vs 1-6 — → Apostar ML Atlanta Hawks (modelo 58%)"
         },
         {
           "home_team": "Toronto Raptors",
@@ -141,7 +141,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Toronto Raptors (modelo 57%)"
+          "note": "❌ 3-4 vs 7-0 — → Apostar ML Toronto Raptors (modelo 57%)"
         },
         {
           "home_team": "Brooklyn Nets",
@@ -160,7 +160,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Dallas Mavericks (modelo 55%)"
+          "note": "❌ 0-7 vs 2-5 — → Apostar ML Dallas Mavericks (modelo 55%)"
         },
         {
           "home_team": "New Orleans Pelicans",
@@ -179,7 +179,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Golden State Warriors (modelo 52%)"
+          "note": "❌ 0-6 vs 4-3 — → Apostar ML Golden State Warriors (modelo 52%)"
         },
         {
           "home_team": "Indiana Pacers",
@@ -198,7 +198,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Indiana Pacers (modelo 51%)"
+          "note": "❌ 1-6 vs 5-1 — → Apostar ML Indiana Pacers (modelo 51%)"
         },
         {
           "home_team": "Phoenix Suns",
@@ -217,7 +217,7 @@
           "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ — → Apostar ML Phoenix Suns (modelo 50%)"
+          "note": "❌ 3-4 vs 3-5 — → Apostar ML Phoenix Suns (modelo 50%)"
         }
       ],
       "name": "NBA",
