@@ -1,16 +1,20 @@
 {
-  "generated_at": "2026-02-24T02:32:23Z",
+  "generated_at": "2026-02-24T02:41:52Z",
   "date": "2026-02-24",
   "sports": {
     "nba": {
       "status": "error",
-      "reason": "LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'",
+      "reason": "No upcoming games found in dataset. Fetch current season and ensure scheduled games exist.",
       "picks": [],
       "name": "NBA"
     },
     "nhl": {
-      "status": "error",
-      "reason": "Not enough finished games to train (31). Fetch more seasons or leagues.",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5258,
+        "logloss": 0.6918,
+        "brier": 0.2493
+      },
       "picks": [],
       "name": "NHL"
     },
@@ -21,51 +25,545 @@
       "name": "MLB"
     },
     "epl": {
-      "status": "error",
-      "reason": "LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.4545,
+        "logloss": 1.0439,
+        "brier": 0.2093
+      },
       "picks": [],
       "name": "Premier League"
     },
     "laliga": {
-      "status": "error",
-      "reason": "LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.44,
+        "logloss": 1.0338,
+        "brier": 0.2076
+      },
       "picks": [],
       "name": "La Liga"
     },
     "ligue1": {
-      "status": "error",
-      "reason": "LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5714,
+        "logloss": 0.9621,
+        "brier": 0.1909
+      },
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
-      "status": "error",
-      "reason": "LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5714,
+        "logloss": 0.9886,
+        "brier": 0.1902
+      },
       "picks": [],
       "name": "Bundesliga"
     },
     "primeira": {
-      "status": "error",
-      "reason": "LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5238,
+        "logloss": 0.9563,
+        "brier": 0.1884
+      },
       "picks": [],
       "name": "Primeira Liga"
     },
     "ucl": {
-      "status": "error",
-      "reason": "LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'",
-      "picks": [],
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.4839,
+        "logloss": 1.0379,
+        "brier": 0.2116
+      },
+      "picks": [
+        {
+          "home_team": "Newcastle United FC",
+          "away_team": "Qarabağ Ağdam FK",
+          "pick": "H",
+          "pick_label": "Newcastle United FC",
+          "p_win": 0.8135,
+          "implied_odds": 1.23,
+          "signal": "alta",
+          "date": "2026-02-24"
+        },
+        {
+          "home_team": "Bayer 04 Leverkusen",
+          "away_team": "PAE Olympiakos SFP",
+          "pick": "H",
+          "pick_label": "Bayer 04 Leverkusen",
+          "p_win": 0.6866,
+          "implied_odds": 1.46,
+          "signal": "media",
+          "date": "2026-02-24"
+        },
+        {
+          "home_team": "Club Atlético de Madrid",
+          "away_team": "Club Brugge KV",
+          "pick": "H",
+          "pick_label": "Club Atlético de Madrid",
+          "p_win": 0.614,
+          "implied_odds": 1.63,
+          "signal": "media",
+          "date": "2026-02-24"
+        },
+        {
+          "home_team": "FC Internazionale Milano",
+          "away_team": "FK Bodø/Glimt",
+          "pick": "H",
+          "pick_label": "FC Internazionale Milano",
+          "p_win": 0.5129,
+          "implied_odds": 1.95,
+          "signal": "baja",
+          "date": "2026-02-24"
+        },
+        {
+          "home_team": "Real Madrid CF",
+          "away_team": "Sport Lisboa e Benfica",
+          "pick": "H",
+          "pick_label": "Real Madrid CF",
+          "p_win": 0.757,
+          "implied_odds": 1.32,
+          "signal": "alta",
+          "date": "2026-02-25"
+        },
+        {
+          "home_team": "Paris Saint-Germain FC",
+          "away_team": "AS Monaco FC",
+          "pick": "H",
+          "pick_label": "Paris Saint-Germain FC",
+          "p_win": 0.7165,
+          "implied_odds": 1.4,
+          "signal": "alta",
+          "date": "2026-02-25"
+        },
+        {
+          "home_team": "Juventus FC",
+          "away_team": "Galatasaray SK",
+          "pick": "H",
+          "pick_label": "Juventus FC",
+          "p_win": 0.5478,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-02-25"
+        },
+        {
+          "home_team": "Atalanta BC",
+          "away_team": "Borussia Dortmund",
+          "pick": "H",
+          "pick_label": "Atalanta BC",
+          "p_win": 0.4583,
+          "implied_odds": 2.18,
+          "signal": "baja",
+          "date": "2026-02-25"
+        }
+      ],
       "name": "Champions League"
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Real Madrid CF vs Sport Lisboa e Benfica",
+              "pick": "Real Madrid CF",
+              "p_win": 0.757,
+              "implied_odds": 1.32
+            },
+            {
+              "sport": "ucl",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7165,
+              "implied_odds": 1.4
+            },
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs Club Brugge KV",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.614,
+              "implied_odds": 1.63
+            }
+          ],
+          "total_odds": 3.01,
+          "combined_prob": 0.333,
+          "n_legs": 3
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Juventus FC vs Galatasaray SK",
+              "pick": "Juventus FC",
+              "p_win": 0.5478,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "ucl",
+              "match": "Atalanta BC vs Borussia Dortmund",
+              "pick": "Atalanta BC",
+              "p_win": 0.4583,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 3.99,
+          "combined_prob": 0.2511,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7165,
+              "implied_odds": 1.4
+            },
+            {
+              "sport": "ucl",
+              "match": "Juventus FC vs Galatasaray SK",
+              "pick": "Juventus FC",
+              "p_win": 0.5478,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "ucl",
+              "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+              "pick": "FC Internazionale Milano",
+              "p_win": 0.5129,
+              "implied_odds": 1.95
+            }
+          ],
+          "total_odds": 5.0,
+          "combined_prob": 0.2013,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7165,
+              "implied_odds": 1.4
+            },
+            {
+              "sport": "ucl",
+              "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+              "pick": "FC Internazionale Milano",
+              "p_win": 0.5129,
+              "implied_odds": 1.95
+            },
+            {
+              "sport": "ucl",
+              "match": "Atalanta BC vs Borussia Dortmund",
+              "pick": "Atalanta BC",
+              "p_win": 0.4583,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 5.95,
+          "combined_prob": 0.1684,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Newcastle United FC vs Qarabağ Ağdam FK",
+              "pick": "Newcastle United FC",
+              "p_win": 0.8135,
+              "implied_odds": 1.23
+            },
+            {
+              "sport": "ucl",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7165,
+              "implied_odds": 1.4
+            },
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs Club Brugge KV",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.614,
+              "implied_odds": 1.63
+            },
+            {
+              "sport": "ucl",
+              "match": "Juventus FC vs Galatasaray SK",
+              "pick": "Juventus FC",
+              "p_win": 0.5478,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "ucl",
+              "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+              "pick": "FC Internazionale Milano",
+              "p_win": 0.5129,
+              "implied_odds": 1.95
+            }
+          ],
+          "total_odds": 10.02,
+          "combined_prob": 0.1006,
+          "n_legs": 5
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Newcastle United FC vs Qarabağ Ağdam FK",
+              "pick": "Newcastle United FC",
+              "p_win": 0.8135,
+              "implied_odds": 1.23
+            },
+            {
+              "sport": "ucl",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7165,
+              "implied_odds": 1.4
+            },
+            {
+              "sport": "ucl",
+              "match": "Bayer 04 Leverkusen vs PAE Olympiakos SFP",
+              "pick": "Bayer 04 Leverkusen",
+              "p_win": 0.6866,
+              "implied_odds": 1.46
+            },
+            {
+              "sport": "ucl",
+              "match": "Juventus FC vs Galatasaray SK",
+              "pick": "Juventus FC",
+              "p_win": 0.5478,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "ucl",
+              "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+              "pick": "FC Internazionale Milano",
+              "p_win": 0.5129,
+              "implied_odds": 1.95
+            },
+            {
+              "sport": "ucl",
+              "match": "Atalanta BC vs Borussia Dortmund",
+              "pick": "Atalanta BC",
+              "p_win": 0.4583,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 19.56,
+          "combined_prob": 0.0515,
+          "n_legs": 6
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "ucl",
+            "match": "Real Madrid CF vs Sport Lisboa e Benfica",
+            "pick": "Real Madrid CF",
+            "p_win": 0.757,
+            "implied_odds": 1.32
+          },
+          {
+            "sport": "ucl",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7165,
+            "implied_odds": 1.4
+          },
+          {
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs Club Brugge KV",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.614,
+            "implied_odds": 1.63
+          }
+        ],
+        "total_odds": 3.01,
+        "combined_prob": 0.333,
+        "n_legs": 3
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "ucl",
+            "match": "Juventus FC vs Galatasaray SK",
+            "pick": "Juventus FC",
+            "p_win": 0.5478,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "ucl",
+            "match": "Atalanta BC vs Borussia Dortmund",
+            "pick": "Atalanta BC",
+            "p_win": 0.4583,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 3.99,
+        "combined_prob": 0.2511,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "ucl",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7165,
+            "implied_odds": 1.4
+          },
+          {
+            "sport": "ucl",
+            "match": "Juventus FC vs Galatasaray SK",
+            "pick": "Juventus FC",
+            "p_win": 0.5478,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "ucl",
+            "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+            "pick": "FC Internazionale Milano",
+            "p_win": 0.5129,
+            "implied_odds": 1.95
+          }
+        ],
+        "total_odds": 5.0,
+        "combined_prob": 0.2013,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "ucl",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7165,
+            "implied_odds": 1.4
+          },
+          {
+            "sport": "ucl",
+            "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+            "pick": "FC Internazionale Milano",
+            "p_win": 0.5129,
+            "implied_odds": 1.95
+          },
+          {
+            "sport": "ucl",
+            "match": "Atalanta BC vs Borussia Dortmund",
+            "pick": "Atalanta BC",
+            "p_win": 0.4583,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 5.95,
+        "combined_prob": 0.1684,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "ucl",
+            "match": "Newcastle United FC vs Qarabağ Ağdam FK",
+            "pick": "Newcastle United FC",
+            "p_win": 0.8135,
+            "implied_odds": 1.23
+          },
+          {
+            "sport": "ucl",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7165,
+            "implied_odds": 1.4
+          },
+          {
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs Club Brugge KV",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.614,
+            "implied_odds": 1.63
+          },
+          {
+            "sport": "ucl",
+            "match": "Juventus FC vs Galatasaray SK",
+            "pick": "Juventus FC",
+            "p_win": 0.5478,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "ucl",
+            "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+            "pick": "FC Internazionale Milano",
+            "p_win": 0.5129,
+            "implied_odds": 1.95
+          }
+        ],
+        "total_odds": 10.02,
+        "combined_prob": 0.1006,
+        "n_legs": 5
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "ucl",
+            "match": "Newcastle United FC vs Qarabağ Ağdam FK",
+            "pick": "Newcastle United FC",
+            "p_win": 0.8135,
+            "implied_odds": 1.23
+          },
+          {
+            "sport": "ucl",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7165,
+            "implied_odds": 1.4
+          },
+          {
+            "sport": "ucl",
+            "match": "Bayer 04 Leverkusen vs PAE Olympiakos SFP",
+            "pick": "Bayer 04 Leverkusen",
+            "p_win": 0.6866,
+            "implied_odds": 1.46
+          },
+          {
+            "sport": "ucl",
+            "match": "Juventus FC vs Galatasaray SK",
+            "pick": "Juventus FC",
+            "p_win": 0.5478,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "ucl",
+            "match": "FC Internazionale Milano vs FK Bodø/Glimt",
+            "pick": "FC Internazionale Milano",
+            "p_win": 0.5129,
+            "implied_odds": 1.95
+          },
+          {
+            "sport": "ucl",
+            "match": "Atalanta BC vs Borussia Dortmund",
+            "pick": "Atalanta BC",
+            "p_win": 0.4583,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 19.56,
+        "combined_prob": 0.0515,
+        "n_legs": 6
+      }
     }
   }
 }
