@@ -9,83 +9,97 @@ from ..utils import ensure_dir
 
 ODDS_API_BASE = "https://api.the-odds-api.com/v4"
 
+SPORT_KEYS = {
+    "nba": "basketball_nba",
+    "nhl": "icehockey_nhl",
+    "mlb": "baseball_mlb",
+}
 
-def fetch_live_odds_nba(today: date | None = None) -> Path:
-    """Fetch live NBA H2H odds from The Odds API (free tier: 500 req/month).
 
-    Calls /sports/basketball_nba/odds with regions=us, markets=h2h,
-    oddsFormat=decimal. Takes the best (maximum) decimal odds across all
-    bookmakers for each side.
+def fetch_live_odds(sport: str, today: date | None = None) -> Path | None:
+    """Fetch live H2H + spreads for a sport from The Odds API.
 
-    Requires ODDS_API_KEY in .env.
-
-    Args:
-        today: Date label for the output filename. Defaults to date.today().
-
-    Returns:
-        Path to data/raw/nba/odds_live_{YYYY-MM-DD}.csv
-        Columns: date, home_team, away_team, odds_H, odds_A
-
-    Raises:
-        RuntimeError: if ODDS_API_KEY is not set or the request fails.
+    Returns path to CSV with columns:
+        date, home_team, away_team,
+        odds_H, odds_A,           -- decimal moneyline (best available)
+        spread_home, spread_away  -- point spread lines (home / away)
+    Returns None if ODDS_API_KEY not set or sport not supported.
     """
     api_key = env("ODDS_API_KEY")
     if not api_key:
-        raise RuntimeError("ODDS_API_KEY is required. Add it to .env")
+        return None
+    sport_key = SPORT_KEYS.get(sport)
+    if not sport_key:
+        return None
 
     if today is None:
         today = date.today()
 
-    out_dir = RAW_DIR / "nba"
+    out_dir = RAW_DIR / sport
     ensure_dir(out_dir)
-
     client = HttpClient(min_delay_s=0.5, timeout_s=30)
-    data = client.get_json(
-        f"{ODDS_API_BASE}/sports/basketball_nba/odds/",
-        params={
-            "apiKey": api_key,
-            "regions": "us",
-            "markets": "h2h",
-            "oddsFormat": "decimal",
-        },
-    )
 
-    rows = []
-    for game in data:
-        game_date = str(game.get("commence_time", ""))[:10]  # "YYYY-MM-DD"
-        home_team = game.get("home_team", "")
-        away_team = game.get("away_team", "")
+    rows: dict[tuple, dict] = {}
 
-        best_home: float | None = None
-        best_away: float | None = None
+    for market in ("h2h", "spreads"):
+        try:
+            data = client.get_json(
+                f"{ODDS_API_BASE}/sports/{sport_key}/odds/",
+                params={
+                    "apiKey": api_key,
+                    "regions": "us",
+                    "markets": market,
+                    "oddsFormat": "decimal",
+                },
+            )
+        except Exception as exc:
+            warnings.warn(f"Odds API {market} fetch failed for {sport}: {exc}")
+            continue
 
-        for bm in game.get("bookmakers", []):
-            for market in bm.get("markets", []):
-                if market.get("key") != "h2h":
-                    continue
-                for outcome in market.get("outcomes", []):
-                    price = outcome.get("price")
-                    name = outcome.get("name", "")
-                    if name == home_team:
-                        if best_home is None or price > best_home:
-                            best_home = price
-                    elif name == away_team:
-                        if best_away is None or price > best_away:
-                            best_away = price
+        for game in data:
+            game_date = str(game.get("commence_time", ""))[:10]
+            home = game.get("home_team", "")
+            away = game.get("away_team", "")
+            key = (game_date, home, away)
+            if key not in rows:
+                rows[key] = {"date": game_date, "home_team": home, "away_team": away,
+                             "odds_H": None, "odds_A": None,
+                             "spread_home": None, "spread_away": None}
 
-        if home_team and away_team:
-            rows.append({
-                "date": game_date,
-                "home_team": home_team,
-                "away_team": away_team,
-                "odds_H": best_home,
-                "odds_A": best_away,
-            })
+            for bm in game.get("bookmakers", []):
+                for mkt in bm.get("markets", []):
+                    if mkt.get("key") != market:
+                        continue
+                    for outcome in mkt.get("outcomes", []):
+                        price = outcome.get("price")
+                        name = outcome.get("name", "")
+                        point = outcome.get("point")
+                        if market == "h2h":
+                            if name == home:
+                                if rows[key]["odds_H"] is None or price > rows[key]["odds_H"]:
+                                    rows[key]["odds_H"] = price
+                            elif name == away:
+                                if rows[key]["odds_A"] is None or price > rows[key]["odds_A"]:
+                                    rows[key]["odds_A"] = price
+                        elif market == "spreads":
+                            if name == home and point is not None:
+                                rows[key]["spread_home"] = point
+                            elif name == away and point is not None:
+                                rows[key]["spread_away"] = point
 
     if not rows:
-        warnings.warn("fetch_live_odds_nba: No odds returned from The Odds API.")
+        warnings.warn(f"fetch_live_odds: No odds returned for {sport}.")
+        return None
 
-    df = pd.DataFrame(rows, columns=["date", "home_team", "away_team", "odds_H", "odds_A"])
+    df = pd.DataFrame(list(rows.values()))
     p = out_dir / f"odds_live_{today.isoformat()}.csv"
     df.to_csv(p, index=False)
     return p
+
+
+# Keep old name for backward compatibility
+def fetch_live_odds_nba(today: date | None = None) -> Path:
+    result = fetch_live_odds("nba", today)
+    if result is None:
+        raise RuntimeError("ODDS_API_KEY is required. Add it to .env")
+    return result

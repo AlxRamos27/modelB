@@ -39,6 +39,7 @@ from src.data.balldontlie_nba import fetch_nba_games
 from src.data.mlb_statsapi import fetch_mlb_schedule
 from src.data.nhl_api import fetch_nhl_schedule
 from src.data.espn_api import get_espn_context
+from src.data.odds_api import fetch_live_odds
 from src.pipeline import build_dataset_soccer, build_dataset_two_way
 from src.modeling import train as train_model, predict as predict_model
 
@@ -165,8 +166,49 @@ def _match_injuries(injuries_by_team: dict, team_name: str) -> list[dict]:
     return []
 
 
-def _claude_game_notes(sport: str, picks: list[dict]) -> list[str]:
-    """One Claude call → one short note per pick."""
+def _model_spread(p_win: float, kind: str) -> float | None:
+    """Convert win probability to implied point spread.
+
+    Uses sport-specific standard deviation of margin of victory:
+    - NBA: ~14.6 pts  → spread = 14.6 * ln(p/(1-p))
+    - NHL: ~1.5 goals → spread = 1.5 * ln(p/(1-p))
+    Soccer: not applicable (returns None)
+    """
+    import math
+    if p_win <= 0.01 or p_win >= 0.99:
+        return None
+    logit = math.log(p_win / (1 - p_win))
+    sd = {"nba": 14.6, "nhl": 1.5, "mlb": 1.8}.get(kind)
+    if sd is None:
+        return None
+    return round(logit * sd, 1)
+
+
+def _build_odds_lookup(sport: str) -> dict:
+    """Fetch live odds and return dict keyed by (home_team, away_team)."""
+    try:
+        path = fetch_live_odds(sport)
+        if not path or not path.exists():
+            return {}
+        import pandas as pd
+        df = pd.read_csv(path)
+        lookup = {}
+        for _, row in df.iterrows():
+            key = (str(row.get("home_team", "")), str(row.get("away_team", "")))
+            lookup[key] = {
+                "odds_H": row.get("odds_H"),
+                "odds_A": row.get("odds_A"),
+                "spread_home": row.get("spread_home"),
+                "spread_away": row.get("spread_away"),
+            }
+        return lookup
+    except Exception as exc:
+        warnings.warn(f"Odds lookup failed for {sport}: {exc}")
+        return {}
+
+
+def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = None) -> list[str]:
+    """One Claude call → one rich note per pick (✅/⚠️ + injuries + record + recommendation)."""
     api_key = env("ANTHROPIC_API_KEY")
     if not api_key or not picks:
         return [""] * len(picks)
@@ -175,25 +217,57 @@ def _claude_game_notes(sport: str, picks: list[dict]) -> list[str]:
         client = anthropic.Anthropic(api_key=api_key)
         label = SPORT_LABELS.get(sport, sport.upper())
 
+        # Build standings lookup from ESPN context
+        standings: dict[str, str] = {}
+        if espn_ctx and espn_ctx.get("top_teams"):
+            for t in espn_ctx["top_teams"]:
+                team = t.get("team", "")
+                w, l = t.get("wins", "?"), t.get("losses", "?")
+                standings[team.lower()] = f"{w}-{l}"
+
+        def get_record(team_name: str) -> str:
+            tl = team_name.lower()
+            for k, v in standings.items():
+                if tl in k or k in tl or tl.split()[-1] == k.split()[-1]:
+                    return v
+            return ""
+
         lines = []
         for i, p in enumerate(picks):
-            inj_h = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_home", [])[:3]) or "sin bajas"
-            inj_a = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_away", [])[:3]) or "sin bajas"
-            lines.append(
-                f"{i+1}. {p['home_team']} vs {p['away_team']} | "
-                f"pick: {p['pick_label']} ({p['p_win']*100:.0f}%, señal {p['signal']}) | "
-                f"bajas local: {inj_h} | bajas visitante: {inj_a}"
-            )
+            inj_h = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_home", [])[:2]) or "sin bajas"
+            inj_a = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_away", [])[:2]) or "sin bajas"
+            rec_h = get_record(p["home_team"])
+            rec_a = get_record(p["away_team"])
+            model_s = p.get("model_spread")
+            house_s = p.get("house_spread")
+            edge = p.get("edge_pct")
+
+            parts = [
+                f"{i+1}. {p['home_team']}{' (' + rec_h + ')' if rec_h else ''} vs "
+                f"{p['away_team']}{' (' + rec_a + ')' if rec_a else ''}",
+                f"pick={p['pick_label']} ({p['p_win']*100:.0f}%, señal {p['signal']})",
+                f"bajas local: {inj_h}",
+                f"bajas visitante: {inj_a}",
+            ]
+            if model_s is not None:
+                parts.append(f"spread modelo: {model_s:+.1f}")
+            if house_s is not None:
+                parts.append(f"línea casa: {house_s:+.1f}")
+            if edge is not None:
+                alineado = "✅ alineado" if abs(edge) <= 5 else "⚠️ diferencia"
+                parts.append(alineado)
+            lines.append(" | ".join(parts))
 
         prompt = (
-            f"Eres analista de {label}. Para cada partido genera UNA nota corta (máx 18 palabras) en español. "
-            f"Menciona lesiones importantes si las hay y la confianza del modelo. "
-            f"Responde ÚNICAMENTE con un array JSON de strings (uno por partido, mismo orden).\n\n"
+            f"Eres analista de {label}. Para cada partido genera UNA nota (máx 22 palabras) en español.\n"
+            f"Incluye: ✅ si el modelo coincide con la casa / ⚠️ si hay diferencia significativa, "
+            f"lesiones clave si las hay, récord del equipo favorito, y termina con ML (moneyline), O/U, o SKIP.\n"
+            f"Responde ÚNICAMENTE con un array JSON de strings (mismo orden).\n\n"
             + "\n".join(lines)
         )
         msg = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=600,
+            max_tokens=800,
             messages=[{"role": "user", "content": prompt}],
         )
         text = msg.content[0].text.strip()
@@ -208,8 +282,15 @@ def _claude_game_notes(sport: str, picks: list[dict]) -> list[str]:
 
 def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> dict:
     import pandas as pd
+    from src.pipeline import Dataset  # just for kind detection
     today = date.today()
     today_str = today.isoformat()
+
+    # Determine sport kind for spread calc
+    kind = sport if sport in ("nba", "nhl", "mlb") else "soccer"
+
+    # Fetch live odds (optional — silently skipped if no key)
+    odds_lookup = _build_odds_lookup(sport) if kind != "soccer" else {}
 
     # Build injury lookup by team name
     injuries_by_team: dict = {}
@@ -261,29 +342,57 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         home_team = str(row["home_team"])
         away_team = str(row["away_team"])
 
+        # House odds lookup
+        house = odds_lookup.get((home_team, away_team), {})
+        house_ml_h = house.get("odds_H")   # decimal moneyline home
+        house_ml_a = house.get("odds_A")   # decimal moneyline away
+        house_spread_home = house.get("spread_home")
+        house_spread_away = house.get("spread_away")
+
+        # Model spread (implied from p_win)
+        model_s = _model_spread(p_win if pick == "H" else 1 - p_win, kind)
+        if model_s is not None and pick == "A":
+            model_s = -model_s  # flip sign for away pick
+
+        # House spread for the picked side
+        house_s = house_spread_home if pick == "H" else house_spread_away
+
+        # Edge = model% - house implied%
+        house_implied = None
+        if pick == "H" and house_ml_h:
+            house_implied = round(1.0 / house_ml_h * 100, 1)
+        elif pick == "A" and house_ml_a:
+            house_implied = round(1.0 / house_ml_a * 100, 1)
+        edge_pct = round(p_win * 100 - house_implied, 1) if house_implied else None
+
         picks.append({
-            "home_team":      home_team,
-            "away_team":      away_team,
-            "pick":           pick,
-            "pick_label":     str(pick_label),
-            "p_win":          round(p_win, 4),
-            "implied_odds":   implied_odds,
-            "signal":         signal,
-            "date":           game_date,
-            "injuries_home":  _match_injuries(injuries_by_team, home_team),
-            "injuries_away":  _match_injuries(injuries_by_team, away_team),
-            "note":           "",
+            "home_team":        home_team,
+            "away_team":        away_team,
+            "pick":             pick,
+            "pick_label":       str(pick_label),
+            "p_win":            round(p_win, 4),
+            "implied_odds":     implied_odds,
+            "signal":           signal,
+            "date":             game_date,
+            "model_spread":     model_s,
+            "house_spread":     house_s,
+            "house_odds":       house_ml_h if pick == "H" else house_ml_a,
+            "house_implied_pct": house_implied,
+            "edge_pct":         edge_pct,
+            "injuries_home":    _match_injuries(injuries_by_team, home_team),
+            "injuries_away":    _match_injuries(injuries_by_team, away_team),
+            "note":             "",
         })
 
     # Generate per-game Claude notes
     if picks:
-        notes = _claude_game_notes(sport, picks)
+        notes = _claude_game_notes(sport, picks, espn_ctx)
         for i, note in enumerate(notes):
             if i < len(picks):
                 picks[i]["note"] = note
 
-    # Sort by date asc, then by p_win desc within the same day
-    picks.sort(key=lambda x: (x["date"], -x["p_win"]))
+    # Sort by p_win descending (highest confidence first)
+    picks.sort(key=lambda x: -x["p_win"])
 
     return {
         "status":  "ok",
