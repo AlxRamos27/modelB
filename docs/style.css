@@ -1,0 +1,394 @@
+/* ── PronosticoSport – Custom dark theme ── */
+
+:root {
+  --bg-base:    #0b1120;
+  --bg-card:    #111827;
+  --bg-card2:   #1a2234;
+  --bg-row:     #0f172a;
+  --bg-row-alt: #131e30;
+  --border:     #1e2d45;
+  --text:       #e2e8f0;
+  --text-muted: #64748b;
+  --accent-nba: #c9a227;
+  --accent-nhl: #0057b7;
+  --accent-mlb: #e63946;
+  --accent-soc: #16a34a;
+  --accent-ucl: #6d28d9;
+  --green:      #22c55e;
+  --yellow:     #eab308;
+  --red:        #ef4444;
+  --blue:       #3b82f6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg-base);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.9rem;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #f59e0b, #ef4444, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.update-badge {
+  background: #1e2d45;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* ── Tab navigation ── */
+.tab-nav {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 0;
+  padding: 0 0.5rem;
+}
+.tab-nav::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  padding: 0.85rem 1.1rem;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active {
+  color: var(--text);
+  font-weight: 700;
+}
+.tab-btn[data-tab="nba"].active    { border-color: var(--accent-nba); color: var(--accent-nba); }
+.tab-btn[data-tab="nhl"].active    { border-color: var(--accent-nhl); color: var(--accent-nhl); }
+.tab-btn[data-tab="mlb"].active    { border-color: var(--accent-mlb); color: var(--accent-mlb); }
+.tab-btn[data-tab="soccer"].active { border-color: var(--accent-soc); color: var(--accent-soc); }
+.tab-btn[data-tab="ucl"].active    { border-color: var(--accent-ucl); color: var(--accent-ucl); }
+.tab-btn[data-tab="parlays"].active{ border-color: #f59e0b; color: #f59e0b; }
+
+/* ── Main content ── */
+main { padding: 1.25rem; max-width: 1200px; margin: 0 auto; }
+
+.section { display: none; }
+.section.active { display: block; }
+
+/* ── Sport header card ── */
+.sport-header {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.sport-title { font-size: 1.1rem; font-weight: 700; }
+.metrics-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+.metric {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: var(--bg-row);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.metric span { color: var(--text); font-weight: 600; }
+
+/* ── Predictions table ── */
+.table-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 550px;
+}
+thead tr {
+  background: var(--bg-row);
+  border-bottom: 1px solid var(--border);
+}
+thead th {
+  padding: 0.7rem 1rem;
+  text-align: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: var(--bg-row-alt); }
+tbody tr:nth-child(even) { background: var(--bg-row); }
+tbody tr:nth-child(even):hover { background: var(--bg-row-alt); }
+td { padding: 0.8rem 1rem; vertical-align: middle; }
+.td-num { color: var(--text-muted); width: 40px; text-align: center; }
+.td-match { font-weight: 500; }
+.td-match .away { color: var(--text-muted); font-weight: 400; font-size: 0.83rem; }
+.td-pick { font-weight: 600; }
+.td-conf { font-size: 0.85rem; font-weight: 700; }
+.td-odds { font-variant-numeric: tabular-nums; }
+.td-signal { text-align: center; }
+
+/* ── Confidence bar ── */
+.conf-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.conf-fill {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--green), #16a34a);
+  min-width: 2px;
+}
+.conf-fill.medium { background: linear-gradient(90deg, var(--yellow), #ca8a04); }
+.conf-fill.low    { background: linear-gradient(90deg, var(--red), #dc2626); }
+
+/* ── Signal badge ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+.badge-alta   { background: rgba(34,197,94,0.12);  color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
+.badge-media  { background: rgba(234,179,8,0.12);  color: var(--yellow); border: 1px solid rgba(234,179,8,0.25); }
+.badge-baja   { background: rgba(239,68,68,0.12);  color: var(--red); border: 1px solid rgba(239,68,68,0.25); }
+
+/* ── Empty state ── */
+.empty-state {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+.empty-state .icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.status-error {
+  background: rgba(239,68,68,0.08);
+  border: 1px solid rgba(239,68,68,0.2);
+  color: #fca5a5;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  font-size: 0.83rem;
+}
+
+/* ── Soccer sub-tabs ── */
+.soccer-nav {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.soccer-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.soccer-btn:hover { color: var(--text); border-color: #334155; }
+.soccer-btn.active { background: rgba(22,163,74,0.15); color: var(--green); border-color: rgba(22,163,74,0.4); font-weight: 700; }
+
+/* ── Parlays section ── */
+.parlay-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.parlay-tab-btn {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.parlay-tab-btn:hover { color: var(--text); }
+.parlay-tab-btn.active { background: rgba(245,158,11,0.12); color: #fbbf24; border-color: rgba(245,158,11,0.35); font-weight: 700; }
+
+/* ── Sport accordion in parlays ── */
+.accordion {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+.accordion-header {
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+.accordion-header:hover { background: var(--bg-row-alt); }
+.accordion-title { font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 0.6rem; }
+.accordion-arrow { color: var(--text-muted); transition: transform 0.2s; }
+.accordion.open .accordion-arrow { transform: rotate(90deg); }
+.accordion-body { display: none; padding: 0.75rem 1rem 1rem; border-top: 1px solid var(--border); }
+.accordion.open .accordion-body { display: block; }
+
+/* ── Parlay cards grid ── */
+.parlay-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+/* ── Parlay card ── */
+.parlay-card {
+  background: var(--bg-row);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.parlay-card-head {
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+.parlay-target {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+.parlay-meta { font-size: 0.72rem; color: var(--text-muted); text-align: right; }
+.parlay-meta strong { color: var(--text); }
+.parlay-body { padding: 0.7rem 1rem; }
+.parlay-leg {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+.parlay-leg:last-child { border-bottom: none; }
+.leg-bullet { color: var(--text-muted); font-size: 0.7rem; margin-top: 2px; flex-shrink: 0; }
+.leg-info { flex: 1; }
+.leg-match { color: var(--text-muted); font-size: 0.72rem; }
+.leg-pick  { font-weight: 600; }
+.leg-sport-tag {
+  font-size: 0.65rem;
+  background: var(--bg-card2);
+  color: var(--text-muted);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+.leg-odds-pill {
+  background: rgba(255,255,255,0.05);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+.parlay-foot {
+  padding: 0.6rem 1rem;
+  background: var(--bg-card2);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parlay-total {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.parlay-prob { font-size: 0.72rem; color: var(--text-muted); }
+.parlay-prob span { color: var(--text); font-weight: 600; }
+
+/* Cuota color coding */
+.cuota-3  { color: #34d399; }
+.cuota-4  { color: #60a5fa; }
+.cuota-5  { color: #a78bfa; }
+.cuota-6  { color: #fb923c; }
+.cuota-10 { color: #f87171; }
+.cuota-20 { color: #fbbf24; }
+
+/* ── Loading ── */
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+}
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: #f59e0b;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  main { padding: 0.75rem; }
+  .sport-header { flex-direction: column; align-items: flex-start; }
+  .parlay-grid { grid-template-columns: 1fr; }
+  .metrics-row { gap: 0.4rem; }
+}
