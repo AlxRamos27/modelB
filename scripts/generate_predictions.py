@@ -315,7 +315,7 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
     """One Claude call → one rich note per pick (records + injuries + O/U + recommendation)."""
     api_key = env("ANTHROPIC_API_KEY")
     if not api_key or not picks:
-        return _fallback_notes(picks)
+        return _fallback_notes(picks, espn_ctx)
     try:
         import anthropic, json as _json
         client = anthropic.Anthropic(api_key=api_key)
@@ -394,20 +394,72 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             return [str(n) for n in notes]
     except Exception as exc:
         warnings.warn(f"Claude game notes failed for {sport}: {exc}")
-    return _fallback_notes(picks)
+    return _fallback_notes(picks, espn_ctx)
 
 
-def _fallback_notes(picks: list[dict]) -> list[str]:
-    """Generate basic notes from model data when Claude is unavailable."""
+def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[str]:
+    """Generate structured notes from model data when Claude is unavailable.
+
+    Includes team records (from ESPN standings), injuries, O/U line, and
+    a clear bet recommendation — everything the Claude prompt would produce.
+    """
+    # Build standings lookup: team_name.lower() → "W-L"
+    standings: dict[str, str] = {}
+    all_teams = (espn_ctx or {}).get("all_teams") or (espn_ctx or {}).get("top_teams") or []
+    for t in all_teams:
+        team = str(t.get("team") or "")
+        if team:
+            w = int(t.get("wins") or 0)
+            l = int(t.get("losses") or 0)
+            standings[team.lower()] = f"{w}-{l}"
+
+    def _record(name: str) -> str:
+        tl = name.lower()
+        for k, v in standings.items():
+            if tl in k or k in tl or (tl.split()[-1] == k.split()[-1]):
+                return v
+        return ""
+
     notes = []
     for p in picks:
         icon = "✅" if p["signal"] == "alta" else "⚠️" if p["signal"] == "media" else "❌"
-        note = f"{icon} {p['pick_label']} ML — modelo: {p['p_win']*100:.0f}%"
-        if p.get("edge_pct") is not None:
-            note += f" | Edge {p['edge_pct']:+.1f}%"
-        if p.get("house_total") is not None:
-            note += f" | O/U: {p['house_total']}"
-        notes.append(note)
+
+        rec_h = _record(p["home_team"])
+        rec_a = _record(p["away_team"])
+        records = f"{rec_h} vs {rec_a}" if (rec_h and rec_a) else (rec_h or rec_a)
+
+        # Key injuries (up to 2 per side)
+        inj_parts = []
+        for inj in (p.get("injuries_home") or [])[:2]:
+            inj_parts.append(f"{inj.get('player', '')} {inj.get('status', '')} (local)")
+        for inj in (p.get("injuries_away") or [])[:2]:
+            inj_parts.append(f"{inj.get('player', '')} {inj.get('status', '')} (visit.)")
+        inj_text = "; ".join(inj_parts)
+
+        # O/U recommendation based on model spread vs total
+        total = p.get("house_total")
+        model_s = p.get("model_spread")
+        ou_text = ""
+        if total is not None:
+            # If model spread implies high-scoring game → Alta, else → Baja
+            if model_s is not None and abs(model_s) < 3:
+                ou_text = f"Alta {total} pts"
+            else:
+                ou_text = f"O/U {total} pts"
+
+        # Edge
+        edge = p.get("edge_pct")
+        edge_text = f"Edge {edge:+.1f}%" if edge is not None else f"modelo {p['p_win']*100:.0f}%"
+
+        # Assemble: icon records — injuries — O/U → bet edge
+        parts = [f"{icon} {records}" if records else icon]
+        if inj_text:
+            parts.append(inj_text)
+        if ou_text:
+            parts.append(ou_text)
+        parts.append(f"→ Apostar ML {p['pick_label']} ({edge_text})")
+
+        notes.append(" — ".join(parts))
     return notes
 
 
