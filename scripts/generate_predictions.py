@@ -101,14 +101,13 @@ def _parse_game_date(date_val) -> date:
 
 
 def _has_today_games(picks_df, today: date) -> bool:
-    """Return True if picks_df has ≥1 game on today's PT date (or tomorrow as buffer)."""
+    """Return True if picks_df has ≥1 game on today's PT date."""
     if picks_df is None or picks_df.empty:
         return False
     today_pt = datetime.now(_PT).date()
     for _, row in picks_df.iterrows():
         try:
-            days_diff = (_parse_game_date(row["date"]) - today_pt).days
-            if 0 <= days_diff <= 1:
+            if _parse_game_date(row["date"]) == today_pt:
                 return True
         except Exception:
             pass
@@ -522,9 +521,8 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         except Exception:
             pass
 
-        # Filter: only today's PT games (allow +1 day buffer for edge cases).
-        days_diff = (game_date_obj - today).days
-        if days_diff < 0 or days_diff > 1:
+        # Filter: only today's PT games (timezone is already resolved by _parse_game_date).
+        if game_date_obj != today:
             continue
 
         # Determine the winning side and probability
