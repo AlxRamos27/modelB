@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-24T22:32:04Z",
+  "generated_at": "2026-02-24T23:03:28Z",
   "date": "2026-02-24",
   "sports": {
     "nba": {
@@ -24,9 +24,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Chicago Bulls ML — modelo: 70%"
+          "note": "✅ — → Apostar ML Chicago Bulls (modelo 70%)"
         },
         {
           "home_team": "Milwaukee Bucks",
@@ -42,9 +43,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Milwaukee Bucks ML — modelo: 65%"
+          "note": "⚠️ — → Apostar ML Milwaukee Bucks (modelo 65%)"
         },
         {
           "home_team": "Los Angeles Lakers",
@@ -60,9 +62,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Los Angeles Lakers ML — modelo: 61%"
+          "note": "⚠️ — → Apostar ML Los Angeles Lakers (modelo 61%)"
         },
         {
           "home_team": "Cleveland Cavaliers",
@@ -78,9 +81,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Cleveland Cavaliers ML — modelo: 59%"
+          "note": "❌ — → Apostar ML Cleveland Cavaliers (modelo 59%)"
         },
         {
           "home_team": "Portland Trail Blazers",
@@ -96,9 +100,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Portland Trail Blazers ML — modelo: 59%"
+          "note": "❌ — → Apostar ML Portland Trail Blazers (modelo 59%)"
         },
         {
           "home_team": "Atlanta Hawks",
@@ -114,9 +119,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Atlanta Hawks ML — modelo: 58%"
+          "note": "❌ — → Apostar ML Atlanta Hawks (modelo 58%)"
         },
         {
           "home_team": "Toronto Raptors",
@@ -132,9 +138,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Toronto Raptors ML — modelo: 57%"
+          "note": "❌ — → Apostar ML Toronto Raptors (modelo 57%)"
         },
         {
           "home_team": "Brooklyn Nets",
@@ -150,9 +157,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Dallas Mavericks ML — modelo: 55%"
+          "note": "❌ — → Apostar ML Dallas Mavericks (modelo 55%)"
         },
         {
           "home_team": "New Orleans Pelicans",
@@ -168,9 +176,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Golden State Warriors ML — modelo: 52%"
+          "note": "❌ — → Apostar ML Golden State Warriors (modelo 52%)"
         },
         {
           "home_team": "Indiana Pacers",
@@ -186,9 +195,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Indiana Pacers ML — modelo: 51%"
+          "note": "❌ — → Apostar ML Indiana Pacers (modelo 51%)"
         },
         {
           "home_team": "Phoenix Suns",
@@ -204,21 +214,18 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Phoenix Suns ML — modelo: 50%"
+          "note": "❌ — → Apostar ML Phoenix Suns (modelo 50%)"
         }
       ],
       "name": "NBA",
       "analysis": ""
     },
     "nhl": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5258,
-        "logloss": 0.6918,
-        "brier": 0.2493
-      },
+      "status": "error",
+      "reason": "Can only use .str accessor with string values, not floating",
       "picks": [],
       "name": "NHL"
     },
@@ -300,9 +307,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Real Madrid CF ML — modelo: 74%"
+          "note": "✅ — → Apostar ML Real Madrid CF (modelo 74%)"
         },
         {
           "home_team": "Paris Saint-Germain FC",
@@ -318,9 +326,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Paris Saint-Germain FC ML — modelo: 70%"
+          "note": "✅ — → Apostar ML Paris Saint-Germain FC (modelo 70%)"
         },
         {
           "home_team": "Juventus FC",
@@ -336,9 +345,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Juventus FC ML — modelo: 52%"
+          "note": "❌ — → Apostar ML Juventus FC (modelo 52%)"
         },
         {
           "home_team": "Atalanta BC",
@@ -354,9 +364,10 @@
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
+          "house_total": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Atalanta BC ML — modelo: 46%"
+          "note": "❌ — → Apostar ML Atalanta BC (modelo 46%)"
         }
       ],
       "name": "Champions League",
