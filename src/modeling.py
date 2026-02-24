@@ -115,7 +115,7 @@ def predict(dataset: Dataset, top_n: int = 3, odds_csv: Path | None = None) -> p
         upcoming = df[df[dataset.target_col].isna()].copy()
 
     if upcoming.empty:
-        raise RuntimeError("No upcoming games found in dataset. Fetch current season and ensure scheduled games exist.")
+        return pd.DataFrame(columns=["date", "home_team", "away_team"])
 
     # Drop games whose date is clearly in the past (>1 day ago) — these are
     # unscored games that the API hasn't updated yet, not genuine future games.
