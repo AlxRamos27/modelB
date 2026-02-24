@@ -18,29 +18,45 @@ def fetch_nhl_schedule(season: int) -> Path:
     ensure_dir(out_dir)
 
     client = HttpClient(min_delay_s=0.25)
-    # Schedule is available through the gamecenter endpoints; simplest: use "schedule" for a date range.
-    # We'll pull October 1 .. June 30 for the season start year.
     start_year = int(str(season_id)[:4])
-    start = f"{start_year}-10-01"
-    end = f"{start_year+1}-06-30"
+    end_date = f"{start_year+1}-06-30"
 
-    data = client.get_json(f"{BASE}/schedule/{start}", params={"endDate": end})
-    weeks = data.get("gameWeek", []) or []
+    # The NHL schedule API returns one week at a time.
+    # We iterate using nextStartDate until we reach the end of the season.
+    current_date = f"{start_year}-10-01"
     rows = []
-    for w in weeks:
-        for g in w.get("games", []) or []:
-            home = (g.get("homeTeam") or {})
-            away = (g.get("awayTeam") or {})
-            rows.append({
-                "game_id": g.get("id"),
-                "date": g.get("startTimeUTC"),
-                "status": g.get("gameState"),
-                "season": season_id,
-                "home_team": home.get("name", {}).get("default"),
-                "away_team": away.get("name", {}).get("default"),
-                "home_score": home.get("score"),
-                "away_score": away.get("score"),
-            })
+    seen_weeks = set()
+
+    while current_date <= end_date:
+        try:
+            data = client.get_json(f"{BASE}/schedule/{current_date}")
+        except Exception:
+            break
+
+        weeks = data.get("gameWeek", []) or []
+        for w in weeks:
+            week_date = w.get("date", "")
+            if week_date in seen_weeks:
+                continue
+            seen_weeks.add(week_date)
+            for g in w.get("games", []) or []:
+                home = (g.get("homeTeam") or {})
+                away = (g.get("awayTeam") or {})
+                rows.append({
+                    "game_id": g.get("id"),
+                    "date": g.get("startTimeUTC"),
+                    "status": g.get("gameState"),
+                    "season": season_id,
+                    "home_team": home.get("name", {}).get("default"),
+                    "away_team": away.get("name", {}).get("default"),
+                    "home_score": home.get("score"),
+                    "away_score": away.get("score"),
+                })
+
+        next_date = data.get("nextStartDate", "")
+        if not next_date or next_date >= end_date or next_date == current_date:
+            break
+        current_date = next_date
 
     df = pd.DataFrame(rows)
     p = out_dir / f"schedule_{season_id}.csv"

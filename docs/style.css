@@ -132,6 +132,31 @@ main { padding: 1.25rem; max-width: 1200px; margin: 0 auto; }
 }
 .metric span { color: var(--text); font-weight: 600; }
 
+/* ── Claude analysis block ── */
+.claude-analysis {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  background: linear-gradient(135deg, #0d1f3c 0%, #1a1a2e 100%);
+  border: 1px solid #2d3a5c;
+  border-left: 3px solid #7c3aed;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  color: #c4cfe8;
+  line-height: 1.55;
+}
+.claude-badge {
+  display: inline-block;
+  background: #7c3aed;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
+
 /* ── Predictions table ── */
 .table-wrap {
   background: var(--bg-card);

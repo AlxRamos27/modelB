@@ -129,6 +129,9 @@ function renderSportSection(container, league) {
       <span class="metric">Brier <span>${sport.metrics.brier.toFixed(3)}</span></span>
     </div>`;
   }
+  if (sport.analysis) {
+    html += `<div class="claude-analysis"><span class="claude-badge">🤖 Análisis</span> ${escHtml(sport.analysis)}</div>`;
+  }
   html += '</div>';
 
   // Status checks

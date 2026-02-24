@@ -62,7 +62,6 @@ def train(dataset: Dataset) -> TrainResult:
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
     clf = LogisticRegression(
-        multi_class="multinomial" if len(dataset.classes) == 3 else "auto",
         max_iter=2000,
         n_jobs=1,
     )

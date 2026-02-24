@@ -11,6 +11,7 @@ Environment variables (from .env or GitHub Secrets):
     BALLDONTLIE_API_KEY  – required for NBA
     FOOTBALL_DATA_TOKEN  – required for soccer (epl, laliga, ligue1, bundesliga, primeira, ucl)
     ODDS_API_KEY         – optional, used for live odds if available
+    ANTHROPIC_API_KEY    – optional, used for Claude AI analysis
 """
 from __future__ import annotations
 
@@ -37,6 +38,7 @@ from src.data.football_data import fetch_soccer_matches
 from src.data.balldontlie_nba import fetch_nba_games
 from src.data.mlb_statsapi import fetch_mlb_schedule
 from src.data.nhl_api import fetch_nhl_schedule
+from src.data.espn_api import get_espn_context
 from src.pipeline import build_dataset_soccer, build_dataset_two_way
 from src.modeling import train as train_model, predict as predict_model
 
@@ -294,6 +296,86 @@ def build_all_parlays(sports_results: dict) -> dict:
     return {"by_sport": by_sport, "combined": combined}
 
 
+# ── Claude AI analysis ───────────────────────────────────────────────────────
+
+SPORT_LABELS = {
+    "nba": "NBA", "nhl": "NHL", "mlb": "MLB",
+    "epl": "Premier League", "laliga": "La Liga", "ligue1": "Ligue 1",
+    "bundesliga": "Bundesliga", "primeira": "Primeira Liga", "ucl": "Champions League",
+}
+
+
+def claude_analysis(sport: str, picks: list[dict], metrics: dict) -> str:
+    """Call Claude to generate a brief narrative analysis for a sport's picks."""
+    api_key = env("ANTHROPIC_API_KEY")
+    if not api_key or not picks:
+        return ""
+    try:
+        import anthropic
+        client = anthropic.Anthropic(api_key=api_key)
+
+        top = picks[:5]
+        picks_summary = "\n".join(
+            f"- {p['home_team']} vs {p['away_team']}: pick={p['pick_label']} ({p['p_win']*100:.1f}% confianza, señal {p['signal']})"
+            for p in top
+        )
+        acc = metrics.get("accuracy", 0)
+        label = SPORT_LABELS.get(sport, sport.upper())
+
+        # Enrich with ESPN context for North American sports
+        espn_ctx = {}
+        if sport in ("nba", "nhl", "mlb"):
+            try:
+                espn_ctx = get_espn_context(sport)
+            except Exception:
+                pass
+
+        context_lines = []
+        if espn_ctx.get("top_teams"):
+            top_teams = ", ".join(t["team"] for t in espn_ctx["top_teams"][:3])
+            context_lines.append(f"Líderes actuales: {top_teams}.")
+        if espn_ctx.get("key_injuries"):
+            inj = espn_ctx["key_injuries"][:3]
+            inj_str = ", ".join(f"{i['player']} ({i['team']}, {i['status']})" for i in inj)
+            context_lines.append(f"Lesiones clave: {inj_str}.")
+        context_block = " ".join(context_lines)
+
+        prompt = (
+            f"Eres un analista deportivo. Genera un análisis breve (2-3 oraciones en español) "
+            f"para los picks de {label} de hoy. "
+            f"El modelo tiene {acc*100:.1f}% de precisión histórica. "
+            f"Picks destacados:\n{picks_summary}\n"
+            + (f"Contexto adicional (ESPN): {context_block}\n" if context_block else "")
+            + "Menciona los partidos más interesantes y la confianza general del modelo hoy. "
+            f"No garantices ganancias. Sé directo y concreto."
+        )
+
+        msg = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=250,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return msg.content[0].text.strip()
+    except Exception as exc:
+        warnings.warn(f"Claude analysis failed for {sport}: {exc}")
+        return ""
+
+
+def add_claude_analysis(results: dict) -> None:
+    """Add Claude analysis field to each sport result in-place."""
+    api_key = env("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("  [Claude] ANTHROPIC_API_KEY no configurada — análisis omitido")
+        return
+    all_sports = list(SPORT_LABELS.keys())
+    for sport in all_sports:
+        res = results.get(sport, {})
+        if res.get("status") != "ok" or not res.get("picks"):
+            continue
+        print(f"  [Claude] Analizando {SPORT_LABELS[sport]}…")
+        res["analysis"] = claude_analysis(sport, res["picks"], res.get("metrics", {}))
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 SPORT_NAMES = {
@@ -341,6 +423,10 @@ def main() -> None:
     for key, name in SPORT_NAMES.items():
         if key in results:
             results[key]["name"] = name
+
+    # ── Claude AI analysis ──
+    print("\n[Claude] Generando análisis…")
+    add_claude_analysis(results)
 
     # ── Build parlays ──
     print("\n[Parlays] Calculando combinaciones…")
