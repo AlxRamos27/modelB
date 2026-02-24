@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-24T22:25:32Z",
+  "generated_at": "2026-02-24T22:32:04Z",
   "date": "2026-02-24",
   "sports": {
     "nba": {
@@ -17,7 +17,7 @@
           "pick_label": "Chicago Bulls",
           "p_win": 0.6961,
           "implied_odds": 1.44,
-          "signal": "media",
+          "signal": "alta",
           "date": "2026-02-25",
           "model_spread": 12.1,
           "house_spread": null,
@@ -26,7 +26,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "✅ Chicago Bulls ML — modelo: 70%"
         },
         {
           "home_team": "Milwaukee Bucks",
@@ -44,7 +44,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "⚠️ Milwaukee Bucks ML — modelo: 65%"
         },
         {
           "home_team": "Los Angeles Lakers",
@@ -62,7 +62,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "⚠️ Los Angeles Lakers ML — modelo: 61%"
         },
         {
           "home_team": "Cleveland Cavaliers",
@@ -80,7 +80,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Cleveland Cavaliers ML — modelo: 59%"
         },
         {
           "home_team": "Portland Trail Blazers",
@@ -98,7 +98,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Portland Trail Blazers ML — modelo: 59%"
         },
         {
           "home_team": "Atlanta Hawks",
@@ -116,7 +116,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Atlanta Hawks ML — modelo: 58%"
         },
         {
           "home_team": "Toronto Raptors",
@@ -134,7 +134,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Toronto Raptors ML — modelo: 57%"
         },
         {
           "home_team": "Brooklyn Nets",
@@ -152,7 +152,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Dallas Mavericks ML — modelo: 55%"
         },
         {
           "home_team": "New Orleans Pelicans",
@@ -170,7 +170,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Golden State Warriors ML — modelo: 52%"
         },
         {
           "home_team": "Indiana Pacers",
@@ -188,7 +188,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Indiana Pacers ML — modelo: 51%"
         },
         {
           "home_team": "Phoenix Suns",
@@ -206,10 +206,11 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Phoenix Suns ML — modelo: 50%"
         }
       ],
-      "name": "NBA"
+      "name": "NBA",
+      "analysis": ""
     },
     "nhl": {
       "status": "ok",
@@ -301,7 +302,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "✅ Real Madrid CF ML — modelo: 74%"
         },
         {
           "home_team": "Paris Saint-Germain FC",
@@ -310,7 +311,7 @@
           "pick_label": "Paris Saint-Germain FC",
           "p_win": 0.6974,
           "implied_odds": 1.43,
-          "signal": "media",
+          "signal": "alta",
           "date": "2026-02-25",
           "model_spread": null,
           "house_spread": null,
@@ -319,7 +320,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "✅ Paris Saint-Germain FC ML — modelo: 70%"
         },
         {
           "home_team": "Juventus FC",
@@ -337,7 +338,7 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Juventus FC ML — modelo: 52%"
         },
         {
           "home_team": "Atalanta BC",
@@ -355,10 +356,11 @@
           "edge_pct": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": ""
+          "note": "❌ Atalanta BC ML — modelo: 46%"
         }
       ],
-      "name": "Champions League"
+      "name": "Champions League",
+      "analysis": ""
     }
   },
   "parlays": {
