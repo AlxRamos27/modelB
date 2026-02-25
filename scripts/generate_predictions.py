@@ -359,8 +359,13 @@ def _build_odds_lookup(sport: str) -> dict:
         return {}
 
 
-def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = None) -> list[str]:
-    """One Claude call → one rich note per pick (records + injuries + O/U + recommendation)."""
+def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = None) -> list[dict]:
+    """One Claude call → one rich note + O/U pick per game.
+
+    Returns list of {"note": str, "ou_pick": "over"|"under"|None}.
+    Claude decides Over/Under based on team tendencies, injuries and pace —
+    more accurate than the pace-formula fallback.
+    """
     api_key = env("ANTHROPIC_API_KEY")
     if not api_key or not picks:
         return _fallback_notes(picks, espn_ctx)
@@ -369,7 +374,7 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
         client = anthropic.Anthropic(api_key=api_key)
         label = SPORT_LABELS.get(sport, sport.upper())
 
-        # Build record lookup from ALL teams (not just top 5)
+        # Build record lookup
         standings: dict[str, str] = {}
         all_teams = (espn_ctx or {}).get("all_teams") or (espn_ctx or {}).get("top_teams") or []
         for t in all_teams:
@@ -392,20 +397,14 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             inj_a = "; ".join(f"{x['player']} ({x['status']})" for x in p.get("injuries_away", [])[:3]) or "sin bajas"
             rec_h = get_record(p["home_team"])
             rec_a = get_record(p["away_team"])
-            model_s = p.get("model_spread")
-            house_s = p.get("house_spread")
             edge = p.get("edge_pct")
             ou_line = p.get("ou_line") or p.get("house_total")
-            ou_pick = p.get("ou_pick")  # "over" | "under" | None
+            model_s = p.get("model_spread")
+            house_s = p.get("house_spread")
 
             align = ""
             if edge is not None:
-                align = "✅ líneas alineadas" if abs(edge) <= 3 else f"⚠️ diferencia {edge:+.1f}%"
-
-            ou_str = ""
-            if ou_line is not None:
-                direction = "Over" if ou_pick == "over" else "Under" if ou_pick == "under" else "O/U"
-                ou_str = f"{direction} {ou_line} pts"
+                align = "✅ alineado" if abs(edge) <= 3 else f"⚠️ diferencia {edge:+.1f}%"
 
             parts = [
                 f"{i+1}. {p['home_team']}{' (' + rec_h + ')' if rec_h else ''} vs "
@@ -415,34 +414,29 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
                 f"bajas visitante: {inj_a}",
             ]
             if model_s is not None:
-                parts.append(f"spread modelo: {model_s:+.1f} pts")
+                parts.append(f"spread modelo: {model_s:+.1f}")
             if house_s is not None:
-                parts.append(f"línea casa: {house_s:+.1f} pts")
-            if ou_str:
-                parts.append(ou_str)
+                parts.append(f"línea casa: {house_s:+.1f}")
+            if ou_line is not None:
+                parts.append(f"línea O/U estimada: {ou_line} pts")
             if align:
                 parts.append(align)
             lines.append(" | ".join(parts))
 
         prompt = (
-            f"Eres analista experto de {label}. Para CADA partido genera UNA nota analítica en español de 80-100 palabras.\n\n"
-            f"Estructura OBLIGATORIA (sin saltarte ninguna sección):\n"
-            f"1. ✅ Alineado  o  ⚠️ Discrepancia X pts — contexto del duelo (racha, motivación, rivalidad)\n"
-            f"2. Récords de AMBOS equipos con contexto narrativo "
-            f"(ej: 'Boston 39-16 lidera el Este; Brooklyn 21-34 en caída libre de 6 derrotas')\n"
-            f"3. Lesiones: menciona jugadores por NOMBRE y estatus "
-            f"(ej: 'LaVine y Sabonis fuera el resto del año') o 'Sin bajas importantes'\n"
-            f"4. O/U en [X] pts — Over/Under es la jugada ([razón: ritmo alto/bajo, equipos ofensivos/defensivos])\n"
-            f"5. Veredicto CLARO: 'ML [equipo] es la jugada segura (modelo X%)' "
-            f"o 'SKIP — sin edge claro'\n\n"
-            f"Usa los datos exactos del partido. No inventes jugadores ni estadísticas.\n"
-            f"Ejemplo de nota perfecta:\n"
-            f"'✅ Alineado (+0.5 pts). Boston 39-16 lidera el Este con el mejor ataque de la conferencia; "
-            f"Brooklyn 21-34 arrastra 6 derrotas seguidas. Sin bajas importantes en Boston; "
-            f"Ben Simmons fuera de temporada en Brooklyn. "
-            f"O/U en 228 pts — Over es la jugada (Boston promedia 118 pts/g, ritmo alto). "
-            f"ML Boston es la jugada segura (modelo 73%).'\n\n"
-            f"Responde ÚNICAMENTE con un array JSON de strings (mismo orden que los partidos).\n\n"
+            f"Eres analista experto de {label}. Para CADA partido genera:\n"
+            f"1. Una nota analítica en español de 80-100 palabras\n"
+            f"2. Tu predicción Over/Under basada en ofensas, defensas, lesiones y ritmo de juego\n\n"
+            f"Estructura OBLIGATORIA de la nota:\n"
+            f"- ✅ Alineado / ⚠️ Discrepancia — contexto del duelo (racha, motivación)\n"
+            f"- Récords con narrativa (ej: 'Boston 39-16 lidera el Este; Brooklyn 21-34 en caída libre')\n"
+            f"- Lesiones clave por nombre (o 'Sin bajas importantes')\n"
+            f"- Justifica tu predicción O/U: ¿por qué Over o Under? (ritmo, defensas/ofensas, bajas)\n"
+            f"- Veredicto ML: 'ML [equipo] es la jugada' o 'SKIP'\n\n"
+            f"Usa los datos del partido. No inventes jugadores ni estadísticas.\n\n"
+            f"Responde ÚNICAMENTE con un array JSON de objetos (mismo orden que los partidos):\n"
+            f'[{{"note": "texto aquí", "ou": "over"}}, {{"note": "...", "ou": "under"}}, ...]\n'
+            f'Valores válidos para "ou": "over" o "under"\n\n'
             + "\n".join(lines)
         )
         msg = client.messages.create(
@@ -453,18 +447,27 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
         text = msg.content[0].text.strip()
         s, e = text.find("["), text.rfind("]") + 1
         if s >= 0 and e > s:
-            notes = _json.loads(text[s:e])
-            return [str(n) for n in notes]
+            results = _json.loads(text[s:e])
+            out = []
+            for r in results:
+                if isinstance(r, dict):
+                    ou_raw = str(r.get("ou") or "").lower().strip()
+                    ou_pick = "over" if ou_raw == "over" else "under" if ou_raw == "under" else None
+                    out.append({"note": str(r.get("note", "")), "ou_pick": ou_pick})
+                else:
+                    # Fallback: Claude returned a plain string (old format)
+                    out.append({"note": str(r), "ou_pick": None})
+            return out
     except Exception as exc:
         warnings.warn(f"Claude game notes failed for {sport}: {exc}")
     return _fallback_notes(picks, espn_ctx)
 
 
-def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[str]:
-    """Generate structured notes from model data when Claude is unavailable.
+def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[dict]:
+    """Generate structured notes when Claude is unavailable.
 
-    Includes team records (from ESPN standings), injuries, O/U line, and
-    a clear bet recommendation — everything the Claude prompt would produce.
+    Returns list of {"note": str, "ou_pick": "over"|"under"|None}.
+    Uses pace-based O/U direction since Claude is not available.
     """
     # Build standings lookup: team_name.lower() → "W-L"
     standings: dict[str, str] = {}
@@ -556,7 +559,7 @@ def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[str
             parts.append(ou_text)
         parts.append(verdict)
 
-        notes.append(". ".join(parts) + ".")
+        notes.append({"note": ". ".join(parts) + ".", "ou_pick": ou_pick})
     return notes
 
 
@@ -696,12 +699,15 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
     # Sort by p_win descending (highest confidence first)
     picks.sort(key=lambda x: -x["p_win"])
 
-    # Generate per-game notes for all picks (Claude or fallback)
+    # Generate per-game notes (Claude or fallback).
+    # Claude also decides Over/Under direction — overrides the pace estimate.
     if picks:
-        notes = _claude_game_notes(sport, picks, espn_ctx)
-        for i, note in enumerate(notes):
+        note_data = _claude_game_notes(sport, picks, espn_ctx)
+        for i, nd in enumerate(note_data):
             if i < len(picks):
-                picks[i]["note"] = note
+                picks[i]["note"] = nd["note"]
+                if nd.get("ou_pick"):          # Claude's O/U overrides pace estimate
+                    picks[i]["ou_pick"] = nd["ou_pick"]
 
     return {
         "status":  "ok",
