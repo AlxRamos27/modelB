@@ -700,21 +700,21 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         ou_pick = None         # "over" | "under" | None — overridden by Claude later
         if ou_line is None and kind == "nba":
             try:
-                # Best estimate: sum of each team's recent scoring averages.
-                # pts_home_scored = home team avg pts at home (last 10 games)
-                # pts_away_scored = away team avg pts on road (last 10 games)
                 pts_h = float(row.get("pts_home_scored") or 0)
                 pts_a = float(row.get("pts_away_scored") or 0)
                 if pts_h >= 80 and pts_a >= 80:
                     ou_line = round(pts_h + pts_a, 1)
                 else:
-                    # Fallback: pace × 2.3 (possessions × ~2.3 pts/possession)
                     pace = float(row.get("pace_avg") or 0)
                     if pace < 50:
                         pace = 98.5
                     ou_line = round(pace * 2.3, 1)
             except Exception:
                 ou_line = 226.5
+        # Default direction: above NBA avg total (~228) → Over, else Under.
+        # Claude will override this with its own analysis when available.
+        if ou_line is not None and kind == "nba" and ou_pick is None:
+            ou_pick = "over" if ou_line > 228.0 else "under"
 
         # Model spread (implied from p_win)
         model_s = _model_spread(p_win if pick == "H" else 1 - p_win, kind)
