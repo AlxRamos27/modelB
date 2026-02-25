@@ -642,7 +642,7 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
             try:
                 pace = float(row.get("pace_avg", 0) or 0)
                 if pace > 0:
-                    ou_line = round(pace * 2.3)
+                    ou_line = round(pace * 2.3, 1)
             except Exception:
                 pass
         # Direction: compare model's expected total vs the line.

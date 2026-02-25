@@ -400,12 +400,12 @@ function signalBadge(s) {
 
 function ouCell(p) {
   if (p.ou_line == null) return '–';
-  const icon  = p.ou_pick === 'over'  ? '⬆️' : p.ou_pick === 'under' ? '⬇️' : '';
-  const label = p.ou_pick === 'over'  ? 'Over'
-              : p.ou_pick === 'under' ? 'Under' : 'O/U';
-  const color = p.ou_pick === 'over'  ? 'var(--green)'
-              : p.ou_pick === 'under' ? 'var(--red)' : 'var(--text-muted)';
-  return `<span style="color:${color};font-weight:700;white-space:nowrap">${icon} ${label} ${p.ou_line}</span>`;
+  const icon  = p.ou_pick === 'over'  ? '▲' : p.ou_pick === 'under' ? '▼' : '';
+  const label = p.ou_pick === 'over'  ? 'ALTA'
+              : p.ou_pick === 'under' ? 'BAJA' : 'O/U';
+  const color = p.ou_pick === 'over'  ? '#f97316'
+              : p.ou_pick === 'under' ? '#3b82f6' : 'var(--text-muted)';
+  return `<span style="color:${color};font-weight:700;white-space:nowrap;line-height:1.3">${icon} ${label}<br><span style="font-size:0.8em;opacity:0.85">(${p.ou_line})</span></span>`;
 }
 
 function emptyState(msg) {
