@@ -251,11 +251,21 @@ def _picks_from_espn_schedule(sport: str, ds, league: str):
         v = df_sub[col].dropna()
         return float(v.iloc[-1]) if not v.empty else fallback
 
+    def _avg_pts(df_sub: "pd.DataFrame", score_col: str, n: int = 10):
+        """Average points in score_col over last n rows; None if insufficient data."""
+        if df_sub.empty or score_col not in df_sub.columns:
+            return None
+        vals = df_sub[score_col].dropna().tail(n)
+        return round(float(vals.mean()), 1) if len(vals) >= 3 else None
+
     rows = []
     for g in games:
         home, away = g["home_team"], g["away_team"]
         home_h = _find(df_hist, home, "home_team")  # home team's home games
         away_a = _find(df_hist, away, "away_team")  # away team's away games
+        # Also grab away-team's road games for allowed-pts lookup
+        home_a = _find(df_hist, home, "away_team")
+        away_h = _find(df_hist, away, "home_team")
 
         elo_home = _latest(home_h, "elo_home_pre", 1500.0)
         elo_away = _latest(away_a, "elo_away_pre", 1500.0)
@@ -263,17 +273,41 @@ def _picks_from_espn_schedule(sport: str, ds, league: str):
         home_wr = _latest(home_h, "home_winrate_l5", 0.5)
         away_wr = _latest(away_a, "away_winrate_l5", 0.5)
 
-        # pace_avg is always stored (even outside feat_cols) so _ok() can
-        # estimate the O/U total regardless of which model variant is active.
         pace_avg = _latest(home_h, "pace_avg", 98.5)
 
+        # ── Scoring stats for O/U estimation ──────────────────────────────────
+        # home team: pts scored at home, pts allowed at home
+        pts_home_scored  = _avg_pts(home_h, "home_score")
+        pts_home_allowed = _avg_pts(home_h, "away_score")
+        # away team: pts scored on road, pts allowed on road
+        pts_away_scored  = _avg_pts(away_a, "away_score")
+        pts_away_allowed = _avg_pts(away_a, "home_score")
+        # combined recent avg (both teams' scoring)
+        pts_home_all = _avg_pts(
+            pd.concat([home_h[["home_score"]].rename(columns={"home_score": "_s"}),
+                       home_a[["away_score"]].rename(columns={"away_score": "_s"})]),
+            "_s", n=10,
+        ) if not home_h.empty or not home_a.empty else None
+        pts_away_all = _avg_pts(
+            pd.concat([away_h[["home_score"]].rename(columns={"home_score": "_s"}),
+                       away_a[["away_score"]].rename(columns={"away_score": "_s"})]),
+            "_s", n=10,
+        ) if not away_h.empty or not away_a.empty else None
+
         feat: dict = {
-            "elo_diff_pre":    elo_home - elo_away,
-            "home_winrate_l5": home_wr,
-            "away_winrate_l5": away_wr,
-            "diff_l5_gap":     home_wr - away_wr,
-            "inj_gap":         0.0,
-            "pace_avg":        pace_avg,   # kept outside feat_cols for O/U calc
+            "elo_diff_pre":       elo_home - elo_away,
+            "home_winrate_l5":    home_wr,
+            "away_winrate_l5":    away_wr,
+            "diff_l5_gap":        home_wr - away_wr,
+            "inj_gap":            0.0,
+            # O/U context — kept outside feat_cols, used by _ok() and Claude
+            "pace_avg":           pace_avg,
+            "pts_home_scored":    pts_home_scored  or 0.0,
+            "pts_home_allowed":   pts_home_allowed or 0.0,
+            "pts_away_scored":    pts_away_scored  or 0.0,
+            "pts_away_allowed":   pts_away_allowed or 0.0,
+            "pts_home_avg":       pts_home_all     or 0.0,
+            "pts_away_avg":       pts_away_all     or 0.0,
         }
         if "net_rtg_diff" in feat_cols:
             feat["net_rtg_diff"]     = _latest(home_h, "net_rtg_diff", 0.0)
@@ -402,6 +436,12 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             model_s = p.get("model_spread")
             house_s = p.get("house_spread")
 
+            # Scoring context for O/U
+            pts_hs = p.get("pts_home_scored")   # home team avg pts scored at home
+            pts_ha = p.get("pts_home_allowed")  # home team avg pts allowed at home
+            pts_as = p.get("pts_away_scored")   # away team avg pts scored away
+            pts_aa = p.get("pts_away_allowed")  # away team avg pts allowed away
+
             align = ""
             if edge is not None:
                 align = "✅ alineado" if abs(edge) <= 3 else f"⚠️ diferencia {edge:+.1f}%"
@@ -418,22 +458,35 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             if house_s is not None:
                 parts.append(f"línea casa: {house_s:+.1f}")
             if ou_line is not None:
-                parts.append(f"línea O/U estimada: {ou_line} pts")
+                parts.append(f"total estimado: {ou_line} pts")
+            # Scoring detail for Claude's O/U analysis
+            if pts_hs and pts_hs > 0:
+                parts.append(f"local anota {pts_hs} pts/partido en casa")
+            if pts_ha and pts_ha > 0:
+                parts.append(f"local permite {pts_ha} pts/partido en casa")
+            if pts_as and pts_as > 0:
+                parts.append(f"visit. anota {pts_as} pts/partido fuera")
+            if pts_aa and pts_aa > 0:
+                parts.append(f"visit. permite {pts_aa} pts/partido fuera")
             if align:
                 parts.append(align)
             lines.append(" | ".join(parts))
 
         prompt = (
-            f"Eres analista experto de {label}. Para CADA partido genera:\n"
-            f"1. Una nota analítica en español de 80-100 palabras\n"
-            f"2. Tu predicción Over/Under basada en ofensas, defensas, lesiones y ritmo de juego\n\n"
+            f"Eres analista experto de {label} con profundo conocimiento de tendencias de apuestas.\n"
+            f"Para CADA partido genera una nota analítica en español de 80-100 palabras y una predicción Over/Under.\n\n"
+            f"Para decidir Over/Under considera EN ESTE ORDEN:\n"
+            f"1. Promedios de puntos anotados/permitidos de cada equipo (los datos te los doy)\n"
+            f"2. Lesiones de jugadores clave que afecten el ataque o defensa\n"
+            f"3. Ventaja de localía (los locales suelen anotar más en casa)\n"
+            f"4. Ritmo de juego: equipos de ritmo alto → Over; defensivos → Under\n"
+            f"5. Racha reciente: ¿los últimos partidos fueron de muchos o pocos puntos?\n\n"
             f"Estructura OBLIGATORIA de la nota:\n"
-            f"- ✅ Alineado / ⚠️ Discrepancia — contexto del duelo (racha, motivación)\n"
-            f"- Récords con narrativa (ej: 'Boston 39-16 lidera el Este; Brooklyn 21-34 en caída libre')\n"
-            f"- Lesiones clave por nombre (o 'Sin bajas importantes')\n"
-            f"- Justifica tu predicción O/U: ¿por qué Over o Under? (ritmo, defensas/ofensas, bajas)\n"
+            f"- ✅ / ⚠️ + récords con narrativa (ej: 'Bulls 31-25 en forma; Hornets 18-38 en caída')\n"
+            f"- Lesiones clave por nombre\n"
+            f"- O/U: explica con los datos (ej: 'local anota 118/g, visita permite 121/g → Over claro')\n"
             f"- Veredicto ML: 'ML [equipo] es la jugada' o 'SKIP'\n\n"
-            f"Usa los datos del partido. No inventes jugadores ni estadísticas.\n\n"
+            f"IMPORTANTE: Usa los datos numéricos exactos que te doy. No inventes estadísticas.\n\n"
             f"Responde ÚNICAMENTE con un array JSON de objetos (mismo orden que los partidos):\n"
             f'[{{"note": "texto aquí", "ou": "over"}}, {{"note": "...", "ou": "under"}}, ...]\n'
             f'Valores válidos para "ou": "over" o "under"\n\n'
@@ -643,20 +696,25 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         # NBA: pace_avg (possessions/game) × 2.3 ≈ total points expected.
         # NHL: pace is not applicable; use None.
         # Soccer: goals are low-count, different logic.
-        ou_line = house_total  # prefer bookmaker line
-        ou_pick = None         # "over" | "under" | None
+        ou_line = house_total  # prefer live bookmaker line
+        ou_pick = None         # "over" | "under" | None — overridden by Claude later
         if ou_line is None and kind == "nba":
             try:
-                pace = float(row.get("pace_avg") or 0)
-                # Guard: 0 or unrealistically small means data not available yet;
-                # fall back to NBA league-average pace so we always show a line.
-                if pace < 50:
-                    pace = 98.5
-                ou_line = round(pace * 2.3, 1)
-                ou_pick = "over" if pace >= 98.5 else "under"
+                # Best estimate: sum of each team's recent scoring averages.
+                # pts_home_scored = home team avg pts at home (last 10 games)
+                # pts_away_scored = away team avg pts on road (last 10 games)
+                pts_h = float(row.get("pts_home_scored") or 0)
+                pts_a = float(row.get("pts_away_scored") or 0)
+                if pts_h >= 80 and pts_a >= 80:
+                    ou_line = round(pts_h + pts_a, 1)
+                else:
+                    # Fallback: pace × 2.3 (possessions × ~2.3 pts/possession)
+                    pace = float(row.get("pace_avg") or 0)
+                    if pace < 50:
+                        pace = 98.5
+                    ou_line = round(pace * 2.3, 1)
             except Exception:
-                ou_line = 226.6
-                ou_pick = None
+                ou_line = 226.5
 
         # Model spread (implied from p_win)
         model_s = _model_spread(p_win if pick == "H" else 1 - p_win, kind)
@@ -674,26 +732,33 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
             house_implied = round(1.0 / house_ml_a * 100, 1)
         edge_pct = round(p_win * 100 - house_implied, 1) if house_implied else None
 
+        def _f(col): return float(row.get(col) or 0) or None  # None if 0/missing
+
         picks.append({
-            "home_team":        home_team,
-            "away_team":        away_team,
-            "pick":             pick,
-            "pick_label":       str(pick_label),
-            "p_win":            round(p_win, 4),
-            "implied_odds":     implied_odds,
-            "signal":           signal,
-            "date":             game_date,
-            "model_spread":     model_s,
-            "house_spread":     house_s,
-            "house_odds":       house_ml_h if pick == "H" else house_ml_a,
+            "home_team":         home_team,
+            "away_team":         away_team,
+            "pick":              pick,
+            "pick_label":        str(pick_label),
+            "p_win":             round(p_win, 4),
+            "implied_odds":      implied_odds,
+            "signal":            signal,
+            "date":              game_date,
+            "model_spread":      model_s,
+            "house_spread":      house_s,
+            "house_odds":        house_ml_h if pick == "H" else house_ml_a,
             "house_implied_pct": house_implied,
-            "edge_pct":         edge_pct,
-            "house_total":      house_total,
-            "ou_line":          ou_line,   # bookmaker line or pace estimate
-            "ou_pick":          ou_pick,   # "over" | "under" | None
-            "injuries_home":    _match_injuries(injuries_by_team, home_team),
-            "injuries_away":    _match_injuries(injuries_by_team, away_team),
-            "note":             "",
+            "edge_pct":          edge_pct,
+            "house_total":       house_total,
+            "ou_line":           ou_line,
+            "ou_pick":           ou_pick,    # overridden by Claude below
+            # Scoring stats passed to Claude for O/U analysis
+            "pts_home_scored":   _f("pts_home_scored"),
+            "pts_home_allowed":  _f("pts_home_allowed"),
+            "pts_away_scored":   _f("pts_away_scored"),
+            "pts_away_allowed":  _f("pts_away_allowed"),
+            "injuries_home":     _match_injuries(injuries_by_team, home_team),
+            "injuries_away":     _match_injuries(injuries_by_team, away_team),
+            "note":              "",
         })
 
     # Sort by p_win descending (highest confidence first)
