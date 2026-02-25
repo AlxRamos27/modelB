@@ -644,21 +644,16 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         ou_pick = None         # "over" | "under" | None
         if ou_line is None and kind == "nba":
             try:
-                pace = float(row.get("pace_avg", 0) or 0)
-                if pace > 0:
-                    ou_line = round(pace * 2.3, 1)
+                pace = float(row.get("pace_avg") or 0)
+                # Guard: 0 or unrealistically small means data not available yet;
+                # fall back to NBA league-average pace so we always show a line.
+                if pace < 50:
+                    pace = 98.5
+                ou_line = round(pace * 2.3, 1)
+                ou_pick = "over" if pace >= 98.5 else "under"
             except Exception:
-                pass
-        # Direction: compare model's expected total vs the line.
-        # For NBA we use pace vs league average (≈98.5) as directional signal.
-        if ou_line is not None and kind == "nba":
-            try:
-                pace = float(row.get("pace_avg", 0) or 0)
-                league_avg_pace = 98.5
-                if pace > 0:
-                    ou_pick = "over" if pace >= league_avg_pace else "under"
-            except Exception:
-                pass
+                ou_line = 226.6
+                ou_pick = None
 
         # Model spread (implied from p_win)
         model_s = _model_spread(p_win if pick == "H" else 1 - p_win, kind)
