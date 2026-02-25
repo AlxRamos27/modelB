@@ -495,13 +495,16 @@ def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[str
         edge = p.get("edge_pct")
         edge_text = f"Edge {edge:+.1f}%" if edge is not None else f"modelo {p['p_win']*100:.0f}%"
 
-        # Assemble: icon records — injuries — O/U → bet edge
+        # Assemble: icon records — injuries — O/U → recommendation
         parts = [f"{icon} {records}" if records else icon]
         if inj_text:
             parts.append(inj_text)
         if ou_text:
             parts.append(ou_text)
-        parts.append(f"→ Apostar ML {p['pick_label']} ({edge_text})")
+        if p["signal"] == "baja":
+            parts.append(f"SKIP o apostar con precaución ML {p['pick_label']} ({edge_text})")
+        else:
+            parts.append(f"→ Apostar ML {p['pick_label']} ({edge_text})")
 
         notes.append(" — ".join(parts))
     return notes
@@ -619,14 +622,10 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
             "note":             "",
         })
 
-    # Only keep picks worth recommending (alta ≥70%, media ≥60%)
-    # Baja picks (50-59%) are essentially coin flips — not useful to show.
-    picks = [p for p in picks if p["signal"] in ("alta", "media")]
-
     # Sort by p_win descending (highest confidence first)
     picks.sort(key=lambda x: -x["p_win"])
 
-    # Generate per-game Claude notes (after filtering so we don't waste tokens)
+    # Generate per-game notes for all picks (Claude or fallback)
     if picks:
         notes = _claude_game_notes(sport, picks, espn_ctx)
         for i, note in enumerate(notes):
