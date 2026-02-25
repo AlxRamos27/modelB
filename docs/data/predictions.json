@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T00:26:06Z",
+  "generated_at": "2026-02-25T00:32:49Z",
   "date": "2026-02-25",
   "sports": {
     "nba": {
@@ -29,7 +29,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ 5-1 vs 3-4 — → Apostar ML Chicago Bulls (modelo 70%)"
+          "note": "✅ Modelo 70%. Bulls 5-1 vs Hornets 3-4. Sin bajas importantes. ML Bulls es la jugada segura (modelo 70%)."
         },
         {
           "home_team": "Milwaukee Bucks",
@@ -50,7 +50,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ 5-2 vs 3-3 — → Apostar ML Milwaukee Bucks (modelo 65%)"
+          "note": "⚠️ Modelo 65%. Bucks 5-2 vs Heat 3-3. Sin bajas importantes. ML Bucks con cautela (modelo 65%)."
         },
         {
           "home_team": "Los Angeles Lakers",
@@ -71,7 +71,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ 5-2 vs 3-4 — → Apostar ML Los Angeles Lakers (modelo 61%)"
+          "note": "⚠️ Modelo 61%. Lakers 5-2 vs Magic 3-4. Sin bajas importantes. ML Lakers con cautela (modelo 61%)."
         },
         {
           "home_team": "Cleveland Cavaliers",
@@ -92,7 +92,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ 4-3 vs 4-3 — SKIP o apostar con precaución ML Cleveland Cavaliers (modelo 59%)"
+          "note": "❌ Modelo 59%. Cavaliers 4-3 vs Knicks 4-3. Sin bajas importantes. SKIP — sin edge claro (59%)."
         },
         {
           "home_team": "Portland Trail Blazers",
@@ -113,7 +113,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ 4-2 vs 4-3 — SKIP o apostar con precaución ML Portland Trail Blazers (modelo 59%)"
+          "note": "❌ Modelo 59%. Blazers 4-2 vs Timberwolves 4-3. Sin bajas importantes. SKIP — sin edge claro (59%)."
         },
         {
           "home_team": "Atlanta Hawks",
@@ -134,7 +134,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ 3-4 vs 1-6 — SKIP o apostar con precaución ML Atlanta Hawks (modelo 58%)"
+          "note": "❌ Modelo 58%. Hawks 3-4 vs Wizards 1-6. Sin bajas importantes. SKIP — sin edge claro (58%)."
         },
         {
           "home_team": "Toronto Raptors",
@@ -155,7 +155,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ 3-4 vs 7-0 — SKIP o apostar con precaución ML Toronto Raptors (modelo 57%)"
+          "note": "❌ Modelo 57%. Raptors 3-4 vs Thunder 7-0. Sin bajas importantes. SKIP — sin edge claro (57%)."
         },
         {
           "home_team": "Brooklyn Nets",
@@ -176,7 +176,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ 0-7 vs 2-5 — SKIP o apostar con precaución ML Dallas Mavericks (modelo 55%)"
+          "note": "❌ Modelo 55%. Nets 0-7 vs Mavericks 2-5. Sin bajas importantes. SKIP — sin edge claro (55%)."
         },
         {
           "home_team": "New Orleans Pelicans",
@@ -197,7 +197,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ 0-6 vs 4-3 — SKIP o apostar con precaución ML Golden State Warriors (modelo 52%)"
+          "note": "❌ Modelo 52%. Pelicans 0-6 vs Warriors 4-3. Sin bajas importantes. SKIP — sin edge claro (52%)."
         },
         {
           "home_team": "Phoenix Suns",
@@ -218,7 +218,7 @@
           "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ 3-4 vs 3-5 — SKIP o apostar con precaución ML Phoenix Suns (modelo 50%)"
+          "note": "❌ Modelo 50%. Suns 3-4 vs Celtics 3-5. Sin bajas importantes. SKIP — sin edge claro (50%)."
         }
       ],
       "name": "NBA",
