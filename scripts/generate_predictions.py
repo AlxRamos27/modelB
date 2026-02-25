@@ -391,11 +391,17 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             model_s = p.get("model_spread")
             house_s = p.get("house_spread")
             edge = p.get("edge_pct")
-            total = p.get("house_total")
+            ou_line = p.get("ou_line") or p.get("house_total")
+            ou_pick = p.get("ou_pick")  # "over" | "under" | None
 
             align = ""
             if edge is not None:
                 align = "✅ líneas alineadas" if abs(edge) <= 3 else f"⚠️ diferencia {edge:+.1f}%"
+
+            ou_str = ""
+            if ou_line is not None:
+                direction = "Over" if ou_pick == "over" else "Under" if ou_pick == "under" else "O/U"
+                ou_str = f"{direction} {ou_line} pts"
 
             parts = [
                 f"{i+1}. {p['home_team']}{' (' + rec_h + ')' if rec_h else ''} vs "
@@ -408,8 +414,8 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
                 parts.append(f"spread modelo: {model_s:+.1f} pts")
             if house_s is not None:
                 parts.append(f"línea casa: {house_s:+.1f} pts")
-            if total is not None:
-                parts.append(f"O/U: {total} puntos")
+            if ou_str:
+                parts.append(ou_str)
             if align:
                 parts.append(align)
             lines.append(" | ".join(parts))
@@ -417,12 +423,14 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
         prompt = (
             f"Eres analista experto de {label}. Para CADA partido genera UNA nota analítica en español de 40-50 palabras.\n\n"
             f"CADA nota DEBE incluir EN ESTE ORDEN:\n"
-            f"1. ✅ (modelo y casa alineados, diferencia <3%) o ⚠️ (diferencia significativa ≥3%)\n"
+            f"1. ✅ o ⚠️ según alineación modelo/casa\n"
             f"2. Récord de AMBOS equipos (ej: '34-21 vs 28-27')\n"
-            f"3. Lesiones importantes si las hay (menciona el jugador y su impacto)\n"
-            f"4. Si hay O/U disponible: 'Alta [X] pts' o 'Baja [X] pts' con justificación breve\n"
-            f"5. Recomendación final: 'Apostar ML [equipo]', 'Apostar Alta/Baja [X]', o 'SKIP'\n\n"
-            f"Sé directo y específico. Usa datos del partido, no generalidades.\n"
+            f"3. Lesiones importantes si las hay\n"
+            f"4. SIEMPRE incluir recomendación Over/Under con el número exacto: "
+            f"'Over [X] pts' o 'Under [X] pts' (usa el valor O/U del partido)\n"
+            f"5. Recomendación ML: 'Apostar ML [equipo]' o 'SKIP'\n\n"
+            f"Sé directo. Ejemplo de formato correcto: "
+            f"'✅ 39-21 vs 28-27 — Over 228 pts (ritmo alto) — Apostar ML Boston'\n"
             f"Responde ÚNICAMENTE con un array JSON de strings (mismo orden que los partidos).\n\n"
             + "\n".join(lines)
         )
@@ -480,16 +488,17 @@ def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[str
             inj_parts.append(f"{inj.get('player', '')} {inj.get('status', '')} (visit.)")
         inj_text = "; ".join(inj_parts)
 
-        # O/U recommendation based on model spread vs total
-        total = p.get("house_total")
-        model_s = p.get("model_spread")
+        # O/U recommendation
+        ou_line = p.get("ou_line") or p.get("house_total")
+        ou_pick = p.get("ou_pick")  # "over" | "under" | None
         ou_text = ""
-        if total is not None:
-            # If model spread implies high-scoring game → Alta, else → Baja
-            if model_s is not None and abs(model_s) < 3:
-                ou_text = f"Alta {total} pts"
+        if ou_line is not None:
+            if ou_pick == "over":
+                ou_text = f"Over {ou_line} pts"
+            elif ou_pick == "under":
+                ou_text = f"Under {ou_line} pts"
             else:
-                ou_text = f"O/U {total} pts"
+                ou_text = f"O/U {ou_line} pts"
 
         # Edge
         edge = p.get("edge_pct")
@@ -584,7 +593,31 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         house_ml_a = house.get("odds_A")   # decimal moneyline away
         house_spread_home = house.get("spread_home")
         house_spread_away = house.get("spread_away")
-        house_total = house.get("total_over")  # O/U line
+        house_total = house.get("total_over")  # O/U line from bookmaker
+
+        # Estimated O/U from model pace when bookmaker line unavailable.
+        # NBA: pace_avg (possessions/game) × 2.3 ≈ total points expected.
+        # NHL: pace is not applicable; use None.
+        # Soccer: goals are low-count, different logic.
+        ou_line = house_total  # prefer bookmaker line
+        ou_pick = None         # "over" | "under" | None
+        if ou_line is None and kind == "nba":
+            try:
+                pace = float(row.get("pace_avg", 0) or 0)
+                if pace > 0:
+                    ou_line = round(pace * 2.3)
+            except Exception:
+                pass
+        # Direction: compare model's expected total vs the line.
+        # For NBA we use pace vs league average (≈98.5) as directional signal.
+        if ou_line is not None and kind == "nba":
+            try:
+                pace = float(row.get("pace_avg", 0) or 0)
+                league_avg_pace = 98.5
+                if pace > 0:
+                    ou_pick = "over" if pace >= league_avg_pace else "under"
+            except Exception:
+                pass
 
         # Model spread (implied from p_win)
         model_s = _model_spread(p_win if pick == "H" else 1 - p_win, kind)
@@ -617,6 +650,8 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
             "house_implied_pct": house_implied,
             "edge_pct":         edge_pct,
             "house_total":      house_total,
+            "ou_line":          ou_line,   # bookmaker line or pace estimate
+            "ou_pick":          ou_pick,   # "over" | "under" | None
             "injuries_home":    _match_injuries(injuries_by_team, home_team),
             "injuries_away":    _match_injuries(injuries_by_team, away_team),
             "note":             "",

@@ -227,6 +227,7 @@ td { padding: 0.8rem 1rem; vertical-align: middle; }
 .td-signal { text-align: center; }
 .td-casa { font-size: 0.85rem; font-variant-numeric: tabular-nums; color: var(--text-muted); }
 .td-edge { font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.td-ou   { font-size: 0.85rem; font-variant-numeric: tabular-nums; text-align: center; }
 
 /* ── Confidence bar ── */
 .conf-bar {

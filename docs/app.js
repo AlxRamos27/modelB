@@ -153,6 +153,7 @@ function renderSportSection(container, league) {
 
   // Table
   const hasOdds = sport.picks.some(p => p.house_implied_pct != null);
+  const hasOU   = sport.picks.some(p => p.ou_line != null);
   html += `<div class="table-wrap"><table>
     <thead><tr>
       <th class="td-num">#</th>
@@ -160,6 +161,7 @@ function renderSportSection(container, league) {
       <th>Pick</th>
       <th>Modelo %</th>
       ${hasOdds ? '<th class="td-casa">Casa %</th><th class="td-edge">Edge</th>' : '<th class="td-odds">Cuota</th>'}
+      ${hasOU ? '<th class="td-ou">Over/Under</th>' : ''}
       <th class="td-signal">Señal</th>
     </tr></thead>
     <tbody>`;
@@ -206,6 +208,7 @@ function renderSportSection(container, league) {
         </div>
       </td>
       ${oddsCell}
+      ${hasOU ? `<td class="td-ou">${ouCell(p)}</td>` : ''}
       <td class="td-signal">${signalBadge(p.signal)}</td>
     </tr>`;
   });
@@ -391,6 +394,16 @@ function signalBadge(s) {
   if (s === 'alta')  return `<span class="badge badge-alta">● Alta</span>`;
   if (s === 'media') return `<span class="badge badge-media">● Media</span>`;
   return `<span class="badge badge-baja">● Baja</span>`;
+}
+
+function ouCell(p) {
+  if (p.ou_line == null) return '–';
+  const icon  = p.ou_pick === 'over'  ? '⬆️' : p.ou_pick === 'under' ? '⬇️' : '';
+  const label = p.ou_pick === 'over'  ? 'Over'
+              : p.ou_pick === 'under' ? 'Under' : 'O/U';
+  const color = p.ou_pick === 'over'  ? 'var(--green)'
+              : p.ou_pick === 'under' ? 'var(--red)' : 'var(--text-muted)';
+  return `<span style="color:${color};font-weight:700;white-space:nowrap">${icon} ${label} ${p.ou_line}</span>`;
 }
 
 function emptyState(msg) {
