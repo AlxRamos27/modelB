@@ -228,6 +228,17 @@ td { padding: 0.8rem 1rem; vertical-align: middle; }
 .td-casa { font-size: 0.85rem; font-variant-numeric: tabular-nums; color: var(--text-muted); }
 .td-edge { font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .td-ou   { font-size: 0.85rem; font-variant-numeric: tabular-nums; text-align: center; }
+.td-note {
+  font-size: 0.78rem;
+  color: #c4cfe8;
+  line-height: 1.55;
+  min-width: 280px;
+  max-width: 420px;
+  border-left: 2px solid #1e2d45;
+  padding-left: 14px !important;
+  vertical-align: top;
+  padding-top: 0.9rem !important;
+}
 
 /* ── Confidence bar ── */
 .conf-bar {

@@ -421,22 +421,29 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             lines.append(" | ".join(parts))
 
         prompt = (
-            f"Eres analista experto de {label}. Para CADA partido genera UNA nota analítica en español de 40-50 palabras.\n\n"
-            f"CADA nota DEBE incluir EN ESTE ORDEN:\n"
-            f"1. ✅ o ⚠️ según alineación modelo/casa\n"
-            f"2. Récord de AMBOS equipos (ej: '34-21 vs 28-27')\n"
-            f"3. Lesiones importantes si las hay\n"
-            f"4. SIEMPRE incluir recomendación Over/Under con el número exacto: "
-            f"'Over [X] pts' o 'Under [X] pts' (usa el valor O/U del partido)\n"
-            f"5. Recomendación ML: 'Apostar ML [equipo]' o 'SKIP'\n\n"
-            f"Sé directo. Ejemplo de formato correcto: "
-            f"'✅ 39-21 vs 28-27 — Over 228 pts (ritmo alto) — Apostar ML Boston'\n"
+            f"Eres analista experto de {label}. Para CADA partido genera UNA nota analítica en español de 80-100 palabras.\n\n"
+            f"Estructura OBLIGATORIA (sin saltarte ninguna sección):\n"
+            f"1. ✅ Alineado  o  ⚠️ Discrepancia X pts — contexto del duelo (racha, motivación, rivalidad)\n"
+            f"2. Récords de AMBOS equipos con contexto narrativo "
+            f"(ej: 'Boston 39-16 lidera el Este; Brooklyn 21-34 en caída libre de 6 derrotas')\n"
+            f"3. Lesiones: menciona jugadores por NOMBRE y estatus "
+            f"(ej: 'LaVine y Sabonis fuera el resto del año') o 'Sin bajas importantes'\n"
+            f"4. O/U en [X] pts — Over/Under es la jugada ([razón: ritmo alto/bajo, equipos ofensivos/defensivos])\n"
+            f"5. Veredicto CLARO: 'ML [equipo] es la jugada segura (modelo X%)' "
+            f"o 'SKIP — sin edge claro'\n\n"
+            f"Usa los datos exactos del partido. No inventes jugadores ni estadísticas.\n"
+            f"Ejemplo de nota perfecta:\n"
+            f"'✅ Alineado (+0.5 pts). Boston 39-16 lidera el Este con el mejor ataque de la conferencia; "
+            f"Brooklyn 21-34 arrastra 6 derrotas seguidas. Sin bajas importantes en Boston; "
+            f"Ben Simmons fuera de temporada en Brooklyn. "
+            f"O/U en 228 pts — Over es la jugada (Boston promedia 118 pts/g, ritmo alto). "
+            f"ML Boston es la jugada segura (modelo 73%).'\n\n"
             f"Responde ÚNICAMENTE con un array JSON de strings (mismo orden que los partidos).\n\n"
             + "\n".join(lines)
         )
         msg = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=1600,
+            max_tokens=2800,
             messages=[{"role": "user", "content": prompt}],
         )
         text = msg.content[0].text.strip()
@@ -474,48 +481,78 @@ def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[str
 
     notes = []
     for p in picks:
-        icon = "✅" if p["signal"] == "alta" else "⚠️" if p["signal"] == "media" else "❌"
+        # 1. Alignment indicator
+        edge = p.get("edge_pct")
+        model_s = p.get("model_spread")
+        house_s = p.get("house_spread")
+        if edge is not None:
+            if abs(edge) <= 3:
+                align_text = "✅ Alineado"
+            else:
+                icon = "✅" if p["signal"] == "alta" else "⚠️"
+                align_text = f"{icon} Discrepancia {edge:+.1f}%"
+        else:
+            icon = "✅" if p["signal"] == "alta" else "⚠️" if p["signal"] == "media" else "❌"
+            align_text = f"{icon} Modelo {p['p_win']*100:.0f}%"
 
+        # 2. Records with narrative context
         rec_h = _record(p["home_team"])
         rec_a = _record(p["away_team"])
-        records = f"{rec_h} vs {rec_a}" if (rec_h and rec_a) else (rec_h or rec_a)
+        home_nick = p["home_team"].split()[-1]
+        away_nick = p["away_team"].split()[-1]
+        if rec_h and rec_a:
+            records_text = f"{home_nick} {rec_h} vs {away_nick} {rec_a}"
+        elif rec_h:
+            records_text = f"{home_nick} {rec_h}"
+        elif rec_a:
+            records_text = f"{away_nick} {rec_a}"
+        else:
+            records_text = ""
 
-        # Key injuries (up to 2 per side)
+        # 3. Key injuries by player name
         inj_parts = []
         for inj in (p.get("injuries_home") or [])[:2]:
-            inj_parts.append(f"{inj.get('player', '')} {inj.get('status', '')} (local)")
+            player = str(inj.get("player") or "").strip()
+            status = str(inj.get("status") or "").strip()
+            if player:
+                inj_parts.append(f"{player} fuera ({status})")
         for inj in (p.get("injuries_away") or [])[:2]:
-            inj_parts.append(f"{inj.get('player', '')} {inj.get('status', '')} (visit.)")
-        inj_text = "; ".join(inj_parts)
+            player = str(inj.get("player") or "").strip()
+            status = str(inj.get("status") or "").strip()
+            if player:
+                inj_parts.append(f"{player} fuera (visit.)")
+        inj_text = "; ".join(inj_parts) if inj_parts else "Sin bajas importantes"
 
-        # O/U recommendation
+        # 4. O/U verdict
         ou_line = p.get("ou_line") or p.get("house_total")
-        ou_pick = p.get("ou_pick")  # "over" | "under" | None
-        ou_text = ""
+        ou_pick = p.get("ou_pick")
         if ou_line is not None:
-            if ou_pick == "over":
-                ou_text = f"Over {ou_line} pts"
-            elif ou_pick == "under":
-                ou_text = f"Under {ou_line} pts"
-            else:
-                ou_text = f"O/U {ou_line} pts"
+            direction = "Over" if ou_pick == "over" else "Under" if ou_pick == "under" else "O/U"
+            reason    = "ritmo alto" if ou_pick == "over" else "ritmo lento" if ou_pick == "under" else ""
+            ou_text = f"O/U en {ou_line} pts — {direction} es la jugada" + (f" ({reason})" if reason else "")
+        else:
+            ou_text = ""
 
-        # Edge
-        edge = p.get("edge_pct")
-        edge_text = f"Edge {edge:+.1f}%" if edge is not None else f"modelo {p['p_win']*100:.0f}%"
+        # 5. ML verdict
+        pct = p["p_win"] * 100
+        pick_nick = p["pick_label"].split()[-1]
+        if p["signal"] == "baja":
+            verdict = f"SKIP — sin edge claro ({pct:.0f}%)"
+        elif p["signal"] == "media":
+            verdict = f"ML {pick_nick} con cautela (modelo {pct:.0f}%)"
+        else:
+            verdict = f"ML {pick_nick} es la jugada segura (modelo {pct:.0f}%)"
 
-        # Assemble: icon records — injuries — O/U → recommendation
-        parts = [f"{icon} {records}" if records else icon]
-        if inj_text:
-            parts.append(inj_text)
+        # Assemble as readable prose
+        parts = [align_text]
+        if records_text:
+            parts.append(records_text)
+        parts.append(inj_text)
         if ou_text:
             parts.append(ou_text)
-        if p["signal"] == "baja":
-            parts.append(f"SKIP o apostar con precaución ML {p['pick_label']} ({edge_text})")
-        else:
-            parts.append(f"→ Apostar ML {p['pick_label']} ({edge_text})")
+        parts.append(verdict)
 
-        notes.append(" — ".join(parts))
+        notes.append(". ".join(parts) + ".")
     return notes
 
 

@@ -152,8 +152,9 @@ function renderSportSection(container, league) {
   }
 
   // Table
-  const hasOdds = sport.picks.some(p => p.house_implied_pct != null);
-  const hasOU   = sport.picks.some(p => p.ou_line != null);
+  const hasOdds  = sport.picks.some(p => p.house_implied_pct != null);
+  const hasOU    = sport.picks.some(p => p.ou_line != null);
+  const hasNotes = sport.picks.some(p => p.note);
   html += `<div class="table-wrap"><table>
     <thead><tr>
       <th class="td-num">#</th>
@@ -163,6 +164,7 @@ function renderSportSection(container, league) {
       ${hasOdds ? '<th class="td-casa">Casa %</th><th class="td-edge">Edge</th>' : '<th class="td-odds">Cuota</th>'}
       ${hasOU ? '<th class="td-ou">Over/Under</th>' : ''}
       <th class="td-signal">Señal</th>
+      ${hasNotes ? '<th class="td-note">Análisis</th>' : ''}
     </tr></thead>
     <tbody>`;
 
@@ -198,7 +200,6 @@ function renderSportSection(container, league) {
         <div class="team-row"><span>${escHtml(p.home_team)}</span>${injHome ? `<span class="inj-row">${injHome}</span>` : ''}</div>
         <div class="team-row away-row"><span>vs ${escHtml(p.away_team)}</span>${injAway ? `<span class="inj-row">${injAway}</span>` : ''}</div>
         ${p.date ? `<div class="game-date">${p.date}</div>` : ''}
-        ${p.note ? `<div class="game-note">💬 ${escHtml(p.note)}</div>` : ''}
       </td>
       <td class="td-pick">${escHtml(p.pick_label)}</td>
       <td class="td-conf">
@@ -210,6 +211,7 @@ function renderSportSection(container, league) {
       ${oddsCell}
       ${hasOU ? `<td class="td-ou">${ouCell(p)}</td>` : ''}
       <td class="td-signal">${signalBadge(p.signal)}</td>
+      ${hasNotes ? `<td class="td-note">${p.note ? escHtml(p.note) : '<span style="color:var(--text-muted)">–</span>'}</td>` : ''}
     </tr>`;
   });
 
