@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T17:12:29Z",
+  "generated_at": "2026-02-25T23:54:17Z",
   "date": "2026-02-25",
   "sports": {
     "nba": {
@@ -25,15 +25,16 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": 242.6,
-          "ou_pick": "over",
+          "espn_ou": 221.5,
+          "ou_line": 221.5,
+          "ou_pick": "under",
           "pts_home_scored": 126.8,
           "pts_home_allowed": 119.0,
           "pts_away_scored": 115.8,
           "pts_away_allowed": 115.8,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 67%. Bucks 5-2 vs Cavaliers 4-3. Sin bajas importantes. O/U en 242.6 pts — Over es la jugada (ritmo alto). ML Bucks con cautela (modelo 67%)."
+          "note": "⚠️ Modelo 67%. Bucks 5-2 vs Cavaliers 4-3. Sin bajas importantes. O/U en 221.5 pts — Under es la jugada (ritmo lento). ML Bucks con cautela (modelo 67%)."
         },
         {
           "home_team": "Detroit Pistons",
@@ -50,15 +51,16 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": 237.5,
-          "ou_pick": "over",
+          "espn_ou": 219.5,
+          "ou_line": 219.5,
+          "ou_pick": "under",
           "pts_home_scored": 117.8,
           "pts_home_allowed": 113.8,
           "pts_away_scored": 119.7,
           "pts_away_allowed": 109.7,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 65%. Pistons 5-2 vs Thunder 7-0. Sin bajas importantes. O/U en 237.5 pts — Over es la jugada (ritmo alto). ML Pistons con cautela (modelo 65%)."
+          "note": "⚠️ Modelo 65%. Pistons 5-2 vs Thunder 7-0. Sin bajas importantes. O/U en 219.5 pts — Under es la jugada (ritmo lento). ML Pistons con cautela (modelo 65%)."
         },
         {
           "home_team": "Denver Nuggets",
@@ -75,15 +77,16 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": 226.5,
-          "ou_pick": "under",
+          "espn_ou": 228.5,
+          "ou_line": 228.5,
+          "ou_pick": "over",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": 109.8,
           "pts_away_allowed": 105.5,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Nuggets 3-2 vs Celtics 3-5. Sin bajas importantes. O/U en 226.5 pts — Under es la jugada (ritmo lento). ML Nuggets con cautela (modelo 61%)."
+          "note": "⚠️ Modelo 61%. Nuggets 3-2 vs Celtics 3-5. Sin bajas importantes. O/U en 228.5 pts — Over es la jugada (ritmo alto). ML Nuggets con cautela (modelo 61%)."
         },
         {
           "home_team": "Houston Rockets",
@@ -100,15 +103,16 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": 235.5,
-          "ou_pick": "over",
+          "espn_ou": 221.5,
+          "ou_line": 221.5,
+          "ou_pick": "under",
           "pts_home_scored": 119.3,
           "pts_home_allowed": 108.7,
           "pts_away_scored": 116.2,
           "pts_away_allowed": 121.5,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Rockets 4-2 vs Kings 2-4. Sin bajas importantes. O/U en 235.5 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (59%)."
+          "note": "❌ Modelo 59%. Rockets 4-2 vs Kings 2-4. Sin bajas importantes. O/U en 221.5 pts — Under es la jugada (ritmo lento). SKIP — sin edge claro (59%)."
         },
         {
           "home_team": "Toronto Raptors",
@@ -125,7 +129,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": 239.0,
+          "espn_ou": 230.5,
+          "ou_line": 230.5,
           "ou_pick": "over",
           "pts_home_scored": 118.0,
           "pts_home_allowed": 121.7,
@@ -133,7 +138,7 @@
           "pts_away_allowed": 112.7,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Raptors 3-4 vs Spurs 5-1. Sin bajas importantes. O/U en 239.0 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 55%. Raptors 3-4 vs Spurs 5-1. Sin bajas importantes. O/U en 230.5 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (55%)."
         },
         {
           "home_team": "Memphis Grizzlies",
@@ -150,15 +155,16 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": 231.8,
-          "ou_pick": "over",
+          "espn_ou": 225.5,
+          "ou_line": 225.5,
+          "ou_pick": "under",
           "pts_home_scored": 117.6,
           "pts_home_allowed": 120.4,
           "pts_away_scored": 114.2,
           "pts_away_allowed": 120.5,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 54%. Grizzlies 3-5 vs Warriors 4-3. Sin bajas importantes. O/U en 231.8 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (54%)."
+          "note": "❌ Modelo 54%. Grizzlies 3-5 vs Warriors 4-3. Sin bajas importantes. O/U en 225.5 pts — Under es la jugada (ritmo lento). SKIP — sin edge claro (54%)."
         }
       ],
       "name": "NBA",
@@ -229,114 +235,12 @@
     "ucl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5312,
-        "logloss": 1.017,
-        "brier": 0.2051
+        "accuracy": 0.5625,
+        "logloss": 0.9795,
+        "brier": 0.1959
       },
-      "picks": [
-        {
-          "home_team": "Real Madrid CF",
-          "away_team": "Sport Lisboa e Benfica",
-          "pick": "H",
-          "pick_label": "Real Madrid CF",
-          "p_win": 0.7438,
-          "implied_odds": 1.34,
-          "signal": "alta",
-          "date": "2026-02-25",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 74%. Sin bajas importantes. ML CF es la jugada segura (modelo 74%)."
-        },
-        {
-          "home_team": "Paris Saint-Germain FC",
-          "away_team": "AS Monaco FC",
-          "pick": "H",
-          "pick_label": "Paris Saint-Germain FC",
-          "p_win": 0.6974,
-          "implied_odds": 1.43,
-          "signal": "alta",
-          "date": "2026-02-25",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 70%. Sin bajas importantes. ML FC es la jugada segura (modelo 70%)."
-        },
-        {
-          "home_team": "Juventus FC",
-          "away_team": "Galatasaray SK",
-          "pick": "H",
-          "pick_label": "Juventus FC",
-          "p_win": 0.5166,
-          "implied_odds": 1.94,
-          "signal": "baja",
-          "date": "2026-02-25",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Atalanta BC",
-          "away_team": "Borussia Dortmund",
-          "pick": "H",
-          "pick_label": "Atalanta BC",
-          "p_win": 0.4572,
-          "implied_odds": 2.19,
-          "signal": "baja",
-          "date": "2026-02-25",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 46%. Sin bajas importantes. SKIP — sin edge claro (46%)."
-        }
-      ],
-      "name": "Champions League",
-      "analysis": ""
+      "picks": [],
+      "name": "Champions League"
     }
   },
   "parlays": {
@@ -531,183 +435,6 @@
           "combined_prob": 0.0458,
           "n_legs": 6
         }
-      },
-      "soccer": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "ucl",
-              "match": "Atalanta BC vs Borussia Dortmund",
-              "pick": "Atalanta BC",
-              "p_win": 0.4572,
-              "implied_odds": 2.19
-            }
-          ],
-          "total_odds": 2.93,
-          "combined_prob": 0.3401,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "ucl",
-              "match": "Paris Saint-Germain FC vs AS Monaco FC",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.6974,
-              "implied_odds": 1.43
-            },
-            {
-              "sport": "ucl",
-              "match": "Atalanta BC vs Borussia Dortmund",
-              "pick": "Atalanta BC",
-              "p_win": 0.4572,
-              "implied_odds": 2.19
-            }
-          ],
-          "total_odds": 4.2,
-          "combined_prob": 0.2372,
-          "n_legs": 3
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "ucl",
-              "match": "Juventus FC vs Galatasaray SK",
-              "pick": "Juventus FC",
-              "p_win": 0.5166,
-              "implied_odds": 1.94
-            },
-            {
-              "sport": "ucl",
-              "match": "Atalanta BC vs Borussia Dortmund",
-              "pick": "Atalanta BC",
-              "p_win": 0.4572,
-              "implied_odds": 2.19
-            }
-          ],
-          "total_odds": 5.69,
-          "combined_prob": 0.1757,
-          "n_legs": 3
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Paris Saint-Germain FC vs AS Monaco FC",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.6974,
-              "implied_odds": 1.43
-            },
-            {
-              "sport": "ucl",
-              "match": "Juventus FC vs Galatasaray SK",
-              "pick": "Juventus FC",
-              "p_win": 0.5166,
-              "implied_odds": 1.94
-            },
-            {
-              "sport": "ucl",
-              "match": "Atalanta BC vs Borussia Dortmund",
-              "pick": "Atalanta BC",
-              "p_win": 0.4572,
-              "implied_odds": 2.19
-            }
-          ],
-          "total_odds": 6.08,
-          "combined_prob": 0.1647,
-          "n_legs": 3
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "ucl",
-              "match": "Paris Saint-Germain FC vs AS Monaco FC",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.6974,
-              "implied_odds": 1.43
-            },
-            {
-              "sport": "ucl",
-              "match": "Juventus FC vs Galatasaray SK",
-              "pick": "Juventus FC",
-              "p_win": 0.5166,
-              "implied_odds": 1.94
-            },
-            {
-              "sport": "ucl",
-              "match": "Atalanta BC vs Borussia Dortmund",
-              "pick": "Atalanta BC",
-              "p_win": 0.4572,
-              "implied_odds": 2.19
-            }
-          ],
-          "total_odds": 8.14,
-          "combined_prob": 0.1225,
-          "n_legs": 4
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "ucl",
-              "match": "Paris Saint-Germain FC vs AS Monaco FC",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.6974,
-              "implied_odds": 1.43
-            },
-            {
-              "sport": "ucl",
-              "match": "Juventus FC vs Galatasaray SK",
-              "pick": "Juventus FC",
-              "p_win": 0.5166,
-              "implied_odds": 1.94
-            },
-            {
-              "sport": "ucl",
-              "match": "Atalanta BC vs Borussia Dortmund",
-              "pick": "Atalanta BC",
-              "p_win": 0.4572,
-              "implied_odds": 2.19
-            }
-          ],
-          "total_odds": 8.14,
-          "combined_prob": 0.1225,
-          "n_legs": 4
-        }
       }
     },
     "combined": {
@@ -735,76 +462,34 @@
       "cuota_4": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7438,
-            "implied_odds": 1.34
+            "sport": "nba",
+            "match": "Milwaukee Bucks vs Cleveland Cavaliers",
+            "pick": "Milwaukee Bucks",
+            "p_win": 0.6659,
+            "implied_odds": 1.5
           },
           {
             "sport": "nba",
-            "match": "Denver Nuggets vs Boston Celtics",
-            "pick": "Denver Nuggets",
-            "p_win": 0.6053,
-            "implied_odds": 1.65
+            "match": "Detroit Pistons vs Oklahoma City Thunder",
+            "pick": "Detroit Pistons",
+            "p_win": 0.6515,
+            "implied_odds": 1.53
           },
           {
             "sport": "nba",
-            "match": "Toronto Raptors vs San Antonio Spurs",
-            "pick": "Toronto Raptors",
-            "p_win": 0.5521,
-            "implied_odds": 1.81
+            "match": "Houston Rockets vs Sacramento Kings",
+            "pick": "Houston Rockets",
+            "p_win": 0.5864,
+            "implied_odds": 1.71
           }
         ],
-        "total_odds": 4.0,
-        "combined_prob": 0.2486,
+        "total_odds": 3.92,
+        "combined_prob": 0.2544,
         "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7438,
-            "implied_odds": 1.34
-          },
-          {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs AS Monaco FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.6974,
-            "implied_odds": 1.43
-          },
-          {
-            "sport": "nba",
-            "match": "Detroit Pistons vs Oklahoma City Thunder",
-            "pick": "Detroit Pistons",
-            "p_win": 0.6515,
-            "implied_odds": 1.53
-          },
-          {
-            "sport": "nba",
-            "match": "Houston Rockets vs Sacramento Kings",
-            "pick": "Houston Rockets",
-            "p_win": 0.5864,
-            "implied_odds": 1.71
-          }
-        ],
-        "total_odds": 5.01,
-        "combined_prob": 0.1982,
-        "n_legs": 4
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7438,
-            "implied_odds": 1.34
-          },
-          {
             "sport": "nba",
             "match": "Milwaukee Bucks vs Cleveland Cavaliers",
             "pick": "Milwaukee Bucks",
@@ -813,87 +498,10 @@
           },
           {
             "sport": "nba",
-            "match": "Denver Nuggets vs Boston Celtics",
-            "pick": "Denver Nuggets",
-            "p_win": 0.6053,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "nba",
             "match": "Toronto Raptors vs San Antonio Spurs",
             "pick": "Toronto Raptors",
             "p_win": 0.5521,
             "implied_odds": 1.81
-          }
-        ],
-        "total_odds": 6.0,
-        "combined_prob": 0.1655,
-        "n_legs": 4
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "nba",
-            "match": "Detroit Pistons vs Oklahoma City Thunder",
-            "pick": "Detroit Pistons",
-            "p_win": 0.6515,
-            "implied_odds": 1.53
-          },
-          {
-            "sport": "nba",
-            "match": "Denver Nuggets vs Boston Celtics",
-            "pick": "Denver Nuggets",
-            "p_win": 0.6053,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "nba",
-            "match": "Toronto Raptors vs San Antonio Spurs",
-            "pick": "Toronto Raptors",
-            "p_win": 0.5521,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "ucl",
-            "match": "Atalanta BC vs Borussia Dortmund",
-            "pick": "Atalanta BC",
-            "p_win": 0.4572,
-            "implied_odds": 2.19
-          }
-        ],
-        "total_odds": 10.01,
-        "combined_prob": 0.0995,
-        "n_legs": 4
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Real Madrid CF vs Sport Lisboa e Benfica",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7438,
-            "implied_odds": 1.34
-          },
-          {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs AS Monaco FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.6974,
-            "implied_odds": 1.43
-          },
-          {
-            "sport": "nba",
-            "match": "Milwaukee Bucks vs Cleveland Cavaliers",
-            "pick": "Milwaukee Bucks",
-            "p_win": 0.6659,
-            "implied_odds": 1.5
-          },
-          {
-            "sport": "nba",
-            "match": "Houston Rockets vs Sacramento Kings",
-            "pick": "Houston Rockets",
-            "p_win": 0.5864,
-            "implied_odds": 1.71
           },
           {
             "sport": "nba",
@@ -901,17 +509,122 @@
             "pick": "Memphis Grizzlies",
             "p_win": 0.5387,
             "implied_odds": 1.86
-          },
-          {
-            "sport": "ucl",
-            "match": "Atalanta BC vs Borussia Dortmund",
-            "pick": "Atalanta BC",
-            "p_win": 0.4572,
-            "implied_odds": 2.19
           }
         ],
-        "total_odds": 20.02,
-        "combined_prob": 0.0499,
+        "total_odds": 5.05,
+        "combined_prob": 0.198,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "nba",
+            "match": "Houston Rockets vs Sacramento Kings",
+            "pick": "Houston Rockets",
+            "p_win": 0.5864,
+            "implied_odds": 1.71
+          },
+          {
+            "sport": "nba",
+            "match": "Toronto Raptors vs San Antonio Spurs",
+            "pick": "Toronto Raptors",
+            "p_win": 0.5521,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "nba",
+            "match": "Memphis Grizzlies vs Golden State Warriors",
+            "pick": "Memphis Grizzlies",
+            "p_win": 0.5387,
+            "implied_odds": 1.86
+          }
+        ],
+        "total_odds": 5.76,
+        "combined_prob": 0.1744,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "nba",
+            "match": "Denver Nuggets vs Boston Celtics",
+            "pick": "Denver Nuggets",
+            "p_win": 0.6053,
+            "implied_odds": 1.65
+          },
+          {
+            "sport": "nba",
+            "match": "Houston Rockets vs Sacramento Kings",
+            "pick": "Houston Rockets",
+            "p_win": 0.5864,
+            "implied_odds": 1.71
+          },
+          {
+            "sport": "nba",
+            "match": "Toronto Raptors vs San Antonio Spurs",
+            "pick": "Toronto Raptors",
+            "p_win": 0.5521,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "nba",
+            "match": "Memphis Grizzlies vs Golden State Warriors",
+            "pick": "Memphis Grizzlies",
+            "p_win": 0.5387,
+            "implied_odds": 1.86
+          }
+        ],
+        "total_odds": 9.5,
+        "combined_prob": 0.1056,
+        "n_legs": 4
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "nba",
+            "match": "Milwaukee Bucks vs Cleveland Cavaliers",
+            "pick": "Milwaukee Bucks",
+            "p_win": 0.6659,
+            "implied_odds": 1.5
+          },
+          {
+            "sport": "nba",
+            "match": "Detroit Pistons vs Oklahoma City Thunder",
+            "pick": "Detroit Pistons",
+            "p_win": 0.6515,
+            "implied_odds": 1.53
+          },
+          {
+            "sport": "nba",
+            "match": "Denver Nuggets vs Boston Celtics",
+            "pick": "Denver Nuggets",
+            "p_win": 0.6053,
+            "implied_odds": 1.65
+          },
+          {
+            "sport": "nba",
+            "match": "Houston Rockets vs Sacramento Kings",
+            "pick": "Houston Rockets",
+            "p_win": 0.5864,
+            "implied_odds": 1.71
+          },
+          {
+            "sport": "nba",
+            "match": "Toronto Raptors vs San Antonio Spurs",
+            "pick": "Toronto Raptors",
+            "p_win": 0.5521,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "nba",
+            "match": "Memphis Grizzlies vs Golden State Warriors",
+            "pick": "Memphis Grizzlies",
+            "p_win": 0.5387,
+            "implied_odds": 1.86
+          }
+        ],
+        "total_odds": 21.8,
+        "combined_prob": 0.0458,
         "n_legs": 6
       }
     }
