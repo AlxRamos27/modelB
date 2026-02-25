@@ -263,16 +263,20 @@ def _picks_from_espn_schedule(sport: str, ds, league: str):
         home_wr = _latest(home_h, "home_winrate_l5", 0.5)
         away_wr = _latest(away_a, "away_winrate_l5", 0.5)
 
+        # pace_avg is always stored (even outside feat_cols) so _ok() can
+        # estimate the O/U total regardless of which model variant is active.
+        pace_avg = _latest(home_h, "pace_avg", 98.5)
+
         feat: dict = {
             "elo_diff_pre":    elo_home - elo_away,
             "home_winrate_l5": home_wr,
             "away_winrate_l5": away_wr,
             "diff_l5_gap":     home_wr - away_wr,
             "inj_gap":         0.0,
+            "pace_avg":        pace_avg,   # kept outside feat_cols for O/U calc
         }
         if "net_rtg_diff" in feat_cols:
             feat["net_rtg_diff"]     = _latest(home_h, "net_rtg_diff", 0.0)
-            feat["pace_avg"]         = _latest(home_h, "pace_avg", 98.5)
             feat["elo_538_diff_pre"] = _latest(home_h, "elo_538_diff_pre", 0.0)
 
         rows.append({"date": g["date"], "home_team": home, "away_team": away, **feat})
