@@ -619,15 +619,19 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
             "note":             "",
         })
 
-    # Generate per-game Claude notes
+    # Only keep picks worth recommending (alta ≥70%, media ≥60%)
+    # Baja picks (50-59%) are essentially coin flips — not useful to show.
+    picks = [p for p in picks if p["signal"] in ("alta", "media")]
+
+    # Sort by p_win descending (highest confidence first)
+    picks.sort(key=lambda x: -x["p_win"])
+
+    # Generate per-game Claude notes (after filtering so we don't waste tokens)
     if picks:
         notes = _claude_game_notes(sport, picks, espn_ctx)
         for i, note in enumerate(notes):
             if i < len(picks):
                 picks[i]["note"] = note
-
-    # Sort by p_win descending (highest confidence first)
-    picks.sort(key=lambda x: -x["p_win"])
 
     return {
         "status":  "ok",
