@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T00:16:51Z",
+  "generated_at": "2026-02-25T00:22:16Z",
   "date": "2026-02-25",
   "sports": {
     "nba": {
@@ -25,6 +25,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "✅ 5-1 vs 3-4 — → Apostar ML Chicago Bulls (modelo 70%)"
@@ -44,6 +46,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "⚠️ 5-2 vs 3-3 — → Apostar ML Milwaukee Bucks (modelo 65%)"
@@ -63,6 +67,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "⚠️ 5-2 vs 3-4 — → Apostar ML Los Angeles Lakers (modelo 61%)"
@@ -82,6 +88,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ 4-3 vs 4-3 — SKIP o apostar con precaución ML Cleveland Cavaliers (modelo 59%)"
@@ -101,6 +109,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ 4-2 vs 4-3 — SKIP o apostar con precaución ML Portland Trail Blazers (modelo 59%)"
@@ -120,6 +130,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ 3-4 vs 1-6 — SKIP o apostar con precaución ML Atlanta Hawks (modelo 58%)"
@@ -139,6 +151,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ 3-4 vs 7-0 — SKIP o apostar con precaución ML Toronto Raptors (modelo 57%)"
@@ -158,6 +172,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ 0-7 vs 2-5 — SKIP o apostar con precaución ML Dallas Mavericks (modelo 55%)"
@@ -177,6 +193,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ 0-6 vs 4-3 — SKIP o apostar con precaución ML Golden State Warriors (modelo 52%)"
@@ -196,6 +214,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
+          "ou_line": null,
+          "ou_pick": null,
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ 3-4 vs 3-5 — SKIP o apostar con precaución ML Phoenix Suns (modelo 50%)"
