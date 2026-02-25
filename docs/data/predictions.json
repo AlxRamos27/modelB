@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T00:48:31Z",
+  "generated_at": "2026-02-25T00:52:58Z",
   "date": "2026-02-25",
   "sports": {
     "nba": {
@@ -25,11 +25,11 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
+          "ou_line": 226.5,
+          "ou_pick": "over",
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 70%. Bulls 5-1 vs Hornets 3-4. Sin bajas importantes. ML Bulls es la jugada segura (modelo 70%)."
+          "note": "✅ Modelo 70%. Bulls 5-1 vs Hornets 3-4. Sin bajas importantes. O/U en 226.5 pts — Over es la jugada (ritmo alto). ML Bulls es la jugada segura (modelo 70%)."
         },
         {
           "home_team": "Milwaukee Bucks",
@@ -46,11 +46,11 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
+          "ou_line": 226.5,
+          "ou_pick": "over",
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 65%. Bucks 5-2 vs Heat 3-3. Sin bajas importantes. ML Bucks con cautela (modelo 65%)."
+          "note": "⚠️ Modelo 65%. Bucks 5-2 vs Heat 3-3. Sin bajas importantes. O/U en 226.5 pts — Over es la jugada (ritmo alto). ML Bucks con cautela (modelo 65%)."
         },
         {
           "home_team": "Los Angeles Lakers",
@@ -67,11 +67,11 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
+          "ou_line": 226.5,
+          "ou_pick": "over",
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Lakers 5-2 vs Magic 3-4. Sin bajas importantes. ML Lakers con cautela (modelo 61%)."
+          "note": "⚠️ Modelo 61%. Lakers 5-2 vs Magic 3-4. Sin bajas importantes. O/U en 226.5 pts — Over es la jugada (ritmo alto). ML Lakers con cautela (modelo 61%)."
         },
         {
           "home_team": "Portland Trail Blazers",
@@ -88,11 +88,11 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
+          "ou_line": 226.5,
+          "ou_pick": "over",
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Blazers 4-2 vs Timberwolves 4-3. Sin bajas importantes. SKIP — sin edge claro (59%)."
+          "note": "❌ Modelo 59%. Blazers 4-2 vs Timberwolves 4-3. Sin bajas importantes. O/U en 226.5 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (59%)."
         },
         {
           "home_team": "New Orleans Pelicans",
@@ -109,11 +109,11 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
+          "ou_line": 226.5,
+          "ou_pick": "over",
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Pelicans 0-6 vs Warriors 4-3. Sin bajas importantes. SKIP — sin edge claro (52%)."
+          "note": "❌ Modelo 52%. Pelicans 0-6 vs Warriors 4-3. Sin bajas importantes. O/U en 226.5 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (52%)."
         },
         {
           "home_team": "Phoenix Suns",
@@ -130,11 +130,11 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "ou_line": null,
-          "ou_pick": null,
+          "ou_line": 226.5,
+          "ou_pick": "over",
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 50%. Suns 3-4 vs Celtics 3-5. Sin bajas importantes. SKIP — sin edge claro (50%)."
+          "note": "❌ Modelo 50%. Suns 3-4 vs Celtics 3-5. Sin bajas importantes. O/U en 226.5 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (50%)."
         }
       ],
       "name": "NBA",
