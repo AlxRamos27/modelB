@@ -138,11 +138,23 @@ def fetch_espn_scoreboard_games(sport: str) -> list[dict]:
             else:
                 away_team = name
 
+        # Extract O/U total from embedded odds (DraftKings via ESPN, no key needed)
+        espn_ou = None
+        for odds_entry in comp.get("odds", []) or []:
+            raw = odds_entry.get("overUnder")
+            if raw is not None:
+                try:
+                    espn_ou = float(raw)
+                except (TypeError, ValueError):
+                    pass
+                break
+
         if home_team and away_team:
             games.append({
                 "home_team": home_team,
                 "away_team": away_team,
-                "date": event.get("date", ""),
+                "date":      event.get("date", ""),
+                "espn_ou":   espn_ou,   # real DraftKings O/U line, None if unavailable
             })
     return games
 

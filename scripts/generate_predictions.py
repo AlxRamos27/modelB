@@ -302,6 +302,7 @@ def _picks_from_espn_schedule(sport: str, ds, league: str):
             "inj_gap":            0.0,
             # O/U context — kept outside feat_cols, used by _ok() and Claude
             "pace_avg":           pace_avg,
+            "espn_ou":            g.get("espn_ou"),   # real DraftKings line from ESPN scoreboard
             "pts_home_scored":    pts_home_scored  or 0.0,
             "pts_home_allowed":   pts_home_allowed or 0.0,
             "pts_away_scored":    pts_away_scored  or 0.0,
@@ -458,7 +459,9 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             if house_s is not None:
                 parts.append(f"línea casa: {house_s:+.1f}")
             if ou_line is not None:
-                parts.append(f"total estimado: {ou_line} pts")
+                # Label the source so Claude knows how authoritative the line is
+                ou_src = "línea DraftKings" if p.get("espn_ou") else "total estimado"
+                parts.append(f"{ou_src}: {ou_line} pts")
             # Scoring detail for Claude's O/U analysis
             if pts_hs and pts_hs > 0:
                 parts.append(f"local anota {pts_hs} pts/partido en casa")
@@ -696,9 +699,19 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
         # NBA: pace_avg (possessions/game) × 2.3 ≈ total points expected.
         # NHL: pace is not applicable; use None.
         # Soccer: goals are low-count, different logic.
-        ou_line = house_total  # prefer live bookmaker line
-        ou_pick = None         # "over" | "under" | None — overridden by Claude later
+        # O/U line priority: The Odds API key → ESPN scoreboard → scoring estimate
+        ou_line = house_total  # 1st: The Odds API (if ODDS_API_KEY configured)
+        ou_pick = None         # "over"|"under"|None — Claude overrides below
+        if ou_line is None:
+            # 2nd: DraftKings line embedded in ESPN scoreboard (no key needed)
+            try:
+                v = float(row.get("espn_ou") or 0)
+                if v > 0:
+                    ou_line = round(v, 1)
+            except (TypeError, ValueError):
+                pass
         if ou_line is None and kind == "nba":
+            # 3rd: scoring-based estimate (home pts scored + away pts scored)
             try:
                 pts_h = float(row.get("pts_home_scored") or 0)
                 pts_a = float(row.get("pts_away_scored") or 0)
@@ -711,9 +724,9 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
                     ou_line = round(pace * 2.3, 1)
             except Exception:
                 ou_line = 226.5
-        # Default direction: above NBA avg total (~228) → Over, else Under.
-        # Claude will override this with its own analysis when available.
-        if ou_line is not None and kind == "nba" and ou_pick is None:
+        # Default direction: above NBA avg (~228) → Over, else Under.
+        # Claude overrides with deeper analysis when ANTHROPIC_API_KEY is set.
+        if ou_line is not None and kind == "nba":
             ou_pick = "over" if ou_line > 228.0 else "under"
 
         # Model spread (implied from p_win)
@@ -749,6 +762,7 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
             "house_implied_pct": house_implied,
             "edge_pct":          edge_pct,
             "house_total":       house_total,
+            "espn_ou":           _f("espn_ou"),   # DraftKings line from ESPN (source label)
             "ou_line":           ou_line,
             "ou_pick":           ou_pick,    # overridden by Claude below
             # Scoring stats passed to Claude for O/U analysis
