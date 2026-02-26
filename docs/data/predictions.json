@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-26T00:19:09Z",
+  "generated_at": "2026-02-26T00:28:13Z",
   "date": "2026-02-26",
   "sports": {
     "nba": {
@@ -51,8 +51,8 @@
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "espn_ou": 219.5,
-          "ou_line": 219.5,
+          "espn_ou": 220.5,
+          "ou_line": 220.5,
           "ou_pick": "under",
           "pts_home_scored": 117.8,
           "pts_home_allowed": 113.8,
@@ -60,7 +60,7 @@
           "pts_away_allowed": 109.7,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 65%. Pistons 5-2 vs Thunder 7-0. Sin bajas importantes. O/U en 219.5 pts — Under es la jugada (ritmo lento). ML Pistons con cautela (modelo 65%)."
+          "note": "⚠️ Modelo 65%. Pistons 5-2 vs Thunder 7-0. Sin bajas importantes. O/U en 220.5 pts — Under es la jugada (ritmo lento). ML Pistons con cautela (modelo 65%)."
         },
         {
           "home_team": "Denver Nuggets",
@@ -195,14 +195,14 @@
           "house_total": null,
           "espn_ou": 6.5,
           "ou_line": 6.5,
-          "ou_pick": null,
+          "ou_pick": "over",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": null,
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 pts — O/U es la jugada. SKIP — sin edge claro (52%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
         },
         {
           "home_team": "Dallas Stars",
@@ -221,14 +221,14 @@
           "house_total": null,
           "espn_ou": 5.5,
           "ou_line": 5.5,
-          "ou_pick": null,
+          "ou_pick": "under",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": null,
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 pts — O/U es la jugada. SKIP — sin edge claro (52%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
         },
         {
           "home_team": "Utah Mammoth",
@@ -247,14 +247,14 @@
           "house_total": null,
           "espn_ou": 5.5,
           "ou_line": 5.5,
-          "ou_pick": null,
+          "ou_pick": "under",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": null,
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 pts — O/U es la jugada. SKIP — sin edge claro (52%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
         },
         {
           "home_team": "Vancouver Canucks",
@@ -273,14 +273,14 @@
           "house_total": null,
           "espn_ou": 6.5,
           "ou_line": 6.5,
-          "ou_pick": null,
+          "ou_pick": "over",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": null,
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 pts — O/U es la jugada. SKIP — sin edge claro (52%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
         },
         {
           "home_team": "Los Angeles Kings",
@@ -299,14 +299,14 @@
           "house_total": null,
           "espn_ou": 5.5,
           "ou_line": 5.5,
-          "ou_pick": null,
+          "ou_pick": "under",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": null,
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 pts — O/U es la jugada. SKIP — sin edge claro (52%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
         },
         {
           "home_team": "Anaheim Ducks",
@@ -325,14 +325,14 @@
           "house_total": null,
           "espn_ou": 6.5,
           "ou_line": 6.5,
-          "ou_pick": null,
+          "ou_pick": "over",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": null,
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 pts — O/U es la jugada. SKIP — sin edge claro (52%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
         }
       ],
       "name": "NHL",
