@@ -242,7 +242,7 @@ def _picks_from_espn_schedule(sport: str, ds, league: str):
     def _find(df_all, team_name, col):
         """Most recent rows for a team in given column (substring match)."""
         t = team_name.lower()
-        mask = df_all[col].str.lower().str.contains(t.split()[-1], regex=False, na=False)
+        mask = df_all[col].astype(str).str.lower().str.contains(t.split()[-1], regex=False, na=False)
         return df_all[mask]
 
     def _latest(df_sub, col, fallback=0.0):
@@ -328,6 +328,7 @@ def _picks_from_espn_schedule(sport: str, ds, league: str):
     out["top_pick"] = (
         out[[f"p_{c}" for c in classes]]
         .idxmax(axis=1)
+        .astype(str)
         .str.replace("p_", "", regex=False)
     )
     return out
@@ -475,32 +476,70 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
                 parts.append(align)
             lines.append(" | ".join(parts))
 
+        import datetime as _dt
+        today_str = _dt.date.today().isoformat()
         prompt = (
-            f"Eres analista experto de {label} con profundo conocimiento de tendencias de apuestas.\n"
-            f"Para CADA partido genera una nota analítica en español de 80-100 palabras y una predicción Over/Under.\n\n"
+            f"Eres analista experto de {label} con acceso a búsqueda web en tiempo real.\n"
+            f"Fecha de hoy: {today_str}\n\n"
+            f"INSTRUCCIONES:\n"
+            f"1. Para cada partido, busca en la web la línea Over/Under actual en casas de apuestas "
+            f"   (covers.com, vegasinsider.com, sportsbookreview.com, consensus picks del día).\n"
+            f"2. Busca también lesiones de última hora no reflejadas en mis datos.\n"
+            f"3. Con toda esa información + los datos que te doy, genera una nota en español de 80-100 palabras.\n\n"
             f"Para decidir Over/Under considera EN ESTE ORDEN:\n"
-            f"1. Promedios de puntos anotados/permitidos de cada equipo (los datos te los doy)\n"
-            f"2. Lesiones de jugadores clave que afecten el ataque o defensa\n"
-            f"3. Ventaja de localía (los locales suelen anotar más en casa)\n"
-            f"4. Ritmo de juego: equipos de ritmo alto → Over; defensivos → Under\n"
-            f"5. Racha reciente: ¿los últimos partidos fueron de muchos o pocos puntos?\n\n"
+            f"1. Línea O/U oficial de casas de apuestas (la que encuentres en la web o la que te doy)\n"
+            f"2. Promedios de puntos anotados/permitidos de cada equipo\n"
+            f"3. Lesiones de jugadores clave que afecten el ataque o defensa\n"
+            f"4. Ventaja de localía (los locales suelen anotar más en casa)\n"
+            f"5. Ritmo de juego: equipos de ritmo alto → Over; defensivos → Under\n\n"
             f"Estructura OBLIGATORIA de la nota:\n"
             f"- ✅ / ⚠️ + récords con narrativa (ej: 'Bulls 31-25 en forma; Hornets 18-38 en caída')\n"
             f"- Lesiones clave por nombre\n"
-            f"- O/U: explica con los datos (ej: 'local anota 118/g, visita permite 121/g → Over claro')\n"
+            f"- O/U: cita la línea y justifica (ej: 'línea 228.5 pts; local anota 118/g, visita permite 121/g → Over')\n"
             f"- Veredicto ML: 'ML [equipo] es la jugada' o 'SKIP'\n\n"
-            f"IMPORTANTE: Usa los datos numéricos exactos que te doy. No inventes estadísticas.\n\n"
+            f"IMPORTANTE: Usa los datos exactos que te doy y los que encuentres en la web. No inventes stats.\n\n"
             f"Responde ÚNICAMENTE con un array JSON de objetos (mismo orden que los partidos):\n"
             f'[{{"note": "texto aquí", "ou": "over"}}, {{"note": "...", "ou": "under"}}, ...]\n'
             f'Valores válidos para "ou": "over" o "under"\n\n'
+            f"PARTIDOS DE HOY:\n"
             + "\n".join(lines)
         )
-        msg = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=2800,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        text = msg.content[0].text.strip()
+
+        web_tools = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 3}]
+        messages: list = [{"role": "user", "content": prompt}]
+        text = ""
+
+        # Tool-use loop: web_search is server-side on Anthropic's end;
+        # we still loop to handle multi-turn tool_use stop_reason gracefully.
+        for _turn in range(8):
+            response = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=4096,
+                tools=web_tools,
+                messages=messages,
+            )
+            # Collect text from this turn
+            for block in response.content:
+                if hasattr(block, "text"):
+                    text = block.text.strip()
+
+            if response.stop_reason == "end_turn":
+                break
+
+            if response.stop_reason == "tool_use":
+                # Append assistant turn, acknowledge each tool_use block so Claude continues
+                messages.append({"role": "assistant", "content": response.content})
+                tool_results = [
+                    {"type": "tool_result", "tool_use_id": block.id, "content": ""}
+                    for block in response.content
+                    if getattr(block, "type", None) == "tool_use"
+                ]
+                if not tool_results:
+                    break
+                messages.append({"role": "user", "content": tool_results})
+            else:
+                break
+
         s, e = text.find("["), text.rfind("]") + 1
         if s >= 0 and e > s:
             results = _json.loads(text[s:e])
@@ -511,7 +550,6 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
                     ou_pick = "over" if ou_raw == "over" else "under" if ou_raw == "under" else None
                     out.append({"note": str(r.get("note", "")), "ou_pick": ou_pick})
                 else:
-                    # Fallback: Claude returned a plain string (old format)
                     out.append({"note": str(r), "ou_pick": None})
             return out
     except Exception as exc:

@@ -136,7 +136,7 @@ def predict(dataset: Dataset, top_n: int = 3, odds_csv: Path | None = None) -> p
 
     # Confidence band (very rough): distance from 0.5 for the top class
     out["p_max"] = out[[f"p_{c}" for c in classes]].max(axis=1)
-    out["top_pick"] = out[[f"p_{c}" for c in classes]].idxmax(axis=1).str.replace("p_", "", regex=False)
+    out["top_pick"] = out[[f"p_{c}" for c in classes]].idxmax(axis=1).astype(str).str.replace("p_", "", regex=False)
 
     # Optional odds comparison
     if odds_csv and odds_csv.exists():
