@@ -404,7 +404,7 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
     """
     api_key = env("ANTHROPIC_API_KEY")
     if not api_key or not picks:
-        return _fallback_notes(picks, espn_ctx)
+        return _fallback_notes(picks, espn_ctx, sport)
     try:
         import anthropic, json as _json
         client = anthropic.Anthropic(api_key=api_key)
@@ -478,24 +478,31 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
 
         import datetime as _dt
         today_str = _dt.date.today().isoformat()
+        is_nhl = sport == "nhl"
+        unit_word = "goles" if is_nhl else "puntos"
+        ou_example = ("línea 5.5 goles; local anota 3.1/g, visita permite 3.3/g → Over"
+                      if is_nhl else
+                      "línea 228.5 pts; local anota 118/g, visita permite 121/g → Over")
+        ou_range   = "5.0–7.0 goles" if is_nhl else "220–240 puntos"
         prompt = (
             f"Eres analista experto de {label} con acceso a búsqueda web en tiempo real.\n"
             f"Fecha de hoy: {today_str}\n\n"
             f"INSTRUCCIONES:\n"
             f"1. Para cada partido, busca en la web la línea Over/Under actual en casas de apuestas "
             f"   (covers.com, vegasinsider.com, sportsbookreview.com, consensus picks del día).\n"
+            f"   Las líneas típicas de {label} son {ou_range}.\n"
             f"2. Busca también lesiones de última hora no reflejadas en mis datos.\n"
             f"3. Con toda esa información + los datos que te doy, genera una nota en español de 80-100 palabras.\n\n"
             f"Para decidir Over/Under considera EN ESTE ORDEN:\n"
             f"1. Línea O/U oficial de casas de apuestas (la que encuentres en la web o la que te doy)\n"
-            f"2. Promedios de puntos anotados/permitidos de cada equipo\n"
+            f"2. Promedios de {unit_word} anotados/permitidos de cada equipo\n"
             f"3. Lesiones de jugadores clave que afecten el ataque o defensa\n"
             f"4. Ventaja de localía (los locales suelen anotar más en casa)\n"
-            f"5. Ritmo de juego: equipos de ritmo alto → Over; defensivos → Under\n\n"
+            f"5. Ritmo de juego: equipos ofensivos → Over; defensivos → Under\n\n"
             f"Estructura OBLIGATORIA de la nota:\n"
             f"- ✅ / ⚠️ + récords con narrativa (ej: 'Bulls 31-25 en forma; Hornets 18-38 en caída')\n"
             f"- Lesiones clave por nombre\n"
-            f"- O/U: cita la línea y justifica (ej: 'línea 228.5 pts; local anota 118/g, visita permite 121/g → Over')\n"
+            f"- O/U: cita la línea y justifica (ej: '{ou_example}')\n"
             f"- Veredicto ML: 'ML [equipo] es la jugada' o 'SKIP'\n\n"
             f"IMPORTANTE: Usa los datos exactos que te doy y los que encuentres en la web. No inventes stats.\n\n"
             f"Responde ÚNICAMENTE con un array JSON de objetos (mismo orden que los partidos):\n"
@@ -554,10 +561,10 @@ def _claude_game_notes(sport: str, picks: list[dict], espn_ctx: dict | None = No
             return out
     except Exception as exc:
         warnings.warn(f"Claude game notes failed for {sport}: {exc}")
-    return _fallback_notes(picks, espn_ctx)
+    return _fallback_notes(picks, espn_ctx, sport)
 
 
-def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[dict]:
+def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None, sport: str = "nba") -> list[dict]:
     """Generate structured notes when Claude is unavailable.
 
     Returns list of {"note": str, "ou_pick": "over"|"under"|None}.
@@ -627,10 +634,14 @@ def _fallback_notes(picks: list[dict], espn_ctx: dict | None = None) -> list[dic
         # 4. O/U verdict
         ou_line = p.get("ou_line") or p.get("house_total")
         ou_pick = p.get("ou_pick")
+        unit = "goles" if sport == "nhl" else "pts"
         if ou_line is not None:
             direction = "Over" if ou_pick == "over" else "Under" if ou_pick == "under" else "O/U"
-            reason    = "ritmo alto" if ou_pick == "over" else "ritmo lento" if ou_pick == "under" else ""
-            ou_text = f"O/U en {ou_line} pts — {direction} es la jugada" + (f" ({reason})" if reason else "")
+            if sport == "nhl":
+                reason = "equipos ofensivos" if ou_pick == "over" else "juego defensivo" if ou_pick == "under" else ""
+            else:
+                reason = "ritmo alto" if ou_pick == "over" else "ritmo lento" if ou_pick == "under" else ""
+            ou_text = f"O/U en {ou_line} {unit} — {direction} es la jugada" + (f" ({reason})" if reason else "")
         else:
             ou_text = ""
 
@@ -762,10 +773,25 @@ def _ok(picks_df, metrics: dict, sport: str, espn_ctx: dict | None = None) -> di
                     ou_line = round(pace * 2.3, 1)
             except Exception:
                 ou_line = 226.5
-        # Default direction: above NBA avg (~228) → Over, else Under.
+        if ou_line is None and kind == "nhl":
+            # 3rd (NHL): goal-based estimate; league avg ~5.5 goals total/game
+            try:
+                pts_h = float(row.get("pts_home_scored") or 0)
+                pts_a = float(row.get("pts_away_scored") or 0)
+                if pts_h >= 2.0 and pts_a >= 2.0:
+                    ou_line = round(pts_h + pts_a, 1)
+                else:
+                    ou_line = 5.5  # NHL fallback
+            except Exception:
+                ou_line = 5.5
+        # Default direction.
+        # NBA: above league avg (~228 pts) → Over, else Under.
+        # NHL: above league avg (~5.75 goals) → Over, else Under.
         # Claude overrides with deeper analysis when ANTHROPIC_API_KEY is set.
         if ou_line is not None and kind == "nba":
             ou_pick = "over" if ou_line > 228.0 else "under"
+        if ou_line is not None and kind == "nhl":
+            ou_pick = "over" if ou_line > 5.75 else "under"
 
         # Model spread (implied from p_win)
         model_s = _model_spread(p_win if pick == "H" else 1 - p_win, kind)
