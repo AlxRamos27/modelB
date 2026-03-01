@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-28T08:31:10Z",
-  "date": "2026-02-28",
+  "generated_at": "2026-03-01T08:32:58Z",
+  "date": "2026-03-01",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5253,
-        "logloss": 0.6919,
-        "brier": 0.2494
+        "accuracy": 0.5274,
+        "logloss": 0.6917,
+        "brier": 0.2493
       },
       "picks": [],
       "name": "NHL"
@@ -31,20 +31,20 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5091,
-        "logloss": 1.0497,
-        "brier": 0.2104
+        "accuracy": 0.4643,
+        "logloss": 1.0651,
+        "brier": 0.2132
       },
       "picks": [
         {
-          "home_team": "Liverpool FC",
-          "away_team": "West Ham United FC",
+          "home_team": "Arsenal FC",
+          "away_team": "Chelsea FC",
           "pick": "H",
-          "pick_label": "Liverpool FC",
-          "p_win": 0.5768,
-          "implied_odds": 1.73,
-          "signal": "baja",
-          "date": "2026-02-28",
+          "pick_label": "Arsenal FC",
+          "p_win": 0.6468,
+          "implied_odds": 1.55,
+          "signal": "media",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -60,69 +60,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 58%. Sin bajas importantes. SKIP — sin edge claro (58%)."
+          "note": "⚠️ Modelo 65%. Sin bajas importantes. ML FC con cautela (modelo 65%)."
         },
         {
-          "home_team": "Leeds United FC",
-          "away_team": "Manchester City FC",
-          "pick": "A",
-          "pick_label": "Manchester City FC",
-          "p_win": 0.497,
-          "implied_odds": 2.01,
-          "signal": "baja",
-          "date": "2026-02-28",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
-        },
-        {
-          "home_team": "Burnley FC",
-          "away_team": "Brentford FC",
-          "pick": "A",
-          "pick_label": "Brentford FC",
-          "p_win": 0.461,
-          "implied_odds": 2.17,
-          "signal": "baja",
-          "date": "2026-02-28",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 46%. Sin bajas importantes. SKIP — sin edge claro (46%)."
-        },
-        {
-          "home_team": "AFC Bournemouth",
-          "away_team": "Sunderland AFC",
+          "home_team": "Manchester United FC",
+          "away_team": "Crystal Palace FC",
           "pick": "H",
-          "pick_label": "AFC Bournemouth",
-          "p_win": 0.4576,
-          "implied_odds": 2.19,
+          "pick_label": "Manchester United FC",
+          "p_win": 0.5533,
+          "implied_odds": 1.81,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -138,17 +86,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 46%. Sin bajas importantes. SKIP — sin edge claro (46%)."
+          "note": "❌ Modelo 55%. Sin bajas importantes. SKIP — sin edge claro (55%)."
         },
         {
-          "home_team": "Newcastle United FC",
-          "away_team": "Everton FC",
+          "home_team": "Brighton & Hove Albion FC",
+          "away_team": "Nottingham Forest FC",
           "pick": "H",
-          "pick_label": "Newcastle United FC",
-          "p_win": 0.3912,
-          "implied_odds": 2.56,
+          "pick_label": "Brighton & Hove Albion FC",
+          "p_win": 0.5526,
+          "implied_odds": 1.81,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -164,7 +112,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 39%. Sin bajas importantes. SKIP — sin edge claro (39%)."
+          "note": "❌ Modelo 55%. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
+        {
+          "home_team": "Fulham FC",
+          "away_team": "Tottenham Hotspur FC",
+          "pick": "H",
+          "pick_label": "Fulham FC",
+          "p_win": 0.5219,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-03-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. SKIP — sin edge claro (52%)."
         }
       ],
       "name": "Premier League",
@@ -173,20 +147,20 @@
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.44,
-        "logloss": 1.0124,
-        "brier": 0.2034
+        "accuracy": 0.4314,
+        "logloss": 1.0371,
+        "brier": 0.2098
       },
       "picks": [
         {
-          "home_team": "FC Barcelona",
-          "away_team": "Villarreal CF",
+          "home_team": "Real Betis Balompié",
+          "away_team": "Sevilla FC",
           "pick": "H",
-          "pick_label": "FC Barcelona",
-          "p_win": 0.7217,
-          "implied_odds": 1.39,
+          "pick_label": "Real Betis Balompié",
+          "p_win": 0.7527,
+          "implied_odds": 1.33,
           "signal": "alta",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -202,17 +176,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 72%. Sin bajas importantes. ML Barcelona es la jugada segura (modelo 72%)."
+          "note": "✅ Modelo 75%. Sin bajas importantes. ML Balompié es la jugada segura (modelo 75%)."
         },
         {
-          "home_team": "Rayo Vallecano de Madrid",
-          "away_team": "Athletic Club",
+          "home_team": "Girona FC",
+          "away_team": "RC Celta de Vigo",
           "pick": "H",
-          "pick_label": "Rayo Vallecano de Madrid",
-          "p_win": 0.3817,
-          "implied_odds": 2.62,
+          "pick_label": "Girona FC",
+          "p_win": 0.4245,
+          "implied_odds": 2.36,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -228,43 +202,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
+          "note": "❌ Modelo 42%. Sin bajas importantes. SKIP — sin edge claro (42%)."
         },
         {
-          "home_team": "Real Oviedo",
-          "away_team": "Club Atlético de Madrid",
-          "pick": "A",
-          "pick_label": "Club Atlético de Madrid",
-          "p_win": 0.3763,
-          "implied_odds": 2.66,
+          "home_team": "Valencia CF",
+          "away_team": "CA Osasuna",
+          "pick": "H",
+          "pick_label": "Valencia CF",
+          "p_win": 0.3737,
+          "implied_odds": 2.68,
           "signal": "baja",
-          "date": "2026-02-28",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
-        },
-        {
-          "home_team": "RCD Mallorca",
-          "away_team": "Real Sociedad de Fútbol",
-          "pick": "A",
-          "pick_label": "Real Sociedad de Fútbol",
-          "p_win": 0.3656,
-          "implied_odds": 2.74,
-          "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -281,6 +229,32 @@
           "injuries_home": [],
           "injuries_away": [],
           "note": "❌ Modelo 37%. Sin bajas importantes. SKIP — sin edge claro (37%)."
+        },
+        {
+          "home_team": "Elche CF",
+          "away_team": "RCD Espanyol de Barcelona",
+          "pick": "H",
+          "pick_label": "Elche CF",
+          "p_win": 0.2236,
+          "implied_odds": 4.47,
+          "signal": "baja",
+          "date": "2026-03-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 22%. Sin bajas importantes. SKIP — sin edge claro (22%)."
         }
       ],
       "name": "La Liga",
@@ -289,20 +263,20 @@
     "ligue1": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5952,
-        "logloss": 0.9499,
-        "brier": 0.1879
+        "accuracy": 0.5814,
+        "logloss": 0.9471,
+        "brier": 0.1874
       },
       "picks": [
         {
-          "home_team": "Le Havre AC",
-          "away_team": "Paris Saint-Germain FC",
-          "pick": "A",
-          "pick_label": "Paris Saint-Germain FC",
-          "p_win": 0.691,
-          "implied_odds": 1.45,
-          "signal": "media",
-          "date": "2026-02-28",
+          "home_team": "FC Lorient",
+          "away_team": "AJ Auxerre",
+          "pick": "H",
+          "pick_label": "FC Lorient",
+          "p_win": 0.7704,
+          "implied_odds": 1.3,
+          "signal": "alta",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -318,17 +292,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 69%. Sin bajas importantes. ML FC con cautela (modelo 69%)."
+          "note": "✅ Modelo 77%. Sin bajas importantes. ML Lorient es la jugada segura (modelo 77%)."
         },
         {
-          "home_team": "Stade Rennais FC 1901",
-          "away_team": "Toulouse FC",
+          "home_team": "Lille OSC",
+          "away_team": "FC Nantes",
           "pick": "H",
-          "pick_label": "Stade Rennais FC 1901",
-          "p_win": 0.6198,
-          "implied_odds": 1.61,
-          "signal": "media",
-          "date": "2026-02-28",
+          "pick_label": "Lille OSC",
+          "p_win": 0.7079,
+          "implied_odds": 1.41,
+          "signal": "alta",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -344,17 +318,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 62%. Sin bajas importantes. ML 1901 con cautela (modelo 62%)."
+          "note": "✅ Modelo 71%. Sin bajas importantes. ML OSC es la jugada segura (modelo 71%)."
         },
         {
-          "home_team": "AS Monaco FC",
-          "away_team": "Angers SCO",
+          "home_team": "Paris FC",
+          "away_team": "OGC Nice",
           "pick": "H",
-          "pick_label": "AS Monaco FC",
-          "p_win": 0.5854,
-          "implied_odds": 1.71,
+          "pick_label": "Paris FC",
+          "p_win": 0.5336,
+          "implied_odds": 1.87,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -370,7 +344,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Sin bajas importantes. SKIP — sin edge claro (59%)."
+          "note": "❌ Modelo 53%. Sin bajas importantes. SKIP — sin edge claro (53%)."
+        },
+        {
+          "home_team": "Olympique de Marseille",
+          "away_team": "Olympique Lyonnais",
+          "pick": "H",
+          "pick_label": "Olympique de Marseille",
+          "p_win": 0.5314,
+          "implied_odds": 1.88,
+          "signal": "baja",
+          "date": "2026-03-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 53%. Sin bajas importantes. SKIP — sin edge claro (53%)."
+        },
+        {
+          "home_team": "FC Metz",
+          "away_team": "Stade Brestois 29",
+          "pick": "A",
+          "pick_label": "Stade Brestois 29",
+          "p_win": 0.5211,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-03-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. SKIP — sin edge claro (52%)."
         }
       ],
       "name": "Ligue 1",
@@ -379,20 +405,20 @@
     "bundesliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5952,
-        "logloss": 0.9633,
-        "brier": 0.1849
+        "accuracy": 0.5581,
+        "logloss": 0.9216,
+        "brier": 0.1813
       },
       "picks": [
         {
-          "home_team": "TSG 1899 Hoffenheim",
-          "away_team": "FC St. Pauli 1910",
+          "home_team": "VfB Stuttgart",
+          "away_team": "VfL Wolfsburg",
           "pick": "H",
-          "pick_label": "TSG 1899 Hoffenheim",
-          "p_win": 0.8754,
-          "implied_odds": 1.14,
+          "pick_label": "VfB Stuttgart",
+          "p_win": 0.7848,
+          "implied_odds": 1.27,
           "signal": "alta",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -408,43 +434,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 88%. Sin bajas importantes. ML Hoffenheim es la jugada segura (modelo 88%)."
+          "note": "✅ Modelo 78%. Sin bajas importantes. ML Stuttgart es la jugada segura (modelo 78%)."
         },
         {
-          "home_team": "Bayer 04 Leverkusen",
-          "away_team": "1. FSV Mainz 05",
+          "home_team": "Eintracht Frankfurt",
+          "away_team": "SC Freiburg",
           "pick": "H",
-          "pick_label": "Bayer 04 Leverkusen",
-          "p_win": 0.7426,
-          "implied_odds": 1.35,
-          "signal": "alta",
-          "date": "2026-02-28",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 74%. Sin bajas importantes. ML Leverkusen es la jugada segura (modelo 74%)."
-        },
-        {
-          "home_team": "SV Werder Bremen",
-          "away_team": "1. FC Heidenheim 1846",
-          "pick": "H",
-          "pick_label": "SV Werder Bremen",
-          "p_win": 0.5594,
-          "implied_odds": 1.79,
+          "pick_label": "Eintracht Frankfurt",
+          "p_win": 0.4097,
+          "implied_odds": 2.44,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -460,17 +460,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 41%. Sin bajas importantes. SKIP — sin edge claro (41%)."
         },
         {
-          "home_team": "Borussia Dortmund",
-          "away_team": "FC Bayern München",
+          "home_team": "Hamburger SV",
+          "away_team": "RB Leipzig",
           "pick": "H",
-          "pick_label": "Borussia Dortmund",
-          "p_win": 0.3928,
-          "implied_odds": 2.55,
+          "pick_label": "Hamburger SV",
+          "p_win": 0.3542,
+          "implied_odds": 2.82,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -486,33 +486,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 39%. Sin bajas importantes. SKIP — sin edge claro (39%)."
-        },
-        {
-          "home_team": "Borussia Mönchengladbach",
-          "away_team": "1. FC Union Berlin",
-          "pick": "H",
-          "pick_label": "Borussia Mönchengladbach",
-          "p_win": 0.3597,
-          "implied_odds": 2.78,
-          "signal": "baja",
-          "date": "2026-02-28",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 36%. Sin bajas importantes. SKIP — sin edge claro (36%)."
+          "note": "❌ Modelo 35%. Sin bajas importantes. SKIP — sin edge claro (35%)."
         }
       ],
       "name": "Bundesliga",
@@ -521,20 +495,20 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5238,
-        "logloss": 0.9556,
-        "brier": 0.1886
+        "accuracy": 0.4651,
+        "logloss": 1.0429,
+        "brier": 0.2075
       },
       "picks": [
         {
-          "home_team": "CD Nacional",
-          "away_team": "Sporting Clube de Braga",
+          "home_team": "Rio Ave FC",
+          "away_team": "FC Famalicão",
           "pick": "A",
-          "pick_label": "Sporting Clube de Braga",
-          "p_win": 0.7438,
-          "implied_odds": 1.34,
+          "pick_label": "FC Famalicão",
+          "p_win": 0.7036,
+          "implied_odds": 1.42,
           "signal": "alta",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -550,17 +524,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 74%. Sin bajas importantes. ML Braga es la jugada segura (modelo 74%)."
+          "note": "✅ Modelo 70%. Sin bajas importantes. ML Famalicão es la jugada segura (modelo 70%)."
         },
         {
-          "home_team": "Vitória SC",
-          "away_team": "FC Alverca",
+          "home_team": "CD Tondela",
+          "away_team": "CD Santa Clara",
           "pick": "H",
-          "pick_label": "Vitória SC",
-          "p_win": 0.4991,
-          "implied_odds": 2.0,
+          "pick_label": "CD Tondela",
+          "p_win": 0.3277,
+          "implied_odds": 3.05,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -576,17 +550,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
+          "note": "❌ Modelo 33%. Sin bajas importantes. SKIP — sin edge claro (33%)."
         },
         {
-          "home_team": "AVS",
-          "away_team": "CF Estrela da Amadora",
-          "pick": "A",
-          "pick_label": "CF Estrela da Amadora",
-          "p_win": 0.324,
-          "implied_odds": 3.09,
+          "home_team": "Casa Pia AC",
+          "away_team": "Moreirense FC",
+          "pick": "H",
+          "pick_label": "Casa Pia AC",
+          "p_win": 0.2575,
+          "implied_odds": 3.88,
           "signal": "baja",
-          "date": "2026-02-28",
+          "date": "2026-03-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -602,7 +576,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 32%. Sin bajas importantes. SKIP — sin edge claro (32%)."
+          "note": "❌ Modelo 26%. Sin bajas importantes. SKIP — sin edge claro (26%)."
         }
       ],
       "name": "Primeira Liga",
@@ -625,205 +599,219 @@
         "cuota_3": {
           "legs": [
             {
-              "sport": "primeira",
-              "match": "CD Nacional vs Sporting Clube de Braga",
-              "pick": "Sporting Clube de Braga",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "laliga",
-              "match": "FC Barcelona vs Villarreal CF",
-              "pick": "FC Barcelona",
-              "p_win": 0.7217,
-              "implied_odds": 1.39
+              "sport": "bundesliga",
+              "match": "VfB Stuttgart vs VfL Wolfsburg",
+              "pick": "VfB Stuttgart",
+              "p_win": 0.7848,
+              "implied_odds": 1.27
             },
             {
               "sport": "ligue1",
-              "match": "Stade Rennais FC 1901 vs Toulouse FC",
-              "pick": "Stade Rennais FC 1901",
-              "p_win": 0.6198,
-              "implied_odds": 1.61
+              "match": "FC Lorient vs AJ Auxerre",
+              "pick": "FC Lorient",
+              "p_win": 0.7704,
+              "implied_odds": 1.3
+            },
+            {
+              "sport": "epl",
+              "match": "Manchester United FC vs Crystal Palace FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.5533,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.0,
-          "combined_prob": 0.3327,
+          "total_odds": 2.99,
+          "combined_prob": 0.3345,
           "n_legs": 3
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "bundesliga",
-              "match": "TSG 1899 Hoffenheim vs FC St. Pauli 1910",
-              "pick": "TSG 1899 Hoffenheim",
-              "p_win": 0.8754,
-              "implied_odds": 1.14
+              "sport": "primeira",
+              "match": "Rio Ave FC vs FC Famalicão",
+              "pick": "FC Famalicão",
+              "p_win": 0.7036,
+              "implied_odds": 1.42
             },
             {
-              "sport": "bundesliga",
-              "match": "Bayer 04 Leverkusen vs 1. FSV Mainz 05",
-              "pick": "Bayer 04 Leverkusen",
-              "p_win": 0.7426,
-              "implied_odds": 1.35
+              "sport": "epl",
+              "match": "Arsenal FC vs Chelsea FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.6468,
+              "implied_odds": 1.55
             },
             {
-              "sport": "ligue1",
-              "match": "Le Havre AC vs Paris Saint-Germain FC",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.691,
-              "implied_odds": 1.45
-            },
-            {
-              "sport": "bundesliga",
-              "match": "SV Werder Bremen vs 1. FC Heidenheim 1846",
-              "pick": "SV Werder Bremen",
-              "p_win": 0.5594,
-              "implied_odds": 1.79
+              "sport": "epl",
+              "match": "Manchester United FC vs Crystal Palace FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.5533,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.99,
-          "combined_prob": 0.2513,
-          "n_legs": 4
+          "total_odds": 3.98,
+          "combined_prob": 0.2518,
+          "n_legs": 3
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "FC Barcelona vs Villarreal CF",
-              "pick": "FC Barcelona",
-              "p_win": 0.7217,
-              "implied_odds": 1.39
+              "sport": "ligue1",
+              "match": "FC Lorient vs AJ Auxerre",
+              "pick": "FC Lorient",
+              "p_win": 0.7704,
+              "implied_odds": 1.3
             },
             {
-              "sport": "bundesliga",
-              "match": "SV Werder Bremen vs 1. FC Heidenheim 1846",
-              "pick": "SV Werder Bremen",
-              "p_win": 0.5594,
-              "implied_odds": 1.79
+              "sport": "ligue1",
+              "match": "Lille OSC vs FC Nantes",
+              "pick": "Lille OSC",
+              "p_win": 0.7079,
+              "implied_odds": 1.41
+            },
+            {
+              "sport": "primeira",
+              "match": "Rio Ave FC vs FC Famalicão",
+              "pick": "FC Famalicão",
+              "p_win": 0.7036,
+              "implied_odds": 1.42
             },
             {
               "sport": "epl",
-              "match": "Leeds United FC vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.497,
-              "implied_odds": 2.01
+              "match": "Fulham FC vs Tottenham Hotspur FC",
+              "pick": "Fulham FC",
+              "p_win": 0.5219,
+              "implied_odds": 1.92
             }
           ],
           "total_odds": 5.0,
-          "combined_prob": 0.2006,
-          "n_legs": 3
+          "combined_prob": 0.2003,
+          "n_legs": 4
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "primeira",
-              "match": "CD Nacional vs Sporting Clube de Braga",
-              "pick": "Sporting Clube de Braga",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "laliga",
-              "match": "FC Barcelona vs Villarreal CF",
-              "pick": "FC Barcelona",
-              "p_win": 0.7217,
-              "implied_odds": 1.39
+              "sport": "ligue1",
+              "match": "FC Lorient vs AJ Auxerre",
+              "pick": "FC Lorient",
+              "p_win": 0.7704,
+              "implied_odds": 1.3
             },
             {
               "sport": "ligue1",
-              "match": "Stade Rennais FC 1901 vs Toulouse FC",
-              "pick": "Stade Rennais FC 1901",
-              "p_win": 0.6198,
-              "implied_odds": 1.61
+              "match": "Lille OSC vs FC Nantes",
+              "pick": "Lille OSC",
+              "p_win": 0.7079,
+              "implied_odds": 1.41
             },
             {
-              "sport": "primeira",
-              "match": "Vitória SC vs FC Alverca",
-              "pick": "Vitória SC",
-              "p_win": 0.4991,
-              "implied_odds": 2.0
+              "sport": "epl",
+              "match": "Manchester United FC vs Crystal Palace FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.5533,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Nottingham Forest FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 6.0,
-          "combined_prob": 0.1661,
+          "total_odds": 6.01,
+          "combined_prob": 0.1667,
           "n_legs": 4
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "FC Barcelona vs Villarreal CF",
-              "pick": "FC Barcelona",
-              "p_win": 0.7217,
-              "implied_odds": 1.39
+              "sport": "ligue1",
+              "match": "FC Lorient vs AJ Auxerre",
+              "pick": "FC Lorient",
+              "p_win": 0.7704,
+              "implied_odds": 1.3
             },
             {
-              "sport": "bundesliga",
-              "match": "SV Werder Bremen vs 1. FC Heidenheim 1846",
-              "pick": "SV Werder Bremen",
-              "p_win": 0.5594,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "primeira",
-              "match": "Vitória SC vs FC Alverca",
-              "pick": "Vitória SC",
-              "p_win": 0.4991,
-              "implied_odds": 2.0
+              "sport": "ligue1",
+              "match": "Lille OSC vs FC Nantes",
+              "pick": "Lille OSC",
+              "p_win": 0.7079,
+              "implied_odds": 1.41
             },
             {
               "sport": "epl",
-              "match": "Leeds United FC vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.497,
-              "implied_odds": 2.01
+              "match": "Arsenal FC vs Chelsea FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.6468,
+              "implied_odds": 1.55
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris FC vs OGC Nice",
+              "pick": "Paris FC",
+              "p_win": 0.5336,
+              "implied_odds": 1.87
+            },
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs Olympique Lyonnais",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.5314,
+              "implied_odds": 1.88
             }
           ],
-          "total_odds": 10.0,
-          "combined_prob": 0.1001,
-          "n_legs": 4
+          "total_odds": 9.99,
+          "combined_prob": 0.1,
+          "n_legs": 5
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "primeira",
-              "match": "CD Nacional vs Sporting Clube de Braga",
-              "pick": "Sporting Clube de Braga",
-              "p_win": 0.7438,
-              "implied_odds": 1.34
+              "sport": "bundesliga",
+              "match": "VfB Stuttgart vs VfL Wolfsburg",
+              "pick": "VfB Stuttgart",
+              "p_win": 0.7848,
+              "implied_odds": 1.27
+            },
+            {
+              "sport": "laliga",
+              "match": "Real Betis Balompié vs Sevilla FC",
+              "pick": "Real Betis Balompié",
+              "p_win": 0.7527,
+              "implied_odds": 1.33
+            },
+            {
+              "sport": "epl",
+              "match": "Manchester United FC vs Crystal Palace FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.5533,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Nottingham Forest FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             },
             {
               "sport": "ligue1",
-              "match": "AS Monaco FC vs Angers SCO",
-              "pick": "AS Monaco FC",
-              "p_win": 0.5854,
-              "implied_odds": 1.71
-            },
-            {
-              "sport": "primeira",
-              "match": "Vitória SC vs FC Alverca",
-              "pick": "Vitória SC",
-              "p_win": 0.4991,
-              "implied_odds": 2.0
+              "match": "Olympique de Marseille vs Olympique Lyonnais",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.5314,
+              "implied_odds": 1.88
             },
             {
               "sport": "epl",
-              "match": "Leeds United FC vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.497,
-              "implied_odds": 2.01
-            },
-            {
-              "sport": "epl",
-              "match": "Burnley FC vs Brentford FC",
-              "pick": "Brentford FC",
-              "p_win": 0.461,
-              "implied_odds": 2.17
+              "match": "Fulham FC vs Tottenham Hotspur FC",
+              "pick": "Fulham FC",
+              "p_win": 0.5219,
+              "implied_odds": 1.92
             }
           ],
-          "total_odds": 19.99,
-          "combined_prob": 0.0498,
-          "n_legs": 5
+          "total_odds": 19.97,
+          "combined_prob": 0.0501,
+          "n_legs": 6
         }
       }
     },
@@ -831,205 +819,219 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "primeira",
-            "match": "CD Nacional vs Sporting Clube de Braga",
-            "pick": "Sporting Clube de Braga",
-            "p_win": 0.7438,
-            "implied_odds": 1.34
-          },
-          {
-            "sport": "laliga",
-            "match": "FC Barcelona vs Villarreal CF",
-            "pick": "FC Barcelona",
-            "p_win": 0.7217,
-            "implied_odds": 1.39
+            "sport": "bundesliga",
+            "match": "VfB Stuttgart vs VfL Wolfsburg",
+            "pick": "VfB Stuttgart",
+            "p_win": 0.7848,
+            "implied_odds": 1.27
           },
           {
             "sport": "ligue1",
-            "match": "Stade Rennais FC 1901 vs Toulouse FC",
-            "pick": "Stade Rennais FC 1901",
-            "p_win": 0.6198,
-            "implied_odds": 1.61
+            "match": "FC Lorient vs AJ Auxerre",
+            "pick": "FC Lorient",
+            "p_win": 0.7704,
+            "implied_odds": 1.3
+          },
+          {
+            "sport": "epl",
+            "match": "Manchester United FC vs Crystal Palace FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.5533,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.0,
-        "combined_prob": 0.3327,
+        "total_odds": 2.99,
+        "combined_prob": 0.3345,
         "n_legs": 3
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "bundesliga",
-            "match": "TSG 1899 Hoffenheim vs FC St. Pauli 1910",
-            "pick": "TSG 1899 Hoffenheim",
-            "p_win": 0.8754,
-            "implied_odds": 1.14
+            "sport": "primeira",
+            "match": "Rio Ave FC vs FC Famalicão",
+            "pick": "FC Famalicão",
+            "p_win": 0.7036,
+            "implied_odds": 1.42
           },
           {
-            "sport": "bundesliga",
-            "match": "Bayer 04 Leverkusen vs 1. FSV Mainz 05",
-            "pick": "Bayer 04 Leverkusen",
-            "p_win": 0.7426,
-            "implied_odds": 1.35
+            "sport": "epl",
+            "match": "Arsenal FC vs Chelsea FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.6468,
+            "implied_odds": 1.55
           },
           {
-            "sport": "ligue1",
-            "match": "Le Havre AC vs Paris Saint-Germain FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.691,
-            "implied_odds": 1.45
-          },
-          {
-            "sport": "bundesliga",
-            "match": "SV Werder Bremen vs 1. FC Heidenheim 1846",
-            "pick": "SV Werder Bremen",
-            "p_win": 0.5594,
-            "implied_odds": 1.79
+            "sport": "epl",
+            "match": "Manchester United FC vs Crystal Palace FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.5533,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.99,
-        "combined_prob": 0.2513,
-        "n_legs": 4
+        "total_odds": 3.98,
+        "combined_prob": 0.2518,
+        "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "FC Barcelona vs Villarreal CF",
-            "pick": "FC Barcelona",
-            "p_win": 0.7217,
-            "implied_odds": 1.39
+            "sport": "ligue1",
+            "match": "FC Lorient vs AJ Auxerre",
+            "pick": "FC Lorient",
+            "p_win": 0.7704,
+            "implied_odds": 1.3
           },
           {
-            "sport": "bundesliga",
-            "match": "SV Werder Bremen vs 1. FC Heidenheim 1846",
-            "pick": "SV Werder Bremen",
-            "p_win": 0.5594,
-            "implied_odds": 1.79
+            "sport": "ligue1",
+            "match": "Lille OSC vs FC Nantes",
+            "pick": "Lille OSC",
+            "p_win": 0.7079,
+            "implied_odds": 1.41
+          },
+          {
+            "sport": "primeira",
+            "match": "Rio Ave FC vs FC Famalicão",
+            "pick": "FC Famalicão",
+            "p_win": 0.7036,
+            "implied_odds": 1.42
           },
           {
             "sport": "epl",
-            "match": "Leeds United FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.497,
-            "implied_odds": 2.01
+            "match": "Fulham FC vs Tottenham Hotspur FC",
+            "pick": "Fulham FC",
+            "p_win": 0.5219,
+            "implied_odds": 1.92
           }
         ],
         "total_odds": 5.0,
-        "combined_prob": 0.2006,
-        "n_legs": 3
+        "combined_prob": 0.2003,
+        "n_legs": 4
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "primeira",
-            "match": "CD Nacional vs Sporting Clube de Braga",
-            "pick": "Sporting Clube de Braga",
-            "p_win": 0.7438,
-            "implied_odds": 1.34
-          },
-          {
-            "sport": "laliga",
-            "match": "FC Barcelona vs Villarreal CF",
-            "pick": "FC Barcelona",
-            "p_win": 0.7217,
-            "implied_odds": 1.39
+            "sport": "ligue1",
+            "match": "FC Lorient vs AJ Auxerre",
+            "pick": "FC Lorient",
+            "p_win": 0.7704,
+            "implied_odds": 1.3
           },
           {
             "sport": "ligue1",
-            "match": "Stade Rennais FC 1901 vs Toulouse FC",
-            "pick": "Stade Rennais FC 1901",
-            "p_win": 0.6198,
-            "implied_odds": 1.61
+            "match": "Lille OSC vs FC Nantes",
+            "pick": "Lille OSC",
+            "p_win": 0.7079,
+            "implied_odds": 1.41
           },
           {
-            "sport": "primeira",
-            "match": "Vitória SC vs FC Alverca",
-            "pick": "Vitória SC",
-            "p_win": 0.4991,
-            "implied_odds": 2.0
+            "sport": "epl",
+            "match": "Manchester United FC vs Crystal Palace FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.5533,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "epl",
+            "match": "Brighton & Hove Albion FC vs Nottingham Forest FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 6.0,
-        "combined_prob": 0.1661,
+        "total_odds": 6.01,
+        "combined_prob": 0.1667,
         "n_legs": 4
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "FC Barcelona vs Villarreal CF",
-            "pick": "FC Barcelona",
-            "p_win": 0.7217,
-            "implied_odds": 1.39
+            "sport": "ligue1",
+            "match": "FC Lorient vs AJ Auxerre",
+            "pick": "FC Lorient",
+            "p_win": 0.7704,
+            "implied_odds": 1.3
           },
           {
-            "sport": "bundesliga",
-            "match": "SV Werder Bremen vs 1. FC Heidenheim 1846",
-            "pick": "SV Werder Bremen",
-            "p_win": 0.5594,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "primeira",
-            "match": "Vitória SC vs FC Alverca",
-            "pick": "Vitória SC",
-            "p_win": 0.4991,
-            "implied_odds": 2.0
+            "sport": "ligue1",
+            "match": "Lille OSC vs FC Nantes",
+            "pick": "Lille OSC",
+            "p_win": 0.7079,
+            "implied_odds": 1.41
           },
           {
             "sport": "epl",
-            "match": "Leeds United FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.497,
-            "implied_odds": 2.01
+            "match": "Arsenal FC vs Chelsea FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.6468,
+            "implied_odds": 1.55
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris FC vs OGC Nice",
+            "pick": "Paris FC",
+            "p_win": 0.5336,
+            "implied_odds": 1.87
+          },
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs Olympique Lyonnais",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.5314,
+            "implied_odds": 1.88
           }
         ],
-        "total_odds": 10.0,
-        "combined_prob": 0.1001,
-        "n_legs": 4
+        "total_odds": 9.99,
+        "combined_prob": 0.1,
+        "n_legs": 5
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "primeira",
-            "match": "CD Nacional vs Sporting Clube de Braga",
-            "pick": "Sporting Clube de Braga",
-            "p_win": 0.7438,
-            "implied_odds": 1.34
+            "sport": "bundesliga",
+            "match": "VfB Stuttgart vs VfL Wolfsburg",
+            "pick": "VfB Stuttgart",
+            "p_win": 0.7848,
+            "implied_odds": 1.27
+          },
+          {
+            "sport": "laliga",
+            "match": "Real Betis Balompié vs Sevilla FC",
+            "pick": "Real Betis Balompié",
+            "p_win": 0.7527,
+            "implied_odds": 1.33
+          },
+          {
+            "sport": "epl",
+            "match": "Manchester United FC vs Crystal Palace FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.5533,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "epl",
+            "match": "Brighton & Hove Albion FC vs Nottingham Forest FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           },
           {
             "sport": "ligue1",
-            "match": "AS Monaco FC vs Angers SCO",
-            "pick": "AS Monaco FC",
-            "p_win": 0.5854,
-            "implied_odds": 1.71
-          },
-          {
-            "sport": "primeira",
-            "match": "Vitória SC vs FC Alverca",
-            "pick": "Vitória SC",
-            "p_win": 0.4991,
-            "implied_odds": 2.0
+            "match": "Olympique de Marseille vs Olympique Lyonnais",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.5314,
+            "implied_odds": 1.88
           },
           {
             "sport": "epl",
-            "match": "Leeds United FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.497,
-            "implied_odds": 2.01
-          },
-          {
-            "sport": "epl",
-            "match": "Burnley FC vs Brentford FC",
-            "pick": "Brentford FC",
-            "p_win": 0.461,
-            "implied_odds": 2.17
+            "match": "Fulham FC vs Tottenham Hotspur FC",
+            "pick": "Fulham FC",
+            "p_win": 0.5219,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 19.99,
-        "combined_prob": 0.0498,
-        "n_legs": 5
+        "total_odds": 19.97,
+        "combined_prob": 0.0501,
+        "n_legs": 6
       }
     }
   }
