@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-02T08:46:55Z",
-  "date": "2026-03-02",
+  "generated_at": "2026-03-03T08:42:19Z",
+  "date": "2026-03-03",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5297,
-        "logloss": 0.6914,
-        "brier": 0.2491
+        "accuracy": 0.5271,
+        "logloss": 0.6917,
+        "brier": 0.2493
       },
       "picks": [],
       "name": "NHL"
@@ -35,26 +35,16 @@
         "logloss": 1.0236,
         "brier": 0.204
       },
-      "picks": [],
-      "name": "Premier League"
-    },
-    "laliga": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.4615,
-        "logloss": 0.9957,
-        "brier": 0.1998
-      },
       "picks": [
         {
-          "home_team": "Real Madrid CF",
-          "away_team": "Getafe CF",
+          "home_team": "Everton FC",
+          "away_team": "Burnley FC",
           "pick": "H",
-          "pick_label": "Real Madrid CF",
-          "p_win": 0.8291,
-          "implied_odds": 1.21,
-          "signal": "alta",
-          "date": "2026-03-02",
+          "pick_label": "Everton FC",
+          "p_win": 0.6271,
+          "implied_odds": 1.59,
+          "signal": "media",
+          "date": "2026-03-03",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -70,11 +60,99 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 83%. Sin bajas importantes. ML CF es la jugada segura (modelo 83%)."
+          "note": "⚠️ Modelo 63%. Sin bajas importantes. ML FC con cautela (modelo 63%)."
+        },
+        {
+          "home_team": "Wolverhampton Wanderers FC",
+          "away_team": "Liverpool FC",
+          "pick": "A",
+          "pick_label": "Liverpool FC",
+          "p_win": 0.6038,
+          "implied_odds": 1.66,
+          "signal": "media",
+          "date": "2026-03-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML FC con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "AFC Bournemouth",
+          "away_team": "Brentford FC",
+          "pick": "H",
+          "pick_label": "AFC Bournemouth",
+          "p_win": 0.4637,
+          "implied_odds": 2.16,
+          "signal": "baja",
+          "date": "2026-03-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 46%. Sin bajas importantes. SKIP — sin edge claro (46%)."
+        },
+        {
+          "home_team": "Leeds United FC",
+          "away_team": "Sunderland AFC",
+          "pick": "H",
+          "pick_label": "Leeds United FC",
+          "p_win": 0.3874,
+          "implied_odds": 2.58,
+          "signal": "baja",
+          "date": "2026-03-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 39%. Sin bajas importantes. SKIP — sin edge claro (39%)."
         }
       ],
-      "name": "La Liga",
+      "name": "Premier League",
       "analysis": ""
+    },
+    "laliga": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.3654,
+        "logloss": 1.0782,
+        "brier": 0.2179
+      },
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -99,40 +177,12 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4651,
-        "logloss": 1.0693,
-        "brier": 0.2116
+        "accuracy": 0.4773,
+        "logloss": 1.0694,
+        "brier": 0.2108
       },
-      "picks": [
-        {
-          "home_team": "Gil Vicente FC",
-          "away_team": "Sport Lisboa e Benfica",
-          "pick": "A",
-          "pick_label": "Sport Lisboa e Benfica",
-          "p_win": 0.6466,
-          "implied_odds": 1.55,
-          "signal": "media",
-          "date": "2026-03-02",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 65%. Sin bajas importantes. ML Benfica con cautela (modelo 65%)."
-        }
-      ],
-      "name": "Primeira Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "Primeira Liga"
     },
     "ucl": {
       "status": "ok",
@@ -151,128 +201,156 @@
         "cuota_3": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Getafe CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8291,
-              "implied_odds": 1.21
+              "sport": "epl",
+              "match": "Everton FC vs Burnley FC",
+              "pick": "Everton FC",
+              "p_win": 0.6271,
+              "implied_odds": 1.59
             },
             {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-              "pick": "Sport Lisboa e Benfica",
-              "p_win": 0.6466,
-              "implied_odds": 1.55
+              "sport": "epl",
+              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.6038,
+              "implied_odds": 1.66
             }
           ],
-          "total_odds": 1.88,
-          "combined_prob": 0.5361,
+          "total_odds": 2.64,
+          "combined_prob": 0.3786,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Getafe CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8291,
-              "implied_odds": 1.21
+              "sport": "epl",
+              "match": "Everton FC vs Burnley FC",
+              "pick": "Everton FC",
+              "p_win": 0.6271,
+              "implied_odds": 1.59
             },
             {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-              "pick": "Sport Lisboa e Benfica",
-              "p_win": 0.6466,
-              "implied_odds": 1.55
+              "sport": "epl",
+              "match": "Leeds United FC vs Sunderland AFC",
+              "pick": "Leeds United FC",
+              "p_win": 0.3874,
+              "implied_odds": 2.58
             }
           ],
-          "total_odds": 1.88,
-          "combined_prob": 0.5361,
+          "total_odds": 4.1,
+          "combined_prob": 0.2429,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Getafe CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8291,
-              "implied_odds": 1.21
+              "sport": "epl",
+              "match": "AFC Bournemouth vs Brentford FC",
+              "pick": "AFC Bournemouth",
+              "p_win": 0.4637,
+              "implied_odds": 2.16
             },
             {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-              "pick": "Sport Lisboa e Benfica",
-              "p_win": 0.6466,
-              "implied_odds": 1.55
+              "sport": "epl",
+              "match": "Leeds United FC vs Sunderland AFC",
+              "pick": "Leeds United FC",
+              "p_win": 0.3874,
+              "implied_odds": 2.58
             }
           ],
-          "total_odds": 1.88,
-          "combined_prob": 0.5361,
+          "total_odds": 5.57,
+          "combined_prob": 0.1796,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Getafe CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8291,
-              "implied_odds": 1.21
+              "sport": "epl",
+              "match": "Everton FC vs Burnley FC",
+              "pick": "Everton FC",
+              "p_win": 0.6271,
+              "implied_odds": 1.59
             },
             {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-              "pick": "Sport Lisboa e Benfica",
-              "p_win": 0.6466,
-              "implied_odds": 1.55
+              "sport": "epl",
+              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.6038,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "epl",
+              "match": "AFC Bournemouth vs Brentford FC",
+              "pick": "AFC Bournemouth",
+              "p_win": 0.4637,
+              "implied_odds": 2.16
             }
           ],
-          "total_odds": 1.88,
-          "combined_prob": 0.5361,
-          "n_legs": 2
+          "total_odds": 5.7,
+          "combined_prob": 0.1756,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Getafe CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8291,
-              "implied_odds": 1.21
+              "sport": "epl",
+              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.6038,
+              "implied_odds": 1.66
             },
             {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-              "pick": "Sport Lisboa e Benfica",
-              "p_win": 0.6466,
-              "implied_odds": 1.55
+              "sport": "epl",
+              "match": "AFC Bournemouth vs Brentford FC",
+              "pick": "AFC Bournemouth",
+              "p_win": 0.4637,
+              "implied_odds": 2.16
+            },
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Sunderland AFC",
+              "pick": "Leeds United FC",
+              "p_win": 0.3874,
+              "implied_odds": 2.58
             }
           ],
-          "total_odds": 1.88,
-          "combined_prob": 0.5361,
-          "n_legs": 2
+          "total_odds": 9.25,
+          "combined_prob": 0.1085,
+          "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Getafe CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8291,
-              "implied_odds": 1.21
+              "sport": "epl",
+              "match": "Everton FC vs Burnley FC",
+              "pick": "Everton FC",
+              "p_win": 0.6271,
+              "implied_odds": 1.59
             },
             {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-              "pick": "Sport Lisboa e Benfica",
-              "p_win": 0.6466,
-              "implied_odds": 1.55
+              "sport": "epl",
+              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.6038,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "epl",
+              "match": "AFC Bournemouth vs Brentford FC",
+              "pick": "AFC Bournemouth",
+              "p_win": 0.4637,
+              "implied_odds": 2.16
+            },
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Sunderland AFC",
+              "pick": "Leeds United FC",
+              "p_win": 0.3874,
+              "implied_odds": 2.58
             }
           ],
-          "total_odds": 1.88,
-          "combined_prob": 0.5361,
-          "n_legs": 2
+          "total_odds": 14.71,
+          "combined_prob": 0.068,
+          "n_legs": 4
         }
       }
     },
@@ -280,128 +358,156 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Getafe CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8291,
-            "implied_odds": 1.21
+            "sport": "epl",
+            "match": "Everton FC vs Burnley FC",
+            "pick": "Everton FC",
+            "p_win": 0.6271,
+            "implied_odds": 1.59
           },
           {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-            "pick": "Sport Lisboa e Benfica",
-            "p_win": 0.6466,
-            "implied_odds": 1.55
+            "sport": "epl",
+            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.6038,
+            "implied_odds": 1.66
           }
         ],
-        "total_odds": 1.88,
-        "combined_prob": 0.5361,
+        "total_odds": 2.64,
+        "combined_prob": 0.3786,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Getafe CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8291,
-            "implied_odds": 1.21
+            "sport": "epl",
+            "match": "Everton FC vs Burnley FC",
+            "pick": "Everton FC",
+            "p_win": 0.6271,
+            "implied_odds": 1.59
           },
           {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-            "pick": "Sport Lisboa e Benfica",
-            "p_win": 0.6466,
-            "implied_odds": 1.55
+            "sport": "epl",
+            "match": "Leeds United FC vs Sunderland AFC",
+            "pick": "Leeds United FC",
+            "p_win": 0.3874,
+            "implied_odds": 2.58
           }
         ],
-        "total_odds": 1.88,
-        "combined_prob": 0.5361,
+        "total_odds": 4.1,
+        "combined_prob": 0.2429,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Getafe CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8291,
-            "implied_odds": 1.21
+            "sport": "epl",
+            "match": "AFC Bournemouth vs Brentford FC",
+            "pick": "AFC Bournemouth",
+            "p_win": 0.4637,
+            "implied_odds": 2.16
           },
           {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-            "pick": "Sport Lisboa e Benfica",
-            "p_win": 0.6466,
-            "implied_odds": 1.55
+            "sport": "epl",
+            "match": "Leeds United FC vs Sunderland AFC",
+            "pick": "Leeds United FC",
+            "p_win": 0.3874,
+            "implied_odds": 2.58
           }
         ],
-        "total_odds": 1.88,
-        "combined_prob": 0.5361,
+        "total_odds": 5.57,
+        "combined_prob": 0.1796,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Getafe CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8291,
-            "implied_odds": 1.21
+            "sport": "epl",
+            "match": "Everton FC vs Burnley FC",
+            "pick": "Everton FC",
+            "p_win": 0.6271,
+            "implied_odds": 1.59
           },
           {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-            "pick": "Sport Lisboa e Benfica",
-            "p_win": 0.6466,
-            "implied_odds": 1.55
+            "sport": "epl",
+            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.6038,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "epl",
+            "match": "AFC Bournemouth vs Brentford FC",
+            "pick": "AFC Bournemouth",
+            "p_win": 0.4637,
+            "implied_odds": 2.16
           }
         ],
-        "total_odds": 1.88,
-        "combined_prob": 0.5361,
-        "n_legs": 2
+        "total_odds": 5.7,
+        "combined_prob": 0.1756,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Getafe CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8291,
-            "implied_odds": 1.21
+            "sport": "epl",
+            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.6038,
+            "implied_odds": 1.66
           },
           {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-            "pick": "Sport Lisboa e Benfica",
-            "p_win": 0.6466,
-            "implied_odds": 1.55
+            "sport": "epl",
+            "match": "AFC Bournemouth vs Brentford FC",
+            "pick": "AFC Bournemouth",
+            "p_win": 0.4637,
+            "implied_odds": 2.16
+          },
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Sunderland AFC",
+            "pick": "Leeds United FC",
+            "p_win": 0.3874,
+            "implied_odds": 2.58
           }
         ],
-        "total_odds": 1.88,
-        "combined_prob": 0.5361,
-        "n_legs": 2
+        "total_odds": 9.25,
+        "combined_prob": 0.1085,
+        "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Getafe CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8291,
-            "implied_odds": 1.21
+            "sport": "epl",
+            "match": "Everton FC vs Burnley FC",
+            "pick": "Everton FC",
+            "p_win": 0.6271,
+            "implied_odds": 1.59
           },
           {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Sport Lisboa e Benfica",
-            "pick": "Sport Lisboa e Benfica",
-            "p_win": 0.6466,
-            "implied_odds": 1.55
+            "sport": "epl",
+            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.6038,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "epl",
+            "match": "AFC Bournemouth vs Brentford FC",
+            "pick": "AFC Bournemouth",
+            "p_win": 0.4637,
+            "implied_odds": 2.16
+          },
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Sunderland AFC",
+            "pick": "Leeds United FC",
+            "p_win": 0.3874,
+            "implied_odds": 2.58
           }
         ],
-        "total_odds": 1.88,
-        "combined_prob": 0.5361,
-        "n_legs": 2
+        "total_odds": 14.71,
+        "combined_prob": 0.068,
+        "n_legs": 4
       }
     }
   }
