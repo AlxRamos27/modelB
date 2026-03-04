@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-03T08:42:19Z",
-  "date": "2026-03-03",
+  "generated_at": "2026-03-04T08:40:27Z",
+  "date": "2026-03-04",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5271,
-        "logloss": 0.6917,
-        "brier": 0.2493
+        "accuracy": 0.5291,
+        "logloss": 0.6915,
+        "brier": 0.2492
       },
       "picks": [],
       "name": "NHL"
@@ -31,20 +31,20 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5263,
-        "logloss": 1.0236,
-        "brier": 0.204
+        "accuracy": 0.5088,
+        "logloss": 1.0492,
+        "brier": 0.2086
       },
       "picks": [
         {
-          "home_team": "Everton FC",
-          "away_team": "Burnley FC",
+          "home_team": "Manchester City FC",
+          "away_team": "Nottingham Forest FC",
           "pick": "H",
-          "pick_label": "Everton FC",
-          "p_win": 0.6271,
-          "implied_odds": 1.59,
+          "pick_label": "Manchester City FC",
+          "p_win": 0.6195,
+          "implied_odds": 1.61,
           "signal": "media",
-          "date": "2026-03-03",
+          "date": "2026-03-04",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -60,17 +60,43 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 63%. Sin bajas importantes. ML FC con cautela (modelo 63%)."
+          "note": "⚠️ Modelo 62%. Sin bajas importantes. ML FC con cautela (modelo 62%)."
         },
         {
-          "home_team": "Wolverhampton Wanderers FC",
-          "away_team": "Liverpool FC",
+          "home_team": "Fulham FC",
+          "away_team": "West Ham United FC",
+          "pick": "H",
+          "pick_label": "Fulham FC",
+          "p_win": 0.5449,
+          "implied_odds": 1.84,
+          "signal": "baja",
+          "date": "2026-03-04",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 54%. Sin bajas importantes. SKIP — sin edge claro (54%)."
+        },
+        {
+          "home_team": "Brighton & Hove Albion FC",
+          "away_team": "Arsenal FC",
           "pick": "A",
-          "pick_label": "Liverpool FC",
-          "p_win": 0.6038,
-          "implied_odds": 1.66,
-          "signal": "media",
-          "date": "2026-03-03",
+          "pick_label": "Arsenal FC",
+          "p_win": 0.5269,
+          "implied_odds": 1.9,
+          "signal": "baja",
+          "date": "2026-03-04",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -86,17 +112,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML FC con cautela (modelo 60%)."
+          "note": "❌ Modelo 53%. Sin bajas importantes. SKIP — sin edge claro (53%)."
         },
         {
-          "home_team": "AFC Bournemouth",
-          "away_team": "Brentford FC",
-          "pick": "H",
-          "pick_label": "AFC Bournemouth",
-          "p_win": 0.4637,
-          "implied_odds": 2.16,
+          "home_team": "Newcastle United FC",
+          "away_team": "Manchester United FC",
+          "pick": "A",
+          "pick_label": "Manchester United FC",
+          "p_win": 0.5219,
+          "implied_odds": 1.92,
           "signal": "baja",
-          "date": "2026-03-03",
+          "date": "2026-03-04",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -112,17 +138,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 46%. Sin bajas importantes. SKIP — sin edge claro (46%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. SKIP — sin edge claro (52%)."
         },
         {
-          "home_team": "Leeds United FC",
-          "away_team": "Sunderland AFC",
+          "home_team": "Aston Villa FC",
+          "away_team": "Chelsea FC",
           "pick": "H",
-          "pick_label": "Leeds United FC",
-          "p_win": 0.3874,
-          "implied_odds": 2.58,
+          "pick_label": "Aston Villa FC",
+          "p_win": 0.4694,
+          "implied_odds": 2.13,
           "signal": "baja",
-          "date": "2026-03-03",
+          "date": "2026-03-04",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -138,7 +164,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 39%. Sin bajas importantes. SKIP — sin edge claro (39%)."
+          "note": "❌ Modelo 47%. Sin bajas importantes. SKIP — sin edge claro (47%)."
         }
       ],
       "name": "Premier League",
@@ -151,8 +177,36 @@
         "logloss": 1.0782,
         "brier": 0.2179
       },
-      "picks": [],
-      "name": "La Liga"
+      "picks": [
+        {
+          "home_team": "Rayo Vallecano de Madrid",
+          "away_team": "Real Oviedo",
+          "pick": "H",
+          "pick_label": "Rayo Vallecano de Madrid",
+          "p_win": 0.5924,
+          "implied_odds": 1.69,
+          "signal": "baja",
+          "date": "2026-03-04",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        }
+      ],
+      "name": "La Liga",
+      "analysis": ""
     },
     "ligue1": {
       "status": "ok",
@@ -171,8 +225,36 @@
         "logloss": 0.9227,
         "brier": 0.1815
       },
-      "picks": [],
-      "name": "Bundesliga"
+      "picks": [
+        {
+          "home_team": "Hamburger SV",
+          "away_team": "Bayer 04 Leverkusen",
+          "pick": "A",
+          "pick_label": "Bayer 04 Leverkusen",
+          "p_win": 0.3489,
+          "implied_odds": 2.87,
+          "signal": "baja",
+          "date": "2026-03-04",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 35%. Sin bajas importantes. SKIP — sin edge claro (35%)."
+        }
+      ],
+      "name": "Bundesliga",
+      "analysis": ""
     },
     "primeira": {
       "status": "ok",
@@ -202,154 +284,161 @@
           "legs": [
             {
               "sport": "epl",
-              "match": "Everton FC vs Burnley FC",
-              "pick": "Everton FC",
-              "p_win": 0.6271,
-              "implied_odds": 1.59
+              "match": "Manchester City FC vs Nottingham Forest FC",
+              "pick": "Manchester City FC",
+              "p_win": 0.6195,
+              "implied_odds": 1.61
             },
             {
               "sport": "epl",
-              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.6038,
-              "implied_odds": 1.66
+              "match": "Fulham FC vs West Ham United FC",
+              "pick": "Fulham FC",
+              "p_win": 0.5449,
+              "implied_odds": 1.84
             }
           ],
-          "total_odds": 2.64,
-          "combined_prob": 0.3786,
+          "total_odds": 2.96,
+          "combined_prob": 0.3376,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "epl",
-              "match": "Everton FC vs Burnley FC",
-              "pick": "Everton FC",
-              "p_win": 0.6271,
-              "implied_odds": 1.59
+              "match": "Brighton & Hove Albion FC vs Arsenal FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.5269,
+              "implied_odds": 1.9
             },
             {
               "sport": "epl",
-              "match": "Leeds United FC vs Sunderland AFC",
-              "pick": "Leeds United FC",
-              "p_win": 0.3874,
-              "implied_odds": 2.58
+              "match": "Aston Villa FC vs Chelsea FC",
+              "pick": "Aston Villa FC",
+              "p_win": 0.4694,
+              "implied_odds": 2.13
             }
           ],
-          "total_odds": 4.1,
-          "combined_prob": 0.2429,
+          "total_odds": 4.05,
+          "combined_prob": 0.2473,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "epl",
-              "match": "AFC Bournemouth vs Brentford FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.4637,
-              "implied_odds": 2.16
+              "match": "Manchester City FC vs Nottingham Forest FC",
+              "pick": "Manchester City FC",
+              "p_win": 0.6195,
+              "implied_odds": 1.61
+            },
+            {
+              "sport": "laliga",
+              "match": "Rayo Vallecano de Madrid vs Real Oviedo",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.5924,
+              "implied_odds": 1.69
             },
             {
               "sport": "epl",
-              "match": "Leeds United FC vs Sunderland AFC",
-              "pick": "Leeds United FC",
-              "p_win": 0.3874,
-              "implied_odds": 2.58
+              "match": "Fulham FC vs West Ham United FC",
+              "pick": "Fulham FC",
+              "p_win": 0.5449,
+              "implied_odds": 1.84
             }
           ],
-          "total_odds": 5.57,
-          "combined_prob": 0.1796,
-          "n_legs": 2
+          "total_odds": 5.01,
+          "combined_prob": 0.2,
+          "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Everton FC vs Burnley FC",
-              "pick": "Everton FC",
-              "p_win": 0.6271,
-              "implied_odds": 1.59
+              "sport": "laliga",
+              "match": "Rayo Vallecano de Madrid vs Real Oviedo",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.5924,
+              "implied_odds": 1.69
             },
             {
               "sport": "epl",
-              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.6038,
-              "implied_odds": 1.66
+              "match": "Fulham FC vs West Ham United FC",
+              "pick": "Fulham FC",
+              "p_win": 0.5449,
+              "implied_odds": 1.84
             },
             {
               "sport": "epl",
-              "match": "AFC Bournemouth vs Brentford FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.4637,
-              "implied_odds": 2.16
+              "match": "Newcastle United FC vs Manchester United FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.5219,
+              "implied_odds": 1.92
             }
           ],
-          "total_odds": 5.7,
-          "combined_prob": 0.1756,
+          "total_odds": 5.97,
+          "combined_prob": 0.1685,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "epl",
-              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.6038,
-              "implied_odds": 1.66
+              "match": "Fulham FC vs West Ham United FC",
+              "pick": "Fulham FC",
+              "p_win": 0.5449,
+              "implied_odds": 1.84
             },
             {
               "sport": "epl",
-              "match": "AFC Bournemouth vs Brentford FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.4637,
-              "implied_odds": 2.16
+              "match": "Brighton & Hove Albion FC vs Arsenal FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.5269,
+              "implied_odds": 1.9
             },
             {
-              "sport": "epl",
-              "match": "Leeds United FC vs Sunderland AFC",
-              "pick": "Leeds United FC",
-              "p_win": 0.3874,
-              "implied_odds": 2.58
+              "sport": "bundesliga",
+              "match": "Hamburger SV vs Bayer 04 Leverkusen",
+              "pick": "Bayer 04 Leverkusen",
+              "p_win": 0.3489,
+              "implied_odds": 2.87
             }
           ],
-          "total_odds": 9.25,
-          "combined_prob": 0.1085,
+          "total_odds": 10.03,
+          "combined_prob": 0.1002,
           "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Everton FC vs Burnley FC",
-              "pick": "Everton FC",
-              "p_win": 0.6271,
-              "implied_odds": 1.59
+              "sport": "laliga",
+              "match": "Rayo Vallecano de Madrid vs Real Oviedo",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.5924,
+              "implied_odds": 1.69
             },
             {
               "sport": "epl",
-              "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.6038,
-              "implied_odds": 1.66
+              "match": "Newcastle United FC vs Manchester United FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.5219,
+              "implied_odds": 1.92
             },
             {
               "sport": "epl",
-              "match": "AFC Bournemouth vs Brentford FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.4637,
-              "implied_odds": 2.16
+              "match": "Aston Villa FC vs Chelsea FC",
+              "pick": "Aston Villa FC",
+              "p_win": 0.4694,
+              "implied_odds": 2.13
             },
             {
-              "sport": "epl",
-              "match": "Leeds United FC vs Sunderland AFC",
-              "pick": "Leeds United FC",
-              "p_win": 0.3874,
-              "implied_odds": 2.58
+              "sport": "bundesliga",
+              "match": "Hamburger SV vs Bayer 04 Leverkusen",
+              "pick": "Bayer 04 Leverkusen",
+              "p_win": 0.3489,
+              "implied_odds": 2.87
             }
           ],
-          "total_odds": 14.71,
-          "combined_prob": 0.068,
+          "total_odds": 19.84,
+          "combined_prob": 0.0506,
           "n_legs": 4
         }
       }
@@ -359,154 +448,161 @@
         "legs": [
           {
             "sport": "epl",
-            "match": "Everton FC vs Burnley FC",
-            "pick": "Everton FC",
-            "p_win": 0.6271,
-            "implied_odds": 1.59
+            "match": "Manchester City FC vs Nottingham Forest FC",
+            "pick": "Manchester City FC",
+            "p_win": 0.6195,
+            "implied_odds": 1.61
           },
           {
             "sport": "epl",
-            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.6038,
-            "implied_odds": 1.66
+            "match": "Fulham FC vs West Ham United FC",
+            "pick": "Fulham FC",
+            "p_win": 0.5449,
+            "implied_odds": 1.84
           }
         ],
-        "total_odds": 2.64,
-        "combined_prob": 0.3786,
+        "total_odds": 2.96,
+        "combined_prob": 0.3376,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "epl",
-            "match": "Everton FC vs Burnley FC",
-            "pick": "Everton FC",
-            "p_win": 0.6271,
-            "implied_odds": 1.59
+            "match": "Brighton & Hove Albion FC vs Arsenal FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.5269,
+            "implied_odds": 1.9
           },
           {
             "sport": "epl",
-            "match": "Leeds United FC vs Sunderland AFC",
-            "pick": "Leeds United FC",
-            "p_win": 0.3874,
-            "implied_odds": 2.58
+            "match": "Aston Villa FC vs Chelsea FC",
+            "pick": "Aston Villa FC",
+            "p_win": 0.4694,
+            "implied_odds": 2.13
           }
         ],
-        "total_odds": 4.1,
-        "combined_prob": 0.2429,
+        "total_odds": 4.05,
+        "combined_prob": 0.2473,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Brentford FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.4637,
-            "implied_odds": 2.16
+            "match": "Manchester City FC vs Nottingham Forest FC",
+            "pick": "Manchester City FC",
+            "p_win": 0.6195,
+            "implied_odds": 1.61
+          },
+          {
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs Real Oviedo",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.5924,
+            "implied_odds": 1.69
           },
           {
             "sport": "epl",
-            "match": "Leeds United FC vs Sunderland AFC",
-            "pick": "Leeds United FC",
-            "p_win": 0.3874,
-            "implied_odds": 2.58
+            "match": "Fulham FC vs West Ham United FC",
+            "pick": "Fulham FC",
+            "p_win": 0.5449,
+            "implied_odds": 1.84
           }
         ],
-        "total_odds": 5.57,
-        "combined_prob": 0.1796,
-        "n_legs": 2
+        "total_odds": 5.01,
+        "combined_prob": 0.2,
+        "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Everton FC vs Burnley FC",
-            "pick": "Everton FC",
-            "p_win": 0.6271,
-            "implied_odds": 1.59
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs Real Oviedo",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.5924,
+            "implied_odds": 1.69
           },
           {
             "sport": "epl",
-            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.6038,
-            "implied_odds": 1.66
+            "match": "Fulham FC vs West Ham United FC",
+            "pick": "Fulham FC",
+            "p_win": 0.5449,
+            "implied_odds": 1.84
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Brentford FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.4637,
-            "implied_odds": 2.16
+            "match": "Newcastle United FC vs Manchester United FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.5219,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 5.7,
-        "combined_prob": 0.1756,
+        "total_odds": 5.97,
+        "combined_prob": 0.1685,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "epl",
-            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.6038,
-            "implied_odds": 1.66
+            "match": "Fulham FC vs West Ham United FC",
+            "pick": "Fulham FC",
+            "p_win": 0.5449,
+            "implied_odds": 1.84
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Brentford FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.4637,
-            "implied_odds": 2.16
+            "match": "Brighton & Hove Albion FC vs Arsenal FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.5269,
+            "implied_odds": 1.9
           },
           {
-            "sport": "epl",
-            "match": "Leeds United FC vs Sunderland AFC",
-            "pick": "Leeds United FC",
-            "p_win": 0.3874,
-            "implied_odds": 2.58
+            "sport": "bundesliga",
+            "match": "Hamburger SV vs Bayer 04 Leverkusen",
+            "pick": "Bayer 04 Leverkusen",
+            "p_win": 0.3489,
+            "implied_odds": 2.87
           }
         ],
-        "total_odds": 9.25,
-        "combined_prob": 0.1085,
+        "total_odds": 10.03,
+        "combined_prob": 0.1002,
         "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Everton FC vs Burnley FC",
-            "pick": "Everton FC",
-            "p_win": 0.6271,
-            "implied_odds": 1.59
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs Real Oviedo",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.5924,
+            "implied_odds": 1.69
           },
           {
             "sport": "epl",
-            "match": "Wolverhampton Wanderers FC vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.6038,
-            "implied_odds": 1.66
+            "match": "Newcastle United FC vs Manchester United FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.5219,
+            "implied_odds": 1.92
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Brentford FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.4637,
-            "implied_odds": 2.16
+            "match": "Aston Villa FC vs Chelsea FC",
+            "pick": "Aston Villa FC",
+            "p_win": 0.4694,
+            "implied_odds": 2.13
           },
           {
-            "sport": "epl",
-            "match": "Leeds United FC vs Sunderland AFC",
-            "pick": "Leeds United FC",
-            "p_win": 0.3874,
-            "implied_odds": 2.58
+            "sport": "bundesliga",
+            "match": "Hamburger SV vs Bayer 04 Leverkusen",
+            "pick": "Bayer 04 Leverkusen",
+            "p_win": 0.3489,
+            "implied_odds": 2.87
           }
         ],
-        "total_odds": 14.71,
-        "combined_prob": 0.068,
+        "total_odds": 19.84,
+        "combined_prob": 0.0506,
         "n_legs": 4
       }
     }
