@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-05T08:43:00Z",
-  "date": "2026-03-05",
+  "generated_at": "2026-03-06T08:39:21Z",
+  "date": "2026-03-06",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5266,
-        "logloss": 0.6917,
-        "brier": 0.2493
+        "accuracy": 0.5288,
+        "logloss": 0.6915,
+        "brier": 0.2492
       },
       "picks": [],
       "name": "NHL"
@@ -31,20 +31,30 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5345,
-        "logloss": 1.0201,
-        "brier": 0.2046
+        "accuracy": 0.4915,
+        "logloss": 1.0285,
+        "brier": 0.2067
+      },
+      "picks": [],
+      "name": "Premier League"
+    },
+    "laliga": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.4038,
+        "logloss": 1.0558,
+        "brier": 0.2125
       },
       "picks": [
         {
-          "home_team": "Tottenham Hotspur FC",
-          "away_team": "Crystal Palace FC",
-          "pick": "A",
-          "pick_label": "Crystal Palace FC",
-          "p_win": 0.4354,
-          "implied_odds": 2.3,
+          "home_team": "RC Celta de Vigo",
+          "away_team": "Real Madrid CF",
+          "pick": "H",
+          "pick_label": "RC Celta de Vigo",
+          "p_win": 0.4016,
+          "implied_odds": 2.49,
           "signal": "baja",
-          "date": "2026-03-05",
+          "date": "2026-03-06",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -60,21 +70,11 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 44%. Sin bajas importantes. SKIP — sin edge claro (44%)."
+          "note": "❌ Modelo 40%. Sin bajas importantes. SKIP — sin edge claro (40%)."
         }
       ],
-      "name": "Premier League",
+      "name": "La Liga",
       "analysis": ""
-    },
-    "laliga": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.4038,
-        "logloss": 1.0558,
-        "brier": 0.2125
-      },
-      "picks": [],
-      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -83,8 +83,36 @@
         "logloss": 0.9522,
         "brier": 0.1876
       },
-      "picks": [],
-      "name": "Ligue 1"
+      "picks": [
+        {
+          "home_team": "Paris Saint-Germain FC",
+          "away_team": "AS Monaco FC",
+          "pick": "H",
+          "pick_label": "Paris Saint-Germain FC",
+          "p_win": 0.8836,
+          "implied_odds": 1.13,
+          "signal": "alta",
+          "date": "2026-03-06",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 88%. Sin bajas importantes. ML FC es la jugada segura (modelo 88%)."
+        }
+      ],
+      "name": "Ligue 1",
+      "analysis": ""
     },
     "bundesliga": {
       "status": "ok",
@@ -93,8 +121,36 @@
         "logloss": 0.9381,
         "brier": 0.1848
       },
-      "picks": [],
-      "name": "Bundesliga"
+      "picks": [
+        {
+          "home_team": "FC Bayern München",
+          "away_team": "Borussia Mönchengladbach",
+          "pick": "H",
+          "pick_label": "FC Bayern München",
+          "p_win": 0.8717,
+          "implied_odds": 1.15,
+          "signal": "alta",
+          "date": "2026-03-06",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 87%. Sin bajas importantes. ML München es la jugada segura (modelo 87%)."
+        }
+      ],
+      "name": "Bundesliga",
+      "analysis": ""
     },
     "primeira": {
       "status": "ok",
@@ -103,8 +159,36 @@
         "logloss": 1.0694,
         "brier": 0.2108
       },
-      "picks": [],
-      "name": "Primeira Liga"
+      "picks": [
+        {
+          "home_team": "FC Famalicão",
+          "away_team": "FC Arouca",
+          "pick": "H",
+          "pick_label": "FC Famalicão",
+          "p_win": 0.6097,
+          "implied_odds": 1.64,
+          "signal": "media",
+          "date": "2026-03-06",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 61%. Sin bajas importantes. ML Famalicão con cautela (modelo 61%)."
+        }
+      ],
+      "name": "Primeira Liga",
+      "analysis": ""
     },
     "ucl": {
       "status": "ok",
@@ -120,21 +204,359 @@
   "parlays": {
     "by_sport": {
       "soccer": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "bundesliga",
+              "match": "FC Bayern München vs Borussia Mönchengladbach",
+              "pick": "FC Bayern München",
+              "p_win": 0.8717,
+              "implied_odds": 1.15
+            },
+            {
+              "sport": "laliga",
+              "match": "RC Celta de Vigo vs Real Madrid CF",
+              "pick": "RC Celta de Vigo",
+              "p_win": 0.4016,
+              "implied_odds": 2.49
+            }
+          ],
+          "total_odds": 2.86,
+          "combined_prob": 0.3501,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "primeira",
+              "match": "FC Famalicão vs FC Arouca",
+              "pick": "FC Famalicão",
+              "p_win": 0.6097,
+              "implied_odds": 1.64
+            },
+            {
+              "sport": "laliga",
+              "match": "RC Celta de Vigo vs Real Madrid CF",
+              "pick": "RC Celta de Vigo",
+              "p_win": 0.4016,
+              "implied_odds": 2.49
+            }
+          ],
+          "total_odds": 4.08,
+          "combined_prob": 0.2449,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "bundesliga",
+              "match": "FC Bayern München vs Borussia Mönchengladbach",
+              "pick": "FC Bayern München",
+              "p_win": 0.8717,
+              "implied_odds": 1.15
+            },
+            {
+              "sport": "primeira",
+              "match": "FC Famalicão vs FC Arouca",
+              "pick": "FC Famalicão",
+              "p_win": 0.6097,
+              "implied_odds": 1.64
+            },
+            {
+              "sport": "laliga",
+              "match": "RC Celta de Vigo vs Real Madrid CF",
+              "pick": "RC Celta de Vigo",
+              "p_win": 0.4016,
+              "implied_odds": 2.49
+            }
+          ],
+          "total_odds": 4.7,
+          "combined_prob": 0.2134,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.8836,
+              "implied_odds": 1.13
+            },
+            {
+              "sport": "bundesliga",
+              "match": "FC Bayern München vs Borussia Mönchengladbach",
+              "pick": "FC Bayern München",
+              "p_win": 0.8717,
+              "implied_odds": 1.15
+            },
+            {
+              "sport": "primeira",
+              "match": "FC Famalicão vs FC Arouca",
+              "pick": "FC Famalicão",
+              "p_win": 0.6097,
+              "implied_odds": 1.64
+            },
+            {
+              "sport": "laliga",
+              "match": "RC Celta de Vigo vs Real Madrid CF",
+              "pick": "RC Celta de Vigo",
+              "p_win": 0.4016,
+              "implied_odds": 2.49
+            }
+          ],
+          "total_odds": 5.31,
+          "combined_prob": 0.1886,
+          "n_legs": 4
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.8836,
+              "implied_odds": 1.13
+            },
+            {
+              "sport": "bundesliga",
+              "match": "FC Bayern München vs Borussia Mönchengladbach",
+              "pick": "FC Bayern München",
+              "p_win": 0.8717,
+              "implied_odds": 1.15
+            },
+            {
+              "sport": "primeira",
+              "match": "FC Famalicão vs FC Arouca",
+              "pick": "FC Famalicão",
+              "p_win": 0.6097,
+              "implied_odds": 1.64
+            },
+            {
+              "sport": "laliga",
+              "match": "RC Celta de Vigo vs Real Madrid CF",
+              "pick": "RC Celta de Vigo",
+              "p_win": 0.4016,
+              "implied_odds": 2.49
+            }
+          ],
+          "total_odds": 5.31,
+          "combined_prob": 0.1886,
+          "n_legs": 4
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Paris Saint-Germain FC vs AS Monaco FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.8836,
+              "implied_odds": 1.13
+            },
+            {
+              "sport": "bundesliga",
+              "match": "FC Bayern München vs Borussia Mönchengladbach",
+              "pick": "FC Bayern München",
+              "p_win": 0.8717,
+              "implied_odds": 1.15
+            },
+            {
+              "sport": "primeira",
+              "match": "FC Famalicão vs FC Arouca",
+              "pick": "FC Famalicão",
+              "p_win": 0.6097,
+              "implied_odds": 1.64
+            },
+            {
+              "sport": "laliga",
+              "match": "RC Celta de Vigo vs Real Madrid CF",
+              "pick": "RC Celta de Vigo",
+              "p_win": 0.4016,
+              "implied_odds": 2.49
+            }
+          ],
+          "total_odds": 5.31,
+          "combined_prob": 0.1886,
+          "n_legs": 4
+        }
       }
     },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "bundesliga",
+            "match": "FC Bayern München vs Borussia Mönchengladbach",
+            "pick": "FC Bayern München",
+            "p_win": 0.8717,
+            "implied_odds": 1.15
+          },
+          {
+            "sport": "laliga",
+            "match": "RC Celta de Vigo vs Real Madrid CF",
+            "pick": "RC Celta de Vigo",
+            "p_win": 0.4016,
+            "implied_odds": 2.49
+          }
+        ],
+        "total_odds": 2.86,
+        "combined_prob": 0.3501,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs FC Arouca",
+            "pick": "FC Famalicão",
+            "p_win": 0.6097,
+            "implied_odds": 1.64
+          },
+          {
+            "sport": "laliga",
+            "match": "RC Celta de Vigo vs Real Madrid CF",
+            "pick": "RC Celta de Vigo",
+            "p_win": 0.4016,
+            "implied_odds": 2.49
+          }
+        ],
+        "total_odds": 4.08,
+        "combined_prob": 0.2449,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "bundesliga",
+            "match": "FC Bayern München vs Borussia Mönchengladbach",
+            "pick": "FC Bayern München",
+            "p_win": 0.8717,
+            "implied_odds": 1.15
+          },
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs FC Arouca",
+            "pick": "FC Famalicão",
+            "p_win": 0.6097,
+            "implied_odds": 1.64
+          },
+          {
+            "sport": "laliga",
+            "match": "RC Celta de Vigo vs Real Madrid CF",
+            "pick": "RC Celta de Vigo",
+            "p_win": 0.4016,
+            "implied_odds": 2.49
+          }
+        ],
+        "total_odds": 4.7,
+        "combined_prob": 0.2134,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.8836,
+            "implied_odds": 1.13
+          },
+          {
+            "sport": "bundesliga",
+            "match": "FC Bayern München vs Borussia Mönchengladbach",
+            "pick": "FC Bayern München",
+            "p_win": 0.8717,
+            "implied_odds": 1.15
+          },
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs FC Arouca",
+            "pick": "FC Famalicão",
+            "p_win": 0.6097,
+            "implied_odds": 1.64
+          },
+          {
+            "sport": "laliga",
+            "match": "RC Celta de Vigo vs Real Madrid CF",
+            "pick": "RC Celta de Vigo",
+            "p_win": 0.4016,
+            "implied_odds": 2.49
+          }
+        ],
+        "total_odds": 5.31,
+        "combined_prob": 0.1886,
+        "n_legs": 4
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.8836,
+            "implied_odds": 1.13
+          },
+          {
+            "sport": "bundesliga",
+            "match": "FC Bayern München vs Borussia Mönchengladbach",
+            "pick": "FC Bayern München",
+            "p_win": 0.8717,
+            "implied_odds": 1.15
+          },
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs FC Arouca",
+            "pick": "FC Famalicão",
+            "p_win": 0.6097,
+            "implied_odds": 1.64
+          },
+          {
+            "sport": "laliga",
+            "match": "RC Celta de Vigo vs Real Madrid CF",
+            "pick": "RC Celta de Vigo",
+            "p_win": 0.4016,
+            "implied_odds": 2.49
+          }
+        ],
+        "total_odds": 5.31,
+        "combined_prob": 0.1886,
+        "n_legs": 4
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Paris Saint-Germain FC vs AS Monaco FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.8836,
+            "implied_odds": 1.13
+          },
+          {
+            "sport": "bundesliga",
+            "match": "FC Bayern München vs Borussia Mönchengladbach",
+            "pick": "FC Bayern München",
+            "p_win": 0.8717,
+            "implied_odds": 1.15
+          },
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs FC Arouca",
+            "pick": "FC Famalicão",
+            "p_win": 0.6097,
+            "implied_odds": 1.64
+          },
+          {
+            "sport": "laliga",
+            "match": "RC Celta de Vigo vs Real Madrid CF",
+            "pick": "RC Celta de Vigo",
+            "p_win": 0.4016,
+            "implied_odds": 2.49
+          }
+        ],
+        "total_odds": 5.31,
+        "combined_prob": 0.1886,
+        "n_legs": 4
+      }
     }
   }
 }
