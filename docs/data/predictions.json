@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-09T08:46:01Z",
-  "date": "2026-03-09",
+  "generated_at": "2026-03-10T08:43:15Z",
+  "date": "2026-03-10",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5258,
-        "logloss": 0.6918,
-        "brier": 0.2493
+        "accuracy": 0.5234,
+        "logloss": 0.6921,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
@@ -41,40 +41,12 @@
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4259,
-        "logloss": 1.0327,
-        "brier": 0.2078
+        "accuracy": 0.4815,
+        "logloss": 1.0162,
+        "brier": 0.2033
       },
-      "picks": [
-        {
-          "home_team": "RCD Espanyol de Barcelona",
-          "away_team": "Real Oviedo",
-          "pick": "H",
-          "pick_label": "RCD Espanyol de Barcelona",
-          "p_win": 0.5279,
-          "implied_odds": 1.89,
-          "signal": "baja",
-          "date": "2026-03-09",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 53%. Sin bajas importantes. SKIP — sin edge claro (53%)."
-        }
-      ],
-      "name": "La Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -99,20 +71,30 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5111,
-        "logloss": 0.9686,
-        "brier": 0.1921
+        "accuracy": 0.6,
+        "logloss": 0.8834,
+        "brier": 0.1735
+      },
+      "picks": [],
+      "name": "Primeira Liga"
+    },
+    "ucl": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5625,
+        "logloss": 0.9795,
+        "brier": 0.1959
       },
       "picks": [
         {
-          "home_team": "CD Tondela",
-          "away_team": "Rio Ave FC",
+          "home_team": "Newcastle United FC",
+          "away_team": "FC Barcelona",
           "pick": "H",
-          "pick_label": "CD Tondela",
-          "p_win": 0.2568,
-          "implied_odds": 3.89,
-          "signal": "baja",
-          "date": "2026-03-09",
+          "pick_label": "Newcastle United FC",
+          "p_win": 0.6003,
+          "implied_odds": 1.67,
+          "signal": "media",
+          "date": "2026-03-10",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -128,21 +110,89 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 26%. Sin bajas importantes. SKIP — sin edge claro (26%)."
+          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML FC con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "Atalanta BC",
+          "away_team": "FC Bayern München",
+          "pick": "A",
+          "pick_label": "FC Bayern München",
+          "p_win": 0.5973,
+          "implied_odds": 1.67,
+          "signal": "media",
+          "date": "2026-03-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML München con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "Galatasaray SK",
+          "away_team": "Liverpool FC",
+          "pick": "A",
+          "pick_label": "Liverpool FC",
+          "p_win": 0.5856,
+          "implied_odds": 1.71,
+          "signal": "baja",
+          "date": "2026-03-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "Club Atlético de Madrid",
+          "away_team": "Tottenham Hotspur FC",
+          "pick": "A",
+          "pick_label": "Tottenham Hotspur FC",
+          "p_win": 0.4304,
+          "implied_odds": 2.32,
+          "signal": "baja",
+          "date": "2026-03-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
         }
       ],
-      "name": "Primeira Liga",
+      "name": "Champions League",
       "analysis": ""
-    },
-    "ucl": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5625,
-        "logloss": 0.9795,
-        "brier": 0.1959
-      },
-      "picks": [],
-      "name": "Champions League"
     }
   },
   "parlays": {
@@ -151,128 +201,170 @@
         "cuota_3": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.5279,
-              "implied_odds": 1.89
+              "sport": "ucl",
+              "match": "Newcastle United FC vs FC Barcelona",
+              "pick": "Newcastle United FC",
+              "p_win": 0.6003,
+              "implied_odds": 1.67
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Rio Ave FC",
-              "pick": "CD Tondela",
-              "p_win": 0.2568,
-              "implied_odds": 3.89
+              "sport": "ucl",
+              "match": "Galatasaray SK vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5856,
+              "implied_odds": 1.71
             }
           ],
-          "total_odds": 7.35,
-          "combined_prob": 0.1356,
+          "total_odds": 2.86,
+          "combined_prob": 0.3515,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.5279,
-              "implied_odds": 1.89
+              "sport": "ucl",
+              "match": "Galatasaray SK vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5856,
+              "implied_odds": 1.71
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Rio Ave FC",
-              "pick": "CD Tondela",
-              "p_win": 0.2568,
-              "implied_odds": 3.89
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+              "pick": "Tottenham Hotspur FC",
+              "p_win": 0.4304,
+              "implied_odds": 2.32
             }
           ],
-          "total_odds": 7.35,
-          "combined_prob": 0.1356,
+          "total_odds": 3.97,
+          "combined_prob": 0.252,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.5279,
-              "implied_odds": 1.89
+              "sport": "ucl",
+              "match": "Newcastle United FC vs FC Barcelona",
+              "pick": "Newcastle United FC",
+              "p_win": 0.6003,
+              "implied_odds": 1.67
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Rio Ave FC",
-              "pick": "CD Tondela",
-              "p_win": 0.2568,
-              "implied_odds": 3.89
+              "sport": "ucl",
+              "match": "Atalanta BC vs FC Bayern München",
+              "pick": "FC Bayern München",
+              "p_win": 0.5973,
+              "implied_odds": 1.67
+            },
+            {
+              "sport": "ucl",
+              "match": "Galatasaray SK vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5856,
+              "implied_odds": 1.71
             }
           ],
-          "total_odds": 7.35,
-          "combined_prob": 0.1356,
-          "n_legs": 2
+          "total_odds": 4.77,
+          "combined_prob": 0.21,
+          "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.5279,
-              "implied_odds": 1.89
+              "sport": "ucl",
+              "match": "Newcastle United FC vs FC Barcelona",
+              "pick": "Newcastle United FC",
+              "p_win": 0.6003,
+              "implied_odds": 1.67
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Rio Ave FC",
-              "pick": "CD Tondela",
-              "p_win": 0.2568,
-              "implied_odds": 3.89
+              "sport": "ucl",
+              "match": "Atalanta BC vs FC Bayern München",
+              "pick": "FC Bayern München",
+              "p_win": 0.5973,
+              "implied_odds": 1.67
+            },
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+              "pick": "Tottenham Hotspur FC",
+              "p_win": 0.4304,
+              "implied_odds": 2.32
             }
           ],
-          "total_odds": 7.35,
-          "combined_prob": 0.1356,
-          "n_legs": 2
+          "total_odds": 6.47,
+          "combined_prob": 0.1543,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.5279,
-              "implied_odds": 1.89
+              "sport": "ucl",
+              "match": "Newcastle United FC vs FC Barcelona",
+              "pick": "Newcastle United FC",
+              "p_win": 0.6003,
+              "implied_odds": 1.67
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Rio Ave FC",
-              "pick": "CD Tondela",
-              "p_win": 0.2568,
-              "implied_odds": 3.89
+              "sport": "ucl",
+              "match": "Atalanta BC vs FC Bayern München",
+              "pick": "FC Bayern München",
+              "p_win": 0.5973,
+              "implied_odds": 1.67
+            },
+            {
+              "sport": "ucl",
+              "match": "Galatasaray SK vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5856,
+              "implied_odds": 1.71
+            },
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+              "pick": "Tottenham Hotspur FC",
+              "p_win": 0.4304,
+              "implied_odds": 2.32
             }
           ],
-          "total_odds": 7.35,
-          "combined_prob": 0.1356,
-          "n_legs": 2
+          "total_odds": 11.06,
+          "combined_prob": 0.0904,
+          "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.5279,
-              "implied_odds": 1.89
+              "sport": "ucl",
+              "match": "Newcastle United FC vs FC Barcelona",
+              "pick": "Newcastle United FC",
+              "p_win": 0.6003,
+              "implied_odds": 1.67
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Rio Ave FC",
-              "pick": "CD Tondela",
-              "p_win": 0.2568,
-              "implied_odds": 3.89
+              "sport": "ucl",
+              "match": "Atalanta BC vs FC Bayern München",
+              "pick": "FC Bayern München",
+              "p_win": 0.5973,
+              "implied_odds": 1.67
+            },
+            {
+              "sport": "ucl",
+              "match": "Galatasaray SK vs Liverpool FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5856,
+              "implied_odds": 1.71
+            },
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+              "pick": "Tottenham Hotspur FC",
+              "p_win": 0.4304,
+              "implied_odds": 2.32
             }
           ],
-          "total_odds": 7.35,
-          "combined_prob": 0.1356,
-          "n_legs": 2
+          "total_odds": 11.06,
+          "combined_prob": 0.0904,
+          "n_legs": 4
         }
       }
     },
@@ -280,128 +372,170 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.5279,
-            "implied_odds": 1.89
+            "sport": "ucl",
+            "match": "Newcastle United FC vs FC Barcelona",
+            "pick": "Newcastle United FC",
+            "p_win": 0.6003,
+            "implied_odds": 1.67
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Rio Ave FC",
-            "pick": "CD Tondela",
-            "p_win": 0.2568,
-            "implied_odds": 3.89
+            "sport": "ucl",
+            "match": "Galatasaray SK vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5856,
+            "implied_odds": 1.71
           }
         ],
-        "total_odds": 7.35,
-        "combined_prob": 0.1356,
+        "total_odds": 2.86,
+        "combined_prob": 0.3515,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.5279,
-            "implied_odds": 1.89
+            "sport": "ucl",
+            "match": "Galatasaray SK vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5856,
+            "implied_odds": 1.71
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Rio Ave FC",
-            "pick": "CD Tondela",
-            "p_win": 0.2568,
-            "implied_odds": 3.89
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+            "pick": "Tottenham Hotspur FC",
+            "p_win": 0.4304,
+            "implied_odds": 2.32
           }
         ],
-        "total_odds": 7.35,
-        "combined_prob": 0.1356,
+        "total_odds": 3.97,
+        "combined_prob": 0.252,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.5279,
-            "implied_odds": 1.89
+            "sport": "ucl",
+            "match": "Newcastle United FC vs FC Barcelona",
+            "pick": "Newcastle United FC",
+            "p_win": 0.6003,
+            "implied_odds": 1.67
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Rio Ave FC",
-            "pick": "CD Tondela",
-            "p_win": 0.2568,
-            "implied_odds": 3.89
+            "sport": "ucl",
+            "match": "Atalanta BC vs FC Bayern München",
+            "pick": "FC Bayern München",
+            "p_win": 0.5973,
+            "implied_odds": 1.67
+          },
+          {
+            "sport": "ucl",
+            "match": "Galatasaray SK vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5856,
+            "implied_odds": 1.71
           }
         ],
-        "total_odds": 7.35,
-        "combined_prob": 0.1356,
-        "n_legs": 2
+        "total_odds": 4.77,
+        "combined_prob": 0.21,
+        "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.5279,
-            "implied_odds": 1.89
+            "sport": "ucl",
+            "match": "Newcastle United FC vs FC Barcelona",
+            "pick": "Newcastle United FC",
+            "p_win": 0.6003,
+            "implied_odds": 1.67
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Rio Ave FC",
-            "pick": "CD Tondela",
-            "p_win": 0.2568,
-            "implied_odds": 3.89
+            "sport": "ucl",
+            "match": "Atalanta BC vs FC Bayern München",
+            "pick": "FC Bayern München",
+            "p_win": 0.5973,
+            "implied_odds": 1.67
+          },
+          {
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+            "pick": "Tottenham Hotspur FC",
+            "p_win": 0.4304,
+            "implied_odds": 2.32
           }
         ],
-        "total_odds": 7.35,
-        "combined_prob": 0.1356,
-        "n_legs": 2
+        "total_odds": 6.47,
+        "combined_prob": 0.1543,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.5279,
-            "implied_odds": 1.89
+            "sport": "ucl",
+            "match": "Newcastle United FC vs FC Barcelona",
+            "pick": "Newcastle United FC",
+            "p_win": 0.6003,
+            "implied_odds": 1.67
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Rio Ave FC",
-            "pick": "CD Tondela",
-            "p_win": 0.2568,
-            "implied_odds": 3.89
+            "sport": "ucl",
+            "match": "Atalanta BC vs FC Bayern München",
+            "pick": "FC Bayern München",
+            "p_win": 0.5973,
+            "implied_odds": 1.67
+          },
+          {
+            "sport": "ucl",
+            "match": "Galatasaray SK vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5856,
+            "implied_odds": 1.71
+          },
+          {
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+            "pick": "Tottenham Hotspur FC",
+            "p_win": 0.4304,
+            "implied_odds": 2.32
           }
         ],
-        "total_odds": 7.35,
-        "combined_prob": 0.1356,
-        "n_legs": 2
+        "total_odds": 11.06,
+        "combined_prob": 0.0904,
+        "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Real Oviedo",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.5279,
-            "implied_odds": 1.89
+            "sport": "ucl",
+            "match": "Newcastle United FC vs FC Barcelona",
+            "pick": "Newcastle United FC",
+            "p_win": 0.6003,
+            "implied_odds": 1.67
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Rio Ave FC",
-            "pick": "CD Tondela",
-            "p_win": 0.2568,
-            "implied_odds": 3.89
+            "sport": "ucl",
+            "match": "Atalanta BC vs FC Bayern München",
+            "pick": "FC Bayern München",
+            "p_win": 0.5973,
+            "implied_odds": 1.67
+          },
+          {
+            "sport": "ucl",
+            "match": "Galatasaray SK vs Liverpool FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5856,
+            "implied_odds": 1.71
+          },
+          {
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
+            "pick": "Tottenham Hotspur FC",
+            "p_win": 0.4304,
+            "implied_odds": 2.32
           }
         ],
-        "total_odds": 7.35,
-        "combined_prob": 0.1356,
-        "n_legs": 2
+        "total_odds": 11.06,
+        "combined_prob": 0.0904,
+        "n_legs": 4
       }
     }
   }
