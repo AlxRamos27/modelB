@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-10T08:43:15Z",
-  "date": "2026-03-10",
+  "generated_at": "2026-03-11T08:42:35Z",
+  "date": "2026-03-11",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5234,
-        "logloss": 0.6921,
-        "brier": 0.2495
+        "accuracy": 0.5253,
+        "logloss": 0.6919,
+        "brier": 0.2494
       },
       "picks": [],
       "name": "NHL"
@@ -81,72 +81,46 @@
     "ucl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5625,
-        "logloss": 0.9795,
-        "brier": 0.1959
+        "accuracy": 0.4848,
+        "logloss": 0.9973,
+        "brier": 0.1998
       },
       "picks": [
         {
-          "home_team": "Newcastle United FC",
-          "away_team": "FC Barcelona",
+          "home_team": "Bayer 04 Leverkusen",
+          "away_team": "Arsenal FC",
+          "pick": "A",
+          "pick_label": "Arsenal FC",
+          "p_win": 0.6363,
+          "implied_odds": 1.57,
+          "signal": "media",
+          "date": "2026-03-11",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 64%. Sin bajas importantes. ML FC con cautela (modelo 64%)."
+        },
+        {
+          "home_team": "Real Madrid CF",
+          "away_team": "Manchester City FC",
           "pick": "H",
-          "pick_label": "Newcastle United FC",
-          "p_win": 0.6003,
-          "implied_odds": 1.67,
-          "signal": "media",
-          "date": "2026-03-10",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML FC con cautela (modelo 60%)."
-        },
-        {
-          "home_team": "Atalanta BC",
-          "away_team": "FC Bayern München",
-          "pick": "A",
-          "pick_label": "FC Bayern München",
-          "p_win": 0.5973,
-          "implied_odds": 1.67,
-          "signal": "media",
-          "date": "2026-03-10",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML München con cautela (modelo 60%)."
-        },
-        {
-          "home_team": "Galatasaray SK",
-          "away_team": "Liverpool FC",
-          "pick": "A",
-          "pick_label": "Liverpool FC",
-          "p_win": 0.5856,
-          "implied_odds": 1.71,
+          "pick_label": "Real Madrid CF",
+          "p_win": 0.5565,
+          "implied_odds": 1.8,
           "signal": "baja",
-          "date": "2026-03-10",
+          "date": "2026-03-11",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -162,17 +136,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Sin bajas importantes. SKIP — sin edge claro (59%)."
+          "note": "❌ Modelo 56%. Sin bajas importantes. SKIP — sin edge claro (56%)."
         },
         {
-          "home_team": "Club Atlético de Madrid",
-          "away_team": "Tottenham Hotspur FC",
-          "pick": "A",
-          "pick_label": "Tottenham Hotspur FC",
-          "p_win": 0.4304,
-          "implied_odds": 2.32,
+          "home_team": "Paris Saint-Germain FC",
+          "away_team": "Chelsea FC",
+          "pick": "H",
+          "pick_label": "Paris Saint-Germain FC",
+          "p_win": 0.5019,
+          "implied_odds": 1.99,
           "signal": "baja",
-          "date": "2026-03-10",
+          "date": "2026-03-11",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -188,7 +162,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
+          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
+        },
+        {
+          "home_team": "FK Bodø/Glimt",
+          "away_team": "Sporting Clube de Portugal",
+          "pick": "H",
+          "pick_label": "FK Bodø/Glimt",
+          "p_win": 0.4668,
+          "implied_odds": 2.14,
+          "signal": "baja",
+          "date": "2026-03-11",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 47%. Sin bajas importantes. SKIP — sin edge claro (47%)."
         }
       ],
       "name": "Champions League",
@@ -202,168 +202,168 @@
           "legs": [
             {
               "sport": "ucl",
-              "match": "Newcastle United FC vs FC Barcelona",
-              "pick": "Newcastle United FC",
-              "p_win": 0.6003,
-              "implied_odds": 1.67
+              "match": "Bayer 04 Leverkusen vs Arsenal FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.6363,
+              "implied_odds": 1.57
             },
             {
               "sport": "ucl",
-              "match": "Galatasaray SK vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.5856,
-              "implied_odds": 1.71
+              "match": "Paris Saint-Germain FC vs Chelsea FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5019,
+              "implied_odds": 1.99
             }
           ],
-          "total_odds": 2.86,
-          "combined_prob": 0.3515,
+          "total_odds": 3.12,
+          "combined_prob": 0.3194,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Galatasaray SK vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.5856,
-              "implied_odds": 1.71
+              "match": "Real Madrid CF vs Manchester City FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-              "pick": "Tottenham Hotspur FC",
-              "p_win": 0.4304,
-              "implied_odds": 2.32
+              "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+              "pick": "FK Bodø/Glimt",
+              "p_win": 0.4668,
+              "implied_odds": 2.14
             }
           ],
-          "total_odds": 3.97,
-          "combined_prob": 0.252,
+          "total_odds": 3.85,
+          "combined_prob": 0.2598,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Newcastle United FC vs FC Barcelona",
-              "pick": "Newcastle United FC",
-              "p_win": 0.6003,
-              "implied_odds": 1.67
+              "match": "Bayer 04 Leverkusen vs Arsenal FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.6363,
+              "implied_odds": 1.57
             },
             {
               "sport": "ucl",
-              "match": "Atalanta BC vs FC Bayern München",
-              "pick": "FC Bayern München",
-              "p_win": 0.5973,
-              "implied_odds": 1.67
+              "match": "Real Madrid CF vs Manchester City FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "ucl",
-              "match": "Galatasaray SK vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.5856,
-              "implied_odds": 1.71
+              "match": "Paris Saint-Germain FC vs Chelsea FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5019,
+              "implied_odds": 1.99
             }
           ],
-          "total_odds": 4.77,
-          "combined_prob": 0.21,
+          "total_odds": 5.62,
+          "combined_prob": 0.1777,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Newcastle United FC vs FC Barcelona",
-              "pick": "Newcastle United FC",
-              "p_win": 0.6003,
-              "implied_odds": 1.67
+              "match": "Bayer 04 Leverkusen vs Arsenal FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.6363,
+              "implied_odds": 1.57
             },
             {
               "sport": "ucl",
-              "match": "Atalanta BC vs FC Bayern München",
-              "pick": "FC Bayern München",
-              "p_win": 0.5973,
-              "implied_odds": 1.67
+              "match": "Real Madrid CF vs Manchester City FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-              "pick": "Tottenham Hotspur FC",
-              "p_win": 0.4304,
-              "implied_odds": 2.32
+              "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+              "pick": "FK Bodø/Glimt",
+              "p_win": 0.4668,
+              "implied_odds": 2.14
             }
           ],
-          "total_odds": 6.47,
-          "combined_prob": 0.1543,
+          "total_odds": 6.05,
+          "combined_prob": 0.1653,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Newcastle United FC vs FC Barcelona",
-              "pick": "Newcastle United FC",
-              "p_win": 0.6003,
-              "implied_odds": 1.67
+              "match": "Bayer 04 Leverkusen vs Arsenal FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.6363,
+              "implied_odds": 1.57
             },
             {
               "sport": "ucl",
-              "match": "Atalanta BC vs FC Bayern München",
-              "pick": "FC Bayern München",
-              "p_win": 0.5973,
-              "implied_odds": 1.67
+              "match": "Real Madrid CF vs Manchester City FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "ucl",
-              "match": "Galatasaray SK vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.5856,
-              "implied_odds": 1.71
+              "match": "Paris Saint-Germain FC vs Chelsea FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5019,
+              "implied_odds": 1.99
             },
             {
               "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-              "pick": "Tottenham Hotspur FC",
-              "p_win": 0.4304,
-              "implied_odds": 2.32
+              "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+              "pick": "FK Bodø/Glimt",
+              "p_win": 0.4668,
+              "implied_odds": 2.14
             }
           ],
-          "total_odds": 11.06,
-          "combined_prob": 0.0904,
+          "total_odds": 12.03,
+          "combined_prob": 0.083,
           "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Newcastle United FC vs FC Barcelona",
-              "pick": "Newcastle United FC",
-              "p_win": 0.6003,
-              "implied_odds": 1.67
+              "match": "Bayer 04 Leverkusen vs Arsenal FC",
+              "pick": "Arsenal FC",
+              "p_win": 0.6363,
+              "implied_odds": 1.57
             },
             {
               "sport": "ucl",
-              "match": "Atalanta BC vs FC Bayern München",
-              "pick": "FC Bayern München",
-              "p_win": 0.5973,
-              "implied_odds": 1.67
+              "match": "Real Madrid CF vs Manchester City FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "ucl",
-              "match": "Galatasaray SK vs Liverpool FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.5856,
-              "implied_odds": 1.71
+              "match": "Paris Saint-Germain FC vs Chelsea FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5019,
+              "implied_odds": 1.99
             },
             {
               "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-              "pick": "Tottenham Hotspur FC",
-              "p_win": 0.4304,
-              "implied_odds": 2.32
+              "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+              "pick": "FK Bodø/Glimt",
+              "p_win": 0.4668,
+              "implied_odds": 2.14
             }
           ],
-          "total_odds": 11.06,
-          "combined_prob": 0.0904,
+          "total_odds": 12.03,
+          "combined_prob": 0.083,
           "n_legs": 4
         }
       }
@@ -373,168 +373,168 @@
         "legs": [
           {
             "sport": "ucl",
-            "match": "Newcastle United FC vs FC Barcelona",
-            "pick": "Newcastle United FC",
-            "p_win": 0.6003,
-            "implied_odds": 1.67
+            "match": "Bayer 04 Leverkusen vs Arsenal FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.6363,
+            "implied_odds": 1.57
           },
           {
             "sport": "ucl",
-            "match": "Galatasaray SK vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.5856,
-            "implied_odds": 1.71
+            "match": "Paris Saint-Germain FC vs Chelsea FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5019,
+            "implied_odds": 1.99
           }
         ],
-        "total_odds": 2.86,
-        "combined_prob": 0.3515,
+        "total_odds": 3.12,
+        "combined_prob": 0.3194,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "ucl",
-            "match": "Galatasaray SK vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.5856,
-            "implied_odds": 1.71
+            "match": "Real Madrid CF vs Manchester City FC",
+            "pick": "Real Madrid CF",
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-            "pick": "Tottenham Hotspur FC",
-            "p_win": 0.4304,
-            "implied_odds": 2.32
+            "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+            "pick": "FK Bodø/Glimt",
+            "p_win": 0.4668,
+            "implied_odds": 2.14
           }
         ],
-        "total_odds": 3.97,
-        "combined_prob": 0.252,
+        "total_odds": 3.85,
+        "combined_prob": 0.2598,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "ucl",
-            "match": "Newcastle United FC vs FC Barcelona",
-            "pick": "Newcastle United FC",
-            "p_win": 0.6003,
-            "implied_odds": 1.67
+            "match": "Bayer 04 Leverkusen vs Arsenal FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.6363,
+            "implied_odds": 1.57
           },
           {
             "sport": "ucl",
-            "match": "Atalanta BC vs FC Bayern München",
-            "pick": "FC Bayern München",
-            "p_win": 0.5973,
-            "implied_odds": 1.67
+            "match": "Real Madrid CF vs Manchester City FC",
+            "pick": "Real Madrid CF",
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "ucl",
-            "match": "Galatasaray SK vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.5856,
-            "implied_odds": 1.71
+            "match": "Paris Saint-Germain FC vs Chelsea FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5019,
+            "implied_odds": 1.99
           }
         ],
-        "total_odds": 4.77,
-        "combined_prob": 0.21,
+        "total_odds": 5.62,
+        "combined_prob": 0.1777,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "ucl",
-            "match": "Newcastle United FC vs FC Barcelona",
-            "pick": "Newcastle United FC",
-            "p_win": 0.6003,
-            "implied_odds": 1.67
+            "match": "Bayer 04 Leverkusen vs Arsenal FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.6363,
+            "implied_odds": 1.57
           },
           {
             "sport": "ucl",
-            "match": "Atalanta BC vs FC Bayern München",
-            "pick": "FC Bayern München",
-            "p_win": 0.5973,
-            "implied_odds": 1.67
+            "match": "Real Madrid CF vs Manchester City FC",
+            "pick": "Real Madrid CF",
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-            "pick": "Tottenham Hotspur FC",
-            "p_win": 0.4304,
-            "implied_odds": 2.32
+            "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+            "pick": "FK Bodø/Glimt",
+            "p_win": 0.4668,
+            "implied_odds": 2.14
           }
         ],
-        "total_odds": 6.47,
-        "combined_prob": 0.1543,
+        "total_odds": 6.05,
+        "combined_prob": 0.1653,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "ucl",
-            "match": "Newcastle United FC vs FC Barcelona",
-            "pick": "Newcastle United FC",
-            "p_win": 0.6003,
-            "implied_odds": 1.67
+            "match": "Bayer 04 Leverkusen vs Arsenal FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.6363,
+            "implied_odds": 1.57
           },
           {
             "sport": "ucl",
-            "match": "Atalanta BC vs FC Bayern München",
-            "pick": "FC Bayern München",
-            "p_win": 0.5973,
-            "implied_odds": 1.67
+            "match": "Real Madrid CF vs Manchester City FC",
+            "pick": "Real Madrid CF",
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "ucl",
-            "match": "Galatasaray SK vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.5856,
-            "implied_odds": 1.71
+            "match": "Paris Saint-Germain FC vs Chelsea FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5019,
+            "implied_odds": 1.99
           },
           {
             "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-            "pick": "Tottenham Hotspur FC",
-            "p_win": 0.4304,
-            "implied_odds": 2.32
+            "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+            "pick": "FK Bodø/Glimt",
+            "p_win": 0.4668,
+            "implied_odds": 2.14
           }
         ],
-        "total_odds": 11.06,
-        "combined_prob": 0.0904,
+        "total_odds": 12.03,
+        "combined_prob": 0.083,
         "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "ucl",
-            "match": "Newcastle United FC vs FC Barcelona",
-            "pick": "Newcastle United FC",
-            "p_win": 0.6003,
-            "implied_odds": 1.67
+            "match": "Bayer 04 Leverkusen vs Arsenal FC",
+            "pick": "Arsenal FC",
+            "p_win": 0.6363,
+            "implied_odds": 1.57
           },
           {
             "sport": "ucl",
-            "match": "Atalanta BC vs FC Bayern München",
-            "pick": "FC Bayern München",
-            "p_win": 0.5973,
-            "implied_odds": 1.67
+            "match": "Real Madrid CF vs Manchester City FC",
+            "pick": "Real Madrid CF",
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "ucl",
-            "match": "Galatasaray SK vs Liverpool FC",
-            "pick": "Liverpool FC",
-            "p_win": 0.5856,
-            "implied_odds": 1.71
+            "match": "Paris Saint-Germain FC vs Chelsea FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5019,
+            "implied_odds": 1.99
           },
           {
             "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Tottenham Hotspur FC",
-            "pick": "Tottenham Hotspur FC",
-            "p_win": 0.4304,
-            "implied_odds": 2.32
+            "match": "FK Bodø/Glimt vs Sporting Clube de Portugal",
+            "pick": "FK Bodø/Glimt",
+            "p_win": 0.4668,
+            "implied_odds": 2.14
           }
         ],
-        "total_odds": 11.06,
-        "combined_prob": 0.0904,
+        "total_odds": 12.03,
+        "combined_prob": 0.083,
         "n_legs": 4
       }
     }
