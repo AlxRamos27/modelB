@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-12T08:43:30Z",
-  "date": "2026-03-12",
+  "generated_at": "2026-03-13T08:40:49Z",
+  "date": "2026-03-13",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5253,
-        "logloss": 0.6919,
-        "brier": 0.2494
+        "accuracy": 0.5227,
+        "logloss": 0.6921,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
@@ -45,8 +45,36 @@
         "logloss": 1.0162,
         "brier": 0.2033
       },
-      "picks": [],
-      "name": "La Liga"
+      "picks": [
+        {
+          "home_team": "Deportivo Alavés",
+          "away_team": "Villarreal CF",
+          "pick": "A",
+          "pick_label": "Villarreal CF",
+          "p_win": 0.3566,
+          "implied_odds": 2.8,
+          "signal": "baja",
+          "date": "2026-03-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 36%. Sin bajas importantes. SKIP — sin edge claro (36%)."
+        }
+      ],
+      "name": "La Liga",
+      "analysis": ""
     },
     "ligue1": {
       "status": "ok",
@@ -55,8 +83,36 @@
         "logloss": 0.9608,
         "brier": 0.188
       },
-      "picks": [],
-      "name": "Ligue 1"
+      "picks": [
+        {
+          "home_team": "Olympique de Marseille",
+          "away_team": "AJ Auxerre",
+          "pick": "H",
+          "pick_label": "Olympique de Marseille",
+          "p_win": 0.7342,
+          "implied_odds": 1.36,
+          "signal": "alta",
+          "date": "2026-03-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 73%. Sin bajas importantes. ML Marseille es la jugada segura (modelo 73%)."
+        }
+      ],
+      "name": "Ligue 1",
+      "analysis": ""
     },
     "bundesliga": {
       "status": "ok",
@@ -65,8 +121,36 @@
         "logloss": 0.973,
         "brier": 0.1952
       },
-      "picks": [],
-      "name": "Bundesliga"
+      "picks": [
+        {
+          "home_team": "Borussia Mönchengladbach",
+          "away_team": "FC St. Pauli 1910",
+          "pick": "H",
+          "pick_label": "Borussia Mönchengladbach",
+          "p_win": 0.4799,
+          "implied_odds": 2.08,
+          "signal": "baja",
+          "date": "2026-03-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 48%. Sin bajas importantes. SKIP — sin edge claro (48%)."
+        }
+      ],
+      "name": "Bundesliga",
+      "analysis": ""
     },
     "primeira": {
       "status": "ok",
@@ -90,14 +174,291 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs AJ Auxerre",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.7342,
+              "implied_odds": 1.36
+            },
+            {
+              "sport": "bundesliga",
+              "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+              "pick": "Borussia Mönchengladbach",
+              "p_win": 0.4799,
+              "implied_odds": 2.08
+            }
+          ],
+          "total_odds": 2.83,
+          "combined_prob": 0.3523,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs AJ Auxerre",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.7342,
+              "implied_odds": 1.36
+            },
+            {
+              "sport": "laliga",
+              "match": "Deportivo Alavés vs Villarreal CF",
+              "pick": "Villarreal CF",
+              "p_win": 0.3566,
+              "implied_odds": 2.8
+            }
+          ],
+          "total_odds": 3.81,
+          "combined_prob": 0.2618,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "bundesliga",
+              "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+              "pick": "Borussia Mönchengladbach",
+              "p_win": 0.4799,
+              "implied_odds": 2.08
+            },
+            {
+              "sport": "laliga",
+              "match": "Deportivo Alavés vs Villarreal CF",
+              "pick": "Villarreal CF",
+              "p_win": 0.3566,
+              "implied_odds": 2.8
+            }
+          ],
+          "total_odds": 5.82,
+          "combined_prob": 0.1711,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "bundesliga",
+              "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+              "pick": "Borussia Mönchengladbach",
+              "p_win": 0.4799,
+              "implied_odds": 2.08
+            },
+            {
+              "sport": "laliga",
+              "match": "Deportivo Alavés vs Villarreal CF",
+              "pick": "Villarreal CF",
+              "p_win": 0.3566,
+              "implied_odds": 2.8
+            }
+          ],
+          "total_odds": 5.82,
+          "combined_prob": 0.1711,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs AJ Auxerre",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.7342,
+              "implied_odds": 1.36
+            },
+            {
+              "sport": "bundesliga",
+              "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+              "pick": "Borussia Mönchengladbach",
+              "p_win": 0.4799,
+              "implied_odds": 2.08
+            },
+            {
+              "sport": "laliga",
+              "match": "Deportivo Alavés vs Villarreal CF",
+              "pick": "Villarreal CF",
+              "p_win": 0.3566,
+              "implied_odds": 2.8
+            }
+          ],
+          "total_odds": 7.92,
+          "combined_prob": 0.1256,
+          "n_legs": 3
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs AJ Auxerre",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.7342,
+              "implied_odds": 1.36
+            },
+            {
+              "sport": "bundesliga",
+              "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+              "pick": "Borussia Mönchengladbach",
+              "p_win": 0.4799,
+              "implied_odds": 2.08
+            },
+            {
+              "sport": "laliga",
+              "match": "Deportivo Alavés vs Villarreal CF",
+              "pick": "Villarreal CF",
+              "p_win": 0.3566,
+              "implied_odds": 2.8
+            }
+          ],
+          "total_odds": 7.92,
+          "combined_prob": 0.1256,
+          "n_legs": 3
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs AJ Auxerre",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.7342,
+            "implied_odds": 1.36
+          },
+          {
+            "sport": "bundesliga",
+            "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+            "pick": "Borussia Mönchengladbach",
+            "p_win": 0.4799,
+            "implied_odds": 2.08
+          }
+        ],
+        "total_odds": 2.83,
+        "combined_prob": 0.3523,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs AJ Auxerre",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.7342,
+            "implied_odds": 1.36
+          },
+          {
+            "sport": "laliga",
+            "match": "Deportivo Alavés vs Villarreal CF",
+            "pick": "Villarreal CF",
+            "p_win": 0.3566,
+            "implied_odds": 2.8
+          }
+        ],
+        "total_odds": 3.81,
+        "combined_prob": 0.2618,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "bundesliga",
+            "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+            "pick": "Borussia Mönchengladbach",
+            "p_win": 0.4799,
+            "implied_odds": 2.08
+          },
+          {
+            "sport": "laliga",
+            "match": "Deportivo Alavés vs Villarreal CF",
+            "pick": "Villarreal CF",
+            "p_win": 0.3566,
+            "implied_odds": 2.8
+          }
+        ],
+        "total_odds": 5.82,
+        "combined_prob": 0.1711,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "bundesliga",
+            "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+            "pick": "Borussia Mönchengladbach",
+            "p_win": 0.4799,
+            "implied_odds": 2.08
+          },
+          {
+            "sport": "laliga",
+            "match": "Deportivo Alavés vs Villarreal CF",
+            "pick": "Villarreal CF",
+            "p_win": 0.3566,
+            "implied_odds": 2.8
+          }
+        ],
+        "total_odds": 5.82,
+        "combined_prob": 0.1711,
+        "n_legs": 2
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs AJ Auxerre",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.7342,
+            "implied_odds": 1.36
+          },
+          {
+            "sport": "bundesliga",
+            "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+            "pick": "Borussia Mönchengladbach",
+            "p_win": 0.4799,
+            "implied_odds": 2.08
+          },
+          {
+            "sport": "laliga",
+            "match": "Deportivo Alavés vs Villarreal CF",
+            "pick": "Villarreal CF",
+            "p_win": 0.3566,
+            "implied_odds": 2.8
+          }
+        ],
+        "total_odds": 7.92,
+        "combined_prob": 0.1256,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs AJ Auxerre",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.7342,
+            "implied_odds": 1.36
+          },
+          {
+            "sport": "bundesliga",
+            "match": "Borussia Mönchengladbach vs FC St. Pauli 1910",
+            "pick": "Borussia Mönchengladbach",
+            "p_win": 0.4799,
+            "implied_odds": 2.08
+          },
+          {
+            "sport": "laliga",
+            "match": "Deportivo Alavés vs Villarreal CF",
+            "pick": "Villarreal CF",
+            "p_win": 0.3566,
+            "implied_odds": 2.8
+          }
+        ],
+        "total_odds": 7.92,
+        "combined_prob": 0.1256,
+        "n_legs": 3
+      }
     }
   }
 }
