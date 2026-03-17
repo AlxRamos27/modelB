@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-16T08:58:14Z",
-  "date": "2026-03-16",
+  "generated_at": "2026-03-17T08:55:14Z",
+  "date": "2026-03-17",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5223,
-        "logloss": 0.6922,
-        "brier": 0.2495
+        "accuracy": 0.5244,
+        "logloss": 0.692,
+        "brier": 0.2494
       },
       "picks": [],
       "name": "NHL"
@@ -31,78 +31,22 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4833,
-        "logloss": 1.0456,
-        "brier": 0.2096
+        "accuracy": 0.4754,
+        "logloss": 1.0536,
+        "brier": 0.2111
       },
-      "picks": [
-        {
-          "home_team": "Brentford FC",
-          "away_team": "Wolverhampton Wanderers FC",
-          "pick": "H",
-          "pick_label": "Brentford FC",
-          "p_win": 0.6446,
-          "implied_odds": 1.55,
-          "signal": "media",
-          "date": "2026-03-16",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 64%. Sin bajas importantes. ML FC con cautela (modelo 64%)."
-        }
-      ],
-      "name": "Premier League",
-      "analysis": ""
+      "picks": [],
+      "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4821,
-        "logloss": 0.9634,
-        "brier": 0.1914
+        "accuracy": 0.5,
+        "logloss": 0.9721,
+        "brier": 0.1941
       },
-      "picks": [
-        {
-          "home_team": "Rayo Vallecano de Madrid",
-          "away_team": "Levante UD",
-          "pick": "H",
-          "pick_label": "Rayo Vallecano de Madrid",
-          "p_win": 0.7307,
-          "implied_odds": 1.37,
-          "signal": "alta",
-          "date": "2026-03-16",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 73%. Sin bajas importantes. ML Madrid es la jugada segura (modelo 73%)."
-        }
-      ],
-      "name": "La Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -141,8 +85,114 @@
         "logloss": 0.9876,
         "brier": 0.1974
       },
-      "picks": [],
-      "name": "Champions League"
+      "picks": [
+        {
+          "home_team": "Arsenal FC",
+          "away_team": "Bayer 04 Leverkusen",
+          "pick": "H",
+          "pick_label": "Arsenal FC",
+          "p_win": 0.7212,
+          "implied_odds": 1.39,
+          "signal": "alta",
+          "date": "2026-03-17",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 72%. Sin bajas importantes. ML FC es la jugada segura (modelo 72%)."
+        },
+        {
+          "home_team": "Sporting Clube de Portugal",
+          "away_team": "FK Bodø/Glimt",
+          "pick": "H",
+          "pick_label": "Sporting Clube de Portugal",
+          "p_win": 0.5033,
+          "implied_odds": 1.99,
+          "signal": "baja",
+          "date": "2026-03-17",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
+        },
+        {
+          "home_team": "Chelsea FC",
+          "away_team": "Paris Saint-Germain FC",
+          "pick": "H",
+          "pick_label": "Chelsea FC",
+          "p_win": 0.4435,
+          "implied_odds": 2.25,
+          "signal": "baja",
+          "date": "2026-03-17",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 44%. Sin bajas importantes. SKIP — sin edge claro (44%)."
+        },
+        {
+          "home_team": "Manchester City FC",
+          "away_team": "Real Madrid CF",
+          "pick": "A",
+          "pick_label": "Real Madrid CF",
+          "p_win": 0.4254,
+          "implied_odds": 2.35,
+          "signal": "baja",
+          "date": "2026-03-17",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
+        }
+      ],
+      "name": "Champions League",
+      "analysis": ""
     }
   },
   "parlays": {
@@ -151,128 +201,156 @@
         "cuota_3": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs Levante UD",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.7307,
-              "implied_odds": 1.37
+              "sport": "ucl",
+              "match": "Arsenal FC vs Bayer 04 Leverkusen",
+              "pick": "Arsenal FC",
+              "p_win": 0.7212,
+              "implied_odds": 1.39
             },
             {
-              "sport": "epl",
-              "match": "Brentford FC vs Wolverhampton Wanderers FC",
-              "pick": "Brentford FC",
-              "p_win": 0.6446,
-              "implied_odds": 1.55
+              "sport": "ucl",
+              "match": "Chelsea FC vs Paris Saint-Germain FC",
+              "pick": "Chelsea FC",
+              "p_win": 0.4435,
+              "implied_odds": 2.25
             }
           ],
-          "total_odds": 2.12,
-          "combined_prob": 0.471,
+          "total_odds": 3.13,
+          "combined_prob": 0.3199,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs Levante UD",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.7307,
-              "implied_odds": 1.37
+              "sport": "ucl",
+              "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.5033,
+              "implied_odds": 1.99
             },
             {
-              "sport": "epl",
-              "match": "Brentford FC vs Wolverhampton Wanderers FC",
-              "pick": "Brentford FC",
-              "p_win": 0.6446,
-              "implied_odds": 1.55
+              "sport": "ucl",
+              "match": "Chelsea FC vs Paris Saint-Germain FC",
+              "pick": "Chelsea FC",
+              "p_win": 0.4435,
+              "implied_odds": 2.25
             }
           ],
-          "total_odds": 2.12,
-          "combined_prob": 0.471,
+          "total_odds": 4.48,
+          "combined_prob": 0.2232,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs Levante UD",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.7307,
-              "implied_odds": 1.37
+              "sport": "ucl",
+              "match": "Chelsea FC vs Paris Saint-Germain FC",
+              "pick": "Chelsea FC",
+              "p_win": 0.4435,
+              "implied_odds": 2.25
             },
             {
-              "sport": "epl",
-              "match": "Brentford FC vs Wolverhampton Wanderers FC",
-              "pick": "Brentford FC",
-              "p_win": 0.6446,
-              "implied_odds": 1.55
+              "sport": "ucl",
+              "match": "Manchester City FC vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.4254,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 2.12,
-          "combined_prob": 0.471,
+          "total_odds": 5.29,
+          "combined_prob": 0.1887,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs Levante UD",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.7307,
-              "implied_odds": 1.37
+              "sport": "ucl",
+              "match": "Arsenal FC vs Bayer 04 Leverkusen",
+              "pick": "Arsenal FC",
+              "p_win": 0.7212,
+              "implied_odds": 1.39
             },
             {
-              "sport": "epl",
-              "match": "Brentford FC vs Wolverhampton Wanderers FC",
-              "pick": "Brentford FC",
-              "p_win": 0.6446,
-              "implied_odds": 1.55
+              "sport": "ucl",
+              "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.5033,
+              "implied_odds": 1.99
+            },
+            {
+              "sport": "ucl",
+              "match": "Chelsea FC vs Paris Saint-Germain FC",
+              "pick": "Chelsea FC",
+              "p_win": 0.4435,
+              "implied_odds": 2.25
             }
           ],
-          "total_odds": 2.12,
-          "combined_prob": 0.471,
-          "n_legs": 2
+          "total_odds": 6.22,
+          "combined_prob": 0.161,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs Levante UD",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.7307,
-              "implied_odds": 1.37
+              "sport": "ucl",
+              "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.5033,
+              "implied_odds": 1.99
             },
             {
-              "sport": "epl",
-              "match": "Brentford FC vs Wolverhampton Wanderers FC",
-              "pick": "Brentford FC",
-              "p_win": 0.6446,
-              "implied_odds": 1.55
+              "sport": "ucl",
+              "match": "Chelsea FC vs Paris Saint-Germain FC",
+              "pick": "Chelsea FC",
+              "p_win": 0.4435,
+              "implied_odds": 2.25
+            },
+            {
+              "sport": "ucl",
+              "match": "Manchester City FC vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.4254,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 2.12,
-          "combined_prob": 0.471,
-          "n_legs": 2
+          "total_odds": 10.52,
+          "combined_prob": 0.095,
+          "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs Levante UD",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.7307,
-              "implied_odds": 1.37
+              "sport": "ucl",
+              "match": "Arsenal FC vs Bayer 04 Leverkusen",
+              "pick": "Arsenal FC",
+              "p_win": 0.7212,
+              "implied_odds": 1.39
             },
             {
-              "sport": "epl",
-              "match": "Brentford FC vs Wolverhampton Wanderers FC",
-              "pick": "Brentford FC",
-              "p_win": 0.6446,
-              "implied_odds": 1.55
+              "sport": "ucl",
+              "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.5033,
+              "implied_odds": 1.99
+            },
+            {
+              "sport": "ucl",
+              "match": "Chelsea FC vs Paris Saint-Germain FC",
+              "pick": "Chelsea FC",
+              "p_win": 0.4435,
+              "implied_odds": 2.25
+            },
+            {
+              "sport": "ucl",
+              "match": "Manchester City FC vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.4254,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 2.12,
-          "combined_prob": 0.471,
-          "n_legs": 2
+          "total_odds": 14.63,
+          "combined_prob": 0.0685,
+          "n_legs": 4
         }
       }
     },
@@ -280,128 +358,156 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Levante UD",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.7307,
-            "implied_odds": 1.37
+            "sport": "ucl",
+            "match": "Arsenal FC vs Bayer 04 Leverkusen",
+            "pick": "Arsenal FC",
+            "p_win": 0.7212,
+            "implied_odds": 1.39
           },
           {
-            "sport": "epl",
-            "match": "Brentford FC vs Wolverhampton Wanderers FC",
-            "pick": "Brentford FC",
-            "p_win": 0.6446,
-            "implied_odds": 1.55
+            "sport": "ucl",
+            "match": "Chelsea FC vs Paris Saint-Germain FC",
+            "pick": "Chelsea FC",
+            "p_win": 0.4435,
+            "implied_odds": 2.25
           }
         ],
-        "total_odds": 2.12,
-        "combined_prob": 0.471,
+        "total_odds": 3.13,
+        "combined_prob": 0.3199,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Levante UD",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.7307,
-            "implied_odds": 1.37
+            "sport": "ucl",
+            "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.5033,
+            "implied_odds": 1.99
           },
           {
-            "sport": "epl",
-            "match": "Brentford FC vs Wolverhampton Wanderers FC",
-            "pick": "Brentford FC",
-            "p_win": 0.6446,
-            "implied_odds": 1.55
+            "sport": "ucl",
+            "match": "Chelsea FC vs Paris Saint-Germain FC",
+            "pick": "Chelsea FC",
+            "p_win": 0.4435,
+            "implied_odds": 2.25
           }
         ],
-        "total_odds": 2.12,
-        "combined_prob": 0.471,
+        "total_odds": 4.48,
+        "combined_prob": 0.2232,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Levante UD",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.7307,
-            "implied_odds": 1.37
+            "sport": "ucl",
+            "match": "Chelsea FC vs Paris Saint-Germain FC",
+            "pick": "Chelsea FC",
+            "p_win": 0.4435,
+            "implied_odds": 2.25
           },
           {
-            "sport": "epl",
-            "match": "Brentford FC vs Wolverhampton Wanderers FC",
-            "pick": "Brentford FC",
-            "p_win": 0.6446,
-            "implied_odds": 1.55
+            "sport": "ucl",
+            "match": "Manchester City FC vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.4254,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 2.12,
-        "combined_prob": 0.471,
+        "total_odds": 5.29,
+        "combined_prob": 0.1887,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Levante UD",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.7307,
-            "implied_odds": 1.37
+            "sport": "ucl",
+            "match": "Arsenal FC vs Bayer 04 Leverkusen",
+            "pick": "Arsenal FC",
+            "p_win": 0.7212,
+            "implied_odds": 1.39
           },
           {
-            "sport": "epl",
-            "match": "Brentford FC vs Wolverhampton Wanderers FC",
-            "pick": "Brentford FC",
-            "p_win": 0.6446,
-            "implied_odds": 1.55
+            "sport": "ucl",
+            "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.5033,
+            "implied_odds": 1.99
+          },
+          {
+            "sport": "ucl",
+            "match": "Chelsea FC vs Paris Saint-Germain FC",
+            "pick": "Chelsea FC",
+            "p_win": 0.4435,
+            "implied_odds": 2.25
           }
         ],
-        "total_odds": 2.12,
-        "combined_prob": 0.471,
-        "n_legs": 2
+        "total_odds": 6.22,
+        "combined_prob": 0.161,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Levante UD",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.7307,
-            "implied_odds": 1.37
+            "sport": "ucl",
+            "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.5033,
+            "implied_odds": 1.99
           },
           {
-            "sport": "epl",
-            "match": "Brentford FC vs Wolverhampton Wanderers FC",
-            "pick": "Brentford FC",
-            "p_win": 0.6446,
-            "implied_odds": 1.55
+            "sport": "ucl",
+            "match": "Chelsea FC vs Paris Saint-Germain FC",
+            "pick": "Chelsea FC",
+            "p_win": 0.4435,
+            "implied_odds": 2.25
+          },
+          {
+            "sport": "ucl",
+            "match": "Manchester City FC vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.4254,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 2.12,
-        "combined_prob": 0.471,
-        "n_legs": 2
+        "total_odds": 10.52,
+        "combined_prob": 0.095,
+        "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Levante UD",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.7307,
-            "implied_odds": 1.37
+            "sport": "ucl",
+            "match": "Arsenal FC vs Bayer 04 Leverkusen",
+            "pick": "Arsenal FC",
+            "p_win": 0.7212,
+            "implied_odds": 1.39
           },
           {
-            "sport": "epl",
-            "match": "Brentford FC vs Wolverhampton Wanderers FC",
-            "pick": "Brentford FC",
-            "p_win": 0.6446,
-            "implied_odds": 1.55
+            "sport": "ucl",
+            "match": "Sporting Clube de Portugal vs FK Bodø/Glimt",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.5033,
+            "implied_odds": 1.99
+          },
+          {
+            "sport": "ucl",
+            "match": "Chelsea FC vs Paris Saint-Germain FC",
+            "pick": "Chelsea FC",
+            "p_win": 0.4435,
+            "implied_odds": 2.25
+          },
+          {
+            "sport": "ucl",
+            "match": "Manchester City FC vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.4254,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 2.12,
-        "combined_prob": 0.471,
-        "n_legs": 2
+        "total_odds": 14.63,
+        "combined_prob": 0.0685,
+        "n_legs": 4
       }
     }
   }
