@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-19T08:42:50Z",
-  "date": "2026-03-19",
+  "generated_at": "2026-03-20T08:41:33Z",
+  "date": "2026-03-20",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5219,
-        "logloss": 0.6922,
-        "brier": 0.2495
+        "accuracy": 0.5238,
+        "logloss": 0.692,
+        "brier": 0.2494
       },
       "picks": [],
       "name": "NHL"
@@ -35,8 +35,36 @@
         "logloss": 1.0536,
         "brier": 0.2111
       },
-      "picks": [],
-      "name": "Premier League"
+      "picks": [
+        {
+          "home_team": "AFC Bournemouth",
+          "away_team": "Manchester United FC",
+          "pick": "A",
+          "pick_label": "Manchester United FC",
+          "p_win": 0.3687,
+          "implied_odds": 2.71,
+          "signal": "baja",
+          "date": "2026-03-20",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 37%. Sin bajas importantes. SKIP — sin edge claro (37%)."
+        }
+      ],
+      "name": "Premier League",
+      "analysis": ""
     },
     "laliga": {
       "status": "ok",
@@ -45,8 +73,36 @@
         "logloss": 0.9721,
         "brier": 0.1941
       },
-      "picks": [],
-      "name": "La Liga"
+      "picks": [
+        {
+          "home_team": "Villarreal CF",
+          "away_team": "Real Sociedad de Fútbol",
+          "pick": "H",
+          "pick_label": "Villarreal CF",
+          "p_win": 0.6248,
+          "implied_odds": 1.6,
+          "signal": "media",
+          "date": "2026-03-20",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 62%. Sin bajas importantes. ML CF con cautela (modelo 62%)."
+        }
+      ],
+      "name": "La Liga",
+      "analysis": ""
     },
     "ligue1": {
       "status": "ok",
@@ -55,8 +111,36 @@
         "logloss": 1.0066,
         "brier": 0.2016
       },
-      "picks": [],
-      "name": "Ligue 1"
+      "picks": [
+        {
+          "home_team": "Racing Club de Lens",
+          "away_team": "Angers SCO",
+          "pick": "H",
+          "pick_label": "Racing Club de Lens",
+          "p_win": 0.5953,
+          "implied_odds": 1.68,
+          "signal": "media",
+          "date": "2026-03-20",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML Lens con cautela (modelo 60%)."
+        }
+      ],
+      "name": "Ligue 1",
+      "analysis": ""
     },
     "bundesliga": {
       "status": "ok",
@@ -65,8 +149,36 @@
         "logloss": 0.9825,
         "brier": 0.1959
       },
-      "picks": [],
-      "name": "Bundesliga"
+      "picks": [
+        {
+          "home_team": "RB Leipzig",
+          "away_team": "TSG 1899 Hoffenheim",
+          "pick": "H",
+          "pick_label": "RB Leipzig",
+          "p_win": 0.3675,
+          "implied_odds": 2.72,
+          "signal": "baja",
+          "date": "2026-03-20",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 37%. Sin bajas importantes. SKIP — sin edge claro (37%)."
+        }
+      ],
+      "name": "Bundesliga",
+      "analysis": ""
     },
     "primeira": {
       "status": "ok",
@@ -75,8 +187,36 @@
         "logloss": 0.8741,
         "brier": 0.1706
       },
-      "picks": [],
-      "name": "Primeira Liga"
+      "picks": [
+        {
+          "home_team": "CF Estrela da Amadora",
+          "away_team": "Casa Pia AC",
+          "pick": "H",
+          "pick_label": "CF Estrela da Amadora",
+          "p_win": 0.383,
+          "implied_odds": 2.61,
+          "signal": "baja",
+          "date": "2026-03-20",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
+        }
+      ],
+      "name": "Primeira Liga",
+      "analysis": ""
     },
     "ucl": {
       "status": "ok",
@@ -90,14 +230,319 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Villarreal CF vs Real Sociedad de Fútbol",
+              "pick": "Villarreal CF",
+              "p_win": 0.6248,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Angers SCO",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.5953,
+              "implied_odds": 1.68
+            }
+          ],
+          "total_odds": 2.69,
+          "combined_prob": 0.3719,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Villarreal CF vs Real Sociedad de Fútbol",
+              "pick": "Villarreal CF",
+              "p_win": 0.6248,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "primeira",
+              "match": "CF Estrela da Amadora vs Casa Pia AC",
+              "pick": "CF Estrela da Amadora",
+              "p_win": 0.383,
+              "implied_odds": 2.61
+            }
+          ],
+          "total_odds": 4.18,
+          "combined_prob": 0.2393,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Angers SCO",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.5953,
+              "implied_odds": 1.68
+            },
+            {
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs TSG 1899 Hoffenheim",
+              "pick": "RB Leipzig",
+              "p_win": 0.3675,
+              "implied_odds": 2.72
+            }
+          ],
+          "total_odds": 4.57,
+          "combined_prob": 0.2188,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Villarreal CF vs Real Sociedad de Fútbol",
+              "pick": "Villarreal CF",
+              "p_win": 0.6248,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Angers SCO",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.5953,
+              "implied_odds": 1.68
+            },
+            {
+              "sport": "primeira",
+              "match": "CF Estrela da Amadora vs Casa Pia AC",
+              "pick": "CF Estrela da Amadora",
+              "p_win": 0.383,
+              "implied_odds": 2.61
+            }
+          ],
+          "total_odds": 7.02,
+          "combined_prob": 0.1425,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Villarreal CF vs Real Sociedad de Fútbol",
+              "pick": "Villarreal CF",
+              "p_win": 0.6248,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "primeira",
+              "match": "CF Estrela da Amadora vs Casa Pia AC",
+              "pick": "CF Estrela da Amadora",
+              "p_win": 0.383,
+              "implied_odds": 2.61
+            },
+            {
+              "sport": "epl",
+              "match": "AFC Bournemouth vs Manchester United FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.3687,
+              "implied_odds": 2.71
+            }
+          ],
+          "total_odds": 11.32,
+          "combined_prob": 0.0882,
+          "n_legs": 3
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Villarreal CF vs Real Sociedad de Fútbol",
+              "pick": "Villarreal CF",
+              "p_win": 0.6248,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Angers SCO",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.5953,
+              "implied_odds": 1.68
+            },
+            {
+              "sport": "epl",
+              "match": "AFC Bournemouth vs Manchester United FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.3687,
+              "implied_odds": 2.71
+            },
+            {
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs TSG 1899 Hoffenheim",
+              "pick": "RB Leipzig",
+              "p_win": 0.3675,
+              "implied_odds": 2.72
+            }
+          ],
+          "total_odds": 19.81,
+          "combined_prob": 0.0504,
+          "n_legs": 4
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Villarreal CF vs Real Sociedad de Fútbol",
+            "pick": "Villarreal CF",
+            "p_win": 0.6248,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "ligue1",
+            "match": "Racing Club de Lens vs Angers SCO",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.5953,
+            "implied_odds": 1.68
+          }
+        ],
+        "total_odds": 2.69,
+        "combined_prob": 0.3719,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Villarreal CF vs Real Sociedad de Fútbol",
+            "pick": "Villarreal CF",
+            "p_win": 0.6248,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "primeira",
+            "match": "CF Estrela da Amadora vs Casa Pia AC",
+            "pick": "CF Estrela da Amadora",
+            "p_win": 0.383,
+            "implied_odds": 2.61
+          }
+        ],
+        "total_odds": 4.18,
+        "combined_prob": 0.2393,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Racing Club de Lens vs Angers SCO",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.5953,
+            "implied_odds": 1.68
+          },
+          {
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs TSG 1899 Hoffenheim",
+            "pick": "RB Leipzig",
+            "p_win": 0.3675,
+            "implied_odds": 2.72
+          }
+        ],
+        "total_odds": 4.57,
+        "combined_prob": 0.2188,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Villarreal CF vs Real Sociedad de Fútbol",
+            "pick": "Villarreal CF",
+            "p_win": 0.6248,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "ligue1",
+            "match": "Racing Club de Lens vs Angers SCO",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.5953,
+            "implied_odds": 1.68
+          },
+          {
+            "sport": "primeira",
+            "match": "CF Estrela da Amadora vs Casa Pia AC",
+            "pick": "CF Estrela da Amadora",
+            "p_win": 0.383,
+            "implied_odds": 2.61
+          }
+        ],
+        "total_odds": 7.02,
+        "combined_prob": 0.1425,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Villarreal CF vs Real Sociedad de Fútbol",
+            "pick": "Villarreal CF",
+            "p_win": 0.6248,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "primeira",
+            "match": "CF Estrela da Amadora vs Casa Pia AC",
+            "pick": "CF Estrela da Amadora",
+            "p_win": 0.383,
+            "implied_odds": 2.61
+          },
+          {
+            "sport": "epl",
+            "match": "AFC Bournemouth vs Manchester United FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.3687,
+            "implied_odds": 2.71
+          }
+        ],
+        "total_odds": 11.32,
+        "combined_prob": 0.0882,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Villarreal CF vs Real Sociedad de Fútbol",
+            "pick": "Villarreal CF",
+            "p_win": 0.6248,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "ligue1",
+            "match": "Racing Club de Lens vs Angers SCO",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.5953,
+            "implied_odds": 1.68
+          },
+          {
+            "sport": "epl",
+            "match": "AFC Bournemouth vs Manchester United FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.3687,
+            "implied_odds": 2.71
+          },
+          {
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs TSG 1899 Hoffenheim",
+            "pick": "RB Leipzig",
+            "p_win": 0.3675,
+            "implied_odds": 2.72
+          }
+        ],
+        "total_odds": 19.81,
+        "combined_prob": 0.0504,
+        "n_legs": 4
+      }
     }
   }
 }
