@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-26T08:57:56Z",
-  "date": "2026-03-26",
+  "generated_at": "2026-03-27T08:54:50Z",
+  "date": "2026-03-27",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5188,
-        "logloss": 0.6924,
-        "brier": 0.2496
+        "accuracy": 0.5165,
+        "logloss": 0.6926,
+        "brier": 0.2497
       },
       "picks": [],
       "name": "NHL"
