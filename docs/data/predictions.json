@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T09:01:09Z",
-  "date": "2026-03-31",
+  "generated_at": "2026-04-01T09:06:02Z",
+  "date": "2026-04-01",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,16 +15,16 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5182,
-        "logloss": 0.6925,
-        "brier": 0.2497
+        "accuracy": 0.5221,
+        "logloss": 0.6922,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
     },
     "mlb": {
-      "status": "skipped",
-      "reason": "Fuera de temporada (Oct–Mar)",
+      "status": "error",
+      "reason": "Not enough finished games to train (76). Fetch more seasons or leagues.",
       "picks": [],
       "name": "MLB"
     },
