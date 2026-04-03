@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-02T08:58:28Z",
-  "date": "2026-04-02",
+  "generated_at": "2026-04-03T08:55:16Z",
+  "date": "2026-04-03",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,16 +15,16 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.52,
-        "logloss": 0.6923,
-        "brier": 0.2496
+        "accuracy": 0.5217,
+        "logloss": 0.6922,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
     },
     "mlb": {
       "status": "error",
-      "reason": "Not enough finished games to train (91). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (94). Fetch more seasons or leagues.",
       "picks": [],
       "name": "MLB"
     },
@@ -45,8 +45,36 @@
         "logloss": 0.9813,
         "brier": 0.1964
       },
-      "picks": [],
-      "name": "La Liga"
+      "picks": [
+        {
+          "home_team": "Rayo Vallecano de Madrid",
+          "away_team": "Elche CF",
+          "pick": "H",
+          "pick_label": "Rayo Vallecano de Madrid",
+          "p_win": 0.6257,
+          "implied_odds": 1.6,
+          "signal": "media",
+          "date": "2026-04-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 63%. Sin bajas importantes. ML Madrid con cautela (modelo 63%)."
+        }
+      ],
+      "name": "La Liga",
+      "analysis": ""
     },
     "ligue1": {
       "status": "ok",
@@ -55,8 +83,36 @@
         "logloss": 1.001,
         "brier": 0.2028
       },
-      "picks": [],
-      "name": "Ligue 1"
+      "picks": [
+        {
+          "home_team": "Paris Saint-Germain FC",
+          "away_team": "Toulouse FC",
+          "pick": "H",
+          "pick_label": "Paris Saint-Germain FC",
+          "p_win": 0.7249,
+          "implied_odds": 1.38,
+          "signal": "alta",
+          "date": "2026-04-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 72%. Sin bajas importantes. ML FC es la jugada segura (modelo 72%)."
+        }
+      ],
+      "name": "Ligue 1",
+      "analysis": ""
     },
     "bundesliga": {
       "status": "ok",
@@ -75,8 +131,88 @@
         "logloss": 1.0372,
         "brier": 0.2027
       },
-      "picks": [],
-      "name": "Primeira Liga"
+      "picks": [
+        {
+          "home_team": "Sporting Clube de Portugal",
+          "away_team": "CD Santa Clara",
+          "pick": "H",
+          "pick_label": "Sporting Clube de Portugal",
+          "p_win": 0.9517,
+          "implied_odds": 1.05,
+          "signal": "alta",
+          "date": "2026-04-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 95%. Sin bajas importantes. ML Portugal es la jugada segura (modelo 95%)."
+        },
+        {
+          "home_team": "Gil Vicente FC",
+          "away_team": "AVS",
+          "pick": "H",
+          "pick_label": "Gil Vicente FC",
+          "p_win": 0.7962,
+          "implied_odds": 1.26,
+          "signal": "alta",
+          "date": "2026-04-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 80%. Sin bajas importantes. ML FC es la jugada segura (modelo 80%)."
+        },
+        {
+          "home_team": "Vitória SC",
+          "away_team": "CD Tondela",
+          "pick": "H",
+          "pick_label": "Vitória SC",
+          "p_win": 0.4315,
+          "implied_odds": 2.32,
+          "signal": "baja",
+          "date": "2026-04-03",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
+        }
+      ],
+      "name": "Primeira Liga",
+      "analysis": ""
     },
     "ucl": {
       "status": "ok",
@@ -90,14 +226,431 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "primeira",
+              "match": "Sporting Clube de Portugal vs CD Santa Clara",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.9517,
+              "implied_odds": 1.05
+            },
+            {
+              "sport": "primeira",
+              "match": "Gil Vicente FC vs AVS",
+              "pick": "Gil Vicente FC",
+              "p_win": 0.7962,
+              "implied_odds": 1.26
+            },
+            {
+              "sport": "primeira",
+              "match": "Vitória SC vs CD Tondela",
+              "pick": "Vitória SC",
+              "p_win": 0.4315,
+              "implied_odds": 2.32
+            }
+          ],
+          "total_odds": 3.07,
+          "combined_prob": 0.327,
+          "n_legs": 3
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "primeira",
+              "match": "Gil Vicente FC vs AVS",
+              "pick": "Gil Vicente FC",
+              "p_win": 0.7962,
+              "implied_odds": 1.26
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris Saint-Germain FC vs Toulouse FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7249,
+              "implied_odds": 1.38
+            },
+            {
+              "sport": "primeira",
+              "match": "Vitória SC vs CD Tondela",
+              "pick": "Vitória SC",
+              "p_win": 0.4315,
+              "implied_odds": 2.32
+            }
+          ],
+          "total_odds": 4.03,
+          "combined_prob": 0.249,
+          "n_legs": 3
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "primeira",
+              "match": "Sporting Clube de Portugal vs CD Santa Clara",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.9517,
+              "implied_odds": 1.05
+            },
+            {
+              "sport": "primeira",
+              "match": "Gil Vicente FC vs AVS",
+              "pick": "Gil Vicente FC",
+              "p_win": 0.7962,
+              "implied_odds": 1.26
+            },
+            {
+              "sport": "laliga",
+              "match": "Rayo Vallecano de Madrid vs Elche CF",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.6257,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "primeira",
+              "match": "Vitória SC vs CD Tondela",
+              "pick": "Vitória SC",
+              "p_win": 0.4315,
+              "implied_odds": 2.32
+            }
+          ],
+          "total_odds": 4.91,
+          "combined_prob": 0.2046,
+          "n_legs": 4
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "primeira",
+              "match": "Gil Vicente FC vs AVS",
+              "pick": "Gil Vicente FC",
+              "p_win": 0.7962,
+              "implied_odds": 1.26
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris Saint-Germain FC vs Toulouse FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7249,
+              "implied_odds": 1.38
+            },
+            {
+              "sport": "laliga",
+              "match": "Rayo Vallecano de Madrid vs Elche CF",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.6257,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "primeira",
+              "match": "Vitória SC vs CD Tondela",
+              "pick": "Vitória SC",
+              "p_win": 0.4315,
+              "implied_odds": 2.32
+            }
+          ],
+          "total_odds": 6.45,
+          "combined_prob": 0.1558,
+          "n_legs": 4
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "primeira",
+              "match": "Sporting Clube de Portugal vs CD Santa Clara",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.9517,
+              "implied_odds": 1.05
+            },
+            {
+              "sport": "primeira",
+              "match": "Gil Vicente FC vs AVS",
+              "pick": "Gil Vicente FC",
+              "p_win": 0.7962,
+              "implied_odds": 1.26
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris Saint-Germain FC vs Toulouse FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7249,
+              "implied_odds": 1.38
+            },
+            {
+              "sport": "laliga",
+              "match": "Rayo Vallecano de Madrid vs Elche CF",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.6257,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "primeira",
+              "match": "Vitória SC vs CD Tondela",
+              "pick": "Vitória SC",
+              "p_win": 0.4315,
+              "implied_odds": 2.32
+            }
+          ],
+          "total_odds": 6.78,
+          "combined_prob": 0.1483,
+          "n_legs": 5
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "primeira",
+              "match": "Sporting Clube de Portugal vs CD Santa Clara",
+              "pick": "Sporting Clube de Portugal",
+              "p_win": 0.9517,
+              "implied_odds": 1.05
+            },
+            {
+              "sport": "primeira",
+              "match": "Gil Vicente FC vs AVS",
+              "pick": "Gil Vicente FC",
+              "p_win": 0.7962,
+              "implied_odds": 1.26
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris Saint-Germain FC vs Toulouse FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.7249,
+              "implied_odds": 1.38
+            },
+            {
+              "sport": "laliga",
+              "match": "Rayo Vallecano de Madrid vs Elche CF",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.6257,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "primeira",
+              "match": "Vitória SC vs CD Tondela",
+              "pick": "Vitória SC",
+              "p_win": 0.4315,
+              "implied_odds": 2.32
+            }
+          ],
+          "total_odds": 6.78,
+          "combined_prob": 0.1483,
+          "n_legs": 5
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "primeira",
+            "match": "Sporting Clube de Portugal vs CD Santa Clara",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.9517,
+            "implied_odds": 1.05
+          },
+          {
+            "sport": "primeira",
+            "match": "Gil Vicente FC vs AVS",
+            "pick": "Gil Vicente FC",
+            "p_win": 0.7962,
+            "implied_odds": 1.26
+          },
+          {
+            "sport": "primeira",
+            "match": "Vitória SC vs CD Tondela",
+            "pick": "Vitória SC",
+            "p_win": 0.4315,
+            "implied_odds": 2.32
+          }
+        ],
+        "total_odds": 3.07,
+        "combined_prob": 0.327,
+        "n_legs": 3
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "primeira",
+            "match": "Gil Vicente FC vs AVS",
+            "pick": "Gil Vicente FC",
+            "p_win": 0.7962,
+            "implied_odds": 1.26
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris Saint-Germain FC vs Toulouse FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7249,
+            "implied_odds": 1.38
+          },
+          {
+            "sport": "primeira",
+            "match": "Vitória SC vs CD Tondela",
+            "pick": "Vitória SC",
+            "p_win": 0.4315,
+            "implied_odds": 2.32
+          }
+        ],
+        "total_odds": 4.03,
+        "combined_prob": 0.249,
+        "n_legs": 3
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "primeira",
+            "match": "Sporting Clube de Portugal vs CD Santa Clara",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.9517,
+            "implied_odds": 1.05
+          },
+          {
+            "sport": "primeira",
+            "match": "Gil Vicente FC vs AVS",
+            "pick": "Gil Vicente FC",
+            "p_win": 0.7962,
+            "implied_odds": 1.26
+          },
+          {
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs Elche CF",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.6257,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "primeira",
+            "match": "Vitória SC vs CD Tondela",
+            "pick": "Vitória SC",
+            "p_win": 0.4315,
+            "implied_odds": 2.32
+          }
+        ],
+        "total_odds": 4.91,
+        "combined_prob": 0.2046,
+        "n_legs": 4
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "primeira",
+            "match": "Gil Vicente FC vs AVS",
+            "pick": "Gil Vicente FC",
+            "p_win": 0.7962,
+            "implied_odds": 1.26
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris Saint-Germain FC vs Toulouse FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7249,
+            "implied_odds": 1.38
+          },
+          {
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs Elche CF",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.6257,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "primeira",
+            "match": "Vitória SC vs CD Tondela",
+            "pick": "Vitória SC",
+            "p_win": 0.4315,
+            "implied_odds": 2.32
+          }
+        ],
+        "total_odds": 6.45,
+        "combined_prob": 0.1558,
+        "n_legs": 4
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "primeira",
+            "match": "Sporting Clube de Portugal vs CD Santa Clara",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.9517,
+            "implied_odds": 1.05
+          },
+          {
+            "sport": "primeira",
+            "match": "Gil Vicente FC vs AVS",
+            "pick": "Gil Vicente FC",
+            "p_win": 0.7962,
+            "implied_odds": 1.26
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris Saint-Germain FC vs Toulouse FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7249,
+            "implied_odds": 1.38
+          },
+          {
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs Elche CF",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.6257,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "primeira",
+            "match": "Vitória SC vs CD Tondela",
+            "pick": "Vitória SC",
+            "p_win": 0.4315,
+            "implied_odds": 2.32
+          }
+        ],
+        "total_odds": 6.78,
+        "combined_prob": 0.1483,
+        "n_legs": 5
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "primeira",
+            "match": "Sporting Clube de Portugal vs CD Santa Clara",
+            "pick": "Sporting Clube de Portugal",
+            "p_win": 0.9517,
+            "implied_odds": 1.05
+          },
+          {
+            "sport": "primeira",
+            "match": "Gil Vicente FC vs AVS",
+            "pick": "Gil Vicente FC",
+            "p_win": 0.7962,
+            "implied_odds": 1.26
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris Saint-Germain FC vs Toulouse FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.7249,
+            "implied_odds": 1.38
+          },
+          {
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs Elche CF",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.6257,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "primeira",
+            "match": "Vitória SC vs CD Tondela",
+            "pick": "Vitória SC",
+            "p_win": 0.4315,
+            "implied_odds": 2.32
+          }
+        ],
+        "total_odds": 6.78,
+        "combined_prob": 0.1483,
+        "n_legs": 5
+      }
     }
   }
 }
