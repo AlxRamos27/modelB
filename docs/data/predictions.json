@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-07T09:03:39Z",
-  "date": "2026-04-07",
+  "generated_at": "2026-04-08T09:02:12Z",
+  "date": "2026-04-08",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5233,
-        "logloss": 0.6921,
-        "brier": 0.2495
+        "accuracy": 0.5211,
+        "logloss": 0.6923,
+        "brier": 0.2496
       },
       "picks": [],
       "name": "NHL"
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5806,
-        "logloss": 0.6924,
-        "brier": 0.2493
+        "accuracy": 0.5882,
+        "logloss": 0.6892,
+        "brier": 0.248
       },
       "picks": [
         {
@@ -35,62 +35,10 @@
           "away_team": "Milwaukee Brewers",
           "pick": "H",
           "pick_label": "Boston Red Sox",
-          "p_win": 0.7446,
-          "implied_odds": 1.34,
-          "signal": "alta",
-          "date": "2026-04-07",
-          "model_spread": 1.9,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 74%. Sox 4-6 vs Brewers 8-2. Sin bajas importantes. ML Sox es la jugada segura (modelo 74%)."
-        },
-        {
-          "home_team": "Toronto Blue Jays",
-          "away_team": "Los Angeles Dodgers",
-          "pick": "H",
-          "pick_label": "Toronto Blue Jays",
-          "p_win": 0.6724,
-          "implied_odds": 1.49,
+          "p_win": 0.665,
+          "implied_odds": 1.5,
           "signal": "media",
-          "date": "2026-04-07",
-          "model_spread": 1.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 67%. Jays 4-6 vs Dodgers 8-2. Sin bajas importantes. ML Jays con cautela (modelo 67%)."
-        },
-        {
-          "home_team": "New York Yankees",
-          "away_team": "Athletics",
-          "pick": "A",
-          "pick_label": "Athletics",
-          "p_win": 0.6569,
-          "implied_odds": 1.52,
-          "signal": "media",
-          "date": "2026-04-07",
+          "date": "2026-04-08",
           "model_spread": 1.2,
           "house_spread": null,
           "house_odds": null,
@@ -106,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 66%. Yankees 7-2 vs Athletics 3-6. Sin bajas importantes. ML Athletics con cautela (modelo 66%)."
+          "note": "⚠️ Modelo 66%. Sox 4-7 vs Brewers 8-3. Sin bajas importantes. ML Sox con cautela (modelo 66%)."
         }
       ],
       "name": "MLB",
@@ -115,9 +63,9 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5484,
-        "logloss": 1.0451,
-        "brier": 0.2089
+        "accuracy": 0.5161,
+        "logloss": 1.0558,
+        "brier": 0.2116
       },
       "picks": [],
       "name": "Premier League"
@@ -166,19 +114,19 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.5278,
-        "logloss": 1.0611,
-        "brier": 0.2153
+        "logloss": 1.0441,
+        "brier": 0.2112
       },
       "picks": [
         {
-          "home_team": "Sporting Clube de Portugal",
-          "away_team": "Arsenal FC",
-          "pick": "A",
-          "pick_label": "Arsenal FC",
-          "p_win": 0.5729,
-          "implied_odds": 1.75,
-          "signal": "baja",
-          "date": "2026-04-07",
+          "home_team": "FC Barcelona",
+          "away_team": "Club Atlético de Madrid",
+          "pick": "H",
+          "pick_label": "FC Barcelona",
+          "p_win": 0.6661,
+          "implied_odds": 1.5,
+          "signal": "media",
+          "date": "2026-04-08",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -194,17 +142,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 57%. Sin bajas importantes. SKIP — sin edge claro (57%)."
+          "note": "⚠️ Modelo 67%. Sin bajas importantes. ML Barcelona con cautela (modelo 67%)."
         },
         {
-          "home_team": "Real Madrid CF",
-          "away_team": "FC Bayern München",
+          "home_team": "Paris Saint-Germain FC",
+          "away_team": "Liverpool FC",
           "pick": "H",
-          "pick_label": "Real Madrid CF",
-          "p_win": 0.4343,
-          "implied_odds": 2.3,
+          "pick_label": "Paris Saint-Germain FC",
+          "p_win": 0.5564,
+          "implied_odds": 1.8,
           "signal": "baja",
-          "date": "2026-04-07",
+          "date": "2026-04-08",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -220,7 +168,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
+          "note": "❌ Modelo 56%. Sin bajas importantes. SKIP — sin edge claro (56%)."
         }
       ],
       "name": "Champions League",
@@ -230,300 +178,138 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Milwaukee Brewers",
-              "pick": "Boston Red Sox",
-              "p_win": 0.7446,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.6724,
-              "implied_odds": 1.49
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Athletics",
-              "pick": "Athletics",
-              "p_win": 0.6569,
-              "implied_odds": 1.52
-            }
-          ],
-          "total_odds": 3.03,
-          "combined_prob": 0.3289,
-          "n_legs": 3
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Milwaukee Brewers",
-              "pick": "Boston Red Sox",
-              "p_win": 0.7446,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.6724,
-              "implied_odds": 1.49
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Athletics",
-              "pick": "Athletics",
-              "p_win": 0.6569,
-              "implied_odds": 1.52
-            }
-          ],
-          "total_odds": 3.03,
-          "combined_prob": 0.3289,
-          "n_legs": 3
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Milwaukee Brewers",
-              "pick": "Boston Red Sox",
-              "p_win": 0.7446,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.6724,
-              "implied_odds": 1.49
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Athletics",
-              "pick": "Athletics",
-              "p_win": 0.6569,
-              "implied_odds": 1.52
-            }
-          ],
-          "total_odds": 3.03,
-          "combined_prob": 0.3289,
-          "n_legs": 3
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Milwaukee Brewers",
-              "pick": "Boston Red Sox",
-              "p_win": 0.7446,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.6724,
-              "implied_odds": 1.49
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Athletics",
-              "pick": "Athletics",
-              "p_win": 0.6569,
-              "implied_odds": 1.52
-            }
-          ],
-          "total_odds": 3.03,
-          "combined_prob": 0.3289,
-          "n_legs": 3
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Milwaukee Brewers",
-              "pick": "Boston Red Sox",
-              "p_win": 0.7446,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.6724,
-              "implied_odds": 1.49
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Athletics",
-              "pick": "Athletics",
-              "p_win": 0.6569,
-              "implied_odds": 1.52
-            }
-          ],
-          "total_odds": 3.03,
-          "combined_prob": 0.3289,
-          "n_legs": 3
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Milwaukee Brewers",
-              "pick": "Boston Red Sox",
-              "p_win": 0.7446,
-              "implied_odds": 1.34
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.6724,
-              "implied_odds": 1.49
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Athletics",
-              "pick": "Athletics",
-              "p_win": 0.6569,
-              "implied_odds": 1.52
-            }
-          ],
-          "total_odds": 3.03,
-          "combined_prob": 0.3289,
-          "n_legs": 3
-        }
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       },
       "soccer": {
         "cuota_3": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Sporting Clube de Portugal vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.5729,
-              "implied_odds": 1.75
+              "match": "FC Barcelona vs Club Atlético de Madrid",
+              "pick": "FC Barcelona",
+              "p_win": 0.6661,
+              "implied_odds": 1.5
             },
             {
               "sport": "ucl",
-              "match": "Real Madrid CF vs FC Bayern München",
-              "pick": "Real Madrid CF",
-              "p_win": 0.4343,
-              "implied_odds": 2.3
+              "match": "Paris Saint-Germain FC vs Liverpool FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5564,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2488,
+          "total_odds": 2.7,
+          "combined_prob": 0.3706,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Sporting Clube de Portugal vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.5729,
-              "implied_odds": 1.75
+              "match": "FC Barcelona vs Club Atlético de Madrid",
+              "pick": "FC Barcelona",
+              "p_win": 0.6661,
+              "implied_odds": 1.5
             },
             {
               "sport": "ucl",
-              "match": "Real Madrid CF vs FC Bayern München",
-              "pick": "Real Madrid CF",
-              "p_win": 0.4343,
-              "implied_odds": 2.3
+              "match": "Paris Saint-Germain FC vs Liverpool FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5564,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2488,
+          "total_odds": 2.7,
+          "combined_prob": 0.3706,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Sporting Clube de Portugal vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.5729,
-              "implied_odds": 1.75
+              "match": "FC Barcelona vs Club Atlético de Madrid",
+              "pick": "FC Barcelona",
+              "p_win": 0.6661,
+              "implied_odds": 1.5
             },
             {
               "sport": "ucl",
-              "match": "Real Madrid CF vs FC Bayern München",
-              "pick": "Real Madrid CF",
-              "p_win": 0.4343,
-              "implied_odds": 2.3
+              "match": "Paris Saint-Germain FC vs Liverpool FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5564,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2488,
+          "total_odds": 2.7,
+          "combined_prob": 0.3706,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Sporting Clube de Portugal vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.5729,
-              "implied_odds": 1.75
+              "match": "FC Barcelona vs Club Atlético de Madrid",
+              "pick": "FC Barcelona",
+              "p_win": 0.6661,
+              "implied_odds": 1.5
             },
             {
               "sport": "ucl",
-              "match": "Real Madrid CF vs FC Bayern München",
-              "pick": "Real Madrid CF",
-              "p_win": 0.4343,
-              "implied_odds": 2.3
+              "match": "Paris Saint-Germain FC vs Liverpool FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5564,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2488,
+          "total_odds": 2.7,
+          "combined_prob": 0.3706,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Sporting Clube de Portugal vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.5729,
-              "implied_odds": 1.75
+              "match": "FC Barcelona vs Club Atlético de Madrid",
+              "pick": "FC Barcelona",
+              "p_win": 0.6661,
+              "implied_odds": 1.5
             },
             {
               "sport": "ucl",
-              "match": "Real Madrid CF vs FC Bayern München",
-              "pick": "Real Madrid CF",
-              "p_win": 0.4343,
-              "implied_odds": 2.3
+              "match": "Paris Saint-Germain FC vs Liverpool FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5564,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2488,
+          "total_odds": 2.7,
+          "combined_prob": 0.3706,
           "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "ucl",
-              "match": "Sporting Clube de Portugal vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.5729,
-              "implied_odds": 1.75
+              "match": "FC Barcelona vs Club Atlético de Madrid",
+              "pick": "FC Barcelona",
+              "p_win": 0.6661,
+              "implied_odds": 1.5
             },
             {
               "sport": "ucl",
-              "match": "Real Madrid CF vs FC Bayern München",
-              "pick": "Real Madrid CF",
-              "p_win": 0.4343,
-              "implied_odds": 2.3
+              "match": "Paris Saint-Germain FC vs Liverpool FC",
+              "pick": "Paris Saint-Germain FC",
+              "p_win": 0.5564,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2488,
+          "total_odds": 2.7,
+          "combined_prob": 0.3706,
           "n_legs": 2
         }
       }
@@ -532,184 +318,163 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Boston Red Sox vs Milwaukee Brewers",
-            "pick": "Boston Red Sox",
-            "p_win": 0.7446,
-            "implied_odds": 1.34
+            "sport": "ucl",
+            "match": "FC Barcelona vs Club Atlético de Madrid",
+            "pick": "FC Barcelona",
+            "p_win": 0.6661,
+            "implied_odds": 1.5
           },
           {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.6724,
-            "implied_odds": 1.49
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Athletics",
-            "pick": "Athletics",
-            "p_win": 0.6569,
-            "implied_odds": 1.52
+            "sport": "ucl",
+            "match": "Paris Saint-Germain FC vs Liverpool FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5564,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 3.03,
-        "combined_prob": 0.3289,
-        "n_legs": 3
+        "total_odds": 2.7,
+        "combined_prob": 0.3706,
+        "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "ucl",
-            "match": "Sporting Clube de Portugal vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.5729,
-            "implied_odds": 1.75
+            "match": "FC Barcelona vs Club Atlético de Madrid",
+            "pick": "FC Barcelona",
+            "p_win": 0.6661,
+            "implied_odds": 1.5
+          },
+          {
+            "sport": "mlb",
+            "match": "Boston Red Sox vs Milwaukee Brewers",
+            "pick": "Boston Red Sox",
+            "p_win": 0.665,
+            "implied_odds": 1.5
           },
           {
             "sport": "ucl",
-            "match": "Real Madrid CF vs FC Bayern München",
-            "pick": "Real Madrid CF",
-            "p_win": 0.4343,
-            "implied_odds": 2.3
+            "match": "Paris Saint-Germain FC vs Liverpool FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5564,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 4.02,
-        "combined_prob": 0.2488,
-        "n_legs": 2
+        "total_odds": 4.05,
+        "combined_prob": 0.2465,
+        "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.6724,
-            "implied_odds": 1.49
+            "sport": "ucl",
+            "match": "FC Barcelona vs Club Atlético de Madrid",
+            "pick": "FC Barcelona",
+            "p_win": 0.6661,
+            "implied_odds": 1.5
           },
           {
             "sport": "mlb",
-            "match": "New York Yankees vs Athletics",
-            "pick": "Athletics",
-            "p_win": 0.6569,
-            "implied_odds": 1.52
+            "match": "Boston Red Sox vs Milwaukee Brewers",
+            "pick": "Boston Red Sox",
+            "p_win": 0.665,
+            "implied_odds": 1.5
           },
           {
             "sport": "ucl",
-            "match": "Real Madrid CF vs FC Bayern München",
-            "pick": "Real Madrid CF",
-            "p_win": 0.4343,
-            "implied_odds": 2.3
+            "match": "Paris Saint-Germain FC vs Liverpool FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5564,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 5.21,
-        "combined_prob": 0.1918,
+        "total_odds": 4.05,
+        "combined_prob": 0.2465,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
+            "sport": "ucl",
+            "match": "FC Barcelona vs Club Atlético de Madrid",
+            "pick": "FC Barcelona",
+            "p_win": 0.6661,
+            "implied_odds": 1.5
+          },
+          {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.6724,
-            "implied_odds": 1.49
+            "match": "Boston Red Sox vs Milwaukee Brewers",
+            "pick": "Boston Red Sox",
+            "p_win": 0.665,
+            "implied_odds": 1.5
           },
           {
             "sport": "ucl",
-            "match": "Sporting Clube de Portugal vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.5729,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "ucl",
-            "match": "Real Madrid CF vs FC Bayern München",
-            "pick": "Real Madrid CF",
-            "p_win": 0.4343,
-            "implied_odds": 2.3
+            "match": "Paris Saint-Germain FC vs Liverpool FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5564,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 6.0,
-        "combined_prob": 0.1673,
+        "total_odds": 4.05,
+        "combined_prob": 0.2465,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.6724,
-            "implied_odds": 1.49
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Athletics",
-            "pick": "Athletics",
-            "p_win": 0.6569,
-            "implied_odds": 1.52
-          },
-          {
             "sport": "ucl",
-            "match": "Sporting Clube de Portugal vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.5729,
-            "implied_odds": 1.75
+            "match": "FC Barcelona vs Club Atlético de Madrid",
+            "pick": "FC Barcelona",
+            "p_win": 0.6661,
+            "implied_odds": 1.5
           },
-          {
-            "sport": "ucl",
-            "match": "Real Madrid CF vs FC Bayern München",
-            "pick": "Real Madrid CF",
-            "p_win": 0.4343,
-            "implied_odds": 2.3
-          }
-        ],
-        "total_odds": 9.12,
-        "combined_prob": 0.1099,
-        "n_legs": 4
-      },
-      "cuota_20": {
-        "legs": [
           {
             "sport": "mlb",
             "match": "Boston Red Sox vs Milwaukee Brewers",
             "pick": "Boston Red Sox",
-            "p_win": 0.7446,
-            "implied_odds": 1.34
-          },
-          {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs Los Angeles Dodgers",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.6724,
-            "implied_odds": 1.49
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Athletics",
-            "pick": "Athletics",
-            "p_win": 0.6569,
-            "implied_odds": 1.52
+            "p_win": 0.665,
+            "implied_odds": 1.5
           },
           {
             "sport": "ucl",
-            "match": "Sporting Clube de Portugal vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.5729,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "ucl",
-            "match": "Real Madrid CF vs FC Bayern München",
-            "pick": "Real Madrid CF",
-            "p_win": 0.4343,
-            "implied_odds": 2.3
+            "match": "Paris Saint-Germain FC vs Liverpool FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5564,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 12.22,
-        "combined_prob": 0.0818,
-        "n_legs": 5
+        "total_odds": 4.05,
+        "combined_prob": 0.2465,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "ucl",
+            "match": "FC Barcelona vs Club Atlético de Madrid",
+            "pick": "FC Barcelona",
+            "p_win": 0.6661,
+            "implied_odds": 1.5
+          },
+          {
+            "sport": "mlb",
+            "match": "Boston Red Sox vs Milwaukee Brewers",
+            "pick": "Boston Red Sox",
+            "p_win": 0.665,
+            "implied_odds": 1.5
+          },
+          {
+            "sport": "ucl",
+            "match": "Paris Saint-Germain FC vs Liverpool FC",
+            "pick": "Paris Saint-Germain FC",
+            "p_win": 0.5564,
+            "implied_odds": 1.8
+          }
+        ],
+        "total_odds": 4.05,
+        "combined_prob": 0.2465,
+        "n_legs": 3
       }
     }
   }
