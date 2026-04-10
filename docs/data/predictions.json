@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-09T09:08:43Z",
-  "date": "2026-04-09",
+  "generated_at": "2026-04-10T09:10:27Z",
+  "date": "2026-04-10",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5211,
-        "logloss": 0.6923,
-        "brier": 0.2496
+        "accuracy": 0.5227,
+        "logloss": 0.6921,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
@@ -25,12 +25,66 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5676,
-        "logloss": 0.6784,
-        "brier": 0.2427
+        "accuracy": 0.5789,
+        "logloss": 0.6972,
+        "brier": 0.2517
       },
-      "picks": [],
-      "name": "MLB"
+      "picks": [
+        {
+          "home_team": "Detroit Tigers",
+          "away_team": "Miami Marlins",
+          "pick": "H",
+          "pick_label": "Detroit Tigers",
+          "p_win": 0.6618,
+          "implied_odds": 1.51,
+          "signal": "media",
+          "date": "2026-04-10",
+          "model_spread": 1.2,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 66%. Tigers 4-9 vs Marlins 8-5. Sin bajas importantes. ML Tigers con cautela (modelo 66%)."
+        },
+        {
+          "home_team": "Tampa Bay Rays",
+          "away_team": "New York Yankees",
+          "pick": "H",
+          "pick_label": "Tampa Bay Rays",
+          "p_win": 0.654,
+          "implied_odds": 1.53,
+          "signal": "media",
+          "date": "2026-04-10",
+          "model_spread": 1.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 65%. Rays 5-7 vs Yankees 8-4. Sin bajas importantes. ML Rays con cautela (modelo 65%)."
+        }
+      ],
+      "name": "MLB",
+      "analysis": ""
     },
     "epl": {
       "status": "ok",
@@ -39,8 +93,36 @@
         "logloss": 1.0558,
         "brier": 0.2116
       },
-      "picks": [],
-      "name": "Premier League"
+      "picks": [
+        {
+          "home_team": "West Ham United FC",
+          "away_team": "Wolverhampton Wanderers FC",
+          "pick": "H",
+          "pick_label": "West Ham United FC",
+          "p_win": 0.4984,
+          "implied_odds": 2.01,
+          "signal": "baja",
+          "date": "2026-04-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
+        }
+      ],
+      "name": "Premier League",
+      "analysis": ""
     },
     "laliga": {
       "status": "ok",
@@ -49,8 +131,36 @@
         "logloss": 0.968,
         "brier": 0.1955
       },
-      "picks": [],
-      "name": "La Liga"
+      "picks": [
+        {
+          "home_team": "Real Madrid CF",
+          "away_team": "Girona FC",
+          "pick": "H",
+          "pick_label": "Real Madrid CF",
+          "p_win": 0.6684,
+          "implied_odds": 1.5,
+          "signal": "media",
+          "date": "2026-04-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 67%. Sin bajas importantes. ML CF con cautela (modelo 67%)."
+        }
+      ],
+      "name": "La Liga",
+      "analysis": ""
     },
     "ligue1": {
       "status": "ok",
@@ -59,8 +169,62 @@
         "logloss": 1.0108,
         "brier": 0.204
       },
-      "picks": [],
-      "name": "Ligue 1"
+      "picks": [
+        {
+          "home_team": "Olympique de Marseille",
+          "away_team": "FC Metz",
+          "pick": "H",
+          "pick_label": "Olympique de Marseille",
+          "p_win": 0.7487,
+          "implied_odds": 1.34,
+          "signal": "alta",
+          "date": "2026-04-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 75%. Sin bajas importantes. ML Marseille es la jugada segura (modelo 75%)."
+        },
+        {
+          "home_team": "Paris FC",
+          "away_team": "AS Monaco FC",
+          "pick": "A",
+          "pick_label": "AS Monaco FC",
+          "p_win": 0.5062,
+          "implied_odds": 1.98,
+          "signal": "baja",
+          "date": "2026-04-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 51%. Sin bajas importantes. SKIP — sin edge claro (51%)."
+        }
+      ],
+      "name": "Ligue 1",
+      "analysis": ""
     },
     "bundesliga": {
       "status": "ok",
@@ -69,8 +233,36 @@
         "logloss": 0.9411,
         "brier": 0.1863
       },
-      "picks": [],
-      "name": "Bundesliga"
+      "picks": [
+        {
+          "home_team": "FC Augsburg",
+          "away_team": "TSG 1899 Hoffenheim",
+          "pick": "A",
+          "pick_label": "TSG 1899 Hoffenheim",
+          "p_win": 0.3174,
+          "implied_odds": 3.15,
+          "signal": "baja",
+          "date": "2026-04-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 32%. Sin bajas importantes. SKIP — sin edge claro (32%)."
+        }
+      ],
+      "name": "Bundesliga",
+      "analysis": ""
     },
     "primeira": {
       "status": "ok",
@@ -79,8 +271,36 @@
         "logloss": 1.0433,
         "brier": 0.206
       },
-      "picks": [],
-      "name": "Primeira Liga"
+      "picks": [
+        {
+          "home_team": "FC Famalicão",
+          "away_team": "Moreirense FC",
+          "pick": "H",
+          "pick_label": "FC Famalicão",
+          "p_win": 0.5479,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-04-10",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        }
+      ],
+      "name": "Primeira Liga",
+      "analysis": ""
     },
     "ucl": {
       "status": "ok",
@@ -94,14 +314,496 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "mlb": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Detroit Tigers vs Miami Marlins",
+              "pick": "Detroit Tigers",
+              "p_win": 0.6618,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs New York Yankees",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.654,
+              "implied_odds": 1.53
+            }
+          ],
+          "total_odds": 2.31,
+          "combined_prob": 0.4328,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Detroit Tigers vs Miami Marlins",
+              "pick": "Detroit Tigers",
+              "p_win": 0.6618,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs New York Yankees",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.654,
+              "implied_odds": 1.53
+            }
+          ],
+          "total_odds": 2.31,
+          "combined_prob": 0.4328,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Detroit Tigers vs Miami Marlins",
+              "pick": "Detroit Tigers",
+              "p_win": 0.6618,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs New York Yankees",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.654,
+              "implied_odds": 1.53
+            }
+          ],
+          "total_odds": 2.31,
+          "combined_prob": 0.4328,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Detroit Tigers vs Miami Marlins",
+              "pick": "Detroit Tigers",
+              "p_win": 0.6618,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs New York Yankees",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.654,
+              "implied_odds": 1.53
+            }
+          ],
+          "total_odds": 2.31,
+          "combined_prob": 0.4328,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Detroit Tigers vs Miami Marlins",
+              "pick": "Detroit Tigers",
+              "p_win": 0.6618,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs New York Yankees",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.654,
+              "implied_odds": 1.53
+            }
+          ],
+          "total_odds": 2.31,
+          "combined_prob": 0.4328,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Detroit Tigers vs Miami Marlins",
+              "pick": "Detroit Tigers",
+              "p_win": 0.6618,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs New York Yankees",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.654,
+              "implied_odds": 1.53
+            }
+          ],
+          "total_odds": 2.31,
+          "combined_prob": 0.4328,
+          "n_legs": 2
+        }
+      },
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Real Madrid CF vs Girona FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6684,
+              "implied_odds": 1.5
+            },
+            {
+              "sport": "epl",
+              "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+              "pick": "West Ham United FC",
+              "p_win": 0.4984,
+              "implied_odds": 2.01
+            }
+          ],
+          "total_odds": 3.01,
+          "combined_prob": 0.3331,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs FC Metz",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.7487,
+              "implied_odds": 1.34
+            },
+            {
+              "sport": "laliga",
+              "match": "Real Madrid CF vs Girona FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6684,
+              "implied_odds": 1.5
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris FC vs AS Monaco FC",
+              "pick": "AS Monaco FC",
+              "p_win": 0.5062,
+              "implied_odds": 1.98
+            }
+          ],
+          "total_odds": 3.98,
+          "combined_prob": 0.2533,
+          "n_legs": 3
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs FC Metz",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.7487,
+              "implied_odds": 1.34
+            },
+            {
+              "sport": "primeira",
+              "match": "FC Famalicão vs Moreirense FC",
+              "pick": "FC Famalicão",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "epl",
+              "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+              "pick": "West Ham United FC",
+              "p_win": 0.4984,
+              "implied_odds": 2.01
+            }
+          ],
+          "total_odds": 4.93,
+          "combined_prob": 0.2045,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Real Madrid CF vs Girona FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6684,
+              "implied_odds": 1.5
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris FC vs AS Monaco FC",
+              "pick": "AS Monaco FC",
+              "p_win": 0.5062,
+              "implied_odds": 1.98
+            },
+            {
+              "sport": "epl",
+              "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+              "pick": "West Ham United FC",
+              "p_win": 0.4984,
+              "implied_odds": 2.01
+            }
+          ],
+          "total_odds": 5.97,
+          "combined_prob": 0.1686,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Olympique de Marseille vs FC Metz",
+              "pick": "Olympique de Marseille",
+              "p_win": 0.7487,
+              "implied_odds": 1.34
+            },
+            {
+              "sport": "primeira",
+              "match": "FC Famalicão vs Moreirense FC",
+              "pick": "FC Famalicão",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris FC vs AS Monaco FC",
+              "pick": "AS Monaco FC",
+              "p_win": 0.5062,
+              "implied_odds": 1.98
+            },
+            {
+              "sport": "epl",
+              "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+              "pick": "West Ham United FC",
+              "p_win": 0.4984,
+              "implied_odds": 2.01
+            }
+          ],
+          "total_odds": 9.76,
+          "combined_prob": 0.1035,
+          "n_legs": 4
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Real Madrid CF vs Girona FC",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6684,
+              "implied_odds": 1.5
+            },
+            {
+              "sport": "ligue1",
+              "match": "Paris FC vs AS Monaco FC",
+              "pick": "AS Monaco FC",
+              "p_win": 0.5062,
+              "implied_odds": 1.98
+            },
+            {
+              "sport": "epl",
+              "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+              "pick": "West Ham United FC",
+              "p_win": 0.4984,
+              "implied_odds": 2.01
+            },
+            {
+              "sport": "bundesliga",
+              "match": "FC Augsburg vs TSG 1899 Hoffenheim",
+              "pick": "TSG 1899 Hoffenheim",
+              "p_win": 0.3174,
+              "implied_odds": 3.15
+            }
+          ],
+          "total_odds": 18.8,
+          "combined_prob": 0.0535,
+          "n_legs": 4
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Detroit Tigers vs Miami Marlins",
+            "pick": "Detroit Tigers",
+            "p_win": 0.6618,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris FC vs AS Monaco FC",
+            "pick": "AS Monaco FC",
+            "p_win": 0.5062,
+            "implied_odds": 1.98
+          }
+        ],
+        "total_odds": 2.99,
+        "combined_prob": 0.335,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs FC Metz",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.7487,
+            "implied_odds": 1.34
+          },
+          {
+            "sport": "mlb",
+            "match": "Detroit Tigers vs Miami Marlins",
+            "pick": "Detroit Tigers",
+            "p_win": 0.6618,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris FC vs AS Monaco FC",
+            "pick": "AS Monaco FC",
+            "p_win": 0.5062,
+            "implied_odds": 1.98
+          }
+        ],
+        "total_odds": 4.01,
+        "combined_prob": 0.2508,
+        "n_legs": 3
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs FC Metz",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.7487,
+            "implied_odds": 1.34
+          },
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs Moreirense FC",
+            "pick": "FC Famalicão",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "epl",
+            "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+            "pick": "West Ham United FC",
+            "p_win": 0.4984,
+            "implied_odds": 2.01
+          }
+        ],
+        "total_odds": 4.93,
+        "combined_prob": 0.2045,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Detroit Tigers vs Miami Marlins",
+            "pick": "Detroit Tigers",
+            "p_win": 0.6618,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris FC vs AS Monaco FC",
+            "pick": "AS Monaco FC",
+            "p_win": 0.5062,
+            "implied_odds": 1.98
+          },
+          {
+            "sport": "epl",
+            "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+            "pick": "West Ham United FC",
+            "p_win": 0.4984,
+            "implied_odds": 2.01
+          }
+        ],
+        "total_odds": 6.01,
+        "combined_prob": 0.167,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "ligue1",
+            "match": "Olympique de Marseille vs FC Metz",
+            "pick": "Olympique de Marseille",
+            "p_win": 0.7487,
+            "implied_odds": 1.34
+          },
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs Moreirense FC",
+            "pick": "FC Famalicão",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "ligue1",
+            "match": "Paris FC vs AS Monaco FC",
+            "pick": "AS Monaco FC",
+            "p_win": 0.5062,
+            "implied_odds": 1.98
+          },
+          {
+            "sport": "epl",
+            "match": "West Ham United FC vs Wolverhampton Wanderers FC",
+            "pick": "West Ham United FC",
+            "p_win": 0.4984,
+            "implied_odds": 2.01
+          }
+        ],
+        "total_odds": 9.76,
+        "combined_prob": 0.1035,
+        "n_legs": 4
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Real Madrid CF vs Girona FC",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6684,
+            "implied_odds": 1.5
+          },
+          {
+            "sport": "mlb",
+            "match": "Detroit Tigers vs Miami Marlins",
+            "pick": "Detroit Tigers",
+            "p_win": 0.6618,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs New York Yankees",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.654,
+            "implied_odds": 1.53
+          },
+          {
+            "sport": "primeira",
+            "match": "FC Famalicão vs Moreirense FC",
+            "pick": "FC Famalicão",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "bundesliga",
+            "match": "FC Augsburg vs TSG 1899 Hoffenheim",
+            "pick": "TSG 1899 Hoffenheim",
+            "p_win": 0.3174,
+            "implied_odds": 3.15
+          }
+        ],
+        "total_odds": 19.98,
+        "combined_prob": 0.0503,
+        "n_legs": 5
+      }
     }
   }
 }
