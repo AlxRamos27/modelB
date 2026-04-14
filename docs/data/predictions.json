@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-13T09:56:00Z",
-  "date": "2026-04-13",
+  "generated_at": "2026-04-14T09:18:44Z",
+  "date": "2026-04-14",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,14 +9,68 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [],
-      "name": "NBA"
+      "picks": [
+        {
+          "home_team": "Charlotte Hornets",
+          "away_team": "Miami Heat",
+          "pick": "H",
+          "pick_label": "Charlotte Hornets",
+          "p_win": 0.5111,
+          "implied_odds": 1.96,
+          "signal": "baja",
+          "date": "2026-04-14",
+          "model_spread": 0.6,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 228.5,
+          "ou_line": 228.5,
+          "ou_pick": "over",
+          "pts_home_scored": 118.5,
+          "pts_home_allowed": 116.2,
+          "pts_away_scored": 122.0,
+          "pts_away_allowed": 119.0,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 51%. Hornets 3-4 vs Heat 3-3. Sin bajas importantes. O/U en 228.5 pts — Over es la jugada (ritmo alto). SKIP — sin edge claro (51%)."
+        },
+        {
+          "home_team": "Phoenix Suns",
+          "away_team": "Portland Trail Blazers",
+          "pick": "H",
+          "pick_label": "Phoenix Suns",
+          "p_win": 0.5109,
+          "implied_odds": 1.96,
+          "signal": "baja",
+          "date": "2026-04-14",
+          "model_spread": 0.6,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 217.5,
+          "ou_line": 217.5,
+          "ou_pick": "under",
+          "pts_home_scored": 120.2,
+          "pts_home_allowed": 111.0,
+          "pts_away_scored": 121.7,
+          "pts_away_allowed": 118.7,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 51%. Suns 3-4 vs Blazers 4-2. Sin bajas importantes. O/U en 217.5 pts — Under es la jugada (ritmo lento). SKIP — sin edge claro (51%)."
+        }
+      ],
+      "name": "NBA",
+      "analysis": ""
     },
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5224,
-        "logloss": 0.6921,
+        "accuracy": 0.5222,
+        "logloss": 0.6922,
         "brier": 0.2495
       },
       "picks": [],
@@ -25,9 +79,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5532,
-        "logloss": 0.6611,
-        "brier": 0.2343
+        "accuracy": 0.551,
+        "logloss": 0.6655,
+        "brier": 0.2367
       },
       "picks": [],
       "name": "MLB"
@@ -35,78 +89,22 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4844,
-        "logloss": 1.0531,
-        "brier": 0.2122
+        "accuracy": 0.5312,
+        "logloss": 1.0397,
+        "brier": 0.2089
       },
-      "picks": [
-        {
-          "home_team": "Manchester United FC",
-          "away_team": "Leeds United FC",
-          "pick": "H",
-          "pick_label": "Manchester United FC",
-          "p_win": 0.5672,
-          "implied_odds": 1.76,
-          "signal": "baja",
-          "date": "2026-04-13",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Sin bajas importantes. SKIP — sin edge claro (57%)."
-        }
-      ],
-      "name": "Premier League",
-      "analysis": ""
+      "picks": [],
+      "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4839,
-        "logloss": 0.9903,
-        "brier": 0.199
+        "accuracy": 0.4677,
+        "logloss": 1.0087,
+        "brier": 0.2039
       },
-      "picks": [
-        {
-          "home_team": "Levante UD",
-          "away_team": "Getafe CF",
-          "pick": "H",
-          "pick_label": "Levante UD",
-          "p_win": 0.4326,
-          "implied_odds": 2.31,
-          "signal": "baja",
-          "date": "2026-04-13",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
-        }
-      ],
-      "name": "La Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -132,19 +130,29 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.5577,
-        "logloss": 0.9565,
-        "brier": 0.1888
+        "logloss": 0.9603,
+        "brier": 0.1901
+      },
+      "picks": [],
+      "name": "Primeira Liga"
+    },
+    "ucl": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5278,
+        "logloss": 1.0721,
+        "brier": 0.2185
       },
       "picks": [
         {
-          "home_team": "CD Tondela",
-          "away_team": "Gil Vicente FC",
-          "pick": "A",
-          "pick_label": "Gil Vicente FC",
-          "p_win": 0.4936,
-          "implied_odds": 2.03,
+          "home_team": "Club Atlético de Madrid",
+          "away_team": "FC Barcelona",
+          "pick": "H",
+          "pick_label": "Club Atlético de Madrid",
+          "p_win": 0.5779,
+          "implied_odds": 1.73,
           "signal": "baja",
-          "date": "2026-04-13",
+          "date": "2026-04-14",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -160,165 +168,295 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
+          "note": "❌ Modelo 58%. Sin bajas importantes. SKIP — sin edge claro (58%)."
+        },
+        {
+          "home_team": "Liverpool FC",
+          "away_team": "Paris Saint-Germain FC",
+          "pick": "H",
+          "pick_label": "Liverpool FC",
+          "p_win": 0.4367,
+          "implied_odds": 2.29,
+          "signal": "baja",
+          "date": "2026-04-14",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 44%. Sin bajas importantes. SKIP — sin edge claro (44%)."
         }
       ],
-      "name": "Primeira Liga",
+      "name": "Champions League",
       "analysis": ""
-    },
-    "ucl": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5278,
-        "logloss": 1.0721,
-        "brier": 0.2185
-      },
-      "picks": [],
-      "name": "Champions League"
     }
   },
   "parlays": {
     "by_sport": {
-      "soccer": {
+      "nba": {
         "cuota_3": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Manchester United FC vs Leeds United FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5672,
-              "implied_odds": 1.76
+              "sport": "nba",
+              "match": "Charlotte Hornets vs Miami Heat",
+              "pick": "Charlotte Hornets",
+              "p_win": 0.5111,
+              "implied_odds": 1.96
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Gil Vicente FC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.4936,
-              "implied_odds": 2.03
+              "sport": "nba",
+              "match": "Phoenix Suns vs Portland Trail Blazers",
+              "pick": "Phoenix Suns",
+              "p_win": 0.5109,
+              "implied_odds": 1.96
             }
           ],
-          "total_odds": 3.57,
-          "combined_prob": 0.28,
+          "total_odds": 3.84,
+          "combined_prob": 0.2611,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Manchester United FC vs Leeds United FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5672,
-              "implied_odds": 1.76
+              "sport": "nba",
+              "match": "Charlotte Hornets vs Miami Heat",
+              "pick": "Charlotte Hornets",
+              "p_win": 0.5111,
+              "implied_odds": 1.96
             },
             {
-              "sport": "laliga",
-              "match": "Levante UD vs Getafe CF",
-              "pick": "Levante UD",
-              "p_win": 0.4326,
-              "implied_odds": 2.31
+              "sport": "nba",
+              "match": "Phoenix Suns vs Portland Trail Blazers",
+              "pick": "Phoenix Suns",
+              "p_win": 0.5109,
+              "implied_odds": 1.96
             }
           ],
-          "total_odds": 4.07,
-          "combined_prob": 0.2454,
+          "total_odds": 3.84,
+          "combined_prob": 0.2611,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Gil Vicente FC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.4936,
-              "implied_odds": 2.03
+              "sport": "nba",
+              "match": "Charlotte Hornets vs Miami Heat",
+              "pick": "Charlotte Hornets",
+              "p_win": 0.5111,
+              "implied_odds": 1.96
             },
             {
-              "sport": "laliga",
-              "match": "Levante UD vs Getafe CF",
-              "pick": "Levante UD",
-              "p_win": 0.4326,
-              "implied_odds": 2.31
+              "sport": "nba",
+              "match": "Phoenix Suns vs Portland Trail Blazers",
+              "pick": "Phoenix Suns",
+              "p_win": 0.5109,
+              "implied_odds": 1.96
             }
           ],
-          "total_odds": 4.69,
-          "combined_prob": 0.2135,
+          "total_odds": 3.84,
+          "combined_prob": 0.2611,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Gil Vicente FC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.4936,
-              "implied_odds": 2.03
+              "sport": "nba",
+              "match": "Charlotte Hornets vs Miami Heat",
+              "pick": "Charlotte Hornets",
+              "p_win": 0.5111,
+              "implied_odds": 1.96
             },
             {
-              "sport": "laliga",
-              "match": "Levante UD vs Getafe CF",
-              "pick": "Levante UD",
-              "p_win": 0.4326,
-              "implied_odds": 2.31
+              "sport": "nba",
+              "match": "Phoenix Suns vs Portland Trail Blazers",
+              "pick": "Phoenix Suns",
+              "p_win": 0.5109,
+              "implied_odds": 1.96
             }
           ],
-          "total_odds": 4.69,
-          "combined_prob": 0.2135,
+          "total_odds": 3.84,
+          "combined_prob": 0.2611,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Manchester United FC vs Leeds United FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5672,
-              "implied_odds": 1.76
+              "sport": "nba",
+              "match": "Charlotte Hornets vs Miami Heat",
+              "pick": "Charlotte Hornets",
+              "p_win": 0.5111,
+              "implied_odds": 1.96
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Gil Vicente FC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.4936,
-              "implied_odds": 2.03
-            },
-            {
-              "sport": "laliga",
-              "match": "Levante UD vs Getafe CF",
-              "pick": "Levante UD",
-              "p_win": 0.4326,
-              "implied_odds": 2.31
+              "sport": "nba",
+              "match": "Phoenix Suns vs Portland Trail Blazers",
+              "pick": "Phoenix Suns",
+              "p_win": 0.5109,
+              "implied_odds": 1.96
             }
           ],
-          "total_odds": 8.25,
-          "combined_prob": 0.1211,
-          "n_legs": 3
+          "total_odds": 3.84,
+          "combined_prob": 0.2611,
+          "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Manchester United FC vs Leeds United FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5672,
-              "implied_odds": 1.76
+              "sport": "nba",
+              "match": "Charlotte Hornets vs Miami Heat",
+              "pick": "Charlotte Hornets",
+              "p_win": 0.5111,
+              "implied_odds": 1.96
             },
             {
-              "sport": "primeira",
-              "match": "CD Tondela vs Gil Vicente FC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.4936,
-              "implied_odds": 2.03
-            },
-            {
-              "sport": "laliga",
-              "match": "Levante UD vs Getafe CF",
-              "pick": "Levante UD",
-              "p_win": 0.4326,
-              "implied_odds": 2.31
+              "sport": "nba",
+              "match": "Phoenix Suns vs Portland Trail Blazers",
+              "pick": "Phoenix Suns",
+              "p_win": 0.5109,
+              "implied_odds": 1.96
             }
           ],
-          "total_odds": 8.25,
-          "combined_prob": 0.1211,
-          "n_legs": 3
+          "total_odds": 3.84,
+          "combined_prob": 0.2611,
+          "n_legs": 2
+        }
+      },
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs FC Barcelona",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5779,
+              "implied_odds": 1.73
+            },
+            {
+              "sport": "ucl",
+              "match": "Liverpool FC vs Paris Saint-Germain FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.4367,
+              "implied_odds": 2.29
+            }
+          ],
+          "total_odds": 3.96,
+          "combined_prob": 0.2524,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs FC Barcelona",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5779,
+              "implied_odds": 1.73
+            },
+            {
+              "sport": "ucl",
+              "match": "Liverpool FC vs Paris Saint-Germain FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.4367,
+              "implied_odds": 2.29
+            }
+          ],
+          "total_odds": 3.96,
+          "combined_prob": 0.2524,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs FC Barcelona",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5779,
+              "implied_odds": 1.73
+            },
+            {
+              "sport": "ucl",
+              "match": "Liverpool FC vs Paris Saint-Germain FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.4367,
+              "implied_odds": 2.29
+            }
+          ],
+          "total_odds": 3.96,
+          "combined_prob": 0.2524,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs FC Barcelona",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5779,
+              "implied_odds": 1.73
+            },
+            {
+              "sport": "ucl",
+              "match": "Liverpool FC vs Paris Saint-Germain FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.4367,
+              "implied_odds": 2.29
+            }
+          ],
+          "total_odds": 3.96,
+          "combined_prob": 0.2524,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs FC Barcelona",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5779,
+              "implied_odds": 1.73
+            },
+            {
+              "sport": "ucl",
+              "match": "Liverpool FC vs Paris Saint-Germain FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.4367,
+              "implied_odds": 2.29
+            }
+          ],
+          "total_odds": 3.96,
+          "combined_prob": 0.2524,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "ucl",
+              "match": "Club Atlético de Madrid vs FC Barcelona",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5779,
+              "implied_odds": 1.73
+            },
+            {
+              "sport": "ucl",
+              "match": "Liverpool FC vs Paris Saint-Germain FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.4367,
+              "implied_odds": 2.29
+            }
+          ],
+          "total_odds": 3.96,
+          "combined_prob": 0.2524,
+          "n_legs": 2
         }
       }
     },
@@ -326,142 +464,156 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester United FC vs Leeds United FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5672,
-            "implied_odds": 1.76
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs FC Barcelona",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.5779,
+            "implied_odds": 1.73
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Gil Vicente FC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.4936,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Charlotte Hornets vs Miami Heat",
+            "pick": "Charlotte Hornets",
+            "p_win": 0.5111,
+            "implied_odds": 1.96
           }
         ],
-        "total_odds": 3.57,
-        "combined_prob": 0.28,
+        "total_odds": 3.39,
+        "combined_prob": 0.2954,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester United FC vs Leeds United FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5672,
-            "implied_odds": 1.76
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs FC Barcelona",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.5779,
+            "implied_odds": 1.73
           },
           {
-            "sport": "laliga",
-            "match": "Levante UD vs Getafe CF",
-            "pick": "Levante UD",
-            "p_win": 0.4326,
-            "implied_odds": 2.31
+            "sport": "ucl",
+            "match": "Liverpool FC vs Paris Saint-Germain FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.4367,
+            "implied_odds": 2.29
           }
         ],
-        "total_odds": 4.07,
-        "combined_prob": 0.2454,
+        "total_odds": 3.96,
+        "combined_prob": 0.2524,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Gil Vicente FC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.4936,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Charlotte Hornets vs Miami Heat",
+            "pick": "Charlotte Hornets",
+            "p_win": 0.5111,
+            "implied_odds": 1.96
           },
           {
-            "sport": "laliga",
-            "match": "Levante UD vs Getafe CF",
-            "pick": "Levante UD",
-            "p_win": 0.4326,
-            "implied_odds": 2.31
+            "sport": "ucl",
+            "match": "Liverpool FC vs Paris Saint-Germain FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.4367,
+            "implied_odds": 2.29
           }
         ],
-        "total_odds": 4.69,
-        "combined_prob": 0.2135,
+        "total_odds": 4.49,
+        "combined_prob": 0.2232,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Gil Vicente FC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.4936,
-            "implied_odds": 2.03
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs FC Barcelona",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.5779,
+            "implied_odds": 1.73
           },
           {
-            "sport": "laliga",
-            "match": "Levante UD vs Getafe CF",
-            "pick": "Levante UD",
-            "p_win": 0.4326,
-            "implied_odds": 2.31
+            "sport": "nba",
+            "match": "Charlotte Hornets vs Miami Heat",
+            "pick": "Charlotte Hornets",
+            "p_win": 0.5111,
+            "implied_odds": 1.96
+          },
+          {
+            "sport": "nba",
+            "match": "Phoenix Suns vs Portland Trail Blazers",
+            "pick": "Phoenix Suns",
+            "p_win": 0.5109,
+            "implied_odds": 1.96
           }
         ],
-        "total_odds": 4.69,
-        "combined_prob": 0.2135,
-        "n_legs": 2
+        "total_odds": 6.65,
+        "combined_prob": 0.1509,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester United FC vs Leeds United FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5672,
-            "implied_odds": 1.76
+            "sport": "nba",
+            "match": "Charlotte Hornets vs Miami Heat",
+            "pick": "Charlotte Hornets",
+            "p_win": 0.5111,
+            "implied_odds": 1.96
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Gil Vicente FC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.4936,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Phoenix Suns vs Portland Trail Blazers",
+            "pick": "Phoenix Suns",
+            "p_win": 0.5109,
+            "implied_odds": 1.96
           },
           {
-            "sport": "laliga",
-            "match": "Levante UD vs Getafe CF",
-            "pick": "Levante UD",
-            "p_win": 0.4326,
-            "implied_odds": 2.31
+            "sport": "ucl",
+            "match": "Liverpool FC vs Paris Saint-Germain FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.4367,
+            "implied_odds": 2.29
           }
         ],
-        "total_odds": 8.25,
-        "combined_prob": 0.1211,
+        "total_odds": 8.8,
+        "combined_prob": 0.114,
         "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester United FC vs Leeds United FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5672,
-            "implied_odds": 1.76
+            "sport": "ucl",
+            "match": "Club Atlético de Madrid vs FC Barcelona",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.5779,
+            "implied_odds": 1.73
           },
           {
-            "sport": "primeira",
-            "match": "CD Tondela vs Gil Vicente FC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.4936,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Charlotte Hornets vs Miami Heat",
+            "pick": "Charlotte Hornets",
+            "p_win": 0.5111,
+            "implied_odds": 1.96
           },
           {
-            "sport": "laliga",
-            "match": "Levante UD vs Getafe CF",
-            "pick": "Levante UD",
-            "p_win": 0.4326,
-            "implied_odds": 2.31
+            "sport": "nba",
+            "match": "Phoenix Suns vs Portland Trail Blazers",
+            "pick": "Phoenix Suns",
+            "p_win": 0.5109,
+            "implied_odds": 1.96
+          },
+          {
+            "sport": "ucl",
+            "match": "Liverpool FC vs Paris Saint-Germain FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.4367,
+            "implied_odds": 2.29
           }
         ],
-        "total_odds": 8.25,
-        "combined_prob": 0.1211,
-        "n_legs": 3
+        "total_odds": 15.22,
+        "combined_prob": 0.0659,
+        "n_legs": 4
       }
     }
   }
