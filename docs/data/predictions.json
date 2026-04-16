@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-15T09:20:35Z",
-  "date": "2026-04-15",
+  "generated_at": "2026-04-16T09:20:22Z",
+  "date": "2026-04-16",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5221,
-        "logloss": 0.6922,
-        "brier": 0.2495
+        "accuracy": 0.5238,
+        "logloss": 0.692,
+        "brier": 0.2494
       },
       "picks": [],
       "name": "NHL"
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5385,
-        "logloss": 0.6889,
-        "brier": 0.2478
+        "accuracy": 0.6,
+        "logloss": 0.6787,
+        "brier": 0.2429
       },
       "picks": [],
       "name": "MLB"
@@ -85,326 +85,23 @@
     "ucl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5405,
-        "logloss": 1.0307,
-        "brier": 0.2088
+        "accuracy": 0.5676,
+        "logloss": 1.0672,
+        "brier": 0.2169
       },
-      "picks": [
-        {
-          "home_team": "Arsenal FC",
-          "away_team": "Sporting Clube de Portugal",
-          "pick": "H",
-          "pick_label": "Arsenal FC",
-          "p_win": 0.8247,
-          "implied_odds": 1.21,
-          "signal": "alta",
-          "date": "2026-04-15",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 82%. Sin bajas importantes. ML FC es la jugada segura (modelo 82%)."
-        },
-        {
-          "home_team": "FC Bayern München",
-          "away_team": "Real Madrid CF",
-          "pick": "H",
-          "pick_label": "FC Bayern München",
-          "p_win": 0.7704,
-          "implied_odds": 1.3,
-          "signal": "alta",
-          "date": "2026-04-15",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 77%. Sin bajas importantes. ML München es la jugada segura (modelo 77%)."
-        }
-      ],
-      "name": "Champions League",
-      "analysis": ""
+      "picks": [],
+      "name": "Champions League"
     }
   },
   "parlays": {
-    "by_sport": {
-      "soccer": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Arsenal FC vs Sporting Clube de Portugal",
-              "pick": "Arsenal FC",
-              "p_win": 0.8247,
-              "implied_odds": 1.21
-            },
-            {
-              "sport": "ucl",
-              "match": "FC Bayern München vs Real Madrid CF",
-              "pick": "FC Bayern München",
-              "p_win": 0.7704,
-              "implied_odds": 1.3
-            }
-          ],
-          "total_odds": 1.57,
-          "combined_prob": 0.6353,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Arsenal FC vs Sporting Clube de Portugal",
-              "pick": "Arsenal FC",
-              "p_win": 0.8247,
-              "implied_odds": 1.21
-            },
-            {
-              "sport": "ucl",
-              "match": "FC Bayern München vs Real Madrid CF",
-              "pick": "FC Bayern München",
-              "p_win": 0.7704,
-              "implied_odds": 1.3
-            }
-          ],
-          "total_odds": 1.57,
-          "combined_prob": 0.6353,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Arsenal FC vs Sporting Clube de Portugal",
-              "pick": "Arsenal FC",
-              "p_win": 0.8247,
-              "implied_odds": 1.21
-            },
-            {
-              "sport": "ucl",
-              "match": "FC Bayern München vs Real Madrid CF",
-              "pick": "FC Bayern München",
-              "p_win": 0.7704,
-              "implied_odds": 1.3
-            }
-          ],
-          "total_odds": 1.57,
-          "combined_prob": 0.6353,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Arsenal FC vs Sporting Clube de Portugal",
-              "pick": "Arsenal FC",
-              "p_win": 0.8247,
-              "implied_odds": 1.21
-            },
-            {
-              "sport": "ucl",
-              "match": "FC Bayern München vs Real Madrid CF",
-              "pick": "FC Bayern München",
-              "p_win": 0.7704,
-              "implied_odds": 1.3
-            }
-          ],
-          "total_odds": 1.57,
-          "combined_prob": 0.6353,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Arsenal FC vs Sporting Clube de Portugal",
-              "pick": "Arsenal FC",
-              "p_win": 0.8247,
-              "implied_odds": 1.21
-            },
-            {
-              "sport": "ucl",
-              "match": "FC Bayern München vs Real Madrid CF",
-              "pick": "FC Bayern München",
-              "p_win": 0.7704,
-              "implied_odds": 1.3
-            }
-          ],
-          "total_odds": 1.57,
-          "combined_prob": 0.6353,
-          "n_legs": 2
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "ucl",
-              "match": "Arsenal FC vs Sporting Clube de Portugal",
-              "pick": "Arsenal FC",
-              "p_win": 0.8247,
-              "implied_odds": 1.21
-            },
-            {
-              "sport": "ucl",
-              "match": "FC Bayern München vs Real Madrid CF",
-              "pick": "FC Bayern München",
-              "p_win": 0.7704,
-              "implied_odds": 1.3
-            }
-          ],
-          "total_odds": 1.57,
-          "combined_prob": 0.6353,
-          "n_legs": 2
-        }
-      }
-    },
+    "by_sport": {},
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Sporting Clube de Portugal",
-            "pick": "Arsenal FC",
-            "p_win": 0.8247,
-            "implied_odds": 1.21
-          },
-          {
-            "sport": "ucl",
-            "match": "FC Bayern München vs Real Madrid CF",
-            "pick": "FC Bayern München",
-            "p_win": 0.7704,
-            "implied_odds": 1.3
-          }
-        ],
-        "total_odds": 1.57,
-        "combined_prob": 0.6353,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Sporting Clube de Portugal",
-            "pick": "Arsenal FC",
-            "p_win": 0.8247,
-            "implied_odds": 1.21
-          },
-          {
-            "sport": "ucl",
-            "match": "FC Bayern München vs Real Madrid CF",
-            "pick": "FC Bayern München",
-            "p_win": 0.7704,
-            "implied_odds": 1.3
-          }
-        ],
-        "total_odds": 1.57,
-        "combined_prob": 0.6353,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Sporting Clube de Portugal",
-            "pick": "Arsenal FC",
-            "p_win": 0.8247,
-            "implied_odds": 1.21
-          },
-          {
-            "sport": "ucl",
-            "match": "FC Bayern München vs Real Madrid CF",
-            "pick": "FC Bayern München",
-            "p_win": 0.7704,
-            "implied_odds": 1.3
-          }
-        ],
-        "total_odds": 1.57,
-        "combined_prob": 0.6353,
-        "n_legs": 2
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Sporting Clube de Portugal",
-            "pick": "Arsenal FC",
-            "p_win": 0.8247,
-            "implied_odds": 1.21
-          },
-          {
-            "sport": "ucl",
-            "match": "FC Bayern München vs Real Madrid CF",
-            "pick": "FC Bayern München",
-            "p_win": 0.7704,
-            "implied_odds": 1.3
-          }
-        ],
-        "total_odds": 1.57,
-        "combined_prob": 0.6353,
-        "n_legs": 2
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Sporting Clube de Portugal",
-            "pick": "Arsenal FC",
-            "p_win": 0.8247,
-            "implied_odds": 1.21
-          },
-          {
-            "sport": "ucl",
-            "match": "FC Bayern München vs Real Madrid CF",
-            "pick": "FC Bayern München",
-            "p_win": 0.7704,
-            "implied_odds": 1.3
-          }
-        ],
-        "total_odds": 1.57,
-        "combined_prob": 0.6353,
-        "n_legs": 2
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Sporting Clube de Portugal",
-            "pick": "Arsenal FC",
-            "p_win": 0.8247,
-            "implied_odds": 1.21
-          },
-          {
-            "sport": "ucl",
-            "match": "FC Bayern München vs Real Madrid CF",
-            "pick": "FC Bayern München",
-            "p_win": 0.7704,
-            "implied_odds": 1.3
-          }
-        ],
-        "total_odds": 1.57,
-        "combined_prob": 0.6353,
-        "n_legs": 2
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
