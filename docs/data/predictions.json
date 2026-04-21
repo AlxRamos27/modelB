@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-20T09:58:44Z",
-  "date": "2026-04-20",
+  "generated_at": "2026-04-21T09:27:26Z",
+  "date": "2026-04-21",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5217,
-        "logloss": 0.6922,
-        "brier": 0.2495
+        "accuracy": 0.5235,
+        "logloss": 0.692,
+        "brier": 0.2494
       },
       "picks": [],
       "name": "NHL"
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5152,
-        "logloss": 0.6939,
-        "brier": 0.2504
+        "accuracy": 0.5441,
+        "logloss": 0.682,
+        "brier": 0.2445
       },
       "picks": [
         {
-          "home_team": "Kansas City Royals",
-          "away_team": "Baltimore Orioles",
+          "home_team": "Cleveland Guardians",
+          "away_team": "Houston Astros",
           "pick": "H",
-          "pick_label": "Kansas City Royals",
-          "p_win": 0.6467,
-          "implied_odds": 1.55,
-          "signal": "media",
-          "date": "2026-04-20",
-          "model_spread": 1.1,
+          "pick_label": "Cleveland Guardians",
+          "p_win": 0.5841,
+          "implied_odds": 1.71,
+          "signal": "baja",
+          "date": "2026-04-21",
+          "model_spread": 0.6,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 65%. Royals 7-15 vs Orioles 10-12. Sin bajas importantes. ML Royals con cautela (modelo 65%)."
+          "note": "❌ Modelo 58%. Guardians 13-11 vs Astros 9-15. Sin bajas importantes. SKIP — sin edge claro (58%)."
         }
       ],
       "name": "MLB",
@@ -63,20 +63,20 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5,
-        "logloss": 1.0432,
-        "brier": 0.2101
+        "accuracy": 0.5152,
+        "logloss": 1.0401,
+        "brier": 0.2094
       },
       "picks": [
         {
-          "home_team": "Crystal Palace FC",
-          "away_team": "West Ham United FC",
+          "home_team": "Brighton & Hove Albion FC",
+          "away_team": "Chelsea FC",
           "pick": "H",
-          "pick_label": "Crystal Palace FC",
-          "p_win": 0.4735,
-          "implied_odds": 2.11,
+          "pick_label": "Brighton & Hove Albion FC",
+          "p_win": 0.3967,
+          "implied_odds": 2.52,
           "signal": "baja",
-          "date": "2026-04-20",
+          "date": "2026-04-21",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -92,7 +92,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 47%. Sin bajas importantes. SKIP — sin edge claro (47%)."
+          "note": "❌ Modelo 40%. Sin bajas importantes. SKIP — sin edge claro (40%)."
         }
       ],
       "name": "Premier League",
@@ -105,8 +105,114 @@
         "logloss": 1.0087,
         "brier": 0.2039
       },
-      "picks": [],
-      "name": "La Liga"
+      "picks": [
+        {
+          "home_team": "Real Madrid CF",
+          "away_team": "Deportivo Alavés",
+          "pick": "H",
+          "pick_label": "Real Madrid CF",
+          "p_win": 0.7191,
+          "implied_odds": 1.39,
+          "signal": "alta",
+          "date": "2026-04-21",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 72%. Sin bajas importantes. ML CF es la jugada segura (modelo 72%)."
+        },
+        {
+          "home_team": "Girona FC",
+          "away_team": "Real Betis Balompié",
+          "pick": "H",
+          "pick_label": "Girona FC",
+          "p_win": 0.5967,
+          "implied_odds": 1.68,
+          "signal": "media",
+          "date": "2026-04-21",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML FC con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "RCD Mallorca",
+          "away_team": "Valencia CF",
+          "pick": "H",
+          "pick_label": "RCD Mallorca",
+          "p_win": 0.5759,
+          "implied_odds": 1.74,
+          "signal": "baja",
+          "date": "2026-04-21",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 58%. Sin bajas importantes. SKIP — sin edge claro (58%)."
+        },
+        {
+          "home_team": "Athletic Club",
+          "away_team": "CA Osasuna",
+          "pick": "H",
+          "pick_label": "Athletic Club",
+          "p_win": 0.3523,
+          "implied_odds": 2.84,
+          "signal": "baja",
+          "date": "2026-04-21",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 35%. Sin bajas importantes. SKIP — sin edge claro (35%)."
+        }
+      ],
+      "name": "La Liga",
+      "analysis": ""
     },
     "ligue1": {
       "status": "ok",
@@ -131,40 +237,12 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4444,
-        "logloss": 1.1246,
-        "brier": 0.2222
+        "accuracy": 0.5185,
+        "logloss": 1.0932,
+        "brier": 0.2156
       },
-      "picks": [
-        {
-          "home_team": "Moreirense FC",
-          "away_team": "GD Estoril Praia",
-          "pick": "A",
-          "pick_label": "GD Estoril Praia",
-          "p_win": 0.3148,
-          "implied_odds": 3.18,
-          "signal": "baja",
-          "date": "2026-04-20",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 31%. Sin bajas importantes. SKIP — sin edge claro (31%)."
-        }
-      ],
-      "name": "Primeira Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "Primeira Liga"
     },
     "ucl": {
       "status": "ok",
@@ -191,128 +269,156 @@
         "cuota_3": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs West Ham United FC",
-              "pick": "Crystal Palace FC",
-              "p_win": 0.4735,
-              "implied_odds": 2.11
+              "sport": "laliga",
+              "match": "Girona FC vs Real Betis Balompié",
+              "pick": "Girona FC",
+              "p_win": 0.5967,
+              "implied_odds": 1.68
             },
             {
-              "sport": "primeira",
-              "match": "Moreirense FC vs GD Estoril Praia",
-              "pick": "GD Estoril Praia",
-              "p_win": 0.3148,
-              "implied_odds": 3.18
+              "sport": "laliga",
+              "match": "RCD Mallorca vs Valencia CF",
+              "pick": "RCD Mallorca",
+              "p_win": 0.5759,
+              "implied_odds": 1.74
             }
           ],
-          "total_odds": 6.71,
-          "combined_prob": 0.1491,
+          "total_odds": 2.92,
+          "combined_prob": 0.3436,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs West Ham United FC",
-              "pick": "Crystal Palace FC",
-              "p_win": 0.4735,
-              "implied_odds": 2.11
+              "sport": "laliga",
+              "match": "Real Madrid CF vs Deportivo Alavés",
+              "pick": "Real Madrid CF",
+              "p_win": 0.7191,
+              "implied_odds": 1.39
             },
             {
-              "sport": "primeira",
-              "match": "Moreirense FC vs GD Estoril Praia",
-              "pick": "GD Estoril Praia",
-              "p_win": 0.3148,
-              "implied_odds": 3.18
+              "sport": "laliga",
+              "match": "Athletic Club vs CA Osasuna",
+              "pick": "Athletic Club",
+              "p_win": 0.3523,
+              "implied_odds": 2.84
             }
           ],
-          "total_odds": 6.71,
-          "combined_prob": 0.1491,
+          "total_odds": 3.95,
+          "combined_prob": 0.2533,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs West Ham United FC",
-              "pick": "Crystal Palace FC",
-              "p_win": 0.4735,
-              "implied_odds": 2.11
+              "sport": "laliga",
+              "match": "RCD Mallorca vs Valencia CF",
+              "pick": "RCD Mallorca",
+              "p_win": 0.5759,
+              "implied_odds": 1.74
             },
             {
-              "sport": "primeira",
-              "match": "Moreirense FC vs GD Estoril Praia",
-              "pick": "GD Estoril Praia",
-              "p_win": 0.3148,
-              "implied_odds": 3.18
+              "sport": "laliga",
+              "match": "Athletic Club vs CA Osasuna",
+              "pick": "Athletic Club",
+              "p_win": 0.3523,
+              "implied_odds": 2.84
             }
           ],
-          "total_odds": 6.71,
-          "combined_prob": 0.1491,
+          "total_odds": 4.94,
+          "combined_prob": 0.2029,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs West Ham United FC",
-              "pick": "Crystal Palace FC",
-              "p_win": 0.4735,
-              "implied_odds": 2.11
+              "sport": "laliga",
+              "match": "Real Madrid CF vs Deportivo Alavés",
+              "pick": "Real Madrid CF",
+              "p_win": 0.7191,
+              "implied_odds": 1.39
             },
             {
-              "sport": "primeira",
-              "match": "Moreirense FC vs GD Estoril Praia",
-              "pick": "GD Estoril Praia",
-              "p_win": 0.3148,
-              "implied_odds": 3.18
+              "sport": "laliga",
+              "match": "RCD Mallorca vs Valencia CF",
+              "pick": "RCD Mallorca",
+              "p_win": 0.5759,
+              "implied_odds": 1.74
+            },
+            {
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Chelsea FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.3967,
+              "implied_odds": 2.52
             }
           ],
-          "total_odds": 6.71,
-          "combined_prob": 0.1491,
-          "n_legs": 2
+          "total_odds": 6.09,
+          "combined_prob": 0.1643,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs West Ham United FC",
-              "pick": "Crystal Palace FC",
-              "p_win": 0.4735,
-              "implied_odds": 2.11
+              "sport": "laliga",
+              "match": "Real Madrid CF vs Deportivo Alavés",
+              "pick": "Real Madrid CF",
+              "p_win": 0.7191,
+              "implied_odds": 1.39
             },
             {
-              "sport": "primeira",
-              "match": "Moreirense FC vs GD Estoril Praia",
-              "pick": "GD Estoril Praia",
-              "p_win": 0.3148,
-              "implied_odds": 3.18
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Chelsea FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.3967,
+              "implied_odds": 2.52
+            },
+            {
+              "sport": "laliga",
+              "match": "Athletic Club vs CA Osasuna",
+              "pick": "Athletic Club",
+              "p_win": 0.3523,
+              "implied_odds": 2.84
             }
           ],
-          "total_odds": 6.71,
-          "combined_prob": 0.1491,
-          "n_legs": 2
+          "total_odds": 9.95,
+          "combined_prob": 0.1005,
+          "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs West Ham United FC",
-              "pick": "Crystal Palace FC",
-              "p_win": 0.4735,
-              "implied_odds": 2.11
+              "sport": "laliga",
+              "match": "Girona FC vs Real Betis Balompié",
+              "pick": "Girona FC",
+              "p_win": 0.5967,
+              "implied_odds": 1.68
             },
             {
-              "sport": "primeira",
-              "match": "Moreirense FC vs GD Estoril Praia",
-              "pick": "GD Estoril Praia",
-              "p_win": 0.3148,
-              "implied_odds": 3.18
+              "sport": "laliga",
+              "match": "RCD Mallorca vs Valencia CF",
+              "pick": "RCD Mallorca",
+              "p_win": 0.5759,
+              "implied_odds": 1.74
+            },
+            {
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Chelsea FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.3967,
+              "implied_odds": 2.52
+            },
+            {
+              "sport": "laliga",
+              "match": "Athletic Club vs CA Osasuna",
+              "pick": "Athletic Club",
+              "p_win": 0.3523,
+              "implied_odds": 2.84
             }
           ],
-          "total_odds": 6.71,
-          "combined_prob": 0.1491,
-          "n_legs": 2
+          "total_odds": 20.92,
+          "combined_prob": 0.048,
+          "n_legs": 4
         }
       }
     },
@@ -321,141 +427,176 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Kansas City Royals vs Baltimore Orioles",
-            "pick": "Kansas City Royals",
-            "p_win": 0.6467,
-            "implied_odds": 1.55
+            "match": "Cleveland Guardians vs Houston Astros",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5841,
+            "implied_odds": 1.71
           },
           {
-            "sport": "epl",
-            "match": "Crystal Palace FC vs West Ham United FC",
-            "pick": "Crystal Palace FC",
-            "p_win": 0.4735,
-            "implied_odds": 2.11
+            "sport": "laliga",
+            "match": "RCD Mallorca vs Valencia CF",
+            "pick": "RCD Mallorca",
+            "p_win": 0.5759,
+            "implied_odds": 1.74
           }
         ],
-        "total_odds": 3.27,
-        "combined_prob": 0.3062,
+        "total_odds": 2.98,
+        "combined_prob": 0.3364,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Kansas City Royals vs Baltimore Orioles",
-            "pick": "Kansas City Royals",
-            "p_win": 0.6467,
-            "implied_odds": 1.55
+            "sport": "laliga",
+            "match": "Real Madrid CF vs Deportivo Alavés",
+            "pick": "Real Madrid CF",
+            "p_win": 0.7191,
+            "implied_odds": 1.39
           },
           {
-            "sport": "epl",
-            "match": "Crystal Palace FC vs West Ham United FC",
-            "pick": "Crystal Palace FC",
-            "p_win": 0.4735,
-            "implied_odds": 2.11
+            "sport": "laliga",
+            "match": "Girona FC vs Real Betis Balompié",
+            "pick": "Girona FC",
+            "p_win": 0.5967,
+            "implied_odds": 1.68
+          },
+          {
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Houston Astros",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5841,
+            "implied_odds": 1.71
           }
         ],
-        "total_odds": 3.27,
-        "combined_prob": 0.3062,
-        "n_legs": 2
+        "total_odds": 3.99,
+        "combined_prob": 0.2506,
+        "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Kansas City Royals vs Baltimore Orioles",
-            "pick": "Kansas City Royals",
-            "p_win": 0.6467,
-            "implied_odds": 1.55
+            "sport": "laliga",
+            "match": "Girona FC vs Real Betis Balompié",
+            "pick": "Girona FC",
+            "p_win": 0.5967,
+            "implied_odds": 1.68
           },
           {
-            "sport": "primeira",
-            "match": "Moreirense FC vs GD Estoril Praia",
-            "pick": "GD Estoril Praia",
-            "p_win": 0.3148,
-            "implied_odds": 3.18
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Houston Astros",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5841,
+            "implied_odds": 1.71
+          },
+          {
+            "sport": "laliga",
+            "match": "RCD Mallorca vs Valencia CF",
+            "pick": "RCD Mallorca",
+            "p_win": 0.5759,
+            "implied_odds": 1.74
           }
         ],
-        "total_odds": 4.93,
-        "combined_prob": 0.2036,
-        "n_legs": 2
+        "total_odds": 5.0,
+        "combined_prob": 0.2007,
+        "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Crystal Palace FC vs West Ham United FC",
-            "pick": "Crystal Palace FC",
-            "p_win": 0.4735,
-            "implied_odds": 2.11
+            "sport": "laliga",
+            "match": "Real Madrid CF vs Deportivo Alavés",
+            "pick": "Real Madrid CF",
+            "p_win": 0.7191,
+            "implied_odds": 1.39
           },
           {
-            "sport": "primeira",
-            "match": "Moreirense FC vs GD Estoril Praia",
-            "pick": "GD Estoril Praia",
-            "p_win": 0.3148,
-            "implied_odds": 3.18
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Houston Astros",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5841,
+            "implied_odds": 1.71
+          },
+          {
+            "sport": "epl",
+            "match": "Brighton & Hove Albion FC vs Chelsea FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.3967,
+            "implied_odds": 2.52
           }
         ],
-        "total_odds": 6.71,
-        "combined_prob": 0.1491,
-        "n_legs": 2
+        "total_odds": 5.99,
+        "combined_prob": 0.1666,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Kansas City Royals vs Baltimore Orioles",
-            "pick": "Kansas City Royals",
-            "p_win": 0.6467,
-            "implied_odds": 1.55
+            "sport": "laliga",
+            "match": "Real Madrid CF vs Deportivo Alavés",
+            "pick": "Real Madrid CF",
+            "p_win": 0.7191,
+            "implied_odds": 1.39
           },
           {
             "sport": "epl",
-            "match": "Crystal Palace FC vs West Ham United FC",
-            "pick": "Crystal Palace FC",
-            "p_win": 0.4735,
-            "implied_odds": 2.11
+            "match": "Brighton & Hove Albion FC vs Chelsea FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.3967,
+            "implied_odds": 2.52
           },
           {
-            "sport": "primeira",
-            "match": "Moreirense FC vs GD Estoril Praia",
-            "pick": "GD Estoril Praia",
-            "p_win": 0.3148,
-            "implied_odds": 3.18
+            "sport": "laliga",
+            "match": "Athletic Club vs CA Osasuna",
+            "pick": "Athletic Club",
+            "p_win": 0.3523,
+            "implied_odds": 2.84
           }
         ],
-        "total_odds": 10.4,
-        "combined_prob": 0.0964,
+        "total_odds": 9.95,
+        "combined_prob": 0.1005,
         "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
+            "sport": "laliga",
+            "match": "Real Madrid CF vs Deportivo Alavés",
+            "pick": "Real Madrid CF",
+            "p_win": 0.7191,
+            "implied_odds": 1.39
+          },
+          {
+            "sport": "laliga",
+            "match": "Girona FC vs Real Betis Balompié",
+            "pick": "Girona FC",
+            "p_win": 0.5967,
+            "implied_odds": 1.68
+          },
+          {
             "sport": "mlb",
-            "match": "Kansas City Royals vs Baltimore Orioles",
-            "pick": "Kansas City Royals",
-            "p_win": 0.6467,
-            "implied_odds": 1.55
+            "match": "Cleveland Guardians vs Houston Astros",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5841,
+            "implied_odds": 1.71
           },
           {
-            "sport": "epl",
-            "match": "Crystal Palace FC vs West Ham United FC",
-            "pick": "Crystal Palace FC",
-            "p_win": 0.4735,
-            "implied_odds": 2.11
+            "sport": "laliga",
+            "match": "RCD Mallorca vs Valencia CF",
+            "pick": "RCD Mallorca",
+            "p_win": 0.5759,
+            "implied_odds": 1.74
           },
           {
-            "sport": "primeira",
-            "match": "Moreirense FC vs GD Estoril Praia",
-            "pick": "GD Estoril Praia",
-            "p_win": 0.3148,
-            "implied_odds": 3.18
+            "sport": "laliga",
+            "match": "Athletic Club vs CA Osasuna",
+            "pick": "Athletic Club",
+            "p_win": 0.3523,
+            "implied_odds": 2.84
           }
         ],
-        "total_odds": 10.4,
-        "combined_prob": 0.0964,
-        "n_legs": 3
+        "total_odds": 19.73,
+        "combined_prob": 0.0509,
+        "n_legs": 5
       }
     }
   }
