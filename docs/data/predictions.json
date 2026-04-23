@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-22T09:21:41Z",
-  "date": "2026-04-22",
+  "generated_at": "2026-04-23T09:29:09Z",
+  "date": "2026-04-23",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5235,
-        "logloss": 0.692,
-        "brier": 0.2494
+        "accuracy": 0.5216,
+        "logloss": 0.6922,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5211,
-        "logloss": 0.6806,
-        "brier": 0.2438
+        "accuracy": 0.5135,
+        "logloss": 0.6826,
+        "brier": 0.2448
       },
       "picks": [
         {
@@ -35,11 +35,11 @@
           "away_team": "Minnesota Twins",
           "pick": "H",
           "pick_label": "New York Mets",
-          "p_win": 0.5844,
-          "implied_odds": 1.71,
-          "signal": "baja",
-          "date": "2026-04-22",
-          "model_spread": 0.6,
+          "p_win": 0.6085,
+          "implied_odds": 1.64,
+          "signal": "media",
+          "date": "2026-04-23",
+          "model_spread": 0.8,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 58%. Mets 7-16 vs Twins 12-11. Sin bajas importantes. SKIP — sin edge claro (58%)."
+          "note": "⚠️ Modelo 61%. Mets 8-16 vs Twins 12-12. Sin bajas importantes. ML Mets con cautela (modelo 61%)."
         }
       ],
       "name": "MLB",
@@ -63,84 +63,30 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4848,
-        "logloss": 1.0359,
-        "brier": 0.2085
+        "accuracy": 0.4776,
+        "logloss": 1.036,
+        "brier": 0.2084
       },
-      "picks": [
-        {
-          "home_team": "Burnley FC",
-          "away_team": "Manchester City FC",
-          "pick": "A",
-          "pick_label": "Manchester City FC",
-          "p_win": 0.6675,
-          "implied_odds": 1.5,
-          "signal": "media",
-          "date": "2026-04-22",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 67%. Sin bajas importantes. ML FC con cautela (modelo 67%)."
-        },
-        {
-          "home_team": "AFC Bournemouth",
-          "away_team": "Leeds United FC",
-          "pick": "H",
-          "pick_label": "AFC Bournemouth",
-          "p_win": 0.4804,
-          "implied_odds": 2.08,
-          "signal": "baja",
-          "date": "2026-04-22",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 48%. Sin bajas importantes. SKIP — sin edge claro (48%)."
-        }
-      ],
-      "name": "Premier League",
-      "analysis": ""
+      "picks": [],
+      "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4444,
-        "logloss": 1.0157,
-        "brier": 0.2049
+        "accuracy": 0.4844,
+        "logloss": 0.9954,
+        "brier": 0.2004
       },
       "picks": [
         {
-          "home_team": "FC Barcelona",
-          "away_team": "RC Celta de Vigo",
+          "home_team": "Levante UD",
+          "away_team": "Sevilla FC",
           "pick": "H",
-          "pick_label": "FC Barcelona",
-          "p_win": 0.8513,
-          "implied_odds": 1.17,
-          "signal": "alta",
-          "date": "2026-04-22",
+          "pick_label": "Levante UD",
+          "p_win": 0.5829,
+          "implied_odds": 1.72,
+          "signal": "baja",
+          "date": "2026-04-23",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -156,17 +102,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 85%. Sin bajas importantes. ML Barcelona es la jugada segura (modelo 85%)."
+          "note": "❌ Modelo 58%. Sin bajas importantes. SKIP — sin edge claro (58%)."
         },
         {
-          "home_team": "Real Sociedad de Fútbol",
-          "away_team": "Getafe CF",
+          "home_team": "Rayo Vallecano de Madrid",
+          "away_team": "RCD Espanyol de Barcelona",
           "pick": "H",
-          "pick_label": "Real Sociedad de Fútbol",
-          "p_win": 0.5041,
-          "implied_odds": 1.98,
+          "pick_label": "Rayo Vallecano de Madrid",
+          "p_win": 0.4508,
+          "implied_odds": 2.22,
           "signal": "baja",
-          "date": "2026-04-22",
+          "date": "2026-04-23",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -182,17 +128,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
+          "note": "❌ Modelo 45%. Sin bajas importantes. SKIP — sin edge claro (45%)."
         },
         {
-          "home_team": "Elche CF",
-          "away_team": "Club Atlético de Madrid",
-          "pick": "A",
-          "pick_label": "Club Atlético de Madrid",
-          "p_win": 0.3325,
-          "implied_odds": 3.01,
+          "home_team": "Real Oviedo",
+          "away_team": "Villarreal CF",
+          "pick": "H",
+          "pick_label": "Real Oviedo",
+          "p_win": 0.4257,
+          "implied_odds": 2.35,
           "signal": "baja",
-          "date": "2026-04-22",
+          "date": "2026-04-23",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -208,7 +154,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 33%. Sin bajas importantes. SKIP — sin edge claro (33%)."
+          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
         }
       ],
       "name": "La Liga",
@@ -217,40 +163,12 @@
     "ligue1": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4444,
-        "logloss": 0.9887,
-        "brier": 0.2005
+        "accuracy": 0.463,
+        "logloss": 0.9895,
+        "brier": 0.2004
       },
-      "picks": [
-        {
-          "home_team": "Paris Saint-Germain FC",
-          "away_team": "FC Nantes",
-          "pick": "H",
-          "pick_label": "Paris Saint-Germain FC",
-          "p_win": 0.7725,
-          "implied_odds": 1.29,
-          "signal": "alta",
-          "date": "2026-04-22",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 77%. Sin bajas importantes. ML FC es la jugada segura (modelo 77%)."
-        }
-      ],
-      "name": "Ligue 1",
-      "analysis": ""
+      "picks": [],
+      "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "ok",
@@ -269,8 +187,36 @@
         "logloss": 1.0932,
         "brier": 0.2156
       },
-      "picks": [],
-      "name": "Primeira Liga"
+      "picks": [
+        {
+          "home_team": "Casa Pia AC",
+          "away_team": "Sporting Clube de Braga",
+          "pick": "A",
+          "pick_label": "Sporting Clube de Braga",
+          "p_win": 0.6662,
+          "implied_odds": 1.5,
+          "signal": "media",
+          "date": "2026-04-23",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 67%. Sin bajas importantes. ML Braga con cautela (modelo 67%)."
+        }
+      ],
+      "name": "Primeira Liga",
+      "analysis": ""
     },
     "ucl": {
       "status": "ok",
@@ -297,184 +243,156 @@
         "cuota_3": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "FC Barcelona vs RC Celta de Vigo",
-              "pick": "FC Barcelona",
-              "p_win": 0.8513,
-              "implied_odds": 1.17
-            },
-            {
-              "sport": "ligue1",
-              "match": "Paris Saint-Germain FC vs FC Nantes",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.7725,
-              "implied_odds": 1.29
+              "sport": "primeira",
+              "match": "Casa Pia AC vs Sporting Clube de Braga",
+              "pick": "Sporting Clube de Braga",
+              "p_win": 0.6662,
+              "implied_odds": 1.5
             },
             {
               "sport": "laliga",
-              "match": "Real Sociedad de Fútbol vs Getafe CF",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.5041,
-              "implied_odds": 1.98
+              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.4508,
+              "implied_odds": 2.22
             }
           ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3315,
-          "n_legs": 3
+          "total_odds": 3.33,
+          "combined_prob": 0.3003,
+          "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "ligue1",
-              "match": "Paris Saint-Germain FC vs FC Nantes",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.7725,
-              "implied_odds": 1.29
+              "sport": "laliga",
+              "match": "Levante UD vs Sevilla FC",
+              "pick": "Levante UD",
+              "p_win": 0.5829,
+              "implied_odds": 1.72
             },
             {
-              "sport": "epl",
-              "match": "Burnley FC vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.6675,
-              "implied_odds": 1.5
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Leeds United FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.4804,
-              "implied_odds": 2.08
+              "sport": "laliga",
+              "match": "Real Oviedo vs Villarreal CF",
+              "pick": "Real Oviedo",
+              "p_win": 0.4257,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2477,
-          "n_legs": 3
+          "total_odds": 4.04,
+          "combined_prob": 0.2481,
+          "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs RC Celta de Vigo",
-              "pick": "FC Barcelona",
-              "p_win": 0.8513,
-              "implied_odds": 1.17
+              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.4508,
+              "implied_odds": 2.22
             },
             {
               "sport": "laliga",
-              "match": "Real Sociedad de Fútbol vs Getafe CF",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.5041,
-              "implied_odds": 1.98
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Leeds United FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.4804,
-              "implied_odds": 2.08
+              "match": "Real Oviedo vs Villarreal CF",
+              "pick": "Real Oviedo",
+              "p_win": 0.4257,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 4.82,
-          "combined_prob": 0.2062,
-          "n_legs": 3
+          "total_odds": 5.22,
+          "combined_prob": 0.1919,
+          "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Sociedad de Fútbol vs Getafe CF",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.5041,
-              "implied_odds": 1.98
+              "sport": "primeira",
+              "match": "Casa Pia AC vs Sporting Clube de Braga",
+              "pick": "Sporting Clube de Braga",
+              "p_win": 0.6662,
+              "implied_odds": 1.5
             },
             {
               "sport": "laliga",
-              "match": "Elche CF vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3325,
-              "implied_odds": 3.01
+              "match": "Levante UD vs Sevilla FC",
+              "pick": "Levante UD",
+              "p_win": 0.5829,
+              "implied_odds": 1.72
+            },
+            {
+              "sport": "laliga",
+              "match": "Real Oviedo vs Villarreal CF",
+              "pick": "Real Oviedo",
+              "p_win": 0.4257,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 5.96,
-          "combined_prob": 0.1676,
-          "n_legs": 2
+          "total_odds": 6.06,
+          "combined_prob": 0.1653,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs RC Celta de Vigo",
-              "pick": "FC Barcelona",
-              "p_win": 0.8513,
-              "implied_odds": 1.17
-            },
-            {
-              "sport": "epl",
-              "match": "Burnley FC vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.6675,
-              "implied_odds": 1.5
+              "match": "Levante UD vs Sevilla FC",
+              "pick": "Levante UD",
+              "p_win": 0.5829,
+              "implied_odds": 1.72
             },
             {
               "sport": "laliga",
-              "match": "Real Sociedad de Fútbol vs Getafe CF",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.5041,
-              "implied_odds": 1.98
+              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.4508,
+              "implied_odds": 2.22
             },
             {
               "sport": "laliga",
-              "match": "Elche CF vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3325,
-              "implied_odds": 3.01
+              "match": "Real Oviedo vs Villarreal CF",
+              "pick": "Real Oviedo",
+              "p_win": 0.4257,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 10.46,
-          "combined_prob": 0.0952,
-          "n_legs": 4
+          "total_odds": 8.97,
+          "combined_prob": 0.1119,
+          "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "FC Barcelona vs RC Celta de Vigo",
-              "pick": "FC Barcelona",
-              "p_win": 0.8513,
-              "implied_odds": 1.17
-            },
-            {
-              "sport": "ligue1",
-              "match": "Paris Saint-Germain FC vs FC Nantes",
-              "pick": "Paris Saint-Germain FC",
-              "p_win": 0.7725,
-              "implied_odds": 1.29
+              "sport": "primeira",
+              "match": "Casa Pia AC vs Sporting Clube de Braga",
+              "pick": "Sporting Clube de Braga",
+              "p_win": 0.6662,
+              "implied_odds": 1.5
             },
             {
               "sport": "laliga",
-              "match": "Real Sociedad de Fútbol vs Getafe CF",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.5041,
-              "implied_odds": 1.98
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Leeds United FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.4804,
-              "implied_odds": 2.08
+              "match": "Levante UD vs Sevilla FC",
+              "pick": "Levante UD",
+              "p_win": 0.5829,
+              "implied_odds": 1.72
             },
             {
               "sport": "laliga",
-              "match": "Elche CF vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3325,
-              "implied_odds": 3.01
+              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
+              "pick": "Rayo Vallecano de Madrid",
+              "p_win": 0.4508,
+              "implied_odds": 2.22
+            },
+            {
+              "sport": "laliga",
+              "match": "Real Oviedo vs Villarreal CF",
+              "pick": "Real Oviedo",
+              "p_win": 0.4257,
+              "implied_odds": 2.35
             }
           ],
-          "total_odds": 18.71,
-          "combined_prob": 0.053,
-          "n_legs": 5
+          "total_odds": 13.46,
+          "combined_prob": 0.0745,
+          "n_legs": 4
         }
       }
     },
@@ -482,190 +400,169 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "FC Barcelona vs RC Celta de Vigo",
-            "pick": "FC Barcelona",
-            "p_win": 0.8513,
-            "implied_odds": 1.17
-          },
-          {
-            "sport": "epl",
-            "match": "Burnley FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6675,
-            "implied_odds": 1.5
-          },
-          {
             "sport": "mlb",
             "match": "New York Mets vs Minnesota Twins",
             "pick": "New York Mets",
-            "p_win": 0.5844,
-            "implied_odds": 1.71
+            "p_win": 0.6085,
+            "implied_odds": 1.64
+          },
+          {
+            "sport": "laliga",
+            "match": "Levante UD vs Sevilla FC",
+            "pick": "Levante UD",
+            "p_win": 0.5829,
+            "implied_odds": 1.72
           }
         ],
-        "total_odds": 3.0,
-        "combined_prob": 0.3321,
-        "n_legs": 3
+        "total_odds": 2.82,
+        "combined_prob": 0.3547,
+        "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Paris Saint-Germain FC vs FC Nantes",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.7725,
-            "implied_odds": 1.29
+            "sport": "laliga",
+            "match": "Levante UD vs Sevilla FC",
+            "pick": "Levante UD",
+            "p_win": 0.5829,
+            "implied_odds": 1.72
           },
           {
-            "sport": "epl",
-            "match": "Burnley FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6675,
-            "implied_odds": 1.5
-          },
-          {
-            "sport": "epl",
-            "match": "AFC Bournemouth vs Leeds United FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.4804,
-            "implied_odds": 2.08
+            "sport": "laliga",
+            "match": "Real Oviedo vs Villarreal CF",
+            "pick": "Real Oviedo",
+            "p_win": 0.4257,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 4.02,
-        "combined_prob": 0.2477,
-        "n_legs": 3
+        "total_odds": 4.04,
+        "combined_prob": 0.2481,
+        "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Burnley FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6675,
-            "implied_odds": 1.5
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Mets vs Minnesota Twins",
-            "pick": "New York Mets",
-            "p_win": 0.5844,
-            "implied_odds": 1.71
+            "sport": "laliga",
+            "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.4508,
+            "implied_odds": 2.22
           },
           {
             "sport": "laliga",
-            "match": "Real Sociedad de Fútbol vs Getafe CF",
-            "pick": "Real Sociedad de Fútbol",
-            "p_win": 0.5041,
-            "implied_odds": 1.98
+            "match": "Real Oviedo vs Villarreal CF",
+            "pick": "Real Oviedo",
+            "p_win": 0.4257,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 5.08,
-        "combined_prob": 0.1966,
-        "n_legs": 3
+        "total_odds": 5.22,
+        "combined_prob": 0.1919,
+        "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "FC Barcelona vs RC Celta de Vigo",
-            "pick": "FC Barcelona",
-            "p_win": 0.8513,
-            "implied_odds": 1.17
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Mets vs Minnesota Twins",
-            "pick": "New York Mets",
-            "p_win": 0.5844,
-            "implied_odds": 1.71
+            "sport": "primeira",
+            "match": "Casa Pia AC vs Sporting Clube de Braga",
+            "pick": "Sporting Clube de Braga",
+            "p_win": 0.6662,
+            "implied_odds": 1.5
           },
           {
             "sport": "laliga",
-            "match": "Elche CF vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3325,
-            "implied_odds": 3.01
+            "match": "Levante UD vs Sevilla FC",
+            "pick": "Levante UD",
+            "p_win": 0.5829,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "laliga",
+            "match": "Real Oviedo vs Villarreal CF",
+            "pick": "Real Oviedo",
+            "p_win": 0.4257,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 6.02,
-        "combined_prob": 0.1654,
+        "total_odds": 6.06,
+        "combined_prob": 0.1653,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Paris Saint-Germain FC vs FC Nantes",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.7725,
-            "implied_odds": 1.29
-          },
-          {
-            "sport": "epl",
-            "match": "Burnley FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6675,
+            "sport": "primeira",
+            "match": "Casa Pia AC vs Sporting Clube de Braga",
+            "pick": "Sporting Clube de Braga",
+            "p_win": 0.6662,
             "implied_odds": 1.5
           },
           {
             "sport": "mlb",
             "match": "New York Mets vs Minnesota Twins",
             "pick": "New York Mets",
-            "p_win": 0.5844,
-            "implied_odds": 1.71
+            "p_win": 0.6085,
+            "implied_odds": 1.64
           },
           {
             "sport": "laliga",
-            "match": "Elche CF vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3325,
-            "implied_odds": 3.01
+            "match": "Levante UD vs Sevilla FC",
+            "pick": "Levante UD",
+            "p_win": 0.5829,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "laliga",
+            "match": "Real Oviedo vs Villarreal CF",
+            "pick": "Real Oviedo",
+            "p_win": 0.4257,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 9.96,
-        "combined_prob": 0.1002,
+        "total_odds": 9.94,
+        "combined_prob": 0.1006,
         "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Paris Saint-Germain FC vs FC Nantes",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.7725,
-            "implied_odds": 1.29
-          },
-          {
-            "sport": "epl",
-            "match": "Burnley FC vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6675,
+            "sport": "primeira",
+            "match": "Casa Pia AC vs Sporting Clube de Braga",
+            "pick": "Sporting Clube de Braga",
+            "p_win": 0.6662,
             "implied_odds": 1.5
           },
           {
             "sport": "mlb",
             "match": "New York Mets vs Minnesota Twins",
             "pick": "New York Mets",
-            "p_win": 0.5844,
-            "implied_odds": 1.71
+            "p_win": 0.6085,
+            "implied_odds": 1.64
           },
           {
             "sport": "laliga",
-            "match": "Real Sociedad de Fútbol vs Getafe CF",
-            "pick": "Real Sociedad de Fútbol",
-            "p_win": 0.5041,
-            "implied_odds": 1.98
+            "match": "Levante UD vs Sevilla FC",
+            "pick": "Levante UD",
+            "p_win": 0.5829,
+            "implied_odds": 1.72
           },
           {
             "sport": "laliga",
-            "match": "Elche CF vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3325,
-            "implied_odds": 3.01
+            "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
+            "pick": "Rayo Vallecano de Madrid",
+            "p_win": 0.4508,
+            "implied_odds": 2.22
+          },
+          {
+            "sport": "laliga",
+            "match": "Real Oviedo vs Villarreal CF",
+            "pick": "Real Oviedo",
+            "p_win": 0.4257,
+            "implied_odds": 2.35
           }
         ],
-        "total_odds": 19.72,
-        "combined_prob": 0.0505,
+        "total_odds": 22.07,
+        "combined_prob": 0.0453,
         "n_legs": 5
       }
     }
