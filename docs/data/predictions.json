@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-23T09:29:09Z",
-  "date": "2026-04-23",
+  "generated_at": "2026-04-24T09:45:40Z",
+  "date": "2026-04-24",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,8 +15,8 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5216,
-        "logloss": 0.6922,
+        "accuracy": 0.5233,
+        "logloss": 0.6921,
         "brier": 0.2495
       },
       "picks": [],
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5135,
-        "logloss": 0.6826,
-        "brier": 0.2448
+        "accuracy": 0.5132,
+        "logloss": 0.6946,
+        "brier": 0.2507
       },
       "picks": [
         {
-          "home_team": "New York Mets",
-          "away_team": "Minnesota Twins",
+          "home_team": "Atlanta Braves",
+          "away_team": "Philadelphia Phillies",
           "pick": "H",
-          "pick_label": "New York Mets",
-          "p_win": 0.6085,
-          "implied_odds": 1.64,
+          "pick_label": "Atlanta Braves",
+          "p_win": 0.6901,
+          "implied_odds": 1.45,
           "signal": "media",
-          "date": "2026-04-23",
-          "model_spread": 0.8,
+          "date": "2026-04-24",
+          "model_spread": 1.4,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Mets 8-16 vs Twins 12-12. Sin bajas importantes. ML Mets con cautela (modelo 61%)."
+          "note": "⚠️ Modelo 69%. Braves 18-8 vs Phillies 8-17. Sin bajas importantes. ML Braves con cautela (modelo 69%)."
+        },
+        {
+          "home_team": "Tampa Bay Rays",
+          "away_team": "Minnesota Twins",
+          "pick": "H",
+          "pick_label": "Tampa Bay Rays",
+          "p_win": 0.6392,
+          "implied_odds": 1.56,
+          "signal": "media",
+          "date": "2026-04-24",
+          "model_spread": 1.0,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 64%. Rays 13-11 vs Twins 12-13. Sin bajas importantes. ML Rays con cautela (modelo 64%)."
         }
       ],
       "name": "MLB",
@@ -67,26 +93,54 @@
         "logloss": 1.036,
         "brier": 0.2084
       },
-      "picks": [],
-      "name": "Premier League"
+      "picks": [
+        {
+          "home_team": "Sunderland AFC",
+          "away_team": "Nottingham Forest FC",
+          "pick": "H",
+          "pick_label": "Sunderland AFC",
+          "p_win": 0.4395,
+          "implied_odds": 2.28,
+          "signal": "baja",
+          "date": "2026-04-24",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 44%. Sin bajas importantes. SKIP — sin edge claro (44%)."
+        }
+      ],
+      "name": "Premier League",
+      "analysis": ""
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4844,
-        "logloss": 0.9954,
-        "brier": 0.2004
+        "accuracy": 0.5,
+        "logloss": 1.013,
+        "brier": 0.2053
       },
       "picks": [
         {
-          "home_team": "Levante UD",
-          "away_team": "Sevilla FC",
+          "home_team": "Real Betis Balompié",
+          "away_team": "Real Madrid CF",
           "pick": "H",
-          "pick_label": "Levante UD",
-          "p_win": 0.5829,
-          "implied_odds": 1.72,
+          "pick_label": "Real Betis Balompié",
+          "p_win": 0.3705,
+          "implied_odds": 2.7,
           "signal": "baja",
-          "date": "2026-04-23",
+          "date": "2026-04-24",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -102,59 +156,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 58%. Sin bajas importantes. SKIP — sin edge claro (58%)."
-        },
-        {
-          "home_team": "Rayo Vallecano de Madrid",
-          "away_team": "RCD Espanyol de Barcelona",
-          "pick": "H",
-          "pick_label": "Rayo Vallecano de Madrid",
-          "p_win": 0.4508,
-          "implied_odds": 2.22,
-          "signal": "baja",
-          "date": "2026-04-23",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 45%. Sin bajas importantes. SKIP — sin edge claro (45%)."
-        },
-        {
-          "home_team": "Real Oviedo",
-          "away_team": "Villarreal CF",
-          "pick": "H",
-          "pick_label": "Real Oviedo",
-          "p_win": 0.4257,
-          "implied_odds": 2.35,
-          "signal": "baja",
-          "date": "2026-04-23",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
+          "note": "❌ Modelo 37%. Sin bajas importantes. SKIP — sin edge claro (37%)."
         }
       ],
       "name": "La Liga",
@@ -167,36 +169,16 @@
         "logloss": 0.9895,
         "brier": 0.2004
       },
-      "picks": [],
-      "name": "Ligue 1"
-    },
-    "bundesliga": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5926,
-        "logloss": 0.9387,
-        "brier": 0.1856
-      },
-      "picks": [],
-      "name": "Bundesliga"
-    },
-    "primeira": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5185,
-        "logloss": 1.0932,
-        "brier": 0.2156
-      },
       "picks": [
         {
-          "home_team": "Casa Pia AC",
-          "away_team": "Sporting Clube de Braga",
+          "home_team": "Stade Brestois 29",
+          "away_team": "Racing Club de Lens",
           "pick": "A",
-          "pick_label": "Sporting Clube de Braga",
-          "p_win": 0.6662,
-          "implied_odds": 1.5,
-          "signal": "media",
-          "date": "2026-04-23",
+          "pick_label": "Racing Club de Lens",
+          "p_win": 0.555,
+          "implied_odds": 1.8,
+          "signal": "baja",
+          "date": "2026-04-24",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -212,7 +194,83 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 67%. Sin bajas importantes. ML Braga con cautela (modelo 67%)."
+          "note": "❌ Modelo 56%. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        }
+      ],
+      "name": "Ligue 1",
+      "analysis": ""
+    },
+    "bundesliga": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5926,
+        "logloss": 0.9387,
+        "brier": 0.1856
+      },
+      "picks": [
+        {
+          "home_team": "RB Leipzig",
+          "away_team": "1. FC Union Berlin",
+          "pick": "H",
+          "pick_label": "RB Leipzig",
+          "p_win": 0.8114,
+          "implied_odds": 1.23,
+          "signal": "alta",
+          "date": "2026-04-24",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 81%. Sin bajas importantes. ML Leipzig es la jugada segura (modelo 81%)."
+        }
+      ],
+      "name": "Bundesliga",
+      "analysis": ""
+    },
+    "primeira": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5185,
+        "logloss": 1.0955,
+        "brier": 0.2158
+      },
+      "picks": [
+        {
+          "home_team": "FC Alverca",
+          "away_team": "FC Arouca",
+          "pick": "H",
+          "pick_label": "FC Alverca",
+          "p_win": 0.4126,
+          "implied_odds": 2.42,
+          "signal": "baja",
+          "date": "2026-04-24",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 41%. Sin bajas importantes. SKIP — sin edge claro (41%)."
         }
       ],
       "name": "Primeira Liga",
@@ -232,166 +290,293 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      },
-      "soccer": {
         "cuota_3": {
           "legs": [
             {
-              "sport": "primeira",
-              "match": "Casa Pia AC vs Sporting Clube de Braga",
-              "pick": "Sporting Clube de Braga",
-              "p_win": 0.6662,
-              "implied_odds": 1.5
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Philadelphia Phillies",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6901,
+              "implied_odds": 1.45
             },
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.4508,
-              "implied_odds": 2.22
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Minnesota Twins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6392,
+              "implied_odds": 1.56
             }
           ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3003,
+          "total_odds": 2.26,
+          "combined_prob": 0.4411,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Levante UD vs Sevilla FC",
-              "pick": "Levante UD",
-              "p_win": 0.5829,
-              "implied_odds": 1.72
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Philadelphia Phillies",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6901,
+              "implied_odds": 1.45
             },
             {
-              "sport": "laliga",
-              "match": "Real Oviedo vs Villarreal CF",
-              "pick": "Real Oviedo",
-              "p_win": 0.4257,
-              "implied_odds": 2.35
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Minnesota Twins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6392,
+              "implied_odds": 1.56
             }
           ],
-          "total_odds": 4.04,
-          "combined_prob": 0.2481,
+          "total_odds": 2.26,
+          "combined_prob": 0.4411,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.4508,
-              "implied_odds": 2.22
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Philadelphia Phillies",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6901,
+              "implied_odds": 1.45
             },
             {
-              "sport": "laliga",
-              "match": "Real Oviedo vs Villarreal CF",
-              "pick": "Real Oviedo",
-              "p_win": 0.4257,
-              "implied_odds": 2.35
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Minnesota Twins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6392,
+              "implied_odds": 1.56
             }
           ],
-          "total_odds": 5.22,
-          "combined_prob": 0.1919,
+          "total_odds": 2.26,
+          "combined_prob": 0.4411,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "primeira",
-              "match": "Casa Pia AC vs Sporting Clube de Braga",
-              "pick": "Sporting Clube de Braga",
-              "p_win": 0.6662,
-              "implied_odds": 1.5
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Philadelphia Phillies",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6901,
+              "implied_odds": 1.45
             },
             {
-              "sport": "laliga",
-              "match": "Levante UD vs Sevilla FC",
-              "pick": "Levante UD",
-              "p_win": 0.5829,
-              "implied_odds": 1.72
-            },
-            {
-              "sport": "laliga",
-              "match": "Real Oviedo vs Villarreal CF",
-              "pick": "Real Oviedo",
-              "p_win": 0.4257,
-              "implied_odds": 2.35
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Minnesota Twins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6392,
+              "implied_odds": 1.56
             }
           ],
-          "total_odds": 6.06,
-          "combined_prob": 0.1653,
+          "total_odds": 2.26,
+          "combined_prob": 0.4411,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Philadelphia Phillies",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6901,
+              "implied_odds": 1.45
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Minnesota Twins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6392,
+              "implied_odds": 1.56
+            }
+          ],
+          "total_odds": 2.26,
+          "combined_prob": 0.4411,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Philadelphia Phillies",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6901,
+              "implied_odds": 1.45
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Minnesota Twins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6392,
+              "implied_odds": 1.56
+            }
+          ],
+          "total_odds": 2.26,
+          "combined_prob": 0.4411,
+          "n_legs": 2
+        }
+      },
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs 1. FC Union Berlin",
+              "pick": "RB Leipzig",
+              "p_win": 0.8114,
+              "implied_odds": 1.23
+            },
+            {
+              "sport": "primeira",
+              "match": "FC Alverca vs FC Arouca",
+              "pick": "FC Alverca",
+              "p_win": 0.4126,
+              "implied_odds": 2.42
+            }
+          ],
+          "total_odds": 2.98,
+          "combined_prob": 0.3348,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "ligue1",
+              "match": "Stade Brestois 29 vs Racing Club de Lens",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.555,
+              "implied_odds": 1.8
+            },
+            {
+              "sport": "epl",
+              "match": "Sunderland AFC vs Nottingham Forest FC",
+              "pick": "Sunderland AFC",
+              "p_win": 0.4395,
+              "implied_odds": 2.28
+            }
+          ],
+          "total_odds": 4.1,
+          "combined_prob": 0.2439,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs 1. FC Union Berlin",
+              "pick": "RB Leipzig",
+              "p_win": 0.8114,
+              "implied_odds": 1.23
+            },
+            {
+              "sport": "ligue1",
+              "match": "Stade Brestois 29 vs Racing Club de Lens",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.555,
+              "implied_odds": 1.8
+            },
+            {
+              "sport": "epl",
+              "match": "Sunderland AFC vs Nottingham Forest FC",
+              "pick": "Sunderland AFC",
+              "p_win": 0.4395,
+              "implied_odds": 2.28
+            }
+          ],
+          "total_odds": 5.05,
+          "combined_prob": 0.1979,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs 1. FC Union Berlin",
+              "pick": "RB Leipzig",
+              "p_win": 0.8114,
+              "implied_odds": 1.23
+            },
+            {
+              "sport": "ligue1",
+              "match": "Stade Brestois 29 vs Racing Club de Lens",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.555,
+              "implied_odds": 1.8
+            },
+            {
+              "sport": "laliga",
+              "match": "Real Betis Balompié vs Real Madrid CF",
+              "pick": "Real Betis Balompié",
+              "p_win": 0.3705,
+              "implied_odds": 2.7
+            }
+          ],
+          "total_odds": 5.98,
+          "combined_prob": 0.1668,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Levante UD vs Sevilla FC",
-              "pick": "Levante UD",
-              "p_win": 0.5829,
-              "implied_odds": 1.72
+              "sport": "ligue1",
+              "match": "Stade Brestois 29 vs Racing Club de Lens",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.555,
+              "implied_odds": 1.8
             },
             {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.4508,
-              "implied_odds": 2.22
+              "sport": "epl",
+              "match": "Sunderland AFC vs Nottingham Forest FC",
+              "pick": "Sunderland AFC",
+              "p_win": 0.4395,
+              "implied_odds": 2.28
             },
             {
-              "sport": "laliga",
-              "match": "Real Oviedo vs Villarreal CF",
-              "pick": "Real Oviedo",
-              "p_win": 0.4257,
-              "implied_odds": 2.35
+              "sport": "primeira",
+              "match": "FC Alverca vs FC Arouca",
+              "pick": "FC Alverca",
+              "p_win": 0.4126,
+              "implied_odds": 2.42
             }
           ],
-          "total_odds": 8.97,
-          "combined_prob": 0.1119,
+          "total_odds": 9.93,
+          "combined_prob": 0.1006,
           "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs 1. FC Union Berlin",
+              "pick": "RB Leipzig",
+              "p_win": 0.8114,
+              "implied_odds": 1.23
+            },
+            {
+              "sport": "epl",
+              "match": "Sunderland AFC vs Nottingham Forest FC",
+              "pick": "Sunderland AFC",
+              "p_win": 0.4395,
+              "implied_odds": 2.28
+            },
+            {
               "sport": "primeira",
-              "match": "Casa Pia AC vs Sporting Clube de Braga",
-              "pick": "Sporting Clube de Braga",
-              "p_win": 0.6662,
-              "implied_odds": 1.5
+              "match": "FC Alverca vs FC Arouca",
+              "pick": "FC Alverca",
+              "p_win": 0.4126,
+              "implied_odds": 2.42
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs Sevilla FC",
-              "pick": "Levante UD",
-              "p_win": 0.5829,
-              "implied_odds": 1.72
-            },
-            {
-              "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.4508,
-              "implied_odds": 2.22
-            },
-            {
-              "sport": "laliga",
-              "match": "Real Oviedo vs Villarreal CF",
-              "pick": "Real Oviedo",
-              "p_win": 0.4257,
-              "implied_odds": 2.35
+              "match": "Real Betis Balompié vs Real Madrid CF",
+              "pick": "Real Betis Balompié",
+              "p_win": 0.3705,
+              "implied_odds": 2.7
             }
           ],
-          "total_odds": 13.46,
-          "combined_prob": 0.0745,
+          "total_odds": 18.32,
+          "combined_prob": 0.0545,
           "n_legs": 4
         }
       }
@@ -400,169 +585,183 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "New York Mets vs Minnesota Twins",
-            "pick": "New York Mets",
-            "p_win": 0.6085,
-            "implied_odds": 1.64
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs 1. FC Union Berlin",
+            "pick": "RB Leipzig",
+            "p_win": 0.8114,
+            "implied_odds": 1.23
           },
           {
-            "sport": "laliga",
-            "match": "Levante UD vs Sevilla FC",
-            "pick": "Levante UD",
-            "p_win": 0.5829,
-            "implied_odds": 1.72
+            "sport": "primeira",
+            "match": "FC Alverca vs FC Arouca",
+            "pick": "FC Alverca",
+            "p_win": 0.4126,
+            "implied_odds": 2.42
           }
         ],
-        "total_odds": 2.82,
-        "combined_prob": 0.3547,
+        "total_odds": 2.98,
+        "combined_prob": 0.3348,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Levante UD vs Sevilla FC",
-            "pick": "Levante UD",
-            "p_win": 0.5829,
-            "implied_odds": 1.72
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs 1. FC Union Berlin",
+            "pick": "RB Leipzig",
+            "p_win": 0.8114,
+            "implied_odds": 1.23
           },
           {
-            "sport": "laliga",
-            "match": "Real Oviedo vs Villarreal CF",
-            "pick": "Real Oviedo",
-            "p_win": 0.4257,
-            "implied_odds": 2.35
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Philadelphia Phillies",
+            "pick": "Atlanta Braves",
+            "p_win": 0.6901,
+            "implied_odds": 1.45
+          },
+          {
+            "sport": "epl",
+            "match": "Sunderland AFC vs Nottingham Forest FC",
+            "pick": "Sunderland AFC",
+            "p_win": 0.4395,
+            "implied_odds": 2.28
           }
         ],
-        "total_odds": 4.04,
-        "combined_prob": 0.2481,
-        "n_legs": 2
+        "total_odds": 4.07,
+        "combined_prob": 0.2461,
+        "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.4508,
-            "implied_odds": 2.22
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs 1. FC Union Berlin",
+            "pick": "RB Leipzig",
+            "p_win": 0.8114,
+            "implied_odds": 1.23
           },
           {
-            "sport": "laliga",
-            "match": "Real Oviedo vs Villarreal CF",
-            "pick": "Real Oviedo",
-            "p_win": 0.4257,
-            "implied_odds": 2.35
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Philadelphia Phillies",
+            "pick": "Atlanta Braves",
+            "p_win": 0.6901,
+            "implied_odds": 1.45
+          },
+          {
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Minnesota Twins",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.6392,
+            "implied_odds": 1.56
+          },
+          {
+            "sport": "ligue1",
+            "match": "Stade Brestois 29 vs Racing Club de Lens",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.555,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 5.22,
-        "combined_prob": 0.1919,
-        "n_legs": 2
+        "total_odds": 5.01,
+        "combined_prob": 0.1986,
+        "n_legs": 4
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "primeira",
-            "match": "Casa Pia AC vs Sporting Clube de Braga",
-            "pick": "Sporting Clube de Braga",
-            "p_win": 0.6662,
-            "implied_odds": 1.5
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs 1. FC Union Berlin",
+            "pick": "RB Leipzig",
+            "p_win": 0.8114,
+            "implied_odds": 1.23
+          },
+          {
+            "sport": "ligue1",
+            "match": "Stade Brestois 29 vs Racing Club de Lens",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.555,
+            "implied_odds": 1.8
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs Sevilla FC",
-            "pick": "Levante UD",
-            "p_win": 0.5829,
-            "implied_odds": 1.72
-          },
-          {
-            "sport": "laliga",
-            "match": "Real Oviedo vs Villarreal CF",
-            "pick": "Real Oviedo",
-            "p_win": 0.4257,
-            "implied_odds": 2.35
+            "match": "Real Betis Balompié vs Real Madrid CF",
+            "pick": "Real Betis Balompié",
+            "p_win": 0.3705,
+            "implied_odds": 2.7
           }
         ],
-        "total_odds": 6.06,
-        "combined_prob": 0.1653,
+        "total_odds": 5.98,
+        "combined_prob": 0.1668,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
+            "sport": "ligue1",
+            "match": "Stade Brestois 29 vs Racing Club de Lens",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.555,
+            "implied_odds": 1.8
+          },
+          {
+            "sport": "epl",
+            "match": "Sunderland AFC vs Nottingham Forest FC",
+            "pick": "Sunderland AFC",
+            "p_win": 0.4395,
+            "implied_odds": 2.28
+          },
+          {
             "sport": "primeira",
-            "match": "Casa Pia AC vs Sporting Clube de Braga",
-            "pick": "Sporting Clube de Braga",
-            "p_win": 0.6662,
-            "implied_odds": 1.5
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Mets vs Minnesota Twins",
-            "pick": "New York Mets",
-            "p_win": 0.6085,
-            "implied_odds": 1.64
-          },
-          {
-            "sport": "laliga",
-            "match": "Levante UD vs Sevilla FC",
-            "pick": "Levante UD",
-            "p_win": 0.5829,
-            "implied_odds": 1.72
-          },
-          {
-            "sport": "laliga",
-            "match": "Real Oviedo vs Villarreal CF",
-            "pick": "Real Oviedo",
-            "p_win": 0.4257,
-            "implied_odds": 2.35
+            "match": "FC Alverca vs FC Arouca",
+            "pick": "FC Alverca",
+            "p_win": 0.4126,
+            "implied_odds": 2.42
           }
         ],
-        "total_odds": 9.94,
+        "total_odds": 9.93,
         "combined_prob": 0.1006,
-        "n_legs": 4
+        "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "primeira",
-            "match": "Casa Pia AC vs Sporting Clube de Braga",
-            "pick": "Sporting Clube de Braga",
-            "p_win": 0.6662,
-            "implied_odds": 1.5
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs 1. FC Union Berlin",
+            "pick": "RB Leipzig",
+            "p_win": 0.8114,
+            "implied_odds": 1.23
           },
           {
             "sport": "mlb",
-            "match": "New York Mets vs Minnesota Twins",
-            "pick": "New York Mets",
-            "p_win": 0.6085,
-            "implied_odds": 1.64
+            "match": "Atlanta Braves vs Philadelphia Phillies",
+            "pick": "Atlanta Braves",
+            "p_win": 0.6901,
+            "implied_odds": 1.45
+          },
+          {
+            "sport": "ligue1",
+            "match": "Stade Brestois 29 vs Racing Club de Lens",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.555,
+            "implied_odds": 1.8
+          },
+          {
+            "sport": "epl",
+            "match": "Sunderland AFC vs Nottingham Forest FC",
+            "pick": "Sunderland AFC",
+            "p_win": 0.4395,
+            "implied_odds": 2.28
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs Sevilla FC",
-            "pick": "Levante UD",
-            "p_win": 0.5829,
-            "implied_odds": 1.72
-          },
-          {
-            "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs RCD Espanyol de Barcelona",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.4508,
-            "implied_odds": 2.22
-          },
-          {
-            "sport": "laliga",
-            "match": "Real Oviedo vs Villarreal CF",
-            "pick": "Real Oviedo",
-            "p_win": 0.4257,
-            "implied_odds": 2.35
+            "match": "Real Betis Balompié vs Real Madrid CF",
+            "pick": "Real Betis Balompié",
+            "p_win": 0.3705,
+            "implied_odds": 2.7
           }
         ],
-        "total_odds": 22.07,
-        "combined_prob": 0.0453,
+        "total_odds": 19.76,
+        "combined_prob": 0.0506,
         "n_legs": 5
       }
     }
