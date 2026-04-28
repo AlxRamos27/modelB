@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-27T10:16:22Z",
-  "date": "2026-04-27",
+  "generated_at": "2026-04-28T10:14:03Z",
+  "date": "2026-04-28",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4706,
-        "logloss": 0.7122,
-        "brier": 0.2593
+        "accuracy": 0.5233,
+        "logloss": 0.6845,
+        "brier": 0.2458
       },
       "picks": [],
       "name": "MLB"
@@ -35,78 +35,22 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5147,
-        "logloss": 1.0178,
-        "brier": 0.2035
+        "accuracy": 0.4853,
+        "logloss": 1.0211,
+        "brier": 0.2042
       },
-      "picks": [
-        {
-          "home_team": "Manchester United FC",
-          "away_team": "Brentford FC",
-          "pick": "H",
-          "pick_label": "Manchester United FC",
-          "p_win": 0.5428,
-          "implied_odds": 1.84,
-          "signal": "baja",
-          "date": "2026-04-27",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        }
-      ],
-      "name": "Premier League",
-      "analysis": ""
+      "picks": [],
+      "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4848,
-        "logloss": 1.0494,
-        "brier": 0.2129
+        "accuracy": 0.4545,
+        "logloss": 1.0659,
+        "brier": 0.2154
       },
-      "picks": [
-        {
-          "home_team": "RCD Espanyol de Barcelona",
-          "away_team": "Levante UD",
-          "pick": "H",
-          "pick_label": "RCD Espanyol de Barcelona",
-          "p_win": 0.3501,
-          "implied_odds": 2.86,
-          "signal": "baja",
-          "date": "2026-04-27",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 35%. Sin bajas importantes. SKIP — sin edge claro (35%)."
-        }
-      ],
-      "name": "La Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -131,20 +75,30 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5179,
-        "logloss": 1.0308,
-        "brier": 0.2022
+        "accuracy": 0.5357,
+        "logloss": 1.0364,
+        "brier": 0.2018
+      },
+      "picks": [],
+      "name": "Primeira Liga"
+    },
+    "ucl": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5676,
+        "logloss": 1.0672,
+        "brier": 0.2169
       },
       "picks": [
         {
-          "home_team": "Gil Vicente FC",
-          "away_team": "Casa Pia AC",
-          "pick": "H",
-          "pick_label": "Gil Vicente FC",
-          "p_win": 0.7056,
-          "implied_odds": 1.42,
-          "signal": "alta",
-          "date": "2026-04-27",
+          "home_team": "Paris Saint-Germain FC",
+          "away_team": "FC Bayern München",
+          "pick": "A",
+          "pick_label": "FC Bayern München",
+          "p_win": 0.491,
+          "implied_odds": 2.04,
+          "signal": "baja",
+          "date": "2026-04-28",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -160,309 +114,31 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 71%. Sin bajas importantes. ML FC es la jugada segura (modelo 71%)."
+          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
         }
       ],
-      "name": "Primeira Liga",
+      "name": "Champions League",
       "analysis": ""
-    },
-    "ucl": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5676,
-        "logloss": 1.0672,
-        "brier": 0.2169
-      },
-      "picks": [],
-      "name": "Champions League"
     }
   },
   "parlays": {
     "by_sport": {
       "soccer": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Casa Pia AC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.7056,
-              "implied_odds": 1.42
-            },
-            {
-              "sport": "epl",
-              "match": "Manchester United FC vs Brentford FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5428,
-              "implied_odds": 1.84
-            }
-          ],
-          "total_odds": 2.61,
-          "combined_prob": 0.383,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Casa Pia AC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.7056,
-              "implied_odds": 1.42
-            },
-            {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Levante UD",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.3501,
-              "implied_odds": 2.86
-            }
-          ],
-          "total_odds": 4.06,
-          "combined_prob": 0.247,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Manchester United FC vs Brentford FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5428,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Levante UD",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.3501,
-              "implied_odds": 2.86
-            }
-          ],
-          "total_odds": 5.26,
-          "combined_prob": 0.19,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Manchester United FC vs Brentford FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5428,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Levante UD",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.3501,
-              "implied_odds": 2.86
-            }
-          ],
-          "total_odds": 5.26,
-          "combined_prob": 0.19,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Casa Pia AC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.7056,
-              "implied_odds": 1.42
-            },
-            {
-              "sport": "epl",
-              "match": "Manchester United FC vs Brentford FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5428,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Levante UD",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.3501,
-              "implied_odds": 2.86
-            }
-          ],
-          "total_odds": 7.47,
-          "combined_prob": 0.1341,
-          "n_legs": 3
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Gil Vicente FC vs Casa Pia AC",
-              "pick": "Gil Vicente FC",
-              "p_win": 0.7056,
-              "implied_odds": 1.42
-            },
-            {
-              "sport": "epl",
-              "match": "Manchester United FC vs Brentford FC",
-              "pick": "Manchester United FC",
-              "p_win": 0.5428,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "laliga",
-              "match": "RCD Espanyol de Barcelona vs Levante UD",
-              "pick": "RCD Espanyol de Barcelona",
-              "p_win": 0.3501,
-              "implied_odds": 2.86
-            }
-          ],
-          "total_odds": 7.47,
-          "combined_prob": 0.1341,
-          "n_legs": 3
-        }
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Casa Pia AC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.7056,
-            "implied_odds": 1.42
-          },
-          {
-            "sport": "epl",
-            "match": "Manchester United FC vs Brentford FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5428,
-            "implied_odds": 1.84
-          }
-        ],
-        "total_odds": 2.61,
-        "combined_prob": 0.383,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Casa Pia AC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.7056,
-            "implied_odds": 1.42
-          },
-          {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Levante UD",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.3501,
-            "implied_odds": 2.86
-          }
-        ],
-        "total_odds": 4.06,
-        "combined_prob": 0.247,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "epl",
-            "match": "Manchester United FC vs Brentford FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5428,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Levante UD",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.3501,
-            "implied_odds": 2.86
-          }
-        ],
-        "total_odds": 5.26,
-        "combined_prob": 0.19,
-        "n_legs": 2
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "epl",
-            "match": "Manchester United FC vs Brentford FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5428,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Levante UD",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.3501,
-            "implied_odds": 2.86
-          }
-        ],
-        "total_odds": 5.26,
-        "combined_prob": 0.19,
-        "n_legs": 2
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Casa Pia AC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.7056,
-            "implied_odds": 1.42
-          },
-          {
-            "sport": "epl",
-            "match": "Manchester United FC vs Brentford FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5428,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Levante UD",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.3501,
-            "implied_odds": 2.86
-          }
-        ],
-        "total_odds": 7.47,
-        "combined_prob": 0.1341,
-        "n_legs": 3
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Gil Vicente FC vs Casa Pia AC",
-            "pick": "Gil Vicente FC",
-            "p_win": 0.7056,
-            "implied_odds": 1.42
-          },
-          {
-            "sport": "epl",
-            "match": "Manchester United FC vs Brentford FC",
-            "pick": "Manchester United FC",
-            "p_win": 0.5428,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "laliga",
-            "match": "RCD Espanyol de Barcelona vs Levante UD",
-            "pick": "RCD Espanyol de Barcelona",
-            "p_win": 0.3501,
-            "implied_odds": 2.86
-          }
-        ],
-        "total_odds": 7.47,
-        "combined_prob": 0.1341,
-        "n_legs": 3
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
