@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-29T10:07:02Z",
-  "date": "2026-04-29",
+  "generated_at": "2026-04-30T10:07:21Z",
+  "date": "2026-04-30",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,47 +25,19 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5056,
-        "logloss": 0.678,
-        "brier": 0.2425
+        "accuracy": 0.5326,
+        "logloss": 0.6801,
+        "brier": 0.2435
       },
-      "picks": [
-        {
-          "home_team": "Chicago White Sox",
-          "away_team": "Los Angeles Angels",
-          "pick": "H",
-          "pick_label": "Chicago White Sox",
-          "p_win": 0.5971,
-          "implied_odds": 1.67,
-          "signal": "media",
-          "date": "2026-04-29",
-          "model_spread": 0.7,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Sox 13-17 vs Angels 12-19. Sin bajas importantes. ML Sox con cautela (modelo 60%)."
-        }
-      ],
-      "name": "MLB",
-      "analysis": ""
+      "picks": [],
+      "name": "MLB"
     },
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4853,
-        "logloss": 1.0211,
-        "brier": 0.2042
+        "accuracy": 0.5,
+        "logloss": 1.0269,
+        "brier": 0.2056
       },
       "picks": [],
       "name": "Premier League"
@@ -84,8 +56,8 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.4464,
-        "logloss": 1.0131,
-        "brier": 0.2063
+        "logloss": 1.0136,
+        "brier": 0.2065
       },
       "picks": [],
       "name": "Ligue 1"
@@ -103,388 +75,33 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5357,
-        "logloss": 1.0364,
-        "brier": 0.2018
+        "accuracy": 0.5179,
+        "logloss": 0.9863,
+        "brier": 0.1953
       },
-      "picks": [
-        {
-          "home_team": "Sporting Clube de Portugal",
-          "away_team": "CD Tondela",
-          "pick": "H",
-          "pick_label": "Sporting Clube de Portugal",
-          "p_win": 0.9691,
-          "implied_odds": 1.03,
-          "signal": "alta",
-          "date": "2026-04-29",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 97%. Sin bajas importantes. ML Portugal es la jugada segura (modelo 97%)."
-        }
-      ],
-      "name": "Primeira Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "Primeira Liga"
     },
     "ucl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5405,
-        "logloss": 1.0571,
-        "brier": 0.2147
+        "accuracy": 0.5,
+        "logloss": 1.0587,
+        "brier": 0.2145
       },
-      "picks": [
-        {
-          "home_team": "Club Atlético de Madrid",
-          "away_team": "Arsenal FC",
-          "pick": "A",
-          "pick_label": "Arsenal FC",
-          "p_win": 0.71,
-          "implied_odds": 1.41,
-          "signal": "alta",
-          "date": "2026-04-29",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 71%. Sin bajas importantes. ML FC es la jugada segura (modelo 71%)."
-        }
-      ],
-      "name": "Champions League",
-      "analysis": ""
+      "picks": [],
+      "name": "Champions League"
     }
   },
   "parlays": {
-    "by_sport": {
-      "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      },
-      "soccer": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Sporting Clube de Portugal vs CD Tondela",
-              "pick": "Sporting Clube de Portugal",
-              "p_win": 0.9691,
-              "implied_odds": 1.03
-            },
-            {
-              "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.71,
-              "implied_odds": 1.41
-            }
-          ],
-          "total_odds": 1.45,
-          "combined_prob": 0.6881,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Sporting Clube de Portugal vs CD Tondela",
-              "pick": "Sporting Clube de Portugal",
-              "p_win": 0.9691,
-              "implied_odds": 1.03
-            },
-            {
-              "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.71,
-              "implied_odds": 1.41
-            }
-          ],
-          "total_odds": 1.45,
-          "combined_prob": 0.6881,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Sporting Clube de Portugal vs CD Tondela",
-              "pick": "Sporting Clube de Portugal",
-              "p_win": 0.9691,
-              "implied_odds": 1.03
-            },
-            {
-              "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.71,
-              "implied_odds": 1.41
-            }
-          ],
-          "total_odds": 1.45,
-          "combined_prob": 0.6881,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Sporting Clube de Portugal vs CD Tondela",
-              "pick": "Sporting Clube de Portugal",
-              "p_win": 0.9691,
-              "implied_odds": 1.03
-            },
-            {
-              "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.71,
-              "implied_odds": 1.41
-            }
-          ],
-          "total_odds": 1.45,
-          "combined_prob": 0.6881,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Sporting Clube de Portugal vs CD Tondela",
-              "pick": "Sporting Clube de Portugal",
-              "p_win": 0.9691,
-              "implied_odds": 1.03
-            },
-            {
-              "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.71,
-              "implied_odds": 1.41
-            }
-          ],
-          "total_odds": 1.45,
-          "combined_prob": 0.6881,
-          "n_legs": 2
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "primeira",
-              "match": "Sporting Clube de Portugal vs CD Tondela",
-              "pick": "Sporting Clube de Portugal",
-              "p_win": 0.9691,
-              "implied_odds": 1.03
-            },
-            {
-              "sport": "ucl",
-              "match": "Club Atlético de Madrid vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.71,
-              "implied_odds": 1.41
-            }
-          ],
-          "total_odds": 1.45,
-          "combined_prob": 0.6881,
-          "n_legs": 2
-        }
-      }
-    },
+    "by_sport": {},
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Sporting Clube de Portugal vs CD Tondela",
-            "pick": "Sporting Clube de Portugal",
-            "p_win": 0.9691,
-            "implied_odds": 1.03
-          },
-          {
-            "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.71,
-            "implied_odds": 1.41
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Los Angeles Angels",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5971,
-            "implied_odds": 1.67
-          }
-        ],
-        "total_odds": 2.43,
-        "combined_prob": 0.4108,
-        "n_legs": 3
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Sporting Clube de Portugal vs CD Tondela",
-            "pick": "Sporting Clube de Portugal",
-            "p_win": 0.9691,
-            "implied_odds": 1.03
-          },
-          {
-            "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.71,
-            "implied_odds": 1.41
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Los Angeles Angels",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5971,
-            "implied_odds": 1.67
-          }
-        ],
-        "total_odds": 2.43,
-        "combined_prob": 0.4108,
-        "n_legs": 3
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Sporting Clube de Portugal vs CD Tondela",
-            "pick": "Sporting Clube de Portugal",
-            "p_win": 0.9691,
-            "implied_odds": 1.03
-          },
-          {
-            "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.71,
-            "implied_odds": 1.41
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Los Angeles Angels",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5971,
-            "implied_odds": 1.67
-          }
-        ],
-        "total_odds": 2.43,
-        "combined_prob": 0.4108,
-        "n_legs": 3
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Sporting Clube de Portugal vs CD Tondela",
-            "pick": "Sporting Clube de Portugal",
-            "p_win": 0.9691,
-            "implied_odds": 1.03
-          },
-          {
-            "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.71,
-            "implied_odds": 1.41
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Los Angeles Angels",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5971,
-            "implied_odds": 1.67
-          }
-        ],
-        "total_odds": 2.43,
-        "combined_prob": 0.4108,
-        "n_legs": 3
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Sporting Clube de Portugal vs CD Tondela",
-            "pick": "Sporting Clube de Portugal",
-            "p_win": 0.9691,
-            "implied_odds": 1.03
-          },
-          {
-            "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.71,
-            "implied_odds": 1.41
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Los Angeles Angels",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5971,
-            "implied_odds": 1.67
-          }
-        ],
-        "total_odds": 2.43,
-        "combined_prob": 0.4108,
-        "n_legs": 3
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "primeira",
-            "match": "Sporting Clube de Portugal vs CD Tondela",
-            "pick": "Sporting Clube de Portugal",
-            "p_win": 0.9691,
-            "implied_odds": 1.03
-          },
-          {
-            "sport": "ucl",
-            "match": "Club Atlético de Madrid vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.71,
-            "implied_odds": 1.41
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Los Angeles Angels",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5971,
-            "implied_odds": 1.67
-          }
-        ],
-        "total_odds": 2.43,
-        "combined_prob": 0.4108,
-        "n_legs": 3
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
