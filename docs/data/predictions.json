@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-30T10:07:21Z",
-  "date": "2026-04-30",
+  "generated_at": "2026-05-01T09:46:47Z",
+  "date": "2026-05-01",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,8 +15,8 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5213,
-        "logloss": 0.6922,
+        "accuracy": 0.523,
+        "logloss": 0.6921,
         "brier": 0.2495
       },
       "picks": [],
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5326,
-        "logloss": 0.6801,
-        "brier": 0.2435
+        "accuracy": 0.5532,
+        "logloss": 0.6845,
+        "brier": 0.2457
       },
       "picks": [],
       "name": "MLB"
@@ -39,8 +39,36 @@
         "logloss": 1.0269,
         "brier": 0.2056
       },
-      "picks": [],
-      "name": "Premier League"
+      "picks": [
+        {
+          "home_team": "Leeds United FC",
+          "away_team": "Burnley FC",
+          "pick": "H",
+          "pick_label": "Leeds United FC",
+          "p_win": 0.6607,
+          "implied_odds": 1.51,
+          "signal": "media",
+          "date": "2026-05-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 66%. Sin bajas importantes. ML FC con cautela (modelo 66%)."
+        }
+      ],
+      "name": "Premier League",
+      "analysis": ""
     },
     "laliga": {
       "status": "ok",
@@ -49,15 +77,43 @@
         "logloss": 1.0659,
         "brier": 0.2154
       },
-      "picks": [],
-      "name": "La Liga"
+      "picks": [
+        {
+          "home_team": "Girona FC",
+          "away_team": "RCD Mallorca",
+          "pick": "H",
+          "pick_label": "Girona FC",
+          "p_win": 0.4591,
+          "implied_odds": 2.18,
+          "signal": "baja",
+          "date": "2026-05-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 46%. Sin bajas importantes. SKIP — sin edge claro (46%)."
+        }
+      ],
+      "name": "La Liga",
+      "analysis": ""
     },
     "ligue1": {
       "status": "ok",
       "metrics": {
         "accuracy": 0.4464,
-        "logloss": 1.0136,
-        "brier": 0.2065
+        "logloss": 1.0131,
+        "brier": 0.2063
       },
       "picks": [],
       "name": "Ligue 1"
@@ -94,14 +150,263 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "soccer": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Burnley FC",
+              "pick": "Leeds United FC",
+              "p_win": 0.6607,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "laliga",
+              "match": "Girona FC vs RCD Mallorca",
+              "pick": "Girona FC",
+              "p_win": 0.4591,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 3.29,
+          "combined_prob": 0.3033,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Burnley FC",
+              "pick": "Leeds United FC",
+              "p_win": 0.6607,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "laliga",
+              "match": "Girona FC vs RCD Mallorca",
+              "pick": "Girona FC",
+              "p_win": 0.4591,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 3.29,
+          "combined_prob": 0.3033,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Burnley FC",
+              "pick": "Leeds United FC",
+              "p_win": 0.6607,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "laliga",
+              "match": "Girona FC vs RCD Mallorca",
+              "pick": "Girona FC",
+              "p_win": 0.4591,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 3.29,
+          "combined_prob": 0.3033,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Burnley FC",
+              "pick": "Leeds United FC",
+              "p_win": 0.6607,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "laliga",
+              "match": "Girona FC vs RCD Mallorca",
+              "pick": "Girona FC",
+              "p_win": 0.4591,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 3.29,
+          "combined_prob": 0.3033,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Burnley FC",
+              "pick": "Leeds United FC",
+              "p_win": 0.6607,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "laliga",
+              "match": "Girona FC vs RCD Mallorca",
+              "pick": "Girona FC",
+              "p_win": 0.4591,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 3.29,
+          "combined_prob": 0.3033,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "epl",
+              "match": "Leeds United FC vs Burnley FC",
+              "pick": "Leeds United FC",
+              "p_win": 0.6607,
+              "implied_odds": 1.51
+            },
+            {
+              "sport": "laliga",
+              "match": "Girona FC vs RCD Mallorca",
+              "pick": "Girona FC",
+              "p_win": 0.4591,
+              "implied_odds": 2.18
+            }
+          ],
+          "total_odds": 3.29,
+          "combined_prob": 0.3033,
+          "n_legs": 2
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Burnley FC",
+            "pick": "Leeds United FC",
+            "p_win": 0.6607,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "laliga",
+            "match": "Girona FC vs RCD Mallorca",
+            "pick": "Girona FC",
+            "p_win": 0.4591,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 3.29,
+        "combined_prob": 0.3033,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Burnley FC",
+            "pick": "Leeds United FC",
+            "p_win": 0.6607,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "laliga",
+            "match": "Girona FC vs RCD Mallorca",
+            "pick": "Girona FC",
+            "p_win": 0.4591,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 3.29,
+        "combined_prob": 0.3033,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Burnley FC",
+            "pick": "Leeds United FC",
+            "p_win": 0.6607,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "laliga",
+            "match": "Girona FC vs RCD Mallorca",
+            "pick": "Girona FC",
+            "p_win": 0.4591,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 3.29,
+        "combined_prob": 0.3033,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Burnley FC",
+            "pick": "Leeds United FC",
+            "p_win": 0.6607,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "laliga",
+            "match": "Girona FC vs RCD Mallorca",
+            "pick": "Girona FC",
+            "p_win": 0.4591,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 3.29,
+        "combined_prob": 0.3033,
+        "n_legs": 2
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Burnley FC",
+            "pick": "Leeds United FC",
+            "p_win": 0.6607,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "laliga",
+            "match": "Girona FC vs RCD Mallorca",
+            "pick": "Girona FC",
+            "p_win": 0.4591,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 3.29,
+        "combined_prob": 0.3033,
+        "n_legs": 2
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "epl",
+            "match": "Leeds United FC vs Burnley FC",
+            "pick": "Leeds United FC",
+            "p_win": 0.6607,
+            "implied_odds": 1.51
+          },
+          {
+            "sport": "laliga",
+            "match": "Girona FC vs RCD Mallorca",
+            "pick": "Girona FC",
+            "p_win": 0.4591,
+            "implied_odds": 2.18
+          }
+        ],
+        "total_odds": 3.29,
+        "combined_prob": 0.3033,
+        "n_legs": 2
+      }
     }
   }
 }
