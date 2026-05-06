@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T10:03:37Z",
-  "date": "2026-05-05",
+  "generated_at": "2026-05-06T10:19:46Z",
+  "date": "2026-05-06",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,20 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4952,
-        "logloss": 0.6869,
-        "brier": 0.247
+        "accuracy": 0.5185,
+        "logloss": 0.6863,
+        "brier": 0.2466
       },
       "picks": [
         {
-          "home_team": "Miami Marlins",
-          "away_team": "Baltimore Orioles",
+          "home_team": "Chicago Cubs",
+          "away_team": "Cincinnati Reds",
           "pick": "H",
-          "pick_label": "Miami Marlins",
-          "p_win": 0.615,
-          "implied_odds": 1.63,
+          "pick_label": "Chicago Cubs",
+          "p_win": 0.6054,
+          "implied_odds": 1.65,
           "signal": "media",
-          "date": "2026-05-05",
+          "date": "2026-05-06",
           "model_spread": 0.8,
           "house_spread": null,
           "house_odds": null,
@@ -54,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 62%. Marlins 16-19 vs Orioles 15-20. Sin bajas importantes. ML Marlins con cautela (modelo 62%)."
+          "note": "⚠️ Modelo 61%. Cubs 24-12 vs Reds 20-16. Sin bajas importantes. ML Cubs con cautela (modelo 61%)."
         }
       ],
       "name": "MLB",
@@ -74,8 +74,8 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.4265,
-        "logloss": 1.0401,
-        "brier": 0.2103
+        "logloss": 1.0402,
+        "brier": 0.2104
       },
       "picks": [],
       "name": "La Liga"
@@ -114,19 +114,19 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.5,
-        "logloss": 1.0587,
-        "brier": 0.2145
+        "logloss": 1.0599,
+        "brier": 0.2151
       },
       "picks": [
         {
-          "home_team": "Arsenal FC",
-          "away_team": "Club Atlético de Madrid",
+          "home_team": "nan",
+          "away_team": "nan",
           "pick": "H",
-          "pick_label": "Arsenal FC",
-          "p_win": 0.7383,
-          "implied_odds": 1.35,
-          "signal": "alta",
-          "date": "2026-05-05",
+          "pick_label": "nan",
+          "p_win": 0.4999,
+          "implied_odds": 2.0,
+          "signal": "baja",
+          "date": "2026-05-06",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -142,7 +142,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 74%. Sin bajas importantes. ML FC es la jugada segura (modelo 74%)."
+          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
         }
       ],
       "name": "Champions League",
@@ -172,127 +172,127 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Club Atlético de Madrid",
-            "pick": "Arsenal FC",
-            "p_win": 0.7383,
-            "implied_odds": 1.35
+            "sport": "mlb",
+            "match": "Chicago Cubs vs Cincinnati Reds",
+            "pick": "Chicago Cubs",
+            "p_win": 0.6054,
+            "implied_odds": 1.65
           },
           {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Baltimore Orioles",
-            "pick": "Miami Marlins",
-            "p_win": 0.615,
-            "implied_odds": 1.63
+            "sport": "ucl",
+            "match": "nan vs nan",
+            "pick": "nan",
+            "p_win": 0.4999,
+            "implied_odds": 2.0
           }
         ],
-        "total_odds": 2.2,
-        "combined_prob": 0.4541,
+        "total_odds": 3.3,
+        "combined_prob": 0.3026,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Club Atlético de Madrid",
-            "pick": "Arsenal FC",
-            "p_win": 0.7383,
-            "implied_odds": 1.35
+            "sport": "mlb",
+            "match": "Chicago Cubs vs Cincinnati Reds",
+            "pick": "Chicago Cubs",
+            "p_win": 0.6054,
+            "implied_odds": 1.65
           },
           {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Baltimore Orioles",
-            "pick": "Miami Marlins",
-            "p_win": 0.615,
-            "implied_odds": 1.63
+            "sport": "ucl",
+            "match": "nan vs nan",
+            "pick": "nan",
+            "p_win": 0.4999,
+            "implied_odds": 2.0
           }
         ],
-        "total_odds": 2.2,
-        "combined_prob": 0.4541,
+        "total_odds": 3.3,
+        "combined_prob": 0.3026,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Club Atlético de Madrid",
-            "pick": "Arsenal FC",
-            "p_win": 0.7383,
-            "implied_odds": 1.35
+            "sport": "mlb",
+            "match": "Chicago Cubs vs Cincinnati Reds",
+            "pick": "Chicago Cubs",
+            "p_win": 0.6054,
+            "implied_odds": 1.65
           },
           {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Baltimore Orioles",
-            "pick": "Miami Marlins",
-            "p_win": 0.615,
-            "implied_odds": 1.63
+            "sport": "ucl",
+            "match": "nan vs nan",
+            "pick": "nan",
+            "p_win": 0.4999,
+            "implied_odds": 2.0
           }
         ],
-        "total_odds": 2.2,
-        "combined_prob": 0.4541,
+        "total_odds": 3.3,
+        "combined_prob": 0.3026,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Club Atlético de Madrid",
-            "pick": "Arsenal FC",
-            "p_win": 0.7383,
-            "implied_odds": 1.35
+            "sport": "mlb",
+            "match": "Chicago Cubs vs Cincinnati Reds",
+            "pick": "Chicago Cubs",
+            "p_win": 0.6054,
+            "implied_odds": 1.65
           },
           {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Baltimore Orioles",
-            "pick": "Miami Marlins",
-            "p_win": 0.615,
-            "implied_odds": 1.63
+            "sport": "ucl",
+            "match": "nan vs nan",
+            "pick": "nan",
+            "p_win": 0.4999,
+            "implied_odds": 2.0
           }
         ],
-        "total_odds": 2.2,
-        "combined_prob": 0.4541,
+        "total_odds": 3.3,
+        "combined_prob": 0.3026,
         "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Club Atlético de Madrid",
-            "pick": "Arsenal FC",
-            "p_win": 0.7383,
-            "implied_odds": 1.35
+            "sport": "mlb",
+            "match": "Chicago Cubs vs Cincinnati Reds",
+            "pick": "Chicago Cubs",
+            "p_win": 0.6054,
+            "implied_odds": 1.65
           },
           {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Baltimore Orioles",
-            "pick": "Miami Marlins",
-            "p_win": 0.615,
-            "implied_odds": 1.63
+            "sport": "ucl",
+            "match": "nan vs nan",
+            "pick": "nan",
+            "p_win": 0.4999,
+            "implied_odds": 2.0
           }
         ],
-        "total_odds": 2.2,
-        "combined_prob": 0.4541,
+        "total_odds": 3.3,
+        "combined_prob": 0.3026,
         "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "ucl",
-            "match": "Arsenal FC vs Club Atlético de Madrid",
-            "pick": "Arsenal FC",
-            "p_win": 0.7383,
-            "implied_odds": 1.35
+            "sport": "mlb",
+            "match": "Chicago Cubs vs Cincinnati Reds",
+            "pick": "Chicago Cubs",
+            "p_win": 0.6054,
+            "implied_odds": 1.65
           },
           {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Baltimore Orioles",
-            "pick": "Miami Marlins",
-            "p_win": 0.615,
-            "implied_odds": 1.63
+            "sport": "ucl",
+            "match": "nan vs nan",
+            "pick": "nan",
+            "p_win": 0.4999,
+            "implied_odds": 2.0
           }
         ],
-        "total_odds": 2.2,
-        "combined_prob": 0.4541,
+        "total_odds": 3.3,
+        "combined_prob": 0.3026,
         "n_legs": 2
       }
     }
