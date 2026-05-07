@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-06T10:19:46Z",
-  "date": "2026-05-06",
+  "generated_at": "2026-05-07T10:25:09Z",
+  "date": "2026-05-07",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5211,
-        "logloss": 0.6923,
-        "brier": 0.2496
+        "accuracy": 0.5228,
+        "logloss": 0.6921,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5185,
-        "logloss": 0.6863,
-        "brier": 0.2466
+        "accuracy": 0.5045,
+        "logloss": 0.6913,
+        "brier": 0.2491
       },
       "picks": [
         {
@@ -35,11 +35,11 @@
           "away_team": "Cincinnati Reds",
           "pick": "H",
           "pick_label": "Chicago Cubs",
-          "p_win": 0.6054,
-          "implied_odds": 1.65,
+          "p_win": 0.6264,
+          "implied_odds": 1.6,
           "signal": "media",
-          "date": "2026-05-06",
-          "model_spread": 0.8,
+          "date": "2026-05-07",
+          "model_spread": 0.9,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Cubs 24-12 vs Reds 20-16. Sin bajas importantes. ML Cubs con cautela (modelo 61%)."
+          "note": "⚠️ Modelo 63%. Cubs 25-12 vs Reds 20-17. Sin bajas importantes. ML Cubs con cautela (modelo 63%)."
         }
       ],
       "name": "MLB",
@@ -113,40 +113,12 @@
     "ucl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5,
-        "logloss": 1.0599,
-        "brier": 0.2151
+        "accuracy": 0.4737,
+        "logloss": 1.032,
+        "brier": 0.2079
       },
-      "picks": [
-        {
-          "home_team": "nan",
-          "away_team": "nan",
-          "pick": "H",
-          "pick_label": "nan",
-          "p_win": 0.4999,
-          "implied_odds": 2.0,
-          "signal": "baja",
-          "date": "2026-05-06",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 50%. Sin bajas importantes. SKIP — sin edge claro (50%)."
-        }
-      ],
-      "name": "Champions League",
-      "analysis": ""
+      "picks": [],
+      "name": "Champions League"
     }
   },
   "parlays": {
@@ -158,143 +130,15 @@
         "cuota_6": null,
         "cuota_10": null,
         "cuota_20": null
-      },
-      "soccer": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs Cincinnati Reds",
-            "pick": "Chicago Cubs",
-            "p_win": 0.6054,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "ucl",
-            "match": "nan vs nan",
-            "pick": "nan",
-            "p_win": 0.4999,
-            "implied_odds": 2.0
-          }
-        ],
-        "total_odds": 3.3,
-        "combined_prob": 0.3026,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs Cincinnati Reds",
-            "pick": "Chicago Cubs",
-            "p_win": 0.6054,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "ucl",
-            "match": "nan vs nan",
-            "pick": "nan",
-            "p_win": 0.4999,
-            "implied_odds": 2.0
-          }
-        ],
-        "total_odds": 3.3,
-        "combined_prob": 0.3026,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs Cincinnati Reds",
-            "pick": "Chicago Cubs",
-            "p_win": 0.6054,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "ucl",
-            "match": "nan vs nan",
-            "pick": "nan",
-            "p_win": 0.4999,
-            "implied_odds": 2.0
-          }
-        ],
-        "total_odds": 3.3,
-        "combined_prob": 0.3026,
-        "n_legs": 2
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs Cincinnati Reds",
-            "pick": "Chicago Cubs",
-            "p_win": 0.6054,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "ucl",
-            "match": "nan vs nan",
-            "pick": "nan",
-            "p_win": 0.4999,
-            "implied_odds": 2.0
-          }
-        ],
-        "total_odds": 3.3,
-        "combined_prob": 0.3026,
-        "n_legs": 2
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs Cincinnati Reds",
-            "pick": "Chicago Cubs",
-            "p_win": 0.6054,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "ucl",
-            "match": "nan vs nan",
-            "pick": "nan",
-            "p_win": 0.4999,
-            "implied_odds": 2.0
-          }
-        ],
-        "total_odds": 3.3,
-        "combined_prob": 0.3026,
-        "n_legs": 2
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs Cincinnati Reds",
-            "pick": "Chicago Cubs",
-            "p_win": 0.6054,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "ucl",
-            "match": "nan vs nan",
-            "pick": "nan",
-            "p_win": 0.4999,
-            "implied_odds": 2.0
-          }
-        ],
-        "total_odds": 3.3,
-        "combined_prob": 0.3026,
-        "n_legs": 2
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
