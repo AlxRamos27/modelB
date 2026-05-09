@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-08T09:22:06Z",
-  "date": "2026-05-08",
+  "generated_at": "2026-05-09T09:20:17Z",
+  "date": "2026-05-09",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4867,
-        "logloss": 0.6934,
-        "brier": 0.2501
+        "accuracy": 0.4828,
+        "logloss": 0.702,
+        "brier": 0.2543
       },
       "picks": [],
       "name": "MLB"
@@ -39,26 +39,16 @@
         "logloss": 1.018,
         "brier": 0.2032
       },
-      "picks": [],
-      "name": "Premier League"
-    },
-    "laliga": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.4265,
-        "logloss": 1.0402,
-        "brier": 0.2104
-      },
       "picks": [
         {
-          "home_team": "Levante UD",
-          "away_team": "CA Osasuna",
-          "pick": "A",
-          "pick_label": "CA Osasuna",
-          "p_win": 0.3566,
-          "implied_odds": 2.8,
-          "signal": "baja",
-          "date": "2026-05-08",
+          "home_team": "Brighton & Hove Albion FC",
+          "away_team": "Wolverhampton Wanderers FC",
+          "pick": "H",
+          "pick_label": "Brighton & Hove Albion FC",
+          "p_win": 0.7314,
+          "implied_odds": 1.37,
+          "signal": "alta",
+          "date": "2026-05-09",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -74,7 +64,227 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 36%. Sin bajas importantes. SKIP — sin edge claro (36%)."
+          "note": "✅ Modelo 73%. Sin bajas importantes. ML FC es la jugada segura (modelo 73%)."
+        },
+        {
+          "home_team": "Liverpool FC",
+          "away_team": "Chelsea FC",
+          "pick": "H",
+          "pick_label": "Liverpool FC",
+          "p_win": 0.5988,
+          "implied_odds": 1.67,
+          "signal": "media",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 60%. Sin bajas importantes. ML FC con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "Manchester City FC",
+          "away_team": "Brentford FC",
+          "pick": "H",
+          "pick_label": "Manchester City FC",
+          "p_win": 0.5926,
+          "implied_odds": 1.69,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "Sunderland AFC",
+          "away_team": "Manchester United FC",
+          "pick": "A",
+          "pick_label": "Manchester United FC",
+          "p_win": 0.455,
+          "implied_odds": 2.2,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 46%. Sin bajas importantes. SKIP — sin edge claro (46%)."
+        },
+        {
+          "home_team": "Fulham FC",
+          "away_team": "AFC Bournemouth",
+          "pick": "A",
+          "pick_label": "AFC Bournemouth",
+          "p_win": 0.3905,
+          "implied_odds": 2.56,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 39%. Sin bajas importantes. SKIP — sin edge claro (39%)."
+        }
+      ],
+      "name": "Premier League",
+      "analysis": ""
+    },
+    "laliga": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.4493,
+        "logloss": 1.0172,
+        "brier": 0.2051
+      },
+      "picks": [
+        {
+          "home_team": "Club Atlético de Madrid",
+          "away_team": "RC Celta de Vigo",
+          "pick": "H",
+          "pick_label": "Club Atlético de Madrid",
+          "p_win": 0.5878,
+          "implied_odds": 1.7,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "Elche CF",
+          "away_team": "Deportivo Alavés",
+          "pick": "H",
+          "pick_label": "Elche CF",
+          "p_win": 0.5374,
+          "implied_odds": 1.86,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 54%. Sin bajas importantes. SKIP — sin edge claro (54%)."
+        },
+        {
+          "home_team": "Sevilla FC",
+          "away_team": "RCD Espanyol de Barcelona",
+          "pick": "H",
+          "pick_label": "Sevilla FC",
+          "p_win": 0.4812,
+          "implied_odds": 2.08,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 48%. Sin bajas importantes. SKIP — sin edge claro (48%)."
+        },
+        {
+          "home_team": "Real Sociedad de Fútbol",
+          "away_team": "Real Betis Balompié",
+          "pick": "H",
+          "pick_label": "Real Sociedad de Fútbol",
+          "p_win": 0.4081,
+          "implied_odds": 2.45,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 41%. Sin bajas importantes. SKIP — sin edge claro (41%)."
         }
       ],
       "name": "La Liga",
@@ -84,57 +294,29 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.5862,
-        "logloss": 0.9308,
-        "brier": 0.1868
+        "logloss": 0.9243,
+        "brier": 0.1853
       },
-      "picks": [
-        {
-          "home_team": "Racing Club de Lens",
-          "away_team": "FC Nantes",
-          "pick": "H",
-          "pick_label": "Racing Club de Lens",
-          "p_win": 0.7125,
-          "implied_odds": 1.4,
-          "signal": "alta",
-          "date": "2026-05-08",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 71%. Sin bajas importantes. ML Lens es la jugada segura (modelo 71%)."
-        }
-      ],
-      "name": "Ligue 1",
-      "analysis": ""
+      "picks": [],
+      "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5172,
-        "logloss": 0.9891,
-        "brier": 0.196
+        "accuracy": 0.5345,
+        "logloss": 0.9716,
+        "brier": 0.192
       },
       "picks": [
         {
-          "home_team": "Borussia Dortmund",
-          "away_team": "Eintracht Frankfurt",
-          "pick": "H",
-          "pick_label": "Borussia Dortmund",
-          "p_win": 0.6781,
-          "implied_odds": 1.47,
-          "signal": "media",
-          "date": "2026-05-08",
+          "home_team": "VfL Wolfsburg",
+          "away_team": "FC Bayern München",
+          "pick": "A",
+          "pick_label": "FC Bayern München",
+          "p_win": 0.7754,
+          "implied_odds": 1.29,
+          "signal": "alta",
+          "date": "2026-05-09",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -150,7 +332,111 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 68%. Sin bajas importantes. ML Dortmund con cautela (modelo 68%)."
+          "note": "✅ Modelo 78%. Sin bajas importantes. ML München es la jugada segura (modelo 78%)."
+        },
+        {
+          "home_team": "RB Leipzig",
+          "away_team": "FC St. Pauli 1910",
+          "pick": "H",
+          "pick_label": "RB Leipzig",
+          "p_win": 0.7659,
+          "implied_odds": 1.31,
+          "signal": "alta",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 77%. Sin bajas importantes. ML Leipzig es la jugada segura (modelo 77%)."
+        },
+        {
+          "home_team": "TSG 1899 Hoffenheim",
+          "away_team": "SV Werder Bremen",
+          "pick": "H",
+          "pick_label": "TSG 1899 Hoffenheim",
+          "p_win": 0.6699,
+          "implied_odds": 1.49,
+          "signal": "media",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 67%. Sin bajas importantes. ML Hoffenheim con cautela (modelo 67%)."
+        },
+        {
+          "home_team": "FC Augsburg",
+          "away_team": "Borussia Mönchengladbach",
+          "pick": "H",
+          "pick_label": "FC Augsburg",
+          "p_win": 0.4939,
+          "implied_odds": 2.02,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
+        },
+        {
+          "home_team": "VfB Stuttgart",
+          "away_team": "Bayer 04 Leverkusen",
+          "pick": "H",
+          "pick_label": "VfB Stuttgart",
+          "p_win": 0.4052,
+          "implied_odds": 2.47,
+          "signal": "baja",
+          "date": "2026-05-09",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 41%. Sin bajas importantes. SKIP — sin edge claro (41%)."
         }
       ],
       "name": "Bundesliga",
@@ -169,9 +455,9 @@
     "ucl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5263,
-        "logloss": 1.0227,
-        "brier": 0.2062
+        "accuracy": 0.4737,
+        "logloss": 1.032,
+        "brier": 0.2079
       },
       "picks": [],
       "name": "Champions League"
@@ -183,156 +469,212 @@
         "cuota_3": {
           "legs": [
             {
-              "sport": "ligue1",
-              "match": "Racing Club de Lens vs FC Nantes",
-              "pick": "Racing Club de Lens",
-              "p_win": 0.7125,
-              "implied_odds": 1.4
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs FC St. Pauli 1910",
+              "pick": "RB Leipzig",
+              "p_win": 0.7659,
+              "implied_odds": 1.31
             },
             {
-              "sport": "laliga",
-              "match": "Levante UD vs CA Osasuna",
-              "pick": "CA Osasuna",
-              "p_win": 0.3566,
-              "implied_odds": 2.8
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.7314,
+              "implied_odds": 1.37
+            },
+            {
+              "sport": "epl",
+              "match": "Liverpool FC vs Chelsea FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5988,
+              "implied_odds": 1.67
             }
           ],
-          "total_odds": 3.92,
-          "combined_prob": 0.2541,
-          "n_legs": 2
+          "total_odds": 3.0,
+          "combined_prob": 0.3354,
+          "n_legs": 3
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "ligue1",
-              "match": "Racing Club de Lens vs FC Nantes",
-              "pick": "Racing Club de Lens",
-              "p_win": 0.7125,
-              "implied_odds": 1.4
+              "sport": "bundesliga",
+              "match": "VfL Wolfsburg vs FC Bayern München",
+              "pick": "FC Bayern München",
+              "p_win": 0.7754,
+              "implied_odds": 1.29
+            },
+            {
+              "sport": "bundesliga",
+              "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+              "pick": "TSG 1899 Hoffenheim",
+              "p_win": 0.6699,
+              "implied_odds": 1.49
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs CA Osasuna",
-              "pick": "CA Osasuna",
-              "p_win": 0.3566,
-              "implied_odds": 2.8
+              "match": "Sevilla FC vs RCD Espanyol de Barcelona",
+              "pick": "Sevilla FC",
+              "p_win": 0.4812,
+              "implied_odds": 2.08
             }
           ],
-          "total_odds": 3.92,
-          "combined_prob": 0.2541,
-          "n_legs": 2
+          "total_odds": 4.0,
+          "combined_prob": 0.25,
+          "n_legs": 3
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "ligue1",
-              "match": "Racing Club de Lens vs FC Nantes",
-              "pick": "Racing Club de Lens",
-              "p_win": 0.7125,
-              "implied_odds": 1.4
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.7314,
+              "implied_odds": 1.37
             },
             {
               "sport": "bundesliga",
-              "match": "Borussia Dortmund vs Eintracht Frankfurt",
-              "pick": "Borussia Dortmund",
-              "p_win": 0.6781,
-              "implied_odds": 1.47
+              "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+              "pick": "TSG 1899 Hoffenheim",
+              "p_win": 0.6699,
+              "implied_odds": 1.49
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs CA Osasuna",
-              "pick": "CA Osasuna",
-              "p_win": 0.3566,
-              "implied_odds": 2.8
+              "match": "Real Sociedad de Fútbol vs Real Betis Balompié",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.4081,
+              "implied_odds": 2.45
             }
           ],
-          "total_odds": 5.76,
-          "combined_prob": 0.1723,
+          "total_odds": 5.0,
+          "combined_prob": 0.2,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "ligue1",
-              "match": "Racing Club de Lens vs FC Nantes",
-              "pick": "Racing Club de Lens",
-              "p_win": 0.7125,
-              "implied_odds": 1.4
-            },
-            {
               "sport": "bundesliga",
-              "match": "Borussia Dortmund vs Eintracht Frankfurt",
-              "pick": "Borussia Dortmund",
-              "p_win": 0.6781,
-              "implied_odds": 1.47
+              "match": "RB Leipzig vs FC St. Pauli 1910",
+              "pick": "RB Leipzig",
+              "p_win": 0.7659,
+              "implied_odds": 1.31
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs CA Osasuna",
-              "pick": "CA Osasuna",
-              "p_win": 0.3566,
-              "implied_odds": 2.8
+              "match": "Sevilla FC vs RCD Espanyol de Barcelona",
+              "pick": "Sevilla FC",
+              "p_win": 0.4812,
+              "implied_odds": 2.08
+            },
+            {
+              "sport": "epl",
+              "match": "Sunderland AFC vs Manchester United FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.455,
+              "implied_odds": 2.2
             }
           ],
-          "total_odds": 5.76,
-          "combined_prob": 0.1723,
+          "total_odds": 5.99,
+          "combined_prob": 0.1677,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "ligue1",
-              "match": "Racing Club de Lens vs FC Nantes",
-              "pick": "Racing Club de Lens",
-              "p_win": 0.7125,
-              "implied_odds": 1.4
+              "sport": "bundesliga",
+              "match": "RB Leipzig vs FC St. Pauli 1910",
+              "pick": "RB Leipzig",
+              "p_win": 0.7659,
+              "implied_odds": 1.31
+            },
+            {
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.7314,
+              "implied_odds": 1.37
             },
             {
               "sport": "bundesliga",
-              "match": "Borussia Dortmund vs Eintracht Frankfurt",
-              "pick": "Borussia Dortmund",
-              "p_win": 0.6781,
-              "implied_odds": 1.47
+              "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+              "pick": "TSG 1899 Hoffenheim",
+              "p_win": 0.6699,
+              "implied_odds": 1.49
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs CA Osasuna",
-              "pick": "CA Osasuna",
-              "p_win": 0.3566,
-              "implied_odds": 2.8
+              "match": "Club Atlético de Madrid vs RC Celta de Vigo",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5878,
+              "implied_odds": 1.7
+            },
+            {
+              "sport": "epl",
+              "match": "Sunderland AFC vs Manchester United FC",
+              "pick": "Manchester United FC",
+              "p_win": 0.455,
+              "implied_odds": 2.2
             }
           ],
-          "total_odds": 5.76,
-          "combined_prob": 0.1723,
-          "n_legs": 3
+          "total_odds": 10.0,
+          "combined_prob": 0.1004,
+          "n_legs": 5
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "ligue1",
-              "match": "Racing Club de Lens vs FC Nantes",
-              "pick": "Racing Club de Lens",
-              "p_win": 0.7125,
-              "implied_odds": 1.4
+              "sport": "bundesliga",
+              "match": "VfL Wolfsburg vs FC Bayern München",
+              "pick": "FC Bayern München",
+              "p_win": 0.7754,
+              "implied_odds": 1.29
             },
             {
               "sport": "bundesliga",
-              "match": "Borussia Dortmund vs Eintracht Frankfurt",
-              "pick": "Borussia Dortmund",
-              "p_win": 0.6781,
-              "implied_odds": 1.47
+              "match": "RB Leipzig vs FC St. Pauli 1910",
+              "pick": "RB Leipzig",
+              "p_win": 0.7659,
+              "implied_odds": 1.31
+            },
+            {
+              "sport": "epl",
+              "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.7314,
+              "implied_odds": 1.37
+            },
+            {
+              "sport": "bundesliga",
+              "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+              "pick": "TSG 1899 Hoffenheim",
+              "p_win": 0.6699,
+              "implied_odds": 1.49
+            },
+            {
+              "sport": "epl",
+              "match": "Manchester City FC vs Brentford FC",
+              "pick": "Manchester City FC",
+              "p_win": 0.5926,
+              "implied_odds": 1.69
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs CA Osasuna",
-              "pick": "CA Osasuna",
-              "p_win": 0.3566,
-              "implied_odds": 2.8
+              "match": "Club Atlético de Madrid vs RC Celta de Vigo",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.5878,
+              "implied_odds": 1.7
+            },
+            {
+              "sport": "bundesliga",
+              "match": "FC Augsburg vs Borussia Mönchengladbach",
+              "pick": "FC Augsburg",
+              "p_win": 0.4939,
+              "implied_odds": 2.02
             }
           ],
-          "total_odds": 5.76,
-          "combined_prob": 0.1723,
-          "n_legs": 3
+          "total_odds": 20.02,
+          "combined_prob": 0.0501,
+          "n_legs": 7
         }
       }
     },
@@ -340,156 +682,212 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Racing Club de Lens vs FC Nantes",
-            "pick": "Racing Club de Lens",
-            "p_win": 0.7125,
-            "implied_odds": 1.4
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs FC St. Pauli 1910",
+            "pick": "RB Leipzig",
+            "p_win": 0.7659,
+            "implied_odds": 1.31
           },
           {
-            "sport": "laliga",
-            "match": "Levante UD vs CA Osasuna",
-            "pick": "CA Osasuna",
-            "p_win": 0.3566,
-            "implied_odds": 2.8
+            "sport": "epl",
+            "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.7314,
+            "implied_odds": 1.37
+          },
+          {
+            "sport": "epl",
+            "match": "Liverpool FC vs Chelsea FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5988,
+            "implied_odds": 1.67
           }
         ],
-        "total_odds": 3.92,
-        "combined_prob": 0.2541,
-        "n_legs": 2
+        "total_odds": 3.0,
+        "combined_prob": 0.3354,
+        "n_legs": 3
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Racing Club de Lens vs FC Nantes",
-            "pick": "Racing Club de Lens",
-            "p_win": 0.7125,
-            "implied_odds": 1.4
+            "sport": "bundesliga",
+            "match": "VfL Wolfsburg vs FC Bayern München",
+            "pick": "FC Bayern München",
+            "p_win": 0.7754,
+            "implied_odds": 1.29
+          },
+          {
+            "sport": "bundesliga",
+            "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+            "pick": "TSG 1899 Hoffenheim",
+            "p_win": 0.6699,
+            "implied_odds": 1.49
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs CA Osasuna",
-            "pick": "CA Osasuna",
-            "p_win": 0.3566,
-            "implied_odds": 2.8
+            "match": "Sevilla FC vs RCD Espanyol de Barcelona",
+            "pick": "Sevilla FC",
+            "p_win": 0.4812,
+            "implied_odds": 2.08
           }
         ],
-        "total_odds": 3.92,
-        "combined_prob": 0.2541,
-        "n_legs": 2
+        "total_odds": 4.0,
+        "combined_prob": 0.25,
+        "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Racing Club de Lens vs FC Nantes",
-            "pick": "Racing Club de Lens",
-            "p_win": 0.7125,
-            "implied_odds": 1.4
+            "sport": "epl",
+            "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.7314,
+            "implied_odds": 1.37
           },
           {
             "sport": "bundesliga",
-            "match": "Borussia Dortmund vs Eintracht Frankfurt",
-            "pick": "Borussia Dortmund",
-            "p_win": 0.6781,
-            "implied_odds": 1.47
+            "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+            "pick": "TSG 1899 Hoffenheim",
+            "p_win": 0.6699,
+            "implied_odds": 1.49
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs CA Osasuna",
-            "pick": "CA Osasuna",
-            "p_win": 0.3566,
-            "implied_odds": 2.8
+            "match": "Real Sociedad de Fútbol vs Real Betis Balompié",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.4081,
+            "implied_odds": 2.45
           }
         ],
-        "total_odds": 5.76,
-        "combined_prob": 0.1723,
+        "total_odds": 5.0,
+        "combined_prob": 0.2,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Racing Club de Lens vs FC Nantes",
-            "pick": "Racing Club de Lens",
-            "p_win": 0.7125,
-            "implied_odds": 1.4
-          },
-          {
             "sport": "bundesliga",
-            "match": "Borussia Dortmund vs Eintracht Frankfurt",
-            "pick": "Borussia Dortmund",
-            "p_win": 0.6781,
-            "implied_odds": 1.47
+            "match": "RB Leipzig vs FC St. Pauli 1910",
+            "pick": "RB Leipzig",
+            "p_win": 0.7659,
+            "implied_odds": 1.31
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs CA Osasuna",
-            "pick": "CA Osasuna",
-            "p_win": 0.3566,
-            "implied_odds": 2.8
+            "match": "Sevilla FC vs RCD Espanyol de Barcelona",
+            "pick": "Sevilla FC",
+            "p_win": 0.4812,
+            "implied_odds": 2.08
+          },
+          {
+            "sport": "epl",
+            "match": "Sunderland AFC vs Manchester United FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.455,
+            "implied_odds": 2.2
           }
         ],
-        "total_odds": 5.76,
-        "combined_prob": 0.1723,
+        "total_odds": 5.99,
+        "combined_prob": 0.1677,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Racing Club de Lens vs FC Nantes",
-            "pick": "Racing Club de Lens",
-            "p_win": 0.7125,
-            "implied_odds": 1.4
+            "sport": "bundesliga",
+            "match": "RB Leipzig vs FC St. Pauli 1910",
+            "pick": "RB Leipzig",
+            "p_win": 0.7659,
+            "implied_odds": 1.31
+          },
+          {
+            "sport": "epl",
+            "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.7314,
+            "implied_odds": 1.37
           },
           {
             "sport": "bundesliga",
-            "match": "Borussia Dortmund vs Eintracht Frankfurt",
-            "pick": "Borussia Dortmund",
-            "p_win": 0.6781,
-            "implied_odds": 1.47
+            "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+            "pick": "TSG 1899 Hoffenheim",
+            "p_win": 0.6699,
+            "implied_odds": 1.49
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs CA Osasuna",
-            "pick": "CA Osasuna",
-            "p_win": 0.3566,
-            "implied_odds": 2.8
+            "match": "Club Atlético de Madrid vs RC Celta de Vigo",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.5878,
+            "implied_odds": 1.7
+          },
+          {
+            "sport": "epl",
+            "match": "Sunderland AFC vs Manchester United FC",
+            "pick": "Manchester United FC",
+            "p_win": 0.455,
+            "implied_odds": 2.2
           }
         ],
-        "total_odds": 5.76,
-        "combined_prob": 0.1723,
-        "n_legs": 3
+        "total_odds": 10.0,
+        "combined_prob": 0.1004,
+        "n_legs": 5
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "ligue1",
-            "match": "Racing Club de Lens vs FC Nantes",
-            "pick": "Racing Club de Lens",
-            "p_win": 0.7125,
-            "implied_odds": 1.4
+            "sport": "bundesliga",
+            "match": "VfL Wolfsburg vs FC Bayern München",
+            "pick": "FC Bayern München",
+            "p_win": 0.7754,
+            "implied_odds": 1.29
           },
           {
             "sport": "bundesliga",
-            "match": "Borussia Dortmund vs Eintracht Frankfurt",
-            "pick": "Borussia Dortmund",
-            "p_win": 0.6781,
-            "implied_odds": 1.47
+            "match": "RB Leipzig vs FC St. Pauli 1910",
+            "pick": "RB Leipzig",
+            "p_win": 0.7659,
+            "implied_odds": 1.31
+          },
+          {
+            "sport": "epl",
+            "match": "Brighton & Hove Albion FC vs Wolverhampton Wanderers FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.7314,
+            "implied_odds": 1.37
+          },
+          {
+            "sport": "bundesliga",
+            "match": "TSG 1899 Hoffenheim vs SV Werder Bremen",
+            "pick": "TSG 1899 Hoffenheim",
+            "p_win": 0.6699,
+            "implied_odds": 1.49
+          },
+          {
+            "sport": "epl",
+            "match": "Manchester City FC vs Brentford FC",
+            "pick": "Manchester City FC",
+            "p_win": 0.5926,
+            "implied_odds": 1.69
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs CA Osasuna",
-            "pick": "CA Osasuna",
-            "p_win": 0.3566,
-            "implied_odds": 2.8
+            "match": "Club Atlético de Madrid vs RC Celta de Vigo",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.5878,
+            "implied_odds": 1.7
+          },
+          {
+            "sport": "bundesliga",
+            "match": "FC Augsburg vs Borussia Mönchengladbach",
+            "pick": "FC Augsburg",
+            "p_win": 0.4939,
+            "implied_odds": 2.02
           }
         ],
-        "total_odds": 5.76,
-        "combined_prob": 0.1723,
-        "n_legs": 3
+        "total_odds": 20.02,
+        "combined_prob": 0.0501,
+        "n_legs": 7
       }
     }
   }
