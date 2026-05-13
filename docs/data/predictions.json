@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-12T10:32:15Z",
-  "date": "2026-05-12",
+  "generated_at": "2026-05-13T10:28:37Z",
+  "date": "2026-05-13",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.521,
-        "logloss": 0.6923,
-        "brier": 0.2496
+        "accuracy": 0.5226,
+        "logloss": 0.6921,
+        "brier": 0.2495
       },
       "picks": [],
       "name": "NHL"
@@ -25,20 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5041,
-        "logloss": 0.701,
-        "brier": 0.2539
+        "accuracy": 0.5397,
+        "logloss": 0.6982,
+        "brier": 0.2524
       },
       "picks": [
         {
-          "home_team": "Baltimore Orioles",
-          "away_team": "New York Yankees",
+          "home_team": "Cleveland Guardians",
+          "away_team": "Los Angeles Angels",
           "pick": "H",
-          "pick_label": "Baltimore Orioles",
-          "p_win": 0.5972,
-          "implied_odds": 1.67,
-          "signal": "media",
-          "date": "2026-05-12",
+          "pick_label": "Cleveland Guardians",
+          "p_win": 0.5935,
+          "implied_odds": 1.69,
+          "signal": "baja",
+          "date": "2026-05-13",
           "model_spread": 0.7,
           "house_spread": null,
           "house_odds": null,
@@ -54,7 +54,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Orioles 19-23 vs Yankees 26-16. Sin bajas importantes. ML Orioles con cautela (modelo 60%)."
+          "note": "❌ Modelo 59%. Guardians 23-21 vs Angels 16-27. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "Toronto Blue Jays",
+          "away_team": "Tampa Bay Rays",
+          "pick": "A",
+          "pick_label": "Tampa Bay Rays",
+          "p_win": 0.5927,
+          "implied_odds": 1.69,
+          "signal": "baja",
+          "date": "2026-05-13",
+          "model_spread": 0.7,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Jays 18-24 vs Rays 28-13. Sin bajas importantes. SKIP — sin edge claro (59%)."
         }
       ],
       "name": "MLB",
@@ -67,26 +93,54 @@
         "logloss": 1.0285,
         "brier": 0.2069
       },
-      "picks": [],
-      "name": "Premier League"
+      "picks": [
+        {
+          "home_team": "Manchester City FC",
+          "away_team": "Crystal Palace FC",
+          "pick": "H",
+          "pick_label": "Manchester City FC",
+          "p_win": 0.7959,
+          "implied_odds": 1.26,
+          "signal": "alta",
+          "date": "2026-05-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 80%. Sin bajas importantes. ML FC es la jugada segura (modelo 80%)."
+        }
+      ],
+      "name": "Premier League",
+      "analysis": ""
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4429,
-        "logloss": 1.0678,
-        "brier": 0.2158
+        "accuracy": 0.4225,
+        "logloss": 1.0488,
+        "brier": 0.211
       },
       "picks": [
         {
-          "home_team": "Real Betis Balompié",
-          "away_team": "Elche CF",
+          "home_team": "Villarreal CF",
+          "away_team": "Sevilla FC",
           "pick": "H",
-          "pick_label": "Real Betis Balompié",
-          "p_win": 0.7515,
-          "implied_odds": 1.33,
+          "pick_label": "Villarreal CF",
+          "p_win": 0.8051,
+          "implied_odds": 1.24,
           "signal": "alta",
-          "date": "2026-05-12",
+          "date": "2026-05-13",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -102,43 +156,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 75%. Sin bajas importantes. ML Balompié es la jugada segura (modelo 75%)."
+          "note": "✅ Modelo 81%. Sin bajas importantes. ML CF es la jugada segura (modelo 81%)."
         },
         {
-          "home_team": "RC Celta de Vigo",
-          "away_team": "Levante UD",
-          "pick": "H",
-          "pick_label": "RC Celta de Vigo",
-          "p_win": 0.6222,
-          "implied_odds": 1.61,
-          "signal": "media",
-          "date": "2026-05-12",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 62%. Sin bajas importantes. ML Vigo con cautela (modelo 62%)."
-        },
-        {
-          "home_team": "CA Osasuna",
-          "away_team": "Club Atlético de Madrid",
+          "home_team": "Deportivo Alavés",
+          "away_team": "FC Barcelona",
           "pick": "A",
-          "pick_label": "Club Atlético de Madrid",
-          "p_win": 0.3085,
-          "implied_odds": 3.24,
-          "signal": "baja",
-          "date": "2026-05-12",
+          "pick_label": "FC Barcelona",
+          "p_win": 0.6241,
+          "implied_odds": 1.6,
+          "signal": "media",
+          "date": "2026-05-13",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -154,7 +182,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 31%. Sin bajas importantes. SKIP — sin edge claro (31%)."
+          "note": "⚠️ Modelo 62%. Sin bajas importantes. ML Barcelona con cautela (modelo 62%)."
+        },
+        {
+          "home_team": "Getafe CF",
+          "away_team": "RCD Mallorca",
+          "pick": "H",
+          "pick_label": "Getafe CF",
+          "p_win": 0.378,
+          "implied_odds": 2.65,
+          "signal": "baja",
+          "date": "2026-05-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
+        },
+        {
+          "home_team": "RCD Espanyol de Barcelona",
+          "away_team": "Athletic Club",
+          "pick": "A",
+          "pick_label": "Athletic Club",
+          "p_win": 0.2815,
+          "implied_odds": 3.55,
+          "signal": "baja",
+          "date": "2026-05-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 28%. Sin bajas importantes. SKIP — sin edge claro (28%)."
         }
       ],
       "name": "La Liga",
@@ -167,8 +247,62 @@
         "logloss": 0.8979,
         "brier": 0.1785
       },
-      "picks": [],
-      "name": "Ligue 1"
+      "picks": [
+        {
+          "home_team": "Racing Club de Lens",
+          "away_team": "Paris Saint-Germain FC",
+          "pick": "H",
+          "pick_label": "Racing Club de Lens",
+          "p_win": 0.4874,
+          "implied_odds": 2.05,
+          "signal": "baja",
+          "date": "2026-05-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
+        },
+        {
+          "home_team": "Stade Brestois 29",
+          "away_team": "RC Strasbourg Alsace",
+          "pick": "H",
+          "pick_label": "Stade Brestois 29",
+          "p_win": 0.3663,
+          "implied_odds": 2.73,
+          "signal": "baja",
+          "date": "2026-05-13",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 37%. Sin bajas importantes. SKIP — sin edge claro (37%)."
+        }
+      ],
+      "name": "Ligue 1",
+      "analysis": ""
     },
     "bundesliga": {
       "status": "ok",
@@ -204,152 +338,293 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Los Angeles Angels",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5935,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs Tampa Bay Rays",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5927,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 2.86,
+          "combined_prob": 0.3518,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Los Angeles Angels",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5935,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs Tampa Bay Rays",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5927,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 2.86,
+          "combined_prob": 0.3518,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Los Angeles Angels",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5935,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs Tampa Bay Rays",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5927,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 2.86,
+          "combined_prob": 0.3518,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Los Angeles Angels",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5935,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs Tampa Bay Rays",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5927,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 2.86,
+          "combined_prob": 0.3518,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Los Angeles Angels",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5935,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs Tampa Bay Rays",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5927,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 2.86,
+          "combined_prob": 0.3518,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Los Angeles Angels",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5935,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs Tampa Bay Rays",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5927,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 2.86,
+          "combined_prob": 0.3518,
+          "n_legs": 2
+        }
       },
       "soccer": {
         "cuota_3": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Elche CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7515,
-              "implied_odds": 1.33
+              "match": "Villarreal CF vs Sevilla FC",
+              "pick": "Villarreal CF",
+              "p_win": 0.8051,
+              "implied_odds": 1.24
             },
             {
-              "sport": "laliga",
-              "match": "RC Celta de Vigo vs Levante UD",
-              "pick": "RC Celta de Vigo",
-              "p_win": 0.6222,
-              "implied_odds": 1.61
+              "sport": "epl",
+              "match": "Manchester City FC vs Crystal Palace FC",
+              "pick": "Manchester City FC",
+              "p_win": 0.7959,
+              "implied_odds": 1.26
+            },
+            {
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Paris Saint-Germain FC",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.4874,
+              "implied_odds": 2.05
             }
           ],
-          "total_odds": 2.14,
-          "combined_prob": 0.4676,
-          "n_legs": 2
+          "total_odds": 3.2,
+          "combined_prob": 0.3123,
+          "n_legs": 3
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Elche CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7515,
-              "implied_odds": 1.33
+              "match": "Villarreal CF vs Sevilla FC",
+              "pick": "Villarreal CF",
+              "p_win": 0.8051,
+              "implied_odds": 1.24
             },
             {
               "sport": "laliga",
-              "match": "CA Osasuna vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3085,
-              "implied_odds": 3.24
+              "match": "Deportivo Alavés vs FC Barcelona",
+              "pick": "FC Barcelona",
+              "p_win": 0.6241,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Paris Saint-Germain FC",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.4874,
+              "implied_odds": 2.05
             }
           ],
-          "total_odds": 4.31,
-          "combined_prob": 0.2318,
-          "n_legs": 2
+          "total_odds": 4.07,
+          "combined_prob": 0.2449,
+          "n_legs": 3
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "RC Celta de Vigo vs Levante UD",
-              "pick": "RC Celta de Vigo",
-              "p_win": 0.6222,
-              "implied_odds": 1.61
+              "match": "Villarreal CF vs Sevilla FC",
+              "pick": "Villarreal CF",
+              "p_win": 0.8051,
+              "implied_odds": 1.24
+            },
+            {
+              "sport": "epl",
+              "match": "Manchester City FC vs Crystal Palace FC",
+              "pick": "Manchester City FC",
+              "p_win": 0.7959,
+              "implied_odds": 1.26
             },
             {
               "sport": "laliga",
-              "match": "CA Osasuna vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3085,
-              "implied_odds": 3.24
+              "match": "Deportivo Alavés vs FC Barcelona",
+              "pick": "FC Barcelona",
+              "p_win": 0.6241,
+              "implied_odds": 1.6
+            },
+            {
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Paris Saint-Germain FC",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.4874,
+              "implied_odds": 2.05
             }
           ],
-          "total_odds": 5.22,
-          "combined_prob": 0.1919,
-          "n_legs": 2
+          "total_odds": 5.12,
+          "combined_prob": 0.1949,
+          "n_legs": 4
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "RC Celta de Vigo vs Levante UD",
-              "pick": "RC Celta de Vigo",
-              "p_win": 0.6222,
-              "implied_odds": 1.61
+              "match": "Deportivo Alavés vs FC Barcelona",
+              "pick": "FC Barcelona",
+              "p_win": 0.6241,
+              "implied_odds": 1.6
             },
             {
               "sport": "laliga",
-              "match": "CA Osasuna vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3085,
-              "implied_odds": 3.24
+              "match": "RCD Espanyol de Barcelona vs Athletic Club",
+              "pick": "Athletic Club",
+              "p_win": 0.2815,
+              "implied_odds": 3.55
             }
           ],
-          "total_odds": 5.22,
-          "combined_prob": 0.1919,
+          "total_odds": 5.68,
+          "combined_prob": 0.1757,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Betis Balompié vs Elche CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7515,
-              "implied_odds": 1.33
+              "sport": "ligue1",
+              "match": "Stade Brestois 29 vs RC Strasbourg Alsace",
+              "pick": "Stade Brestois 29",
+              "p_win": 0.3663,
+              "implied_odds": 2.73
             },
             {
               "sport": "laliga",
-              "match": "RC Celta de Vigo vs Levante UD",
-              "pick": "RC Celta de Vigo",
-              "p_win": 0.6222,
-              "implied_odds": 1.61
-            },
-            {
-              "sport": "laliga",
-              "match": "CA Osasuna vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3085,
-              "implied_odds": 3.24
+              "match": "RCD Espanyol de Barcelona vs Athletic Club",
+              "pick": "Athletic Club",
+              "p_win": 0.2815,
+              "implied_odds": 3.55
             }
           ],
-          "total_odds": 6.94,
-          "combined_prob": 0.1442,
-          "n_legs": 3
+          "total_odds": 9.69,
+          "combined_prob": 0.1031,
+          "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Betis Balompié vs Elche CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7515,
-              "implied_odds": 1.33
+              "sport": "ligue1",
+              "match": "Racing Club de Lens vs Paris Saint-Germain FC",
+              "pick": "Racing Club de Lens",
+              "p_win": 0.4874,
+              "implied_odds": 2.05
+            },
+            {
+              "sport": "ligue1",
+              "match": "Stade Brestois 29 vs RC Strasbourg Alsace",
+              "pick": "Stade Brestois 29",
+              "p_win": 0.3663,
+              "implied_odds": 2.73
             },
             {
               "sport": "laliga",
-              "match": "RC Celta de Vigo vs Levante UD",
-              "pick": "RC Celta de Vigo",
-              "p_win": 0.6222,
-              "implied_odds": 1.61
-            },
-            {
-              "sport": "laliga",
-              "match": "CA Osasuna vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.3085,
-              "implied_odds": 3.24
+              "match": "RCD Espanyol de Barcelona vs Athletic Club",
+              "pick": "Athletic Club",
+              "p_win": 0.2815,
+              "implied_odds": 3.55
             }
           ],
-          "total_odds": 6.94,
-          "combined_prob": 0.1442,
+          "total_odds": 19.87,
+          "combined_prob": 0.0503,
           "n_legs": 3
         }
       }
@@ -358,148 +633,169 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RC Celta de Vigo vs Levante UD",
-            "pick": "RC Celta de Vigo",
-            "p_win": 0.6222,
-            "implied_odds": 1.61
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Los Angeles Angels",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5935,
+            "implied_odds": 1.69
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs New York Yankees",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5972,
-            "implied_odds": 1.67
+            "match": "Toronto Blue Jays vs Tampa Bay Rays",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5927,
+            "implied_odds": 1.69
           }
         ],
-        "total_odds": 2.69,
-        "combined_prob": 0.3716,
+        "total_odds": 2.86,
+        "combined_prob": 0.3518,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "Real Betis Balompié vs Elche CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7515,
-            "implied_odds": 1.33
+            "match": "Villarreal CF vs Sevilla FC",
+            "pick": "Villarreal CF",
+            "p_win": 0.8051,
+            "implied_odds": 1.24
           },
           {
             "sport": "laliga",
-            "match": "CA Osasuna vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3085,
-            "implied_odds": 3.24
+            "match": "Deportivo Alavés vs FC Barcelona",
+            "pick": "FC Barcelona",
+            "p_win": 0.6241,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "ligue1",
+            "match": "Racing Club de Lens vs Paris Saint-Germain FC",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.4874,
+            "implied_odds": 2.05
           }
         ],
-        "total_odds": 4.31,
-        "combined_prob": 0.2318,
-        "n_legs": 2
+        "total_odds": 4.07,
+        "combined_prob": 0.2449,
+        "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "RC Celta de Vigo vs Levante UD",
-            "pick": "RC Celta de Vigo",
-            "p_win": 0.6222,
-            "implied_odds": 1.61
+            "match": "Villarreal CF vs Sevilla FC",
+            "pick": "Villarreal CF",
+            "p_win": 0.8051,
+            "implied_odds": 1.24
+          },
+          {
+            "sport": "epl",
+            "match": "Manchester City FC vs Crystal Palace FC",
+            "pick": "Manchester City FC",
+            "p_win": 0.7959,
+            "implied_odds": 1.26
           },
           {
             "sport": "laliga",
-            "match": "CA Osasuna vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3085,
-            "implied_odds": 3.24
+            "match": "Deportivo Alavés vs FC Barcelona",
+            "pick": "FC Barcelona",
+            "p_win": 0.6241,
+            "implied_odds": 1.6
+          },
+          {
+            "sport": "ligue1",
+            "match": "Racing Club de Lens vs Paris Saint-Germain FC",
+            "pick": "Racing Club de Lens",
+            "p_win": 0.4874,
+            "implied_odds": 2.05
           }
         ],
-        "total_odds": 5.22,
-        "combined_prob": 0.1919,
-        "n_legs": 2
+        "total_odds": 5.12,
+        "combined_prob": 0.1949,
+        "n_legs": 4
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs New York Yankees",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5972,
-            "implied_odds": 1.67
+            "match": "Cleveland Guardians vs Los Angeles Angels",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5935,
+            "implied_odds": 1.69
           },
           {
             "sport": "laliga",
-            "match": "CA Osasuna vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3085,
-            "implied_odds": 3.24
+            "match": "RCD Espanyol de Barcelona vs Athletic Club",
+            "pick": "Athletic Club",
+            "p_win": 0.2815,
+            "implied_odds": 3.55
           }
         ],
-        "total_odds": 5.41,
-        "combined_prob": 0.1842,
+        "total_odds": 6.0,
+        "combined_prob": 0.1671,
         "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "RC Celta de Vigo vs Levante UD",
-            "pick": "RC Celta de Vigo",
-            "p_win": 0.6222,
-            "implied_odds": 1.61
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Los Angeles Angels",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5935,
+            "implied_odds": 1.69
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs New York Yankees",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5972,
-            "implied_odds": 1.67
+            "match": "Toronto Blue Jays vs Tampa Bay Rays",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5927,
+            "implied_odds": 1.69
           },
           {
             "sport": "laliga",
-            "match": "CA Osasuna vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3085,
-            "implied_odds": 3.24
+            "match": "RCD Espanyol de Barcelona vs Athletic Club",
+            "pick": "Athletic Club",
+            "p_win": 0.2815,
+            "implied_odds": 3.55
           }
         ],
-        "total_odds": 8.71,
-        "combined_prob": 0.1146,
+        "total_odds": 10.14,
+        "combined_prob": 0.099,
         "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Betis Balompié vs Elche CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7515,
-            "implied_odds": 1.33
-          },
-          {
-            "sport": "laliga",
-            "match": "RC Celta de Vigo vs Levante UD",
-            "pick": "RC Celta de Vigo",
-            "p_win": 0.6222,
-            "implied_odds": 1.61
+            "sport": "epl",
+            "match": "Manchester City FC vs Crystal Palace FC",
+            "pick": "Manchester City FC",
+            "p_win": 0.7959,
+            "implied_odds": 1.26
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs New York Yankees",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5972,
-            "implied_odds": 1.67
+            "match": "Cleveland Guardians vs Los Angeles Angels",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5935,
+            "implied_odds": 1.69
           },
           {
             "sport": "laliga",
-            "match": "CA Osasuna vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.3085,
-            "implied_odds": 3.24
+            "match": "Getafe CF vs RCD Mallorca",
+            "pick": "Getafe CF",
+            "p_win": 0.378,
+            "implied_odds": 2.65
+          },
+          {
+            "sport": "laliga",
+            "match": "RCD Espanyol de Barcelona vs Athletic Club",
+            "pick": "Athletic Club",
+            "p_win": 0.2815,
+            "implied_odds": 3.55
           }
         ],
-        "total_odds": 11.59,
-        "combined_prob": 0.0861,
+        "total_odds": 20.03,
+        "combined_prob": 0.0503,
         "n_legs": 4
       }
     }
