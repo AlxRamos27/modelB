@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-14T10:15:24Z",
-  "date": "2026-05-14",
+  "generated_at": "2026-05-15T10:23:48Z",
+  "date": "2026-05-15",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,8 +9,62 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [],
-      "name": "NBA"
+      "picks": [
+        {
+          "home_team": "Cleveland Cavaliers",
+          "away_team": "Detroit Pistons",
+          "pick": "H",
+          "pick_label": "Cleveland Cavaliers",
+          "p_win": 0.629,
+          "implied_odds": 1.59,
+          "signal": "media",
+          "date": "2026-05-15",
+          "model_spread": 7.7,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 210.5,
+          "ou_line": 210.5,
+          "ou_pick": "under",
+          "pts_home_scored": 112.0,
+          "pts_home_allowed": 111.3,
+          "pts_away_scored": 113.3,
+          "pts_away_allowed": 110.7,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 63%. Cavaliers 4-3 vs Pistons 5-2. Sin bajas importantes. O/U en 210.5 pts — Under es la jugada (ritmo lento). ML Cavaliers con cautela (modelo 63%)."
+        },
+        {
+          "home_team": "Minnesota Timberwolves",
+          "away_team": "San Antonio Spurs",
+          "pick": "H",
+          "pick_label": "Minnesota Timberwolves",
+          "p_win": 0.6068,
+          "implied_odds": 1.65,
+          "signal": "media",
+          "date": "2026-05-15",
+          "model_spread": 6.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 218.5,
+          "ou_line": 218.5,
+          "ou_pick": "under",
+          "pts_home_scored": 114.3,
+          "pts_home_allowed": 117.7,
+          "pts_away_scored": 121.0,
+          "pts_away_allowed": 112.7,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 61%. Timberwolves 4-3 vs Spurs 5-1. Sin bajas importantes. O/U en 218.5 pts — Under es la jugada (ritmo lento). ML Timberwolves con cautela (modelo 61%)."
+        }
+      ],
+      "name": "NBA",
+      "analysis": ""
     },
     "nhl": {
       "status": "ok",
@@ -25,12 +79,66 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4884,
-        "logloss": 0.6953,
-        "brier": 0.251
+        "accuracy": 0.4809,
+        "logloss": 0.7093,
+        "brier": 0.2579
       },
-      "picks": [],
-      "name": "MLB"
+      "picks": [
+        {
+          "home_team": "Atlanta Braves",
+          "away_team": "Boston Red Sox",
+          "pick": "H",
+          "pick_label": "Atlanta Braves",
+          "p_win": 0.6316,
+          "implied_odds": 1.58,
+          "signal": "media",
+          "date": "2026-05-15",
+          "model_spread": 1.0,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 63%. Braves 30-14 vs Sox 22-21. Sin bajas importantes. ML Braves con cautela (modelo 63%)."
+        },
+        {
+          "home_team": "Tampa Bay Rays",
+          "away_team": "Miami Marlins",
+          "pick": "H",
+          "pick_label": "Tampa Bay Rays",
+          "p_win": 0.6206,
+          "implied_odds": 1.61,
+          "signal": "media",
+          "date": "2026-05-15",
+          "model_spread": 0.9,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 62%. Rays 28-14 vs Marlins 20-24. Sin bajas importantes. ML Rays con cautela (modelo 62%)."
+        }
+      ],
+      "name": "MLB",
+      "analysis": ""
     },
     "epl": {
       "status": "ok",
@@ -39,98 +147,46 @@
         "logloss": 1.029,
         "brier": 0.207
       },
-      "picks": [],
-      "name": "Premier League"
+      "picks": [
+        {
+          "home_team": "Aston Villa FC",
+          "away_team": "Liverpool FC",
+          "pick": "H",
+          "pick_label": "Aston Villa FC",
+          "p_win": 0.4075,
+          "implied_odds": 2.45,
+          "signal": "baja",
+          "date": "2026-05-15",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 41%. Sin bajas importantes. SKIP — sin edge claro (41%)."
+        }
+      ],
+      "name": "Premier League",
+      "analysis": ""
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4444,
-        "logloss": 1.0808,
-        "brier": 0.2179
+        "accuracy": 0.4306,
+        "logloss": 1.0876,
+        "brier": 0.2196
       },
-      "picks": [
-        {
-          "home_team": "Real Madrid CF",
-          "away_team": "Real Oviedo",
-          "pick": "H",
-          "pick_label": "Real Madrid CF",
-          "p_win": 0.7601,
-          "implied_odds": 1.32,
-          "signal": "alta",
-          "date": "2026-05-14",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 76%. Sin bajas importantes. ML CF es la jugada segura (modelo 76%)."
-        },
-        {
-          "home_team": "Valencia CF",
-          "away_team": "Rayo Vallecano de Madrid",
-          "pick": "H",
-          "pick_label": "Valencia CF",
-          "p_win": 0.4937,
-          "implied_odds": 2.03,
-          "signal": "baja",
-          "date": "2026-05-14",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
-        },
-        {
-          "home_team": "Girona FC",
-          "away_team": "Real Sociedad de Fútbol",
-          "pick": "H",
-          "pick_label": "Girona FC",
-          "p_win": 0.3723,
-          "implied_odds": 2.69,
-          "signal": "baja",
-          "date": "2026-05-14",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 37%. Sin bajas importantes. SKIP — sin edge claro (37%)."
-        }
-      ],
-      "name": "La Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -175,289 +231,446 @@
   },
   "parlays": {
     "by_sport": {
-      "soccer": {
+      "nba": {
         "cuota_3": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Real Oviedo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7601,
-              "implied_odds": 1.32
+              "sport": "nba",
+              "match": "Cleveland Cavaliers vs Detroit Pistons",
+              "pick": "Cleveland Cavaliers",
+              "p_win": 0.629,
+              "implied_odds": 1.59
             },
             {
-              "sport": "laliga",
-              "match": "Valencia CF vs Rayo Vallecano de Madrid",
-              "pick": "Valencia CF",
-              "p_win": 0.4937,
-              "implied_odds": 2.03
+              "sport": "nba",
+              "match": "Minnesota Timberwolves vs San Antonio Spurs",
+              "pick": "Minnesota Timberwolves",
+              "p_win": 0.6068,
+              "implied_odds": 1.65
             }
           ],
-          "total_odds": 2.68,
-          "combined_prob": 0.3753,
+          "total_odds": 2.62,
+          "combined_prob": 0.3817,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Real Oviedo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7601,
-              "implied_odds": 1.32
+              "sport": "nba",
+              "match": "Cleveland Cavaliers vs Detroit Pistons",
+              "pick": "Cleveland Cavaliers",
+              "p_win": 0.629,
+              "implied_odds": 1.59
             },
             {
-              "sport": "laliga",
-              "match": "Girona FC vs Real Sociedad de Fútbol",
-              "pick": "Girona FC",
-              "p_win": 0.3723,
-              "implied_odds": 2.69
+              "sport": "nba",
+              "match": "Minnesota Timberwolves vs San Antonio Spurs",
+              "pick": "Minnesota Timberwolves",
+              "p_win": 0.6068,
+              "implied_odds": 1.65
             }
           ],
-          "total_odds": 3.55,
-          "combined_prob": 0.283,
+          "total_odds": 2.62,
+          "combined_prob": 0.3817,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Valencia CF vs Rayo Vallecano de Madrid",
-              "pick": "Valencia CF",
-              "p_win": 0.4937,
-              "implied_odds": 2.03
+              "sport": "nba",
+              "match": "Cleveland Cavaliers vs Detroit Pistons",
+              "pick": "Cleveland Cavaliers",
+              "p_win": 0.629,
+              "implied_odds": 1.59
             },
             {
-              "sport": "laliga",
-              "match": "Girona FC vs Real Sociedad de Fútbol",
-              "pick": "Girona FC",
-              "p_win": 0.3723,
-              "implied_odds": 2.69
+              "sport": "nba",
+              "match": "Minnesota Timberwolves vs San Antonio Spurs",
+              "pick": "Minnesota Timberwolves",
+              "p_win": 0.6068,
+              "implied_odds": 1.65
             }
           ],
-          "total_odds": 5.46,
-          "combined_prob": 0.1838,
+          "total_odds": 2.62,
+          "combined_prob": 0.3817,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Valencia CF vs Rayo Vallecano de Madrid",
-              "pick": "Valencia CF",
-              "p_win": 0.4937,
-              "implied_odds": 2.03
+              "sport": "nba",
+              "match": "Cleveland Cavaliers vs Detroit Pistons",
+              "pick": "Cleveland Cavaliers",
+              "p_win": 0.629,
+              "implied_odds": 1.59
             },
             {
-              "sport": "laliga",
-              "match": "Girona FC vs Real Sociedad de Fútbol",
-              "pick": "Girona FC",
-              "p_win": 0.3723,
-              "implied_odds": 2.69
+              "sport": "nba",
+              "match": "Minnesota Timberwolves vs San Antonio Spurs",
+              "pick": "Minnesota Timberwolves",
+              "p_win": 0.6068,
+              "implied_odds": 1.65
             }
           ],
-          "total_odds": 5.46,
-          "combined_prob": 0.1838,
+          "total_odds": 2.62,
+          "combined_prob": 0.3817,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Real Oviedo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7601,
-              "implied_odds": 1.32
+              "sport": "nba",
+              "match": "Cleveland Cavaliers vs Detroit Pistons",
+              "pick": "Cleveland Cavaliers",
+              "p_win": 0.629,
+              "implied_odds": 1.59
             },
             {
-              "sport": "laliga",
-              "match": "Valencia CF vs Rayo Vallecano de Madrid",
-              "pick": "Valencia CF",
-              "p_win": 0.4937,
-              "implied_odds": 2.03
-            },
-            {
-              "sport": "laliga",
-              "match": "Girona FC vs Real Sociedad de Fútbol",
-              "pick": "Girona FC",
-              "p_win": 0.3723,
-              "implied_odds": 2.69
+              "sport": "nba",
+              "match": "Minnesota Timberwolves vs San Antonio Spurs",
+              "pick": "Minnesota Timberwolves",
+              "p_win": 0.6068,
+              "implied_odds": 1.65
             }
           ],
-          "total_odds": 7.21,
-          "combined_prob": 0.1397,
-          "n_legs": 3
+          "total_odds": 2.62,
+          "combined_prob": 0.3817,
+          "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Madrid CF vs Real Oviedo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.7601,
-              "implied_odds": 1.32
+              "sport": "nba",
+              "match": "Cleveland Cavaliers vs Detroit Pistons",
+              "pick": "Cleveland Cavaliers",
+              "p_win": 0.629,
+              "implied_odds": 1.59
             },
             {
-              "sport": "laliga",
-              "match": "Valencia CF vs Rayo Vallecano de Madrid",
-              "pick": "Valencia CF",
-              "p_win": 0.4937,
-              "implied_odds": 2.03
-            },
-            {
-              "sport": "laliga",
-              "match": "Girona FC vs Real Sociedad de Fútbol",
-              "pick": "Girona FC",
-              "p_win": 0.3723,
-              "implied_odds": 2.69
+              "sport": "nba",
+              "match": "Minnesota Timberwolves vs San Antonio Spurs",
+              "pick": "Minnesota Timberwolves",
+              "p_win": 0.6068,
+              "implied_odds": 1.65
             }
           ],
-          "total_odds": 7.21,
-          "combined_prob": 0.1397,
-          "n_legs": 3
+          "total_odds": 2.62,
+          "combined_prob": 0.3817,
+          "n_legs": 2
         }
+      },
+      "mlb": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Boston Red Sox",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6316,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Miami Marlins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6206,
+              "implied_odds": 1.61
+            }
+          ],
+          "total_odds": 2.54,
+          "combined_prob": 0.392,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Boston Red Sox",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6316,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Miami Marlins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6206,
+              "implied_odds": 1.61
+            }
+          ],
+          "total_odds": 2.54,
+          "combined_prob": 0.392,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Boston Red Sox",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6316,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Miami Marlins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6206,
+              "implied_odds": 1.61
+            }
+          ],
+          "total_odds": 2.54,
+          "combined_prob": 0.392,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Boston Red Sox",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6316,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Miami Marlins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6206,
+              "implied_odds": 1.61
+            }
+          ],
+          "total_odds": 2.54,
+          "combined_prob": 0.392,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Boston Red Sox",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6316,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Miami Marlins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6206,
+              "implied_odds": 1.61
+            }
+          ],
+          "total_odds": 2.54,
+          "combined_prob": 0.392,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Boston Red Sox",
+              "pick": "Atlanta Braves",
+              "p_win": 0.6316,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Miami Marlins",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.6206,
+              "implied_odds": 1.61
+            }
+          ],
+          "total_odds": 2.54,
+          "combined_prob": 0.392,
+          "n_legs": 2
+        }
+      },
+      "soccer": {
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
       "cuota_3": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Real Oviedo",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7601,
-            "implied_odds": 1.32
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Miami Marlins",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.6206,
+            "implied_odds": 1.61
           },
           {
-            "sport": "laliga",
-            "match": "Valencia CF vs Rayo Vallecano de Madrid",
-            "pick": "Valencia CF",
-            "p_win": 0.4937,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Minnesota Timberwolves vs San Antonio Spurs",
+            "pick": "Minnesota Timberwolves",
+            "p_win": 0.6068,
+            "implied_odds": 1.65
           }
         ],
-        "total_odds": 2.68,
-        "combined_prob": 0.3753,
+        "total_odds": 2.66,
+        "combined_prob": 0.3766,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Real Oviedo",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7601,
-            "implied_odds": 1.32
+            "sport": "nba",
+            "match": "Minnesota Timberwolves vs San Antonio Spurs",
+            "pick": "Minnesota Timberwolves",
+            "p_win": 0.6068,
+            "implied_odds": 1.65
           },
           {
-            "sport": "laliga",
-            "match": "Girona FC vs Real Sociedad de Fútbol",
-            "pick": "Girona FC",
-            "p_win": 0.3723,
-            "implied_odds": 2.69
+            "sport": "epl",
+            "match": "Aston Villa FC vs Liverpool FC",
+            "pick": "Aston Villa FC",
+            "p_win": 0.4075,
+            "implied_odds": 2.45
           }
         ],
-        "total_odds": 3.55,
-        "combined_prob": 0.283,
+        "total_odds": 4.04,
+        "combined_prob": 0.2473,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Valencia CF vs Rayo Vallecano de Madrid",
-            "pick": "Valencia CF",
-            "p_win": 0.4937,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Cleveland Cavaliers vs Detroit Pistons",
+            "pick": "Cleveland Cavaliers",
+            "p_win": 0.629,
+            "implied_odds": 1.59
           },
           {
-            "sport": "laliga",
-            "match": "Girona FC vs Real Sociedad de Fútbol",
-            "pick": "Girona FC",
-            "p_win": 0.3723,
-            "implied_odds": 2.69
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Miami Marlins",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.6206,
+            "implied_odds": 1.61
+          },
+          {
+            "sport": "nba",
+            "match": "Minnesota Timberwolves vs San Antonio Spurs",
+            "pick": "Minnesota Timberwolves",
+            "p_win": 0.6068,
+            "implied_odds": 1.65
           }
         ],
-        "total_odds": 5.46,
-        "combined_prob": 0.1838,
-        "n_legs": 2
+        "total_odds": 4.22,
+        "combined_prob": 0.2369,
+        "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Valencia CF vs Rayo Vallecano de Madrid",
-            "pick": "Valencia CF",
-            "p_win": 0.4937,
-            "implied_odds": 2.03
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Boston Red Sox",
+            "pick": "Atlanta Braves",
+            "p_win": 0.6316,
+            "implied_odds": 1.58
           },
           {
-            "sport": "laliga",
-            "match": "Girona FC vs Real Sociedad de Fútbol",
-            "pick": "Girona FC",
-            "p_win": 0.3723,
-            "implied_odds": 2.69
+            "sport": "nba",
+            "match": "Cleveland Cavaliers vs Detroit Pistons",
+            "pick": "Cleveland Cavaliers",
+            "p_win": 0.629,
+            "implied_odds": 1.59
+          },
+          {
+            "sport": "epl",
+            "match": "Aston Villa FC vs Liverpool FC",
+            "pick": "Aston Villa FC",
+            "p_win": 0.4075,
+            "implied_odds": 2.45
           }
         ],
-        "total_odds": 5.46,
-        "combined_prob": 0.1838,
-        "n_legs": 2
+        "total_odds": 6.15,
+        "combined_prob": 0.1619,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Real Oviedo",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7601,
-            "implied_odds": 1.32
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Boston Red Sox",
+            "pick": "Atlanta Braves",
+            "p_win": 0.6316,
+            "implied_odds": 1.58
           },
           {
-            "sport": "laliga",
-            "match": "Valencia CF vs Rayo Vallecano de Madrid",
-            "pick": "Valencia CF",
-            "p_win": 0.4937,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Cleveland Cavaliers vs Detroit Pistons",
+            "pick": "Cleveland Cavaliers",
+            "p_win": 0.629,
+            "implied_odds": 1.59
           },
           {
-            "sport": "laliga",
-            "match": "Girona FC vs Real Sociedad de Fútbol",
-            "pick": "Girona FC",
-            "p_win": 0.3723,
-            "implied_odds": 2.69
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Miami Marlins",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.6206,
+            "implied_odds": 1.61
+          },
+          {
+            "sport": "epl",
+            "match": "Aston Villa FC vs Liverpool FC",
+            "pick": "Aston Villa FC",
+            "p_win": 0.4075,
+            "implied_odds": 2.45
           }
         ],
-        "total_odds": 7.21,
-        "combined_prob": 0.1397,
-        "n_legs": 3
+        "total_odds": 9.91,
+        "combined_prob": 0.1005,
+        "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Madrid CF vs Real Oviedo",
-            "pick": "Real Madrid CF",
-            "p_win": 0.7601,
-            "implied_odds": 1.32
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Boston Red Sox",
+            "pick": "Atlanta Braves",
+            "p_win": 0.6316,
+            "implied_odds": 1.58
           },
           {
-            "sport": "laliga",
-            "match": "Valencia CF vs Rayo Vallecano de Madrid",
-            "pick": "Valencia CF",
-            "p_win": 0.4937,
-            "implied_odds": 2.03
+            "sport": "nba",
+            "match": "Cleveland Cavaliers vs Detroit Pistons",
+            "pick": "Cleveland Cavaliers",
+            "p_win": 0.629,
+            "implied_odds": 1.59
           },
           {
-            "sport": "laliga",
-            "match": "Girona FC vs Real Sociedad de Fútbol",
-            "pick": "Girona FC",
-            "p_win": 0.3723,
-            "implied_odds": 2.69
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Miami Marlins",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.6206,
+            "implied_odds": 1.61
+          },
+          {
+            "sport": "nba",
+            "match": "Minnesota Timberwolves vs San Antonio Spurs",
+            "pick": "Minnesota Timberwolves",
+            "p_win": 0.6068,
+            "implied_odds": 1.65
+          },
+          {
+            "sport": "epl",
+            "match": "Aston Villa FC vs Liverpool FC",
+            "pick": "Aston Villa FC",
+            "p_win": 0.4075,
+            "implied_odds": 2.45
           }
         ],
-        "total_odds": 7.21,
-        "combined_prob": 0.1397,
-        "n_legs": 3
+        "total_odds": 16.35,
+        "combined_prob": 0.061,
+        "n_legs": 5
       }
     }
   }
