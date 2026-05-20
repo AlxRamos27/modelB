@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-19T11:18:31Z",
-  "date": "2026-05-19",
+  "generated_at": "2026-05-20T10:50:21Z",
+  "date": "2026-05-20",
   "sports": {
     "nba": {
       "status": "ok",
@@ -19,15 +19,43 @@
         "logloss": 0.6923,
         "brier": 0.2496
       },
-      "picks": [],
-      "name": "NHL"
+      "picks": [
+        {
+          "home_team": "Colorado Avalanche",
+          "away_team": "Vegas Golden Knights",
+          "pick": "H",
+          "pick_label": "Colorado Avalanche",
+          "p_win": 0.5205,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-05-20",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
+        }
+      ],
+      "name": "NHL",
+      "analysis": ""
     },
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5175,
-        "logloss": 0.6938,
-        "brier": 0.2503
+        "accuracy": 0.5342,
+        "logloss": 0.6908,
+        "brier": 0.2488
       },
       "picks": [
         {
@@ -35,11 +63,11 @@
           "away_team": "Baltimore Orioles",
           "pick": "H",
           "pick_label": "Tampa Bay Rays",
-          "p_win": 0.6138,
-          "implied_odds": 1.63,
+          "p_win": 0.6235,
+          "implied_odds": 1.6,
           "signal": "media",
-          "date": "2026-05-19",
-          "model_spread": 0.8,
+          "date": "2026-05-20",
+          "model_spread": 0.9,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +82,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Rays 31-15 vs Orioles 21-27. Sin bajas importantes. ML Rays con cautela (modelo 61%)."
+          "note": "⚠️ Modelo 62%. Rays 32-15 vs Orioles 21-28. Sin bajas importantes. ML Rays con cautela (modelo 62%)."
         }
       ],
       "name": "MLB",
@@ -63,66 +91,12 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5,
-        "logloss": 1.0366,
-        "brier": 0.2089
+        "accuracy": 0.5405,
+        "logloss": 1.0305,
+        "brier": 0.2073
       },
-      "picks": [
-        {
-          "home_team": "Chelsea FC",
-          "away_team": "Tottenham Hotspur FC",
-          "pick": "H",
-          "pick_label": "Chelsea FC",
-          "p_win": 0.4752,
-          "implied_odds": 2.1,
-          "signal": "baja",
-          "date": "2026-05-19",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 48%. Sin bajas importantes. SKIP — sin edge claro (48%)."
-        },
-        {
-          "home_team": "AFC Bournemouth",
-          "away_team": "Manchester City FC",
-          "pick": "A",
-          "pick_label": "Manchester City FC",
-          "p_win": 0.3141,
-          "implied_odds": 3.18,
-          "signal": "baja",
-          "date": "2026-05-19",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 31%. Sin bajas importantes. SKIP — sin edge claro (31%)."
-        }
-      ],
-      "name": "Premier League",
-      "analysis": ""
+      "picks": [],
+      "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
@@ -177,7 +151,7 @@
   },
   "parlays": {
     "by_sport": {
-      "mlb": {
+      "nhl": {
         "cuota_3": null,
         "cuota_4": null,
         "cuota_5": null,
@@ -185,133 +159,13 @@
         "cuota_10": null,
         "cuota_20": null
       },
-      "soccer": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Chelsea FC vs Tottenham Hotspur FC",
-              "pick": "Chelsea FC",
-              "p_win": 0.4752,
-              "implied_odds": 2.1
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.3141,
-              "implied_odds": 3.18
-            }
-          ],
-          "total_odds": 6.68,
-          "combined_prob": 0.1493,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Chelsea FC vs Tottenham Hotspur FC",
-              "pick": "Chelsea FC",
-              "p_win": 0.4752,
-              "implied_odds": 2.1
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.3141,
-              "implied_odds": 3.18
-            }
-          ],
-          "total_odds": 6.68,
-          "combined_prob": 0.1493,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Chelsea FC vs Tottenham Hotspur FC",
-              "pick": "Chelsea FC",
-              "p_win": 0.4752,
-              "implied_odds": 2.1
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.3141,
-              "implied_odds": 3.18
-            }
-          ],
-          "total_odds": 6.68,
-          "combined_prob": 0.1493,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Chelsea FC vs Tottenham Hotspur FC",
-              "pick": "Chelsea FC",
-              "p_win": 0.4752,
-              "implied_odds": 2.1
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.3141,
-              "implied_odds": 3.18
-            }
-          ],
-          "total_odds": 6.68,
-          "combined_prob": 0.1493,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Chelsea FC vs Tottenham Hotspur FC",
-              "pick": "Chelsea FC",
-              "p_win": 0.4752,
-              "implied_odds": 2.1
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.3141,
-              "implied_odds": 3.18
-            }
-          ],
-          "total_odds": 6.68,
-          "combined_prob": 0.1493,
-          "n_legs": 2
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Chelsea FC vs Tottenham Hotspur FC",
-              "pick": "Chelsea FC",
-              "p_win": 0.4752,
-              "implied_odds": 2.1
-            },
-            {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Manchester City FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.3141,
-              "implied_odds": 3.18
-            }
-          ],
-          "total_odds": 6.68,
-          "combined_prob": 0.1493,
-          "n_legs": 2
-        }
+      "mlb": {
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
@@ -321,19 +175,19 @@
             "sport": "mlb",
             "match": "Tampa Bay Rays vs Baltimore Orioles",
             "pick": "Tampa Bay Rays",
-            "p_win": 0.6138,
-            "implied_odds": 1.63
+            "p_win": 0.6235,
+            "implied_odds": 1.6
           },
           {
-            "sport": "epl",
-            "match": "Chelsea FC vs Tottenham Hotspur FC",
-            "pick": "Chelsea FC",
-            "p_win": 0.4752,
-            "implied_odds": 2.1
+            "sport": "nhl",
+            "match": "Colorado Avalanche vs Vegas Golden Knights",
+            "pick": "Colorado Avalanche",
+            "p_win": 0.5205,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 3.42,
-        "combined_prob": 0.2917,
+        "total_odds": 3.07,
+        "combined_prob": 0.3245,
         "n_legs": 2
       },
       "cuota_4": {
@@ -342,19 +196,19 @@
             "sport": "mlb",
             "match": "Tampa Bay Rays vs Baltimore Orioles",
             "pick": "Tampa Bay Rays",
-            "p_win": 0.6138,
-            "implied_odds": 1.63
+            "p_win": 0.6235,
+            "implied_odds": 1.6
           },
           {
-            "sport": "epl",
-            "match": "Chelsea FC vs Tottenham Hotspur FC",
-            "pick": "Chelsea FC",
-            "p_win": 0.4752,
-            "implied_odds": 2.1
+            "sport": "nhl",
+            "match": "Colorado Avalanche vs Vegas Golden Knights",
+            "pick": "Colorado Avalanche",
+            "p_win": 0.5205,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 3.42,
-        "combined_prob": 0.2917,
+        "total_odds": 3.07,
+        "combined_prob": 0.3245,
         "n_legs": 2
       },
       "cuota_5": {
@@ -363,40 +217,40 @@
             "sport": "mlb",
             "match": "Tampa Bay Rays vs Baltimore Orioles",
             "pick": "Tampa Bay Rays",
-            "p_win": 0.6138,
-            "implied_odds": 1.63
+            "p_win": 0.6235,
+            "implied_odds": 1.6
           },
           {
-            "sport": "epl",
-            "match": "AFC Bournemouth vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.3141,
-            "implied_odds": 3.18
+            "sport": "nhl",
+            "match": "Colorado Avalanche vs Vegas Golden Knights",
+            "pick": "Colorado Avalanche",
+            "p_win": 0.5205,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 5.18,
-        "combined_prob": 0.1928,
+        "total_odds": 3.07,
+        "combined_prob": 0.3245,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Chelsea FC vs Tottenham Hotspur FC",
-            "pick": "Chelsea FC",
-            "p_win": 0.4752,
-            "implied_odds": 2.1
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Baltimore Orioles",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.6235,
+            "implied_odds": 1.6
           },
           {
-            "sport": "epl",
-            "match": "AFC Bournemouth vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.3141,
-            "implied_odds": 3.18
+            "sport": "nhl",
+            "match": "Colorado Avalanche vs Vegas Golden Knights",
+            "pick": "Colorado Avalanche",
+            "p_win": 0.5205,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 6.68,
-        "combined_prob": 0.1493,
+        "total_odds": 3.07,
+        "combined_prob": 0.3245,
         "n_legs": 2
       },
       "cuota_10": {
@@ -405,27 +259,20 @@
             "sport": "mlb",
             "match": "Tampa Bay Rays vs Baltimore Orioles",
             "pick": "Tampa Bay Rays",
-            "p_win": 0.6138,
-            "implied_odds": 1.63
+            "p_win": 0.6235,
+            "implied_odds": 1.6
           },
           {
-            "sport": "epl",
-            "match": "Chelsea FC vs Tottenham Hotspur FC",
-            "pick": "Chelsea FC",
-            "p_win": 0.4752,
-            "implied_odds": 2.1
-          },
-          {
-            "sport": "epl",
-            "match": "AFC Bournemouth vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.3141,
-            "implied_odds": 3.18
+            "sport": "nhl",
+            "match": "Colorado Avalanche vs Vegas Golden Knights",
+            "pick": "Colorado Avalanche",
+            "p_win": 0.5205,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 10.89,
-        "combined_prob": 0.0916,
-        "n_legs": 3
+        "total_odds": 3.07,
+        "combined_prob": 0.3245,
+        "n_legs": 2
       },
       "cuota_20": {
         "legs": [
@@ -433,27 +280,20 @@
             "sport": "mlb",
             "match": "Tampa Bay Rays vs Baltimore Orioles",
             "pick": "Tampa Bay Rays",
-            "p_win": 0.6138,
-            "implied_odds": 1.63
+            "p_win": 0.6235,
+            "implied_odds": 1.6
           },
           {
-            "sport": "epl",
-            "match": "Chelsea FC vs Tottenham Hotspur FC",
-            "pick": "Chelsea FC",
-            "p_win": 0.4752,
-            "implied_odds": 2.1
-          },
-          {
-            "sport": "epl",
-            "match": "AFC Bournemouth vs Manchester City FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.3141,
-            "implied_odds": 3.18
+            "sport": "nhl",
+            "match": "Colorado Avalanche vs Vegas Golden Knights",
+            "pick": "Colorado Avalanche",
+            "p_win": 0.5205,
+            "implied_odds": 1.92
           }
         ],
-        "total_odds": 10.89,
-        "combined_prob": 0.0916,
-        "n_legs": 3
+        "total_odds": 3.07,
+        "combined_prob": 0.3245,
+        "n_legs": 2
       }
     }
   }
