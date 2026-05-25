@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-24T09:54:36Z",
-  "date": "2026-05-24",
+  "generated_at": "2026-05-25T11:53:20Z",
+  "date": "2026-05-25",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5256,
-        "logloss": 0.6904,
-        "brier": 0.2486
+        "accuracy": 0.522,
+        "logloss": 0.6919,
+        "brier": 0.2494
       },
       "picks": [
         {
-          "home_team": "Baltimore Orioles",
-          "away_team": "Detroit Tigers",
+          "home_team": "Pittsburgh Pirates",
+          "away_team": "Chicago Cubs",
           "pick": "H",
-          "pick_label": "Baltimore Orioles",
-          "p_win": 0.5883,
-          "implied_odds": 1.7,
+          "pick_label": "Pittsburgh Pirates",
+          "p_win": 0.5902,
+          "implied_odds": 1.69,
           "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": 0.6,
+          "date": "2026-05-25",
+          "model_spread": 0.7,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,17 +54,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Orioles 22-29 vs Tigers 20-32. Sin bajas importantes. SKIP — sin edge claro (59%)."
+          "note": "❌ Modelo 59%. Pirates 27-26 vs Cubs 29-24. Sin bajas importantes. SKIP — sin edge claro (59%)."
         },
         {
-          "home_team": "Baltimore Orioles",
-          "away_team": "Detroit Tigers",
+          "home_team": "San Diego Padres",
+          "away_team": "Philadelphia Phillies",
           "pick": "H",
-          "pick_label": "Baltimore Orioles",
-          "p_win": 0.5883,
-          "implied_odds": 1.7,
+          "pick_label": "San Diego Padres",
+          "p_win": 0.579,
+          "implied_odds": 1.73,
           "signal": "baja",
-          "date": "2026-05-24",
+          "date": "2026-05-25",
           "model_spread": 0.6,
           "house_spread": null,
           "house_odds": null,
@@ -80,7 +80,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Orioles 22-29 vs Tigers 20-32. Sin bajas importantes. SKIP — sin edge claro (59%)."
+          "note": "❌ Modelo 58%. Padres 31-21 vs Phillies 26-27. Sin bajas importantes. SKIP — sin edge claro (58%)."
         }
       ],
       "name": "MLB",
@@ -89,312 +89,22 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5405,
-        "logloss": 1.0305,
-        "brier": 0.2073
+        "accuracy": 0.4605,
+        "logloss": 1.079,
+        "brier": 0.2184
       },
-      "picks": [
-        {
-          "home_team": "Manchester City FC",
-          "away_team": "Aston Villa FC",
-          "pick": "H",
-          "pick_label": "Manchester City FC",
-          "p_win": 0.6912,
-          "implied_odds": 1.45,
-          "signal": "media",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 69%. Sin bajas importantes. ML FC con cautela (modelo 69%)."
-        },
-        {
-          "home_team": "Crystal Palace FC",
-          "away_team": "Arsenal FC",
-          "pick": "A",
-          "pick_label": "Arsenal FC",
-          "p_win": 0.6122,
-          "implied_odds": 1.63,
-          "signal": "media",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Sin bajas importantes. ML FC con cautela (modelo 61%)."
-        },
-        {
-          "home_team": "West Ham United FC",
-          "away_team": "Leeds United FC",
-          "pick": "A",
-          "pick_label": "Leeds United FC",
-          "p_win": 0.4843,
-          "implied_odds": 2.06,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 48%. Sin bajas importantes. SKIP — sin edge claro (48%)."
-        },
-        {
-          "home_team": "Liverpool FC",
-          "away_team": "Brentford FC",
-          "pick": "H",
-          "pick_label": "Liverpool FC",
-          "p_win": 0.4304,
-          "implied_odds": 2.32,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
-        },
-        {
-          "home_team": "Brighton & Hove Albion FC",
-          "away_team": "Manchester United FC",
-          "pick": "H",
-          "pick_label": "Brighton & Hove Albion FC",
-          "p_win": 0.4035,
-          "implied_odds": 2.48,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 40%. Sin bajas importantes. SKIP — sin edge claro (40%)."
-        },
-        {
-          "home_team": "Nottingham Forest FC",
-          "away_team": "AFC Bournemouth",
-          "pick": "H",
-          "pick_label": "Nottingham Forest FC",
-          "p_win": 0.3823,
-          "implied_odds": 2.62,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
-        },
-        {
-          "home_team": "Fulham FC",
-          "away_team": "Newcastle United FC",
-          "pick": "A",
-          "pick_label": "Newcastle United FC",
-          "p_win": 0.3801,
-          "implied_odds": 2.63,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
-        },
-        {
-          "home_team": "Burnley FC",
-          "away_team": "Wolverhampton Wanderers FC",
-          "pick": "A",
-          "pick_label": "Wolverhampton Wanderers FC",
-          "p_win": 0.3791,
-          "implied_odds": 2.64,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
-        },
-        {
-          "home_team": "Sunderland AFC",
-          "away_team": "Chelsea FC",
-          "pick": "H",
-          "pick_label": "Sunderland AFC",
-          "p_win": 0.3776,
-          "implied_odds": 2.65,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
-        },
-        {
-          "home_team": "Tottenham Hotspur FC",
-          "away_team": "Everton FC",
-          "pick": "A",
-          "pick_label": "Everton FC",
-          "p_win": 0.3351,
-          "implied_odds": 2.98,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 34%. Sin bajas importantes. SKIP — sin edge claro (34%)."
-        }
-      ],
-      "name": "Premier League",
-      "analysis": ""
+      "picks": [],
+      "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4605,
-        "logloss": 1.0516,
-        "brier": 0.2114
+        "accuracy": 0.4737,
+        "logloss": 1.0286,
+        "brier": 0.206
       },
-      "picks": [
-        {
-          "home_team": "Villarreal CF",
-          "away_team": "Club Atlético de Madrid",
-          "pick": "H",
-          "pick_label": "Villarreal CF",
-          "p_win": 0.5086,
-          "implied_odds": 1.97,
-          "signal": "baja",
-          "date": "2026-05-24",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 51%. Sin bajas importantes. SKIP — sin edge claro (51%)."
-        }
-      ],
-      "name": "La Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "ok",
@@ -419,9 +129,9 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5161,
-        "logloss": 1.0136,
-        "brier": 0.2012
+        "accuracy": 0.5484,
+        "logloss": 0.998,
+        "brier": 0.1974
       },
       "picks": [],
       "name": "Primeira Liga"
@@ -444,276 +154,127 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "Pittsburgh Pirates vs Chicago Cubs",
+              "pick": "Pittsburgh Pirates",
+              "p_win": 0.5902,
+              "implied_odds": 1.69
             },
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "San Diego Padres vs Philadelphia Phillies",
+              "pick": "San Diego Padres",
+              "p_win": 0.579,
+              "implied_odds": 1.73
             }
           ],
-          "total_odds": 2.89,
-          "combined_prob": 0.3461,
+          "total_odds": 2.92,
+          "combined_prob": 0.3417,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "Pittsburgh Pirates vs Chicago Cubs",
+              "pick": "Pittsburgh Pirates",
+              "p_win": 0.5902,
+              "implied_odds": 1.69
             },
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "San Diego Padres vs Philadelphia Phillies",
+              "pick": "San Diego Padres",
+              "p_win": 0.579,
+              "implied_odds": 1.73
             }
           ],
-          "total_odds": 2.89,
-          "combined_prob": 0.3461,
+          "total_odds": 2.92,
+          "combined_prob": 0.3417,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "Pittsburgh Pirates vs Chicago Cubs",
+              "pick": "Pittsburgh Pirates",
+              "p_win": 0.5902,
+              "implied_odds": 1.69
             },
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "San Diego Padres vs Philadelphia Phillies",
+              "pick": "San Diego Padres",
+              "p_win": 0.579,
+              "implied_odds": 1.73
             }
           ],
-          "total_odds": 2.89,
-          "combined_prob": 0.3461,
+          "total_odds": 2.92,
+          "combined_prob": 0.3417,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "Pittsburgh Pirates vs Chicago Cubs",
+              "pick": "Pittsburgh Pirates",
+              "p_win": 0.5902,
+              "implied_odds": 1.69
             },
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "San Diego Padres vs Philadelphia Phillies",
+              "pick": "San Diego Padres",
+              "p_win": 0.579,
+              "implied_odds": 1.73
             }
           ],
-          "total_odds": 2.89,
-          "combined_prob": 0.3461,
+          "total_odds": 2.92,
+          "combined_prob": 0.3417,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "Pittsburgh Pirates vs Chicago Cubs",
+              "pick": "Pittsburgh Pirates",
+              "p_win": 0.5902,
+              "implied_odds": 1.69
             },
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "San Diego Padres vs Philadelphia Phillies",
+              "pick": "San Diego Padres",
+              "p_win": 0.579,
+              "implied_odds": 1.73
             }
           ],
-          "total_odds": 2.89,
-          "combined_prob": 0.3461,
+          "total_odds": 2.92,
+          "combined_prob": 0.3417,
           "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "Pittsburgh Pirates vs Chicago Cubs",
+              "pick": "Pittsburgh Pirates",
+              "p_win": 0.5902,
+              "implied_odds": 1.69
             },
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Detroit Tigers",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5883,
-              "implied_odds": 1.7
+              "match": "San Diego Padres vs Philadelphia Phillies",
+              "pick": "San Diego Padres",
+              "p_win": 0.579,
+              "implied_odds": 1.73
             }
           ],
-          "total_odds": 2.89,
-          "combined_prob": 0.3461,
+          "total_odds": 2.92,
+          "combined_prob": 0.3417,
           "n_legs": 2
-        }
-      },
-      "soccer": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Manchester City FC vs Aston Villa FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.6912,
-              "implied_odds": 1.45
-            },
-            {
-              "sport": "epl",
-              "match": "West Ham United FC vs Leeds United FC",
-              "pick": "Leeds United FC",
-              "p_win": 0.4843,
-              "implied_odds": 2.06
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3347,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.6122,
-              "implied_odds": 1.63
-            },
-            {
-              "sport": "epl",
-              "match": "Brighton & Hove Albion FC vs Manchester United FC",
-              "pick": "Brighton & Hove Albion FC",
-              "p_win": 0.4035,
-              "implied_odds": 2.48
-            }
-          ],
-          "total_odds": 4.04,
-          "combined_prob": 0.247,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "West Ham United FC vs Leeds United FC",
-              "pick": "Leeds United FC",
-              "p_win": 0.4843,
-              "implied_odds": 2.06
-            },
-            {
-              "sport": "epl",
-              "match": "Brighton & Hove Albion FC vs Manchester United FC",
-              "pick": "Brighton & Hove Albion FC",
-              "p_win": 0.4035,
-              "implied_odds": 2.48
-            }
-          ],
-          "total_odds": 5.11,
-          "combined_prob": 0.1954,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Liverpool FC vs Brentford FC",
-              "pick": "Liverpool FC",
-              "p_win": 0.4304,
-              "implied_odds": 2.32
-            },
-            {
-              "sport": "epl",
-              "match": "Nottingham Forest FC vs AFC Bournemouth",
-              "pick": "Nottingham Forest FC",
-              "p_win": 0.3823,
-              "implied_odds": 2.62
-            }
-          ],
-          "total_odds": 6.08,
-          "combined_prob": 0.1645,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Crystal Palace FC vs Arsenal FC",
-              "pick": "Arsenal FC",
-              "p_win": 0.6122,
-              "implied_odds": 1.63
-            },
-            {
-              "sport": "epl",
-              "match": "West Ham United FC vs Leeds United FC",
-              "pick": "Leeds United FC",
-              "p_win": 0.4843,
-              "implied_odds": 2.06
-            },
-            {
-              "sport": "epl",
-              "match": "Tottenham Hotspur FC vs Everton FC",
-              "pick": "Everton FC",
-              "p_win": 0.3351,
-              "implied_odds": 2.98
-            }
-          ],
-          "total_odds": 10.01,
-          "combined_prob": 0.0994,
-          "n_legs": 3
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "epl",
-              "match": "Manchester City FC vs Aston Villa FC",
-              "pick": "Manchester City FC",
-              "p_win": 0.6912,
-              "implied_odds": 1.45
-            },
-            {
-              "sport": "laliga",
-              "match": "Villarreal CF vs Club Atlético de Madrid",
-              "pick": "Villarreal CF",
-              "p_win": 0.5086,
-              "implied_odds": 1.97
-            },
-            {
-              "sport": "epl",
-              "match": "Burnley FC vs Wolverhampton Wanderers FC",
-              "pick": "Wolverhampton Wanderers FC",
-              "p_win": 0.3791,
-              "implied_odds": 2.64
-            },
-            {
-              "sport": "epl",
-              "match": "Sunderland AFC vs Chelsea FC",
-              "pick": "Sunderland AFC",
-              "p_win": 0.3776,
-              "implied_odds": 2.65
-            }
-          ],
-          "total_odds": 19.98,
-          "combined_prob": 0.0503,
-          "n_legs": 4
         }
       }
     },
@@ -721,177 +282,128 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester City FC vs Aston Villa FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6912,
-            "implied_odds": 1.45
+            "sport": "mlb",
+            "match": "Pittsburgh Pirates vs Chicago Cubs",
+            "pick": "Pittsburgh Pirates",
+            "p_win": 0.5902,
+            "implied_odds": 1.69
           },
           {
-            "sport": "epl",
-            "match": "West Ham United FC vs Leeds United FC",
-            "pick": "Leeds United FC",
-            "p_win": 0.4843,
-            "implied_odds": 2.06
+            "sport": "mlb",
+            "match": "San Diego Padres vs Philadelphia Phillies",
+            "pick": "San Diego Padres",
+            "p_win": 0.579,
+            "implied_odds": 1.73
           }
         ],
-        "total_odds": 2.99,
-        "combined_prob": 0.3347,
+        "total_odds": 2.92,
+        "combined_prob": 0.3417,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester City FC vs Aston Villa FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6912,
-            "implied_odds": 1.45
-          },
-          {
-            "sport": "epl",
-            "match": "Crystal Palace FC vs Arsenal FC",
-            "pick": "Arsenal FC",
-            "p_win": 0.6122,
-            "implied_odds": 1.63
+            "sport": "mlb",
+            "match": "Pittsburgh Pirates vs Chicago Cubs",
+            "pick": "Pittsburgh Pirates",
+            "p_win": 0.5902,
+            "implied_odds": 1.69
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Detroit Tigers",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5883,
-            "implied_odds": 1.7
+            "match": "San Diego Padres vs Philadelphia Phillies",
+            "pick": "San Diego Padres",
+            "p_win": 0.579,
+            "implied_odds": 1.73
           }
         ],
-        "total_odds": 4.02,
-        "combined_prob": 0.2489,
-        "n_legs": 3
+        "total_odds": 2.92,
+        "combined_prob": 0.3417,
+        "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester City FC vs Aston Villa FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6912,
-            "implied_odds": 1.45
+            "sport": "mlb",
+            "match": "Pittsburgh Pirates vs Chicago Cubs",
+            "pick": "Pittsburgh Pirates",
+            "p_win": 0.5902,
+            "implied_odds": 1.69
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Detroit Tigers",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5883,
-            "implied_odds": 1.7
-          },
-          {
-            "sport": "epl",
-            "match": "West Ham United FC vs Leeds United FC",
-            "pick": "Leeds United FC",
-            "p_win": 0.4843,
-            "implied_odds": 2.06
+            "match": "San Diego Padres vs Philadelphia Phillies",
+            "pick": "San Diego Padres",
+            "p_win": 0.579,
+            "implied_odds": 1.73
           }
         ],
-        "total_odds": 5.08,
-        "combined_prob": 0.1969,
-        "n_legs": 3
+        "total_odds": 2.92,
+        "combined_prob": 0.3417,
+        "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Detroit Tigers",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5883,
-            "implied_odds": 1.7
+            "match": "Pittsburgh Pirates vs Chicago Cubs",
+            "pick": "Pittsburgh Pirates",
+            "p_win": 0.5902,
+            "implied_odds": 1.69
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Detroit Tigers",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5883,
-            "implied_odds": 1.7
-          },
-          {
-            "sport": "epl",
-            "match": "West Ham United FC vs Leeds United FC",
-            "pick": "Leeds United FC",
-            "p_win": 0.4843,
-            "implied_odds": 2.06
+            "match": "San Diego Padres vs Philadelphia Phillies",
+            "pick": "San Diego Padres",
+            "p_win": 0.579,
+            "implied_odds": 1.73
           }
         ],
-        "total_odds": 5.95,
-        "combined_prob": 0.1676,
-        "n_legs": 3
+        "total_odds": 2.92,
+        "combined_prob": 0.3417,
+        "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "epl",
-            "match": "Manchester City FC vs Aston Villa FC",
-            "pick": "Manchester City FC",
-            "p_win": 0.6912,
-            "implied_odds": 1.45
+            "sport": "mlb",
+            "match": "Pittsburgh Pirates vs Chicago Cubs",
+            "pick": "Pittsburgh Pirates",
+            "p_win": 0.5902,
+            "implied_odds": 1.69
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Detroit Tigers",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5883,
-            "implied_odds": 1.7
-          },
-          {
-            "sport": "laliga",
-            "match": "Villarreal CF vs Club Atlético de Madrid",
-            "pick": "Villarreal CF",
-            "p_win": 0.5086,
-            "implied_odds": 1.97
-          },
-          {
-            "sport": "epl",
-            "match": "West Ham United FC vs Leeds United FC",
-            "pick": "Leeds United FC",
-            "p_win": 0.4843,
-            "implied_odds": 2.06
+            "match": "San Diego Padres vs Philadelphia Phillies",
+            "pick": "San Diego Padres",
+            "p_win": 0.579,
+            "implied_odds": 1.73
           }
         ],
-        "total_odds": 10.0,
-        "combined_prob": 0.1002,
-        "n_legs": 4
+        "total_odds": 2.92,
+        "combined_prob": 0.3417,
+        "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Detroit Tigers",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5883,
-            "implied_odds": 1.7
+            "match": "Pittsburgh Pirates vs Chicago Cubs",
+            "pick": "Pittsburgh Pirates",
+            "p_win": 0.5902,
+            "implied_odds": 1.69
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Detroit Tigers",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5883,
-            "implied_odds": 1.7
-          },
-          {
-            "sport": "epl",
-            "match": "Nottingham Forest FC vs AFC Bournemouth",
-            "pick": "Nottingham Forest FC",
-            "p_win": 0.3823,
-            "implied_odds": 2.62
-          },
-          {
-            "sport": "epl",
-            "match": "Burnley FC vs Wolverhampton Wanderers FC",
-            "pick": "Wolverhampton Wanderers FC",
-            "p_win": 0.3791,
-            "implied_odds": 2.64
+            "match": "San Diego Padres vs Philadelphia Phillies",
+            "pick": "San Diego Padres",
+            "p_win": 0.579,
+            "implied_odds": 1.73
           }
         ],
-        "total_odds": 19.99,
-        "combined_prob": 0.0502,
-        "n_legs": 4
+        "total_odds": 2.92,
+        "combined_prob": 0.3417,
+        "n_legs": 2
       }
     }
   }
