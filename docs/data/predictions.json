@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-27T11:40:52Z",
-  "date": "2026-05-27",
+  "generated_at": "2026-05-28T11:38:41Z",
+  "date": "2026-05-28",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,8 +9,36 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [],
-      "name": "NBA"
+      "picks": [
+        {
+          "home_team": "San Antonio Spurs",
+          "away_team": "Oklahoma City Thunder",
+          "pick": "H",
+          "pick_label": "San Antonio Spurs",
+          "p_win": 0.7318,
+          "implied_odds": 1.37,
+          "signal": "alta",
+          "date": "2026-05-28",
+          "model_spread": 14.7,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 219.5,
+          "ou_line": 219.5,
+          "ou_pick": "under",
+          "pts_home_scored": 115.3,
+          "pts_home_allowed": 103.7,
+          "pts_away_scored": 119.7,
+          "pts_away_allowed": 109.7,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "✅ Modelo 73%. Spurs 5-1 vs Thunder 7-0. Sin bajas importantes. O/U en 219.5 pts — Under es la jugada (ritmo lento). ML Spurs es la jugada segura (modelo 73%)."
+        }
+      ],
+      "name": "NBA",
+      "analysis": ""
     },
     "nhl": {
       "status": "ok",
@@ -25,48 +53,16 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5212,
-        "logloss": 0.6945,
-        "brier": 0.2507
+        "accuracy": 0.4881,
+        "logloss": 0.701,
+        "brier": 0.2539
       },
-      "picks": [
-        {
-          "home_team": "Pittsburgh Pirates",
-          "away_team": "Chicago Cubs",
-          "pick": "H",
-          "pick_label": "Pittsburgh Pirates",
-          "p_win": 0.6079,
-          "implied_odds": 1.65,
-          "signal": "media",
-          "date": "2026-05-27",
-          "model_spread": 0.8,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Pirates 29-26 vs Cubs 29-26. Sin bajas importantes. ML Pirates con cautela (modelo 61%)."
-        }
-      ],
-      "name": "MLB",
-      "analysis": ""
+      "picks": [],
+      "name": "MLB"
     },
     "epl": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.4605,
-        "logloss": 1.079,
-        "brier": 0.2184
-      },
+      "status": "error",
+      "reason": "Found array with 0 sample(s) (shape=(0, 5)) while a minimum of 1 is required by StandardScaler.",
       "picks": [],
       "name": "Premier League"
     },
@@ -103,9 +99,9 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5484,
-        "logloss": 0.998,
-        "brier": 0.1974
+        "accuracy": 0.5161,
+        "logloss": 1.0136,
+        "brier": 0.2012
       },
       "picks": [],
       "name": "Primeira Liga"
@@ -123,7 +119,7 @@
   },
   "parlays": {
     "by_sport": {
-      "mlb": {
+      "nba": {
         "cuota_3": null,
         "cuota_4": null,
         "cuota_5": null,
