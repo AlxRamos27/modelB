@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-28T11:38:41Z",
-  "date": "2026-05-28",
+  "generated_at": "2026-05-29T11:30:23Z",
+  "date": "2026-05-29",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,36 +9,8 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [
-        {
-          "home_team": "San Antonio Spurs",
-          "away_team": "Oklahoma City Thunder",
-          "pick": "H",
-          "pick_label": "San Antonio Spurs",
-          "p_win": 0.7318,
-          "implied_odds": 1.37,
-          "signal": "alta",
-          "date": "2026-05-28",
-          "model_spread": 14.7,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 219.5,
-          "ou_line": 219.5,
-          "ou_pick": "under",
-          "pts_home_scored": 115.3,
-          "pts_home_allowed": 103.7,
-          "pts_away_scored": 119.7,
-          "pts_away_allowed": 109.7,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 73%. Spurs 5-1 vs Thunder 7-0. Sin bajas importantes. O/U en 219.5 pts — Under es la jugada (ritmo lento). ML Spurs es la jugada segura (modelo 73%)."
-        }
-      ],
-      "name": "NBA",
-      "analysis": ""
+      "picks": [],
+      "name": "NBA"
     },
     "nhl": {
       "status": "ok",
@@ -47,22 +19,54 @@
         "logloss": 0.6924,
         "brier": 0.2496
       },
-      "picks": [],
-      "name": "NHL"
+      "picks": [
+        {
+          "home_team": "Carolina Hurricanes",
+          "away_team": "Montreal Canadiens",
+          "pick": "H",
+          "pick_label": "Carolina Hurricanes",
+          "p_win": 0.5199,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-05-29",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 5.5,
+          "ou_line": 5.5,
+          "ou_pick": "under",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
+        }
+      ],
+      "name": "NHL",
+      "analysis": ""
     },
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4881,
-        "logloss": 0.701,
-        "brier": 0.2539
+        "accuracy": 0.5148,
+        "logloss": 0.693,
+        "brier": 0.2499
       },
       "picks": [],
       "name": "MLB"
     },
     "epl": {
-      "status": "error",
-      "reason": "Found array with 0 sample(s) (shape=(0, 5)) while a minimum of 1 is required by StandardScaler.",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.4605,
+        "logloss": 1.079,
+        "brier": 0.2184
+      },
       "picks": [],
       "name": "Premier League"
     },
@@ -99,9 +103,9 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5161,
-        "logloss": 1.0136,
-        "brier": 0.2012
+        "accuracy": 0.5484,
+        "logloss": 0.998,
+        "brier": 0.1974
       },
       "picks": [],
       "name": "Primeira Liga"
@@ -119,7 +123,7 @@
   },
   "parlays": {
     "by_sport": {
-      "nba": {
+      "nhl": {
         "cuota_3": null,
         "cuota_4": null,
         "cuota_5": null,
