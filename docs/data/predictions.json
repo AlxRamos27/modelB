@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-30T10:01:26Z",
-  "date": "2026-05-30",
+  "generated_at": "2026-05-31T10:16:29Z",
+  "date": "2026-05-31",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,36 +9,8 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [
-        {
-          "home_team": "Oklahoma City Thunder",
-          "away_team": "San Antonio Spurs",
-          "pick": "H",
-          "pick_label": "Oklahoma City Thunder",
-          "p_win": 0.736,
-          "implied_odds": 1.36,
-          "signal": "alta",
-          "date": "2026-05-30",
-          "model_spread": 15.0,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 212.5,
-          "ou_line": 212.5,
-          "ou_pick": "under",
-          "pts_home_scored": 124.0,
-          "pts_home_allowed": 109.8,
-          "pts_away_scored": 121.0,
-          "pts_away_allowed": 112.7,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 74%. Thunder 7-0 vs Spurs 5-1. Sin bajas importantes. O/U en 212.5 pts — Under es la jugada (ritmo lento). ML Thunder es la jugada segura (modelo 74%)."
-        }
-      ],
-      "name": "NBA",
-      "analysis": ""
+      "picks": [],
+      "name": "NBA"
     },
     "nhl": {
       "status": "ok",
@@ -53,20 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4767,
-        "logloss": 0.701,
-        "brier": 0.2539
+        "accuracy": 0.48,
+        "logloss": 0.699,
+        "brier": 0.2529
       },
       "picks": [
         {
-          "home_team": "Tampa Bay Rays",
-          "away_team": "Los Angeles Angels",
+          "home_team": "Texas Rangers",
+          "away_team": "Kansas City Royals",
           "pick": "H",
-          "pick_label": "Tampa Bay Rays",
-          "p_win": 0.6378,
+          "pick_label": "Texas Rangers",
+          "p_win": 0.6352,
           "implied_odds": 1.57,
           "signal": "media",
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "model_spread": 1.0,
           "house_spread": null,
           "house_odds": null,
@@ -82,18 +54,18 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 64%. Rays 35-19 vs Angels 22-36. Sin bajas importantes. ML Rays con cautela (modelo 64%)."
+          "note": "⚠️ Modelo 64%. Rangers 27-31 vs Royals 22-36. Sin bajas importantes. ML Rangers con cautela (modelo 64%)."
         },
         {
-          "home_team": "Texas Rangers",
-          "away_team": "Kansas City Royals",
+          "home_team": "Chicago White Sox",
+          "away_team": "Detroit Tigers",
           "pick": "H",
-          "pick_label": "Texas Rangers",
-          "p_win": 0.6201,
-          "implied_odds": 1.61,
+          "pick_label": "Chicago White Sox",
+          "p_win": 0.6313,
+          "implied_odds": 1.58,
           "signal": "media",
-          "date": "2026-05-30",
-          "model_spread": 0.9,
+          "date": "2026-05-31",
+          "model_spread": 1.0,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -108,7 +80,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 62%. Rangers 26-31 vs Royals 22-35. Sin bajas importantes. ML Rangers con cautela (modelo 62%)."
+          "note": "⚠️ Modelo 63%. Sox 31-27 vs Tigers 22-37. Sin bajas importantes. ML Sox con cautela (modelo 63%)."
+        },
+        {
+          "home_team": "Colorado Rockies",
+          "away_team": "San Francisco Giants",
+          "pick": "H",
+          "pick_label": "Colorado Rockies",
+          "p_win": 0.61,
+          "implied_odds": 1.64,
+          "signal": "media",
+          "date": "2026-05-31",
+          "model_spread": 0.8,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 61%. Rockies 22-37 vs Giants 22-36. Sin bajas importantes. ML Rockies con cautela (modelo 61%)."
         }
       ],
       "name": "MLB",
@@ -157,9 +155,9 @@
     "primeira": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5161,
-        "logloss": 1.0136,
-        "brier": 0.2012
+        "accuracy": 0.5484,
+        "logloss": 0.998,
+        "brier": 0.1974
       },
       "picks": [],
       "name": "Primeira Liga"
@@ -167,364 +165,341 @@
     "ucl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4737,
-        "logloss": 1.032,
-        "brier": 0.2079
+        "accuracy": 0.5263,
+        "logloss": 1.0295,
+        "brier": 0.2073
       },
-      "picks": [
-        {
-          "home_team": "Paris Saint-Germain FC",
-          "away_team": "Arsenal FC",
-          "pick": "H",
-          "pick_label": "Paris Saint-Germain FC",
-          "p_win": 0.4705,
-          "implied_odds": 2.13,
-          "signal": "baja",
-          "date": "2026-05-30",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 47%. Sin bajas importantes. SKIP — sin edge claro (47%)."
-        }
-      ],
-      "name": "Champions League",
-      "analysis": ""
+      "picks": [],
+      "name": "Champions League"
     }
   },
   "parlays": {
     "by_sport": {
-      "nba": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      },
       "mlb": {
         "cuota_3": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Los Angeles Angels",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6378,
-              "implied_odds": 1.57
+              "match": "Chicago White Sox vs Detroit Tigers",
+              "pick": "Chicago White Sox",
+              "p_win": 0.6313,
+              "implied_odds": 1.58
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Kansas City Royals",
-              "pick": "Texas Rangers",
-              "p_win": 0.6201,
-              "implied_odds": 1.61
+              "match": "Colorado Rockies vs San Francisco Giants",
+              "pick": "Colorado Rockies",
+              "p_win": 0.61,
+              "implied_odds": 1.64
             }
           ],
-          "total_odds": 2.53,
-          "combined_prob": 0.3955,
+          "total_odds": 2.59,
+          "combined_prob": 0.3851,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Los Angeles Angels",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6378,
+              "match": "Texas Rangers vs Kansas City Royals",
+              "pick": "Texas Rangers",
+              "p_win": 0.6352,
               "implied_odds": 1.57
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Kansas City Royals",
-              "pick": "Texas Rangers",
-              "p_win": 0.6201,
-              "implied_odds": 1.61
+              "match": "Chicago White Sox vs Detroit Tigers",
+              "pick": "Chicago White Sox",
+              "p_win": 0.6313,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Colorado Rockies vs San Francisco Giants",
+              "pick": "Colorado Rockies",
+              "p_win": 0.61,
+              "implied_odds": 1.64
             }
           ],
-          "total_odds": 2.53,
-          "combined_prob": 0.3955,
-          "n_legs": 2
+          "total_odds": 4.07,
+          "combined_prob": 0.2446,
+          "n_legs": 3
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Los Angeles Angels",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6378,
+              "match": "Texas Rangers vs Kansas City Royals",
+              "pick": "Texas Rangers",
+              "p_win": 0.6352,
               "implied_odds": 1.57
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Kansas City Royals",
-              "pick": "Texas Rangers",
-              "p_win": 0.6201,
-              "implied_odds": 1.61
+              "match": "Chicago White Sox vs Detroit Tigers",
+              "pick": "Chicago White Sox",
+              "p_win": 0.6313,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Colorado Rockies vs San Francisco Giants",
+              "pick": "Colorado Rockies",
+              "p_win": 0.61,
+              "implied_odds": 1.64
             }
           ],
-          "total_odds": 2.53,
-          "combined_prob": 0.3955,
-          "n_legs": 2
+          "total_odds": 4.07,
+          "combined_prob": 0.2446,
+          "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Los Angeles Angels",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6378,
+              "match": "Texas Rangers vs Kansas City Royals",
+              "pick": "Texas Rangers",
+              "p_win": 0.6352,
               "implied_odds": 1.57
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Kansas City Royals",
-              "pick": "Texas Rangers",
-              "p_win": 0.6201,
-              "implied_odds": 1.61
+              "match": "Chicago White Sox vs Detroit Tigers",
+              "pick": "Chicago White Sox",
+              "p_win": 0.6313,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Colorado Rockies vs San Francisco Giants",
+              "pick": "Colorado Rockies",
+              "p_win": 0.61,
+              "implied_odds": 1.64
             }
           ],
-          "total_odds": 2.53,
-          "combined_prob": 0.3955,
-          "n_legs": 2
+          "total_odds": 4.07,
+          "combined_prob": 0.2446,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Los Angeles Angels",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6378,
+              "match": "Texas Rangers vs Kansas City Royals",
+              "pick": "Texas Rangers",
+              "p_win": 0.6352,
               "implied_odds": 1.57
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Kansas City Royals",
-              "pick": "Texas Rangers",
-              "p_win": 0.6201,
-              "implied_odds": 1.61
+              "match": "Chicago White Sox vs Detroit Tigers",
+              "pick": "Chicago White Sox",
+              "p_win": 0.6313,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Colorado Rockies vs San Francisco Giants",
+              "pick": "Colorado Rockies",
+              "p_win": 0.61,
+              "implied_odds": 1.64
             }
           ],
-          "total_odds": 2.53,
-          "combined_prob": 0.3955,
-          "n_legs": 2
+          "total_odds": 4.07,
+          "combined_prob": 0.2446,
+          "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Los Angeles Angels",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6378,
+              "match": "Texas Rangers vs Kansas City Royals",
+              "pick": "Texas Rangers",
+              "p_win": 0.6352,
               "implied_odds": 1.57
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Kansas City Royals",
-              "pick": "Texas Rangers",
-              "p_win": 0.6201,
-              "implied_odds": 1.61
+              "match": "Chicago White Sox vs Detroit Tigers",
+              "pick": "Chicago White Sox",
+              "p_win": 0.6313,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Colorado Rockies vs San Francisco Giants",
+              "pick": "Colorado Rockies",
+              "p_win": 0.61,
+              "implied_odds": 1.64
             }
           ],
-          "total_odds": 2.53,
-          "combined_prob": 0.3955,
-          "n_legs": 2
+          "total_odds": 4.07,
+          "combined_prob": 0.2446,
+          "n_legs": 3
         }
-      },
-      "soccer": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
       }
     },
     "combined": {
       "cuota_3": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Oklahoma City Thunder vs San Antonio Spurs",
-            "pick": "Oklahoma City Thunder",
-            "p_win": 0.736,
-            "implied_odds": 1.36
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Detroit Tigers",
+            "pick": "Chicago White Sox",
+            "p_win": 0.6313,
+            "implied_odds": 1.58
           },
           {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs Arsenal FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.4705,
-            "implied_odds": 2.13
+            "sport": "mlb",
+            "match": "Colorado Rockies vs San Francisco Giants",
+            "pick": "Colorado Rockies",
+            "p_win": 0.61,
+            "implied_odds": 1.64
           }
         ],
-        "total_odds": 2.9,
-        "combined_prob": 0.3463,
+        "total_odds": 2.59,
+        "combined_prob": 0.3851,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Oklahoma City Thunder vs San Antonio Spurs",
-            "pick": "Oklahoma City Thunder",
-            "p_win": 0.736,
-            "implied_odds": 1.36
-          },
-          {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Los Angeles Angels",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.6378,
+            "match": "Texas Rangers vs Kansas City Royals",
+            "pick": "Texas Rangers",
+            "p_win": 0.6352,
             "implied_odds": 1.57
           },
           {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs Arsenal FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.4705,
-            "implied_odds": 2.13
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Detroit Tigers",
+            "pick": "Chicago White Sox",
+            "p_win": 0.6313,
+            "implied_odds": 1.58
+          },
+          {
+            "sport": "mlb",
+            "match": "Colorado Rockies vs San Francisco Giants",
+            "pick": "Colorado Rockies",
+            "p_win": 0.61,
+            "implied_odds": 1.64
           }
         ],
-        "total_odds": 4.55,
-        "combined_prob": 0.2209,
+        "total_odds": 4.07,
+        "combined_prob": 0.2446,
         "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Oklahoma City Thunder vs San Antonio Spurs",
-            "pick": "Oklahoma City Thunder",
-            "p_win": 0.736,
-            "implied_odds": 1.36
-          },
-          {
             "sport": "mlb",
             "match": "Texas Rangers vs Kansas City Royals",
             "pick": "Texas Rangers",
-            "p_win": 0.6201,
-            "implied_odds": 1.61
+            "p_win": 0.6352,
+            "implied_odds": 1.57
           },
           {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs Arsenal FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.4705,
-            "implied_odds": 2.13
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Detroit Tigers",
+            "pick": "Chicago White Sox",
+            "p_win": 0.6313,
+            "implied_odds": 1.58
+          },
+          {
+            "sport": "mlb",
+            "match": "Colorado Rockies vs San Francisco Giants",
+            "pick": "Colorado Rockies",
+            "p_win": 0.61,
+            "implied_odds": 1.64
           }
         ],
-        "total_odds": 4.66,
-        "combined_prob": 0.2147,
+        "total_odds": 4.07,
+        "combined_prob": 0.2446,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Los Angeles Angels",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.6378,
+            "match": "Texas Rangers vs Kansas City Royals",
+            "pick": "Texas Rangers",
+            "p_win": 0.6352,
             "implied_odds": 1.57
           },
           {
             "sport": "mlb",
-            "match": "Texas Rangers vs Kansas City Royals",
-            "pick": "Texas Rangers",
-            "p_win": 0.6201,
-            "implied_odds": 1.61
+            "match": "Chicago White Sox vs Detroit Tigers",
+            "pick": "Chicago White Sox",
+            "p_win": 0.6313,
+            "implied_odds": 1.58
           },
           {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs Arsenal FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.4705,
-            "implied_odds": 2.13
+            "sport": "mlb",
+            "match": "Colorado Rockies vs San Francisco Giants",
+            "pick": "Colorado Rockies",
+            "p_win": 0.61,
+            "implied_odds": 1.64
           }
         ],
-        "total_odds": 5.38,
-        "combined_prob": 0.1861,
+        "total_odds": 4.07,
+        "combined_prob": 0.2446,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Oklahoma City Thunder vs San Antonio Spurs",
-            "pick": "Oklahoma City Thunder",
-            "p_win": 0.736,
-            "implied_odds": 1.36
-          },
-          {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Los Angeles Angels",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.6378,
+            "match": "Texas Rangers vs Kansas City Royals",
+            "pick": "Texas Rangers",
+            "p_win": 0.6352,
             "implied_odds": 1.57
           },
           {
             "sport": "mlb",
-            "match": "Texas Rangers vs Kansas City Royals",
-            "pick": "Texas Rangers",
-            "p_win": 0.6201,
-            "implied_odds": 1.61
+            "match": "Chicago White Sox vs Detroit Tigers",
+            "pick": "Chicago White Sox",
+            "p_win": 0.6313,
+            "implied_odds": 1.58
           },
           {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs Arsenal FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.4705,
-            "implied_odds": 2.13
+            "sport": "mlb",
+            "match": "Colorado Rockies vs San Francisco Giants",
+            "pick": "Colorado Rockies",
+            "p_win": 0.61,
+            "implied_odds": 1.64
           }
         ],
-        "total_odds": 7.32,
-        "combined_prob": 0.137,
-        "n_legs": 4
+        "total_odds": 4.07,
+        "combined_prob": 0.2446,
+        "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Oklahoma City Thunder vs San Antonio Spurs",
-            "pick": "Oklahoma City Thunder",
-            "p_win": 0.736,
-            "implied_odds": 1.36
-          },
-          {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Los Angeles Angels",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.6378,
+            "match": "Texas Rangers vs Kansas City Royals",
+            "pick": "Texas Rangers",
+            "p_win": 0.6352,
             "implied_odds": 1.57
           },
           {
             "sport": "mlb",
-            "match": "Texas Rangers vs Kansas City Royals",
-            "pick": "Texas Rangers",
-            "p_win": 0.6201,
-            "implied_odds": 1.61
+            "match": "Chicago White Sox vs Detroit Tigers",
+            "pick": "Chicago White Sox",
+            "p_win": 0.6313,
+            "implied_odds": 1.58
           },
           {
-            "sport": "ucl",
-            "match": "Paris Saint-Germain FC vs Arsenal FC",
-            "pick": "Paris Saint-Germain FC",
-            "p_win": 0.4705,
-            "implied_odds": 2.13
+            "sport": "mlb",
+            "match": "Colorado Rockies vs San Francisco Giants",
+            "pick": "Colorado Rockies",
+            "p_win": 0.61,
+            "implied_odds": 1.64
           }
         ],
-        "total_odds": 7.32,
-        "combined_prob": 0.137,
-        "n_legs": 4
+        "total_odds": 4.07,
+        "combined_prob": 0.2446,
+        "n_legs": 3
       }
     }
   }
