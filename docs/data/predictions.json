@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T12:04:27Z",
-  "date": "2026-06-02",
+  "generated_at": "2026-06-03T12:42:04Z",
+  "date": "2026-06-03",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,8 +9,36 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [],
-      "name": "NBA"
+      "picks": [
+        {
+          "home_team": "San Antonio Spurs",
+          "away_team": "New York Knicks",
+          "pick": "H",
+          "pick_label": "San Antonio Spurs",
+          "p_win": 0.688,
+          "implied_odds": 1.45,
+          "signal": "media",
+          "date": "2026-06-03",
+          "model_spread": 11.5,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 218.5,
+          "ou_line": 218.5,
+          "ou_pick": "under",
+          "pts_home_scored": 115.3,
+          "pts_home_allowed": 103.7,
+          "pts_away_scored": 114.3,
+          "pts_away_allowed": 123.7,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 69%. Spurs 5-1 vs Knicks 4-3. Sin bajas importantes. O/U en 218.5 pts — Under es la jugada (ritmo lento). ML Spurs con cautela (modelo 69%)."
+        }
+      ],
+      "name": "NBA",
+      "analysis": ""
     },
     "nhl": {
       "status": "ok",
@@ -19,80 +47,26 @@
         "logloss": 0.6923,
         "brier": 0.2496
       },
-      "picks": [
-        {
-          "home_team": "Carolina Hurricanes",
-          "away_team": "Vegas Golden Knights",
-          "pick": "H",
-          "pick_label": "Carolina Hurricanes",
-          "p_win": 0.5199,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-06-02",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
-        }
-      ],
-      "name": "NHL",
-      "analysis": ""
+      "picks": [],
+      "name": "NHL"
     },
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5,
-        "logloss": 0.7026,
-        "brier": 0.2547
+        "accuracy": 0.5137,
+        "logloss": 0.7006,
+        "brier": 0.2537
       },
       "picks": [
-        {
-          "home_team": "Tampa Bay Rays",
-          "away_team": "Detroit Tigers",
-          "pick": "H",
-          "pick_label": "Tampa Bay Rays",
-          "p_win": 0.6357,
-          "implied_odds": 1.57,
-          "signal": "media",
-          "date": "2026-06-02",
-          "model_spread": 1.0,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 64%. Rays 36-21 vs Tigers 23-38. Sin bajas importantes. ML Rays con cautela (modelo 64%)."
-        },
         {
           "home_team": "Milwaukee Brewers",
           "away_team": "San Francisco Giants",
           "pick": "H",
           "pick_label": "Milwaukee Brewers",
-          "p_win": 0.6341,
-          "implied_odds": 1.58,
+          "p_win": 0.6356,
+          "implied_odds": 1.57,
           "signal": "media",
-          "date": "2026-06-02",
+          "date": "2026-06-03",
           "model_spread": 1.0,
           "house_spread": null,
           "house_odds": null,
@@ -108,43 +82,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 63%. Brewers 36-21 vs Giants 23-37. Sin bajas importantes. ML Brewers con cautela (modelo 63%)."
+          "note": "⚠️ Modelo 64%. Brewers 37-21 vs Giants 23-38. Sin bajas importantes. ML Brewers con cautela (modelo 64%)."
         },
         {
           "home_team": "Cincinnati Reds",
           "away_team": "Kansas City Royals",
           "pick": "H",
           "pick_label": "Cincinnati Reds",
-          "p_win": 0.616,
-          "implied_odds": 1.62,
+          "p_win": 0.603,
+          "implied_odds": 1.66,
           "signal": "media",
-          "date": "2026-06-02",
-          "model_spread": 0.9,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 62%. Reds 30-29 vs Royals 23-37. Sin bajas importantes. ML Reds con cautela (modelo 62%)."
-        },
-        {
-          "home_team": "Washington Nationals",
-          "away_team": "Miami Marlins",
-          "pick": "H",
-          "pick_label": "Washington Nationals",
-          "p_win": 0.6058,
-          "implied_odds": 1.65,
-          "signal": "media",
-          "date": "2026-06-02",
+          "date": "2026-06-03",
           "model_spread": 0.8,
           "house_spread": null,
           "house_odds": null,
@@ -160,7 +108,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 61%. Nationals 31-30 vs Marlins 27-34. Sin bajas importantes. ML Nationals con cautela (modelo 61%)."
+          "note": "⚠️ Modelo 60%. Reds 31-29 vs Royals 23-38. Sin bajas importantes. ML Reds con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "Tampa Bay Rays",
+          "away_team": "Detroit Tigers",
+          "pick": "H",
+          "pick_label": "Tampa Bay Rays",
+          "p_win": 0.5934,
+          "implied_odds": 1.69,
+          "signal": "baja",
+          "date": "2026-06-03",
+          "model_spread": 0.7,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Rays 36-22 vs Tigers 24-38. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "Philadelphia Phillies",
+          "away_team": "San Diego Padres",
+          "pick": "H",
+          "pick_label": "Philadelphia Phillies",
+          "p_win": 0.5859,
+          "implied_odds": 1.71,
+          "signal": "baja",
+          "date": "2026-06-03",
+          "model_spread": 0.6,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Phillies 31-29 vs Padres 32-27. Sin bajas importantes. SKIP — sin edge claro (59%)."
         }
       ],
       "name": "MLB",
@@ -229,7 +229,7 @@
   },
   "parlays": {
     "by_sport": {
-      "nhl": {
+      "nba": {
         "cuota_3": null,
         "cuota_4": null,
         "cuota_5": null,
@@ -242,182 +242,175 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Cincinnati Reds vs Kansas City Royals",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.616,
-              "implied_odds": 1.62
+              "match": "Tampa Bay Rays vs Detroit Tigers",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5934,
+              "implied_odds": 1.69
             },
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Miami Marlins",
-              "pick": "Washington Nationals",
-              "p_win": 0.6058,
-              "implied_odds": 1.65
+              "match": "Philadelphia Phillies vs San Diego Padres",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5859,
+              "implied_odds": 1.71
             }
           ],
-          "total_odds": 2.67,
-          "combined_prob": 0.3732,
+          "total_odds": 2.89,
+          "combined_prob": 0.3477,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Detroit Tigers",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6357,
-              "implied_odds": 1.57
-            },
-            {
-              "sport": "mlb",
               "match": "Milwaukee Brewers vs San Francisco Giants",
               "pick": "Milwaukee Brewers",
-              "p_win": 0.6341,
-              "implied_odds": 1.58
+              "p_win": 0.6356,
+              "implied_odds": 1.57
             },
             {
               "sport": "mlb",
               "match": "Cincinnati Reds vs Kansas City Royals",
               "pick": "Cincinnati Reds",
-              "p_win": 0.616,
-              "implied_odds": 1.62
+              "p_win": 0.603,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Detroit Tigers",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5934,
+              "implied_odds": 1.69
             }
           ],
-          "total_odds": 4.02,
-          "combined_prob": 0.2483,
+          "total_odds": 4.4,
+          "combined_prob": 0.2274,
           "n_legs": 3
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs San Francisco Giants",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.6341,
-              "implied_odds": 1.58
-            },
-            {
-              "sport": "mlb",
               "match": "Cincinnati Reds vs Kansas City Royals",
               "pick": "Cincinnati Reds",
-              "p_win": 0.616,
-              "implied_odds": 1.62
+              "p_win": 0.603,
+              "implied_odds": 1.66
             },
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Miami Marlins",
-              "pick": "Washington Nationals",
-              "p_win": 0.6058,
-              "implied_odds": 1.65
+              "match": "Tampa Bay Rays vs Detroit Tigers",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5934,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs San Diego Padres",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5859,
+              "implied_odds": 1.71
             }
           ],
-          "total_odds": 4.22,
-          "combined_prob": 0.2366,
+          "total_odds": 4.8,
+          "combined_prob": 0.2096,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Detroit Tigers",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6357,
-              "implied_odds": 1.57
-            },
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs San Francisco Giants",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.6341,
-              "implied_odds": 1.58
-            },
-            {
-              "sport": "mlb",
               "match": "Cincinnati Reds vs Kansas City Royals",
               "pick": "Cincinnati Reds",
-              "p_win": 0.616,
-              "implied_odds": 1.62
+              "p_win": 0.603,
+              "implied_odds": 1.66
             },
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Miami Marlins",
-              "pick": "Washington Nationals",
-              "p_win": 0.6058,
-              "implied_odds": 1.65
+              "match": "Tampa Bay Rays vs Detroit Tigers",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5934,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs San Diego Padres",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5859,
+              "implied_odds": 1.71
             }
           ],
-          "total_odds": 6.63,
-          "combined_prob": 0.1504,
-          "n_legs": 4
+          "total_odds": 4.8,
+          "combined_prob": 0.2096,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Detroit Tigers",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6357,
-              "implied_odds": 1.57
-            },
-            {
-              "sport": "mlb",
               "match": "Milwaukee Brewers vs San Francisco Giants",
               "pick": "Milwaukee Brewers",
-              "p_win": 0.6341,
-              "implied_odds": 1.58
+              "p_win": 0.6356,
+              "implied_odds": 1.57
             },
             {
               "sport": "mlb",
               "match": "Cincinnati Reds vs Kansas City Royals",
               "pick": "Cincinnati Reds",
-              "p_win": 0.616,
-              "implied_odds": 1.62
+              "p_win": 0.603,
+              "implied_odds": 1.66
             },
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Miami Marlins",
-              "pick": "Washington Nationals",
-              "p_win": 0.6058,
-              "implied_odds": 1.65
+              "match": "Tampa Bay Rays vs Detroit Tigers",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5934,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs San Diego Padres",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5859,
+              "implied_odds": 1.71
             }
           ],
-          "total_odds": 6.63,
-          "combined_prob": 0.1504,
+          "total_odds": 7.53,
+          "combined_prob": 0.1333,
           "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Detroit Tigers",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.6357,
-              "implied_odds": 1.57
-            },
-            {
-              "sport": "mlb",
               "match": "Milwaukee Brewers vs San Francisco Giants",
               "pick": "Milwaukee Brewers",
-              "p_win": 0.6341,
-              "implied_odds": 1.58
+              "p_win": 0.6356,
+              "implied_odds": 1.57
             },
             {
               "sport": "mlb",
               "match": "Cincinnati Reds vs Kansas City Royals",
               "pick": "Cincinnati Reds",
-              "p_win": 0.616,
-              "implied_odds": 1.62
+              "p_win": 0.603,
+              "implied_odds": 1.66
             },
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Miami Marlins",
-              "pick": "Washington Nationals",
-              "p_win": 0.6058,
-              "implied_odds": 1.65
+              "match": "Tampa Bay Rays vs Detroit Tigers",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5934,
+              "implied_odds": 1.69
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs San Diego Padres",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5859,
+              "implied_odds": 1.71
             }
           ],
-          "total_odds": 6.63,
-          "combined_prob": 0.1504,
+          "total_odds": 7.53,
+          "combined_prob": 0.1333,
           "n_legs": 4
         }
       }
@@ -429,187 +422,194 @@
             "sport": "mlb",
             "match": "Tampa Bay Rays vs Detroit Tigers",
             "pick": "Tampa Bay Rays",
-            "p_win": 0.6357,
-            "implied_odds": 1.57
+            "p_win": 0.5934,
+            "implied_odds": 1.69
           },
           {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Vegas Golden Knights",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs San Diego Padres",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5859,
+            "implied_odds": 1.71
           }
         ],
-        "total_odds": 3.01,
-        "combined_prob": 0.3305,
+        "total_odds": 2.89,
+        "combined_prob": 0.3477,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Detroit Tigers",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.6357,
-            "implied_odds": 1.57
-          },
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs San Francisco Giants",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.6341,
-            "implied_odds": 1.58
+            "sport": "nba",
+            "match": "San Antonio Spurs vs New York Knicks",
+            "pick": "San Antonio Spurs",
+            "p_win": 0.688,
+            "implied_odds": 1.45
           },
           {
             "sport": "mlb",
             "match": "Cincinnati Reds vs Kansas City Royals",
             "pick": "Cincinnati Reds",
-            "p_win": 0.616,
-            "implied_odds": 1.62
+            "p_win": 0.603,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Detroit Tigers",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5934,
+            "implied_odds": 1.69
           }
         ],
-        "total_odds": 4.02,
-        "combined_prob": 0.2483,
+        "total_odds": 4.07,
+        "combined_prob": 0.2462,
         "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs San Francisco Giants",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.6341,
-            "implied_odds": 1.58
+            "match": "Cincinnati Reds vs Kansas City Royals",
+            "pick": "Cincinnati Reds",
+            "p_win": 0.603,
+            "implied_odds": 1.66
           },
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Miami Marlins",
-            "pick": "Washington Nationals",
-            "p_win": 0.6058,
-            "implied_odds": 1.65
+            "match": "Tampa Bay Rays vs Detroit Tigers",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5934,
+            "implied_odds": 1.69
           },
           {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Vegas Golden Knights",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs San Diego Padres",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5859,
+            "implied_odds": 1.71
           }
         ],
-        "total_odds": 5.01,
-        "combined_prob": 0.1997,
+        "total_odds": 4.8,
+        "combined_prob": 0.2096,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Detroit Tigers",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.6357,
-            "implied_odds": 1.57
+            "sport": "nba",
+            "match": "San Antonio Spurs vs New York Knicks",
+            "pick": "San Antonio Spurs",
+            "p_win": 0.688,
+            "implied_odds": 1.45
           },
           {
             "sport": "mlb",
             "match": "Milwaukee Brewers vs San Francisco Giants",
             "pick": "Milwaukee Brewers",
-            "p_win": 0.6341,
-            "implied_odds": 1.58
+            "p_win": 0.6356,
+            "implied_odds": 1.57
           },
           {
             "sport": "mlb",
             "match": "Cincinnati Reds vs Kansas City Royals",
             "pick": "Cincinnati Reds",
-            "p_win": 0.616,
-            "implied_odds": 1.62
+            "p_win": 0.603,
+            "implied_odds": 1.66
           },
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Miami Marlins",
-            "pick": "Washington Nationals",
-            "p_win": 0.6058,
-            "implied_odds": 1.65
+            "match": "Tampa Bay Rays vs Detroit Tigers",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5934,
+            "implied_odds": 1.69
           }
         ],
-        "total_odds": 6.63,
-        "combined_prob": 0.1504,
+        "total_odds": 6.39,
+        "combined_prob": 0.1565,
         "n_legs": 4
       },
       "cuota_10": {
         "legs": [
           {
+            "sport": "nba",
+            "match": "San Antonio Spurs vs New York Knicks",
+            "pick": "San Antonio Spurs",
+            "p_win": 0.688,
+            "implied_odds": 1.45
+          },
+          {
             "sport": "mlb",
             "match": "Milwaukee Brewers vs San Francisco Giants",
             "pick": "Milwaukee Brewers",
-            "p_win": 0.6341,
-            "implied_odds": 1.58
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Kansas City Royals",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.616,
-            "implied_odds": 1.62
-          },
-          {
-            "sport": "mlb",
-            "match": "Washington Nationals vs Miami Marlins",
-            "pick": "Washington Nationals",
-            "p_win": 0.6058,
-            "implied_odds": 1.65
-          },
-          {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Vegas Golden Knights",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
-          }
-        ],
-        "total_odds": 8.11,
-        "combined_prob": 0.123,
-        "n_legs": 4
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Detroit Tigers",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.6357,
+            "p_win": 0.6356,
             "implied_odds": 1.57
           },
           {
             "sport": "mlb",
+            "match": "Cincinnati Reds vs Kansas City Royals",
+            "pick": "Cincinnati Reds",
+            "p_win": 0.603,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Detroit Tigers",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5934,
+            "implied_odds": 1.69
+          },
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs San Diego Padres",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5859,
+            "implied_odds": 1.71
+          }
+        ],
+        "total_odds": 10.92,
+        "combined_prob": 0.0917,
+        "n_legs": 5
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "nba",
+            "match": "San Antonio Spurs vs New York Knicks",
+            "pick": "San Antonio Spurs",
+            "p_win": 0.688,
+            "implied_odds": 1.45
+          },
+          {
+            "sport": "mlb",
             "match": "Milwaukee Brewers vs San Francisco Giants",
             "pick": "Milwaukee Brewers",
-            "p_win": 0.6341,
-            "implied_odds": 1.58
+            "p_win": 0.6356,
+            "implied_odds": 1.57
           },
           {
             "sport": "mlb",
             "match": "Cincinnati Reds vs Kansas City Royals",
             "pick": "Cincinnati Reds",
-            "p_win": 0.616,
-            "implied_odds": 1.62
+            "p_win": 0.603,
+            "implied_odds": 1.66
           },
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Miami Marlins",
-            "pick": "Washington Nationals",
-            "p_win": 0.6058,
-            "implied_odds": 1.65
+            "match": "Tampa Bay Rays vs Detroit Tigers",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5934,
+            "implied_odds": 1.69
           },
           {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Vegas Golden Knights",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs San Diego Padres",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5859,
+            "implied_odds": 1.71
           }
         ],
-        "total_odds": 12.73,
-        "combined_prob": 0.0782,
+        "total_odds": 10.92,
+        "combined_prob": 0.0917,
         "n_legs": 5
       }
     }
