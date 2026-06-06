@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T11:29:07Z",
-  "date": "2026-06-05",
+  "generated_at": "2026-06-06T10:04:36Z",
+  "date": "2026-06-06",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,36 +9,8 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [
-        {
-          "home_team": "San Antonio Spurs",
-          "away_team": "New York Knicks",
-          "pick": "H",
-          "pick_label": "San Antonio Spurs",
-          "p_win": 0.688,
-          "implied_odds": 1.45,
-          "signal": "media",
-          "date": "2026-06-05",
-          "model_spread": 11.5,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 214.5,
-          "ou_line": 214.5,
-          "ou_pick": "under",
-          "pts_home_scored": 115.3,
-          "pts_home_allowed": 103.7,
-          "pts_away_scored": 114.3,
-          "pts_away_allowed": 123.7,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 69%. Spurs 5-1 vs Knicks 4-3. Sin bajas importantes. O/U en 214.5 pts — Under es la jugada (ritmo lento). ML Spurs con cautela (modelo 69%)."
-        }
-      ],
-      "name": "NBA",
-      "analysis": ""
+      "picks": [],
+      "name": "NBA"
     },
     "nhl": {
       "status": "ok",
@@ -47,18 +19,74 @@
         "logloss": 0.6923,
         "brier": 0.2496
       },
-      "picks": [],
-      "name": "NHL"
+      "picks": [
+        {
+          "home_team": "Vegas Golden Knights",
+          "away_team": "Carolina Hurricanes",
+          "pick": "H",
+          "pick_label": "Vegas Golden Knights",
+          "p_win": 0.5199,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-06-06",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 5.5,
+          "ou_line": 5.5,
+          "ou_pick": "under",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
+        }
+      ],
+      "name": "NHL",
+      "analysis": ""
     },
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5187,
-        "logloss": 0.6984,
-        "brier": 0.2526
+        "accuracy": 0.4947,
+        "logloss": 0.6974,
+        "brier": 0.2521
       },
-      "picks": [],
-      "name": "MLB"
+      "picks": [
+        {
+          "home_team": "Philadelphia Phillies",
+          "away_team": "Chicago White Sox",
+          "pick": "H",
+          "pick_label": "Philadelphia Phillies",
+          "p_win": 0.5602,
+          "implied_odds": 1.79,
+          "signal": "baja",
+          "date": "2026-06-06",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Phillies 34-29 vs Sox 33-30. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        }
+      ],
+      "name": "MLB",
+      "analysis": ""
     },
     "epl": {
       "status": "ok",
@@ -123,7 +151,15 @@
   },
   "parlays": {
     "by_sport": {
-      "nba": {
+      "nhl": {
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
+      },
+      "mlb": {
         "cuota_3": null,
         "cuota_4": null,
         "cuota_5": null,
@@ -133,12 +169,132 @@
       }
     },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Chicago White Sox",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5602,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "nhl",
+            "match": "Vegas Golden Knights vs Carolina Hurricanes",
+            "pick": "Vegas Golden Knights",
+            "p_win": 0.5199,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.44,
+        "combined_prob": 0.2912,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Chicago White Sox",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5602,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "nhl",
+            "match": "Vegas Golden Knights vs Carolina Hurricanes",
+            "pick": "Vegas Golden Knights",
+            "p_win": 0.5199,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.44,
+        "combined_prob": 0.2912,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Chicago White Sox",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5602,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "nhl",
+            "match": "Vegas Golden Knights vs Carolina Hurricanes",
+            "pick": "Vegas Golden Knights",
+            "p_win": 0.5199,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.44,
+        "combined_prob": 0.2912,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Chicago White Sox",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5602,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "nhl",
+            "match": "Vegas Golden Knights vs Carolina Hurricanes",
+            "pick": "Vegas Golden Knights",
+            "p_win": 0.5199,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.44,
+        "combined_prob": 0.2912,
+        "n_legs": 2
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Chicago White Sox",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5602,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "nhl",
+            "match": "Vegas Golden Knights vs Carolina Hurricanes",
+            "pick": "Vegas Golden Knights",
+            "p_win": 0.5199,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.44,
+        "combined_prob": 0.2912,
+        "n_legs": 2
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Chicago White Sox",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5602,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "nhl",
+            "match": "Vegas Golden Knights vs Carolina Hurricanes",
+            "pick": "Vegas Golden Knights",
+            "p_win": 0.5199,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.44,
+        "combined_prob": 0.2912,
+        "n_legs": 2
+      }
     }
   }
 }
