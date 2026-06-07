@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T10:04:36Z",
-  "date": "2026-06-06",
+  "generated_at": "2026-06-07T10:29:53Z",
+  "date": "2026-06-07",
   "sports": {
     "nba": {
       "status": "ok",
@@ -19,55 +19,27 @@
         "logloss": 0.6923,
         "brier": 0.2496
       },
-      "picks": [
-        {
-          "home_team": "Vegas Golden Knights",
-          "away_team": "Carolina Hurricanes",
-          "pick": "H",
-          "pick_label": "Vegas Golden Knights",
-          "p_win": 0.5199,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-06-06",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
-        }
-      ],
-      "name": "NHL",
-      "analysis": ""
+      "picks": [],
+      "name": "NHL"
     },
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4947,
-        "logloss": 0.6974,
-        "brier": 0.2521
+        "accuracy": 0.5026,
+        "logloss": 0.6984,
+        "brier": 0.2526
       },
       "picks": [
         {
-          "home_team": "Philadelphia Phillies",
-          "away_team": "Chicago White Sox",
+          "home_team": "Los Angeles Dodgers",
+          "away_team": "Los Angeles Angels",
           "pick": "H",
-          "pick_label": "Philadelphia Phillies",
-          "p_win": 0.5602,
-          "implied_odds": 1.79,
-          "signal": "baja",
-          "date": "2026-06-06",
-          "model_spread": 0.4,
+          "pick_label": "Los Angeles Dodgers",
+          "p_win": 0.6296,
+          "implied_odds": 1.59,
+          "signal": "media",
+          "date": "2026-06-07",
+          "model_spread": 1.0,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -82,7 +54,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Phillies 34-29 vs Sox 33-30. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "⚠️ Modelo 63%. Dodgers 42-23 vs Angels 24-41. Sin bajas importantes. ML Dodgers con cautela (modelo 63%)."
+        },
+        {
+          "home_team": "St. Louis Cardinals",
+          "away_team": "Cincinnati Reds",
+          "pick": "H",
+          "pick_label": "St. Louis Cardinals",
+          "p_win": 0.5711,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-06-07",
+          "model_spread": 0.5,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Cardinals 34-28 vs Reds 31-32. Sin bajas importantes. SKIP — sin edge claro (57%)."
         }
       ],
       "name": "MLB",
@@ -151,21 +149,133 @@
   },
   "parlays": {
     "by_sport": {
-      "nhl": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      },
       "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Los Angeles Dodgers vs Los Angeles Angels",
+              "pick": "Los Angeles Dodgers",
+              "p_win": 0.6296,
+              "implied_odds": 1.59
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Cincinnati Reds",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5711,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 2.78,
+          "combined_prob": 0.3596,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Los Angeles Dodgers vs Los Angeles Angels",
+              "pick": "Los Angeles Dodgers",
+              "p_win": 0.6296,
+              "implied_odds": 1.59
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Cincinnati Reds",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5711,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 2.78,
+          "combined_prob": 0.3596,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Los Angeles Dodgers vs Los Angeles Angels",
+              "pick": "Los Angeles Dodgers",
+              "p_win": 0.6296,
+              "implied_odds": 1.59
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Cincinnati Reds",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5711,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 2.78,
+          "combined_prob": 0.3596,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Los Angeles Dodgers vs Los Angeles Angels",
+              "pick": "Los Angeles Dodgers",
+              "p_win": 0.6296,
+              "implied_odds": 1.59
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Cincinnati Reds",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5711,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 2.78,
+          "combined_prob": 0.3596,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Los Angeles Dodgers vs Los Angeles Angels",
+              "pick": "Los Angeles Dodgers",
+              "p_win": 0.6296,
+              "implied_odds": 1.59
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Cincinnati Reds",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5711,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 2.78,
+          "combined_prob": 0.3596,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Los Angeles Dodgers vs Los Angeles Angels",
+              "pick": "Los Angeles Dodgers",
+              "p_win": 0.6296,
+              "implied_odds": 1.59
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Cincinnati Reds",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5711,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 2.78,
+          "combined_prob": 0.3596,
+          "n_legs": 2
+        }
       }
     },
     "combined": {
@@ -173,126 +283,126 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Philadelphia Phillies vs Chicago White Sox",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5602,
-            "implied_odds": 1.79
+            "match": "Los Angeles Dodgers vs Los Angeles Angels",
+            "pick": "Los Angeles Dodgers",
+            "p_win": 0.6296,
+            "implied_odds": 1.59
           },
           {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Cincinnati Reds",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5711,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 3.44,
-        "combined_prob": 0.2912,
+        "total_odds": 2.78,
+        "combined_prob": 0.3596,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Philadelphia Phillies vs Chicago White Sox",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5602,
-            "implied_odds": 1.79
+            "match": "Los Angeles Dodgers vs Los Angeles Angels",
+            "pick": "Los Angeles Dodgers",
+            "p_win": 0.6296,
+            "implied_odds": 1.59
           },
           {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Cincinnati Reds",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5711,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 3.44,
-        "combined_prob": 0.2912,
+        "total_odds": 2.78,
+        "combined_prob": 0.3596,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Philadelphia Phillies vs Chicago White Sox",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5602,
-            "implied_odds": 1.79
+            "match": "Los Angeles Dodgers vs Los Angeles Angels",
+            "pick": "Los Angeles Dodgers",
+            "p_win": 0.6296,
+            "implied_odds": 1.59
           },
           {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Cincinnati Reds",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5711,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 3.44,
-        "combined_prob": 0.2912,
+        "total_odds": 2.78,
+        "combined_prob": 0.3596,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Philadelphia Phillies vs Chicago White Sox",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5602,
-            "implied_odds": 1.79
+            "match": "Los Angeles Dodgers vs Los Angeles Angels",
+            "pick": "Los Angeles Dodgers",
+            "p_win": 0.6296,
+            "implied_odds": 1.59
           },
           {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Cincinnati Reds",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5711,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 3.44,
-        "combined_prob": 0.2912,
+        "total_odds": 2.78,
+        "combined_prob": 0.3596,
         "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Philadelphia Phillies vs Chicago White Sox",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5602,
-            "implied_odds": 1.79
+            "match": "Los Angeles Dodgers vs Los Angeles Angels",
+            "pick": "Los Angeles Dodgers",
+            "p_win": 0.6296,
+            "implied_odds": 1.59
           },
           {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Cincinnati Reds",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5711,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 3.44,
-        "combined_prob": 0.2912,
+        "total_odds": 2.78,
+        "combined_prob": 0.3596,
         "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Philadelphia Phillies vs Chicago White Sox",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5602,
-            "implied_odds": 1.79
+            "match": "Los Angeles Dodgers vs Los Angeles Angels",
+            "pick": "Los Angeles Dodgers",
+            "p_win": 0.6296,
+            "implied_odds": 1.59
           },
           {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5199,
-            "implied_odds": 1.92
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Cincinnati Reds",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5711,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 3.44,
-        "combined_prob": 0.2912,
+        "total_odds": 2.78,
+        "combined_prob": 0.3596,
         "n_legs": 2
       }
     }
