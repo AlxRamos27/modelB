@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-10T11:39:22Z",
-  "date": "2026-06-10",
+  "generated_at": "2026-06-11T12:10:13Z",
+  "date": "2026-06-11",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,36 +9,8 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [
-        {
-          "home_team": "New York Knicks",
-          "away_team": "San Antonio Spurs",
-          "pick": "H",
-          "pick_label": "New York Knicks",
-          "p_win": 0.6005,
-          "implied_odds": 1.67,
-          "signal": "media",
-          "date": "2026-06-10",
-          "model_spread": 6.0,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 216.5,
-          "ou_line": 216.5,
-          "ou_pick": "under",
-          "pts_home_scored": 117.8,
-          "pts_home_allowed": 106.0,
-          "pts_away_scored": 121.0,
-          "pts_away_allowed": 112.7,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Knicks 4-3 vs Spurs 5-1. Sin bajas importantes. O/U en 216.5 pts — Under es la jugada (ritmo lento). ML Knicks con cautela (modelo 60%)."
-        }
-      ],
-      "name": "NBA",
-      "analysis": ""
+      "picks": [],
+      "name": "NBA"
     },
     "nhl": {
       "status": "ok",
@@ -47,50 +19,54 @@
         "logloss": 0.6923,
         "brier": 0.2496
       },
-      "picks": [],
-      "name": "NHL"
-    },
-    "mlb": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5025,
-        "logloss": 0.6964,
-        "brier": 0.2516
-      },
       "picks": [
         {
-          "home_team": "Tampa Bay Rays",
-          "away_team": "Boston Red Sox",
+          "home_team": "Carolina Hurricanes",
+          "away_team": "Vegas Golden Knights",
           "pick": "H",
-          "pick_label": "Tampa Bay Rays",
-          "p_win": 0.5735,
-          "implied_odds": 1.74,
+          "pick_label": "Carolina Hurricanes",
+          "p_win": 0.5198,
+          "implied_odds": 1.92,
           "signal": "baja",
-          "date": "2026-06-10",
-          "model_spread": 0.5,
+          "date": "2026-06-11",
+          "model_spread": 0.1,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
           "edge_pct": null,
           "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
           "pts_home_scored": null,
           "pts_home_allowed": null,
           "pts_away_scored": null,
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 57%. Rays 39-25 vs Sox 35-31. Sin bajas importantes. SKIP — sin edge claro (57%)."
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
         }
       ],
-      "name": "MLB",
+      "name": "NHL",
       "analysis": ""
     },
+    "mlb": {
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.5147,
+        "logloss": 0.6958,
+        "brier": 0.2513
+      },
+      "picks": [],
+      "name": "MLB"
+    },
     "epl": {
-      "status": "error",
-      "reason": "Found array with 0 sample(s) (shape=(0, 5)) while a minimum of 1 is required by StandardScaler.",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.4605,
+        "logloss": 1.079,
+        "brier": 0.2184
+      },
       "picks": [],
       "name": "Premier League"
     },
@@ -147,15 +123,7 @@
   },
   "parlays": {
     "by_sport": {
-      "nba": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      },
-      "mlb": {
+      "nhl": {
         "cuota_3": null,
         "cuota_4": null,
         "cuota_5": null,
@@ -165,132 +133,12 @@
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "nba",
-            "match": "New York Knicks vs San Antonio Spurs",
-            "pick": "New York Knicks",
-            "p_win": 0.6005,
-            "implied_odds": 1.67
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Boston Red Sox",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5735,
-            "implied_odds": 1.74
-          }
-        ],
-        "total_odds": 2.91,
-        "combined_prob": 0.3444,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "nba",
-            "match": "New York Knicks vs San Antonio Spurs",
-            "pick": "New York Knicks",
-            "p_win": 0.6005,
-            "implied_odds": 1.67
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Boston Red Sox",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5735,
-            "implied_odds": 1.74
-          }
-        ],
-        "total_odds": 2.91,
-        "combined_prob": 0.3444,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "nba",
-            "match": "New York Knicks vs San Antonio Spurs",
-            "pick": "New York Knicks",
-            "p_win": 0.6005,
-            "implied_odds": 1.67
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Boston Red Sox",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5735,
-            "implied_odds": 1.74
-          }
-        ],
-        "total_odds": 2.91,
-        "combined_prob": 0.3444,
-        "n_legs": 2
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "nba",
-            "match": "New York Knicks vs San Antonio Spurs",
-            "pick": "New York Knicks",
-            "p_win": 0.6005,
-            "implied_odds": 1.67
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Boston Red Sox",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5735,
-            "implied_odds": 1.74
-          }
-        ],
-        "total_odds": 2.91,
-        "combined_prob": 0.3444,
-        "n_legs": 2
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "nba",
-            "match": "New York Knicks vs San Antonio Spurs",
-            "pick": "New York Knicks",
-            "p_win": 0.6005,
-            "implied_odds": 1.67
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Boston Red Sox",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5735,
-            "implied_odds": 1.74
-          }
-        ],
-        "total_odds": 2.91,
-        "combined_prob": 0.3444,
-        "n_legs": 2
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "nba",
-            "match": "New York Knicks vs San Antonio Spurs",
-            "pick": "New York Knicks",
-            "p_win": 0.6005,
-            "implied_odds": 1.67
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Boston Red Sox",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5735,
-            "implied_odds": 1.74
-          }
-        ],
-        "total_odds": 2.91,
-        "combined_prob": 0.3444,
-        "n_legs": 2
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
