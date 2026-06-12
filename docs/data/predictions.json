@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-11T12:10:13Z",
-  "date": "2026-06-11",
+  "generated_at": "2026-06-12T11:43:46Z",
+  "date": "2026-06-12",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,47 +15,19 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5207,
-        "logloss": 0.6923,
+        "accuracy": 0.5189,
+        "logloss": 0.6924,
         "brier": 0.2496
       },
-      "picks": [
-        {
-          "home_team": "Carolina Hurricanes",
-          "away_team": "Vegas Golden Knights",
-          "pick": "H",
-          "pick_label": "Carolina Hurricanes",
-          "p_win": 0.5198,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-06-11",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        }
-      ],
-      "name": "NHL",
-      "analysis": ""
+      "picks": [],
+      "name": "NHL"
     },
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5147,
-        "logloss": 0.6958,
-        "brier": 0.2513
+        "accuracy": 0.4829,
+        "logloss": 0.6949,
+        "brier": 0.2508
       },
       "picks": [],
       "name": "MLB"
@@ -122,16 +94,7 @@
     }
   },
   "parlays": {
-    "by_sport": {
-      "nhl": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      }
-    },
+    "by_sport": {},
     "combined": {
       "cuota_3": null,
       "cuota_4": null,
