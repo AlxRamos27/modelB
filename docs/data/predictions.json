@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-12T11:43:46Z",
-  "date": "2026-06-12",
+  "generated_at": "2026-06-13T10:29:20Z",
+  "date": "2026-06-13",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,8 +9,36 @@
         "logloss": 0.621,
         "brier": 0.2152
       },
-      "picks": [],
-      "name": "NBA"
+      "picks": [
+        {
+          "home_team": "San Antonio Spurs",
+          "away_team": "New York Knicks",
+          "pick": "H",
+          "pick_label": "San Antonio Spurs",
+          "p_win": 0.688,
+          "implied_odds": 1.45,
+          "signal": "media",
+          "date": "2026-06-13",
+          "model_spread": 11.5,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 216.5,
+          "ou_line": 216.5,
+          "ou_pick": "under",
+          "pts_home_scored": 115.3,
+          "pts_home_allowed": 103.7,
+          "pts_away_scored": 114.3,
+          "pts_away_allowed": 123.7,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 69%. Spurs 5-1 vs Knicks 4-3. Sin bajas importantes. O/U en 216.5 pts — Under es la jugada (ritmo lento). ML Spurs con cautela (modelo 69%)."
+        }
+      ],
+      "name": "NBA",
+      "analysis": ""
     },
     "nhl": {
       "status": "ok",
@@ -25,9 +53,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4829,
-        "logloss": 0.6949,
-        "brier": 0.2508
+        "accuracy": 0.4952,
+        "logloss": 0.6974,
+        "brier": 0.2521
       },
       "picks": [],
       "name": "MLB"
@@ -94,7 +122,16 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "nba": {
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
+      }
+    },
     "combined": {
       "cuota_3": null,
       "cuota_4": null,
