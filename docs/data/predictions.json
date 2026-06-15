@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-14T10:48:55Z",
-  "date": "2026-06-14",
+  "generated_at": "2026-06-15T13:55:24Z",
+  "date": "2026-06-15",
   "sports": {
     "nba": {
       "status": "ok",
@@ -19,54 +19,26 @@
         "logloss": 0.6924,
         "brier": 0.2496
       },
-      "picks": [
-        {
-          "home_team": "Vegas Golden Knights",
-          "away_team": "Carolina Hurricanes",
-          "pick": "H",
-          "pick_label": "Vegas Golden Knights",
-          "p_win": 0.5207,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-06-14",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
-        }
-      ],
-      "name": "NHL",
-      "analysis": ""
+      "picks": [],
+      "name": "NHL"
     },
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5118,
-        "logloss": 0.6949,
-        "brier": 0.2509
+        "accuracy": 0.5234,
+        "logloss": 0.6936,
+        "brier": 0.2502
       },
       "picks": [
         {
-          "home_team": "Cleveland Guardians",
-          "away_team": "Detroit Tigers",
+          "home_team": "Washington Nationals",
+          "away_team": "Kansas City Royals",
           "pick": "H",
-          "pick_label": "Cleveland Guardians",
-          "p_win": 0.5778,
+          "pick_label": "Washington Nationals",
+          "p_win": 0.578,
           "implied_odds": 1.73,
           "signal": "baja",
-          "date": "2026-06-14",
+          "date": "2026-06-15",
           "model_spread": 0.6,
           "house_spread": null,
           "house_odds": null,
@@ -82,33 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 58%. Guardians 39-33 vs Tigers 29-42. Sin bajas importantes. SKIP — sin edge claro (58%)."
-        },
-        {
-          "home_team": "Athletics",
-          "away_team": "Colorado Rockies",
-          "pick": "H",
-          "pick_label": "Athletics",
-          "p_win": 0.5777,
-          "implied_odds": 1.73,
-          "signal": "baja",
-          "date": "2026-06-14",
-          "model_spread": 0.6,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 58%. Athletics 35-35 vs Rockies 26-45. Sin bajas importantes. SKIP — sin edge claro (58%)."
+          "note": "❌ Modelo 58%. Nationals 37-35 vs Royals 29-43. Sin bajas importantes. SKIP — sin edge claro (58%)."
         }
       ],
       "name": "MLB",
@@ -177,298 +123,22 @@
   },
   "parlays": {
     "by_sport": {
-      "nhl": {
+      "mlb": {
         "cuota_3": null,
         "cuota_4": null,
         "cuota_5": null,
         "cuota_6": null,
         "cuota_10": null,
         "cuota_20": null
-      },
-      "mlb": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5778,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Colorado Rockies",
-              "pick": "Athletics",
-              "p_win": 0.5777,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3338,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5778,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Colorado Rockies",
-              "pick": "Athletics",
-              "p_win": 0.5777,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3338,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5778,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Colorado Rockies",
-              "pick": "Athletics",
-              "p_win": 0.5777,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3338,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5778,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Colorado Rockies",
-              "pick": "Athletics",
-              "p_win": 0.5777,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3338,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5778,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Colorado Rockies",
-              "pick": "Athletics",
-              "p_win": 0.5777,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3338,
-          "n_legs": 2
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5778,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Colorado Rockies",
-              "pick": "Athletics",
-              "p_win": 0.5777,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.3338,
-          "n_legs": 2
-        }
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5778,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Athletics vs Colorado Rockies",
-            "pick": "Athletics",
-            "p_win": 0.5777,
-            "implied_odds": 1.73
-          }
-        ],
-        "total_odds": 2.99,
-        "combined_prob": 0.3338,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5778,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5207,
-            "implied_odds": 1.92
-          }
-        ],
-        "total_odds": 3.32,
-        "combined_prob": 0.3009,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5778,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Athletics vs Colorado Rockies",
-            "pick": "Athletics",
-            "p_win": 0.5777,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5207,
-            "implied_odds": 1.92
-          }
-        ],
-        "total_odds": 5.75,
-        "combined_prob": 0.1738,
-        "n_legs": 3
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5778,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Athletics vs Colorado Rockies",
-            "pick": "Athletics",
-            "p_win": 0.5777,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5207,
-            "implied_odds": 1.92
-          }
-        ],
-        "total_odds": 5.75,
-        "combined_prob": 0.1738,
-        "n_legs": 3
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5778,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Athletics vs Colorado Rockies",
-            "pick": "Athletics",
-            "p_win": 0.5777,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5207,
-            "implied_odds": 1.92
-          }
-        ],
-        "total_odds": 5.75,
-        "combined_prob": 0.1738,
-        "n_legs": 3
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5778,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Athletics vs Colorado Rockies",
-            "pick": "Athletics",
-            "p_win": 0.5777,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "nhl",
-            "match": "Vegas Golden Knights vs Carolina Hurricanes",
-            "pick": "Vegas Golden Knights",
-            "p_win": 0.5207,
-            "implied_odds": 1.92
-          }
-        ],
-        "total_odds": 5.75,
-        "combined_prob": 0.1738,
-        "n_legs": 3
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
