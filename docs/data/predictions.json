@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T13:55:24Z",
-  "date": "2026-06-15",
+  "generated_at": "2026-06-16T12:53:34Z",
+  "date": "2026-06-16",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5234,
-        "logloss": 0.6936,
-        "brier": 0.2502
+        "accuracy": 0.5185,
+        "logloss": 0.6997,
+        "brier": 0.2532
       },
       "picks": [
         {
-          "home_team": "Washington Nationals",
-          "away_team": "Kansas City Royals",
+          "home_team": "Atlanta Braves",
+          "away_team": "San Francisco Giants",
           "pick": "H",
-          "pick_label": "Washington Nationals",
-          "p_win": 0.578,
-          "implied_odds": 1.73,
-          "signal": "baja",
-          "date": "2026-06-15",
-          "model_spread": 0.6,
+          "pick_label": "Atlanta Braves",
+          "p_win": 0.633,
+          "implied_odds": 1.58,
+          "signal": "media",
+          "date": "2026-06-16",
+          "model_spread": 1.0,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 58%. Nationals 37-35 vs Royals 29-43. Sin bajas importantes. SKIP — sin edge claro (58%)."
+          "note": "⚠️ Modelo 63%. Braves 46-25 vs Giants 29-43. Sin bajas importantes. ML Braves con cautela (modelo 63%)."
+        },
+        {
+          "home_team": "Washington Nationals",
+          "away_team": "Kansas City Royals",
+          "pick": "H",
+          "pick_label": "Washington Nationals",
+          "p_win": 0.6033,
+          "implied_odds": 1.66,
+          "signal": "media",
+          "date": "2026-06-16",
+          "model_spread": 0.8,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 60%. Nationals 38-35 vs Royals 29-44. Sin bajas importantes. ML Nationals con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "Milwaukee Brewers",
+          "away_team": "Cleveland Guardians",
+          "pick": "H",
+          "pick_label": "Milwaukee Brewers",
+          "p_win": 0.591,
+          "implied_odds": 1.69,
+          "signal": "baja",
+          "date": "2026-06-16",
+          "model_spread": 0.7,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Brewers 43-26 vs Guardians 39-33. Sin bajas importantes. SKIP — sin edge claro (59%)."
         }
       ],
       "name": "MLB",
@@ -124,21 +176,331 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Washington Nationals vs Kansas City Royals",
+              "pick": "Washington Nationals",
+              "p_win": 0.6033,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cleveland Guardians",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.591,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 2.81,
+          "combined_prob": 0.3566,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs San Francisco Giants",
+              "pick": "Atlanta Braves",
+              "p_win": 0.633,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Washington Nationals vs Kansas City Royals",
+              "pick": "Washington Nationals",
+              "p_win": 0.6033,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cleveland Guardians",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.591,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 4.43,
+          "combined_prob": 0.2257,
+          "n_legs": 3
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs San Francisco Giants",
+              "pick": "Atlanta Braves",
+              "p_win": 0.633,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Washington Nationals vs Kansas City Royals",
+              "pick": "Washington Nationals",
+              "p_win": 0.6033,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cleveland Guardians",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.591,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 4.43,
+          "combined_prob": 0.2257,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs San Francisco Giants",
+              "pick": "Atlanta Braves",
+              "p_win": 0.633,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Washington Nationals vs Kansas City Royals",
+              "pick": "Washington Nationals",
+              "p_win": 0.6033,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cleveland Guardians",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.591,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 4.43,
+          "combined_prob": 0.2257,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs San Francisco Giants",
+              "pick": "Atlanta Braves",
+              "p_win": 0.633,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Washington Nationals vs Kansas City Royals",
+              "pick": "Washington Nationals",
+              "p_win": 0.6033,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cleveland Guardians",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.591,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 4.43,
+          "combined_prob": 0.2257,
+          "n_legs": 3
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs San Francisco Giants",
+              "pick": "Atlanta Braves",
+              "p_win": 0.633,
+              "implied_odds": 1.58
+            },
+            {
+              "sport": "mlb",
+              "match": "Washington Nationals vs Kansas City Royals",
+              "pick": "Washington Nationals",
+              "p_win": 0.6033,
+              "implied_odds": 1.66
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cleveland Guardians",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.591,
+              "implied_odds": 1.69
+            }
+          ],
+          "total_odds": 4.43,
+          "combined_prob": 0.2257,
+          "n_legs": 3
+        }
       }
     },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Washington Nationals vs Kansas City Royals",
+            "pick": "Washington Nationals",
+            "p_win": 0.6033,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cleveland Guardians",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.591,
+            "implied_odds": 1.69
+          }
+        ],
+        "total_odds": 2.81,
+        "combined_prob": 0.3566,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs San Francisco Giants",
+            "pick": "Atlanta Braves",
+            "p_win": 0.633,
+            "implied_odds": 1.58
+          },
+          {
+            "sport": "mlb",
+            "match": "Washington Nationals vs Kansas City Royals",
+            "pick": "Washington Nationals",
+            "p_win": 0.6033,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cleveland Guardians",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.591,
+            "implied_odds": 1.69
+          }
+        ],
+        "total_odds": 4.43,
+        "combined_prob": 0.2257,
+        "n_legs": 3
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs San Francisco Giants",
+            "pick": "Atlanta Braves",
+            "p_win": 0.633,
+            "implied_odds": 1.58
+          },
+          {
+            "sport": "mlb",
+            "match": "Washington Nationals vs Kansas City Royals",
+            "pick": "Washington Nationals",
+            "p_win": 0.6033,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cleveland Guardians",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.591,
+            "implied_odds": 1.69
+          }
+        ],
+        "total_odds": 4.43,
+        "combined_prob": 0.2257,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs San Francisco Giants",
+            "pick": "Atlanta Braves",
+            "p_win": 0.633,
+            "implied_odds": 1.58
+          },
+          {
+            "sport": "mlb",
+            "match": "Washington Nationals vs Kansas City Royals",
+            "pick": "Washington Nationals",
+            "p_win": 0.6033,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cleveland Guardians",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.591,
+            "implied_odds": 1.69
+          }
+        ],
+        "total_odds": 4.43,
+        "combined_prob": 0.2257,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs San Francisco Giants",
+            "pick": "Atlanta Braves",
+            "p_win": 0.633,
+            "implied_odds": 1.58
+          },
+          {
+            "sport": "mlb",
+            "match": "Washington Nationals vs Kansas City Royals",
+            "pick": "Washington Nationals",
+            "p_win": 0.6033,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cleveland Guardians",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.591,
+            "implied_odds": 1.69
+          }
+        ],
+        "total_odds": 4.43,
+        "combined_prob": 0.2257,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs San Francisco Giants",
+            "pick": "Atlanta Braves",
+            "p_win": 0.633,
+            "implied_odds": 1.58
+          },
+          {
+            "sport": "mlb",
+            "match": "Washington Nationals vs Kansas City Royals",
+            "pick": "Washington Nationals",
+            "p_win": 0.6033,
+            "implied_odds": 1.66
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cleveland Guardians",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.591,
+            "implied_odds": 1.69
+          }
+        ],
+        "total_odds": 4.43,
+        "combined_prob": 0.2257,
+        "n_legs": 3
+      }
     }
   }
 }
