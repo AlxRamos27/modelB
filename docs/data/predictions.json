@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-18T11:50:58Z",
-  "date": "2026-06-18",
+  "generated_at": "2026-06-19T12:06:22Z",
+  "date": "2026-06-19",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,72 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5315,
-        "logloss": 0.6923,
-        "brier": 0.2496
+        "accuracy": 0.5312,
+        "logloss": 0.6893,
+        "brier": 0.2481
       },
       "picks": [
         {
-          "home_team": "Milwaukee Brewers",
-          "away_team": "Cleveland Guardians",
-          "pick": "H",
-          "pick_label": "Milwaukee Brewers",
-          "p_win": 0.5737,
-          "implied_odds": 1.74,
-          "signal": "baja",
-          "date": "2026-06-18",
-          "model_spread": 0.5,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Brewers 45-26 vs Guardians 39-35. Sin bajas importantes. SKIP — sin edge claro (57%)."
-        },
-        {
-          "home_team": "Philadelphia Phillies",
-          "away_team": "New York Mets",
-          "pick": "H",
-          "pick_label": "Philadelphia Phillies",
-          "p_win": 0.5614,
-          "implied_odds": 1.78,
-          "signal": "baja",
-          "date": "2026-06-18",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Phillies 40-34 vs Mets 33-41. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
           "home_team": "New York Yankees",
-          "away_team": "Chicago White Sox",
+          "away_team": "Cincinnati Reds",
           "pick": "H",
           "pick_label": "New York Yankees",
-          "p_win": 0.5583,
-          "implied_odds": 1.79,
+          "p_win": 0.5536,
+          "implied_odds": 1.81,
           "signal": "baja",
-          "date": "2026-06-18",
+          "date": "2026-06-19",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -106,15 +54,19 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Yankees 45-27 vs Sox 38-34. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 55%. Yankees 45-28 vs Reds 35-38. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
       "analysis": ""
     },
     "epl": {
-      "status": "error",
-      "reason": "Found array with 0 sample(s) (shape=(0, 5)) while a minimum of 1 is required by StandardScaler.",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.4605,
+        "logloss": 1.079,
+        "brier": 0.2184
+      },
       "picks": [],
       "name": "Premier League"
     },
@@ -172,317 +124,21 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cleveland Guardians",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5737,
-              "implied_odds": 1.74
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5614,
-              "implied_odds": 1.78
-            }
-          ],
-          "total_odds": 3.1,
-          "combined_prob": 0.3221,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5614,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Chicago White Sox",
-              "pick": "New York Yankees",
-              "p_win": 0.5583,
-              "implied_odds": 1.79
-            }
-          ],
-          "total_odds": 3.19,
-          "combined_prob": 0.3134,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cleveland Guardians",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5737,
-              "implied_odds": 1.74
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5614,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Chicago White Sox",
-              "pick": "New York Yankees",
-              "p_win": 0.5583,
-              "implied_odds": 1.79
-            }
-          ],
-          "total_odds": 5.54,
-          "combined_prob": 0.1798,
-          "n_legs": 3
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cleveland Guardians",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5737,
-              "implied_odds": 1.74
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5614,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Chicago White Sox",
-              "pick": "New York Yankees",
-              "p_win": 0.5583,
-              "implied_odds": 1.79
-            }
-          ],
-          "total_odds": 5.54,
-          "combined_prob": 0.1798,
-          "n_legs": 3
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cleveland Guardians",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5737,
-              "implied_odds": 1.74
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5614,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Chicago White Sox",
-              "pick": "New York Yankees",
-              "p_win": 0.5583,
-              "implied_odds": 1.79
-            }
-          ],
-          "total_odds": 5.54,
-          "combined_prob": 0.1798,
-          "n_legs": 3
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cleveland Guardians",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5737,
-              "implied_odds": 1.74
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5614,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Chicago White Sox",
-              "pick": "New York Yankees",
-              "p_win": 0.5583,
-              "implied_odds": 1.79
-            }
-          ],
-          "total_odds": 5.54,
-          "combined_prob": 0.1798,
-          "n_legs": 3
-        }
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cleveland Guardians",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5737,
-            "implied_odds": 1.74
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5614,
-            "implied_odds": 1.78
-          }
-        ],
-        "total_odds": 3.1,
-        "combined_prob": 0.3221,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5614,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Chicago White Sox",
-            "pick": "New York Yankees",
-            "p_win": 0.5583,
-            "implied_odds": 1.79
-          }
-        ],
-        "total_odds": 3.19,
-        "combined_prob": 0.3134,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cleveland Guardians",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5737,
-            "implied_odds": 1.74
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5614,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Chicago White Sox",
-            "pick": "New York Yankees",
-            "p_win": 0.5583,
-            "implied_odds": 1.79
-          }
-        ],
-        "total_odds": 5.54,
-        "combined_prob": 0.1798,
-        "n_legs": 3
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cleveland Guardians",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5737,
-            "implied_odds": 1.74
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5614,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Chicago White Sox",
-            "pick": "New York Yankees",
-            "p_win": 0.5583,
-            "implied_odds": 1.79
-          }
-        ],
-        "total_odds": 5.54,
-        "combined_prob": 0.1798,
-        "n_legs": 3
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cleveland Guardians",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5737,
-            "implied_odds": 1.74
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5614,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Chicago White Sox",
-            "pick": "New York Yankees",
-            "p_win": 0.5583,
-            "implied_odds": 1.79
-          }
-        ],
-        "total_odds": 5.54,
-        "combined_prob": 0.1798,
-        "n_legs": 3
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cleveland Guardians",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5737,
-            "implied_odds": 1.74
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5614,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Chicago White Sox",
-            "pick": "New York Yankees",
-            "p_win": 0.5583,
-            "implied_odds": 1.79
-          }
-        ],
-        "total_odds": 5.54,
-        "combined_prob": 0.1798,
-        "n_legs": 3
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
