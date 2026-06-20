@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-19T12:06:22Z",
-  "date": "2026-06-19",
+  "generated_at": "2026-06-20T10:32:52Z",
+  "date": "2026-06-20",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5312,
-        "logloss": 0.6893,
-        "brier": 0.2481
+        "accuracy": 0.531,
+        "logloss": 0.6906,
+        "brier": 0.2487
       },
       "picks": [
         {
@@ -35,11 +35,11 @@
           "away_team": "Cincinnati Reds",
           "pick": "H",
           "pick_label": "New York Yankees",
-          "p_win": 0.5536,
-          "implied_odds": 1.81,
+          "p_win": 0.5638,
+          "implied_odds": 1.77,
           "signal": "baja",
-          "date": "2026-06-19",
-          "model_spread": 0.4,
+          "date": "2026-06-20",
+          "model_spread": 0.5,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Yankees 45-28 vs Reds 35-38. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 56%. Yankees 46-28 vs Reds 35-39. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "Philadelphia Phillies",
+          "away_team": "New York Mets",
+          "pick": "H",
+          "pick_label": "Philadelphia Phillies",
+          "p_win": 0.5479,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-06-20",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Phillies 40-35 vs Mets 34-41. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -124,21 +150,261 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Cincinnati Reds",
+              "pick": "New York Yankees",
+              "p_win": 0.5638,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs New York Mets",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.24,
+          "combined_prob": 0.3089,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Cincinnati Reds",
+              "pick": "New York Yankees",
+              "p_win": 0.5638,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs New York Mets",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.24,
+          "combined_prob": 0.3089,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Cincinnati Reds",
+              "pick": "New York Yankees",
+              "p_win": 0.5638,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs New York Mets",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.24,
+          "combined_prob": 0.3089,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Cincinnati Reds",
+              "pick": "New York Yankees",
+              "p_win": 0.5638,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs New York Mets",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.24,
+          "combined_prob": 0.3089,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Cincinnati Reds",
+              "pick": "New York Yankees",
+              "p_win": 0.5638,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs New York Mets",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.24,
+          "combined_prob": 0.3089,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Cincinnati Reds",
+              "pick": "New York Yankees",
+              "p_win": 0.5638,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs New York Mets",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5479,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.24,
+          "combined_prob": 0.3089,
+          "n_legs": 2
+        }
       }
     },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Cincinnati Reds",
+            "pick": "New York Yankees",
+            "p_win": 0.5638,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs New York Mets",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.24,
+        "combined_prob": 0.3089,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Cincinnati Reds",
+            "pick": "New York Yankees",
+            "p_win": 0.5638,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs New York Mets",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.24,
+        "combined_prob": 0.3089,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Cincinnati Reds",
+            "pick": "New York Yankees",
+            "p_win": 0.5638,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs New York Mets",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.24,
+        "combined_prob": 0.3089,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Cincinnati Reds",
+            "pick": "New York Yankees",
+            "p_win": 0.5638,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs New York Mets",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.24,
+        "combined_prob": 0.3089,
+        "n_legs": 2
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Cincinnati Reds",
+            "pick": "New York Yankees",
+            "p_win": 0.5638,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs New York Mets",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.24,
+        "combined_prob": 0.3089,
+        "n_legs": 2
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Cincinnati Reds",
+            "pick": "New York Yankees",
+            "p_win": 0.5638,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs New York Mets",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5479,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.24,
+        "combined_prob": 0.3089,
+        "n_legs": 2
+      }
     }
   }
 }
