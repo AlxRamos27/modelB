@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-21T11:16:33Z",
-  "date": "2026-06-21",
+  "generated_at": "2026-06-22T13:35:06Z",
+  "date": "2026-06-22",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,20 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5328,
-        "logloss": 0.6914,
-        "brier": 0.2491
+        "accuracy": 0.5302,
+        "logloss": 0.6909,
+        "brier": 0.2489
       },
       "picks": [
         {
-          "home_team": "Philadelphia Phillies",
-          "away_team": "New York Mets",
+          "home_team": "Miami Marlins",
+          "away_team": "Texas Rangers",
           "pick": "H",
-          "pick_label": "Philadelphia Phillies",
-          "p_win": 0.5604,
-          "implied_odds": 1.78,
+          "pick_label": "Miami Marlins",
+          "p_win": 0.5518,
+          "implied_odds": 1.81,
           "signal": "baja",
-          "date": "2026-06-21",
+          "date": "2026-06-22",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -54,59 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Phillies 41-35 vs Mets 34-42. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "Los Angeles Dodgers",
-          "away_team": "Baltimore Orioles",
-          "pick": "H",
-          "pick_label": "Los Angeles Dodgers",
-          "p_win": 0.5497,
-          "implied_odds": 1.82,
-          "signal": "baja",
-          "date": "2026-06-21",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Dodgers 49-28 vs Orioles 36-42. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
-        {
-          "home_team": "New York Yankees",
-          "away_team": "Cincinnati Reds",
-          "pick": "H",
-          "pick_label": "New York Yankees",
-          "p_win": 0.5477,
-          "implied_odds": 1.83,
-          "signal": "baja",
-          "date": "2026-06-21",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Yankees 46-29 vs Reds 36-39. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 55%. Marlins 40-38 vs Rangers 37-40. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -176,317 +124,21 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Los Angeles Dodgers vs Baltimore Orioles",
-              "pick": "Los Angeles Dodgers",
-              "p_win": 0.5497,
-              "implied_odds": 1.82
-            }
-          ],
-          "total_odds": 3.24,
-          "combined_prob": 0.3081,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Los Angeles Dodgers vs Baltimore Orioles",
-              "pick": "Los Angeles Dodgers",
-              "p_win": 0.5497,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Cincinnati Reds",
-              "pick": "New York Yankees",
-              "p_win": 0.5477,
-              "implied_odds": 1.83
-            }
-          ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3011,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Los Angeles Dodgers vs Baltimore Orioles",
-              "pick": "Los Angeles Dodgers",
-              "p_win": 0.5497,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Cincinnati Reds",
-              "pick": "New York Yankees",
-              "p_win": 0.5477,
-              "implied_odds": 1.83
-            }
-          ],
-          "total_odds": 5.93,
-          "combined_prob": 0.1687,
-          "n_legs": 3
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Los Angeles Dodgers vs Baltimore Orioles",
-              "pick": "Los Angeles Dodgers",
-              "p_win": 0.5497,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Cincinnati Reds",
-              "pick": "New York Yankees",
-              "p_win": 0.5477,
-              "implied_odds": 1.83
-            }
-          ],
-          "total_odds": 5.93,
-          "combined_prob": 0.1687,
-          "n_legs": 3
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Los Angeles Dodgers vs Baltimore Orioles",
-              "pick": "Los Angeles Dodgers",
-              "p_win": 0.5497,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Cincinnati Reds",
-              "pick": "New York Yankees",
-              "p_win": 0.5477,
-              "implied_odds": 1.83
-            }
-          ],
-          "total_odds": 5.93,
-          "combined_prob": 0.1687,
-          "n_legs": 3
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Los Angeles Dodgers vs Baltimore Orioles",
-              "pick": "Los Angeles Dodgers",
-              "p_win": 0.5497,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Yankees vs Cincinnati Reds",
-              "pick": "New York Yankees",
-              "p_win": 0.5477,
-              "implied_odds": 1.83
-            }
-          ],
-          "total_odds": 5.93,
-          "combined_prob": 0.1687,
-          "n_legs": 3
-        }
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Los Angeles Dodgers vs Baltimore Orioles",
-            "pick": "Los Angeles Dodgers",
-            "p_win": 0.5497,
-            "implied_odds": 1.82
-          }
-        ],
-        "total_odds": 3.24,
-        "combined_prob": 0.3081,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Los Angeles Dodgers vs Baltimore Orioles",
-            "pick": "Los Angeles Dodgers",
-            "p_win": 0.5497,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Cincinnati Reds",
-            "pick": "New York Yankees",
-            "p_win": 0.5477,
-            "implied_odds": 1.83
-          }
-        ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3011,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Los Angeles Dodgers vs Baltimore Orioles",
-            "pick": "Los Angeles Dodgers",
-            "p_win": 0.5497,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Cincinnati Reds",
-            "pick": "New York Yankees",
-            "p_win": 0.5477,
-            "implied_odds": 1.83
-          }
-        ],
-        "total_odds": 5.93,
-        "combined_prob": 0.1687,
-        "n_legs": 3
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Los Angeles Dodgers vs Baltimore Orioles",
-            "pick": "Los Angeles Dodgers",
-            "p_win": 0.5497,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Cincinnati Reds",
-            "pick": "New York Yankees",
-            "p_win": 0.5477,
-            "implied_odds": 1.83
-          }
-        ],
-        "total_odds": 5.93,
-        "combined_prob": 0.1687,
-        "n_legs": 3
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Los Angeles Dodgers vs Baltimore Orioles",
-            "pick": "Los Angeles Dodgers",
-            "p_win": 0.5497,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Cincinnati Reds",
-            "pick": "New York Yankees",
-            "p_win": 0.5477,
-            "implied_odds": 1.83
-          }
-        ],
-        "total_odds": 5.93,
-        "combined_prob": 0.1687,
-        "n_legs": 3
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Los Angeles Dodgers vs Baltimore Orioles",
-            "pick": "Los Angeles Dodgers",
-            "p_win": 0.5497,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Yankees vs Cincinnati Reds",
-            "pick": "New York Yankees",
-            "p_win": 0.5477,
-            "implied_odds": 1.83
-          }
-        ],
-        "total_odds": 5.93,
-        "combined_prob": 0.1687,
-        "n_legs": 3
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
