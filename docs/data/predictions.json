@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-22T13:35:06Z",
-  "date": "2026-06-22",
+  "generated_at": "2026-06-23T11:16:54Z",
+  "date": "2026-06-23",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,40 +25,12 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5302,
-        "logloss": 0.6909,
-        "brier": 0.2489
+        "accuracy": 0.5342,
+        "logloss": 0.6899,
+        "brier": 0.2484
       },
-      "picks": [
-        {
-          "home_team": "Miami Marlins",
-          "away_team": "Texas Rangers",
-          "pick": "H",
-          "pick_label": "Miami Marlins",
-          "p_win": 0.5518,
-          "implied_odds": 1.81,
-          "signal": "baja",
-          "date": "2026-06-22",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Marlins 40-38 vs Rangers 37-40. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        }
-      ],
-      "name": "MLB",
-      "analysis": ""
+      "picks": [],
+      "name": "MLB"
     },
     "epl": {
       "status": "ok",
@@ -122,16 +94,7 @@
     }
   },
   "parlays": {
-    "by_sport": {
-      "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      }
-    },
+    "by_sport": {},
     "combined": {
       "cuota_3": null,
       "cuota_4": null,
