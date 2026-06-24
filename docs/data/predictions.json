@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T11:16:54Z",
-  "date": "2026-06-23",
+  "generated_at": "2026-06-24T10:50:19Z",
+  "date": "2026-06-24",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5342,
-        "logloss": 0.6899,
-        "brier": 0.2484
+        "accuracy": 0.4937,
+        "logloss": 0.6935,
+        "brier": 0.2502
       },
       "picks": [],
       "name": "MLB"
