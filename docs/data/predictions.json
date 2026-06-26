@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T10:42:06Z",
-  "date": "2026-06-25",
+  "generated_at": "2026-06-26T10:51:48Z",
+  "date": "2026-06-26",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,12 +25,92 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5104,
-        "logloss": 0.6908,
-        "brier": 0.2488
+        "accuracy": 0.5207,
+        "logloss": 0.6916,
+        "brier": 0.2492
       },
-      "picks": [],
-      "name": "MLB"
+      "picks": [
+        {
+          "home_team": "Cleveland Guardians",
+          "away_team": "Seattle Mariners",
+          "pick": "H",
+          "pick_label": "Cleveland Guardians",
+          "p_win": 0.5642,
+          "implied_odds": 1.77,
+          "signal": "baja",
+          "date": "2026-06-26",
+          "model_spread": 0.5,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Guardians 42-39 vs Mariners 41-41. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "Chicago White Sox",
+          "away_team": "Kansas City Royals",
+          "pick": "H",
+          "pick_label": "Chicago White Sox",
+          "p_win": 0.5483,
+          "implied_odds": 1.82,
+          "signal": "baja",
+          "date": "2026-06-26",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Sox 41-38 vs Royals 34-48. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
+        {
+          "home_team": "Baltimore Orioles",
+          "away_team": "Washington Nationals",
+          "pick": "H",
+          "pick_label": "Baltimore Orioles",
+          "p_win": 0.547,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-06-26",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Orioles 38-44 vs Nationals 41-41. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        }
+      ],
+      "name": "MLB",
+      "analysis": ""
     },
     "epl": {
       "status": "ok",
@@ -94,14 +174,319 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "mlb": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Seattle Mariners",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5642,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Chicago White Sox vs Kansas City Royals",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5483,
+              "implied_odds": 1.82
+            }
+          ],
+          "total_odds": 3.22,
+          "combined_prob": 0.3094,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Chicago White Sox vs Kansas City Royals",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5483,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Washington Nationals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.547,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.33,
+          "combined_prob": 0.2999,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Seattle Mariners",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5642,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Chicago White Sox vs Kansas City Royals",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5483,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Washington Nationals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.547,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.9,
+          "combined_prob": 0.1692,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Seattle Mariners",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5642,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Chicago White Sox vs Kansas City Royals",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5483,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Washington Nationals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.547,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.9,
+          "combined_prob": 0.1692,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Seattle Mariners",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5642,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Chicago White Sox vs Kansas City Royals",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5483,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Washington Nationals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.547,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.9,
+          "combined_prob": 0.1692,
+          "n_legs": 3
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Cleveland Guardians vs Seattle Mariners",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5642,
+              "implied_odds": 1.77
+            },
+            {
+              "sport": "mlb",
+              "match": "Chicago White Sox vs Kansas City Royals",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5483,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Washington Nationals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.547,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.9,
+          "combined_prob": 0.1692,
+          "n_legs": 3
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Seattle Mariners",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5642,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Kansas City Royals",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5483,
+            "implied_odds": 1.82
+          }
+        ],
+        "total_odds": 3.22,
+        "combined_prob": 0.3094,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Kansas City Royals",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5483,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Washington Nationals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.547,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.33,
+        "combined_prob": 0.2999,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Seattle Mariners",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5642,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Kansas City Royals",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5483,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Washington Nationals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.547,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.9,
+        "combined_prob": 0.1692,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Seattle Mariners",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5642,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Kansas City Royals",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5483,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Washington Nationals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.547,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.9,
+        "combined_prob": 0.1692,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Seattle Mariners",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5642,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Kansas City Royals",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5483,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Washington Nationals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.547,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.9,
+        "combined_prob": 0.1692,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Cleveland Guardians vs Seattle Mariners",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5642,
+            "implied_odds": 1.77
+          },
+          {
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Kansas City Royals",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5483,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Washington Nationals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.547,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.9,
+        "combined_prob": 0.1692,
+        "n_legs": 3
+      }
     }
   }
 }
