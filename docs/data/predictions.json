@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T10:28:21Z",
-  "date": "2026-06-28",
+  "generated_at": "2026-06-29T12:35:26Z",
+  "date": "2026-06-29",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5444,
-        "logloss": 0.6911,
-        "brier": 0.249
+        "accuracy": 0.5378,
+        "logloss": 0.6922,
+        "brier": 0.2495
       },
       "picks": [
         {
-          "home_team": "Chicago White Sox",
-          "away_team": "Kansas City Royals",
+          "home_team": "Toronto Blue Jays",
+          "away_team": "New York Mets",
           "pick": "H",
-          "pick_label": "Chicago White Sox",
-          "p_win": 0.5793,
-          "implied_odds": 1.73,
+          "pick_label": "Toronto Blue Jays",
+          "p_win": 0.5507,
+          "implied_odds": 1.82,
           "signal": "baja",
-          "date": "2026-06-28",
-          "model_spread": 0.6,
+          "date": "2026-06-29",
+          "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 58%. Sox 43-38 vs Royals 34-50. Sin bajas importantes. SKIP — sin edge claro (58%)."
+          "note": "❌ Modelo 55%. Jays 39-45 vs Mets 35-49. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
+        {
+          "home_team": "Milwaukee Brewers",
+          "away_team": "Cincinnati Reds",
+          "pick": "H",
+          "pick_label": "Milwaukee Brewers",
+          "p_win": 0.5488,
+          "implied_odds": 1.82,
+          "signal": "baja",
+          "date": "2026-06-29",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Brewers 50-31 vs Reds 39-43. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -124,21 +150,261 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs New York Mets",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5507,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cincinnati Reds",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5488,
+              "implied_odds": 1.82
+            }
+          ],
+          "total_odds": 3.31,
+          "combined_prob": 0.3022,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs New York Mets",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5507,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cincinnati Reds",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5488,
+              "implied_odds": 1.82
+            }
+          ],
+          "total_odds": 3.31,
+          "combined_prob": 0.3022,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs New York Mets",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5507,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cincinnati Reds",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5488,
+              "implied_odds": 1.82
+            }
+          ],
+          "total_odds": 3.31,
+          "combined_prob": 0.3022,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs New York Mets",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5507,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cincinnati Reds",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5488,
+              "implied_odds": 1.82
+            }
+          ],
+          "total_odds": 3.31,
+          "combined_prob": 0.3022,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs New York Mets",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5507,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cincinnati Reds",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5488,
+              "implied_odds": 1.82
+            }
+          ],
+          "total_odds": 3.31,
+          "combined_prob": 0.3022,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs New York Mets",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5507,
+              "implied_odds": 1.82
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Cincinnati Reds",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5488,
+              "implied_odds": 1.82
+            }
+          ],
+          "total_odds": 3.31,
+          "combined_prob": 0.3022,
+          "n_legs": 2
+        }
       }
     },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs New York Mets",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5507,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cincinnati Reds",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5488,
+            "implied_odds": 1.82
+          }
+        ],
+        "total_odds": 3.31,
+        "combined_prob": 0.3022,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs New York Mets",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5507,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cincinnati Reds",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5488,
+            "implied_odds": 1.82
+          }
+        ],
+        "total_odds": 3.31,
+        "combined_prob": 0.3022,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs New York Mets",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5507,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cincinnati Reds",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5488,
+            "implied_odds": 1.82
+          }
+        ],
+        "total_odds": 3.31,
+        "combined_prob": 0.3022,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs New York Mets",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5507,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cincinnati Reds",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5488,
+            "implied_odds": 1.82
+          }
+        ],
+        "total_odds": 3.31,
+        "combined_prob": 0.3022,
+        "n_legs": 2
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs New York Mets",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5507,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cincinnati Reds",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5488,
+            "implied_odds": 1.82
+          }
+        ],
+        "total_odds": 3.31,
+        "combined_prob": 0.3022,
+        "n_legs": 2
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs New York Mets",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5507,
+            "implied_odds": 1.82
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Cincinnati Reds",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5488,
+            "implied_odds": 1.82
+          }
+        ],
+        "total_odds": 3.31,
+        "combined_prob": 0.3022,
+        "n_legs": 2
+      }
     }
   }
 }
