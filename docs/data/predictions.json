@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-30T10:57:04Z",
-  "date": "2026-06-30",
+  "generated_at": "2026-07-01T11:24:04Z",
+  "date": "2026-07-01",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,20 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5433,
-        "logloss": 0.6917,
-        "brier": 0.2492
+        "accuracy": 0.5331,
+        "logloss": 0.6919,
+        "brier": 0.2494
       },
       "picks": [
         {
-          "home_team": "Milwaukee Brewers",
-          "away_team": "Cincinnati Reds",
+          "home_team": "Philadelphia Phillies",
+          "away_team": "Pittsburgh Pirates",
           "pick": "H",
-          "pick_label": "Milwaukee Brewers",
-          "p_win": 0.559,
-          "implied_odds": 1.79,
+          "pick_label": "Philadelphia Phillies",
+          "p_win": 0.5621,
+          "implied_odds": 1.78,
           "signal": "baja",
-          "date": "2026-06-30",
+          "date": "2026-07-01",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -54,59 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Brewers 51-31 vs Reds 39-44. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "Atlanta Braves",
-          "away_team": "St. Louis Cardinals",
-          "pick": "H",
-          "pick_label": "Atlanta Braves",
-          "p_win": 0.5579,
-          "implied_odds": 1.79,
-          "signal": "baja",
-          "date": "2026-06-30",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Braves 49-34 vs Cardinals 43-38. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "Toronto Blue Jays",
-          "away_team": "New York Mets",
-          "pick": "H",
-          "pick_label": "Toronto Blue Jays",
-          "p_win": 0.5533,
-          "implied_odds": 1.81,
-          "signal": "baja",
-          "date": "2026-06-30",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Jays 40-45 vs Mets 35-50. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 56%. Phillies 48-38 vs Pirates 43-43. Sin bajas importantes. SKIP — sin edge claro (56%)."
         }
       ],
       "name": "MLB",
@@ -176,317 +124,21 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cincinnati Reds",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.559,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Atlanta Braves vs St. Louis Cardinals",
-              "pick": "Atlanta Braves",
-              "p_win": 0.5579,
-              "implied_odds": 1.79
-            }
-          ],
-          "total_odds": 3.2,
-          "combined_prob": 0.3119,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cincinnati Reds",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.559,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs New York Mets",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5533,
-              "implied_odds": 1.81
-            }
-          ],
-          "total_odds": 3.24,
-          "combined_prob": 0.3093,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cincinnati Reds",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.559,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Atlanta Braves vs St. Louis Cardinals",
-              "pick": "Atlanta Braves",
-              "p_win": 0.5579,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs New York Mets",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5533,
-              "implied_odds": 1.81
-            }
-          ],
-          "total_odds": 5.8,
-          "combined_prob": 0.1726,
-          "n_legs": 3
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cincinnati Reds",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.559,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Atlanta Braves vs St. Louis Cardinals",
-              "pick": "Atlanta Braves",
-              "p_win": 0.5579,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs New York Mets",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5533,
-              "implied_odds": 1.81
-            }
-          ],
-          "total_odds": 5.8,
-          "combined_prob": 0.1726,
-          "n_legs": 3
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cincinnati Reds",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.559,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Atlanta Braves vs St. Louis Cardinals",
-              "pick": "Atlanta Braves",
-              "p_win": 0.5579,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs New York Mets",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5533,
-              "implied_odds": 1.81
-            }
-          ],
-          "total_odds": 5.8,
-          "combined_prob": 0.1726,
-          "n_legs": 3
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Cincinnati Reds",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.559,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Atlanta Braves vs St. Louis Cardinals",
-              "pick": "Atlanta Braves",
-              "p_win": 0.5579,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Toronto Blue Jays vs New York Mets",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5533,
-              "implied_odds": 1.81
-            }
-          ],
-          "total_odds": 5.8,
-          "combined_prob": 0.1726,
-          "n_legs": 3
-        }
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cincinnati Reds",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.559,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Atlanta Braves vs St. Louis Cardinals",
-            "pick": "Atlanta Braves",
-            "p_win": 0.5579,
-            "implied_odds": 1.79
-          }
-        ],
-        "total_odds": 3.2,
-        "combined_prob": 0.3119,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cincinnati Reds",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.559,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs New York Mets",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5533,
-            "implied_odds": 1.81
-          }
-        ],
-        "total_odds": 3.24,
-        "combined_prob": 0.3093,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cincinnati Reds",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.559,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Atlanta Braves vs St. Louis Cardinals",
-            "pick": "Atlanta Braves",
-            "p_win": 0.5579,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs New York Mets",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5533,
-            "implied_odds": 1.81
-          }
-        ],
-        "total_odds": 5.8,
-        "combined_prob": 0.1726,
-        "n_legs": 3
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cincinnati Reds",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.559,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Atlanta Braves vs St. Louis Cardinals",
-            "pick": "Atlanta Braves",
-            "p_win": 0.5579,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs New York Mets",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5533,
-            "implied_odds": 1.81
-          }
-        ],
-        "total_odds": 5.8,
-        "combined_prob": 0.1726,
-        "n_legs": 3
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cincinnati Reds",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.559,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Atlanta Braves vs St. Louis Cardinals",
-            "pick": "Atlanta Braves",
-            "p_win": 0.5579,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs New York Mets",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5533,
-            "implied_odds": 1.81
-          }
-        ],
-        "total_odds": 5.8,
-        "combined_prob": 0.1726,
-        "n_legs": 3
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Cincinnati Reds",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.559,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Atlanta Braves vs St. Louis Cardinals",
-            "pick": "Atlanta Braves",
-            "p_win": 0.5579,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Toronto Blue Jays vs New York Mets",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5533,
-            "implied_odds": 1.81
-          }
-        ],
-        "total_odds": 5.8,
-        "combined_prob": 0.1726,
-        "n_legs": 3
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
