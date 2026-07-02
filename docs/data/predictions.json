@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T11:24:04Z",
-  "date": "2026-07-01",
+  "generated_at": "2026-07-02T10:40:19Z",
+  "date": "2026-07-02",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5331,
-        "logloss": 0.6919,
-        "brier": 0.2494
+        "accuracy": 0.5346,
+        "logloss": 0.6918,
+        "brier": 0.2493
       },
       "picks": [
         {
-          "home_team": "Philadelphia Phillies",
-          "away_team": "Pittsburgh Pirates",
+          "home_team": "Milwaukee Brewers",
+          "away_team": "Cincinnati Reds",
           "pick": "H",
-          "pick_label": "Philadelphia Phillies",
-          "p_win": 0.5621,
+          "pick_label": "Milwaukee Brewers",
+          "p_win": 0.5623,
           "implied_odds": 1.78,
           "signal": "baja",
-          "date": "2026-07-01",
-          "model_spread": 0.4,
+          "date": "2026-07-02",
+          "model_spread": 0.5,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Phillies 48-38 vs Pirates 43-43. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 56%. Brewers 53-31 vs Reds 39-46. Sin bajas importantes. SKIP — sin edge claro (56%)."
         }
       ],
       "name": "MLB",
