@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-07T10:56:13Z",
-  "date": "2026-07-07",
+  "generated_at": "2026-07-08T10:18:39Z",
+  "date": "2026-07-08",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,46 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5551,
-        "logloss": 0.6918,
-        "brier": 0.2493
+        "accuracy": 0.5127,
+        "logloss": 0.6926,
+        "brier": 0.2497
       },
       "picks": [
-        {
-          "home_team": "Detroit Tigers",
-          "away_team": "Athletics",
-          "pick": "H",
-          "pick_label": "Detroit Tigers",
-          "p_win": 0.5524,
-          "implied_odds": 1.81,
-          "signal": "baja",
-          "date": "2026-07-07",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Tigers 40-50 vs Athletics 41-49. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
         {
           "home_team": "Tampa Bay Rays",
           "away_team": "New York Yankees",
           "pick": "H",
           "pick_label": "Tampa Bay Rays",
-          "p_win": 0.5433,
-          "implied_odds": 1.84,
+          "p_win": 0.548,
+          "implied_odds": 1.82,
           "signal": "baja",
-          "date": "2026-07-07",
+          "date": "2026-07-08",
           "model_spread": 0.3,
           "house_spread": null,
           "house_odds": null,
@@ -80,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 54%. Rays 52-36 vs Yankees 50-40. Sin bajas importantes. SKIP — sin edge claro (54%)."
+          "note": "❌ Modelo 55%. Rays 53-36 vs Yankees 50-41. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -150,261 +124,21 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5524,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5433,
-              "implied_odds": 1.84
-            }
-          ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3001,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5524,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5433,
-              "implied_odds": 1.84
-            }
-          ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3001,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5524,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5433,
-              "implied_odds": 1.84
-            }
-          ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3001,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5524,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5433,
-              "implied_odds": 1.84
-            }
-          ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3001,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5524,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5433,
-              "implied_odds": 1.84
-            }
-          ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3001,
-          "n_legs": 2
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5524,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5433,
-              "implied_odds": 1.84
-            }
-          ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3001,
-          "n_legs": 2
-        }
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5524,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5433,
-            "implied_odds": 1.84
-          }
-        ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3001,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5524,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5433,
-            "implied_odds": 1.84
-          }
-        ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3001,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5524,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5433,
-            "implied_odds": 1.84
-          }
-        ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3001,
-        "n_legs": 2
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5524,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5433,
-            "implied_odds": 1.84
-          }
-        ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3001,
-        "n_legs": 2
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5524,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5433,
-            "implied_odds": 1.84
-          }
-        ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3001,
-        "n_legs": 2
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5524,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5433,
-            "implied_odds": 1.84
-          }
-        ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3001,
-        "n_legs": 2
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
