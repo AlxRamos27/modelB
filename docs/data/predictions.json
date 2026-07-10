@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-09T10:59:53Z",
-  "date": "2026-07-09",
+  "generated_at": "2026-07-10T10:53:54Z",
+  "date": "2026-07-10",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,47 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5072,
-        "logloss": 0.6917,
-        "brier": 0.2492
+        "accuracy": 0.5143,
+        "logloss": 0.6932,
+        "brier": 0.25
       },
       "picks": [
         {
-          "home_team": "Tampa Bay Rays",
-          "away_team": "New York Yankees",
-          "pick": "H",
-          "pick_label": "Tampa Bay Rays",
-          "p_win": 0.5677,
-          "implied_odds": 1.76,
-          "signal": "baja",
-          "date": "2026-07-09",
-          "model_spread": 0.5,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Rays 54-36 vs Yankees 50-42. Sin bajas importantes. SKIP — sin edge claro (57%)."
-        },
-        {
-          "home_team": "Detroit Tigers",
+          "home_team": "Chicago White Sox",
           "away_team": "Athletics",
           "pick": "H",
-          "pick_label": "Detroit Tigers",
-          "p_win": 0.5646,
-          "implied_odds": 1.77,
+          "pick_label": "Chicago White Sox",
+          "p_win": 0.5871,
+          "implied_odds": 1.7,
           "signal": "baja",
-          "date": "2026-07-09",
-          "model_spread": 0.5,
+          "date": "2026-07-10",
+          "model_spread": 0.6,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -80,7 +54,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Tigers 42-50 vs Athletics 41-51. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 59%. Sox 47-45 vs Athletics 41-52. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "New York Mets",
+          "away_team": "Boston Red Sox",
+          "pick": "A",
+          "pick_label": "Boston Red Sox",
+          "p_win": 0.5579,
+          "implied_odds": 1.79,
+          "signal": "baja",
+          "date": "2026-07-10",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Mets 40-54 vs Sox 47-45. Sin bajas importantes. SKIP — sin edge claro (56%)."
         }
       ],
       "name": "MLB",
@@ -154,126 +154,126 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5677,
-              "implied_odds": 1.76
+              "match": "Chicago White Sox vs Athletics",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5871,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5646,
-              "implied_odds": 1.77
+              "match": "New York Mets vs Boston Red Sox",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5579,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 3.12,
-          "combined_prob": 0.3205,
+          "total_odds": 3.04,
+          "combined_prob": 0.3275,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5677,
-              "implied_odds": 1.76
+              "match": "Chicago White Sox vs Athletics",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5871,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5646,
-              "implied_odds": 1.77
+              "match": "New York Mets vs Boston Red Sox",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5579,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 3.12,
-          "combined_prob": 0.3205,
+          "total_odds": 3.04,
+          "combined_prob": 0.3275,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5677,
-              "implied_odds": 1.76
+              "match": "Chicago White Sox vs Athletics",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5871,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5646,
-              "implied_odds": 1.77
+              "match": "New York Mets vs Boston Red Sox",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5579,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 3.12,
-          "combined_prob": 0.3205,
+          "total_odds": 3.04,
+          "combined_prob": 0.3275,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5677,
-              "implied_odds": 1.76
+              "match": "Chicago White Sox vs Athletics",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5871,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5646,
-              "implied_odds": 1.77
+              "match": "New York Mets vs Boston Red Sox",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5579,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 3.12,
-          "combined_prob": 0.3205,
+          "total_odds": 3.04,
+          "combined_prob": 0.3275,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5677,
-              "implied_odds": 1.76
+              "match": "Chicago White Sox vs Athletics",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5871,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5646,
-              "implied_odds": 1.77
+              "match": "New York Mets vs Boston Red Sox",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5579,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 3.12,
-          "combined_prob": 0.3205,
+          "total_odds": 3.04,
+          "combined_prob": 0.3275,
           "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs New York Yankees",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5677,
-              "implied_odds": 1.76
+              "match": "Chicago White Sox vs Athletics",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5871,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Athletics",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5646,
-              "implied_odds": 1.77
+              "match": "New York Mets vs Boston Red Sox",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5579,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 3.12,
-          "combined_prob": 0.3205,
+          "total_odds": 3.04,
+          "combined_prob": 0.3275,
           "n_legs": 2
         }
       }
@@ -283,126 +283,126 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5677,
-            "implied_odds": 1.76
+            "match": "Chicago White Sox vs Athletics",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5871,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5646,
-            "implied_odds": 1.77
+            "match": "New York Mets vs Boston Red Sox",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5579,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 3.12,
-        "combined_prob": 0.3205,
+        "total_odds": 3.04,
+        "combined_prob": 0.3275,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5677,
-            "implied_odds": 1.76
+            "match": "Chicago White Sox vs Athletics",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5871,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5646,
-            "implied_odds": 1.77
+            "match": "New York Mets vs Boston Red Sox",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5579,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 3.12,
-        "combined_prob": 0.3205,
+        "total_odds": 3.04,
+        "combined_prob": 0.3275,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5677,
-            "implied_odds": 1.76
+            "match": "Chicago White Sox vs Athletics",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5871,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5646,
-            "implied_odds": 1.77
+            "match": "New York Mets vs Boston Red Sox",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5579,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 3.12,
-        "combined_prob": 0.3205,
+        "total_odds": 3.04,
+        "combined_prob": 0.3275,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5677,
-            "implied_odds": 1.76
+            "match": "Chicago White Sox vs Athletics",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5871,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5646,
-            "implied_odds": 1.77
+            "match": "New York Mets vs Boston Red Sox",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5579,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 3.12,
-        "combined_prob": 0.3205,
+        "total_odds": 3.04,
+        "combined_prob": 0.3275,
         "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5677,
-            "implied_odds": 1.76
+            "match": "Chicago White Sox vs Athletics",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5871,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5646,
-            "implied_odds": 1.77
+            "match": "New York Mets vs Boston Red Sox",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5579,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 3.12,
-        "combined_prob": 0.3205,
+        "total_odds": 3.04,
+        "combined_prob": 0.3275,
         "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs New York Yankees",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5677,
-            "implied_odds": 1.76
+            "match": "Chicago White Sox vs Athletics",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5871,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Athletics",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5646,
-            "implied_odds": 1.77
+            "match": "New York Mets vs Boston Red Sox",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5579,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 3.12,
-        "combined_prob": 0.3205,
+        "total_odds": 3.04,
+        "combined_prob": 0.3275,
         "n_legs": 2
       }
     }
