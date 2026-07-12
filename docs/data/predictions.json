@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-11T09:38:03Z",
-  "date": "2026-07-11",
+  "generated_at": "2026-07-12T09:50:41Z",
+  "date": "2026-07-12",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5124,
-        "logloss": 0.6923,
-        "brier": 0.2496
+        "accuracy": 0.5245,
+        "logloss": 0.6916,
+        "brier": 0.2492
       },
       "picks": [
         {
@@ -35,10 +35,10 @@
           "away_team": "Athletics",
           "pick": "H",
           "pick_label": "Chicago White Sox",
-          "p_win": 0.5901,
-          "implied_odds": 1.69,
-          "signal": "baja",
-          "date": "2026-07-11",
+          "p_win": 0.5954,
+          "implied_odds": 1.68,
+          "signal": "media",
+          "date": "2026-07-12",
           "model_spread": 0.7,
           "house_spread": null,
           "house_odds": null,
@@ -54,70 +54,18 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Sox 48-45 vs Athletics 41-53. Sin bajas importantes. SKIP — sin edge claro (59%)."
-        },
-        {
-          "home_team": "New York Mets",
-          "away_team": "Boston Red Sox",
-          "pick": "A",
-          "pick_label": "Boston Red Sox",
-          "p_win": 0.5442,
-          "implied_odds": 1.84,
-          "signal": "baja",
-          "date": "2026-07-11",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Mets 40-55 vs Sox 48-45. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "Tampa Bay Rays",
-          "away_team": "Seattle Mariners",
-          "pick": "H",
-          "pick_label": "Tampa Bay Rays",
-          "p_win": 0.5434,
-          "implied_odds": 1.84,
-          "signal": "baja",
-          "date": "2026-07-11",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Rays 55-37 vs Mariners 47-48. Sin bajas importantes. SKIP — sin edge claro (54%)."
+          "note": "⚠️ Modelo 60%. Sox 49-45 vs Athletics 41-54. Sin bajas importantes. ML Sox con cautela (modelo 60%)."
         },
         {
           "home_team": "Baltimore Orioles",
           "away_team": "Kansas City Royals",
           "pick": "H",
           "pick_label": "Baltimore Orioles",
-          "p_win": 0.5413,
-          "implied_odds": 1.85,
+          "p_win": 0.5524,
+          "implied_odds": 1.81,
           "signal": "baja",
-          "date": "2026-07-11",
-          "model_spread": 0.3,
+          "date": "2026-07-12",
+          "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -132,7 +80,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 54%. Orioles 44-51 vs Royals 38-57. Sin bajas importantes. SKIP — sin edge claro (54%)."
+          "note": "❌ Modelo 55%. Orioles 45-51 vs Royals 38-58. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
+        {
+          "home_team": "Tampa Bay Rays",
+          "away_team": "Seattle Mariners",
+          "pick": "H",
+          "pick_label": "Tampa Bay Rays",
+          "p_win": 0.551,
+          "implied_odds": 1.81,
+          "signal": "baja",
+          "date": "2026-07-12",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Rays 56-37 vs Mariners 47-49. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -208,40 +182,40 @@
               "sport": "mlb",
               "match": "Chicago White Sox vs Athletics",
               "pick": "Chicago White Sox",
-              "p_win": 0.5901,
-              "implied_odds": 1.69
+              "p_win": 0.5954,
+              "implied_odds": 1.68
             },
             {
               "sport": "mlb",
-              "match": "New York Mets vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5442,
-              "implied_odds": 1.84
+              "match": "Baltimore Orioles vs Kansas City Royals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5524,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.11,
-          "combined_prob": 0.3211,
+          "total_odds": 3.04,
+          "combined_prob": 0.3289,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Mets vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5442,
-              "implied_odds": 1.84
+              "match": "Baltimore Orioles vs Kansas City Royals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5524,
+              "implied_odds": 1.81
             },
             {
               "sport": "mlb",
-              "match": "Baltimore Orioles vs Kansas City Royals",
-              "pick": "Baltimore Orioles",
-              "p_win": 0.5413,
-              "implied_odds": 1.85
+              "match": "Tampa Bay Rays vs Seattle Mariners",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.551,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.4,
-          "combined_prob": 0.2946,
+          "total_odds": 3.28,
+          "combined_prob": 0.3044,
           "n_legs": 2
         },
         "cuota_5": {
@@ -250,26 +224,26 @@
               "sport": "mlb",
               "match": "Chicago White Sox vs Athletics",
               "pick": "Chicago White Sox",
-              "p_win": 0.5901,
-              "implied_odds": 1.69
+              "p_win": 0.5954,
+              "implied_odds": 1.68
             },
             {
               "sport": "mlb",
-              "match": "New York Mets vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5442,
-              "implied_odds": 1.84
+              "match": "Baltimore Orioles vs Kansas City Royals",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5524,
+              "implied_odds": 1.81
             },
             {
               "sport": "mlb",
               "match": "Tampa Bay Rays vs Seattle Mariners",
               "pick": "Tampa Bay Rays",
-              "p_win": 0.5434,
-              "implied_odds": 1.84
+              "p_win": 0.551,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 5.72,
-          "combined_prob": 0.1745,
+          "total_odds": 5.5,
+          "combined_prob": 0.1812,
           "n_legs": 3
         },
         "cuota_6": {
@@ -278,26 +252,26 @@
               "sport": "mlb",
               "match": "Chicago White Sox vs Athletics",
               "pick": "Chicago White Sox",
-              "p_win": 0.5901,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Mets vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5442,
-              "implied_odds": 1.84
+              "p_win": 0.5954,
+              "implied_odds": 1.68
             },
             {
               "sport": "mlb",
               "match": "Baltimore Orioles vs Kansas City Royals",
               "pick": "Baltimore Orioles",
-              "p_win": 0.5413,
-              "implied_odds": 1.85
+              "p_win": 0.5524,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Seattle Mariners",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.551,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 5.75,
-          "combined_prob": 0.1738,
+          "total_odds": 5.5,
+          "combined_prob": 0.1812,
           "n_legs": 3
         },
         "cuota_10": {
@@ -306,34 +280,27 @@
               "sport": "mlb",
               "match": "Chicago White Sox vs Athletics",
               "pick": "Chicago White Sox",
-              "p_win": 0.5901,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Mets vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5442,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs Seattle Mariners",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5434,
-              "implied_odds": 1.84
+              "p_win": 0.5954,
+              "implied_odds": 1.68
             },
             {
               "sport": "mlb",
               "match": "Baltimore Orioles vs Kansas City Royals",
               "pick": "Baltimore Orioles",
-              "p_win": 0.5413,
-              "implied_odds": 1.85
+              "p_win": 0.5524,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Seattle Mariners",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.551,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 10.59,
-          "combined_prob": 0.0945,
-          "n_legs": 4
+          "total_odds": 5.5,
+          "combined_prob": 0.1812,
+          "n_legs": 3
         },
         "cuota_20": {
           "legs": [
@@ -341,34 +308,27 @@
               "sport": "mlb",
               "match": "Chicago White Sox vs Athletics",
               "pick": "Chicago White Sox",
-              "p_win": 0.5901,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "New York Mets vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5442,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "mlb",
-              "match": "Tampa Bay Rays vs Seattle Mariners",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5434,
-              "implied_odds": 1.84
+              "p_win": 0.5954,
+              "implied_odds": 1.68
             },
             {
               "sport": "mlb",
               "match": "Baltimore Orioles vs Kansas City Royals",
               "pick": "Baltimore Orioles",
-              "p_win": 0.5413,
-              "implied_odds": 1.85
+              "p_win": 0.5524,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "mlb",
+              "match": "Tampa Bay Rays vs Seattle Mariners",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.551,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 10.59,
-          "combined_prob": 0.0945,
-          "n_legs": 4
+          "total_odds": 5.5,
+          "combined_prob": 0.1812,
+          "n_legs": 3
         }
       }
     },
@@ -379,40 +339,40 @@
             "sport": "mlb",
             "match": "Chicago White Sox vs Athletics",
             "pick": "Chicago White Sox",
-            "p_win": 0.5901,
-            "implied_odds": 1.69
+            "p_win": 0.5954,
+            "implied_odds": 1.68
           },
           {
             "sport": "mlb",
-            "match": "New York Mets vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5442,
-            "implied_odds": 1.84
+            "match": "Baltimore Orioles vs Kansas City Royals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5524,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.11,
-        "combined_prob": 0.3211,
+        "total_odds": 3.04,
+        "combined_prob": 0.3289,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Mets vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5442,
-            "implied_odds": 1.84
+            "match": "Baltimore Orioles vs Kansas City Royals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5524,
+            "implied_odds": 1.81
           },
           {
             "sport": "mlb",
-            "match": "Baltimore Orioles vs Kansas City Royals",
-            "pick": "Baltimore Orioles",
-            "p_win": 0.5413,
-            "implied_odds": 1.85
+            "match": "Tampa Bay Rays vs Seattle Mariners",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.551,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.4,
-        "combined_prob": 0.2946,
+        "total_odds": 3.28,
+        "combined_prob": 0.3044,
         "n_legs": 2
       },
       "cuota_5": {
@@ -421,26 +381,26 @@
             "sport": "mlb",
             "match": "Chicago White Sox vs Athletics",
             "pick": "Chicago White Sox",
-            "p_win": 0.5901,
-            "implied_odds": 1.69
+            "p_win": 0.5954,
+            "implied_odds": 1.68
           },
           {
             "sport": "mlb",
-            "match": "New York Mets vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5442,
-            "implied_odds": 1.84
+            "match": "Baltimore Orioles vs Kansas City Royals",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5524,
+            "implied_odds": 1.81
           },
           {
             "sport": "mlb",
             "match": "Tampa Bay Rays vs Seattle Mariners",
             "pick": "Tampa Bay Rays",
-            "p_win": 0.5434,
-            "implied_odds": 1.84
+            "p_win": 0.551,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 5.72,
-        "combined_prob": 0.1745,
+        "total_odds": 5.5,
+        "combined_prob": 0.1812,
         "n_legs": 3
       },
       "cuota_6": {
@@ -449,26 +409,26 @@
             "sport": "mlb",
             "match": "Chicago White Sox vs Athletics",
             "pick": "Chicago White Sox",
-            "p_win": 0.5901,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Mets vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5442,
-            "implied_odds": 1.84
+            "p_win": 0.5954,
+            "implied_odds": 1.68
           },
           {
             "sport": "mlb",
             "match": "Baltimore Orioles vs Kansas City Royals",
             "pick": "Baltimore Orioles",
-            "p_win": 0.5413,
-            "implied_odds": 1.85
+            "p_win": 0.5524,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Seattle Mariners",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.551,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 5.75,
-        "combined_prob": 0.1738,
+        "total_odds": 5.5,
+        "combined_prob": 0.1812,
         "n_legs": 3
       },
       "cuota_10": {
@@ -477,34 +437,27 @@
             "sport": "mlb",
             "match": "Chicago White Sox vs Athletics",
             "pick": "Chicago White Sox",
-            "p_win": 0.5901,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Mets vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5442,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Seattle Mariners",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5434,
-            "implied_odds": 1.84
+            "p_win": 0.5954,
+            "implied_odds": 1.68
           },
           {
             "sport": "mlb",
             "match": "Baltimore Orioles vs Kansas City Royals",
             "pick": "Baltimore Orioles",
-            "p_win": 0.5413,
-            "implied_odds": 1.85
+            "p_win": 0.5524,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Seattle Mariners",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.551,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 10.59,
-        "combined_prob": 0.0945,
-        "n_legs": 4
+        "total_odds": 5.5,
+        "combined_prob": 0.1812,
+        "n_legs": 3
       },
       "cuota_20": {
         "legs": [
@@ -512,34 +465,27 @@
             "sport": "mlb",
             "match": "Chicago White Sox vs Athletics",
             "pick": "Chicago White Sox",
-            "p_win": 0.5901,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "New York Mets vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5442,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "mlb",
-            "match": "Tampa Bay Rays vs Seattle Mariners",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5434,
-            "implied_odds": 1.84
+            "p_win": 0.5954,
+            "implied_odds": 1.68
           },
           {
             "sport": "mlb",
             "match": "Baltimore Orioles vs Kansas City Royals",
             "pick": "Baltimore Orioles",
-            "p_win": 0.5413,
-            "implied_odds": 1.85
+            "p_win": 0.5524,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "mlb",
+            "match": "Tampa Bay Rays vs Seattle Mariners",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.551,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 10.59,
-        "combined_prob": 0.0945,
-        "n_legs": 4
+        "total_odds": 5.5,
+        "combined_prob": 0.1812,
+        "n_legs": 3
       }
     }
   }
