@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15T10:02:47Z",
-  "date": "2026-07-15",
+  "generated_at": "2026-07-16T10:08:42Z",
+  "date": "2026-07-16",
   "sports": {
     "nba": {
       "status": "ok",
@@ -29,8 +29,36 @@
         "logloss": 0.6915,
         "brier": 0.2492
       },
-      "picks": [],
-      "name": "MLB"
+      "picks": [
+        {
+          "home_team": "Philadelphia Phillies",
+          "away_team": "New York Mets",
+          "pick": "H",
+          "pick_label": "Philadelphia Phillies",
+          "p_win": 0.5473,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-07-16",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Phillies 54-43 vs Mets 40-57. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        }
+      ],
+      "name": "MLB",
+      "analysis": ""
     },
     "epl": {
       "status": "ok",
@@ -94,7 +122,16 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "mlb": {
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
+      }
+    },
     "combined": {
       "cuota_3": null,
       "cuota_4": null,
