@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-16T10:08:42Z",
-  "date": "2026-07-16",
+  "generated_at": "2026-07-17T09:57:13Z",
+  "date": "2026-07-17",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5225,
-        "logloss": 0.6915,
-        "brier": 0.2492
+        "accuracy": 0.5207,
+        "logloss": 0.6909,
+        "brier": 0.2489
       },
       "picks": [
         {
-          "home_team": "Philadelphia Phillies",
-          "away_team": "New York Mets",
+          "home_team": "Milwaukee Brewers",
+          "away_team": "Miami Marlins",
           "pick": "H",
-          "pick_label": "Philadelphia Phillies",
-          "p_win": 0.5473,
-          "implied_odds": 1.83,
+          "pick_label": "Milwaukee Brewers",
+          "p_win": 0.5493,
+          "implied_odds": 1.82,
           "signal": "baja",
-          "date": "2026-07-16",
-          "model_spread": 0.3,
+          "date": "2026-07-17",
+          "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Phillies 54-43 vs Mets 40-57. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 55%. Brewers 59-37 vs Marlins 52-45. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
