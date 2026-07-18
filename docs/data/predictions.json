@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-17T09:57:13Z",
-  "date": "2026-07-17",
+  "generated_at": "2026-07-18T09:25:22Z",
+  "date": "2026-07-18",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5207,
-        "logloss": 0.6909,
-        "brier": 0.2489
+        "accuracy": 0.5274,
+        "logloss": 0.6928,
+        "brier": 0.2498
       },
       "picks": [
         {
@@ -35,10 +35,10 @@
           "away_team": "Miami Marlins",
           "pick": "H",
           "pick_label": "Milwaukee Brewers",
-          "p_win": 0.5493,
-          "implied_odds": 1.82,
+          "p_win": 0.5549,
+          "implied_odds": 1.8,
           "signal": "baja",
-          "date": "2026-07-17",
+          "date": "2026-07-18",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -54,7 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Brewers 59-37 vs Marlins 52-45. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 55%. Brewers 60-37 vs Marlins 52-46. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
