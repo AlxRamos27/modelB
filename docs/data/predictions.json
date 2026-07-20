@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-19T09:51:59Z",
-  "date": "2026-07-19",
+  "generated_at": "2026-07-20T10:52:09Z",
+  "date": "2026-07-20",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,20 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5356,
-        "logloss": 0.6937,
-        "brier": 0.2502
+        "accuracy": 0.5151,
+        "logloss": 0.6938,
+        "brier": 0.2503
       },
       "picks": [
         {
-          "home_team": "Milwaukee Brewers",
-          "away_team": "Miami Marlins",
+          "home_team": "Toronto Blue Jays",
+          "away_team": "Tampa Bay Rays",
           "pick": "H",
-          "pick_label": "Milwaukee Brewers",
-          "p_win": 0.5924,
+          "pick_label": "Toronto Blue Jays",
+          "p_win": 0.5908,
           "implied_odds": 1.69,
           "signal": "baja",
-          "date": "2026-07-19",
+          "date": "2026-07-20",
           "model_spread": 0.7,
           "house_spread": null,
           "house_odds": null,
@@ -54,33 +54,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 59%. Brewers 61-37 vs Marlins 52-47. Sin bajas importantes. SKIP — sin edge claro (59%)."
-        },
-        {
-          "home_team": "Philadelphia Phillies",
-          "away_team": "New York Mets",
-          "pick": "H",
-          "pick_label": "Philadelphia Phillies",
-          "p_win": 0.5783,
-          "implied_odds": 1.73,
-          "signal": "baja",
-          "date": "2026-07-19",
-          "model_spread": 0.6,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 58%. Phillies 55-44 vs Mets 41-58. Sin bajas importantes. SKIP — sin edge claro (58%)."
+          "note": "❌ Modelo 59%. Jays 46-53 vs Rays 56-42. Sin bajas importantes. SKIP — sin edge claro (59%)."
         }
       ],
       "name": "MLB",
@@ -150,261 +124,21 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Miami Marlins",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5924,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5783,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.92,
-          "combined_prob": 0.3426,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Miami Marlins",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5924,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5783,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.92,
-          "combined_prob": 0.3426,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Miami Marlins",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5924,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5783,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.92,
-          "combined_prob": 0.3426,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Miami Marlins",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5924,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5783,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.92,
-          "combined_prob": 0.3426,
-          "n_legs": 2
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Miami Marlins",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5924,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5783,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.92,
-          "combined_prob": 0.3426,
-          "n_legs": 2
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "mlb",
-              "match": "Milwaukee Brewers vs Miami Marlins",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5924,
-              "implied_odds": 1.69
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs New York Mets",
-              "pick": "Philadelphia Phillies",
-              "p_win": 0.5783,
-              "implied_odds": 1.73
-            }
-          ],
-          "total_odds": 2.92,
-          "combined_prob": 0.3426,
-          "n_legs": 2
-        }
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Miami Marlins",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5924,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5783,
-            "implied_odds": 1.73
-          }
-        ],
-        "total_odds": 2.92,
-        "combined_prob": 0.3426,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Miami Marlins",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5924,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5783,
-            "implied_odds": 1.73
-          }
-        ],
-        "total_odds": 2.92,
-        "combined_prob": 0.3426,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Miami Marlins",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5924,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5783,
-            "implied_odds": 1.73
-          }
-        ],
-        "total_odds": 2.92,
-        "combined_prob": 0.3426,
-        "n_legs": 2
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Miami Marlins",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5924,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5783,
-            "implied_odds": 1.73
-          }
-        ],
-        "total_odds": 2.92,
-        "combined_prob": 0.3426,
-        "n_legs": 2
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Miami Marlins",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5924,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5783,
-            "implied_odds": 1.73
-          }
-        ],
-        "total_odds": 2.92,
-        "combined_prob": 0.3426,
-        "n_legs": 2
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "mlb",
-            "match": "Milwaukee Brewers vs Miami Marlins",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5924,
-            "implied_odds": 1.69
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs New York Mets",
-            "pick": "Philadelphia Phillies",
-            "p_win": 0.5783,
-            "implied_odds": 1.73
-          }
-        ],
-        "total_odds": 2.92,
-        "combined_prob": 0.3426,
-        "n_legs": 2
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
