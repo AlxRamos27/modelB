@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T10:25:26Z",
-  "date": "2026-07-21",
+  "generated_at": "2026-07-22T10:25:13Z",
+  "date": "2026-07-22",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,20 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5132,
-        "logloss": 0.6927,
-        "brier": 0.2498
+        "accuracy": 0.5197,
+        "logloss": 0.6943,
+        "brier": 0.2505
       },
       "picks": [
         {
-          "home_team": "Milwaukee Brewers",
-          "away_team": "New York Mets",
+          "home_team": "Cleveland Guardians",
+          "away_team": "Minnesota Twins",
           "pick": "H",
-          "pick_label": "Milwaukee Brewers",
-          "p_win": 0.5543,
-          "implied_odds": 1.8,
+          "pick_label": "Cleveland Guardians",
+          "p_win": 0.5573,
+          "implied_odds": 1.79,
           "signal": "baja",
-          "date": "2026-07-21",
+          "date": "2026-07-22",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -54,17 +54,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Brewers 63-37 vs Mets 42-59. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 56%. Guardians 54-48 vs Twins 49-53. Sin bajas importantes. SKIP — sin edge claro (56%)."
         },
         {
-          "home_team": "Toronto Blue Jays",
-          "away_team": "Tampa Bay Rays",
+          "home_team": "Arizona Diamondbacks",
+          "away_team": "Athletics",
           "pick": "H",
-          "pick_label": "Toronto Blue Jays",
-          "p_win": 0.552,
+          "pick_label": "Arizona Diamondbacks",
+          "p_win": 0.551,
           "implied_odds": 1.81,
           "signal": "baja",
-          "date": "2026-07-21",
+          "date": "2026-07-22",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -80,7 +80,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Jays 46-54 vs Rays 57-42. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 55%. Diamondbacks 52-49 vs Athletics 43-58. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -154,126 +154,126 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs New York Mets",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5543,
-              "implied_odds": 1.8
+              "match": "Cleveland Guardians vs Minnesota Twins",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Tampa Bay Rays",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.552,
+              "match": "Arizona Diamondbacks vs Athletics",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.551,
               "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.26,
-          "combined_prob": 0.306,
+          "total_odds": 3.24,
+          "combined_prob": 0.3071,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs New York Mets",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5543,
-              "implied_odds": 1.8
+              "match": "Cleveland Guardians vs Minnesota Twins",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Tampa Bay Rays",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.552,
+              "match": "Arizona Diamondbacks vs Athletics",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.551,
               "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.26,
-          "combined_prob": 0.306,
+          "total_odds": 3.24,
+          "combined_prob": 0.3071,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs New York Mets",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5543,
-              "implied_odds": 1.8
+              "match": "Cleveland Guardians vs Minnesota Twins",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Tampa Bay Rays",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.552,
+              "match": "Arizona Diamondbacks vs Athletics",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.551,
               "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.26,
-          "combined_prob": 0.306,
+          "total_odds": 3.24,
+          "combined_prob": 0.3071,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs New York Mets",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5543,
-              "implied_odds": 1.8
+              "match": "Cleveland Guardians vs Minnesota Twins",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Tampa Bay Rays",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.552,
+              "match": "Arizona Diamondbacks vs Athletics",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.551,
               "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.26,
-          "combined_prob": 0.306,
+          "total_odds": 3.24,
+          "combined_prob": 0.3071,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs New York Mets",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5543,
-              "implied_odds": 1.8
+              "match": "Cleveland Guardians vs Minnesota Twins",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Tampa Bay Rays",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.552,
+              "match": "Arizona Diamondbacks vs Athletics",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.551,
               "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.26,
-          "combined_prob": 0.306,
+          "total_odds": 3.24,
+          "combined_prob": 0.3071,
           "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs New York Mets",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5543,
-              "implied_odds": 1.8
+              "match": "Cleveland Guardians vs Minnesota Twins",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Tampa Bay Rays",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.552,
+              "match": "Arizona Diamondbacks vs Athletics",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.551,
               "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.26,
-          "combined_prob": 0.306,
+          "total_odds": 3.24,
+          "combined_prob": 0.3071,
           "n_legs": 2
         }
       }
@@ -283,126 +283,126 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs New York Mets",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5543,
-            "implied_odds": 1.8
+            "match": "Cleveland Guardians vs Minnesota Twins",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Tampa Bay Rays",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.552,
+            "match": "Arizona Diamondbacks vs Athletics",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.551,
             "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.26,
-        "combined_prob": 0.306,
+        "total_odds": 3.24,
+        "combined_prob": 0.3071,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs New York Mets",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5543,
-            "implied_odds": 1.8
+            "match": "Cleveland Guardians vs Minnesota Twins",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Tampa Bay Rays",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.552,
+            "match": "Arizona Diamondbacks vs Athletics",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.551,
             "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.26,
-        "combined_prob": 0.306,
+        "total_odds": 3.24,
+        "combined_prob": 0.3071,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs New York Mets",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5543,
-            "implied_odds": 1.8
+            "match": "Cleveland Guardians vs Minnesota Twins",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Tampa Bay Rays",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.552,
+            "match": "Arizona Diamondbacks vs Athletics",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.551,
             "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.26,
-        "combined_prob": 0.306,
+        "total_odds": 3.24,
+        "combined_prob": 0.3071,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs New York Mets",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5543,
-            "implied_odds": 1.8
+            "match": "Cleveland Guardians vs Minnesota Twins",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Tampa Bay Rays",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.552,
+            "match": "Arizona Diamondbacks vs Athletics",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.551,
             "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.26,
-        "combined_prob": 0.306,
+        "total_odds": 3.24,
+        "combined_prob": 0.3071,
         "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs New York Mets",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5543,
-            "implied_odds": 1.8
+            "match": "Cleveland Guardians vs Minnesota Twins",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Tampa Bay Rays",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.552,
+            "match": "Arizona Diamondbacks vs Athletics",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.551,
             "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.26,
-        "combined_prob": 0.306,
+        "total_odds": 3.24,
+        "combined_prob": 0.3071,
         "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs New York Mets",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5543,
-            "implied_odds": 1.8
+            "match": "Cleveland Guardians vs Minnesota Twins",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Tampa Bay Rays",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.552,
+            "match": "Arizona Diamondbacks vs Athletics",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.551,
             "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.26,
-        "combined_prob": 0.306,
+        "total_odds": 3.24,
+        "combined_prob": 0.3071,
         "n_legs": 2
       }
     }
