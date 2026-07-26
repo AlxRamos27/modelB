@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-25T09:47:22Z",
-  "date": "2026-07-25",
+  "generated_at": "2026-07-26T09:59:40Z",
+  "date": "2026-07-26",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,46 +25,20 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5321,
-        "logloss": 0.6934,
-        "brier": 0.2501
+        "accuracy": 0.527,
+        "logloss": 0.6932,
+        "brier": 0.25
       },
       "picks": [
-        {
-          "home_team": "Boston Red Sox",
-          "away_team": "Toronto Blue Jays",
-          "pick": "H",
-          "pick_label": "Boston Red Sox",
-          "p_win": 0.5835,
-          "implied_odds": 1.71,
-          "signal": "baja",
-          "date": "2026-07-25",
-          "model_spread": 0.6,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 58%. Sox 54-48 vs Jays 47-57. Sin bajas importantes. SKIP — sin edge claro (58%)."
-        },
         {
           "home_team": "Milwaukee Brewers",
           "away_team": "Colorado Rockies",
           "pick": "H",
           "pick_label": "Milwaukee Brewers",
-          "p_win": 0.5692,
+          "p_win": 0.5683,
           "implied_odds": 1.76,
           "signal": "baja",
-          "date": "2026-07-25",
+          "date": "2026-07-26",
           "model_spread": 0.5,
           "house_spread": null,
           "house_odds": null,
@@ -80,43 +54,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 57%. Brewers 64-39 vs Rockies 42-63. Sin bajas importantes. SKIP — sin edge claro (57%)."
+          "note": "❌ Modelo 57%. Brewers 65-39 vs Rockies 42-64. Sin bajas importantes. SKIP — sin edge claro (57%)."
         },
         {
-          "home_team": "Minnesota Twins",
-          "away_team": "Athletics",
+          "home_team": "Boston Red Sox",
+          "away_team": "Toronto Blue Jays",
           "pick": "H",
-          "pick_label": "Minnesota Twins",
-          "p_win": 0.5632,
-          "implied_odds": 1.78,
+          "pick_label": "Boston Red Sox",
+          "p_win": 0.5584,
+          "implied_odds": 1.79,
           "signal": "baja",
-          "date": "2026-07-25",
-          "model_spread": 0.5,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Twins 51-54 vs Athletics 44-59. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "Miami Marlins",
-          "away_team": "San Diego Padres",
-          "pick": "H",
-          "pick_label": "Miami Marlins",
-          "p_win": 0.5519,
-          "implied_odds": 1.81,
-          "signal": "baja",
-          "date": "2026-07-25",
+          "date": "2026-07-26",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -132,7 +80,85 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Marlins 52-52 vs Padres 51-53. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 56%. Sox 54-49 vs Jays 48-57. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "Minnesota Twins",
+          "away_team": "Athletics",
+          "pick": "H",
+          "pick_label": "Minnesota Twins",
+          "p_win": 0.5573,
+          "implied_odds": 1.79,
+          "signal": "baja",
+          "date": "2026-07-26",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Twins 52-54 vs Athletics 44-60. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "Tampa Bay Rays",
+          "away_team": "Cleveland Guardians",
+          "pick": "H",
+          "pick_label": "Tampa Bay Rays",
+          "p_win": 0.5562,
+          "implied_odds": 1.8,
+          "signal": "baja",
+          "date": "2026-07-26",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Rays 61-43 vs Guardians 54-52. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "Texas Rangers",
+          "away_team": "Seattle Mariners",
+          "pick": "H",
+          "pick_label": "Texas Rangers",
+          "p_win": 0.5562,
+          "implied_odds": 1.8,
+          "signal": "baja",
+          "date": "2026-07-26",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Rangers 53-51 vs Mariners 51-54. Sin bajas importantes. SKIP — sin edge claro (56%)."
         }
       ],
       "name": "MLB",
@@ -206,169 +232,176 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Toronto Blue Jays",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5835,
-              "implied_odds": 1.71
+              "match": "Milwaukee Brewers vs Colorado Rockies",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5683,
+              "implied_odds": 1.76
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Colorado Rockies",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5692,
-              "implied_odds": 1.76
+              "match": "Boston Red Sox vs Toronto Blue Jays",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5584,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 3.01,
-          "combined_prob": 0.3321,
+          "total_odds": 3.15,
+          "combined_prob": 0.3173,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Minnesota Twins vs Athletics",
-              "pick": "Minnesota Twins",
-              "p_win": 0.5632,
-              "implied_odds": 1.78
+              "match": "Tampa Bay Rays vs Cleveland Guardians",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5562,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs San Diego Padres",
-              "pick": "Miami Marlins",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
+              "match": "Texas Rangers vs Seattle Mariners",
+              "pick": "Texas Rangers",
+              "p_win": 0.5562,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 3.22,
-          "combined_prob": 0.3108,
+          "total_odds": 3.24,
+          "combined_prob": 0.3094,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Toronto Blue Jays",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5835,
-              "implied_odds": 1.71
+              "match": "Milwaukee Brewers vs Colorado Rockies",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5683,
+              "implied_odds": 1.76
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Colorado Rockies",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5692,
-              "implied_odds": 1.76
+              "match": "Boston Red Sox vs Toronto Blue Jays",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5584,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
               "match": "Minnesota Twins vs Athletics",
               "pick": "Minnesota Twins",
-              "p_win": 0.5632,
-              "implied_odds": 1.78
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             }
           ],
-          "total_odds": 5.36,
-          "combined_prob": 0.1871,
+          "total_odds": 5.64,
+          "combined_prob": 0.1769,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Colorado Rockies",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5692,
-              "implied_odds": 1.76
+              "match": "Boston Red Sox vs Toronto Blue Jays",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5584,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Minnesota Twins vs Athletics",
-              "pick": "Minnesota Twins",
-              "p_win": 0.5632,
-              "implied_odds": 1.78
+              "match": "Tampa Bay Rays vs Cleveland Guardians",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5562,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs San Diego Padres",
-              "pick": "Miami Marlins",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
+              "match": "Texas Rangers vs Seattle Mariners",
+              "pick": "Texas Rangers",
+              "p_win": 0.5562,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 5.67,
-          "combined_prob": 0.1769,
+          "total_odds": 5.8,
+          "combined_prob": 0.1727,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Toronto Blue Jays",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5835,
-              "implied_odds": 1.71
+              "match": "Milwaukee Brewers vs Colorado Rockies",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5683,
+              "implied_odds": 1.76
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Colorado Rockies",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5692,
-              "implied_odds": 1.76
+              "match": "Boston Red Sox vs Toronto Blue Jays",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5584,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
               "match": "Minnesota Twins vs Athletics",
               "pick": "Minnesota Twins",
-              "p_win": 0.5632,
-              "implied_odds": 1.78
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs San Diego Padres",
-              "pick": "Miami Marlins",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
+              "match": "Tampa Bay Rays vs Cleveland Guardians",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5562,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 9.7,
-          "combined_prob": 0.1032,
+          "total_odds": 10.15,
+          "combined_prob": 0.0984,
           "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Toronto Blue Jays",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5835,
-              "implied_odds": 1.71
+              "match": "Milwaukee Brewers vs Colorado Rockies",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5683,
+              "implied_odds": 1.76
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Colorado Rockies",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5692,
-              "implied_odds": 1.76
+              "match": "Boston Red Sox vs Toronto Blue Jays",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5584,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
               "match": "Minnesota Twins vs Athletics",
               "pick": "Minnesota Twins",
-              "p_win": 0.5632,
-              "implied_odds": 1.78
+              "p_win": 0.5573,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs San Diego Padres",
-              "pick": "Miami Marlins",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
+              "match": "Tampa Bay Rays vs Cleveland Guardians",
+              "pick": "Tampa Bay Rays",
+              "p_win": 0.5562,
+              "implied_odds": 1.8
+            },
+            {
+              "sport": "mlb",
+              "match": "Texas Rangers vs Seattle Mariners",
+              "pick": "Texas Rangers",
+              "p_win": 0.5562,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 9.7,
-          "combined_prob": 0.1032,
-          "n_legs": 4
+          "total_odds": 18.27,
+          "combined_prob": 0.0547,
+          "n_legs": 5
         }
       }
     },
@@ -377,169 +410,176 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Toronto Blue Jays",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5835,
-            "implied_odds": 1.71
+            "match": "Milwaukee Brewers vs Colorado Rockies",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5683,
+            "implied_odds": 1.76
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Colorado Rockies",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5692,
-            "implied_odds": 1.76
+            "match": "Boston Red Sox vs Toronto Blue Jays",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5584,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 3.01,
-        "combined_prob": 0.3321,
+        "total_odds": 3.15,
+        "combined_prob": 0.3173,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Minnesota Twins vs Athletics",
-            "pick": "Minnesota Twins",
-            "p_win": 0.5632,
-            "implied_odds": 1.78
+            "match": "Tampa Bay Rays vs Cleveland Guardians",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5562,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs San Diego Padres",
-            "pick": "Miami Marlins",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
+            "match": "Texas Rangers vs Seattle Mariners",
+            "pick": "Texas Rangers",
+            "p_win": 0.5562,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 3.22,
-        "combined_prob": 0.3108,
+        "total_odds": 3.24,
+        "combined_prob": 0.3094,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Toronto Blue Jays",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5835,
-            "implied_odds": 1.71
+            "match": "Milwaukee Brewers vs Colorado Rockies",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5683,
+            "implied_odds": 1.76
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Colorado Rockies",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5692,
-            "implied_odds": 1.76
+            "match": "Boston Red Sox vs Toronto Blue Jays",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5584,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
             "match": "Minnesota Twins vs Athletics",
             "pick": "Minnesota Twins",
-            "p_win": 0.5632,
-            "implied_odds": 1.78
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           }
         ],
-        "total_odds": 5.36,
-        "combined_prob": 0.1871,
+        "total_odds": 5.64,
+        "combined_prob": 0.1769,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Colorado Rockies",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5692,
-            "implied_odds": 1.76
+            "match": "Boston Red Sox vs Toronto Blue Jays",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5584,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Minnesota Twins vs Athletics",
-            "pick": "Minnesota Twins",
-            "p_win": 0.5632,
-            "implied_odds": 1.78
+            "match": "Tampa Bay Rays vs Cleveland Guardians",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5562,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs San Diego Padres",
-            "pick": "Miami Marlins",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
+            "match": "Texas Rangers vs Seattle Mariners",
+            "pick": "Texas Rangers",
+            "p_win": 0.5562,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 5.67,
-        "combined_prob": 0.1769,
+        "total_odds": 5.8,
+        "combined_prob": 0.1727,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Toronto Blue Jays",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5835,
-            "implied_odds": 1.71
+            "match": "Milwaukee Brewers vs Colorado Rockies",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5683,
+            "implied_odds": 1.76
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Colorado Rockies",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5692,
-            "implied_odds": 1.76
+            "match": "Boston Red Sox vs Toronto Blue Jays",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5584,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
             "match": "Minnesota Twins vs Athletics",
             "pick": "Minnesota Twins",
-            "p_win": 0.5632,
-            "implied_odds": 1.78
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs San Diego Padres",
-            "pick": "Miami Marlins",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
+            "match": "Tampa Bay Rays vs Cleveland Guardians",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5562,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 9.7,
-        "combined_prob": 0.1032,
+        "total_odds": 10.15,
+        "combined_prob": 0.0984,
         "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Toronto Blue Jays",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5835,
-            "implied_odds": 1.71
+            "match": "Milwaukee Brewers vs Colorado Rockies",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5683,
+            "implied_odds": 1.76
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Colorado Rockies",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5692,
-            "implied_odds": 1.76
+            "match": "Boston Red Sox vs Toronto Blue Jays",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5584,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
             "match": "Minnesota Twins vs Athletics",
             "pick": "Minnesota Twins",
-            "p_win": 0.5632,
-            "implied_odds": 1.78
+            "p_win": 0.5573,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs San Diego Padres",
-            "pick": "Miami Marlins",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
+            "match": "Tampa Bay Rays vs Cleveland Guardians",
+            "pick": "Tampa Bay Rays",
+            "p_win": 0.5562,
+            "implied_odds": 1.8
+          },
+          {
+            "sport": "mlb",
+            "match": "Texas Rangers vs Seattle Mariners",
+            "pick": "Texas Rangers",
+            "p_win": 0.5562,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 9.7,
-        "combined_prob": 0.1032,
-        "n_legs": 4
+        "total_odds": 18.27,
+        "combined_prob": 0.0547,
+        "n_legs": 5
       }
     }
   }
