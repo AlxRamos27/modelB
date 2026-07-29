@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-28T10:34:56Z",
-  "date": "2026-07-28",
+  "generated_at": "2026-07-29T10:38:49Z",
+  "date": "2026-07-29",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,20 +25,46 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5281,
-        "logloss": 0.6941,
-        "brier": 0.2505
+        "accuracy": 0.5294,
+        "logloss": 0.6957,
+        "brier": 0.2513
       },
       "picks": [
+        {
+          "home_team": "San Diego Padres",
+          "away_team": "Colorado Rockies",
+          "pick": "H",
+          "pick_label": "San Diego Padres",
+          "p_win": 0.5597,
+          "implied_odds": 1.79,
+          "signal": "baja",
+          "date": "2026-07-29",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Padres 54-53 vs Rockies 42-66. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
         {
           "home_team": "Miami Marlins",
           "away_team": "Philadelphia Phillies",
           "pick": "H",
           "pick_label": "Miami Marlins",
-          "p_win": 0.5601,
-          "implied_odds": 1.79,
+          "p_win": 0.5526,
+          "implied_odds": 1.81,
           "signal": "baja",
-          "date": "2026-07-28",
+          "date": "2026-07-29",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -54,59 +80,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Marlins 53-54 vs Phillies 57-50. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "Cincinnati Reds",
-          "away_team": "Cleveland Guardians",
-          "pick": "H",
-          "pick_label": "Cincinnati Reds",
-          "p_win": 0.5582,
-          "implied_odds": 1.79,
-          "signal": "baja",
-          "date": "2026-07-28",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Reds 49-55 vs Guardians 54-53. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "Cincinnati Reds",
-          "away_team": "Cleveland Guardians",
-          "pick": "H",
-          "pick_label": "Cincinnati Reds",
-          "p_win": 0.5582,
-          "implied_odds": 1.79,
-          "signal": "baja",
-          "date": "2026-07-28",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Reds 49-55 vs Guardians 54-53. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 55%. Marlins 54-54 vs Phillies 57-51. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -180,155 +154,127 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs Philadelphia Phillies",
-              "pick": "Miami Marlins",
-              "p_win": 0.5601,
+              "match": "San Diego Padres vs Colorado Rockies",
+              "pick": "San Diego Padres",
+              "p_win": 0.5597,
               "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
+              "match": "Miami Marlins vs Philadelphia Phillies",
+              "pick": "Miami Marlins",
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.2,
-          "combined_prob": 0.3126,
+          "total_odds": 3.24,
+          "combined_prob": 0.3093,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs Philadelphia Phillies",
-              "pick": "Miami Marlins",
-              "p_win": 0.5601,
+              "match": "San Diego Padres vs Colorado Rockies",
+              "pick": "San Diego Padres",
+              "p_win": 0.5597,
               "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
+              "match": "Miami Marlins vs Philadelphia Phillies",
+              "pick": "Miami Marlins",
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 3.2,
-          "combined_prob": 0.3126,
+          "total_odds": 3.24,
+          "combined_prob": 0.3093,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
+              "match": "San Diego Padres vs Colorado Rockies",
+              "pick": "San Diego Padres",
+              "p_win": 0.5597,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
               "match": "Miami Marlins vs Philadelphia Phillies",
               "pick": "Miami Marlins",
-              "p_win": 0.5601,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 5.74,
-          "combined_prob": 0.1745,
-          "n_legs": 3
+          "total_odds": 3.24,
+          "combined_prob": 0.3093,
+          "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
+              "match": "San Diego Padres vs Colorado Rockies",
+              "pick": "San Diego Padres",
+              "p_win": 0.5597,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
               "match": "Miami Marlins vs Philadelphia Phillies",
               "pick": "Miami Marlins",
-              "p_win": 0.5601,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 5.74,
-          "combined_prob": 0.1745,
-          "n_legs": 3
+          "total_odds": 3.24,
+          "combined_prob": 0.3093,
+          "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
+              "match": "San Diego Padres vs Colorado Rockies",
+              "pick": "San Diego Padres",
+              "p_win": 0.5597,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
               "match": "Miami Marlins vs Philadelphia Phillies",
               "pick": "Miami Marlins",
-              "p_win": 0.5601,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 5.74,
-          "combined_prob": 0.1745,
-          "n_legs": 3
+          "total_odds": 3.24,
+          "combined_prob": 0.3093,
+          "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
+              "match": "San Diego Padres vs Colorado Rockies",
+              "pick": "San Diego Padres",
+              "p_win": 0.5597,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
               "match": "Miami Marlins vs Philadelphia Phillies",
               "pick": "Miami Marlins",
-              "p_win": 0.5601,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
-            },
-            {
-              "sport": "mlb",
-              "match": "Cincinnati Reds vs Cleveland Guardians",
-              "pick": "Cincinnati Reds",
-              "p_win": 0.5582,
-              "implied_odds": 1.79
+              "p_win": 0.5526,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 5.74,
-          "combined_prob": 0.1745,
-          "n_legs": 3
+          "total_odds": 3.24,
+          "combined_prob": 0.3093,
+          "n_legs": 2
         }
       }
     },
@@ -337,155 +283,127 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs Philadelphia Phillies",
-            "pick": "Miami Marlins",
-            "p_win": 0.5601,
+            "match": "San Diego Padres vs Colorado Rockies",
+            "pick": "San Diego Padres",
+            "p_win": 0.5597,
             "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
+            "match": "Miami Marlins vs Philadelphia Phillies",
+            "pick": "Miami Marlins",
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.2,
-        "combined_prob": 0.3126,
+        "total_odds": 3.24,
+        "combined_prob": 0.3093,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs Philadelphia Phillies",
-            "pick": "Miami Marlins",
-            "p_win": 0.5601,
+            "match": "San Diego Padres vs Colorado Rockies",
+            "pick": "San Diego Padres",
+            "p_win": 0.5597,
             "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
+            "match": "Miami Marlins vs Philadelphia Phillies",
+            "pick": "Miami Marlins",
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 3.2,
-        "combined_prob": 0.3126,
+        "total_odds": 3.24,
+        "combined_prob": 0.3093,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
+            "match": "San Diego Padres vs Colorado Rockies",
+            "pick": "San Diego Padres",
+            "p_win": 0.5597,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
             "match": "Miami Marlins vs Philadelphia Phillies",
             "pick": "Miami Marlins",
-            "p_win": 0.5601,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 5.74,
-        "combined_prob": 0.1745,
-        "n_legs": 3
+        "total_odds": 3.24,
+        "combined_prob": 0.3093,
+        "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
+            "match": "San Diego Padres vs Colorado Rockies",
+            "pick": "San Diego Padres",
+            "p_win": 0.5597,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
             "match": "Miami Marlins vs Philadelphia Phillies",
             "pick": "Miami Marlins",
-            "p_win": 0.5601,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 5.74,
-        "combined_prob": 0.1745,
-        "n_legs": 3
+        "total_odds": 3.24,
+        "combined_prob": 0.3093,
+        "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
+            "match": "San Diego Padres vs Colorado Rockies",
+            "pick": "San Diego Padres",
+            "p_win": 0.5597,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
             "match": "Miami Marlins vs Philadelphia Phillies",
             "pick": "Miami Marlins",
-            "p_win": 0.5601,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 5.74,
-        "combined_prob": 0.1745,
-        "n_legs": 3
+        "total_odds": 3.24,
+        "combined_prob": 0.3093,
+        "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
+            "match": "San Diego Padres vs Colorado Rockies",
+            "pick": "San Diego Padres",
+            "p_win": 0.5597,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
             "match": "Miami Marlins vs Philadelphia Phillies",
             "pick": "Miami Marlins",
-            "p_win": 0.5601,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
-          },
-          {
-            "sport": "mlb",
-            "match": "Cincinnati Reds vs Cleveland Guardians",
-            "pick": "Cincinnati Reds",
-            "p_win": 0.5582,
-            "implied_odds": 1.79
+            "p_win": 0.5526,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 5.74,
-        "combined_prob": 0.1745,
-        "n_legs": 3
+        "total_odds": 3.24,
+        "combined_prob": 0.3093,
+        "n_legs": 2
       }
     }
   }
