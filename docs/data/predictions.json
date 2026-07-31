@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-30T10:24:45Z",
-  "date": "2026-07-30",
+  "generated_at": "2026-07-31T10:38:54Z",
+  "date": "2026-07-31",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,12 +25,92 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5307,
-        "logloss": 0.6916,
-        "brier": 0.2492
+        "accuracy": 0.5335,
+        "logloss": 0.6949,
+        "brier": 0.2508
       },
-      "picks": [],
-      "name": "MLB"
+      "picks": [
+        {
+          "home_team": "Baltimore Orioles",
+          "away_team": "Philadelphia Phillies",
+          "pick": "H",
+          "pick_label": "Baltimore Orioles",
+          "p_win": 0.5599,
+          "implied_odds": 1.79,
+          "signal": "baja",
+          "date": "2026-07-31",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Orioles 53-56 vs Phillies 57-52. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "Atlanta Braves",
+          "away_team": "Washington Nationals",
+          "pick": "H",
+          "pick_label": "Atlanta Braves",
+          "p_win": 0.5474,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-07-31",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Braves 64-46 vs Nationals 55-55. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
+        {
+          "home_team": "Toronto Blue Jays",
+          "away_team": "St. Louis Cardinals",
+          "pick": "H",
+          "pick_label": "Toronto Blue Jays",
+          "p_win": 0.5472,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-07-31",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Jays 50-59 vs Cardinals 54-55. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        }
+      ],
+      "name": "MLB",
+      "analysis": ""
     },
     "epl": {
       "status": "ok",
@@ -94,14 +174,319 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "mlb": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Philadelphia Phillies",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5599,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Washington Nationals",
+              "pick": "Atlanta Braves",
+              "p_win": 0.5474,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.28,
+          "combined_prob": 0.3065,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Washington Nationals",
+              "pick": "Atlanta Braves",
+              "p_win": 0.5474,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs St. Louis Cardinals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5472,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 3.35,
+          "combined_prob": 0.2995,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Philadelphia Phillies",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5599,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Washington Nationals",
+              "pick": "Atlanta Braves",
+              "p_win": 0.5474,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs St. Louis Cardinals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5472,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.99,
+          "combined_prob": 0.1677,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Philadelphia Phillies",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5599,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Washington Nationals",
+              "pick": "Atlanta Braves",
+              "p_win": 0.5474,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs St. Louis Cardinals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5472,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.99,
+          "combined_prob": 0.1677,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Philadelphia Phillies",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5599,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Washington Nationals",
+              "pick": "Atlanta Braves",
+              "p_win": 0.5474,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs St. Louis Cardinals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5472,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.99,
+          "combined_prob": 0.1677,
+          "n_legs": 3
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Baltimore Orioles vs Philadelphia Phillies",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5599,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
+              "match": "Atlanta Braves vs Washington Nationals",
+              "pick": "Atlanta Braves",
+              "p_win": 0.5474,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs St. Louis Cardinals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5472,
+              "implied_odds": 1.83
+            }
+          ],
+          "total_odds": 5.99,
+          "combined_prob": 0.1677,
+          "n_legs": 3
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Philadelphia Phillies",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5599,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Washington Nationals",
+            "pick": "Atlanta Braves",
+            "p_win": 0.5474,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.28,
+        "combined_prob": 0.3065,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Washington Nationals",
+            "pick": "Atlanta Braves",
+            "p_win": 0.5474,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs St. Louis Cardinals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5472,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 3.35,
+        "combined_prob": 0.2995,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Philadelphia Phillies",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5599,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Washington Nationals",
+            "pick": "Atlanta Braves",
+            "p_win": 0.5474,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs St. Louis Cardinals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5472,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.99,
+        "combined_prob": 0.1677,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Philadelphia Phillies",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5599,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Washington Nationals",
+            "pick": "Atlanta Braves",
+            "p_win": 0.5474,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs St. Louis Cardinals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5472,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.99,
+        "combined_prob": 0.1677,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Philadelphia Phillies",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5599,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Washington Nationals",
+            "pick": "Atlanta Braves",
+            "p_win": 0.5474,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs St. Louis Cardinals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5472,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.99,
+        "combined_prob": 0.1677,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Baltimore Orioles vs Philadelphia Phillies",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5599,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
+            "match": "Atlanta Braves vs Washington Nationals",
+            "pick": "Atlanta Braves",
+            "p_win": 0.5474,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs St. Louis Cardinals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5472,
+            "implied_odds": 1.83
+          }
+        ],
+        "total_odds": 5.99,
+        "combined_prob": 0.1677,
+        "n_legs": 3
+      }
     }
   }
 }
