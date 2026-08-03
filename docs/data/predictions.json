@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T09:56:51Z",
-  "date": "2026-08-02",
+  "generated_at": "2026-08-03T11:23:02Z",
+  "date": "2026-08-03",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5419,
-        "logloss": 0.6899,
-        "brier": 0.2483
+        "accuracy": 0.5401,
+        "logloss": 0.6932,
+        "brier": 0.25
       },
       "picks": [
         {
-          "home_team": "Atlanta Braves",
+          "home_team": "Philadelphia Phillies",
           "away_team": "Washington Nationals",
           "pick": "H",
-          "pick_label": "Atlanta Braves",
-          "p_win": 0.5542,
-          "implied_odds": 1.8,
+          "pick_label": "Philadelphia Phillies",
+          "p_win": 0.5886,
+          "implied_odds": 1.7,
           "signal": "baja",
-          "date": "2026-08-02",
-          "model_spread": 0.4,
+          "date": "2026-08-03",
+          "model_spread": 0.6,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,7 +54,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Braves 66-46 vs Nationals 55-57. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 59%. Phillies 59-53 vs Nationals 55-58. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "New York Yankees",
+          "away_team": "St. Louis Cardinals",
+          "pick": "H",
+          "pick_label": "New York Yankees",
+          "p_win": 0.5802,
+          "implied_odds": 1.72,
+          "signal": "baja",
+          "date": "2026-08-03",
+          "model_spread": 0.6,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 58%. Yankees 63-49 vs Cardinals 55-57. Sin bajas importantes. SKIP — sin edge claro (58%)."
+        },
+        {
+          "home_team": "Milwaukee Brewers",
+          "away_team": "Pittsburgh Pirates",
+          "pick": "H",
+          "pick_label": "Milwaukee Brewers",
+          "p_win": 0.5726,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-08-03",
+          "model_spread": 0.5,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Brewers 69-42 vs Pirates 56-57. Sin bajas importantes. SKIP — sin edge claro (57%)."
         }
       ],
       "name": "MLB",
@@ -100,21 +152,317 @@
   "parlays": {
     "by_sport": {
       "mlb": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs St. Louis Cardinals",
+              "pick": "New York Yankees",
+              "p_win": 0.5802,
+              "implied_odds": 1.72
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5726,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 3.01,
+          "combined_prob": 0.3322,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs St. Louis Cardinals",
+              "pick": "New York Yankees",
+              "p_win": 0.5802,
+              "implied_odds": 1.72
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5726,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 3.01,
+          "combined_prob": 0.3322,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs Washington Nationals",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5886,
+              "implied_odds": 1.7
+            },
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs St. Louis Cardinals",
+              "pick": "New York Yankees",
+              "p_win": 0.5802,
+              "implied_odds": 1.72
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5726,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 5.12,
+          "combined_prob": 0.1955,
+          "n_legs": 3
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs Washington Nationals",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5886,
+              "implied_odds": 1.7
+            },
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs St. Louis Cardinals",
+              "pick": "New York Yankees",
+              "p_win": 0.5802,
+              "implied_odds": 1.72
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5726,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 5.12,
+          "combined_prob": 0.1955,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs Washington Nationals",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5886,
+              "implied_odds": 1.7
+            },
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs St. Louis Cardinals",
+              "pick": "New York Yankees",
+              "p_win": 0.5802,
+              "implied_odds": 1.72
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5726,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 5.12,
+          "combined_prob": 0.1955,
+          "n_legs": 3
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "mlb",
+              "match": "Philadelphia Phillies vs Washington Nationals",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5886,
+              "implied_odds": 1.7
+            },
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs St. Louis Cardinals",
+              "pick": "New York Yankees",
+              "p_win": 0.5802,
+              "implied_odds": 1.72
+            },
+            {
+              "sport": "mlb",
+              "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5726,
+              "implied_odds": 1.75
+            }
+          ],
+          "total_odds": 5.12,
+          "combined_prob": 0.1955,
+          "n_legs": 3
+        }
       }
     },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs St. Louis Cardinals",
+            "pick": "New York Yankees",
+            "p_win": 0.5802,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5726,
+            "implied_odds": 1.75
+          }
+        ],
+        "total_odds": 3.01,
+        "combined_prob": 0.3322,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs St. Louis Cardinals",
+            "pick": "New York Yankees",
+            "p_win": 0.5802,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5726,
+            "implied_odds": 1.75
+          }
+        ],
+        "total_odds": 3.01,
+        "combined_prob": 0.3322,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Washington Nationals",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5886,
+            "implied_odds": 1.7
+          },
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs St. Louis Cardinals",
+            "pick": "New York Yankees",
+            "p_win": 0.5802,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5726,
+            "implied_odds": 1.75
+          }
+        ],
+        "total_odds": 5.12,
+        "combined_prob": 0.1955,
+        "n_legs": 3
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Washington Nationals",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5886,
+            "implied_odds": 1.7
+          },
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs St. Louis Cardinals",
+            "pick": "New York Yankees",
+            "p_win": 0.5802,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5726,
+            "implied_odds": 1.75
+          }
+        ],
+        "total_odds": 5.12,
+        "combined_prob": 0.1955,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Washington Nationals",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5886,
+            "implied_odds": 1.7
+          },
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs St. Louis Cardinals",
+            "pick": "New York Yankees",
+            "p_win": 0.5802,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5726,
+            "implied_odds": 1.75
+          }
+        ],
+        "total_odds": 5.12,
+        "combined_prob": 0.1955,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "mlb",
+            "match": "Philadelphia Phillies vs Washington Nationals",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5886,
+            "implied_odds": 1.7
+          },
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs St. Louis Cardinals",
+            "pick": "New York Yankees",
+            "p_win": 0.5802,
+            "implied_odds": 1.72
+          },
+          {
+            "sport": "mlb",
+            "match": "Milwaukee Brewers vs Pittsburgh Pirates",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5726,
+            "implied_odds": 1.75
+          }
+        ],
+        "total_odds": 5.12,
+        "combined_prob": 0.1955,
+        "n_legs": 3
+      }
     }
   }
 }
