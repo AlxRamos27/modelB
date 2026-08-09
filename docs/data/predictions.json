@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T08:40:19Z",
-  "date": "2026-08-08",
+  "generated_at": "2026-08-09T08:42:00Z",
+  "date": "2026-08-09",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5543,
-        "logloss": 0.6918,
-        "brier": 0.2493
+        "accuracy": 0.5326,
+        "logloss": 0.6928,
+        "brier": 0.2498
       },
       "picks": [
         {
@@ -35,11 +35,11 @@
           "away_team": "Athletics",
           "pick": "H",
           "pick_label": "Boston Red Sox",
-          "p_win": 0.6595,
-          "implied_odds": 1.52,
+          "p_win": 0.6353,
+          "implied_odds": 1.57,
           "signal": "media",
-          "date": "2026-08-08",
-          "model_spread": 1.2,
+          "date": "2026-08-09",
+          "model_spread": 1.0,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,69 +54,69 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 66%. Sox 64-51 vs Athletics 45-71. Sin bajas importantes. ML Sox con cautela (modelo 66%)."
-        },
-        {
-          "home_team": "Kansas City Royals",
-          "away_team": "Chicago Cubs",
-          "pick": "A",
-          "pick_label": "Chicago Cubs",
-          "p_win": 0.5711,
-          "implied_odds": 1.75,
-          "signal": "baja",
-          "date": "2026-08-08",
-          "model_spread": 0.5,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Royals 48-69 vs Cubs 68-49. Sin bajas importantes. SKIP — sin edge claro (57%)."
-        },
-        {
-          "home_team": "St. Louis Cardinals",
-          "away_team": "Colorado Rockies",
-          "pick": "H",
-          "pick_label": "St. Louis Cardinals",
-          "p_win": 0.5617,
-          "implied_odds": 1.78,
-          "signal": "baja",
-          "date": "2026-08-08",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Cardinals 58-58 vs Rockies 45-71. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "⚠️ Modelo 64%. Sox 64-52 vs Athletics 46-71. Sin bajas importantes. ML Sox con cautela (modelo 64%)."
         },
         {
           "home_team": "Chicago White Sox",
           "away_team": "Cleveland Guardians",
           "pick": "H",
           "pick_label": "Chicago White Sox",
-          "p_win": 0.557,
+          "p_win": 0.5867,
+          "implied_odds": 1.7,
+          "signal": "baja",
+          "date": "2026-08-09",
+          "model_spread": 0.6,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 59%. Sox 64-52 vs Guardians 58-60. Sin bajas importantes. SKIP — sin edge claro (59%)."
+        },
+        {
+          "home_team": "Miami Marlins",
+          "away_team": "Los Angeles Angels",
+          "pick": "H",
+          "pick_label": "Miami Marlins",
+          "p_win": 0.58,
+          "implied_odds": 1.72,
+          "signal": "baja",
+          "date": "2026-08-09",
+          "model_spread": 0.6,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 58%. Marlins 59-59 vs Angels 45-72. Sin bajas importantes. SKIP — sin edge claro (58%)."
+        },
+        {
+          "home_team": "Kansas City Royals",
+          "away_team": "Chicago Cubs",
+          "pick": "A",
+          "pick_label": "Chicago Cubs",
+          "p_win": 0.5566,
           "implied_odds": 1.8,
           "signal": "baja",
-          "date": "2026-08-08",
+          "date": "2026-08-09",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -132,7 +132,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Sox 64-51 vs Guardians 58-59. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 56%. Royals 49-69 vs Cubs 68-50. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "St. Louis Cardinals",
+          "away_team": "Colorado Rockies",
+          "pick": "H",
+          "pick_label": "St. Louis Cardinals",
+          "p_win": 0.5565,
+          "implied_odds": 1.8,
+          "signal": "baja",
+          "date": "2026-08-09",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 56%. Cardinals 58-59 vs Rockies 46-71. Sin bajas importantes. SKIP — sin edge claro (56%)."
+        },
+        {
+          "home_team": "Arizona Diamondbacks",
+          "away_team": "Los Angeles Dodgers",
+          "pick": "H",
+          "pick_label": "Arizona Diamondbacks",
+          "p_win": 0.5525,
+          "implied_odds": 1.81,
+          "signal": "baja",
+          "date": "2026-08-09",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Diamondbacks 62-56 vs Dodgers 70-47. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -164,7 +216,7 @@
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (1). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (4). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -182,21 +234,21 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Kansas City Royals vs Chicago Cubs",
-              "pick": "Chicago Cubs",
-              "p_win": 0.5711,
-              "implied_odds": 1.75
+              "match": "Chicago White Sox vs Cleveland Guardians",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5867,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "St. Louis Cardinals vs Colorado Rockies",
-              "pick": "St. Louis Cardinals",
-              "p_win": 0.5617,
-              "implied_odds": 1.78
+              "match": "Kansas City Royals vs Chicago Cubs",
+              "pick": "Chicago Cubs",
+              "p_win": 0.5566,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 3.12,
-          "combined_prob": 0.3208,
+          "total_odds": 3.06,
+          "combined_prob": 0.3266,
           "n_legs": 2
         },
         "cuota_4": {
@@ -205,26 +257,26 @@
               "sport": "mlb",
               "match": "Boston Red Sox vs Athletics",
               "pick": "Boston Red Sox",
-              "p_win": 0.6595,
-              "implied_odds": 1.52
+              "p_win": 0.6353,
+              "implied_odds": 1.57
             },
             {
               "sport": "mlb",
-              "match": "Kansas City Royals vs Chicago Cubs",
-              "pick": "Chicago Cubs",
-              "p_win": 0.5711,
-              "implied_odds": 1.75
+              "match": "Chicago White Sox vs Cleveland Guardians",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5867,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "St. Louis Cardinals vs Colorado Rockies",
-              "pick": "St. Louis Cardinals",
-              "p_win": 0.5617,
-              "implied_odds": 1.78
+              "match": "Miami Marlins vs Los Angeles Angels",
+              "pick": "Miami Marlins",
+              "p_win": 0.58,
+              "implied_odds": 1.72
             }
           ],
-          "total_odds": 4.73,
-          "combined_prob": 0.2116,
+          "total_odds": 4.59,
+          "combined_prob": 0.2162,
           "n_legs": 3
         },
         "cuota_5": {
@@ -233,26 +285,26 @@
               "sport": "mlb",
               "match": "Boston Red Sox vs Athletics",
               "pick": "Boston Red Sox",
-              "p_win": 0.6595,
-              "implied_odds": 1.52
+              "p_win": 0.6353,
+              "implied_odds": 1.57
+            },
+            {
+              "sport": "mlb",
+              "match": "Kansas City Royals vs Chicago Cubs",
+              "pick": "Chicago Cubs",
+              "p_win": 0.5566,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
               "match": "St. Louis Cardinals vs Colorado Rockies",
               "pick": "St. Louis Cardinals",
-              "p_win": 0.5617,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago White Sox vs Cleveland Guardians",
-              "pick": "Chicago White Sox",
-              "p_win": 0.557,
+              "p_win": 0.5565,
               "implied_odds": 1.8
             }
           ],
-          "total_odds": 4.87,
-          "combined_prob": 0.2063,
+          "total_odds": 5.09,
+          "combined_prob": 0.1968,
           "n_legs": 3
         },
         "cuota_6": {
@@ -261,97 +313,104 @@
               "sport": "mlb",
               "match": "Kansas City Royals vs Chicago Cubs",
               "pick": "Chicago Cubs",
-              "p_win": 0.5711,
-              "implied_odds": 1.75
+              "p_win": 0.5566,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
               "match": "St. Louis Cardinals vs Colorado Rockies",
               "pick": "St. Louis Cardinals",
-              "p_win": 0.5617,
-              "implied_odds": 1.78
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Cleveland Guardians",
-              "pick": "Chicago White Sox",
-              "p_win": 0.557,
-              "implied_odds": 1.8
+              "match": "Arizona Diamondbacks vs Los Angeles Dodgers",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.5525,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 5.61,
-          "combined_prob": 0.1787,
+          "total_odds": 5.86,
+          "combined_prob": 0.1711,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Athletics",
-              "pick": "Boston Red Sox",
-              "p_win": 0.6595,
-              "implied_odds": 1.52
+              "match": "Chicago White Sox vs Cleveland Guardians",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5867,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
               "match": "Kansas City Royals vs Chicago Cubs",
               "pick": "Chicago Cubs",
-              "p_win": 0.5711,
-              "implied_odds": 1.75
+              "p_win": 0.5566,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
               "match": "St. Louis Cardinals vs Colorado Rockies",
               "pick": "St. Louis Cardinals",
-              "p_win": 0.5617,
-              "implied_odds": 1.78
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Cleveland Guardians",
-              "pick": "Chicago White Sox",
-              "p_win": 0.557,
-              "implied_odds": 1.8
+              "match": "Arizona Diamondbacks vs Los Angeles Dodgers",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.5525,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 8.52,
-          "combined_prob": 0.1178,
+          "total_odds": 9.97,
+          "combined_prob": 0.1004,
           "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Athletics",
-              "pick": "Boston Red Sox",
-              "p_win": 0.6595,
-              "implied_odds": 1.52
+              "match": "Chicago White Sox vs Cleveland Guardians",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5867,
+              "implied_odds": 1.7
+            },
+            {
+              "sport": "mlb",
+              "match": "Miami Marlins vs Los Angeles Angels",
+              "pick": "Miami Marlins",
+              "p_win": 0.58,
+              "implied_odds": 1.72
             },
             {
               "sport": "mlb",
               "match": "Kansas City Royals vs Chicago Cubs",
               "pick": "Chicago Cubs",
-              "p_win": 0.5711,
-              "implied_odds": 1.75
+              "p_win": 0.5566,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
               "match": "St. Louis Cardinals vs Colorado Rockies",
               "pick": "St. Louis Cardinals",
-              "p_win": 0.5617,
-              "implied_odds": 1.78
+              "p_win": 0.5565,
+              "implied_odds": 1.8
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Cleveland Guardians",
-              "pick": "Chicago White Sox",
-              "p_win": 0.557,
-              "implied_odds": 1.8
+              "match": "Arizona Diamondbacks vs Los Angeles Dodgers",
+              "pick": "Arizona Diamondbacks",
+              "p_win": 0.5525,
+              "implied_odds": 1.81
             }
           ],
-          "total_odds": 8.52,
-          "combined_prob": 0.1178,
-          "n_legs": 4
+          "total_odds": 17.15,
+          "combined_prob": 0.0582,
+          "n_legs": 5
         }
       }
     },
@@ -360,21 +419,21 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Kansas City Royals vs Chicago Cubs",
-            "pick": "Chicago Cubs",
-            "p_win": 0.5711,
-            "implied_odds": 1.75
+            "match": "Chicago White Sox vs Cleveland Guardians",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5867,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "St. Louis Cardinals vs Colorado Rockies",
-            "pick": "St. Louis Cardinals",
-            "p_win": 0.5617,
-            "implied_odds": 1.78
+            "match": "Kansas City Royals vs Chicago Cubs",
+            "pick": "Chicago Cubs",
+            "p_win": 0.5566,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 3.12,
-        "combined_prob": 0.3208,
+        "total_odds": 3.06,
+        "combined_prob": 0.3266,
         "n_legs": 2
       },
       "cuota_4": {
@@ -383,26 +442,26 @@
             "sport": "mlb",
             "match": "Boston Red Sox vs Athletics",
             "pick": "Boston Red Sox",
-            "p_win": 0.6595,
-            "implied_odds": 1.52
+            "p_win": 0.6353,
+            "implied_odds": 1.57
           },
           {
             "sport": "mlb",
-            "match": "Kansas City Royals vs Chicago Cubs",
-            "pick": "Chicago Cubs",
-            "p_win": 0.5711,
-            "implied_odds": 1.75
+            "match": "Chicago White Sox vs Cleveland Guardians",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5867,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "St. Louis Cardinals vs Colorado Rockies",
-            "pick": "St. Louis Cardinals",
-            "p_win": 0.5617,
-            "implied_odds": 1.78
+            "match": "Miami Marlins vs Los Angeles Angels",
+            "pick": "Miami Marlins",
+            "p_win": 0.58,
+            "implied_odds": 1.72
           }
         ],
-        "total_odds": 4.73,
-        "combined_prob": 0.2116,
+        "total_odds": 4.59,
+        "combined_prob": 0.2162,
         "n_legs": 3
       },
       "cuota_5": {
@@ -411,26 +470,26 @@
             "sport": "mlb",
             "match": "Boston Red Sox vs Athletics",
             "pick": "Boston Red Sox",
-            "p_win": 0.6595,
-            "implied_odds": 1.52
+            "p_win": 0.6353,
+            "implied_odds": 1.57
+          },
+          {
+            "sport": "mlb",
+            "match": "Kansas City Royals vs Chicago Cubs",
+            "pick": "Chicago Cubs",
+            "p_win": 0.5566,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
             "match": "St. Louis Cardinals vs Colorado Rockies",
             "pick": "St. Louis Cardinals",
-            "p_win": 0.5617,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Cleveland Guardians",
-            "pick": "Chicago White Sox",
-            "p_win": 0.557,
+            "p_win": 0.5565,
             "implied_odds": 1.8
           }
         ],
-        "total_odds": 4.87,
-        "combined_prob": 0.2063,
+        "total_odds": 5.09,
+        "combined_prob": 0.1968,
         "n_legs": 3
       },
       "cuota_6": {
@@ -439,97 +498,104 @@
             "sport": "mlb",
             "match": "Kansas City Royals vs Chicago Cubs",
             "pick": "Chicago Cubs",
-            "p_win": 0.5711,
-            "implied_odds": 1.75
+            "p_win": 0.5566,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
             "match": "St. Louis Cardinals vs Colorado Rockies",
             "pick": "St. Louis Cardinals",
-            "p_win": 0.5617,
-            "implied_odds": 1.78
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Cleveland Guardians",
-            "pick": "Chicago White Sox",
-            "p_win": 0.557,
-            "implied_odds": 1.8
+            "match": "Arizona Diamondbacks vs Los Angeles Dodgers",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.5525,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 5.61,
-        "combined_prob": 0.1787,
+        "total_odds": 5.86,
+        "combined_prob": 0.1711,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Athletics",
-            "pick": "Boston Red Sox",
-            "p_win": 0.6595,
-            "implied_odds": 1.52
+            "match": "Chicago White Sox vs Cleveland Guardians",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5867,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
             "match": "Kansas City Royals vs Chicago Cubs",
             "pick": "Chicago Cubs",
-            "p_win": 0.5711,
-            "implied_odds": 1.75
+            "p_win": 0.5566,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
             "match": "St. Louis Cardinals vs Colorado Rockies",
             "pick": "St. Louis Cardinals",
-            "p_win": 0.5617,
-            "implied_odds": 1.78
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Cleveland Guardians",
-            "pick": "Chicago White Sox",
-            "p_win": 0.557,
-            "implied_odds": 1.8
+            "match": "Arizona Diamondbacks vs Los Angeles Dodgers",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.5525,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 8.52,
-        "combined_prob": 0.1178,
+        "total_odds": 9.97,
+        "combined_prob": 0.1004,
         "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Athletics",
-            "pick": "Boston Red Sox",
-            "p_win": 0.6595,
-            "implied_odds": 1.52
+            "match": "Chicago White Sox vs Cleveland Guardians",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5867,
+            "implied_odds": 1.7
+          },
+          {
+            "sport": "mlb",
+            "match": "Miami Marlins vs Los Angeles Angels",
+            "pick": "Miami Marlins",
+            "p_win": 0.58,
+            "implied_odds": 1.72
           },
           {
             "sport": "mlb",
             "match": "Kansas City Royals vs Chicago Cubs",
             "pick": "Chicago Cubs",
-            "p_win": 0.5711,
-            "implied_odds": 1.75
+            "p_win": 0.5566,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
             "match": "St. Louis Cardinals vs Colorado Rockies",
             "pick": "St. Louis Cardinals",
-            "p_win": 0.5617,
-            "implied_odds": 1.78
+            "p_win": 0.5565,
+            "implied_odds": 1.8
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Cleveland Guardians",
-            "pick": "Chicago White Sox",
-            "p_win": 0.557,
-            "implied_odds": 1.8
+            "match": "Arizona Diamondbacks vs Los Angeles Dodgers",
+            "pick": "Arizona Diamondbacks",
+            "p_win": 0.5525,
+            "implied_odds": 1.81
           }
         ],
-        "total_odds": 8.52,
-        "combined_prob": 0.1178,
-        "n_legs": 4
+        "total_odds": 17.15,
+        "combined_prob": 0.0582,
+        "n_legs": 5
       }
     }
   }
