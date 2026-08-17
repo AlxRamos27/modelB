@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T08:28:46Z",
-  "date": "2026-08-16",
+  "generated_at": "2026-08-17T08:42:31Z",
+  "date": "2026-08-17",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,20 +25,46 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5418,
-        "logloss": 0.6905,
-        "brier": 0.2487
+        "accuracy": 0.5321,
+        "logloss": 0.6921,
+        "brier": 0.2495
       },
       "picks": [
         {
-          "home_team": "New York Mets",
-          "away_team": "Washington Nationals",
+          "home_team": "Kansas City Royals",
+          "away_team": "Athletics",
           "pick": "H",
-          "pick_label": "New York Mets",
-          "p_win": 0.5548,
+          "pick_label": "Kansas City Royals",
+          "p_win": 0.5709,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-08-17",
+          "model_spread": 0.5,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Royals 51-74 vs Athletics 49-75. Sin bajas importantes. SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "Boston Red Sox",
+          "away_team": "Arizona Diamondbacks",
+          "pick": "H",
+          "pick_label": "Boston Red Sox",
+          "p_win": 0.5546,
           "implied_odds": 1.8,
           "signal": "baja",
-          "date": "2026-08-16",
+          "date": "2026-08-17",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -54,85 +80,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Mets 55-69 vs Nationals 60-65. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
-        {
-          "home_team": "Houston Astros",
-          "away_team": "Seattle Mariners",
-          "pick": "H",
-          "pick_label": "Houston Astros",
-          "p_win": 0.5519,
-          "implied_odds": 1.81,
-          "signal": "baja",
-          "date": "2026-08-16",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Astros 63-61 vs Mariners 58-66. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
-        {
-          "home_team": "Chicago Cubs",
-          "away_team": "St. Louis Cardinals",
-          "pick": "H",
-          "pick_label": "Chicago Cubs",
-          "p_win": 0.5425,
-          "implied_odds": 1.84,
-          "signal": "baja",
-          "date": "2026-08-16",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Cubs 72-52 vs Cardinals 62-61. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "Athletics",
-          "away_team": "Texas Rangers",
-          "pick": "H",
-          "pick_label": "Athletics",
-          "p_win": 0.5378,
-          "implied_odds": 1.86,
-          "signal": "baja",
-          "date": "2026-08-16",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Athletics 48-75 vs Rangers 61-63. Sin bajas importantes. SKIP — sin edge claro (54%)."
+          "note": "❌ Modelo 55%. Sox 66-58 vs Diamondbacks 66-59. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -146,7 +94,7 @@
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (2). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (4). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
@@ -164,7 +112,7 @@
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (13). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (16). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -182,169 +130,127 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Mets vs Washington Nationals",
-              "pick": "New York Mets",
-              "p_win": 0.5548,
-              "implied_odds": 1.8
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5709,
+              "implied_odds": 1.75
             },
             {
               "sport": "mlb",
-              "match": "Houston Astros vs Seattle Mariners",
-              "pick": "Houston Astros",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
+              "match": "Boston Red Sox vs Arizona Diamondbacks",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5546,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 3.26,
-          "combined_prob": 0.3062,
+          "total_odds": 3.15,
+          "combined_prob": 0.3166,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Chicago Cubs vs St. Louis Cardinals",
-              "pick": "Chicago Cubs",
-              "p_win": 0.5425,
-              "implied_odds": 1.84
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5709,
+              "implied_odds": 1.75
             },
             {
               "sport": "mlb",
-              "match": "Athletics vs Texas Rangers",
-              "pick": "Athletics",
-              "p_win": 0.5378,
-              "implied_odds": 1.86
+              "match": "Boston Red Sox vs Arizona Diamondbacks",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5546,
+              "implied_odds": 1.8
             }
           ],
-          "total_odds": 3.42,
-          "combined_prob": 0.2918,
+          "total_odds": 3.15,
+          "combined_prob": 0.3166,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Mets vs Washington Nationals",
-              "pick": "New York Mets",
-              "p_win": 0.5548,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5709,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "mlb",
+              "match": "Boston Red Sox vs Arizona Diamondbacks",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5546,
               "implied_odds": 1.8
-            },
-            {
-              "sport": "mlb",
-              "match": "Houston Astros vs Seattle Mariners",
-              "pick": "Houston Astros",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago Cubs vs St. Louis Cardinals",
-              "pick": "Chicago Cubs",
-              "p_win": 0.5425,
-              "implied_odds": 1.84
             }
           ],
-          "total_odds": 5.99,
-          "combined_prob": 0.1661,
-          "n_legs": 3
+          "total_odds": 3.15,
+          "combined_prob": 0.3166,
+          "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Mets vs Washington Nationals",
-              "pick": "New York Mets",
-              "p_win": 0.5548,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5709,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "mlb",
+              "match": "Boston Red Sox vs Arizona Diamondbacks",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5546,
               "implied_odds": 1.8
-            },
-            {
-              "sport": "mlb",
-              "match": "Houston Astros vs Seattle Mariners",
-              "pick": "Houston Astros",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago Cubs vs St. Louis Cardinals",
-              "pick": "Chicago Cubs",
-              "p_win": 0.5425,
-              "implied_odds": 1.84
             }
           ],
-          "total_odds": 5.99,
-          "combined_prob": 0.1661,
-          "n_legs": 3
+          "total_odds": 3.15,
+          "combined_prob": 0.3166,
+          "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Mets vs Washington Nationals",
-              "pick": "New York Mets",
-              "p_win": 0.5548,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5709,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "mlb",
+              "match": "Boston Red Sox vs Arizona Diamondbacks",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5546,
               "implied_odds": 1.8
-            },
-            {
-              "sport": "mlb",
-              "match": "Houston Astros vs Seattle Mariners",
-              "pick": "Houston Astros",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago Cubs vs St. Louis Cardinals",
-              "pick": "Chicago Cubs",
-              "p_win": 0.5425,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Texas Rangers",
-              "pick": "Athletics",
-              "p_win": 0.5378,
-              "implied_odds": 1.86
             }
           ],
-          "total_odds": 11.15,
-          "combined_prob": 0.0893,
-          "n_legs": 4
+          "total_odds": 3.15,
+          "combined_prob": 0.3166,
+          "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Mets vs Washington Nationals",
-              "pick": "New York Mets",
-              "p_win": 0.5548,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5709,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "mlb",
+              "match": "Boston Red Sox vs Arizona Diamondbacks",
+              "pick": "Boston Red Sox",
+              "p_win": 0.5546,
               "implied_odds": 1.8
-            },
-            {
-              "sport": "mlb",
-              "match": "Houston Astros vs Seattle Mariners",
-              "pick": "Houston Astros",
-              "p_win": 0.5519,
-              "implied_odds": 1.81
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago Cubs vs St. Louis Cardinals",
-              "pick": "Chicago Cubs",
-              "p_win": 0.5425,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "mlb",
-              "match": "Athletics vs Texas Rangers",
-              "pick": "Athletics",
-              "p_win": 0.5378,
-              "implied_odds": 1.86
             }
           ],
-          "total_odds": 11.15,
-          "combined_prob": 0.0893,
-          "n_legs": 4
+          "total_odds": 3.15,
+          "combined_prob": 0.3166,
+          "n_legs": 2
         }
       }
     },
@@ -353,169 +259,127 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Mets vs Washington Nationals",
-            "pick": "New York Mets",
-            "p_win": 0.5548,
-            "implied_odds": 1.8
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5709,
+            "implied_odds": 1.75
           },
           {
             "sport": "mlb",
-            "match": "Houston Astros vs Seattle Mariners",
-            "pick": "Houston Astros",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
+            "match": "Boston Red Sox vs Arizona Diamondbacks",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5546,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 3.26,
-        "combined_prob": 0.3062,
+        "total_odds": 3.15,
+        "combined_prob": 0.3166,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Chicago Cubs vs St. Louis Cardinals",
-            "pick": "Chicago Cubs",
-            "p_win": 0.5425,
-            "implied_odds": 1.84
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5709,
+            "implied_odds": 1.75
           },
           {
             "sport": "mlb",
-            "match": "Athletics vs Texas Rangers",
-            "pick": "Athletics",
-            "p_win": 0.5378,
-            "implied_odds": 1.86
+            "match": "Boston Red Sox vs Arizona Diamondbacks",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5546,
+            "implied_odds": 1.8
           }
         ],
-        "total_odds": 3.42,
-        "combined_prob": 0.2918,
+        "total_odds": 3.15,
+        "combined_prob": 0.3166,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Mets vs Washington Nationals",
-            "pick": "New York Mets",
-            "p_win": 0.5548,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5709,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "mlb",
+            "match": "Boston Red Sox vs Arizona Diamondbacks",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5546,
             "implied_odds": 1.8
-          },
-          {
-            "sport": "mlb",
-            "match": "Houston Astros vs Seattle Mariners",
-            "pick": "Houston Astros",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs St. Louis Cardinals",
-            "pick": "Chicago Cubs",
-            "p_win": 0.5425,
-            "implied_odds": 1.84
           }
         ],
-        "total_odds": 5.99,
-        "combined_prob": 0.1661,
-        "n_legs": 3
+        "total_odds": 3.15,
+        "combined_prob": 0.3166,
+        "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Mets vs Washington Nationals",
-            "pick": "New York Mets",
-            "p_win": 0.5548,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5709,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "mlb",
+            "match": "Boston Red Sox vs Arizona Diamondbacks",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5546,
             "implied_odds": 1.8
-          },
-          {
-            "sport": "mlb",
-            "match": "Houston Astros vs Seattle Mariners",
-            "pick": "Houston Astros",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs St. Louis Cardinals",
-            "pick": "Chicago Cubs",
-            "p_win": 0.5425,
-            "implied_odds": 1.84
           }
         ],
-        "total_odds": 5.99,
-        "combined_prob": 0.1661,
-        "n_legs": 3
+        "total_odds": 3.15,
+        "combined_prob": 0.3166,
+        "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Mets vs Washington Nationals",
-            "pick": "New York Mets",
-            "p_win": 0.5548,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5709,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "mlb",
+            "match": "Boston Red Sox vs Arizona Diamondbacks",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5546,
             "implied_odds": 1.8
-          },
-          {
-            "sport": "mlb",
-            "match": "Houston Astros vs Seattle Mariners",
-            "pick": "Houston Astros",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs St. Louis Cardinals",
-            "pick": "Chicago Cubs",
-            "p_win": 0.5425,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "mlb",
-            "match": "Athletics vs Texas Rangers",
-            "pick": "Athletics",
-            "p_win": 0.5378,
-            "implied_odds": 1.86
           }
         ],
-        "total_odds": 11.15,
-        "combined_prob": 0.0893,
-        "n_legs": 4
+        "total_odds": 3.15,
+        "combined_prob": 0.3166,
+        "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Mets vs Washington Nationals",
-            "pick": "New York Mets",
-            "p_win": 0.5548,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5709,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "mlb",
+            "match": "Boston Red Sox vs Arizona Diamondbacks",
+            "pick": "Boston Red Sox",
+            "p_win": 0.5546,
             "implied_odds": 1.8
-          },
-          {
-            "sport": "mlb",
-            "match": "Houston Astros vs Seattle Mariners",
-            "pick": "Houston Astros",
-            "p_win": 0.5519,
-            "implied_odds": 1.81
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago Cubs vs St. Louis Cardinals",
-            "pick": "Chicago Cubs",
-            "p_win": 0.5425,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "mlb",
-            "match": "Athletics vs Texas Rangers",
-            "pick": "Athletics",
-            "p_win": 0.5378,
-            "implied_odds": 1.86
           }
         ],
-        "total_odds": 11.15,
-        "combined_prob": 0.0893,
-        "n_legs": 4
+        "total_odds": 3.15,
+        "combined_prob": 0.3166,
+        "n_legs": 2
       }
     }
   }
