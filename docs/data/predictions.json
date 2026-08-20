@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T08:36:46Z",
-  "date": "2026-08-19",
+  "generated_at": "2026-08-20T08:37:37Z",
+  "date": "2026-08-20",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,98 +25,46 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.55,
-        "logloss": 0.6894,
-        "brier": 0.2481
+        "accuracy": 0.5144,
+        "logloss": 0.6895,
+        "brier": 0.2482
       },
       "picks": [
+        {
+          "home_team": "Kansas City Royals",
+          "away_team": "Athletics",
+          "pick": "H",
+          "pick_label": "Kansas City Royals",
+          "p_win": 0.5516,
+          "implied_odds": 1.81,
+          "signal": "baja",
+          "date": "2026-08-20",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Royals 54-74 vs Athletics 49-78. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
         {
           "home_team": "Cleveland Guardians",
           "away_team": "San Francisco Giants",
           "pick": "H",
           "pick_label": "Cleveland Guardians",
-          "p_win": 0.5765,
-          "implied_odds": 1.73,
-          "signal": "baja",
-          "date": "2026-08-19",
-          "model_spread": 0.6,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 58%. Guardians 61-65 vs Giants 52-74. Sin bajas importantes. SKIP — sin edge claro (58%)."
-        },
-        {
-          "home_team": "Boston Red Sox",
-          "away_team": "Arizona Diamondbacks",
-          "pick": "H",
-          "pick_label": "Boston Red Sox",
-          "p_win": 0.5518,
-          "implied_odds": 1.81,
-          "signal": "baja",
-          "date": "2026-08-19",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Sox 68-58 vs Diamondbacks 66-61. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
-        {
-          "home_team": "Tampa Bay Rays",
-          "away_team": "Toronto Blue Jays",
-          "pick": "H",
-          "pick_label": "Tampa Bay Rays",
-          "p_win": 0.5501,
-          "implied_odds": 1.82,
-          "signal": "baja",
-          "date": "2026-08-19",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Rays 75-50 vs Jays 62-65. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
-        {
-          "home_team": "Milwaukee Brewers",
-          "away_team": "Seattle Mariners",
-          "pick": "H",
-          "pick_label": "Milwaukee Brewers",
-          "p_win": 0.5475,
+          "p_win": 0.5471,
           "implied_odds": 1.83,
           "signal": "baja",
-          "date": "2026-08-19",
+          "date": "2026-08-20",
           "model_spread": 0.3,
           "house_spread": null,
           "house_odds": null,
@@ -132,7 +80,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Brewers 78-48 vs Mariners 59-67. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 55%. Guardians 61-66 vs Giants 53-74. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
+        {
+          "home_team": "Chicago White Sox",
+          "away_team": "Atlanta Braves",
+          "pick": "H",
+          "pick_label": "Chicago White Sox",
+          "p_win": 0.5441,
+          "implied_odds": 1.84,
+          "signal": "baja",
+          "date": "2026-08-20",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 54%. Sox 68-59 vs Braves 74-54. Sin bajas importantes. SKIP — sin edge claro (54%)."
         }
       ],
       "name": "MLB",
@@ -146,7 +120,7 @@
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (5). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (6). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
@@ -182,169 +156,155 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Cleveland Guardians vs San Francisco Giants",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5765,
-              "implied_odds": 1.73
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5516,
+              "implied_odds": 1.81
             },
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Arizona Diamondbacks",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5518,
-              "implied_odds": 1.81
+              "match": "Cleveland Guardians vs San Francisco Giants",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5471,
+              "implied_odds": 1.83
             }
           ],
-          "total_odds": 3.13,
-          "combined_prob": 0.3181,
+          "total_odds": 3.31,
+          "combined_prob": 0.3018,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Toronto Blue Jays",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5501,
-              "implied_odds": 1.82
+              "match": "Cleveland Guardians vs San Francisco Giants",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5471,
+              "implied_odds": 1.83
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Seattle Mariners",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5475,
-              "implied_odds": 1.83
+              "match": "Chicago White Sox vs Atlanta Braves",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5441,
+              "implied_odds": 1.84
             }
           ],
-          "total_odds": 3.33,
-          "combined_prob": 0.3012,
+          "total_odds": 3.37,
+          "combined_prob": 0.2977,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Cleveland Guardians vs San Francisco Giants",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5765,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Arizona Diamondbacks",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5518,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5516,
               "implied_odds": 1.81
             },
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Toronto Blue Jays",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5501,
-              "implied_odds": 1.82
+              "match": "Cleveland Guardians vs San Francisco Giants",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5471,
+              "implied_odds": 1.83
+            },
+            {
+              "sport": "mlb",
+              "match": "Chicago White Sox vs Atlanta Braves",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5441,
+              "implied_odds": 1.84
             }
           ],
-          "total_odds": 5.7,
-          "combined_prob": 0.175,
+          "total_odds": 6.09,
+          "combined_prob": 0.1642,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Boston Red Sox vs Arizona Diamondbacks",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5518,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5516,
               "implied_odds": 1.81
             },
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Toronto Blue Jays",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5501,
-              "implied_odds": 1.82
+              "match": "Cleveland Guardians vs San Francisco Giants",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5471,
+              "implied_odds": 1.83
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Seattle Mariners",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5475,
-              "implied_odds": 1.83
+              "match": "Chicago White Sox vs Atlanta Braves",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5441,
+              "implied_odds": 1.84
             }
           ],
-          "total_odds": 6.03,
-          "combined_prob": 0.1662,
+          "total_odds": 6.09,
+          "combined_prob": 0.1642,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Cleveland Guardians vs San Francisco Giants",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5765,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Arizona Diamondbacks",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5518,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5516,
               "implied_odds": 1.81
             },
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Toronto Blue Jays",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5501,
-              "implied_odds": 1.82
+              "match": "Cleveland Guardians vs San Francisco Giants",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5471,
+              "implied_odds": 1.83
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Seattle Mariners",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5475,
-              "implied_odds": 1.83
+              "match": "Chicago White Sox vs Atlanta Braves",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5441,
+              "implied_odds": 1.84
             }
           ],
-          "total_odds": 10.43,
-          "combined_prob": 0.0958,
-          "n_legs": 4
+          "total_odds": 6.09,
+          "combined_prob": 0.1642,
+          "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Cleveland Guardians vs San Francisco Giants",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5765,
-              "implied_odds": 1.73
-            },
-            {
-              "sport": "mlb",
-              "match": "Boston Red Sox vs Arizona Diamondbacks",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5518,
+              "match": "Kansas City Royals vs Athletics",
+              "pick": "Kansas City Royals",
+              "p_win": 0.5516,
               "implied_odds": 1.81
             },
             {
               "sport": "mlb",
-              "match": "Tampa Bay Rays vs Toronto Blue Jays",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.5501,
-              "implied_odds": 1.82
+              "match": "Cleveland Guardians vs San Francisco Giants",
+              "pick": "Cleveland Guardians",
+              "p_win": 0.5471,
+              "implied_odds": 1.83
             },
             {
               "sport": "mlb",
-              "match": "Milwaukee Brewers vs Seattle Mariners",
-              "pick": "Milwaukee Brewers",
-              "p_win": 0.5475,
-              "implied_odds": 1.83
+              "match": "Chicago White Sox vs Atlanta Braves",
+              "pick": "Chicago White Sox",
+              "p_win": 0.5441,
+              "implied_odds": 1.84
             }
           ],
-          "total_odds": 10.43,
-          "combined_prob": 0.0958,
-          "n_legs": 4
+          "total_odds": 6.09,
+          "combined_prob": 0.1642,
+          "n_legs": 3
         }
       }
     },
@@ -353,169 +313,155 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Cleveland Guardians vs San Francisco Giants",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5765,
-            "implied_odds": 1.73
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5516,
+            "implied_odds": 1.81
           },
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Arizona Diamondbacks",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5518,
-            "implied_odds": 1.81
+            "match": "Cleveland Guardians vs San Francisco Giants",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5471,
+            "implied_odds": 1.83
           }
         ],
-        "total_odds": 3.13,
-        "combined_prob": 0.3181,
+        "total_odds": 3.31,
+        "combined_prob": 0.3018,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Toronto Blue Jays",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5501,
-            "implied_odds": 1.82
+            "match": "Cleveland Guardians vs San Francisco Giants",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5471,
+            "implied_odds": 1.83
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Seattle Mariners",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5475,
-            "implied_odds": 1.83
+            "match": "Chicago White Sox vs Atlanta Braves",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5441,
+            "implied_odds": 1.84
           }
         ],
-        "total_odds": 3.33,
-        "combined_prob": 0.3012,
+        "total_odds": 3.37,
+        "combined_prob": 0.2977,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Cleveland Guardians vs San Francisco Giants",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5765,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Boston Red Sox vs Arizona Diamondbacks",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5518,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5516,
             "implied_odds": 1.81
           },
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Toronto Blue Jays",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5501,
-            "implied_odds": 1.82
+            "match": "Cleveland Guardians vs San Francisco Giants",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5471,
+            "implied_odds": 1.83
+          },
+          {
+            "sport": "mlb",
+            "match": "Chicago White Sox vs Atlanta Braves",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5441,
+            "implied_odds": 1.84
           }
         ],
-        "total_odds": 5.7,
-        "combined_prob": 0.175,
+        "total_odds": 6.09,
+        "combined_prob": 0.1642,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Boston Red Sox vs Arizona Diamondbacks",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5518,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5516,
             "implied_odds": 1.81
           },
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Toronto Blue Jays",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5501,
-            "implied_odds": 1.82
+            "match": "Cleveland Guardians vs San Francisco Giants",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5471,
+            "implied_odds": 1.83
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Seattle Mariners",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5475,
-            "implied_odds": 1.83
+            "match": "Chicago White Sox vs Atlanta Braves",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5441,
+            "implied_odds": 1.84
           }
         ],
-        "total_odds": 6.03,
-        "combined_prob": 0.1662,
+        "total_odds": 6.09,
+        "combined_prob": 0.1642,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Cleveland Guardians vs San Francisco Giants",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5765,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Boston Red Sox vs Arizona Diamondbacks",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5518,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5516,
             "implied_odds": 1.81
           },
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Toronto Blue Jays",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5501,
-            "implied_odds": 1.82
+            "match": "Cleveland Guardians vs San Francisco Giants",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5471,
+            "implied_odds": 1.83
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Seattle Mariners",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5475,
-            "implied_odds": 1.83
+            "match": "Chicago White Sox vs Atlanta Braves",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5441,
+            "implied_odds": 1.84
           }
         ],
-        "total_odds": 10.43,
-        "combined_prob": 0.0958,
-        "n_legs": 4
+        "total_odds": 6.09,
+        "combined_prob": 0.1642,
+        "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Cleveland Guardians vs San Francisco Giants",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5765,
-            "implied_odds": 1.73
-          },
-          {
-            "sport": "mlb",
-            "match": "Boston Red Sox vs Arizona Diamondbacks",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5518,
+            "match": "Kansas City Royals vs Athletics",
+            "pick": "Kansas City Royals",
+            "p_win": 0.5516,
             "implied_odds": 1.81
           },
           {
             "sport": "mlb",
-            "match": "Tampa Bay Rays vs Toronto Blue Jays",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.5501,
-            "implied_odds": 1.82
+            "match": "Cleveland Guardians vs San Francisco Giants",
+            "pick": "Cleveland Guardians",
+            "p_win": 0.5471,
+            "implied_odds": 1.83
           },
           {
             "sport": "mlb",
-            "match": "Milwaukee Brewers vs Seattle Mariners",
-            "pick": "Milwaukee Brewers",
-            "p_win": 0.5475,
-            "implied_odds": 1.83
+            "match": "Chicago White Sox vs Atlanta Braves",
+            "pick": "Chicago White Sox",
+            "p_win": 0.5441,
+            "implied_odds": 1.84
           }
         ],
-        "total_odds": 10.43,
-        "combined_prob": 0.0958,
-        "n_legs": 4
+        "total_odds": 6.09,
+        "combined_prob": 0.1642,
+        "n_legs": 3
       }
     }
   }
