@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T08:47:29Z",
-  "date": "2026-08-24",
+  "generated_at": "2026-08-25T08:41:27Z",
+  "date": "2026-08-25",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,9 +25,9 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5344,
-        "logloss": 0.6903,
-        "brier": 0.2486
+        "accuracy": 0.5443,
+        "logloss": 0.6875,
+        "brier": 0.2472
       },
       "picks": [
         {
@@ -35,11 +35,11 @@
           "away_team": "Colorado Rockies",
           "pick": "H",
           "pick_label": "Washington Nationals",
-          "p_win": 0.6046,
-          "implied_odds": 1.65,
+          "p_win": 0.5991,
+          "implied_odds": 1.67,
           "signal": "media",
-          "date": "2026-08-24",
-          "model_spread": 0.8,
+          "date": "2026-08-25",
+          "model_spread": 0.7,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,17 +54,69 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Nationals 61-71 vs Rockies 50-80. Sin bajas importantes. ML Nationals con cautela (modelo 60%)."
+          "note": "⚠️ Modelo 60%. Nationals 62-71 vs Rockies 50-81. Sin bajas importantes. ML Nationals con cautela (modelo 60%)."
+        },
+        {
+          "home_team": "St. Louis Cardinals",
+          "away_team": "Baltimore Orioles",
+          "pick": "H",
+          "pick_label": "St. Louis Cardinals",
+          "p_win": 0.5513,
+          "implied_odds": 1.81,
+          "signal": "baja",
+          "date": "2026-08-25",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Cardinals 66-66 vs Orioles 63-68. Sin bajas importantes. SKIP — sin edge claro (55%)."
+        },
+        {
+          "home_team": "New York Yankees",
+          "away_team": "Houston Astros",
+          "pick": "H",
+          "pick_label": "New York Yankees",
+          "p_win": 0.545,
+          "implied_odds": 1.83,
+          "signal": "baja",
+          "date": "2026-08-25",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 55%. Yankees 74-56 vs Astros 65-66. Sin bajas importantes. SKIP — sin edge claro (55%)."
         },
         {
           "home_team": "Detroit Tigers",
           "away_team": "Tampa Bay Rays",
           "pick": "H",
           "pick_label": "Detroit Tigers",
-          "p_win": 0.5465,
-          "implied_odds": 1.83,
+          "p_win": 0.5385,
+          "implied_odds": 1.86,
           "signal": "baja",
-          "date": "2026-08-24",
+          "date": "2026-08-25",
           "model_spread": 0.3,
           "house_spread": null,
           "house_odds": null,
@@ -80,33 +132,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 55%. Tigers 61-69 vs Rays 77-53. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
-        {
-          "home_team": "Chicago White Sox",
-          "away_team": "Texas Rangers",
-          "pick": "H",
-          "pick_label": "Chicago White Sox",
-          "p_win": 0.5461,
-          "implied_odds": 1.83,
-          "signal": "baja",
-          "date": "2026-08-24",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Sox 71-59 vs Rangers 65-66. Sin bajas importantes. SKIP — sin edge claro (55%)."
+          "note": "❌ Modelo 54%. Tigers 61-70 vs Rays 78-53. Sin bajas importantes. SKIP — sin edge claro (54%)."
         }
       ],
       "name": "MLB",
@@ -114,13 +140,13 @@
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (9). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (10). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (14). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (16). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
@@ -138,7 +164,7 @@
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (23). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (24). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -158,40 +184,40 @@
               "sport": "mlb",
               "match": "Washington Nationals vs Colorado Rockies",
               "pick": "Washington Nationals",
-              "p_win": 0.6046,
-              "implied_odds": 1.65
+              "p_win": 0.5991,
+              "implied_odds": 1.67
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Tampa Bay Rays",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5465,
-              "implied_odds": 1.83
+              "match": "St. Louis Cardinals vs Baltimore Orioles",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5513,
+              "implied_odds": 1.81
             }
           ],
           "total_odds": 3.02,
-          "combined_prob": 0.3304,
+          "combined_prob": 0.3303,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Tampa Bay Rays",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5465,
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.545,
               "implied_odds": 1.83
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Texas Rangers",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5461,
-              "implied_odds": 1.83
+              "match": "Detroit Tigers vs Tampa Bay Rays",
+              "pick": "Detroit Tigers",
+              "p_win": 0.5385,
+              "implied_odds": 1.86
             }
           ],
-          "total_odds": 3.35,
-          "combined_prob": 0.2984,
+          "total_odds": 3.4,
+          "combined_prob": 0.2935,
           "n_legs": 2
         },
         "cuota_5": {
@@ -200,54 +226,54 @@
               "sport": "mlb",
               "match": "Washington Nationals vs Colorado Rockies",
               "pick": "Washington Nationals",
-              "p_win": 0.6046,
-              "implied_odds": 1.65
+              "p_win": 0.5991,
+              "implied_odds": 1.67
             },
             {
               "sport": "mlb",
-              "match": "Detroit Tigers vs Tampa Bay Rays",
-              "pick": "Detroit Tigers",
-              "p_win": 0.5465,
-              "implied_odds": 1.83
+              "match": "St. Louis Cardinals vs Baltimore Orioles",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5513,
+              "implied_odds": 1.81
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Texas Rangers",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5461,
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.545,
               "implied_odds": 1.83
             }
           ],
           "total_odds": 5.53,
-          "combined_prob": 0.1804,
+          "combined_prob": 0.18,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Colorado Rockies",
-              "pick": "Washington Nationals",
-              "p_win": 0.6046,
-              "implied_odds": 1.65
+              "match": "St. Louis Cardinals vs Baltimore Orioles",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5513,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.545,
+              "implied_odds": 1.83
             },
             {
               "sport": "mlb",
               "match": "Detroit Tigers vs Tampa Bay Rays",
               "pick": "Detroit Tigers",
-              "p_win": 0.5465,
-              "implied_odds": 1.83
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago White Sox vs Texas Rangers",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5461,
-              "implied_odds": 1.83
+              "p_win": 0.5385,
+              "implied_odds": 1.86
             }
           ],
-          "total_odds": 5.53,
-          "combined_prob": 0.1804,
+          "total_odds": 6.16,
+          "combined_prob": 0.1618,
           "n_legs": 3
         },
         "cuota_10": {
@@ -256,27 +282,34 @@
               "sport": "mlb",
               "match": "Washington Nationals vs Colorado Rockies",
               "pick": "Washington Nationals",
-              "p_win": 0.6046,
-              "implied_odds": 1.65
+              "p_win": 0.5991,
+              "implied_odds": 1.67
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Baltimore Orioles",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5513,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.545,
+              "implied_odds": 1.83
             },
             {
               "sport": "mlb",
               "match": "Detroit Tigers vs Tampa Bay Rays",
               "pick": "Detroit Tigers",
-              "p_win": 0.5465,
-              "implied_odds": 1.83
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago White Sox vs Texas Rangers",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5461,
-              "implied_odds": 1.83
+              "p_win": 0.5385,
+              "implied_odds": 1.86
             }
           ],
-          "total_odds": 5.53,
-          "combined_prob": 0.1804,
-          "n_legs": 3
+          "total_odds": 10.29,
+          "combined_prob": 0.0969,
+          "n_legs": 4
         },
         "cuota_20": {
           "legs": [
@@ -284,27 +317,34 @@
               "sport": "mlb",
               "match": "Washington Nationals vs Colorado Rockies",
               "pick": "Washington Nationals",
-              "p_win": 0.6046,
-              "implied_odds": 1.65
+              "p_win": 0.5991,
+              "implied_odds": 1.67
+            },
+            {
+              "sport": "mlb",
+              "match": "St. Louis Cardinals vs Baltimore Orioles",
+              "pick": "St. Louis Cardinals",
+              "p_win": 0.5513,
+              "implied_odds": 1.81
+            },
+            {
+              "sport": "mlb",
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.545,
+              "implied_odds": 1.83
             },
             {
               "sport": "mlb",
               "match": "Detroit Tigers vs Tampa Bay Rays",
               "pick": "Detroit Tigers",
-              "p_win": 0.5465,
-              "implied_odds": 1.83
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago White Sox vs Texas Rangers",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5461,
-              "implied_odds": 1.83
+              "p_win": 0.5385,
+              "implied_odds": 1.86
             }
           ],
-          "total_odds": 5.53,
-          "combined_prob": 0.1804,
-          "n_legs": 3
+          "total_odds": 10.29,
+          "combined_prob": 0.0969,
+          "n_legs": 4
         }
       }
     },
@@ -315,40 +355,40 @@
             "sport": "mlb",
             "match": "Washington Nationals vs Colorado Rockies",
             "pick": "Washington Nationals",
-            "p_win": 0.6046,
-            "implied_odds": 1.65
+            "p_win": 0.5991,
+            "implied_odds": 1.67
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Tampa Bay Rays",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5465,
-            "implied_odds": 1.83
+            "match": "St. Louis Cardinals vs Baltimore Orioles",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5513,
+            "implied_odds": 1.81
           }
         ],
         "total_odds": 3.02,
-        "combined_prob": 0.3304,
+        "combined_prob": 0.3303,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Tampa Bay Rays",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5465,
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.545,
             "implied_odds": 1.83
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Texas Rangers",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5461,
-            "implied_odds": 1.83
+            "match": "Detroit Tigers vs Tampa Bay Rays",
+            "pick": "Detroit Tigers",
+            "p_win": 0.5385,
+            "implied_odds": 1.86
           }
         ],
-        "total_odds": 3.35,
-        "combined_prob": 0.2984,
+        "total_odds": 3.4,
+        "combined_prob": 0.2935,
         "n_legs": 2
       },
       "cuota_5": {
@@ -357,54 +397,54 @@
             "sport": "mlb",
             "match": "Washington Nationals vs Colorado Rockies",
             "pick": "Washington Nationals",
-            "p_win": 0.6046,
-            "implied_odds": 1.65
+            "p_win": 0.5991,
+            "implied_odds": 1.67
           },
           {
             "sport": "mlb",
-            "match": "Detroit Tigers vs Tampa Bay Rays",
-            "pick": "Detroit Tigers",
-            "p_win": 0.5465,
-            "implied_odds": 1.83
+            "match": "St. Louis Cardinals vs Baltimore Orioles",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5513,
+            "implied_odds": 1.81
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Texas Rangers",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5461,
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.545,
             "implied_odds": 1.83
           }
         ],
         "total_odds": 5.53,
-        "combined_prob": 0.1804,
+        "combined_prob": 0.18,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Colorado Rockies",
-            "pick": "Washington Nationals",
-            "p_win": 0.6046,
-            "implied_odds": 1.65
+            "match": "St. Louis Cardinals vs Baltimore Orioles",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5513,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.545,
+            "implied_odds": 1.83
           },
           {
             "sport": "mlb",
             "match": "Detroit Tigers vs Tampa Bay Rays",
             "pick": "Detroit Tigers",
-            "p_win": 0.5465,
-            "implied_odds": 1.83
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Texas Rangers",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5461,
-            "implied_odds": 1.83
+            "p_win": 0.5385,
+            "implied_odds": 1.86
           }
         ],
-        "total_odds": 5.53,
-        "combined_prob": 0.1804,
+        "total_odds": 6.16,
+        "combined_prob": 0.1618,
         "n_legs": 3
       },
       "cuota_10": {
@@ -413,27 +453,34 @@
             "sport": "mlb",
             "match": "Washington Nationals vs Colorado Rockies",
             "pick": "Washington Nationals",
-            "p_win": 0.6046,
-            "implied_odds": 1.65
+            "p_win": 0.5991,
+            "implied_odds": 1.67
+          },
+          {
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Baltimore Orioles",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5513,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.545,
+            "implied_odds": 1.83
           },
           {
             "sport": "mlb",
             "match": "Detroit Tigers vs Tampa Bay Rays",
             "pick": "Detroit Tigers",
-            "p_win": 0.5465,
-            "implied_odds": 1.83
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Texas Rangers",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5461,
-            "implied_odds": 1.83
+            "p_win": 0.5385,
+            "implied_odds": 1.86
           }
         ],
-        "total_odds": 5.53,
-        "combined_prob": 0.1804,
-        "n_legs": 3
+        "total_odds": 10.29,
+        "combined_prob": 0.0969,
+        "n_legs": 4
       },
       "cuota_20": {
         "legs": [
@@ -441,27 +488,34 @@
             "sport": "mlb",
             "match": "Washington Nationals vs Colorado Rockies",
             "pick": "Washington Nationals",
-            "p_win": 0.6046,
-            "implied_odds": 1.65
+            "p_win": 0.5991,
+            "implied_odds": 1.67
+          },
+          {
+            "sport": "mlb",
+            "match": "St. Louis Cardinals vs Baltimore Orioles",
+            "pick": "St. Louis Cardinals",
+            "p_win": 0.5513,
+            "implied_odds": 1.81
+          },
+          {
+            "sport": "mlb",
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.545,
+            "implied_odds": 1.83
           },
           {
             "sport": "mlb",
             "match": "Detroit Tigers vs Tampa Bay Rays",
             "pick": "Detroit Tigers",
-            "p_win": 0.5465,
-            "implied_odds": 1.83
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Texas Rangers",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5461,
-            "implied_odds": 1.83
+            "p_win": 0.5385,
+            "implied_odds": 1.86
           }
         ],
-        "total_odds": 5.53,
-        "combined_prob": 0.1804,
-        "n_legs": 3
+        "total_odds": 10.29,
+        "combined_prob": 0.0969,
+        "n_legs": 4
       }
     }
   }
