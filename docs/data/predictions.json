@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T08:42:22Z",
-  "date": "2026-08-26",
+  "generated_at": "2026-08-27T18:53:17Z",
+  "date": "2026-08-27",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,73 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5352,
-        "logloss": 0.6875,
-        "brier": 0.2472
+        "accuracy": 0.5373,
+        "logloss": 0.6884,
+        "brier": 0.2476
       },
       "picks": [
-        {
-          "home_team": "Washington Nationals",
-          "away_team": "Colorado Rockies",
-          "pick": "H",
-          "pick_label": "Washington Nationals",
-          "p_win": 0.5623,
-          "implied_odds": 1.78,
-          "signal": "baja",
-          "date": "2026-08-26",
-          "model_spread": 0.5,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Nationals 62-72 vs Rockies 51-81. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "Miami Marlins",
-          "away_team": "Boston Red Sox",
-          "pick": "A",
-          "pick_label": "Boston Red Sox",
-          "p_win": 0.5481,
-          "implied_odds": 1.82,
-          "signal": "baja",
-          "date": "2026-08-26",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Marlins 67-66 vs Sox 73-59. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
         {
           "home_team": "New York Yankees",
           "away_team": "Houston Astros",
           "pick": "H",
           "pick_label": "New York Yankees",
-          "p_win": 0.5436,
-          "implied_odds": 1.84,
+          "p_win": 0.5578,
+          "implied_odds": 1.79,
           "signal": "baja",
-          "date": "2026-08-26",
-          "model_spread": 0.3,
+          "date": "2026-08-27",
+          "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -106,17 +54,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 54%. Yankees 74-57 vs Astros 66-66. Sin bajas importantes. SKIP — sin edge claro (54%)."
+          "note": "❌ Modelo 56%. Yankees 75-57 vs Astros 66-67. Sin bajas importantes. SKIP — sin edge claro (56%)."
         },
         {
-          "home_team": "San Diego Padres",
-          "away_team": "Pittsburgh Pirates",
+          "home_team": "Toronto Blue Jays",
+          "away_team": "Kansas City Royals",
           "pick": "H",
-          "pick_label": "San Diego Padres",
-          "p_win": 0.5411,
+          "pick_label": "Toronto Blue Jays",
+          "p_win": 0.5396,
           "implied_odds": 1.85,
           "signal": "baja",
-          "date": "2026-08-26",
+          "date": "2026-08-27",
           "model_spread": 0.3,
           "house_spread": null,
           "house_odds": null,
@@ -132,85 +80,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 54%. Padres 71-62 vs Pirates 65-69. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "Chicago White Sox",
-          "away_team": "Texas Rangers",
-          "pick": "H",
-          "pick_label": "Chicago White Sox",
-          "p_win": 0.5388,
-          "implied_odds": 1.86,
-          "signal": "baja",
-          "date": "2026-08-26",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Sox 73-59 vs Rangers 66-67. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "San Francisco Giants",
-          "away_team": "Cincinnati Reds",
-          "pick": "H",
-          "pick_label": "San Francisco Giants",
-          "p_win": 0.5383,
-          "implied_odds": 1.86,
-          "signal": "baja",
-          "date": "2026-08-26",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Giants 55-78 vs Reds 62-71. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "St. Louis Cardinals",
-          "away_team": "Baltimore Orioles",
-          "pick": "H",
-          "pick_label": "St. Louis Cardinals",
-          "p_win": 0.5348,
-          "implied_odds": 1.87,
-          "signal": "baja",
-          "date": "2026-08-26",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 53%. Cardinals 66-67 vs Orioles 64-68. Sin bajas importantes. SKIP — sin edge claro (53%)."
+          "note": "❌ Modelo 54%. Jays 65-69 vs Royals 59-75. Sin bajas importantes. SKIP — sin edge claro (54%)."
         }
       ],
       "name": "MLB",
@@ -224,7 +94,7 @@
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (17). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (18). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
@@ -260,176 +130,127 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Colorado Rockies",
-              "pick": "Washington Nationals",
-              "p_win": 0.5623,
-              "implied_odds": 1.78
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.5578,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5481,
-              "implied_odds": 1.82
+              "match": "Toronto Blue Jays vs Kansas City Royals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5396,
+              "implied_odds": 1.85
             }
           ],
-          "total_odds": 3.24,
-          "combined_prob": 0.3082,
+          "total_odds": 3.31,
+          "combined_prob": 0.301,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Texas Rangers",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5388,
-              "implied_odds": 1.86
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.5578,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "St. Louis Cardinals vs Baltimore Orioles",
-              "pick": "St. Louis Cardinals",
-              "p_win": 0.5348,
-              "implied_odds": 1.87
+              "match": "Toronto Blue Jays vs Kansas City Royals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5396,
+              "implied_odds": 1.85
             }
           ],
-          "total_odds": 3.48,
-          "combined_prob": 0.2882,
+          "total_odds": 3.31,
+          "combined_prob": 0.301,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Colorado Rockies",
-              "pick": "Washington Nationals",
-              "p_win": 0.5623,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Miami Marlins vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5481,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
               "match": "New York Yankees vs Houston Astros",
               "pick": "New York Yankees",
-              "p_win": 0.5436,
-              "implied_odds": 1.84
+              "p_win": 0.5578,
+              "implied_odds": 1.79
+            },
+            {
+              "sport": "mlb",
+              "match": "Toronto Blue Jays vs Kansas City Royals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5396,
+              "implied_odds": 1.85
             }
           ],
-          "total_odds": 5.96,
-          "combined_prob": 0.1675,
-          "n_legs": 3
+          "total_odds": 3.31,
+          "combined_prob": 0.301,
+          "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Colorado Rockies",
-              "pick": "Washington Nationals",
-              "p_win": 0.5623,
-              "implied_odds": 1.78
+              "match": "New York Yankees vs Houston Astros",
+              "pick": "New York Yankees",
+              "p_win": 0.5578,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "Miami Marlins vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5481,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
-              "match": "San Diego Padres vs Pittsburgh Pirates",
-              "pick": "San Diego Padres",
-              "p_win": 0.5411,
+              "match": "Toronto Blue Jays vs Kansas City Royals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5396,
               "implied_odds": 1.85
             }
           ],
-          "total_odds": 5.99,
-          "combined_prob": 0.1668,
-          "n_legs": 3
+          "total_odds": 3.31,
+          "combined_prob": 0.301,
+          "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Colorado Rockies",
-              "pick": "Washington Nationals",
-              "p_win": 0.5623,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Miami Marlins vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5481,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
               "match": "New York Yankees vs Houston Astros",
               "pick": "New York Yankees",
-              "p_win": 0.5436,
-              "implied_odds": 1.84
+              "p_win": 0.5578,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "San Diego Padres vs Pittsburgh Pirates",
-              "pick": "San Diego Padres",
-              "p_win": 0.5411,
+              "match": "Toronto Blue Jays vs Kansas City Royals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5396,
               "implied_odds": 1.85
             }
           ],
-          "total_odds": 11.03,
-          "combined_prob": 0.0907,
-          "n_legs": 4
+          "total_odds": 3.31,
+          "combined_prob": 0.301,
+          "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Washington Nationals vs Colorado Rockies",
-              "pick": "Washington Nationals",
-              "p_win": 0.5623,
-              "implied_odds": 1.78
-            },
-            {
-              "sport": "mlb",
-              "match": "Miami Marlins vs Boston Red Sox",
-              "pick": "Boston Red Sox",
-              "p_win": 0.5481,
-              "implied_odds": 1.82
-            },
-            {
-              "sport": "mlb",
               "match": "New York Yankees vs Houston Astros",
               "pick": "New York Yankees",
-              "p_win": 0.5436,
-              "implied_odds": 1.84
+              "p_win": 0.5578,
+              "implied_odds": 1.79
             },
             {
               "sport": "mlb",
-              "match": "San Diego Padres vs Pittsburgh Pirates",
-              "pick": "San Diego Padres",
-              "p_win": 0.5411,
+              "match": "Toronto Blue Jays vs Kansas City Royals",
+              "pick": "Toronto Blue Jays",
+              "p_win": 0.5396,
               "implied_odds": 1.85
-            },
-            {
-              "sport": "mlb",
-              "match": "Chicago White Sox vs Texas Rangers",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5388,
-              "implied_odds": 1.86
             }
           ],
-          "total_odds": 20.51,
-          "combined_prob": 0.0488,
-          "n_legs": 5
+          "total_odds": 3.31,
+          "combined_prob": 0.301,
+          "n_legs": 2
         }
       }
     },
@@ -438,176 +259,127 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Colorado Rockies",
-            "pick": "Washington Nationals",
-            "p_win": 0.5623,
-            "implied_odds": 1.78
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.5578,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5481,
-            "implied_odds": 1.82
+            "match": "Toronto Blue Jays vs Kansas City Royals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5396,
+            "implied_odds": 1.85
           }
         ],
-        "total_odds": 3.24,
-        "combined_prob": 0.3082,
+        "total_odds": 3.31,
+        "combined_prob": 0.301,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Texas Rangers",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5388,
-            "implied_odds": 1.86
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.5578,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "St. Louis Cardinals vs Baltimore Orioles",
-            "pick": "St. Louis Cardinals",
-            "p_win": 0.5348,
-            "implied_odds": 1.87
+            "match": "Toronto Blue Jays vs Kansas City Royals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5396,
+            "implied_odds": 1.85
           }
         ],
-        "total_odds": 3.48,
-        "combined_prob": 0.2882,
+        "total_odds": 3.31,
+        "combined_prob": 0.301,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Colorado Rockies",
-            "pick": "Washington Nationals",
-            "p_win": 0.5623,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5481,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
             "match": "New York Yankees vs Houston Astros",
             "pick": "New York Yankees",
-            "p_win": 0.5436,
-            "implied_odds": 1.84
+            "p_win": 0.5578,
+            "implied_odds": 1.79
+          },
+          {
+            "sport": "mlb",
+            "match": "Toronto Blue Jays vs Kansas City Royals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5396,
+            "implied_odds": 1.85
           }
         ],
-        "total_odds": 5.96,
-        "combined_prob": 0.1675,
-        "n_legs": 3
+        "total_odds": 3.31,
+        "combined_prob": 0.301,
+        "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Colorado Rockies",
-            "pick": "Washington Nationals",
-            "p_win": 0.5623,
-            "implied_odds": 1.78
+            "match": "New York Yankees vs Houston Astros",
+            "pick": "New York Yankees",
+            "p_win": 0.5578,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "Miami Marlins vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5481,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
-            "match": "San Diego Padres vs Pittsburgh Pirates",
-            "pick": "San Diego Padres",
-            "p_win": 0.5411,
+            "match": "Toronto Blue Jays vs Kansas City Royals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5396,
             "implied_odds": 1.85
           }
         ],
-        "total_odds": 5.99,
-        "combined_prob": 0.1668,
-        "n_legs": 3
+        "total_odds": 3.31,
+        "combined_prob": 0.301,
+        "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Colorado Rockies",
-            "pick": "Washington Nationals",
-            "p_win": 0.5623,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5481,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
             "match": "New York Yankees vs Houston Astros",
             "pick": "New York Yankees",
-            "p_win": 0.5436,
-            "implied_odds": 1.84
+            "p_win": 0.5578,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "San Diego Padres vs Pittsburgh Pirates",
-            "pick": "San Diego Padres",
-            "p_win": 0.5411,
+            "match": "Toronto Blue Jays vs Kansas City Royals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5396,
             "implied_odds": 1.85
           }
         ],
-        "total_odds": 11.03,
-        "combined_prob": 0.0907,
-        "n_legs": 4
+        "total_odds": 3.31,
+        "combined_prob": 0.301,
+        "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Washington Nationals vs Colorado Rockies",
-            "pick": "Washington Nationals",
-            "p_win": 0.5623,
-            "implied_odds": 1.78
-          },
-          {
-            "sport": "mlb",
-            "match": "Miami Marlins vs Boston Red Sox",
-            "pick": "Boston Red Sox",
-            "p_win": 0.5481,
-            "implied_odds": 1.82
-          },
-          {
-            "sport": "mlb",
             "match": "New York Yankees vs Houston Astros",
             "pick": "New York Yankees",
-            "p_win": 0.5436,
-            "implied_odds": 1.84
+            "p_win": 0.5578,
+            "implied_odds": 1.79
           },
           {
             "sport": "mlb",
-            "match": "San Diego Padres vs Pittsburgh Pirates",
-            "pick": "San Diego Padres",
-            "p_win": 0.5411,
+            "match": "Toronto Blue Jays vs Kansas City Royals",
+            "pick": "Toronto Blue Jays",
+            "p_win": 0.5396,
             "implied_odds": 1.85
-          },
-          {
-            "sport": "mlb",
-            "match": "Chicago White Sox vs Texas Rangers",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5388,
-            "implied_odds": 1.86
           }
         ],
-        "total_odds": 20.51,
-        "combined_prob": 0.0488,
-        "n_legs": 5
+        "total_odds": 3.31,
+        "combined_prob": 0.301,
+        "n_legs": 2
       }
     }
   }
