@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-27T18:53:17Z",
-  "date": "2026-08-27",
+  "generated_at": "2026-08-28T19:55:51Z",
+  "date": "2026-08-28",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5373,
-        "logloss": 0.6884,
-        "brier": 0.2476
+        "accuracy": 0.5495,
+        "logloss": 0.6887,
+        "brier": 0.2478
       },
       "picks": [
         {
-          "home_team": "New York Yankees",
-          "away_team": "Houston Astros",
+          "home_team": "Milwaukee Brewers",
+          "away_team": "Texas Rangers",
           "pick": "H",
-          "pick_label": "New York Yankees",
-          "p_win": 0.5578,
-          "implied_odds": 1.79,
+          "pick_label": "Milwaukee Brewers",
+          "p_win": 0.5731,
+          "implied_odds": 1.74,
           "signal": "baja",
-          "date": "2026-08-27",
-          "model_spread": 0.4,
+          "date": "2026-08-28",
+          "model_spread": 0.5,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,17 +54,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Yankees 75-57 vs Astros 66-67. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 57%. Brewers 83-51 vs Rangers 66-68. Sin bajas importantes. SKIP — sin edge claro (57%)."
         },
         {
-          "home_team": "Toronto Blue Jays",
-          "away_team": "Kansas City Royals",
+          "home_team": "New York Mets",
+          "away_team": "Houston Astros",
           "pick": "H",
-          "pick_label": "Toronto Blue Jays",
-          "p_win": 0.5396,
-          "implied_odds": 1.85,
+          "pick_label": "New York Mets",
+          "p_win": 0.5452,
+          "implied_odds": 1.83,
           "signal": "baja",
-          "date": "2026-08-27",
+          "date": "2026-08-28",
           "model_spread": 0.3,
           "house_spread": null,
           "house_odds": null,
@@ -80,7 +80,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 54%. Jays 65-69 vs Royals 59-75. Sin bajas importantes. SKIP — sin edge claro (54%)."
+          "note": "❌ Modelo 55%. Mets 60-74 vs Astros 67-67. Sin bajas importantes. SKIP — sin edge claro (55%)."
         }
       ],
       "name": "MLB",
@@ -94,7 +94,7 @@
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (18). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (21). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
@@ -130,126 +130,126 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Yankees vs Houston Astros",
-              "pick": "New York Yankees",
-              "p_win": 0.5578,
-              "implied_odds": 1.79
+              "match": "Milwaukee Brewers vs Texas Rangers",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5731,
+              "implied_odds": 1.74
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Kansas City Royals",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5396,
-              "implied_odds": 1.85
+              "match": "New York Mets vs Houston Astros",
+              "pick": "New York Mets",
+              "p_win": 0.5452,
+              "implied_odds": 1.83
             }
           ],
-          "total_odds": 3.31,
-          "combined_prob": 0.301,
+          "total_odds": 3.18,
+          "combined_prob": 0.3125,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Yankees vs Houston Astros",
-              "pick": "New York Yankees",
-              "p_win": 0.5578,
-              "implied_odds": 1.79
+              "match": "Milwaukee Brewers vs Texas Rangers",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5731,
+              "implied_odds": 1.74
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Kansas City Royals",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5396,
-              "implied_odds": 1.85
+              "match": "New York Mets vs Houston Astros",
+              "pick": "New York Mets",
+              "p_win": 0.5452,
+              "implied_odds": 1.83
             }
           ],
-          "total_odds": 3.31,
-          "combined_prob": 0.301,
+          "total_odds": 3.18,
+          "combined_prob": 0.3125,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Yankees vs Houston Astros",
-              "pick": "New York Yankees",
-              "p_win": 0.5578,
-              "implied_odds": 1.79
+              "match": "Milwaukee Brewers vs Texas Rangers",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5731,
+              "implied_odds": 1.74
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Kansas City Royals",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5396,
-              "implied_odds": 1.85
+              "match": "New York Mets vs Houston Astros",
+              "pick": "New York Mets",
+              "p_win": 0.5452,
+              "implied_odds": 1.83
             }
           ],
-          "total_odds": 3.31,
-          "combined_prob": 0.301,
+          "total_odds": 3.18,
+          "combined_prob": 0.3125,
           "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Yankees vs Houston Astros",
-              "pick": "New York Yankees",
-              "p_win": 0.5578,
-              "implied_odds": 1.79
+              "match": "Milwaukee Brewers vs Texas Rangers",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5731,
+              "implied_odds": 1.74
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Kansas City Royals",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5396,
-              "implied_odds": 1.85
+              "match": "New York Mets vs Houston Astros",
+              "pick": "New York Mets",
+              "p_win": 0.5452,
+              "implied_odds": 1.83
             }
           ],
-          "total_odds": 3.31,
-          "combined_prob": 0.301,
+          "total_odds": 3.18,
+          "combined_prob": 0.3125,
           "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Yankees vs Houston Astros",
-              "pick": "New York Yankees",
-              "p_win": 0.5578,
-              "implied_odds": 1.79
+              "match": "Milwaukee Brewers vs Texas Rangers",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5731,
+              "implied_odds": 1.74
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Kansas City Royals",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5396,
-              "implied_odds": 1.85
+              "match": "New York Mets vs Houston Astros",
+              "pick": "New York Mets",
+              "p_win": 0.5452,
+              "implied_odds": 1.83
             }
           ],
-          "total_odds": 3.31,
-          "combined_prob": 0.301,
+          "total_odds": 3.18,
+          "combined_prob": 0.3125,
           "n_legs": 2
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "New York Yankees vs Houston Astros",
-              "pick": "New York Yankees",
-              "p_win": 0.5578,
-              "implied_odds": 1.79
+              "match": "Milwaukee Brewers vs Texas Rangers",
+              "pick": "Milwaukee Brewers",
+              "p_win": 0.5731,
+              "implied_odds": 1.74
             },
             {
               "sport": "mlb",
-              "match": "Toronto Blue Jays vs Kansas City Royals",
-              "pick": "Toronto Blue Jays",
-              "p_win": 0.5396,
-              "implied_odds": 1.85
+              "match": "New York Mets vs Houston Astros",
+              "pick": "New York Mets",
+              "p_win": 0.5452,
+              "implied_odds": 1.83
             }
           ],
-          "total_odds": 3.31,
-          "combined_prob": 0.301,
+          "total_odds": 3.18,
+          "combined_prob": 0.3125,
           "n_legs": 2
         }
       }
@@ -259,126 +259,126 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Yankees vs Houston Astros",
-            "pick": "New York Yankees",
-            "p_win": 0.5578,
-            "implied_odds": 1.79
+            "match": "Milwaukee Brewers vs Texas Rangers",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5731,
+            "implied_odds": 1.74
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Kansas City Royals",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5396,
-            "implied_odds": 1.85
+            "match": "New York Mets vs Houston Astros",
+            "pick": "New York Mets",
+            "p_win": 0.5452,
+            "implied_odds": 1.83
           }
         ],
-        "total_odds": 3.31,
-        "combined_prob": 0.301,
+        "total_odds": 3.18,
+        "combined_prob": 0.3125,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Yankees vs Houston Astros",
-            "pick": "New York Yankees",
-            "p_win": 0.5578,
-            "implied_odds": 1.79
+            "match": "Milwaukee Brewers vs Texas Rangers",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5731,
+            "implied_odds": 1.74
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Kansas City Royals",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5396,
-            "implied_odds": 1.85
+            "match": "New York Mets vs Houston Astros",
+            "pick": "New York Mets",
+            "p_win": 0.5452,
+            "implied_odds": 1.83
           }
         ],
-        "total_odds": 3.31,
-        "combined_prob": 0.301,
+        "total_odds": 3.18,
+        "combined_prob": 0.3125,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Yankees vs Houston Astros",
-            "pick": "New York Yankees",
-            "p_win": 0.5578,
-            "implied_odds": 1.79
+            "match": "Milwaukee Brewers vs Texas Rangers",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5731,
+            "implied_odds": 1.74
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Kansas City Royals",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5396,
-            "implied_odds": 1.85
+            "match": "New York Mets vs Houston Astros",
+            "pick": "New York Mets",
+            "p_win": 0.5452,
+            "implied_odds": 1.83
           }
         ],
-        "total_odds": 3.31,
-        "combined_prob": 0.301,
+        "total_odds": 3.18,
+        "combined_prob": 0.3125,
         "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Yankees vs Houston Astros",
-            "pick": "New York Yankees",
-            "p_win": 0.5578,
-            "implied_odds": 1.79
+            "match": "Milwaukee Brewers vs Texas Rangers",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5731,
+            "implied_odds": 1.74
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Kansas City Royals",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5396,
-            "implied_odds": 1.85
+            "match": "New York Mets vs Houston Astros",
+            "pick": "New York Mets",
+            "p_win": 0.5452,
+            "implied_odds": 1.83
           }
         ],
-        "total_odds": 3.31,
-        "combined_prob": 0.301,
+        "total_odds": 3.18,
+        "combined_prob": 0.3125,
         "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Yankees vs Houston Astros",
-            "pick": "New York Yankees",
-            "p_win": 0.5578,
-            "implied_odds": 1.79
+            "match": "Milwaukee Brewers vs Texas Rangers",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5731,
+            "implied_odds": 1.74
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Kansas City Royals",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5396,
-            "implied_odds": 1.85
+            "match": "New York Mets vs Houston Astros",
+            "pick": "New York Mets",
+            "p_win": 0.5452,
+            "implied_odds": 1.83
           }
         ],
-        "total_odds": 3.31,
-        "combined_prob": 0.301,
+        "total_odds": 3.18,
+        "combined_prob": 0.3125,
         "n_legs": 2
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "New York Yankees vs Houston Astros",
-            "pick": "New York Yankees",
-            "p_win": 0.5578,
-            "implied_odds": 1.79
+            "match": "Milwaukee Brewers vs Texas Rangers",
+            "pick": "Milwaukee Brewers",
+            "p_win": 0.5731,
+            "implied_odds": 1.74
           },
           {
             "sport": "mlb",
-            "match": "Toronto Blue Jays vs Kansas City Royals",
-            "pick": "Toronto Blue Jays",
-            "p_win": 0.5396,
-            "implied_odds": 1.85
+            "match": "New York Mets vs Houston Astros",
+            "pick": "New York Mets",
+            "p_win": 0.5452,
+            "implied_odds": 1.83
           }
         ],
-        "total_odds": 3.31,
-        "combined_prob": 0.301,
+        "total_odds": 3.18,
+        "combined_prob": 0.3125,
         "n_legs": 2
       }
     }
