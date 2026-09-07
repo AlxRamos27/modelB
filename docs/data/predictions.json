@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-06T11:59:24Z",
-  "date": "2026-09-06",
+  "generated_at": "2026-09-07T14:01:09Z",
+  "date": "2026-09-07",
   "sports": {
     "nba": {
       "status": "ok",
@@ -25,21 +25,21 @@
     "mlb": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5257,
-        "logloss": 0.6894,
-        "brier": 0.2481
+        "accuracy": 0.536,
+        "logloss": 0.689,
+        "brier": 0.2479
       },
       "picks": [
         {
-          "home_team": "Pittsburgh Pirates",
+          "home_team": "Boston Red Sox",
           "away_team": "Los Angeles Angels",
           "pick": "H",
-          "pick_label": "Pittsburgh Pirates",
-          "p_win": 0.5794,
-          "implied_odds": 1.73,
-          "signal": "baja",
-          "date": "2026-09-06",
-          "model_spread": 0.6,
+          "pick_label": "Boston Red Sox",
+          "p_win": 0.6157,
+          "implied_odds": 1.62,
+          "signal": "media",
+          "date": "2026-09-07",
+          "model_spread": 0.8,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -54,18 +54,18 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 58%. Pirates 70-73 vs Angels 54-88. Sin bajas importantes. SKIP — sin edge claro (58%)."
+          "note": "⚠️ Modelo 62%. Sox 79-65 vs Angels 54-89. Sin bajas importantes. ML Sox con cautela (modelo 62%)."
         },
         {
-          "home_team": "Cleveland Guardians",
-          "away_team": "Detroit Tigers",
+          "home_team": "San Diego Padres",
+          "away_team": "Washington Nationals",
           "pick": "H",
-          "pick_label": "Cleveland Guardians",
-          "p_win": 0.5604,
-          "implied_odds": 1.78,
+          "pick_label": "San Diego Padres",
+          "p_win": 0.5895,
+          "implied_odds": 1.7,
           "signal": "baja",
-          "date": "2026-09-06",
-          "model_spread": 0.4,
+          "date": "2026-09-07",
+          "model_spread": 0.7,
           "house_spread": null,
           "house_odds": null,
           "house_implied_pct": null,
@@ -80,69 +80,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 56%. Guardians 72-71 vs Tigers 65-77. Sin bajas importantes. SKIP — sin edge claro (56%)."
+          "note": "❌ Modelo 59%. Padres 75-68 vs Nationals 67-78. Sin bajas importantes. SKIP — sin edge claro (59%)."
         },
         {
-          "home_team": "Chicago White Sox",
-          "away_team": "Minnesota Twins",
+          "home_team": "Baltimore Orioles",
+          "away_team": "Cleveland Guardians",
           "pick": "H",
-          "pick_label": "Chicago White Sox",
-          "p_win": 0.5592,
-          "implied_odds": 1.79,
+          "pick_label": "Baltimore Orioles",
+          "p_win": 0.5416,
+          "implied_odds": 1.85,
           "signal": "baja",
-          "date": "2026-09-06",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Sox 78-65 vs Twins 68-74. Sin bajas importantes. SKIP — sin edge claro (56%)."
-        },
-        {
-          "home_team": "New York Mets",
-          "away_team": "San Francisco Giants",
-          "pick": "H",
-          "pick_label": "New York Mets",
-          "p_win": 0.5501,
-          "implied_odds": 1.82,
-          "signal": "baja",
-          "date": "2026-09-06",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 55%. Mets 64-78 vs Giants 60-84. Sin bajas importantes. SKIP — sin edge claro (55%)."
-        },
-        {
-          "home_team": "Seattle Mariners",
-          "away_team": "Athletics",
-          "pick": "H",
-          "pick_label": "Seattle Mariners",
-          "p_win": 0.5427,
-          "implied_odds": 1.84,
-          "signal": "baja",
-          "date": "2026-09-06",
+          "date": "2026-09-07",
           "model_spread": 0.3,
           "house_spread": null,
           "house_odds": null,
@@ -158,43 +106,43 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 54%. Mariners 66-77 vs Athletics 57-86. Sin bajas importantes. SKIP — sin edge claro (54%)."
+          "note": "❌ Modelo 54%. Orioles 69-75 vs Guardians 73-71. Sin bajas importantes. SKIP — sin edge claro (54%)."
+        },
+        {
+          "home_team": "Milwaukee Brewers",
+          "away_team": "Chicago Cubs",
+          "pick": "H",
+          "pick_label": "Milwaukee Brewers",
+          "p_win": 0.5375,
+          "implied_odds": 1.86,
+          "signal": "baja",
+          "date": "2026-09-07",
+          "model_spread": 0.3,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 54%. Brewers 88-56 vs Cubs 81-63. Sin bajas importantes. SKIP — sin edge claro (54%)."
         },
         {
           "home_team": "Philadelphia Phillies",
           "away_team": "Atlanta Braves",
           "pick": "H",
           "pick_label": "Philadelphia Phillies",
-          "p_win": 0.5375,
-          "implied_odds": 1.86,
+          "p_win": 0.5335,
+          "implied_odds": 1.87,
           "signal": "baja",
-          "date": "2026-09-06",
-          "model_spread": 0.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Phillies 80-62 vs Braves 84-59. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "Texas Rangers",
-          "away_team": "Tampa Bay Rays",
-          "pick": "A",
-          "pick_label": "Tampa Bay Rays",
-          "p_win": 0.528,
-          "implied_odds": 1.89,
-          "signal": "baja",
-          "date": "2026-09-06",
+          "date": "2026-09-07",
           "model_spread": 0.2,
           "house_spread": null,
           "house_odds": null,
@@ -210,7 +158,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 53%. Rangers 70-73 vs Rays 85-57. Sin bajas importantes. SKIP — sin edge claro (53%)."
+          "note": "❌ Modelo 53%. Phillies 80-63 vs Braves 85-59. Sin bajas importantes. SKIP — sin edge claro (53%)."
+        },
+        {
+          "home_team": "Miami Marlins",
+          "away_team": "New York Mets",
+          "pick": "H",
+          "pick_label": "Miami Marlins",
+          "p_win": 0.5179,
+          "implied_odds": 1.93,
+          "signal": "baja",
+          "date": "2026-09-07",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Marlins 72-72 vs Mets 65-78. Sin bajas importantes. SKIP — sin edge claro (52%)."
         }
       ],
       "name": "MLB",
@@ -218,31 +192,31 @@
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (28). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (30). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (35). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (39). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (24). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (27). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (16). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (18). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Bundesliga"
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (38). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (41). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -260,21 +234,21 @@
           "legs": [
             {
               "sport": "mlb",
-              "match": "Pittsburgh Pirates vs Los Angeles Angels",
-              "pick": "Pittsburgh Pirates",
-              "p_win": 0.5794,
-              "implied_odds": 1.73
+              "match": "Boston Red Sox vs Los Angeles Angels",
+              "pick": "Boston Red Sox",
+              "p_win": 0.6157,
+              "implied_odds": 1.62
             },
             {
               "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
+              "match": "Baltimore Orioles vs Cleveland Guardians",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5416,
+              "implied_odds": 1.85
             }
           ],
-          "total_odds": 3.08,
-          "combined_prob": 0.3247,
+          "total_odds": 3.0,
+          "combined_prob": 0.3335,
           "n_legs": 2
         },
         "cuota_4": {
@@ -283,152 +257,152 @@
               "sport": "mlb",
               "match": "Philadelphia Phillies vs Atlanta Braves",
               "pick": "Philadelphia Phillies",
-              "p_win": 0.5375,
-              "implied_odds": 1.86
+              "p_win": 0.5335,
+              "implied_odds": 1.87
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Tampa Bay Rays",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.528,
-              "implied_odds": 1.89
+              "match": "Miami Marlins vs New York Mets",
+              "pick": "Miami Marlins",
+              "p_win": 0.5179,
+              "implied_odds": 1.93
             }
           ],
-          "total_odds": 3.52,
-          "combined_prob": 0.2838,
+          "total_odds": 3.61,
+          "combined_prob": 0.2763,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Pittsburgh Pirates vs Los Angeles Angels",
-              "pick": "Pittsburgh Pirates",
-              "p_win": 0.5794,
-              "implied_odds": 1.73
+              "match": "Boston Red Sox vs Los Angeles Angels",
+              "pick": "Boston Red Sox",
+              "p_win": 0.6157,
+              "implied_odds": 1.62
             },
             {
               "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
+              "match": "San Diego Padres vs Washington Nationals",
+              "pick": "San Diego Padres",
+              "p_win": 0.5895,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Minnesota Twins",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5592,
-              "implied_odds": 1.79
+              "match": "Baltimore Orioles vs Cleveland Guardians",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5416,
+              "implied_odds": 1.85
             }
           ],
-          "total_odds": 5.51,
-          "combined_prob": 0.1816,
+          "total_odds": 5.09,
+          "combined_prob": 0.1966,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Minnesota Twins",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5592,
-              "implied_odds": 1.79
+              "match": "San Diego Padres vs Washington Nationals",
+              "pick": "San Diego Padres",
+              "p_win": 0.5895,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "New York Mets vs San Francisco Giants",
-              "pick": "New York Mets",
-              "p_win": 0.5501,
-              "implied_odds": 1.82
+              "match": "Baltimore Orioles vs Cleveland Guardians",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5416,
+              "implied_odds": 1.85
             },
             {
               "sport": "mlb",
-              "match": "Seattle Mariners vs Athletics",
-              "pick": "Seattle Mariners",
-              "p_win": 0.5427,
-              "implied_odds": 1.84
+              "match": "Miami Marlins vs New York Mets",
+              "pick": "Miami Marlins",
+              "p_win": 0.5179,
+              "implied_odds": 1.93
             }
           ],
-          "total_odds": 5.99,
-          "combined_prob": 0.1669,
+          "total_odds": 6.07,
+          "combined_prob": 0.1654,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Pittsburgh Pirates vs Los Angeles Angels",
-              "pick": "Pittsburgh Pirates",
-              "p_win": 0.5794,
-              "implied_odds": 1.73
+              "match": "Boston Red Sox vs Los Angeles Angels",
+              "pick": "Boston Red Sox",
+              "p_win": 0.6157,
+              "implied_odds": 1.62
             },
             {
               "sport": "mlb",
-              "match": "Cleveland Guardians vs Detroit Tigers",
-              "pick": "Cleveland Guardians",
-              "p_win": 0.5604,
-              "implied_odds": 1.78
+              "match": "San Diego Padres vs Washington Nationals",
+              "pick": "San Diego Padres",
+              "p_win": 0.5895,
+              "implied_odds": 1.7
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Minnesota Twins",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5592,
-              "implied_odds": 1.79
+              "match": "Philadelphia Phillies vs Atlanta Braves",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5335,
+              "implied_odds": 1.87
             },
             {
               "sport": "mlb",
-              "match": "New York Mets vs San Francisco Giants",
-              "pick": "New York Mets",
-              "p_win": 0.5501,
-              "implied_odds": 1.82
+              "match": "Miami Marlins vs New York Mets",
+              "pick": "Miami Marlins",
+              "p_win": 0.5179,
+              "implied_odds": 1.93
             }
           ],
-          "total_odds": 10.03,
-          "combined_prob": 0.0999,
+          "total_odds": 9.94,
+          "combined_prob": 0.1003,
           "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "mlb",
-              "match": "Pittsburgh Pirates vs Los Angeles Angels",
-              "pick": "Pittsburgh Pirates",
-              "p_win": 0.5794,
-              "implied_odds": 1.73
+              "match": "Boston Red Sox vs Los Angeles Angels",
+              "pick": "Boston Red Sox",
+              "p_win": 0.6157,
+              "implied_odds": 1.62
             },
             {
               "sport": "mlb",
-              "match": "Chicago White Sox vs Minnesota Twins",
-              "pick": "Chicago White Sox",
-              "p_win": 0.5592,
-              "implied_odds": 1.79
+              "match": "Baltimore Orioles vs Cleveland Guardians",
+              "pick": "Baltimore Orioles",
+              "p_win": 0.5416,
+              "implied_odds": 1.85
             },
             {
               "sport": "mlb",
-              "match": "Seattle Mariners vs Athletics",
-              "pick": "Seattle Mariners",
-              "p_win": 0.5427,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "mlb",
-              "match": "Philadelphia Phillies vs Atlanta Braves",
-              "pick": "Philadelphia Phillies",
+              "match": "Milwaukee Brewers vs Chicago Cubs",
+              "pick": "Milwaukee Brewers",
               "p_win": 0.5375,
               "implied_odds": 1.86
             },
             {
               "sport": "mlb",
-              "match": "Texas Rangers vs Tampa Bay Rays",
-              "pick": "Tampa Bay Rays",
-              "p_win": 0.528,
-              "implied_odds": 1.89
+              "match": "Philadelphia Phillies vs Atlanta Braves",
+              "pick": "Philadelphia Phillies",
+              "p_win": 0.5335,
+              "implied_odds": 1.87
+            },
+            {
+              "sport": "mlb",
+              "match": "Miami Marlins vs New York Mets",
+              "pick": "Miami Marlins",
+              "p_win": 0.5179,
+              "implied_odds": 1.93
             }
           ],
-          "total_odds": 20.03,
-          "combined_prob": 0.0499,
+          "total_odds": 20.12,
+          "combined_prob": 0.0495,
           "n_legs": 5
         }
       }
@@ -438,21 +412,21 @@
         "legs": [
           {
             "sport": "mlb",
-            "match": "Pittsburgh Pirates vs Los Angeles Angels",
-            "pick": "Pittsburgh Pirates",
-            "p_win": 0.5794,
-            "implied_odds": 1.73
+            "match": "Boston Red Sox vs Los Angeles Angels",
+            "pick": "Boston Red Sox",
+            "p_win": 0.6157,
+            "implied_odds": 1.62
           },
           {
             "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
+            "match": "Baltimore Orioles vs Cleveland Guardians",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5416,
+            "implied_odds": 1.85
           }
         ],
-        "total_odds": 3.08,
-        "combined_prob": 0.3247,
+        "total_odds": 3.0,
+        "combined_prob": 0.3335,
         "n_legs": 2
       },
       "cuota_4": {
@@ -461,152 +435,152 @@
             "sport": "mlb",
             "match": "Philadelphia Phillies vs Atlanta Braves",
             "pick": "Philadelphia Phillies",
-            "p_win": 0.5375,
-            "implied_odds": 1.86
+            "p_win": 0.5335,
+            "implied_odds": 1.87
           },
           {
             "sport": "mlb",
-            "match": "Texas Rangers vs Tampa Bay Rays",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.528,
-            "implied_odds": 1.89
+            "match": "Miami Marlins vs New York Mets",
+            "pick": "Miami Marlins",
+            "p_win": 0.5179,
+            "implied_odds": 1.93
           }
         ],
-        "total_odds": 3.52,
-        "combined_prob": 0.2838,
+        "total_odds": 3.61,
+        "combined_prob": 0.2763,
         "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Pittsburgh Pirates vs Los Angeles Angels",
-            "pick": "Pittsburgh Pirates",
-            "p_win": 0.5794,
-            "implied_odds": 1.73
+            "match": "Boston Red Sox vs Los Angeles Angels",
+            "pick": "Boston Red Sox",
+            "p_win": 0.6157,
+            "implied_odds": 1.62
           },
           {
             "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
+            "match": "San Diego Padres vs Washington Nationals",
+            "pick": "San Diego Padres",
+            "p_win": 0.5895,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Minnesota Twins",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5592,
-            "implied_odds": 1.79
+            "match": "Baltimore Orioles vs Cleveland Guardians",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5416,
+            "implied_odds": 1.85
           }
         ],
-        "total_odds": 5.51,
-        "combined_prob": 0.1816,
+        "total_odds": 5.09,
+        "combined_prob": 0.1966,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Minnesota Twins",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5592,
-            "implied_odds": 1.79
+            "match": "San Diego Padres vs Washington Nationals",
+            "pick": "San Diego Padres",
+            "p_win": 0.5895,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "New York Mets vs San Francisco Giants",
-            "pick": "New York Mets",
-            "p_win": 0.5501,
-            "implied_odds": 1.82
+            "match": "Baltimore Orioles vs Cleveland Guardians",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5416,
+            "implied_odds": 1.85
           },
           {
             "sport": "mlb",
-            "match": "Seattle Mariners vs Athletics",
-            "pick": "Seattle Mariners",
-            "p_win": 0.5427,
-            "implied_odds": 1.84
+            "match": "Miami Marlins vs New York Mets",
+            "pick": "Miami Marlins",
+            "p_win": 0.5179,
+            "implied_odds": 1.93
           }
         ],
-        "total_odds": 5.99,
-        "combined_prob": 0.1669,
+        "total_odds": 6.07,
+        "combined_prob": 0.1654,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Pittsburgh Pirates vs Los Angeles Angels",
-            "pick": "Pittsburgh Pirates",
-            "p_win": 0.5794,
-            "implied_odds": 1.73
+            "match": "Boston Red Sox vs Los Angeles Angels",
+            "pick": "Boston Red Sox",
+            "p_win": 0.6157,
+            "implied_odds": 1.62
           },
           {
             "sport": "mlb",
-            "match": "Cleveland Guardians vs Detroit Tigers",
-            "pick": "Cleveland Guardians",
-            "p_win": 0.5604,
-            "implied_odds": 1.78
+            "match": "San Diego Padres vs Washington Nationals",
+            "pick": "San Diego Padres",
+            "p_win": 0.5895,
+            "implied_odds": 1.7
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Minnesota Twins",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5592,
-            "implied_odds": 1.79
+            "match": "Philadelphia Phillies vs Atlanta Braves",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5335,
+            "implied_odds": 1.87
           },
           {
             "sport": "mlb",
-            "match": "New York Mets vs San Francisco Giants",
-            "pick": "New York Mets",
-            "p_win": 0.5501,
-            "implied_odds": 1.82
+            "match": "Miami Marlins vs New York Mets",
+            "pick": "Miami Marlins",
+            "p_win": 0.5179,
+            "implied_odds": 1.93
           }
         ],
-        "total_odds": 10.03,
-        "combined_prob": 0.0999,
+        "total_odds": 9.94,
+        "combined_prob": 0.1003,
         "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "mlb",
-            "match": "Pittsburgh Pirates vs Los Angeles Angels",
-            "pick": "Pittsburgh Pirates",
-            "p_win": 0.5794,
-            "implied_odds": 1.73
+            "match": "Boston Red Sox vs Los Angeles Angels",
+            "pick": "Boston Red Sox",
+            "p_win": 0.6157,
+            "implied_odds": 1.62
           },
           {
             "sport": "mlb",
-            "match": "Chicago White Sox vs Minnesota Twins",
-            "pick": "Chicago White Sox",
-            "p_win": 0.5592,
-            "implied_odds": 1.79
+            "match": "Baltimore Orioles vs Cleveland Guardians",
+            "pick": "Baltimore Orioles",
+            "p_win": 0.5416,
+            "implied_odds": 1.85
           },
           {
             "sport": "mlb",
-            "match": "Seattle Mariners vs Athletics",
-            "pick": "Seattle Mariners",
-            "p_win": 0.5427,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "mlb",
-            "match": "Philadelphia Phillies vs Atlanta Braves",
-            "pick": "Philadelphia Phillies",
+            "match": "Milwaukee Brewers vs Chicago Cubs",
+            "pick": "Milwaukee Brewers",
             "p_win": 0.5375,
             "implied_odds": 1.86
           },
           {
             "sport": "mlb",
-            "match": "Texas Rangers vs Tampa Bay Rays",
-            "pick": "Tampa Bay Rays",
-            "p_win": 0.528,
-            "implied_odds": 1.89
+            "match": "Philadelphia Phillies vs Atlanta Braves",
+            "pick": "Philadelphia Phillies",
+            "p_win": 0.5335,
+            "implied_odds": 1.87
+          },
+          {
+            "sport": "mlb",
+            "match": "Miami Marlins vs New York Mets",
+            "pick": "Miami Marlins",
+            "p_win": 0.5179,
+            "implied_odds": 1.93
           }
         ],
-        "total_odds": 20.03,
-        "combined_prob": 0.0499,
+        "total_odds": 20.12,
+        "combined_prob": 0.0495,
         "n_legs": 5
       }
     }
