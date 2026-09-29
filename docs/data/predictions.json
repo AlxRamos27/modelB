@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T16:30:17Z",
-  "date": "2026-09-28",
+  "generated_at": "2026-09-29T14:39:22Z",
+  "date": "2026-09-29",
   "sports": {
     "nba": {
       "status": "ok",
@@ -19,16 +19,144 @@
         "logloss": 0.6924,
         "brier": 0.2496
       },
-      "picks": [],
-      "name": "NHL"
+      "picks": [
+        {
+          "home_team": "Carolina Hurricanes",
+          "away_team": "Florida Panthers",
+          "pick": "H",
+          "pick_label": "Carolina Hurricanes",
+          "p_win": 0.5202,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-09-29",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
+        },
+        {
+          "home_team": "Toronto Maple Leafs",
+          "away_team": "Montreal Canadiens",
+          "pick": "H",
+          "pick_label": "Toronto Maple Leafs",
+          "p_win": 0.5202,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-09-29",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
+        },
+        {
+          "home_team": "Boston Bruins",
+          "away_team": "New York Rangers",
+          "pick": "H",
+          "pick_label": "Boston Bruins",
+          "p_win": 0.5202,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-09-29",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 5.5,
+          "ou_line": 5.5,
+          "ou_pick": "under",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
+        },
+        {
+          "home_team": "Edmonton Oilers",
+          "away_team": "Vancouver Canucks",
+          "pick": "H",
+          "pick_label": "Edmonton Oilers",
+          "p_win": 0.5202,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-09-29",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
+        },
+        {
+          "home_team": "Vegas Golden Knights",
+          "away_team": "Chicago Blackhawks",
+          "pick": "H",
+          "pick_label": "Vegas Golden Knights",
+          "p_win": 0.5202,
+          "implied_odds": 1.92,
+          "signal": "baja",
+          "date": "2026-09-29",
+          "model_spread": 0.1,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 5.5,
+          "ou_line": 5.5,
+          "ou_pick": "under",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
+        }
+      ],
+      "name": "NHL",
+      "analysis": ""
     },
     "mlb": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.5453,
-        "logloss": 0.6851,
-        "brier": 0.246
-      },
+      "status": "error",
+      "reason": "Found array with 0 sample(s) (shape=(0, 5)) while a minimum of 1 is required by StandardScaler.",
       "picks": [],
       "name": "MLB"
     },
@@ -70,14 +198,333 @@
     }
   },
   "parlays": {
-    "by_sport": {},
+    "by_sport": {
+      "nhl": {
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "nhl",
+              "match": "Carolina Hurricanes vs Florida Panthers",
+              "pick": "Carolina Hurricanes",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Toronto Maple Leafs vs Montreal Canadiens",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            }
+          ],
+          "total_odds": 3.69,
+          "combined_prob": 0.2706,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "nhl",
+              "match": "Carolina Hurricanes vs Florida Panthers",
+              "pick": "Carolina Hurricanes",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Toronto Maple Leafs vs Montreal Canadiens",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            }
+          ],
+          "total_odds": 3.69,
+          "combined_prob": 0.2706,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "nhl",
+              "match": "Carolina Hurricanes vs Florida Panthers",
+              "pick": "Carolina Hurricanes",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Toronto Maple Leafs vs Montreal Canadiens",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            }
+          ],
+          "total_odds": 3.69,
+          "combined_prob": 0.2706,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "nhl",
+              "match": "Carolina Hurricanes vs Florida Panthers",
+              "pick": "Carolina Hurricanes",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Toronto Maple Leafs vs Montreal Canadiens",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Boston Bruins vs New York Rangers",
+              "pick": "Boston Bruins",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            }
+          ],
+          "total_odds": 7.08,
+          "combined_prob": 0.1408,
+          "n_legs": 3
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "nhl",
+              "match": "Carolina Hurricanes vs Florida Panthers",
+              "pick": "Carolina Hurricanes",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Toronto Maple Leafs vs Montreal Canadiens",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Boston Bruins vs New York Rangers",
+              "pick": "Boston Bruins",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            }
+          ],
+          "total_odds": 7.08,
+          "combined_prob": 0.1408,
+          "n_legs": 3
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "nhl",
+              "match": "Carolina Hurricanes vs Florida Panthers",
+              "pick": "Carolina Hurricanes",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Toronto Maple Leafs vs Montreal Canadiens",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Boston Bruins vs New York Rangers",
+              "pick": "Boston Bruins",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Edmonton Oilers vs Vancouver Canucks",
+              "pick": "Edmonton Oilers",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            },
+            {
+              "sport": "nhl",
+              "match": "Vegas Golden Knights vs Chicago Blackhawks",
+              "pick": "Vegas Golden Knights",
+              "p_win": 0.5202,
+              "implied_odds": 1.92
+            }
+          ],
+          "total_odds": 26.09,
+          "combined_prob": 0.0381,
+          "n_legs": 5
+        }
+      }
+    },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "nhl",
+            "match": "Carolina Hurricanes vs Florida Panthers",
+            "pick": "Carolina Hurricanes",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Montreal Canadiens",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.69,
+        "combined_prob": 0.2706,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "nhl",
+            "match": "Carolina Hurricanes vs Florida Panthers",
+            "pick": "Carolina Hurricanes",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Montreal Canadiens",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.69,
+        "combined_prob": 0.2706,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "nhl",
+            "match": "Carolina Hurricanes vs Florida Panthers",
+            "pick": "Carolina Hurricanes",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Montreal Canadiens",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 3.69,
+        "combined_prob": 0.2706,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "nhl",
+            "match": "Carolina Hurricanes vs Florida Panthers",
+            "pick": "Carolina Hurricanes",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Montreal Canadiens",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Boston Bruins vs New York Rangers",
+            "pick": "Boston Bruins",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 7.08,
+        "combined_prob": 0.1408,
+        "n_legs": 3
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "nhl",
+            "match": "Carolina Hurricanes vs Florida Panthers",
+            "pick": "Carolina Hurricanes",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Montreal Canadiens",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Boston Bruins vs New York Rangers",
+            "pick": "Boston Bruins",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 7.08,
+        "combined_prob": 0.1408,
+        "n_legs": 3
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "nhl",
+            "match": "Carolina Hurricanes vs Florida Panthers",
+            "pick": "Carolina Hurricanes",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Montreal Canadiens",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Boston Bruins vs New York Rangers",
+            "pick": "Boston Bruins",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Edmonton Oilers vs Vancouver Canucks",
+            "pick": "Edmonton Oilers",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          },
+          {
+            "sport": "nhl",
+            "match": "Vegas Golden Knights vs Chicago Blackhawks",
+            "pick": "Vegas Golden Knights",
+            "p_win": 0.5202,
+            "implied_odds": 1.92
+          }
+        ],
+        "total_odds": 26.09,
+        "combined_prob": 0.0381,
+        "n_legs": 5
+      }
     }
   }
 }
