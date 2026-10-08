@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T14:46:51Z",
-  "date": "2026-10-06",
+  "generated_at": "2026-10-08T15:15:28Z",
+  "date": "2026-10-08",
   "sports": {
     "nba": {
       "status": "error",
@@ -10,7 +10,7 @@
     },
     "nhl": {
       "status": "error",
-      "reason": "Not enough finished games to train (35). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (47). Fetch more seasons or leagues.",
       "picks": [],
       "name": "NHL"
     },
