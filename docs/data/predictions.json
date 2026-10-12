@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T14:41:51Z",
-  "date": "2026-10-11",
+  "generated_at": "2026-10-12T17:26:16Z",
+  "date": "2026-10-12",
   "sports": {
     "nba": {
       "status": "error",
@@ -10,7 +10,7 @@
     },
     "nhl": {
       "status": "error",
-      "reason": "Not enough finished games to train (75). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (78). Fetch more seasons or leagues.",
       "picks": [],
       "name": "NHL"
     },
@@ -22,31 +22,31 @@
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (56). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (59). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (74). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (77). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (51). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (54). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (43). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (45). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Bundesliga"
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (67). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (70). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
