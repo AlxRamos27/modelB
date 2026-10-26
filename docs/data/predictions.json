@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-25T12:59:28Z",
-  "date": "2026-10-25",
+  "generated_at": "2026-10-26T14:53:13Z",
+  "date": "2026-10-26",
   "sports": {
     "nba": {
       "status": "error",
-      "reason": "Not enough finished games to train (36). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (43). Fetch more seasons or leagues.",
       "picks": [],
       "name": "NBA"
     },
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.6,
-        "logloss": 0.6731,
-        "brier": 0.24
+        "accuracy": 0.5833,
+        "logloss": 0.6794,
+        "brier": 0.2431
       },
       "picks": [],
       "name": "NHL"
@@ -26,31 +26,31 @@
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (75). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (80). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (94). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (98). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (65). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (71). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (61). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (63). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Bundesliga"
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (76). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (80). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
