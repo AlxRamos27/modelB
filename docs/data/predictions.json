@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-26T14:53:13Z",
-  "date": "2026-10-26",
+  "generated_at": "2026-10-27T14:01:19Z",
+  "date": "2026-10-27",
   "sports": {
     "nba": {
       "status": "error",
-      "reason": "Not enough finished games to train (43). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (52). Fetch more seasons or leagues.",
       "picks": [],
       "name": "NBA"
     },
@@ -12,7 +12,7 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.5833,
-        "logloss": 0.6794,
+        "logloss": 0.6792,
         "brier": 0.2431
       },
       "picks": [],
@@ -32,13 +32,13 @@
     },
     "laliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (98). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (99). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (71). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (72). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
@@ -50,7 +50,7 @@
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (80). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (81). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
