@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-27T14:01:19Z",
-  "date": "2026-10-27",
+  "generated_at": "2026-10-28T14:53:22Z",
+  "date": "2026-10-28",
   "sports": {
     "nba": {
       "status": "error",
-      "reason": "Not enough finished games to train (52). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (56). Fetch more seasons or leagues.",
       "picks": [],
       "name": "NBA"
     },
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5833,
-        "logloss": 0.6792,
-        "brier": 0.2431
+        "accuracy": 0.5789,
+        "logloss": 0.681,
+        "brier": 0.2439
       },
       "picks": [],
       "name": "NHL"
