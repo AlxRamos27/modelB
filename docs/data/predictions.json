@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-10-31T14:19:40Z",
-  "date": "2026-10-31",
+  "generated_at": "2026-11-01T14:46:17Z",
+  "date": "2026-11-01",
   "sports": {
     "nba": {
       "status": "error",
-      "reason": "Not enough finished games to train (81). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (88). Fetch more seasons or leagues.",
       "picks": [],
       "name": "NBA"
     },
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5714,
-        "logloss": 0.683,
-        "brier": 0.2449
+        "accuracy": 0.5682,
+        "logloss": 0.6839,
+        "brier": 0.2454
       },
       "picks": [],
       "name": "NHL"
     },
     "mlb": {
-      "status": "error",
-      "reason": "Found array with 0 sample(s) (shape=(0, 5)) while a minimum of 1 is required by StandardScaler.",
+      "status": "skipped",
+      "reason": "Fuera de temporada (Oct–Mar)",
       "picks": [],
       "name": "MLB"
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (80). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (88). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.35,
-        "logloss": 1.2312,
-        "brier": 0.2401
+        "accuracy": 0.4286,
+        "logloss": 1.1341,
+        "brier": 0.2217
       },
       "picks": [
         {
-          "home_team": "FC Barcelona",
-          "away_team": "Deportivo Alavés",
+          "home_team": "Elche CF",
+          "away_team": "Valencia CF",
           "pick": "H",
-          "pick_label": "FC Barcelona",
-          "p_win": 0.8616,
-          "implied_odds": 1.16,
-          "signal": "alta",
-          "date": "2026-10-31",
+          "pick_label": "Elche CF",
+          "p_win": 0.6882,
+          "implied_odds": 1.45,
+          "signal": "media",
+          "date": "2026-11-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -62,43 +62,17 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 86%. Sin bajas importantes. ML Barcelona es la jugada segura (modelo 86%)."
+          "note": "⚠️ Modelo 69%. Sin bajas importantes. ML CF con cautela (modelo 69%)."
         },
         {
-          "home_team": "Real Betis Balompié",
-          "away_team": "Málaga CF",
-          "pick": "H",
-          "pick_label": "Real Betis Balompié",
-          "p_win": 0.7923,
-          "implied_odds": 1.26,
-          "signal": "alta",
-          "date": "2026-10-31",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 79%. Sin bajas importantes. ML Balompié es la jugada segura (modelo 79%)."
-        },
-        {
-          "home_team": "Levante UD",
-          "away_team": "Club Atlético de Madrid",
+          "home_team": "Real Racing Club de Santander",
+          "away_team": "Real Madrid CF",
           "pick": "A",
-          "pick_label": "Club Atlético de Madrid",
-          "p_win": 0.7746,
-          "implied_odds": 1.29,
-          "signal": "alta",
-          "date": "2026-10-31",
+          "pick_label": "Real Madrid CF",
+          "p_win": 0.6451,
+          "implied_odds": 1.55,
+          "signal": "media",
+          "date": "2026-11-01",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -114,7 +88,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "✅ Modelo 77%. Sin bajas importantes. ML Madrid es la jugada segura (modelo 77%)."
+          "note": "⚠️ Modelo 65%. Sin bajas importantes. ML CF con cautela (modelo 65%)."
+        },
+        {
+          "home_team": "Athletic Club",
+          "away_team": "Real Sociedad de Fútbol",
+          "pick": "A",
+          "pick_label": "Real Sociedad de Fútbol",
+          "p_win": 0.494,
+          "implied_odds": 2.02,
+          "signal": "baja",
+          "date": "2026-11-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
+        },
+        {
+          "home_team": "Getafe CF",
+          "away_team": "Sevilla FC",
+          "pick": "A",
+          "pick_label": "Sevilla FC",
+          "p_win": 0.3123,
+          "implied_odds": 3.2,
+          "signal": "baja",
+          "date": "2026-11-01",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 31%. Sin bajas importantes. SKIP — sin edge claro (31%)."
         }
       ],
       "name": "La Liga",
@@ -122,19 +148,19 @@
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (75). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (76). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (64). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (70). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Bundesliga"
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (82). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (84). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -152,169 +178,155 @@
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs Deportivo Alavés",
-              "pick": "FC Barcelona",
-              "p_win": 0.8616,
-              "implied_odds": 1.16
+              "match": "Elche CF vs Valencia CF",
+              "pick": "Elche CF",
+              "p_win": 0.6882,
+              "implied_odds": 1.45
             },
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Málaga CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7923,
-              "implied_odds": 1.26
-            },
-            {
-              "sport": "laliga",
-              "match": "Levante UD vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.7746,
-              "implied_odds": 1.29
+              "match": "Athletic Club vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.494,
+              "implied_odds": 2.02
             }
           ],
-          "total_odds": 1.89,
-          "combined_prob": 0.5288,
-          "n_legs": 3
+          "total_odds": 2.93,
+          "combined_prob": 0.34,
+          "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs Deportivo Alavés",
-              "pick": "FC Barcelona",
-              "p_win": 0.8616,
-              "implied_odds": 1.16
+              "match": "Elche CF vs Valencia CF",
+              "pick": "Elche CF",
+              "p_win": 0.6882,
+              "implied_odds": 1.45
             },
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Málaga CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7923,
-              "implied_odds": 1.26
+              "match": "Real Racing Club de Santander vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6451,
+              "implied_odds": 1.55
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.7746,
-              "implied_odds": 1.29
+              "match": "Athletic Club vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.494,
+              "implied_odds": 2.02
             }
           ],
-          "total_odds": 1.89,
-          "combined_prob": 0.5288,
+          "total_odds": 4.54,
+          "combined_prob": 0.2193,
           "n_legs": 3
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs Deportivo Alavés",
-              "pick": "FC Barcelona",
-              "p_win": 0.8616,
-              "implied_odds": 1.16
+              "match": "Real Racing Club de Santander vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6451,
+              "implied_odds": 1.55
             },
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Málaga CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7923,
-              "implied_odds": 1.26
-            },
-            {
-              "sport": "laliga",
-              "match": "Levante UD vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.7746,
-              "implied_odds": 1.29
+              "match": "Getafe CF vs Sevilla FC",
+              "pick": "Sevilla FC",
+              "p_win": 0.3123,
+              "implied_odds": 3.2
             }
           ],
-          "total_odds": 1.89,
-          "combined_prob": 0.5288,
-          "n_legs": 3
+          "total_odds": 4.96,
+          "combined_prob": 0.2015,
+          "n_legs": 2
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs Deportivo Alavés",
-              "pick": "FC Barcelona",
-              "p_win": 0.8616,
-              "implied_odds": 1.16
+              "match": "Athletic Club vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.494,
+              "implied_odds": 2.02
             },
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Málaga CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7923,
-              "implied_odds": 1.26
-            },
-            {
-              "sport": "laliga",
-              "match": "Levante UD vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.7746,
-              "implied_odds": 1.29
+              "match": "Getafe CF vs Sevilla FC",
+              "pick": "Sevilla FC",
+              "p_win": 0.3123,
+              "implied_odds": 3.2
             }
           ],
-          "total_odds": 1.89,
-          "combined_prob": 0.5288,
-          "n_legs": 3
+          "total_odds": 6.46,
+          "combined_prob": 0.1543,
+          "n_legs": 2
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs Deportivo Alavés",
-              "pick": "FC Barcelona",
-              "p_win": 0.8616,
-              "implied_odds": 1.16
+              "match": "Real Racing Club de Santander vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6451,
+              "implied_odds": 1.55
             },
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Málaga CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7923,
-              "implied_odds": 1.26
+              "match": "Athletic Club vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.494,
+              "implied_odds": 2.02
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.7746,
-              "implied_odds": 1.29
+              "match": "Getafe CF vs Sevilla FC",
+              "pick": "Sevilla FC",
+              "p_win": 0.3123,
+              "implied_odds": 3.2
             }
           ],
-          "total_odds": 1.89,
-          "combined_prob": 0.5288,
+          "total_odds": 10.02,
+          "combined_prob": 0.0995,
           "n_legs": 3
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "FC Barcelona vs Deportivo Alavés",
-              "pick": "FC Barcelona",
-              "p_win": 0.8616,
-              "implied_odds": 1.16
+              "match": "Elche CF vs Valencia CF",
+              "pick": "Elche CF",
+              "p_win": 0.6882,
+              "implied_odds": 1.45
             },
             {
               "sport": "laliga",
-              "match": "Real Betis Balompié vs Málaga CF",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.7923,
-              "implied_odds": 1.26
+              "match": "Real Racing Club de Santander vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6451,
+              "implied_odds": 1.55
             },
             {
               "sport": "laliga",
-              "match": "Levante UD vs Club Atlético de Madrid",
-              "pick": "Club Atlético de Madrid",
-              "p_win": 0.7746,
-              "implied_odds": 1.29
+              "match": "Athletic Club vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.494,
+              "implied_odds": 2.02
+            },
+            {
+              "sport": "laliga",
+              "match": "Getafe CF vs Sevilla FC",
+              "pick": "Sevilla FC",
+              "p_win": 0.3123,
+              "implied_odds": 3.2
             }
           ],
-          "total_odds": 1.89,
-          "combined_prob": 0.5288,
-          "n_legs": 3
+          "total_odds": 14.53,
+          "combined_prob": 0.0685,
+          "n_legs": 4
         }
       }
     },
@@ -323,169 +335,155 @@
         "legs": [
           {
             "sport": "laliga",
-            "match": "FC Barcelona vs Deportivo Alavés",
-            "pick": "FC Barcelona",
-            "p_win": 0.8616,
-            "implied_odds": 1.16
+            "match": "Elche CF vs Valencia CF",
+            "pick": "Elche CF",
+            "p_win": 0.6882,
+            "implied_odds": 1.45
           },
           {
             "sport": "laliga",
-            "match": "Real Betis Balompié vs Málaga CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7923,
-            "implied_odds": 1.26
-          },
-          {
-            "sport": "laliga",
-            "match": "Levante UD vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.7746,
-            "implied_odds": 1.29
+            "match": "Athletic Club vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.494,
+            "implied_odds": 2.02
           }
         ],
-        "total_odds": 1.89,
-        "combined_prob": 0.5288,
-        "n_legs": 3
+        "total_odds": 2.93,
+        "combined_prob": 0.34,
+        "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "FC Barcelona vs Deportivo Alavés",
-            "pick": "FC Barcelona",
-            "p_win": 0.8616,
-            "implied_odds": 1.16
+            "match": "Elche CF vs Valencia CF",
+            "pick": "Elche CF",
+            "p_win": 0.6882,
+            "implied_odds": 1.45
           },
           {
             "sport": "laliga",
-            "match": "Real Betis Balompié vs Málaga CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7923,
-            "implied_odds": 1.26
+            "match": "Real Racing Club de Santander vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6451,
+            "implied_odds": 1.55
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.7746,
-            "implied_odds": 1.29
+            "match": "Athletic Club vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.494,
+            "implied_odds": 2.02
           }
         ],
-        "total_odds": 1.89,
-        "combined_prob": 0.5288,
+        "total_odds": 4.54,
+        "combined_prob": 0.2193,
         "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "FC Barcelona vs Deportivo Alavés",
-            "pick": "FC Barcelona",
-            "p_win": 0.8616,
-            "implied_odds": 1.16
+            "match": "Real Racing Club de Santander vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6451,
+            "implied_odds": 1.55
           },
           {
             "sport": "laliga",
-            "match": "Real Betis Balompié vs Málaga CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7923,
-            "implied_odds": 1.26
-          },
-          {
-            "sport": "laliga",
-            "match": "Levante UD vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.7746,
-            "implied_odds": 1.29
+            "match": "Getafe CF vs Sevilla FC",
+            "pick": "Sevilla FC",
+            "p_win": 0.3123,
+            "implied_odds": 3.2
           }
         ],
-        "total_odds": 1.89,
-        "combined_prob": 0.5288,
-        "n_legs": 3
+        "total_odds": 4.96,
+        "combined_prob": 0.2015,
+        "n_legs": 2
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "FC Barcelona vs Deportivo Alavés",
-            "pick": "FC Barcelona",
-            "p_win": 0.8616,
-            "implied_odds": 1.16
+            "match": "Athletic Club vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.494,
+            "implied_odds": 2.02
           },
           {
             "sport": "laliga",
-            "match": "Real Betis Balompié vs Málaga CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7923,
-            "implied_odds": 1.26
-          },
-          {
-            "sport": "laliga",
-            "match": "Levante UD vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.7746,
-            "implied_odds": 1.29
+            "match": "Getafe CF vs Sevilla FC",
+            "pick": "Sevilla FC",
+            "p_win": 0.3123,
+            "implied_odds": 3.2
           }
         ],
-        "total_odds": 1.89,
-        "combined_prob": 0.5288,
-        "n_legs": 3
+        "total_odds": 6.46,
+        "combined_prob": 0.1543,
+        "n_legs": 2
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "FC Barcelona vs Deportivo Alavés",
-            "pick": "FC Barcelona",
-            "p_win": 0.8616,
-            "implied_odds": 1.16
+            "match": "Real Racing Club de Santander vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6451,
+            "implied_odds": 1.55
           },
           {
             "sport": "laliga",
-            "match": "Real Betis Balompié vs Málaga CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7923,
-            "implied_odds": 1.26
+            "match": "Athletic Club vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.494,
+            "implied_odds": 2.02
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.7746,
-            "implied_odds": 1.29
+            "match": "Getafe CF vs Sevilla FC",
+            "pick": "Sevilla FC",
+            "p_win": 0.3123,
+            "implied_odds": 3.2
           }
         ],
-        "total_odds": 1.89,
-        "combined_prob": 0.5288,
+        "total_odds": 10.02,
+        "combined_prob": 0.0995,
         "n_legs": 3
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "FC Barcelona vs Deportivo Alavés",
-            "pick": "FC Barcelona",
-            "p_win": 0.8616,
-            "implied_odds": 1.16
+            "match": "Elche CF vs Valencia CF",
+            "pick": "Elche CF",
+            "p_win": 0.6882,
+            "implied_odds": 1.45
           },
           {
             "sport": "laliga",
-            "match": "Real Betis Balompié vs Málaga CF",
-            "pick": "Real Betis Balompié",
-            "p_win": 0.7923,
-            "implied_odds": 1.26
+            "match": "Real Racing Club de Santander vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6451,
+            "implied_odds": 1.55
           },
           {
             "sport": "laliga",
-            "match": "Levante UD vs Club Atlético de Madrid",
-            "pick": "Club Atlético de Madrid",
-            "p_win": 0.7746,
-            "implied_odds": 1.29
+            "match": "Athletic Club vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.494,
+            "implied_odds": 2.02
+          },
+          {
+            "sport": "laliga",
+            "match": "Getafe CF vs Sevilla FC",
+            "pick": "Sevilla FC",
+            "p_win": 0.3123,
+            "implied_odds": 3.2
           }
         ],
-        "total_odds": 1.89,
-        "combined_prob": 0.5288,
-        "n_legs": 3
+        "total_odds": 14.53,
+        "combined_prob": 0.0685,
+        "n_legs": 4
       }
     }
   }
