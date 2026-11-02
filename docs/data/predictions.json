@@ -1,22 +1,128 @@
 {
-  "generated_at": "2026-11-01T14:46:17Z",
-  "date": "2026-11-01",
+  "generated_at": "2026-11-02T17:52:39Z",
+  "date": "2026-11-02",
   "sports": {
     "nba": {
       "status": "error",
-      "reason": "Not enough finished games to train (88). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (92). Fetch more seasons or leagues.",
       "picks": [],
       "name": "NBA"
     },
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5682,
-        "logloss": 0.6839,
-        "brier": 0.2454
+        "accuracy": 0.5778,
+        "logloss": 0.681,
+        "brier": 0.244
       },
-      "picks": [],
-      "name": "NHL"
+      "picks": [
+        {
+          "home_team": "Boston Bruins",
+          "away_team": "Vegas Golden Knights",
+          "pick": "H",
+          "pick_label": "Boston Bruins",
+          "p_win": 0.573,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-02",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "Florida Panthers",
+          "away_team": "Detroit Red Wings",
+          "pick": "H",
+          "pick_label": "Florida Panthers",
+          "p_win": 0.573,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-02",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 5.5,
+          "ou_line": 5.5,
+          "ou_pick": "under",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "Chicago Blackhawks",
+          "away_team": "Colorado Avalanche",
+          "pick": "H",
+          "pick_label": "Chicago Blackhawks",
+          "p_win": 0.573,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-02",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "San Jose Sharks",
+          "away_team": "Calgary Flames",
+          "pick": "H",
+          "pick_label": "San Jose Sharks",
+          "p_win": 0.573,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-02",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
+        }
+      ],
+      "name": "NHL",
+      "analysis": ""
     },
     "mlb": {
       "status": "skipped",
@@ -26,79 +132,27 @@
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (88). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (89). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.4286,
-        "logloss": 1.1341,
-        "brier": 0.2217
+        "accuracy": 0.3636,
+        "logloss": 1.2082,
+        "brier": 0.2313
       },
       "picks": [
         {
-          "home_team": "Elche CF",
-          "away_team": "Valencia CF",
+          "home_team": "RC Deportivo La Coruña",
+          "away_team": "CA Osasuna",
           "pick": "H",
-          "pick_label": "Elche CF",
-          "p_win": 0.6882,
-          "implied_odds": 1.45,
-          "signal": "media",
-          "date": "2026-11-01",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 69%. Sin bajas importantes. ML CF con cautela (modelo 69%)."
-        },
-        {
-          "home_team": "Real Racing Club de Santander",
-          "away_team": "Real Madrid CF",
-          "pick": "A",
-          "pick_label": "Real Madrid CF",
-          "p_win": 0.6451,
-          "implied_odds": 1.55,
-          "signal": "media",
-          "date": "2026-11-01",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 65%. Sin bajas importantes. ML CF con cautela (modelo 65%)."
-        },
-        {
-          "home_team": "Athletic Club",
-          "away_team": "Real Sociedad de Fútbol",
-          "pick": "A",
-          "pick_label": "Real Sociedad de Fútbol",
-          "p_win": 0.494,
-          "implied_odds": 2.02,
+          "pick_label": "RC Deportivo La Coruña",
+          "p_win": 0.4208,
+          "implied_odds": 2.38,
           "signal": "baja",
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -114,33 +168,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
-        },
-        {
-          "home_team": "Getafe CF",
-          "away_team": "Sevilla FC",
-          "pick": "A",
-          "pick_label": "Sevilla FC",
-          "p_win": 0.3123,
-          "implied_odds": 3.2,
-          "signal": "baja",
-          "date": "2026-11-01",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 31%. Sin bajas importantes. SKIP — sin edge claro (31%)."
+          "note": "❌ Modelo 42%. Sin bajas importantes. SKIP — sin edge claro (42%)."
         }
       ],
       "name": "La Liga",
@@ -148,19 +176,19 @@
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (76). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (80). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (70). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (72). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Bundesliga"
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (84). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (88). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -173,317 +201,360 @@
   },
   "parlays": {
     "by_sport": {
-      "soccer": {
+      "nhl": {
         "cuota_3": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Elche CF vs Valencia CF",
-              "pick": "Elche CF",
-              "p_win": 0.6882,
-              "implied_odds": 1.45
+              "sport": "nhl",
+              "match": "Boston Bruins vs Vegas Golden Knights",
+              "pick": "Boston Bruins",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Athletic Club vs Real Sociedad de Fútbol",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.494,
-              "implied_odds": 2.02
+              "sport": "nhl",
+              "match": "Florida Panthers vs Detroit Red Wings",
+              "pick": "Florida Panthers",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             }
           ],
-          "total_odds": 2.93,
-          "combined_prob": 0.34,
+          "total_odds": 3.06,
+          "combined_prob": 0.3283,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Elche CF vs Valencia CF",
-              "pick": "Elche CF",
-              "p_win": 0.6882,
-              "implied_odds": 1.45
+              "sport": "nhl",
+              "match": "Boston Bruins vs Vegas Golden Knights",
+              "pick": "Boston Bruins",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Real Racing Club de Santander vs Real Madrid CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.6451,
-              "implied_odds": 1.55
-            },
-            {
-              "sport": "laliga",
-              "match": "Athletic Club vs Real Sociedad de Fútbol",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.494,
-              "implied_odds": 2.02
+              "sport": "nhl",
+              "match": "Florida Panthers vs Detroit Red Wings",
+              "pick": "Florida Panthers",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             }
           ],
-          "total_odds": 4.54,
-          "combined_prob": 0.2193,
-          "n_legs": 3
+          "total_odds": 3.06,
+          "combined_prob": 0.3283,
+          "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Racing Club de Santander vs Real Madrid CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.6451,
-              "implied_odds": 1.55
+              "sport": "nhl",
+              "match": "Boston Bruins vs Vegas Golden Knights",
+              "pick": "Boston Bruins",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Getafe CF vs Sevilla FC",
-              "pick": "Sevilla FC",
-              "p_win": 0.3123,
-              "implied_odds": 3.2
+              "sport": "nhl",
+              "match": "Florida Panthers vs Detroit Red Wings",
+              "pick": "Florida Panthers",
+              "p_win": 0.573,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "nhl",
+              "match": "Chicago Blackhawks vs Colorado Avalanche",
+              "pick": "Chicago Blackhawks",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             }
           ],
-          "total_odds": 4.96,
-          "combined_prob": 0.2015,
-          "n_legs": 2
+          "total_odds": 5.36,
+          "combined_prob": 0.1881,
+          "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Athletic Club vs Real Sociedad de Fútbol",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.494,
-              "implied_odds": 2.02
+              "sport": "nhl",
+              "match": "Boston Bruins vs Vegas Golden Knights",
+              "pick": "Boston Bruins",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Getafe CF vs Sevilla FC",
-              "pick": "Sevilla FC",
-              "p_win": 0.3123,
-              "implied_odds": 3.2
+              "sport": "nhl",
+              "match": "Florida Panthers vs Detroit Red Wings",
+              "pick": "Florida Panthers",
+              "p_win": 0.573,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "nhl",
+              "match": "Chicago Blackhawks vs Colorado Avalanche",
+              "pick": "Chicago Blackhawks",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             }
           ],
-          "total_odds": 6.46,
-          "combined_prob": 0.1543,
-          "n_legs": 2
+          "total_odds": 5.36,
+          "combined_prob": 0.1881,
+          "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Real Racing Club de Santander vs Real Madrid CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.6451,
-              "implied_odds": 1.55
+              "sport": "nhl",
+              "match": "Boston Bruins vs Vegas Golden Knights",
+              "pick": "Boston Bruins",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Athletic Club vs Real Sociedad de Fútbol",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.494,
-              "implied_odds": 2.02
+              "sport": "nhl",
+              "match": "Florida Panthers vs Detroit Red Wings",
+              "pick": "Florida Panthers",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Getafe CF vs Sevilla FC",
-              "pick": "Sevilla FC",
-              "p_win": 0.3123,
-              "implied_odds": 3.2
+              "sport": "nhl",
+              "match": "Chicago Blackhawks vs Colorado Avalanche",
+              "pick": "Chicago Blackhawks",
+              "p_win": 0.573,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "nhl",
+              "match": "San Jose Sharks vs Calgary Flames",
+              "pick": "San Jose Sharks",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             }
           ],
-          "total_odds": 10.02,
-          "combined_prob": 0.0995,
-          "n_legs": 3
+          "total_odds": 9.38,
+          "combined_prob": 0.1078,
+          "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
-              "sport": "laliga",
-              "match": "Elche CF vs Valencia CF",
-              "pick": "Elche CF",
-              "p_win": 0.6882,
-              "implied_odds": 1.45
+              "sport": "nhl",
+              "match": "Boston Bruins vs Vegas Golden Knights",
+              "pick": "Boston Bruins",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Real Racing Club de Santander vs Real Madrid CF",
-              "pick": "Real Madrid CF",
-              "p_win": 0.6451,
-              "implied_odds": 1.55
+              "sport": "nhl",
+              "match": "Florida Panthers vs Detroit Red Wings",
+              "pick": "Florida Panthers",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Athletic Club vs Real Sociedad de Fútbol",
-              "pick": "Real Sociedad de Fútbol",
-              "p_win": 0.494,
-              "implied_odds": 2.02
+              "sport": "nhl",
+              "match": "Chicago Blackhawks vs Colorado Avalanche",
+              "pick": "Chicago Blackhawks",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             },
             {
-              "sport": "laliga",
-              "match": "Getafe CF vs Sevilla FC",
-              "pick": "Sevilla FC",
-              "p_win": 0.3123,
-              "implied_odds": 3.2
+              "sport": "nhl",
+              "match": "San Jose Sharks vs Calgary Flames",
+              "pick": "San Jose Sharks",
+              "p_win": 0.573,
+              "implied_odds": 1.75
             }
           ],
-          "total_odds": 14.53,
-          "combined_prob": 0.0685,
+          "total_odds": 9.38,
+          "combined_prob": 0.1078,
           "n_legs": 4
         }
+      },
+      "soccer": {
+        "cuota_3": null,
+        "cuota_4": null,
+        "cuota_5": null,
+        "cuota_6": null,
+        "cuota_10": null,
+        "cuota_20": null
       }
     },
     "combined": {
       "cuota_3": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Elche CF vs Valencia CF",
-            "pick": "Elche CF",
-            "p_win": 0.6882,
-            "implied_odds": 1.45
+            "sport": "nhl",
+            "match": "Boston Bruins vs Vegas Golden Knights",
+            "pick": "Boston Bruins",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           },
           {
-            "sport": "laliga",
-            "match": "Athletic Club vs Real Sociedad de Fútbol",
-            "pick": "Real Sociedad de Fútbol",
-            "p_win": 0.494,
-            "implied_odds": 2.02
+            "sport": "nhl",
+            "match": "Florida Panthers vs Detroit Red Wings",
+            "pick": "Florida Panthers",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 2.93,
-        "combined_prob": 0.34,
+        "total_odds": 3.06,
+        "combined_prob": 0.3283,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Elche CF vs Valencia CF",
-            "pick": "Elche CF",
-            "p_win": 0.6882,
-            "implied_odds": 1.45
+            "sport": "nhl",
+            "match": "Boston Bruins vs Vegas Golden Knights",
+            "pick": "Boston Bruins",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           },
           {
             "sport": "laliga",
-            "match": "Real Racing Club de Santander vs Real Madrid CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.6451,
-            "implied_odds": 1.55
-          },
-          {
-            "sport": "laliga",
-            "match": "Athletic Club vs Real Sociedad de Fútbol",
-            "pick": "Real Sociedad de Fútbol",
-            "p_win": 0.494,
-            "implied_odds": 2.02
+            "match": "RC Deportivo La Coruña vs CA Osasuna",
+            "pick": "RC Deportivo La Coruña",
+            "p_win": 0.4208,
+            "implied_odds": 2.38
           }
         ],
-        "total_odds": 4.54,
-        "combined_prob": 0.2193,
-        "n_legs": 3
+        "total_odds": 4.17,
+        "combined_prob": 0.2411,
+        "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Racing Club de Santander vs Real Madrid CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.6451,
-            "implied_odds": 1.55
+            "sport": "nhl",
+            "match": "Boston Bruins vs Vegas Golden Knights",
+            "pick": "Boston Bruins",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           },
           {
-            "sport": "laliga",
-            "match": "Getafe CF vs Sevilla FC",
-            "pick": "Sevilla FC",
-            "p_win": 0.3123,
-            "implied_odds": 3.2
+            "sport": "nhl",
+            "match": "Florida Panthers vs Detroit Red Wings",
+            "pick": "Florida Panthers",
+            "p_win": 0.573,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Chicago Blackhawks vs Colorado Avalanche",
+            "pick": "Chicago Blackhawks",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 4.96,
-        "combined_prob": 0.2015,
-        "n_legs": 2
+        "total_odds": 5.36,
+        "combined_prob": 0.1881,
+        "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Athletic Club vs Real Sociedad de Fútbol",
-            "pick": "Real Sociedad de Fútbol",
-            "p_win": 0.494,
-            "implied_odds": 2.02
+            "sport": "nhl",
+            "match": "Boston Bruins vs Vegas Golden Knights",
+            "pick": "Boston Bruins",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           },
           {
-            "sport": "laliga",
-            "match": "Getafe CF vs Sevilla FC",
-            "pick": "Sevilla FC",
-            "p_win": 0.3123,
-            "implied_odds": 3.2
+            "sport": "nhl",
+            "match": "Florida Panthers vs Detroit Red Wings",
+            "pick": "Florida Panthers",
+            "p_win": 0.573,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Chicago Blackhawks vs Colorado Avalanche",
+            "pick": "Chicago Blackhawks",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 6.46,
-        "combined_prob": 0.1543,
-        "n_legs": 2
+        "total_odds": 5.36,
+        "combined_prob": 0.1881,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Real Racing Club de Santander vs Real Madrid CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.6451,
-            "implied_odds": 1.55
+            "sport": "nhl",
+            "match": "Boston Bruins vs Vegas Golden Knights",
+            "pick": "Boston Bruins",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           },
           {
-            "sport": "laliga",
-            "match": "Athletic Club vs Real Sociedad de Fútbol",
-            "pick": "Real Sociedad de Fútbol",
-            "p_win": 0.494,
-            "implied_odds": 2.02
+            "sport": "nhl",
+            "match": "Florida Panthers vs Detroit Red Wings",
+            "pick": "Florida Panthers",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           },
           {
-            "sport": "laliga",
-            "match": "Getafe CF vs Sevilla FC",
-            "pick": "Sevilla FC",
-            "p_win": 0.3123,
-            "implied_odds": 3.2
+            "sport": "nhl",
+            "match": "Chicago Blackhawks vs Colorado Avalanche",
+            "pick": "Chicago Blackhawks",
+            "p_win": 0.573,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "San Jose Sharks vs Calgary Flames",
+            "pick": "San Jose Sharks",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 10.02,
-        "combined_prob": 0.0995,
-        "n_legs": 3
+        "total_odds": 9.38,
+        "combined_prob": 0.1078,
+        "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "laliga",
-            "match": "Elche CF vs Valencia CF",
-            "pick": "Elche CF",
-            "p_win": 0.6882,
-            "implied_odds": 1.45
+            "sport": "nhl",
+            "match": "Boston Bruins vs Vegas Golden Knights",
+            "pick": "Boston Bruins",
+            "p_win": 0.573,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Florida Panthers vs Detroit Red Wings",
+            "pick": "Florida Panthers",
+            "p_win": 0.573,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Chicago Blackhawks vs Colorado Avalanche",
+            "pick": "Chicago Blackhawks",
+            "p_win": 0.573,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "San Jose Sharks vs Calgary Flames",
+            "pick": "San Jose Sharks",
+            "p_win": 0.573,
+            "implied_odds": 1.75
           },
           {
             "sport": "laliga",
-            "match": "Real Racing Club de Santander vs Real Madrid CF",
-            "pick": "Real Madrid CF",
-            "p_win": 0.6451,
-            "implied_odds": 1.55
-          },
-          {
-            "sport": "laliga",
-            "match": "Athletic Club vs Real Sociedad de Fútbol",
-            "pick": "Real Sociedad de Fútbol",
-            "p_win": 0.494,
-            "implied_odds": 2.02
-          },
-          {
-            "sport": "laliga",
-            "match": "Getafe CF vs Sevilla FC",
-            "pick": "Sevilla FC",
-            "p_win": 0.3123,
-            "implied_odds": 3.2
+            "match": "RC Deportivo La Coruña vs CA Osasuna",
+            "pick": "RC Deportivo La Coruña",
+            "p_win": 0.4208,
+            "implied_odds": 2.38
           }
         ],
-        "total_odds": 14.53,
-        "combined_prob": 0.0685,
-        "n_legs": 4
+        "total_odds": 22.32,
+        "combined_prob": 0.0454,
+        "n_legs": 5
       }
     }
   }
