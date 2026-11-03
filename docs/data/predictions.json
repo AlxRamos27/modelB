@@ -1,128 +1,26 @@
 {
-  "generated_at": "2026-11-02T17:52:39Z",
-  "date": "2026-11-02",
+  "generated_at": "2026-11-03T15:52:10Z",
+  "date": "2026-11-03",
   "sports": {
     "nba": {
-      "status": "error",
-      "reason": "Not enough finished games to train (92). Fetch more seasons or leagues.",
+      "status": "ok",
+      "metrics": {
+        "accuracy": 0.7,
+        "logloss": 0.7165,
+        "brier": 0.2547
+      },
       "picks": [],
       "name": "NBA"
     },
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5778,
-        "logloss": 0.681,
-        "brier": 0.244
+        "accuracy": 0.5652,
+        "logloss": 0.6846,
+        "brier": 0.2458
       },
-      "picks": [
-        {
-          "home_team": "Boston Bruins",
-          "away_team": "Vegas Golden Knights",
-          "pick": "H",
-          "pick_label": "Boston Bruins",
-          "p_win": 0.573,
-          "implied_odds": 1.75,
-          "signal": "baja",
-          "date": "2026-11-02",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
-        },
-        {
-          "home_team": "Florida Panthers",
-          "away_team": "Detroit Red Wings",
-          "pick": "H",
-          "pick_label": "Florida Panthers",
-          "p_win": 0.573,
-          "implied_odds": 1.75,
-          "signal": "baja",
-          "date": "2026-11-02",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (57%)."
-        },
-        {
-          "home_team": "Chicago Blackhawks",
-          "away_team": "Colorado Avalanche",
-          "pick": "H",
-          "pick_label": "Chicago Blackhawks",
-          "p_win": 0.573,
-          "implied_odds": 1.75,
-          "signal": "baja",
-          "date": "2026-11-02",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
-        },
-        {
-          "home_team": "San Jose Sharks",
-          "away_team": "Calgary Flames",
-          "pick": "H",
-          "pick_label": "San Jose Sharks",
-          "p_win": 0.573,
-          "implied_odds": 1.75,
-          "signal": "baja",
-          "date": "2026-11-02",
-          "model_spread": 0.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
-        }
-      ],
-      "name": "NHL",
-      "analysis": ""
+      "picks": [],
+      "name": "NHL"
     },
     "mlb": {
       "status": "skipped",
@@ -132,7 +30,7 @@
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (89). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (90). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
@@ -140,43 +38,15 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.3636,
-        "logloss": 1.2082,
-        "brier": 0.2313
+        "logloss": 1.1939,
+        "brier": 0.227
       },
-      "picks": [
-        {
-          "home_team": "RC Deportivo La Coruña",
-          "away_team": "CA Osasuna",
-          "pick": "H",
-          "pick_label": "RC Deportivo La Coruña",
-          "p_win": 0.4208,
-          "implied_odds": 2.38,
-          "signal": "baja",
-          "date": "2026-11-02",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 42%. Sin bajas importantes. SKIP — sin edge claro (42%)."
-        }
-      ],
-      "name": "La Liga",
-      "analysis": ""
+      "picks": [],
+      "name": "La Liga"
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (80). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (81). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
@@ -188,7 +58,7 @@
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (88). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (90). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -200,362 +70,14 @@
     }
   },
   "parlays": {
-    "by_sport": {
-      "nhl": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Boston Bruins vs Vegas Golden Knights",
-              "pick": "Boston Bruins",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Detroit Red Wings",
-              "pick": "Florida Panthers",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            }
-          ],
-          "total_odds": 3.06,
-          "combined_prob": 0.3283,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Boston Bruins vs Vegas Golden Knights",
-              "pick": "Boston Bruins",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Detroit Red Wings",
-              "pick": "Florida Panthers",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            }
-          ],
-          "total_odds": 3.06,
-          "combined_prob": 0.3283,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Boston Bruins vs Vegas Golden Knights",
-              "pick": "Boston Bruins",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Detroit Red Wings",
-              "pick": "Florida Panthers",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Chicago Blackhawks vs Colorado Avalanche",
-              "pick": "Chicago Blackhawks",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            }
-          ],
-          "total_odds": 5.36,
-          "combined_prob": 0.1881,
-          "n_legs": 3
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Boston Bruins vs Vegas Golden Knights",
-              "pick": "Boston Bruins",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Detroit Red Wings",
-              "pick": "Florida Panthers",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Chicago Blackhawks vs Colorado Avalanche",
-              "pick": "Chicago Blackhawks",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            }
-          ],
-          "total_odds": 5.36,
-          "combined_prob": 0.1881,
-          "n_legs": 3
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Boston Bruins vs Vegas Golden Knights",
-              "pick": "Boston Bruins",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Detroit Red Wings",
-              "pick": "Florida Panthers",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Chicago Blackhawks vs Colorado Avalanche",
-              "pick": "Chicago Blackhawks",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "San Jose Sharks vs Calgary Flames",
-              "pick": "San Jose Sharks",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            }
-          ],
-          "total_odds": 9.38,
-          "combined_prob": 0.1078,
-          "n_legs": 4
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Boston Bruins vs Vegas Golden Knights",
-              "pick": "Boston Bruins",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Detroit Red Wings",
-              "pick": "Florida Panthers",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "Chicago Blackhawks vs Colorado Avalanche",
-              "pick": "Chicago Blackhawks",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            },
-            {
-              "sport": "nhl",
-              "match": "San Jose Sharks vs Calgary Flames",
-              "pick": "San Jose Sharks",
-              "p_win": 0.573,
-              "implied_odds": 1.75
-            }
-          ],
-          "total_odds": 9.38,
-          "combined_prob": 0.1078,
-          "n_legs": 4
-        }
-      },
-      "soccer": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
-      }
-    },
+    "by_sport": {},
     "combined": {
-      "cuota_3": {
-        "legs": [
-          {
-            "sport": "nhl",
-            "match": "Boston Bruins vs Vegas Golden Knights",
-            "pick": "Boston Bruins",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Florida Panthers vs Detroit Red Wings",
-            "pick": "Florida Panthers",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          }
-        ],
-        "total_odds": 3.06,
-        "combined_prob": 0.3283,
-        "n_legs": 2
-      },
-      "cuota_4": {
-        "legs": [
-          {
-            "sport": "nhl",
-            "match": "Boston Bruins vs Vegas Golden Knights",
-            "pick": "Boston Bruins",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "laliga",
-            "match": "RC Deportivo La Coruña vs CA Osasuna",
-            "pick": "RC Deportivo La Coruña",
-            "p_win": 0.4208,
-            "implied_odds": 2.38
-          }
-        ],
-        "total_odds": 4.17,
-        "combined_prob": 0.2411,
-        "n_legs": 2
-      },
-      "cuota_5": {
-        "legs": [
-          {
-            "sport": "nhl",
-            "match": "Boston Bruins vs Vegas Golden Knights",
-            "pick": "Boston Bruins",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Florida Panthers vs Detroit Red Wings",
-            "pick": "Florida Panthers",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Chicago Blackhawks vs Colorado Avalanche",
-            "pick": "Chicago Blackhawks",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          }
-        ],
-        "total_odds": 5.36,
-        "combined_prob": 0.1881,
-        "n_legs": 3
-      },
-      "cuota_6": {
-        "legs": [
-          {
-            "sport": "nhl",
-            "match": "Boston Bruins vs Vegas Golden Knights",
-            "pick": "Boston Bruins",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Florida Panthers vs Detroit Red Wings",
-            "pick": "Florida Panthers",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Chicago Blackhawks vs Colorado Avalanche",
-            "pick": "Chicago Blackhawks",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          }
-        ],
-        "total_odds": 5.36,
-        "combined_prob": 0.1881,
-        "n_legs": 3
-      },
-      "cuota_10": {
-        "legs": [
-          {
-            "sport": "nhl",
-            "match": "Boston Bruins vs Vegas Golden Knights",
-            "pick": "Boston Bruins",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Florida Panthers vs Detroit Red Wings",
-            "pick": "Florida Panthers",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Chicago Blackhawks vs Colorado Avalanche",
-            "pick": "Chicago Blackhawks",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "San Jose Sharks vs Calgary Flames",
-            "pick": "San Jose Sharks",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          }
-        ],
-        "total_odds": 9.38,
-        "combined_prob": 0.1078,
-        "n_legs": 4
-      },
-      "cuota_20": {
-        "legs": [
-          {
-            "sport": "nhl",
-            "match": "Boston Bruins vs Vegas Golden Knights",
-            "pick": "Boston Bruins",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Florida Panthers vs Detroit Red Wings",
-            "pick": "Florida Panthers",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "Chicago Blackhawks vs Colorado Avalanche",
-            "pick": "Chicago Blackhawks",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "nhl",
-            "match": "San Jose Sharks vs Calgary Flames",
-            "pick": "San Jose Sharks",
-            "p_win": 0.573,
-            "implied_odds": 1.75
-          },
-          {
-            "sport": "laliga",
-            "match": "RC Deportivo La Coruña vs CA Osasuna",
-            "pick": "RC Deportivo La Coruña",
-            "p_win": 0.4208,
-            "implied_odds": 2.38
-          }
-        ],
-        "total_odds": 22.32,
-        "combined_prob": 0.0454,
-        "n_legs": 5
-      }
+      "cuota_3": null,
+      "cuota_4": null,
+      "cuota_5": null,
+      "cuota_6": null,
+      "cuota_10": null,
+      "cuota_20": null
     }
   }
 }
