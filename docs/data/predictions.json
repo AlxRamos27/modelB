@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T15:42:02Z",
-  "date": "2026-11-06",
+  "generated_at": "2026-11-07T14:42:09Z",
+  "date": "2026-11-07",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,9 +15,9 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5686,
-        "logloss": 0.6837,
-        "brier": 0.2453
+        "accuracy": 0.5577,
+        "logloss": 0.6867,
+        "brier": 0.2468
       },
       "picks": [],
       "name": "NHL"
@@ -30,7 +30,7 @@
     },
     "epl": {
       "status": "error",
-      "reason": "Not enough finished games to train (90). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (92). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Premier League"
     },
@@ -38,19 +38,19 @@
       "status": "ok",
       "metrics": {
         "accuracy": 0.3636,
-        "logloss": 1.1939,
-        "brier": 0.227
+        "logloss": 1.1431,
+        "brier": 0.2217
       },
       "picks": [
         {
-          "home_team": "Sevilla FC",
-          "away_team": "Deportivo Alavés",
-          "pick": "H",
-          "pick_label": "Sevilla FC",
-          "p_win": 0.5287,
-          "implied_odds": 1.89,
-          "signal": "baja",
-          "date": "2026-11-06",
+          "home_team": "Valencia CF",
+          "away_team": "Real Madrid CF",
+          "pick": "A",
+          "pick_label": "Real Madrid CF",
+          "p_win": 0.6513,
+          "implied_odds": 1.54,
+          "signal": "media",
+          "date": "2026-11-07",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -66,7 +66,33 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 53%. Sin bajas importantes. SKIP — sin edge claro (53%)."
+          "note": "⚠️ Modelo 65%. Sin bajas importantes. ML CF con cautela (modelo 65%)."
+        },
+        {
+          "home_team": "Málaga CF",
+          "away_team": "Real Racing Club de Santander",
+          "pick": "H",
+          "pick_label": "Málaga CF",
+          "p_win": 0.3203,
+          "implied_odds": 3.12,
+          "signal": "baja",
+          "date": "2026-11-07",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 32%. Sin bajas importantes. SKIP — sin edge claro (32%)."
         }
       ],
       "name": "La Liga",
@@ -74,19 +100,19 @@
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (81). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (82). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (72). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (73). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Bundesliga"
     },
     "primeira": {
       "status": "error",
-      "reason": "Not enough finished games to train (90). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (91). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Primeira Liga"
     },
@@ -100,21 +126,261 @@
   "parlays": {
     "by_sport": {
       "soccer": {
-        "cuota_3": null,
-        "cuota_4": null,
-        "cuota_5": null,
-        "cuota_6": null,
-        "cuota_10": null,
-        "cuota_20": null
+        "cuota_3": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Valencia CF vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6513,
+              "implied_odds": 1.54
+            },
+            {
+              "sport": "laliga",
+              "match": "Málaga CF vs Real Racing Club de Santander",
+              "pick": "Málaga CF",
+              "p_win": 0.3203,
+              "implied_odds": 3.12
+            }
+          ],
+          "total_odds": 4.8,
+          "combined_prob": 0.2086,
+          "n_legs": 2
+        },
+        "cuota_4": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Valencia CF vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6513,
+              "implied_odds": 1.54
+            },
+            {
+              "sport": "laliga",
+              "match": "Málaga CF vs Real Racing Club de Santander",
+              "pick": "Málaga CF",
+              "p_win": 0.3203,
+              "implied_odds": 3.12
+            }
+          ],
+          "total_odds": 4.8,
+          "combined_prob": 0.2086,
+          "n_legs": 2
+        },
+        "cuota_5": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Valencia CF vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6513,
+              "implied_odds": 1.54
+            },
+            {
+              "sport": "laliga",
+              "match": "Málaga CF vs Real Racing Club de Santander",
+              "pick": "Málaga CF",
+              "p_win": 0.3203,
+              "implied_odds": 3.12
+            }
+          ],
+          "total_odds": 4.8,
+          "combined_prob": 0.2086,
+          "n_legs": 2
+        },
+        "cuota_6": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Valencia CF vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6513,
+              "implied_odds": 1.54
+            },
+            {
+              "sport": "laliga",
+              "match": "Málaga CF vs Real Racing Club de Santander",
+              "pick": "Málaga CF",
+              "p_win": 0.3203,
+              "implied_odds": 3.12
+            }
+          ],
+          "total_odds": 4.8,
+          "combined_prob": 0.2086,
+          "n_legs": 2
+        },
+        "cuota_10": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Valencia CF vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6513,
+              "implied_odds": 1.54
+            },
+            {
+              "sport": "laliga",
+              "match": "Málaga CF vs Real Racing Club de Santander",
+              "pick": "Málaga CF",
+              "p_win": 0.3203,
+              "implied_odds": 3.12
+            }
+          ],
+          "total_odds": 4.8,
+          "combined_prob": 0.2086,
+          "n_legs": 2
+        },
+        "cuota_20": {
+          "legs": [
+            {
+              "sport": "laliga",
+              "match": "Valencia CF vs Real Madrid CF",
+              "pick": "Real Madrid CF",
+              "p_win": 0.6513,
+              "implied_odds": 1.54
+            },
+            {
+              "sport": "laliga",
+              "match": "Málaga CF vs Real Racing Club de Santander",
+              "pick": "Málaga CF",
+              "p_win": 0.3203,
+              "implied_odds": 3.12
+            }
+          ],
+          "total_odds": 4.8,
+          "combined_prob": 0.2086,
+          "n_legs": 2
+        }
       }
     },
     "combined": {
-      "cuota_3": null,
-      "cuota_4": null,
-      "cuota_5": null,
-      "cuota_6": null,
-      "cuota_10": null,
-      "cuota_20": null
+      "cuota_3": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Valencia CF vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6513,
+            "implied_odds": 1.54
+          },
+          {
+            "sport": "laliga",
+            "match": "Málaga CF vs Real Racing Club de Santander",
+            "pick": "Málaga CF",
+            "p_win": 0.3203,
+            "implied_odds": 3.12
+          }
+        ],
+        "total_odds": 4.8,
+        "combined_prob": 0.2086,
+        "n_legs": 2
+      },
+      "cuota_4": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Valencia CF vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6513,
+            "implied_odds": 1.54
+          },
+          {
+            "sport": "laliga",
+            "match": "Málaga CF vs Real Racing Club de Santander",
+            "pick": "Málaga CF",
+            "p_win": 0.3203,
+            "implied_odds": 3.12
+          }
+        ],
+        "total_odds": 4.8,
+        "combined_prob": 0.2086,
+        "n_legs": 2
+      },
+      "cuota_5": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Valencia CF vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6513,
+            "implied_odds": 1.54
+          },
+          {
+            "sport": "laliga",
+            "match": "Málaga CF vs Real Racing Club de Santander",
+            "pick": "Málaga CF",
+            "p_win": 0.3203,
+            "implied_odds": 3.12
+          }
+        ],
+        "total_odds": 4.8,
+        "combined_prob": 0.2086,
+        "n_legs": 2
+      },
+      "cuota_6": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Valencia CF vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6513,
+            "implied_odds": 1.54
+          },
+          {
+            "sport": "laliga",
+            "match": "Málaga CF vs Real Racing Club de Santander",
+            "pick": "Málaga CF",
+            "p_win": 0.3203,
+            "implied_odds": 3.12
+          }
+        ],
+        "total_odds": 4.8,
+        "combined_prob": 0.2086,
+        "n_legs": 2
+      },
+      "cuota_10": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Valencia CF vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6513,
+            "implied_odds": 1.54
+          },
+          {
+            "sport": "laliga",
+            "match": "Málaga CF vs Real Racing Club de Santander",
+            "pick": "Málaga CF",
+            "p_win": 0.3203,
+            "implied_odds": 3.12
+          }
+        ],
+        "total_odds": 4.8,
+        "combined_prob": 0.2086,
+        "n_legs": 2
+      },
+      "cuota_20": {
+        "legs": [
+          {
+            "sport": "laliga",
+            "match": "Valencia CF vs Real Madrid CF",
+            "pick": "Real Madrid CF",
+            "p_win": 0.6513,
+            "implied_odds": 1.54
+          },
+          {
+            "sport": "laliga",
+            "match": "Málaga CF vs Real Racing Club de Santander",
+            "pick": "Málaga CF",
+            "p_win": 0.3203,
+            "implied_odds": 3.12
+          }
+        ],
+        "total_odds": 4.8,
+        "combined_prob": 0.2086,
+        "n_legs": 2
+      }
     }
   }
 }
