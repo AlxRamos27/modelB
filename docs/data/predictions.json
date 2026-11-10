@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T18:22:57Z",
-  "date": "2026-11-09",
+  "generated_at": "2026-11-10T16:08:05Z",
+  "date": "2026-11-10",
   "sports": {
     "nba": {
       "status": "ok",
@@ -9,236 +9,26 @@
         "logloss": 0.7165,
         "brier": 0.2547
       },
-      "picks": [
-        {
-          "home_team": "Dallas Mavericks",
-          "away_team": "Indiana Pacers",
-          "pick": "H",
-          "pick_label": "Dallas Mavericks",
-          "p_win": 0.6816,
-          "implied_odds": 1.47,
-          "signal": "media",
-          "date": "2026-11-09",
-          "model_spread": 11.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 225.5,
-          "ou_line": 225.5,
-          "ou_pick": "under",
-          "pts_home_scored": 110.5,
-          "pts_home_allowed": 111.0,
-          "pts_away_scored": 121.5,
-          "pts_away_allowed": 121.0,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 68%. Mavericks 4-3 vs Pacers 2-6. Sin bajas importantes. O/U en 225.5 pts — Under es la jugada (ritmo lento). ML Mavericks con cautela (modelo 68%)."
-        },
-        {
-          "home_team": "Detroit Pistons",
-          "away_team": "Washington Wizards",
-          "pick": "H",
-          "pick_label": "Detroit Pistons",
-          "p_win": 0.6635,
-          "implied_odds": 1.51,
-          "signal": "media",
-          "date": "2026-11-09",
-          "model_spread": 9.9,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 218.5,
-          "ou_line": 218.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": 110.2,
-          "pts_away_allowed": 111.2,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 66%. Pistons 6-1 vs Wizards 4-3. Sin bajas importantes. O/U en 218.5 pts — Under es la jugada (ritmo lento). ML Pistons con cautela (modelo 66%)."
-        },
-        {
-          "home_team": "Atlanta Hawks",
-          "away_team": "Los Angeles Lakers",
-          "pick": "A",
-          "pick_label": "Los Angeles Lakers",
-          "p_win": 0.6534,
-          "implied_odds": 1.53,
-          "signal": "media",
-          "date": "2026-11-09",
-          "model_spread": 9.3,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 236.5,
-          "ou_line": 236.5,
-          "ou_pick": "over",
-          "pts_home_scored": 115.0,
-          "pts_home_allowed": 120.3,
-          "pts_away_scored": 110.0,
-          "pts_away_allowed": 107.3,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 65%. Hawks 4-4 vs Lakers 5-2. Sin bajas importantes. O/U en 236.5 pts — Over es la jugada (ritmo alto). ML Lakers con cautela (modelo 65%)."
-        },
-        {
-          "home_team": "Houston Rockets",
-          "away_team": "Denver Nuggets",
-          "pick": "H",
-          "pick_label": "Houston Rockets",
-          "p_win": 0.6399,
-          "implied_odds": 1.56,
-          "signal": "media",
-          "date": "2026-11-09",
-          "model_spread": 8.4,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 219.5,
-          "ou_line": 219.5,
-          "ou_pick": "under",
-          "pts_home_scored": 122.3,
-          "pts_home_allowed": 106.0,
-          "pts_away_scored": 105.0,
-          "pts_away_allowed": 102.3,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 64%. Rockets 6-1 vs Nuggets 3-2. Sin bajas importantes. O/U en 219.5 pts — Under es la jugada (ritmo lento). ML Rockets con cautela (modelo 64%)."
-        },
-        {
-          "home_team": "Golden State Warriors",
-          "away_team": "New Orleans Pelicans",
-          "pick": "H",
-          "pick_label": "Golden State Warriors",
-          "p_win": 0.6013,
-          "implied_odds": 1.66,
-          "signal": "media",
-          "date": "2026-11-09",
-          "model_spread": 6.0,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 232.5,
-          "ou_line": 232.5,
-          "ou_pick": "over",
-          "pts_home_scored": 114.7,
-          "pts_home_allowed": 106.0,
-          "pts_away_scored": 129.7,
-          "pts_away_allowed": 131.7,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Warriors 4-3 vs Pelicans 3-4. Sin bajas importantes. O/U en 232.5 pts — Over es la jugada (ritmo alto). ML Warriors con cautela (modelo 60%)."
-        },
-        {
-          "home_team": "Toronto Raptors",
-          "away_team": "Memphis Grizzlies",
-          "pick": "A",
-          "pick_label": "Memphis Grizzlies",
-          "p_win": 0.5961,
-          "implied_odds": 1.68,
-          "signal": "media",
-          "date": "2026-11-09",
-          "model_spread": 5.7,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 228.5,
-          "ou_line": 228.5,
-          "ou_pick": "over",
-          "pts_home_scored": 126.0,
-          "pts_home_allowed": 104.0,
-          "pts_away_scored": 117.0,
-          "pts_away_allowed": 107.0,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "⚠️ Modelo 60%. Raptors 3-3 vs Grizzlies 6-1. Sin bajas importantes. O/U en 228.5 pts — Over es la jugada (ritmo alto). ML Grizzlies con cautela (modelo 60%)."
-        },
-        {
-          "home_team": "Charlotte Hornets",
-          "away_team": "Cleveland Cavaliers",
-          "pick": "A",
-          "pick_label": "Cleveland Cavaliers",
-          "p_win": 0.5694,
-          "implied_odds": 1.76,
-          "signal": "baja",
-          "date": "2026-11-09",
-          "model_spread": 4.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 214.5,
-          "ou_line": 214.5,
-          "ou_pick": "under",
-          "pts_home_scored": 100.2,
-          "pts_home_allowed": 114.8,
-          "pts_away_scored": 117.7,
-          "pts_away_allowed": 113.0,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 57%. Hornets 3-5 vs Cavaliers 4-3. Sin bajas importantes. O/U en 214.5 pts — Under es la jugada (ritmo lento). SKIP — sin edge claro (57%)."
-        },
-        {
-          "home_team": "Phoenix Suns",
-          "away_team": "San Antonio Spurs",
-          "pick": "A",
-          "pick_label": "San Antonio Spurs",
-          "p_win": 0.5554,
-          "implied_odds": 1.8,
-          "signal": "baja",
-          "date": "2026-11-09",
-          "model_spread": 3.2,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 226.5,
-          "ou_line": 226.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 56%. Suns 1-3 vs Spurs 4-2. Sin bajas importantes. O/U en 226.5 pts — Under es la jugada (ritmo lento). SKIP — sin edge claro (56%)."
-        }
-      ],
-      "name": "NBA",
-      "analysis": ""
+      "picks": [],
+      "name": "NBA"
     },
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5636,
-        "logloss": 0.6851,
-        "brier": 0.246
+        "accuracy": 0.5714,
+        "logloss": 0.6829,
+        "brier": 0.2449
       },
       "picks": [
         {
-          "home_team": "Edmonton Oilers",
-          "away_team": "New York Rangers",
+          "home_team": "Toronto Maple Leafs",
+          "away_team": "Colorado Avalanche",
           "pick": "H",
-          "pick_label": "Edmonton Oilers",
-          "p_win": 0.5708,
+          "pick_label": "Toronto Maple Leafs",
+          "p_win": 0.5701,
           "implied_odds": 1.75,
           "signal": "baja",
-          "date": "2026-11-09",
+          "date": "2026-11-10",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -257,14 +47,14 @@
           "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
         },
         {
-          "home_team": "Vancouver Canucks",
-          "away_team": "Philadelphia Flyers",
+          "home_team": "Montreal Canadiens",
+          "away_team": "Minnesota Wild",
           "pick": "H",
-          "pick_label": "Vancouver Canucks",
-          "p_win": 0.5708,
+          "pick_label": "Montreal Canadiens",
+          "p_win": 0.5701,
           "implied_odds": 1.75,
           "signal": "baja",
-          "date": "2026-11-09",
+          "date": "2026-11-10",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -283,14 +73,118 @@
           "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
         },
         {
-          "home_team": "San Jose Sharks",
-          "away_team": "New York Islanders",
+          "home_team": "Ottawa Senators",
+          "away_team": "Washington Capitals",
           "pick": "H",
-          "pick_label": "San Jose Sharks",
-          "p_win": 0.5708,
+          "pick_label": "Ottawa Senators",
+          "p_win": 0.5701,
           "implied_odds": 1.75,
           "signal": "baja",
-          "date": "2026-11-09",
+          "date": "2026-11-10",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "Winnipeg Jets",
+          "away_team": "New Jersey Devils",
+          "pick": "H",
+          "pick_label": "Winnipeg Jets",
+          "p_win": 0.5701,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-10",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 6.5,
+          "ou_line": 6.5,
+          "ou_pick": "over",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "Columbus Blue Jackets",
+          "away_team": "Florida Panthers",
+          "pick": "H",
+          "pick_label": "Columbus Blue Jackets",
+          "p_win": 0.5701,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-10",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 5.5,
+          "ou_line": 5.5,
+          "ou_pick": "under",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "St. Louis Blues",
+          "away_team": "Detroit Red Wings",
+          "pick": "H",
+          "pick_label": "St. Louis Blues",
+          "p_win": 0.5701,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-10",
+          "model_spread": 0.4,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": 5.5,
+          "ou_line": 5.5,
+          "ou_pick": "under",
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "❌ Modelo 57%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (57%)."
+        },
+        {
+          "home_team": "Los Angeles Kings",
+          "away_team": "Nashville Predators",
+          "pick": "H",
+          "pick_label": "Los Angeles Kings",
+          "p_win": 0.5701,
+          "implied_odds": 1.75,
+          "signal": "baja",
+          "date": "2026-11-10",
           "model_spread": 0.4,
           "house_spread": null,
           "house_odds": null,
@@ -329,12 +223,8 @@
       "name": "Premier League"
     },
     "laliga": {
-      "status": "ok",
-      "metrics": {
-        "accuracy": 0.3333,
-        "logloss": 1.3453,
-        "brier": 0.2485
-      },
+      "status": "error",
+      "reason": "Not enough finished games to train (99). Fetch more seasons or leagues.",
       "picks": [],
       "name": "La Liga"
     },
@@ -365,365 +255,181 @@
   },
   "parlays": {
     "by_sport": {
-      "nba": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "nba",
-              "match": "Golden State Warriors vs New Orleans Pelicans",
-              "pick": "Golden State Warriors",
-              "p_win": 0.6013,
-              "implied_odds": 1.66
-            },
-            {
-              "sport": "nba",
-              "match": "Phoenix Suns vs San Antonio Spurs",
-              "pick": "San Antonio Spurs",
-              "p_win": 0.5554,
-              "implied_odds": 1.8
-            }
-          ],
-          "total_odds": 2.99,
-          "combined_prob": 0.334,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "nba",
-              "match": "Dallas Mavericks vs Indiana Pacers",
-              "pick": "Dallas Mavericks",
-              "p_win": 0.6816,
-              "implied_odds": 1.47
-            },
-            {
-              "sport": "nba",
-              "match": "Detroit Pistons vs Washington Wizards",
-              "pick": "Detroit Pistons",
-              "p_win": 0.6635,
-              "implied_odds": 1.51
-            },
-            {
-              "sport": "nba",
-              "match": "Phoenix Suns vs San Antonio Spurs",
-              "pick": "San Antonio Spurs",
-              "p_win": 0.5554,
-              "implied_odds": 1.8
-            }
-          ],
-          "total_odds": 4.0,
-          "combined_prob": 0.2512,
-          "n_legs": 3
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "nba",
-              "match": "Golden State Warriors vs New Orleans Pelicans",
-              "pick": "Golden State Warriors",
-              "p_win": 0.6013,
-              "implied_odds": 1.66
-            },
-            {
-              "sport": "nba",
-              "match": "Toronto Raptors vs Memphis Grizzlies",
-              "pick": "Memphis Grizzlies",
-              "p_win": 0.5961,
-              "implied_odds": 1.68
-            },
-            {
-              "sport": "nba",
-              "match": "Phoenix Suns vs San Antonio Spurs",
-              "pick": "San Antonio Spurs",
-              "p_win": 0.5554,
-              "implied_odds": 1.8
-            }
-          ],
-          "total_odds": 5.02,
-          "combined_prob": 0.1991,
-          "n_legs": 3
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "nba",
-              "match": "Detroit Pistons vs Washington Wizards",
-              "pick": "Detroit Pistons",
-              "p_win": 0.6635,
-              "implied_odds": 1.51
-            },
-            {
-              "sport": "nba",
-              "match": "Atlanta Hawks vs Los Angeles Lakers",
-              "pick": "Los Angeles Lakers",
-              "p_win": 0.6534,
-              "implied_odds": 1.53
-            },
-            {
-              "sport": "nba",
-              "match": "Houston Rockets vs Denver Nuggets",
-              "pick": "Houston Rockets",
-              "p_win": 0.6399,
-              "implied_odds": 1.56
-            },
-            {
-              "sport": "nba",
-              "match": "Golden State Warriors vs New Orleans Pelicans",
-              "pick": "Golden State Warriors",
-              "p_win": 0.6013,
-              "implied_odds": 1.66
-            }
-          ],
-          "total_odds": 5.98,
-          "combined_prob": 0.1668,
-          "n_legs": 4
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "nba",
-              "match": "Dallas Mavericks vs Indiana Pacers",
-              "pick": "Dallas Mavericks",
-              "p_win": 0.6816,
-              "implied_odds": 1.47
-            },
-            {
-              "sport": "nba",
-              "match": "Detroit Pistons vs Washington Wizards",
-              "pick": "Detroit Pistons",
-              "p_win": 0.6635,
-              "implied_odds": 1.51
-            },
-            {
-              "sport": "nba",
-              "match": "Atlanta Hawks vs Los Angeles Lakers",
-              "pick": "Los Angeles Lakers",
-              "p_win": 0.6534,
-              "implied_odds": 1.53
-            },
-            {
-              "sport": "nba",
-              "match": "Toronto Raptors vs Memphis Grizzlies",
-              "pick": "Memphis Grizzlies",
-              "p_win": 0.5961,
-              "implied_odds": 1.68
-            },
-            {
-              "sport": "nba",
-              "match": "Charlotte Hornets vs Cleveland Cavaliers",
-              "pick": "Cleveland Cavaliers",
-              "p_win": 0.5694,
-              "implied_odds": 1.76
-            }
-          ],
-          "total_odds": 10.04,
-          "combined_prob": 0.1003,
-          "n_legs": 5
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "nba",
-              "match": "Dallas Mavericks vs Indiana Pacers",
-              "pick": "Dallas Mavericks",
-              "p_win": 0.6816,
-              "implied_odds": 1.47
-            },
-            {
-              "sport": "nba",
-              "match": "Atlanta Hawks vs Los Angeles Lakers",
-              "pick": "Los Angeles Lakers",
-              "p_win": 0.6534,
-              "implied_odds": 1.53
-            },
-            {
-              "sport": "nba",
-              "match": "Golden State Warriors vs New Orleans Pelicans",
-              "pick": "Golden State Warriors",
-              "p_win": 0.6013,
-              "implied_odds": 1.66
-            },
-            {
-              "sport": "nba",
-              "match": "Toronto Raptors vs Memphis Grizzlies",
-              "pick": "Memphis Grizzlies",
-              "p_win": 0.5961,
-              "implied_odds": 1.68
-            },
-            {
-              "sport": "nba",
-              "match": "Charlotte Hornets vs Cleveland Cavaliers",
-              "pick": "Cleveland Cavaliers",
-              "p_win": 0.5694,
-              "implied_odds": 1.76
-            },
-            {
-              "sport": "nba",
-              "match": "Phoenix Suns vs San Antonio Spurs",
-              "pick": "San Antonio Spurs",
-              "p_win": 0.5554,
-              "implied_odds": 1.8
-            }
-          ],
-          "total_odds": 19.87,
-          "combined_prob": 0.0505,
-          "n_legs": 6
-        }
-      },
       "nhl": {
         "cuota_3": {
           "legs": [
             {
               "sport": "nhl",
-              "match": "Edmonton Oilers vs New York Rangers",
-              "pick": "Edmonton Oilers",
-              "p_win": 0.5708,
+              "match": "Toronto Maple Leafs vs Colorado Avalanche",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "Vancouver Canucks vs Philadelphia Flyers",
-              "pick": "Vancouver Canucks",
-              "p_win": 0.5708,
+              "match": "Montreal Canadiens vs Minnesota Wild",
+              "pick": "Montreal Canadiens",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             }
           ],
           "total_odds": 3.06,
-          "combined_prob": 0.3258,
+          "combined_prob": 0.325,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
               "sport": "nhl",
-              "match": "Edmonton Oilers vs New York Rangers",
-              "pick": "Edmonton Oilers",
-              "p_win": 0.5708,
+              "match": "Toronto Maple Leafs vs Colorado Avalanche",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "Vancouver Canucks vs Philadelphia Flyers",
-              "pick": "Vancouver Canucks",
-              "p_win": 0.5708,
+              "match": "Montreal Canadiens vs Minnesota Wild",
+              "pick": "Montreal Canadiens",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             }
           ],
           "total_odds": 3.06,
-          "combined_prob": 0.3258,
+          "combined_prob": 0.325,
           "n_legs": 2
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "nhl",
-              "match": "Edmonton Oilers vs New York Rangers",
-              "pick": "Edmonton Oilers",
-              "p_win": 0.5708,
+              "match": "Toronto Maple Leafs vs Colorado Avalanche",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "Vancouver Canucks vs Philadelphia Flyers",
-              "pick": "Vancouver Canucks",
-              "p_win": 0.5708,
+              "match": "Montreal Canadiens vs Minnesota Wild",
+              "pick": "Montreal Canadiens",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "San Jose Sharks vs New York Islanders",
-              "pick": "San Jose Sharks",
-              "p_win": 0.5708,
+              "match": "Ottawa Senators vs Washington Capitals",
+              "pick": "Ottawa Senators",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             }
           ],
           "total_odds": 5.36,
-          "combined_prob": 0.186,
+          "combined_prob": 0.1853,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "nhl",
-              "match": "Edmonton Oilers vs New York Rangers",
-              "pick": "Edmonton Oilers",
-              "p_win": 0.5708,
+              "match": "Toronto Maple Leafs vs Colorado Avalanche",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "Vancouver Canucks vs Philadelphia Flyers",
-              "pick": "Vancouver Canucks",
-              "p_win": 0.5708,
+              "match": "Montreal Canadiens vs Minnesota Wild",
+              "pick": "Montreal Canadiens",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "San Jose Sharks vs New York Islanders",
-              "pick": "San Jose Sharks",
-              "p_win": 0.5708,
+              "match": "Ottawa Senators vs Washington Capitals",
+              "pick": "Ottawa Senators",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             }
           ],
           "total_odds": 5.36,
-          "combined_prob": 0.186,
+          "combined_prob": 0.1853,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
               "sport": "nhl",
-              "match": "Edmonton Oilers vs New York Rangers",
-              "pick": "Edmonton Oilers",
-              "p_win": 0.5708,
+              "match": "Toronto Maple Leafs vs Colorado Avalanche",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "Vancouver Canucks vs Philadelphia Flyers",
-              "pick": "Vancouver Canucks",
-              "p_win": 0.5708,
+              "match": "Montreal Canadiens vs Minnesota Wild",
+              "pick": "Montreal Canadiens",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "San Jose Sharks vs New York Islanders",
-              "pick": "San Jose Sharks",
-              "p_win": 0.5708,
+              "match": "Ottawa Senators vs Washington Capitals",
+              "pick": "Ottawa Senators",
+              "p_win": 0.5701,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "nhl",
+              "match": "Winnipeg Jets vs New Jersey Devils",
+              "pick": "Winnipeg Jets",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             }
           ],
-          "total_odds": 5.36,
-          "combined_prob": 0.186,
-          "n_legs": 3
+          "total_odds": 9.38,
+          "combined_prob": 0.1056,
+          "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "nhl",
-              "match": "Edmonton Oilers vs New York Rangers",
-              "pick": "Edmonton Oilers",
-              "p_win": 0.5708,
+              "match": "Toronto Maple Leafs vs Colorado Avalanche",
+              "pick": "Toronto Maple Leafs",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "Vancouver Canucks vs Philadelphia Flyers",
-              "pick": "Vancouver Canucks",
-              "p_win": 0.5708,
+              "match": "Montreal Canadiens vs Minnesota Wild",
+              "pick": "Montreal Canadiens",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             },
             {
               "sport": "nhl",
-              "match": "San Jose Sharks vs New York Islanders",
-              "pick": "San Jose Sharks",
-              "p_win": 0.5708,
+              "match": "Ottawa Senators vs Washington Capitals",
+              "pick": "Ottawa Senators",
+              "p_win": 0.5701,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "nhl",
+              "match": "Winnipeg Jets vs New Jersey Devils",
+              "pick": "Winnipeg Jets",
+              "p_win": 0.5701,
+              "implied_odds": 1.75
+            },
+            {
+              "sport": "nhl",
+              "match": "Columbus Blue Jackets vs Florida Panthers",
+              "pick": "Columbus Blue Jackets",
+              "p_win": 0.5701,
               "implied_odds": 1.75
             }
           ],
-          "total_odds": 5.36,
-          "combined_prob": 0.186,
-          "n_legs": 3
+          "total_odds": 16.41,
+          "combined_prob": 0.0602,
+          "n_legs": 5
         }
       }
     },
@@ -731,205 +437,177 @@
       "cuota_3": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Golden State Warriors vs New Orleans Pelicans",
-            "pick": "Golden State Warriors",
-            "p_win": 0.6013,
-            "implied_odds": 1.66
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Colorado Avalanche",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           },
           {
-            "sport": "nba",
-            "match": "Phoenix Suns vs San Antonio Spurs",
-            "pick": "San Antonio Spurs",
-            "p_win": 0.5554,
-            "implied_odds": 1.8
+            "sport": "nhl",
+            "match": "Montreal Canadiens vs Minnesota Wild",
+            "pick": "Montreal Canadiens",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 2.99,
-        "combined_prob": 0.334,
+        "total_odds": 3.06,
+        "combined_prob": 0.325,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Dallas Mavericks vs Indiana Pacers",
-            "pick": "Dallas Mavericks",
-            "p_win": 0.6816,
-            "implied_odds": 1.47
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Colorado Avalanche",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           },
           {
-            "sport": "nba",
-            "match": "Detroit Pistons vs Washington Wizards",
-            "pick": "Detroit Pistons",
-            "p_win": 0.6635,
-            "implied_odds": 1.51
-          },
-          {
-            "sport": "nba",
-            "match": "Phoenix Suns vs San Antonio Spurs",
-            "pick": "San Antonio Spurs",
-            "p_win": 0.5554,
-            "implied_odds": 1.8
+            "sport": "nhl",
+            "match": "Montreal Canadiens vs Minnesota Wild",
+            "pick": "Montreal Canadiens",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 4.0,
-        "combined_prob": 0.2512,
-        "n_legs": 3
+        "total_odds": 3.06,
+        "combined_prob": 0.325,
+        "n_legs": 2
       },
       "cuota_5": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Golden State Warriors vs New Orleans Pelicans",
-            "pick": "Golden State Warriors",
-            "p_win": 0.6013,
-            "implied_odds": 1.66
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Colorado Avalanche",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           },
           {
-            "sport": "nba",
-            "match": "Toronto Raptors vs Memphis Grizzlies",
-            "pick": "Memphis Grizzlies",
-            "p_win": 0.5961,
-            "implied_odds": 1.68
+            "sport": "nhl",
+            "match": "Montreal Canadiens vs Minnesota Wild",
+            "pick": "Montreal Canadiens",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           },
           {
-            "sport": "nba",
-            "match": "Phoenix Suns vs San Antonio Spurs",
-            "pick": "San Antonio Spurs",
-            "p_win": 0.5554,
-            "implied_odds": 1.8
+            "sport": "nhl",
+            "match": "Ottawa Senators vs Washington Capitals",
+            "pick": "Ottawa Senators",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 5.02,
-        "combined_prob": 0.1991,
+        "total_odds": 5.36,
+        "combined_prob": 0.1853,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Detroit Pistons vs Washington Wizards",
-            "pick": "Detroit Pistons",
-            "p_win": 0.6635,
-            "implied_odds": 1.51
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Colorado Avalanche",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           },
           {
-            "sport": "nba",
-            "match": "Atlanta Hawks vs Los Angeles Lakers",
-            "pick": "Los Angeles Lakers",
-            "p_win": 0.6534,
-            "implied_odds": 1.53
+            "sport": "nhl",
+            "match": "Montreal Canadiens vs Minnesota Wild",
+            "pick": "Montreal Canadiens",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           },
           {
-            "sport": "nba",
-            "match": "Houston Rockets vs Denver Nuggets",
-            "pick": "Houston Rockets",
-            "p_win": 0.6399,
-            "implied_odds": 1.56
-          },
-          {
-            "sport": "nba",
-            "match": "Golden State Warriors vs New Orleans Pelicans",
-            "pick": "Golden State Warriors",
-            "p_win": 0.6013,
-            "implied_odds": 1.66
+            "sport": "nhl",
+            "match": "Ottawa Senators vs Washington Capitals",
+            "pick": "Ottawa Senators",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           }
         ],
-        "total_odds": 5.98,
-        "combined_prob": 0.1668,
-        "n_legs": 4
+        "total_odds": 5.36,
+        "combined_prob": 0.1853,
+        "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Dallas Mavericks vs Indiana Pacers",
-            "pick": "Dallas Mavericks",
-            "p_win": 0.6816,
-            "implied_odds": 1.47
-          },
-          {
-            "sport": "nba",
-            "match": "Detroit Pistons vs Washington Wizards",
-            "pick": "Detroit Pistons",
-            "p_win": 0.6635,
-            "implied_odds": 1.51
-          },
-          {
-            "sport": "nba",
-            "match": "Atlanta Hawks vs Los Angeles Lakers",
-            "pick": "Los Angeles Lakers",
-            "p_win": 0.6534,
-            "implied_odds": 1.53
-          },
-          {
-            "sport": "nba",
-            "match": "Toronto Raptors vs Memphis Grizzlies",
-            "pick": "Memphis Grizzlies",
-            "p_win": 0.5961,
-            "implied_odds": 1.68
+            "sport": "nhl",
+            "match": "Toronto Maple Leafs vs Colorado Avalanche",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
           },
           {
             "sport": "nhl",
-            "match": "Edmonton Oilers vs New York Rangers",
-            "pick": "Edmonton Oilers",
-            "p_win": 0.5708,
+            "match": "Montreal Canadiens vs Minnesota Wild",
+            "pick": "Montreal Canadiens",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Ottawa Senators vs Washington Capitals",
+            "pick": "Ottawa Senators",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Winnipeg Jets vs New Jersey Devils",
+            "pick": "Winnipeg Jets",
+            "p_win": 0.5701,
             "implied_odds": 1.75
           }
         ],
-        "total_odds": 9.98,
-        "combined_prob": 0.1005,
-        "n_legs": 5
+        "total_odds": 9.38,
+        "combined_prob": 0.1056,
+        "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
-            "sport": "nba",
-            "match": "Dallas Mavericks vs Indiana Pacers",
-            "pick": "Dallas Mavericks",
-            "p_win": 0.6816,
-            "implied_odds": 1.47
-          },
-          {
-            "sport": "nba",
-            "match": "Atlanta Hawks vs Los Angeles Lakers",
-            "pick": "Los Angeles Lakers",
-            "p_win": 0.6534,
-            "implied_odds": 1.53
-          },
-          {
-            "sport": "nba",
-            "match": "Golden State Warriors vs New Orleans Pelicans",
-            "pick": "Golden State Warriors",
-            "p_win": 0.6013,
-            "implied_odds": 1.66
-          },
-          {
             "sport": "nhl",
-            "match": "Edmonton Oilers vs New York Rangers",
-            "pick": "Edmonton Oilers",
-            "p_win": 0.5708,
+            "match": "Toronto Maple Leafs vs Colorado Avalanche",
+            "pick": "Toronto Maple Leafs",
+            "p_win": 0.5701,
             "implied_odds": 1.75
           },
           {
             "sport": "nhl",
-            "match": "Vancouver Canucks vs Philadelphia Flyers",
-            "pick": "Vancouver Canucks",
-            "p_win": 0.5708,
+            "match": "Montreal Canadiens vs Minnesota Wild",
+            "pick": "Montreal Canadiens",
+            "p_win": 0.5701,
             "implied_odds": 1.75
           },
           {
             "sport": "nhl",
-            "match": "San Jose Sharks vs New York Islanders",
-            "pick": "San Jose Sharks",
-            "p_win": 0.5708,
+            "match": "Ottawa Senators vs Washington Capitals",
+            "pick": "Ottawa Senators",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Winnipeg Jets vs New Jersey Devils",
+            "pick": "Winnipeg Jets",
+            "p_win": 0.5701,
+            "implied_odds": 1.75
+          },
+          {
+            "sport": "nhl",
+            "match": "Columbus Blue Jackets vs Florida Panthers",
+            "pick": "Columbus Blue Jackets",
+            "p_win": 0.5701,
             "implied_odds": 1.75
           }
         ],
-        "total_odds": 20.01,
-        "combined_prob": 0.0498,
-        "n_legs": 6
+        "total_odds": 16.41,
+        "combined_prob": 0.0602,
+        "n_legs": 5
       }
     }
   }
