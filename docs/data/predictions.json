@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T15:55:56Z",
-  "date": "2026-11-21",
+  "generated_at": "2026-11-22T15:57:50Z",
+  "date": "2026-11-22",
   "sports": {
     "nba": {
       "status": "ok",
@@ -15,378 +15,12 @@
     "nhl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.5286,
-        "logloss": 0.6916,
-        "brier": 0.2492
+        "accuracy": 0.5342,
+        "logloss": 0.6909,
+        "brier": 0.2489
       },
-      "picks": [
-        {
-          "home_team": "Carolina Hurricanes",
-          "away_team": "Edmonton Oilers",
-          "pick": "H",
-          "pick_label": "Carolina Hurricanes",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Calgary Flames",
-          "away_team": "Chicago Blackhawks",
-          "pick": "H",
-          "pick_label": "Calgary Flames",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Florida Panthers",
-          "away_team": "Buffalo Sabres",
-          "pick": "H",
-          "pick_label": "Florida Panthers",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Nashville Predators",
-          "away_team": "Pittsburgh Penguins",
-          "pick": "H",
-          "pick_label": "Nashville Predators",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Boston Bruins",
-          "away_team": "Washington Capitals",
-          "pick": "H",
-          "pick_label": "Boston Bruins",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Toronto Maple Leafs",
-          "away_team": "Columbus Blue Jackets",
-          "pick": "H",
-          "pick_label": "Toronto Maple Leafs",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Montreal Canadiens",
-          "away_team": "Philadelphia Flyers",
-          "pick": "H",
-          "pick_label": "Montreal Canadiens",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Ottawa Senators",
-          "away_team": "Los Angeles Kings",
-          "pick": "H",
-          "pick_label": "Ottawa Senators",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Detroit Red Wings",
-          "away_team": "New York Islanders",
-          "pick": "H",
-          "pick_label": "Detroit Red Wings",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 5.5,
-          "ou_line": 5.5,
-          "ou_pick": "under",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 5.5 goles — Under es la jugada (juego defensivo). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "St. Louis Blues",
-          "away_team": "New Jersey Devils",
-          "pick": "H",
-          "pick_label": "St. Louis Blues",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Winnipeg Jets",
-          "away_team": "Vegas Golden Knights",
-          "pick": "H",
-          "pick_label": "Winnipeg Jets",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Utah Mammoth",
-          "away_team": "Anaheim Ducks",
-          "pick": "H",
-          "pick_label": "Utah Mammoth",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "Vancouver Canucks",
-          "away_team": "Minnesota Wild",
-          "pick": "H",
-          "pick_label": "Vancouver Canucks",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        },
-        {
-          "home_team": "San Jose Sharks",
-          "away_team": "Seattle Kraken",
-          "pick": "H",
-          "pick_label": "San Jose Sharks",
-          "p_win": 0.5214,
-          "implied_odds": 1.92,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": 0.1,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": 6.5,
-          "ou_line": 6.5,
-          "ou_pick": "over",
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. O/U en 6.5 goles — Over es la jugada (equipos ofensivos). SKIP — sin edge claro (52%)."
-        }
-      ],
-      "name": "NHL",
-      "analysis": ""
+      "picks": [],
+      "name": "NHL"
     },
     "mlb": {
       "status": "skipped",
@@ -397,72 +31,20 @@
     "epl": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.3333,
-        "logloss": 1.1592,
-        "brier": 0.2355
+        "accuracy": 0.3636,
+        "logloss": 1.1028,
+        "brier": 0.2243
       },
       "picks": [
         {
-          "home_team": "AFC Bournemouth",
-          "away_team": "Nottingham Forest FC",
+          "home_team": "Liverpool FC",
+          "away_team": "Manchester United FC",
           "pick": "H",
-          "pick_label": "AFC Bournemouth",
-          "p_win": 0.5427,
-          "implied_odds": 1.84,
+          "pick_label": "Liverpool FC",
+          "p_win": 0.5138,
+          "implied_odds": 1.95,
           "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "Tottenham Hotspur FC",
-          "away_team": "Ipswich Town FC",
-          "pick": "H",
-          "pick_label": "Tottenham Hotspur FC",
-          "p_win": 0.5399,
-          "implied_odds": 1.85,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 54%. Sin bajas importantes. SKIP — sin edge claro (54%)."
-        },
-        {
-          "home_team": "Chelsea FC",
-          "away_team": "Leeds United FC",
-          "pick": "H",
-          "pick_label": "Chelsea FC",
-          "p_win": 0.5098,
-          "implied_odds": 1.96,
-          "signal": "baja",
-          "date": "2026-11-21",
+          "date": "2026-11-22",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -481,14 +63,14 @@
           "note": "❌ Modelo 51%. Sin bajas importantes. SKIP — sin edge claro (51%)."
         },
         {
-          "home_team": "Aston Villa FC",
-          "away_team": "Sunderland AFC",
-          "pick": "H",
-          "pick_label": "Aston Villa FC",
-          "p_win": 0.4901,
-          "implied_odds": 2.04,
+          "home_team": "Hull City AFC",
+          "away_team": "Brighton & Hove Albion FC",
+          "pick": "A",
+          "pick_label": "Brighton & Hove Albion FC",
+          "p_win": 0.4012,
+          "implied_odds": 2.49,
           "signal": "baja",
-          "date": "2026-11-21",
+          "date": "2026-11-22",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -504,59 +86,7 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 49%. Sin bajas importantes. SKIP — sin edge claro (49%)."
-        },
-        {
-          "home_team": "Newcastle United FC",
-          "away_team": "Arsenal FC",
-          "pick": "H",
-          "pick_label": "Newcastle United FC",
-          "p_win": 0.4299,
-          "implied_odds": 2.33,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 43%. Sin bajas importantes. SKIP — sin edge claro (43%)."
-        },
-        {
-          "home_team": "Coventry City FC",
-          "away_team": "Crystal Palace FC",
-          "pick": "H",
-          "pick_label": "Coventry City FC",
-          "p_win": 0.3757,
-          "implied_odds": 2.66,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 38%. Sin bajas importantes. SKIP — sin edge claro (38%)."
+          "note": "❌ Modelo 40%. Sin bajas importantes. SKIP — sin edge claro (40%)."
         }
       ],
       "name": "Premier League",
@@ -565,72 +95,20 @@
     "laliga": {
       "status": "ok",
       "metrics": {
-        "accuracy": 0.56,
-        "logloss": 1.0711,
-        "brier": 0.2041
+        "accuracy": 0.48,
+        "logloss": 1.21,
+        "brier": 0.2335
       },
       "picks": [
         {
-          "home_team": "Real Madrid CF",
-          "away_team": "RC Celta de Vigo",
-          "pick": "H",
-          "pick_label": "Real Madrid CF",
-          "p_win": 0.8527,
-          "implied_odds": 1.17,
-          "signal": "alta",
-          "date": "2026-11-21",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "✅ Modelo 85%. Sin bajas importantes. ML CF es la jugada segura (modelo 85%)."
-        },
-        {
-          "home_team": "Rayo Vallecano de Madrid",
-          "away_team": "Valencia CF",
-          "pick": "H",
-          "pick_label": "Rayo Vallecano de Madrid",
-          "p_win": 0.5852,
-          "implied_odds": 1.71,
-          "signal": "baja",
-          "date": "2026-11-21",
-          "model_spread": null,
-          "house_spread": null,
-          "house_odds": null,
-          "house_implied_pct": null,
-          "edge_pct": null,
-          "house_total": null,
-          "espn_ou": null,
-          "ou_line": null,
-          "ou_pick": null,
-          "pts_home_scored": null,
-          "pts_home_allowed": null,
-          "pts_away_scored": null,
-          "pts_away_allowed": null,
-          "injuries_home": [],
-          "injuries_away": [],
-          "note": "❌ Modelo 59%. Sin bajas importantes. SKIP — sin edge claro (59%)."
-        },
-        {
-          "home_team": "Sevilla FC",
-          "away_team": "Real Betis Balompié",
+          "home_team": "Getafe CF",
+          "away_team": "Club Atlético de Madrid",
           "pick": "A",
-          "pick_label": "Real Betis Balompié",
-          "p_win": 0.5192,
-          "implied_odds": 1.93,
-          "signal": "baja",
-          "date": "2026-11-21",
+          "pick_label": "Club Atlético de Madrid",
+          "p_win": 0.7437,
+          "implied_odds": 1.34,
+          "signal": "alta",
+          "date": "2026-11-22",
           "model_spread": null,
           "house_spread": null,
           "house_odds": null,
@@ -646,7 +124,59 @@
           "pts_away_allowed": null,
           "injuries_home": [],
           "injuries_away": [],
-          "note": "❌ Modelo 52%. Sin bajas importantes. SKIP — sin edge claro (52%)."
+          "note": "✅ Modelo 74%. Sin bajas importantes. ML Madrid es la jugada segura (modelo 74%)."
+        },
+        {
+          "home_team": "Real Racing Club de Santander",
+          "away_team": "Real Sociedad de Fútbol",
+          "pick": "A",
+          "pick_label": "Real Sociedad de Fútbol",
+          "p_win": 0.6532,
+          "implied_odds": 1.53,
+          "signal": "media",
+          "date": "2026-11-22",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 65%. Sin bajas importantes. ML Fútbol con cautela (modelo 65%)."
+        },
+        {
+          "home_team": "CA Osasuna",
+          "away_team": "Málaga CF",
+          "pick": "H",
+          "pick_label": "CA Osasuna",
+          "p_win": 0.6065,
+          "implied_odds": 1.65,
+          "signal": "media",
+          "date": "2026-11-22",
+          "model_spread": null,
+          "house_spread": null,
+          "house_odds": null,
+          "house_implied_pct": null,
+          "edge_pct": null,
+          "house_total": null,
+          "espn_ou": null,
+          "ou_line": null,
+          "ou_pick": null,
+          "pts_home_scored": null,
+          "pts_home_allowed": null,
+          "pts_away_scored": null,
+          "pts_away_allowed": null,
+          "injuries_home": [],
+          "injuries_away": [],
+          "note": "⚠️ Modelo 61%. Sin bajas importantes. ML Osasuna con cautela (modelo 61%)."
         }
       ],
       "name": "La Liga",
@@ -654,13 +184,13 @@
     },
     "ligue1": {
       "status": "error",
-      "reason": "Not enough finished games to train (91). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (96). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Ligue 1"
     },
     "bundesliga": {
       "status": "error",
-      "reason": "Not enough finished games to train (82). Fetch more seasons or leagues.",
+      "reason": "Not enough finished games to train (88). Fetch more seasons or leagues.",
       "picks": [],
       "name": "Bundesliga"
     },
@@ -679,336 +209,187 @@
   },
   "parlays": {
     "by_sport": {
-      "nhl": {
-        "cuota_3": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Carolina Hurricanes vs Edmonton Oilers",
-              "pick": "Carolina Hurricanes",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Calgary Flames vs Chicago Blackhawks",
-              "pick": "Calgary Flames",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            }
-          ],
-          "total_odds": 3.69,
-          "combined_prob": 0.2719,
-          "n_legs": 2
-        },
-        "cuota_4": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Carolina Hurricanes vs Edmonton Oilers",
-              "pick": "Carolina Hurricanes",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Calgary Flames vs Chicago Blackhawks",
-              "pick": "Calgary Flames",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            }
-          ],
-          "total_odds": 3.69,
-          "combined_prob": 0.2719,
-          "n_legs": 2
-        },
-        "cuota_5": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Carolina Hurricanes vs Edmonton Oilers",
-              "pick": "Carolina Hurricanes",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Calgary Flames vs Chicago Blackhawks",
-              "pick": "Calgary Flames",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            }
-          ],
-          "total_odds": 3.69,
-          "combined_prob": 0.2719,
-          "n_legs": 2
-        },
-        "cuota_6": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Carolina Hurricanes vs Edmonton Oilers",
-              "pick": "Carolina Hurricanes",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Calgary Flames vs Chicago Blackhawks",
-              "pick": "Calgary Flames",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Buffalo Sabres",
-              "pick": "Florida Panthers",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            }
-          ],
-          "total_odds": 7.08,
-          "combined_prob": 0.1417,
-          "n_legs": 3
-        },
-        "cuota_10": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Carolina Hurricanes vs Edmonton Oilers",
-              "pick": "Carolina Hurricanes",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Calgary Flames vs Chicago Blackhawks",
-              "pick": "Calgary Flames",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Buffalo Sabres",
-              "pick": "Florida Panthers",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            }
-          ],
-          "total_odds": 7.08,
-          "combined_prob": 0.1417,
-          "n_legs": 3
-        },
-        "cuota_20": {
-          "legs": [
-            {
-              "sport": "nhl",
-              "match": "Carolina Hurricanes vs Edmonton Oilers",
-              "pick": "Carolina Hurricanes",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Calgary Flames vs Chicago Blackhawks",
-              "pick": "Calgary Flames",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Florida Panthers vs Buffalo Sabres",
-              "pick": "Florida Panthers",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Nashville Predators vs Pittsburgh Penguins",
-              "pick": "Nashville Predators",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            },
-            {
-              "sport": "nhl",
-              "match": "Boston Bruins vs Washington Capitals",
-              "pick": "Boston Bruins",
-              "p_win": 0.5214,
-              "implied_odds": 1.92
-            }
-          ],
-          "total_odds": 26.09,
-          "combined_prob": 0.0385,
-          "n_legs": 5
-        }
-      },
       "soccer": {
         "cuota_3": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "Real Madrid CF vs RC Celta de Vigo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8527,
-              "implied_odds": 1.17
+              "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.6532,
+              "implied_odds": 1.53
             },
             {
               "sport": "epl",
-              "match": "Coventry City FC vs Crystal Palace FC",
-              "pick": "Coventry City FC",
-              "p_win": 0.3757,
-              "implied_odds": 2.66
+              "match": "Liverpool FC vs Manchester United FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5138,
+              "implied_odds": 1.95
             }
           ],
-          "total_odds": 3.11,
-          "combined_prob": 0.3204,
+          "total_odds": 2.98,
+          "combined_prob": 0.3356,
           "n_legs": 2
         },
         "cuota_4": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "Chelsea FC vs Leeds United FC",
-              "pick": "Chelsea FC",
-              "p_win": 0.5098,
-              "implied_odds": 1.96
+              "sport": "laliga",
+              "match": "Getafe CF vs Club Atlético de Madrid",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.7437,
+              "implied_odds": 1.34
+            },
+            {
+              "sport": "laliga",
+              "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.6532,
+              "implied_odds": 1.53
             },
             {
               "sport": "epl",
-              "match": "Aston Villa FC vs Sunderland AFC",
-              "pick": "Aston Villa FC",
-              "p_win": 0.4901,
-              "implied_odds": 2.04
+              "match": "Liverpool FC vs Manchester United FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5138,
+              "implied_odds": 1.95
             }
           ],
           "total_odds": 4.0,
-          "combined_prob": 0.2499,
-          "n_legs": 2
+          "combined_prob": 0.2496,
+          "n_legs": 3
         },
         "cuota_5": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "Real Madrid CF vs RC Celta de Vigo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8527,
-              "implied_odds": 1.17
+              "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.6532,
+              "implied_odds": 1.53
+            },
+            {
+              "sport": "laliga",
+              "match": "CA Osasuna vs Málaga CF",
+              "pick": "CA Osasuna",
+              "p_win": 0.6065,
+              "implied_odds": 1.65
             },
             {
               "sport": "epl",
-              "match": "AFC Bournemouth vs Nottingham Forest FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.5427,
-              "implied_odds": 1.84
-            },
-            {
-              "sport": "epl",
-              "match": "Newcastle United FC vs Arsenal FC",
-              "pick": "Newcastle United FC",
-              "p_win": 0.4299,
-              "implied_odds": 2.33
+              "match": "Liverpool FC vs Manchester United FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5138,
+              "implied_odds": 1.95
             }
           ],
-          "total_odds": 5.02,
-          "combined_prob": 0.1989,
+          "total_odds": 4.92,
+          "combined_prob": 0.2035,
           "n_legs": 3
         },
         "cuota_6": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "Real Madrid CF vs RC Celta de Vigo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8527,
-              "implied_odds": 1.17
+              "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.6532,
+              "implied_odds": 1.53
             },
             {
               "sport": "laliga",
-              "match": "Sevilla FC vs Real Betis Balompié",
-              "pick": "Real Betis Balompié",
-              "p_win": 0.5192,
-              "implied_odds": 1.93
+              "match": "CA Osasuna vs Málaga CF",
+              "pick": "CA Osasuna",
+              "p_win": 0.6065,
+              "implied_odds": 1.65
             },
             {
               "sport": "epl",
-              "match": "Coventry City FC vs Crystal Palace FC",
-              "pick": "Coventry City FC",
-              "p_win": 0.3757,
-              "implied_odds": 2.66
+              "match": "Hull City AFC vs Brighton & Hove Albion FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.4012,
+              "implied_odds": 2.49
             }
           ],
-          "total_odds": 6.01,
-          "combined_prob": 0.1663,
+          "total_odds": 6.29,
+          "combined_prob": 0.1589,
           "n_legs": 3
         },
         "cuota_10": {
           "legs": [
             {
-              "sport": "epl",
-              "match": "AFC Bournemouth vs Nottingham Forest FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.5427,
-              "implied_odds": 1.84
+              "sport": "laliga",
+              "match": "Getafe CF vs Club Atlético de Madrid",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.7437,
+              "implied_odds": 1.34
+            },
+            {
+              "sport": "laliga",
+              "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.6532,
+              "implied_odds": 1.53
             },
             {
               "sport": "epl",
-              "match": "Aston Villa FC vs Sunderland AFC",
-              "pick": "Aston Villa FC",
-              "p_win": 0.4901,
-              "implied_odds": 2.04
+              "match": "Liverpool FC vs Manchester United FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5138,
+              "implied_odds": 1.95
             },
             {
               "sport": "epl",
-              "match": "Coventry City FC vs Crystal Palace FC",
-              "pick": "Coventry City FC",
-              "p_win": 0.3757,
-              "implied_odds": 2.66
+              "match": "Hull City AFC vs Brighton & Hove Albion FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.4012,
+              "implied_odds": 2.49
             }
           ],
-          "total_odds": 9.98,
-          "combined_prob": 0.0999,
-          "n_legs": 3
+          "total_odds": 9.95,
+          "combined_prob": 0.1001,
+          "n_legs": 4
         },
         "cuota_20": {
           "legs": [
             {
               "sport": "laliga",
-              "match": "Real Madrid CF vs RC Celta de Vigo",
-              "pick": "Real Madrid CF",
-              "p_win": 0.8527,
-              "implied_odds": 1.17
+              "match": "Getafe CF vs Club Atlético de Madrid",
+              "pick": "Club Atlético de Madrid",
+              "p_win": 0.7437,
+              "implied_odds": 1.34
             },
             {
               "sport": "laliga",
-              "match": "Rayo Vallecano de Madrid vs Valencia CF",
-              "pick": "Rayo Vallecano de Madrid",
-              "p_win": 0.5852,
-              "implied_odds": 1.71
+              "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+              "pick": "Real Sociedad de Fútbol",
+              "p_win": 0.6532,
+              "implied_odds": 1.53
+            },
+            {
+              "sport": "laliga",
+              "match": "CA Osasuna vs Málaga CF",
+              "pick": "CA Osasuna",
+              "p_win": 0.6065,
+              "implied_odds": 1.65
             },
             {
               "sport": "epl",
-              "match": "AFC Bournemouth vs Nottingham Forest FC",
-              "pick": "AFC Bournemouth",
-              "p_win": 0.5427,
-              "implied_odds": 1.84
+              "match": "Liverpool FC vs Manchester United FC",
+              "pick": "Liverpool FC",
+              "p_win": 0.5138,
+              "implied_odds": 1.95
             },
             {
               "sport": "epl",
-              "match": "Aston Villa FC vs Sunderland AFC",
-              "pick": "Aston Villa FC",
-              "p_win": 0.4901,
-              "implied_odds": 2.04
-            },
-            {
-              "sport": "epl",
-              "match": "Coventry City FC vs Crystal Palace FC",
-              "pick": "Coventry City FC",
-              "p_win": 0.3757,
-              "implied_odds": 2.66
+              "match": "Hull City AFC vs Brighton & Hove Albion FC",
+              "pick": "Brighton & Hove Albion FC",
+              "p_win": 0.4012,
+              "implied_odds": 2.49
             }
           ],
-          "total_odds": 19.98,
-          "combined_prob": 0.0499,
+          "total_odds": 16.43,
+          "combined_prob": 0.0607,
           "n_legs": 5
         }
       }
@@ -1018,182 +399,182 @@
         "legs": [
           {
             "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Valencia CF",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.5852,
-            "implied_odds": 1.71
+            "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.6532,
+            "implied_odds": 1.53
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Nottingham Forest FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.5427,
-            "implied_odds": 1.84
+            "match": "Liverpool FC vs Manchester United FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5138,
+            "implied_odds": 1.95
           }
         ],
-        "total_odds": 3.15,
-        "combined_prob": 0.3176,
+        "total_odds": 2.98,
+        "combined_prob": 0.3356,
         "n_legs": 2
       },
       "cuota_4": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "Real Madrid CF vs RC Celta de Vigo",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8527,
-            "implied_odds": 1.17
+            "match": "Getafe CF vs Club Atlético de Madrid",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.7437,
+            "implied_odds": 1.34
+          },
+          {
+            "sport": "laliga",
+            "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.6532,
+            "implied_odds": 1.53
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Nottingham Forest FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.5427,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "epl",
-            "match": "Tottenham Hotspur FC vs Ipswich Town FC",
-            "pick": "Tottenham Hotspur FC",
-            "p_win": 0.5399,
-            "implied_odds": 1.85
+            "match": "Liverpool FC vs Manchester United FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5138,
+            "implied_odds": 1.95
           }
         ],
-        "total_odds": 3.98,
-        "combined_prob": 0.2498,
+        "total_odds": 4.0,
+        "combined_prob": 0.2496,
         "n_legs": 3
       },
       "cuota_5": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "Real Madrid CF vs RC Celta de Vigo",
-            "pick": "Real Madrid CF",
-            "p_win": 0.8527,
-            "implied_odds": 1.17
+            "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.6532,
+            "implied_odds": 1.53
           },
           {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Edmonton Oilers",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5214,
-            "implied_odds": 1.92
+            "sport": "laliga",
+            "match": "CA Osasuna vs Málaga CF",
+            "pick": "CA Osasuna",
+            "p_win": 0.6065,
+            "implied_odds": 1.65
           },
           {
-            "sport": "nhl",
-            "match": "Calgary Flames vs Chicago Blackhawks",
-            "pick": "Calgary Flames",
-            "p_win": 0.5214,
-            "implied_odds": 1.92
+            "sport": "epl",
+            "match": "Liverpool FC vs Manchester United FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5138,
+            "implied_odds": 1.95
           }
         ],
-        "total_odds": 4.31,
-        "combined_prob": 0.2318,
+        "total_odds": 4.92,
+        "combined_prob": 0.2035,
         "n_legs": 3
       },
       "cuota_6": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Valencia CF",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.5852,
-            "implied_odds": 1.71
+            "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.6532,
+            "implied_odds": 1.53
+          },
+          {
+            "sport": "laliga",
+            "match": "CA Osasuna vs Málaga CF",
+            "pick": "CA Osasuna",
+            "p_win": 0.6065,
+            "implied_odds": 1.65
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Nottingham Forest FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.5427,
-            "implied_odds": 1.84
-          },
-          {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Edmonton Oilers",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5214,
-            "implied_odds": 1.92
+            "match": "Hull City AFC vs Brighton & Hove Albion FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.4012,
+            "implied_odds": 2.49
           }
         ],
-        "total_odds": 6.04,
-        "combined_prob": 0.1656,
+        "total_odds": 6.29,
+        "combined_prob": 0.1589,
         "n_legs": 3
       },
       "cuota_10": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Valencia CF",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.5852,
-            "implied_odds": 1.71
+            "match": "Getafe CF vs Club Atlético de Madrid",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.7437,
+            "implied_odds": 1.34
+          },
+          {
+            "sport": "laliga",
+            "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.6532,
+            "implied_odds": 1.53
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Nottingham Forest FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.5427,
-            "implied_odds": 1.84
+            "match": "Liverpool FC vs Manchester United FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5138,
+            "implied_odds": 1.95
           },
           {
             "sport": "epl",
-            "match": "Tottenham Hotspur FC vs Ipswich Town FC",
-            "pick": "Tottenham Hotspur FC",
-            "p_win": 0.5399,
-            "implied_odds": 1.85
-          },
-          {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Edmonton Oilers",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5214,
-            "implied_odds": 1.92
+            "match": "Hull City AFC vs Brighton & Hove Albion FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.4012,
+            "implied_odds": 2.49
           }
         ],
-        "total_odds": 11.18,
-        "combined_prob": 0.0894,
+        "total_odds": 9.95,
+        "combined_prob": 0.1001,
         "n_legs": 4
       },
       "cuota_20": {
         "legs": [
           {
             "sport": "laliga",
-            "match": "Rayo Vallecano de Madrid vs Valencia CF",
-            "pick": "Rayo Vallecano de Madrid",
-            "p_win": 0.5852,
-            "implied_odds": 1.71
+            "match": "Getafe CF vs Club Atlético de Madrid",
+            "pick": "Club Atlético de Madrid",
+            "p_win": 0.7437,
+            "implied_odds": 1.34
+          },
+          {
+            "sport": "laliga",
+            "match": "Real Racing Club de Santander vs Real Sociedad de Fútbol",
+            "pick": "Real Sociedad de Fútbol",
+            "p_win": 0.6532,
+            "implied_odds": 1.53
+          },
+          {
+            "sport": "laliga",
+            "match": "CA Osasuna vs Málaga CF",
+            "pick": "CA Osasuna",
+            "p_win": 0.6065,
+            "implied_odds": 1.65
           },
           {
             "sport": "epl",
-            "match": "AFC Bournemouth vs Nottingham Forest FC",
-            "pick": "AFC Bournemouth",
-            "p_win": 0.5427,
-            "implied_odds": 1.84
+            "match": "Liverpool FC vs Manchester United FC",
+            "pick": "Liverpool FC",
+            "p_win": 0.5138,
+            "implied_odds": 1.95
           },
           {
             "sport": "epl",
-            "match": "Tottenham Hotspur FC vs Ipswich Town FC",
-            "pick": "Tottenham Hotspur FC",
-            "p_win": 0.5399,
-            "implied_odds": 1.85
-          },
-          {
-            "sport": "nhl",
-            "match": "Carolina Hurricanes vs Edmonton Oilers",
-            "pick": "Carolina Hurricanes",
-            "p_win": 0.5214,
-            "implied_odds": 1.92
-          },
-          {
-            "sport": "nhl",
-            "match": "Calgary Flames vs Chicago Blackhawks",
-            "pick": "Calgary Flames",
-            "p_win": 0.5214,
-            "implied_odds": 1.92
+            "match": "Hull City AFC vs Brighton & Hove Albion FC",
+            "pick": "Brighton & Hove Albion FC",
+            "p_win": 0.4012,
+            "implied_odds": 2.49
           }
         ],
-        "total_odds": 21.46,
-        "combined_prob": 0.0466,
+        "total_odds": 16.43,
+        "combined_prob": 0.0607,
         "n_legs": 5
       }
     }
